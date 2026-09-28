@@ -1,0 +1,269 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://shaduf.ai/p/digital-fly-catalog/assets/data/videos.schema.json",
+ "title": "Digital Fly Lab video record (published 2026-09-28)",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "video_id",
+  "page_anchor",
+  "group",
+  "title",
+  "display_title",
+  "platform",
+  "url",
+  "creator",
+  "upload_status",
+  "duration",
+  "format",
+  "shows",
+  "does_not_show",
+  "catalogue_id",
+  "evidence_grade",
+  "grade_status",
+  "playback",
+  "last_checked"
+ ],
+ "properties": {
+  "video_id": {
+   "type": "string",
+   "description": "Stable slug, never reused. Also the gallery card anchor #v-<video_id>.",
+   "pattern": "^[a-z0-9][a-z0-9-]*$"
+  },
+  "page_anchor": {
+   "type": "string",
+   "description": "Gallery card route."
+  },
+  "group": {
+   "type": "string",
+   "description": "Gallery section.",
+   "enum": [
+    "g-viral",
+    "g-eon",
+    "g-models",
+    "g-bodies",
+    "g-data",
+    "g-uncat",
+    "g-reposts"
+   ]
+  },
+  "title": {
+   "type": "string",
+   "description": "Title or first line of the post, as published."
+  },
+  "display_title": {
+   "type": "string",
+   "description": "Card heading: the published title, shortened when it is a long caption, without our annotations."
+  },
+  "title_note": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Why display_title differs from title, or what kind of post it is."
+  },
+  "platform": {
+   "type": "string",
+   "description": "Where the video plays.",
+   "enum": [
+    "youtube",
+    "x",
+    "tiktok",
+    "project-site"
+   ]
+  },
+  "url": {
+   "type": "string",
+   "description": "Canonical https page of the video on its platform.",
+   "pattern": "^https://"
+  },
+  "file_url": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Direct MP4 file for project-hosted videos (link only; not re-hosted)."
+  },
+  "creator": {
+   "type": "string",
+   "description": "Channel or account as displayed."
+  },
+  "upload_status": {
+   "type": "string",
+   "description": "original = project author, lab or institution; repost = copy or re-edit of original_of; commentary = third-party explainer (see covers).",
+   "enum": [
+    "original",
+    "repost",
+    "commentary"
+   ]
+  },
+  "original_of": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "video_id of the original this repost copies."
+  },
+  "reposted_as": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "video_ids of listed reposts of this video."
+  },
+  "uploader_note": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Who the uploader is, in our words."
+  },
+  "publish_date": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "YYYY-MM-DD as shown by the platform; null when the host shows none."
+  },
+  "duration": {
+   "type": "string",
+   "description": "Length as m:ss or h:mm:ss."
+  },
+  "duration_s": {
+   "type": "number"
+  },
+  "format": {
+   "type": "string",
+   "description": "Frame shape.",
+   "enum": [
+    "vertical",
+    "horizontal",
+    "square",
+    "file"
+   ]
+  },
+  "shows": {
+   "type": "string",
+   "description": "What the video shows, in our words."
+  },
+  "does_not_show": {
+   "type": "string",
+   "description": "What the video does not show, from our catalogue and verdicts."
+  },
+  "summary_basis": {
+   "type": "string",
+   "description": "What our summary rests on. We did not watch every video frame by frame."
+  },
+  "catalogue_id": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Matching catalogue entry id in projects.json, or null."
+  },
+  "catalogue_name": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Name of that entry."
+  },
+  "evidence_grade": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "enum": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "U",
+    "n/a",
+    null
+   ],
+   "description": "Copied from the catalogue entry; null when the video is not in the catalogue."
+  },
+  "grade_status": {
+   "type": "string",
+   "description": "from catalogue; not graded (dataset, body or tool); not in catalogue, not graded; or commentary."
+  },
+  "covers": {
+   "type": "array",
+   "description": "For commentary: catalogue entries discussed, with their catalogue grades.",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "catalogue_id",
+     "evidence_grade"
+    ],
+    "properties": {
+     "catalogue_id": {
+      "type": "string"
+     },
+     "evidence_grade": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "verdict_anchor": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Is it real? verdict row for this project, if one exists."
+  },
+  "thumbnail_url": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Platform thumbnail (i.ytimg.com or pbs.twimg.com) or null."
+  },
+  "views": {
+   "type": [
+    "integer",
+    "null"
+   ],
+   "description": "View count on views_date (snapshot)."
+  },
+  "views_date": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Date of the view count."
+  },
+  "playback": {
+   "type": "string",
+   "description": "link-only: the video plays only on its original platform.",
+   "enum": [
+    "link-only"
+   ]
+  },
+  "link_status": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "status": {
+     "type": "string"
+    },
+    "http_code": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    },
+    "checked_at": {
+     "type": "string"
+    }
+   }
+  },
+  "last_checked": {
+   "type": "string",
+   "description": "Date we checked the link and platform record."
+  }
+ }
+}

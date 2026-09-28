@@ -1,0 +1,775 @@
+{
+  "schema_version": "1.0.0",
+  "items": [
+    {
+      "evidence_id": "flywire-guidelines",
+      "source_type": "web",
+      "source_url": "https://flywire.ai/guidelines",
+      "title": "FlyWire citation and data guidelines",
+      "claim": "FlyWire public release data (latest v783, October 2023 snapshot) is licensed CC BY-NC 4.0.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "codex-flywire",
+      "source_type": "data portal",
+      "source_url": "https://codex.flywire.ai/faq",
+      "title": "FlyWire Codex",
+      "claim": "Dataset tiles give 139,255 neurons for FAFB v783, 166,700 for MaleCNS v1.0, 158,262 for BANC v888 and 23,665 for MANC v1.2.1.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "shiu-2024",
+      "source_type": "paper",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11446845/",
+      "title": "Shiu et al. 2024, A Drosophila computational brain model reveals sensorimotor processing (Nature)",
+      "claim": "91% of 164 testable predictions matched experiments (84% without the optogenetic screen); 95% is agreement between model variants; shuffled weights activated MN9 in 1 of 100 runs; the model omits gap junctions, neuromodulation and internal state.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "shiu-repo",
+      "source_type": "code",
+      "source_url": "https://github.com/philshiu/Drosophila_brain_model",
+      "title": "Drosophila_brain_model repository",
+      "claim": "MIT-licensed Brian2 LIF model; defaults to FlyWire v630; v783 files included; last commit 2024-09-14.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "malecns-site",
+      "source_type": "data portal",
+      "source_url": "https://male-cns.janelia.org/",
+      "title": "Male CNS connectome (Janelia FlyEM)",
+      "claim": "MaleCNS v1.0 released 2026-06-08; the dataset is licensed CC BY.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "google-malecns-blog",
+      "source_type": "web",
+      "source_url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
+      "title": "Google Research blog on the male fruit fly connectome",
+      "claim": "Headline figures: over 166,000 neurons and 125 million synaptic connections.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "vfb-neuron-counts",
+      "source_type": "web",
+      "source_url": "https://www.virtualflybrain.org/docs/concepts/neuron-counts/",
+      "title": "Virtual Fly Brain: neuron counts",
+      "claim": "Independent reconciliation of fly connectome neuron counts by dataset and version.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "banc-project",
+      "source_type": "code",
+      "source_url": "https://github.com/htem/BANC-project",
+      "title": "BANC project repository",
+      "claim": "BANC data on Harvard Dataverse is CC BY 4.0; the README quotes about 188,000 neurons without stating the scope; no licence file for the code.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "janelia-manc",
+      "source_type": "data portal",
+      "source_url": "https://www.janelia.org/project-team/flyem/manc-connectome",
+      "title": "Janelia MANC connectome page",
+      "claim": "MANC (male adult nerve cord) is licensed CC BY; about 23,000 neurons.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "janelia-hemibrain",
+      "source_type": "data portal",
+      "source_url": "https://www.janelia.org/project-team/flyem/hemibrain",
+      "title": "Janelia hemibrain page",
+      "claim": "The hemibrain (about 25,000 neurons) is licensed CC BY.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "winding-2023",
+      "source_type": "paper",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7614541/",
+      "title": "Winding et al. 2023, The connectome of an insect brain (Science)",
+      "claim": "The larval L1 brain connectome has 3,016 neurons; the article is CC BY 4.0 and no separate data licence was found.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "eon-embodied",
+      "source_type": "web",
+      "source_url": "https://eon.systems/updates/embodied-brain-emulation",
+      "title": "Eon Systems: embodied brain emulation",
+      "claim": "By Eon's own description, hand-picked neurons switch pre-trained controllers; no body code is released, so the embodied fly is graded U.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "doomfly",
+      "source_type": "code",
+      "source_url": "https://github.com/nftechie/DOOMFLY",
+      "title": "DOOMFLY repository",
+      "claim": "Full MaleCNS v1.0 LIF model plays Doom through hand-chosen read-out neurons; the learning experiment was negative; grade B.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "neurocraft",
+      "source_type": "code",
+      "source_url": "https://github.com/evnsnclr/neurocraft-fly-public",
+      "title": "NeuroCraft Fly public repository",
+      "claim": "The repository contains documents and videos only; code and mod are \"coming soon\"; grade U.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "beat-saber-post",
+      "source_type": "post",
+      "source_url": "https://x.com/_lyraaaa_/status/2097527368919470162",
+      "title": "Beat Saber fly post",
+      "claim": "Viral claim with no code, weights or method published; grade U.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "desktop-fly",
+      "source_type": "code",
+      "source_url": "https://github.com/DenisSergeevitch/desktop-fly",
+      "title": "DesktopFly repository",
+      "claim": "A 668-neuron FlyWire circuit runs, but behaviour states come from an ordinary state machine and animation; grade B, borderline C.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flycraft",
+      "source_type": "code",
+      "source_url": "https://github.com/jjedwards2081/FlyCraft",
+      "title": "FlyCraft repository",
+      "claim": "Navigation decisions are computed in Python and injected into the read-out neurons, contradicting \"no behaviour is scripted\"; grade C.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flydrones",
+      "source_type": "demo",
+      "source_url": "https://spikecalls.github.io/FlyDrones/",
+      "title": "FlyDrones browser demo",
+      "claim": "The browser demo runs a synthetic 850-neuron network, not connectome data; grade C.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "bad-apple",
+      "source_type": "code",
+      "source_url": "https://github.com/kevinlinxc/badapple-fly",
+      "title": "Bad Apple fly repository",
+      "claim": "The image is produced mainly by forced stimulation of neurons under dark pixels; grade C.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyhard",
+      "source_type": "code",
+      "source_url": "https://github.com/MarkUnthank/flyhard",
+      "title": "Flyhard repository",
+      "claim": "All about 25.7 million connection gains are trained; parallel parking 0/50.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "mlx-shuffle",
+      "source_type": "code",
+      "source_url": "https://github.com/Kisame76/drosophila-brain-mlx",
+      "title": "drosophila-brain-mlx repository",
+      "claim": "Degree-preserving shuffle: MN9 67.30 Hz with real wiring vs 0 Hz shuffled (author-measured).",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-lab",
+      "source_type": "code",
+      "source_url": "https://github.com/Recluse/FLY-lab",
+      "title": "What a fly connectome adds to a body",
+      "claim": "Replayed brain output 0/30 and shuffled brains lose 69 and 100 points on turning tasks (author-measured).",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "larva-shuffles",
+      "source_type": "code",
+      "source_url": "https://github.com/cqw-acq/connectome-null-models",
+      "title": "Larva connectome vs shuffles",
+      "claim": "CIFAR-10 43.04% real vs 42.95% shuffled, p = 0.51 (recomputed by us from the published files).",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flybrain-reservoir",
+      "source_type": "code",
+      "source_url": "https://github.com/MilanKalajdzic/flybrain-reservoir",
+      "title": "FlyBrain reservoir",
+      "claim": "Memory capacity 2.2 with MaleCNS wiring vs 15.5 rewired (author-measured).",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flm",
+      "source_type": "code",
+      "source_url": "https://github.com/nftechie/flm",
+      "title": "FLM repository",
+      "claim": "Loss per token 1.3598 with fly wiring vs 1.3593 without the graph (author-measured).",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flys-hash",
+      "source_type": "code",
+      "source_url": "https://github.com/realgauravvyas/flys-hash-function",
+      "title": "The Fly's Hash Function",
+      "claim": "MNIST precision@16: real 0.499 < degree-preserving 0.552 < random 0.621 (author-measured).",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flygym",
+      "source_type": "code",
+      "source_url": "https://github.com/NeLy-EPFL/flygym",
+      "title": "FlyGym (NeuroMechFly v2)",
+      "claim": "FlyGym 2.1.0 (2026-06-24) is a breaking rewrite of the 1.x API; Python 3.12 to 3.14; Apache-2.0.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "state-of-brain-emulation",
+      "source_type": "report",
+      "source_url": "https://arxiv.org/abs/2510.15745",
+      "title": "State of Brain Emulation Report 2025",
+      "claim": "Field-level assessment of brain emulation; used as further reading for the \"mouse or human next?\" question.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "mineault-viral-sims",
+      "source_type": "article",
+      "source_url": "https://www.neuroai.science/p/are-flies-playing-beat-saber",
+      "title": "Mineault: deconstructing viral fly sims",
+      "claim": "Independent critique of viral fly simulations (read through a summary tool).",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ref-flybrain-info-projects",
+      "source_type": "directory",
+      "source_url": "https://flybrain.info/projects/",
+      "title": "flybrain.info projects list",
+      "claim": "Community list of fly brain projects used as a starting lead; every published entry was checked against its original source.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-brain-hub",
+      "source_type": "directory",
+      "source_url": "https://fly-brain-hub.vercel.app/",
+      "title": "Fly Brain Hub",
+      "claim": "Competing directory used as a lead only; its data is not copied.",
+      "accessed_at": "2026-09-28T05:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "shiu-issue-7",
+      "source_type": "issue",
+      "source_url": "https://github.com/philshiu/Drosophila_brain_model/issues/7",
+      "title": "Drosophila_brain_model issue #7",
+      "claim": "One sugar GRN ID from the v630 notebooks changed in v783; the successor ID fixes the KeyError (reproduced and fixed in our run).",
+      "accessed_at": "2026-09-28T05:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "shiu-issue-10",
+      "source_type": "issue",
+      "source_url": "https://github.com/philshiu/Drosophila_brain_model/issues/10",
+      "title": "Drosophila_brain_model issue #10",
+      "claim": "Upstream silence() zeroes only outgoing synapses, although the Readme says \"to and from\".",
+      "accessed_at": "2026-09-28T05:30:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "zenodo-v783",
+      "source_type": "data record",
+      "source_url": "https://zenodo.org/records/10676866",
+      "title": "Zenodo record of the FlyWire v783 connectivity export",
+      "claim": "Lists CC BY 4.0, which conflicts with the CC BY-NC 4.0 in the FlyWire guidelines (read through a summary tool); the stricter reading is followed.",
+      "accessed_at": "2026-09-28T05:30:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flygym-v2-release",
+      "source_type": "release notes",
+      "source_url": "https://github.com/NeLy-EPFL/flygym/releases/tag/v2.0.0",
+      "title": "FlyGym v2.0.0 release notes",
+      "claim": "FlyGym 2.0 was a full rewrite that dropped Gymnasium compliance, so older tutorials break.",
+      "accessed_at": "2026-09-28T05:30:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "brian2-install",
+      "source_type": "documentation",
+      "source_url": "https://brian2.readthedocs.io/en/stable/introduction/install.html",
+      "title": "Brian2 installation documentation",
+      "claim": "Without a C++ compiler Brian2 falls back to the slower numpy target; a compiler enables the Cython target.",
+      "accessed_at": "2026-09-28T05:30:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-fly-ocr-x",
+      "source_type": "video",
+      "source_url": "https://x.com/jerryjliu0/status/2099168936059437206",
+      "title": "Introducing FlyOCR - I trained a fly brain to read a PDF",
+      "claim": "Original upload by Jerry Liu (@jerryjliu0) on X on 13 Sep 2026, 0:40 long. Shows: A rendered fly \"reading\" a PDF: glyphs become receptor activity in a frozen MaleCNS circuit and a trained decoder outputs characters. Does not show: A small trained decoder does the classification; a plain pixel classifier (99%) and a small CNN (100%) beat it (89%) on digits.",
+      "accessed_at": "2026-09-28T10:30:13Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-neurocraft-minecraft-x",
+      "source_type": "video",
+      "source_url": "https://x.com/evnsnclr/status/2095975490708291948",
+      "title": "I’ve successfully run the full retained MaleCNS v1.0 fruit fly connectome, all 166,700 neurons…",
+      "claim": "Original upload by evnsnclr (@evnsnclr) on X on 4 Sep 2026, 0:09 long. Shows: A fly in a Minecraft box moving about while a panel shows modelled neural activity; claimed to run all 166,700 MaleCNS neurons. Does not show: Per its own README, hand-chosen readouts select scripted body programs and the body moves with inputs off; simulation code is not released.",
+      "accessed_at": "2026-09-28T10:25:14Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-fly-brain-minecraft-blendi-x",
+      "source_type": "video",
+      "source_url": "https://x.com/BlendiByl/status/2096436970113454230",
+      "title": "did something similar, with a map of the brain showing which neurons are firing in realtime and…",
+      "claim": "Original upload by Blendi (@BlendiByl) on X on 6 Sep 2026, 0:13 long. Shows: Minecraft fly with a live map of firing neurons and an on-screen readout of the chosen action. Does not show: A reflex layer is on by default and acts when the brain is quiet; looming and odour inputs are computed from game objects.",
+      "accessed_at": "2026-09-28T10:31:14Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-doomfly-announce-x",
+      "source_type": "video",
+      "source_url": "https://x.com/wormuth/status/2096409780961059119",
+      "title": "I'm training a fly brain to play Doom using the full MaleCNS v1.0 fruit fly connectome.",
+      "claim": "Original upload by Alex Wormuth (@wormuth) on X on 6 Sep 2026, 0:07 long. Shows: Seven-second first-person Doom clip with telemetry panels, announcing that game frames drive the MaleCNS model's sensory neurons and damage stimulates two dopamine cells. Does not show: The \"learning\" did not work by the author's own logs; read-out cells were chosen because they responded to the screen.",
+      "accessed_at": "2026-09-28T10:30:12Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-bad-apple-linguinelabs-x",
+      "source_type": "video",
+      "source_url": "https://x.com/linguinelabs/status/2096487329091441090",
+      "title": "Bad Apple but it's playing on a fly's brain",
+      "claim": "Original upload by Kevin (@linguinelabs) on X on 6 Sep 2026, 0:38 long. Shows: The \"Bad Apple!!\" animation appearing as a pattern of firing neurons in the fly model. Does not show: The image is mostly the stimulus: neurons under dark pixels are forced to fire. The README says it is not a real brain simulation.",
+      "accessed_at": "2026-09-28T10:25:14Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-fly64-mario-x",
+      "source_type": "video",
+      "source_url": "https://x.com/barrelshifter/status/2097004115826200898",
+      "title": "playing mario 64 using a fly's brain",
+      "claim": "Original upload by Jessica Paquette (@barrelshifter) on X on 7 Sep 2026, 1:20 long. Shows: Super Mario 64 controlled from fly-model neuron activity: Mario runs, jumps and bumps into walls. Does not show: Hand-chosen stick and button neurons with smoothing, deadzone and jump cooldown; no goal or benchmark.",
+      "accessed_at": "2026-09-28T10:25:14Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-beat-saber-lyra-x",
+      "source_type": "video",
+      "source_url": "https://x.com/_lyraaaa_/status/2097527368919470162",
+      "title": "the fly brain can play beat saber",
+      "claim": "Original upload by lyra bubbles (@_lyraaaa_) on X on 9 Sep 2026, 0:31 long. Shows: A fly-brain visualisation next to Beat Saber gameplay, with the fly apparently hitting blocks in time. Does not show: No code or method published; the author's replies reportedly say the motor output was fitted to a replay of the song.",
+      "accessed_at": "2026-09-28T10:25:13Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-doomfly-plays-doom-x",
+      "source_type": "video",
+      "source_url": "https://x.com/wormuth/status/2097711063135383642",
+      "title": "the fly brain can play doom",
+      "claim": "Original upload by Alex Wormuth (@wormuth) on X on 9 Sep 2026, 0:10 long. Shows: Ten-second clip of a rendered fly with a gun moving through a Doom level in third-person view, driven by the model's read-out neurons. Does not show: Hand-made frame-to-photoreceptor adapter and hand-picked output neurons; no shuffled-wiring control.",
+      "accessed_at": "2026-09-28T10:30:28Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-stonkfly-bitcoin-x",
+      "source_type": "video",
+      "source_url": "https://x.com/wormuth/status/2098012107652391357",
+      "title": "I gave the fly brain $100 to trade bitcoin.",
+      "claim": "Original upload by Alex Wormuth (@wormuth) on X on 10 Sep 2026, 0:10 long. Shows: Ten-second clip of the fly model trading bitcoin, with dopamine neurons stimulated on profit. Does not show: README: profitable learning has not been demonstrated; paper trading by default; a hand-made decoder and risk limits sit between neurons and orders.",
+      "accessed_at": "2026-09-28T10:25:14Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flyhard-parking-x",
+      "source_type": "video",
+      "source_url": "https://x.com/alright_mark/status/2098085928489177142",
+      "title": "the fly has completed* the ultimate test: parallel parking",
+      "claim": "Original upload by Breg Grockman (@alright_mark) on X on 10 Sep 2026, 0:25 long. Shows: A car in a driving sim attempting to parallel park under the fly-derived controller (the caption's asterisk hints it does not fully succeed). Does not show: All ~25.7 M edge gains were trained by behaviour cloning; repo reports 0/50 successful parallel parks.",
+      "accessed_at": "2026-09-28T10:25:15Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-bioreservoir-fly-oracle",
+      "source_type": "video",
+      "source_url": "https://github.com/igdigitallab/bioreservoir",
+      "title": "A question going through all 165,122 neurons",
+      "claim": "Original upload by IG Digital Lab on the project site, 0:24 long. Shows: 24-second visualisation of a question propagating through the MaleCNS model at fly.igdigi.com. Does not show: Controls have been run but not yet scored; so far real-brain answers look like the no-brain baseline (~0.50).",
+      "accessed_at": "2026-09-28T10:33:33Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-eon-first-multi-behavior-upload-x",
+      "source_type": "video",
+      "source_url": "https://x.com/alexwg/status/2030217301929132323",
+      "title": "The First Multi-Behavior Brain Upload",
+      "claim": "Original upload by Dr. Alex Wissner-Gross (@alexwg) on X on 7 Mar 2026, 0:43 long. Shows: Split screen: a simulated fly body walks in a sandbox, grooms and feeds, next to a point-cloud \"brain\" view labelled as a simultaneous brain emulation. Does not show: Does not show how behaviour is produced: by Eon's own write-up, a few hand-picked neurons switch pre-trained, imitation-learned motor controllers; body code is not public. Nothing is \"uploaded\".",
+      "accessed_at": "2026-09-28T10:25:15Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-eon-embodied-fly-site-video",
+      "source_type": "video",
+      "source_url": "https://eon.systems/updates/embodied-brain-emulation",
+      "title": "How the Eon Team Produced a Virtual Embodied Fly",
+      "claim": "Original upload by Eon Systems PBC on the project site, 0:40 long. Shows: Eon's own demo clip of the embodied fly (walking, grooming, feeding) that accompanies its technical explanation. Does not show: Same limits as the X version; read together with the page text, which calls vision \"somewhat decorative\" and the controllers pre-trained.",
+      "accessed_at": "2026-09-28T10:33:32Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-shiu-carboncopies-talk",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=T2rOHCd_yi4",
+      "title": "Dr. Philip Shiu - A computational model of the Drosophila brain (Brain Emulation Challenge workshop)",
+      "claim": "Original upload by Carboncopies Foundation on YouTube on 11 Mar 2026, 1:20:57 long. Shows: Recorded workshop talk and Q&A in which Shiu walks through the leaky integrate-and-fire whole-brain model and its feeding and grooming predictions. Does not show: Long lecture (81 min), not a demo clip. Recorded February 2025, uploaded March 2026.",
+      "accessed_at": "2026-09-28T10:32:32Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flyvis-turaga-ipam-talk",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=3_pieBNbsqQ",
+      "title": "Srini Turaga - How to simulate a connectome? - IPAM at UCLA",
+      "claim": "Original upload by Institute for Pure & Applied Mathematics (IPAM) on YouTube on 14 Feb 2024, 51:42 long. Shows: Lecture on simulating a connectome, covering the connectome-constrained model of the fly visual system that became flyvis. Does not show: Recorded February 2024, before the Nature paper; long lecture (52 min).",
+      "accessed_at": "2026-09-28T10:32:32Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flybody-janelia-virtual-fly",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=Kz4qi6b4-3U",
+      "title": "Artificial intelligence brings a virtual fly to life",
+      "claim": "Original upload by HHMI's Janelia Research Campus on YouTube on 15 Mar 2024, 2:43 long. Shows: Janelia's overview of the virtual fruit fly built with Google DeepMind: an anatomically detailed body in MuJoCo walking and flying under a trained neural-network controller. Does not show: Body plus reinforcement-learned controller; no connectome drives it.",
+      "accessed_at": "2026-09-28T10:28:53Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flybody-janelia-body-model",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=fNgRWlaowgw",
+      "title": "Anatomically accurate fruit fly body model",
+      "claim": "Original upload by HHMI's Janelia Research Campus on YouTube on 15 Mar 2024, 0:17 long. Shows: Short clip of the anatomically accurate fly body model moving through its joints. Does not show: Kinematic demonstration of the body only.",
+      "accessed_at": "2026-09-28T10:28:54Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flybody-deepmind-x",
+      "source_type": "video",
+      "source_url": "https://x.com/GoogleDeepMind/status/1915077085325922785",
+      "title": "We built an AI model to simulate how a fruit fly walks, flies and behaves – in partnership with…",
+      "claim": "Original upload by Google DeepMind (@GoogleDeepMind) on X on 23 Apr 2025, 0:16 long. Shows: Square clip of the MuJoCo fly following a real fly's flight path, with the target path shown as dots. Does not show: Controller trained on recorded fly behaviour; not a connectome simulation.",
+      "accessed_at": "2026-09-28T10:25:15Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-neuromechfly-v2-ramdya-x",
+      "source_type": "video",
+      "source_url": "https://x.com/ramdya/status/1704406125783781874",
+      "title": "A video of NeuroMechFly 2.0 in action",
+      "claim": "Original upload by Pavan Ramdya (@ramdya) on X on 20 Sep 2023, 0:12 long. Shows: NeuroMechFly 2.0 walking toward an odour source, steering around a pillar with vision, and crossing rugged terrain with leg adhesion. Does not show: Per the post, vision is handled by a CNN and turning by an RL-trained network; not a connectome controller.",
+      "accessed_at": "2026-09-28T10:32:20Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-neuromechfly-biorob-model",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=PNso5yt9_vM",
+      "title": "NeuroMechFly",
+      "claim": "Original upload by BIOROB on YouTube on 23 Apr 2024, 0:40 long. Shows: How the NeuroMechFly body was built: a fly scanned by X-ray microtomography, segmented and turned into a simulated skeleton. Does not show: About the original (v1) body model; no brain model involved.",
+      "accessed_at": "2026-09-28T10:28:55Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-neuromechfly-sfn-2024-workshop",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=S75sGbos6qw",
+      "title": "NeuroMechFly Workshop SFN 2024",
+      "claim": "Original upload by Pavan Ramdya on YouTube on 18 Oct 2024, 57:23 long. Shows: Hands-on FlyGym workshop: installation, the control loop, kinematic replay and a vision-guided following example. Does not show: Uses the older FlyGym 1.x API (now flygym-gymnasium); code may not run on FlyGym 2.x.",
+      "accessed_at": "2026-09-28T10:28:56Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flygym-overview-video",
+      "source_type": "video",
+      "source_url": "https://neuromechfly.org/",
+      "title": "FlyGym overview video",
+      "claim": "Original upload by Neuroengineering Laboratory (Ramdya lab), EPFL on the project site, 0:40 long. Shows: 40-second overview montage of simulated flies in FlyGym environments. Does not show: Showcase montage; behaviours come from the controllers used in each example.",
+      "accessed_at": "2026-09-28T10:33:32Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-hemibrain-overview-hhmi",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=PeyHKdmBpqY",
+      "title": "Fly Hemibrain Overview",
+      "claim": "Original upload by Howard Hughes Medical Institute (HHMI) on YouTube on 22 Jan 2020, 1:46 long. Shows: Overview of the hemibrain connectome: about 25,000 neurons in the central brain and the circuits it covers. Does not show: Partial brain; superseded by FlyWire and MaleCNS for whole-brain work.",
+      "accessed_at": "2026-09-28T10:28:57Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-manc-janelia-release",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=0sKpSVZacyA",
+      "title": "Janelia scientists and collaborators unveil fruit fly nerve cord connectome",
+      "claim": "Original upload by HHMI's Janelia Research Campus on YouTube on 6 Jun 2023, 1:17 long. Shows: Announcement film for the male adult nerve cord connectome (about 23,000 neurons). Does not show: Nerve cord only.",
+      "accessed_at": "2026-09-28T10:28:59Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flywire-connectome-princeton",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=J2xTkMsZchs",
+      "title": "The FlyWire Connectome",
+      "claim": "Original upload by FlyWire Princeton on YouTube on 2 Oct 2024, 2:14 long. Shows: Official FlyWire release film: renders of the whole-brain wiring diagram and why it matters. Does not show: A map of wiring, not a simulation.",
+      "accessed_at": "2026-09-28T10:28:48Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flywire-cambridge-short",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=QkyM6n6th6Y",
+      "title": "The first complete map of every neuron in an adult fly brain.",
+      "claim": "Original upload by Cambridge University on YouTube on 2 Oct 2024, 0:45 long. Shows: 45-second announcement of the first complete neuron-level map of an adult fly brain (about 140,000 neurons, 50 million connections). Does not show: Wiring diagram only.",
+      "accessed_at": "2026-09-28T10:29:01Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flywire-codex-search-tutorial",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=e37wayoF6dM",
+      "title": "FlyWire Codex Tutorial: Search (2026)",
+      "claim": "Original upload by FlyWire Princeton on YouTube on 23 Jun 2026, 6:01 long. Shows: Screen-recorded tutorial of the Codex search features, including AI-assisted queries. Does not show: Codex requires a Google sign-in.",
+      "accessed_at": "2026-09-28T10:29:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-banc-harvard-release",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=5v41ht_V9Vk",
+      "title": "Scientists Release \"Wiring Diagram\" Encompassing Entire Central Nervous System of an Adult Fruit Fly",
+      "claim": "Original upload by Harvard Medical School on YouTube on 26 Sep 2025, 1:13 long. Shows: Announcement of the brain-and-nerve-cord wiring diagram of an adult (female) fly. Does not show: Wiring diagram only.",
+      "accessed_at": "2026-09-28T10:29:02Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-malecns-janelia-cell-types",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=NFeNxwjzueg",
+      "title": "Male fruit fly CNS cell types",
+      "claim": "Original upload by HHMI's Janelia Research Campus on YouTube on 6 Oct 2025, 0:31 long. Shows: One example cell of every neuron type in the male central nervous system (brain and nerve cord), shown in turn. Does not show: Wiring diagram only.",
+      "accessed_at": "2026-09-28T10:28:50Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-malecns-janelia-visuomotor",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=TQ0T4C7noMo",
+      "title": "Example visual-motor pathway in the fruit fly",
+      "claim": "Original upload by HHMI's Janelia Research Campus on YouTube on 6 Oct 2025, 0:51 long. Shows: Traces one pathway from photoreceptors to a descending motor neuron through the male CNS. Does not show: Anatomy of a real pathway; game demos wire their own, often different, input and output neurons.",
+      "accessed_at": "2026-09-28T10:28:50Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-malecns-hhmi-male-brain",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=XqrmATUvHac",
+      "title": "Male Fly Brain Connectome",
+      "claim": "Original upload by Howard Hughes Medical Institute (HHMI) on YouTube on 3 Sep 2026, 0:50 long. Shows: Render of the male fly brain connectome, framed around comparing male and female brains. Does not show: Wiring diagram only; this is the dataset every September 2026 game demo loads.",
+      "accessed_at": "2026-09-28T10:32:25Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-malecns-hhmi-history",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=2uMQG5LHWwc",
+      "title": "The History of Fruit Fly Connectomics at Janelia",
+      "claim": "Original upload by Howard Hughes Medical Institute (HHMI) on YouTube on 3 Sep 2026, 6:43 long. Shows: Documentary on Janelia's fly-connectome effort from 2008 through the hemibrain to the complete male CNS. Does not show: History, not a demo.",
+      "accessed_at": "2026-09-28T10:32:26Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-malecns-google-research-short",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/shorts/HD9cDLgSe-o",
+      "title": "How we built two new brain maps using Google AI",
+      "claim": "Original upload by Google Research on YouTube on 3 Sep 2026, 2:24 long. Shows: Google Research Short on how AI-assisted reconstruction produced the male fly map and a companion brain map. Does not show: Methods story; no simulation.",
+      "accessed_at": "2026-09-28T10:28:55Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-ro0oney-minecraft-video",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=BUkLWjcoBc0",
+      "title": "I Put A Fly's Conscious Brain into Minecraft",
+      "claim": "Original upload by Ro0oney on YouTube on 7 Sep 2026, 19:59 long. Shows: 20-minute build story of putting a fly connectome simulation into Minecraft, ending with in-game footage. Does not show: Title claims consciousness; our is-it-real review found no study measuring or supporting that.",
+      "accessed_at": "2026-09-28T10:30:43Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-swot-flybridge-farming",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=70aWzwpmp20",
+      "title": "I Put a Fly’s Brain in Minecraft. It Learned to Farm.",
+      "claim": "Original upload by SWOT on YouTube on 22 Sep 2026, 34:00 long. Shows: 34-minute video attempting to train a fly-connectome agent in Minecraft to farm wheat. Does not show: Training is involved by the creator's description; not reviewed by us.",
+      "accessed_at": "2026-09-28T10:30:42Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-eon-drbenmiles-short",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/shorts/EZRQ-PZj6VM",
+      "title": "Scientist Just Uploaded Fly Brain to Computer",
+      "claim": "Repost by Dr Ben Miles on YouTube on 12 Mar 2026, 1:16 long. Shows: Presenter explains the Eon embodied-fly demo in about a minute, framed as a fly brain \"uploaded\" to a computer. Does not show: Title says \"uploaded fly brain\"; our verdict is that no upload happened and the mechanism is not inspectable (grade U).",
+      "accessed_at": "2026-09-28T10:29:03Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-eon-rowancheung-tiktok",
+      "source_type": "video",
+      "source_url": "https://www.tiktok.com/@rowancheung/video/7616096338123476254",
+      "title": "Researchers at Eon Systems have created a virtual fruit fly controlled by a simulated brain…",
+      "claim": "Repost by Rowan Cheung (@rowancheung) on TikTok on 11 Mar 2026, 1:30 long. Shows: Vertical re-edit of Eon's embodied-fly footage with voice-over; the caption lists the model's limitations (simplified neurons, few behaviours). Does not show: Second-hand; the caption is more careful than the headline framing but still says the fly is \"controlled by a simulated brain\" without mentioning the pre-trained controllers.",
+      "accessed_at": "2026-09-28T10:31:14Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flywire-science-tiktok",
+      "source_type": "video",
+      "source_url": "https://www.tiktok.com/@sciencemagazine/video/7465735002332908831",
+      "title": "Researchers have reconstructed the complete wiring diagram, or connectome, of the fruit #fly’s…",
+      "claim": "Repost by Science Magazine (@sciencemagazine) on TikTok on 30 Jan 2025, 0:42 long. Shows: Vertical explainer comparing the fly connectome to a city map, using FlyWire renders. Does not show: Wiring diagram only.",
+      "accessed_at": "2026-09-28T10:31:14Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-betterstack-internet-torturing-fly",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=KOwsVDogscY",
+      "title": "The Internet Is Torturing a Fruit Fly... (opensource brain)",
+      "claim": "Commentary video by Better Stack on YouTube on 12 Sep 2026, 6:25 long. Shows: Six-minute explainer of the MaleCNS release and the wave of Minecraft, Beat Saber, Doom and trading demos. Does not show: Commentary; check each project's own grade.",
+      "accessed_at": "2026-09-28T10:29:05Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-pcgamer-doom-mario-beatsaber-short",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/shorts/bMQNzUrmtd4",
+      "title": "Software engineers have made a fruit fly play Doom, Mario 64, and Beatsaber",
+      "claim": "Commentary video by PC Gamer on YouTube on 11 Sep 2026, 0:58 long. Shows: Games-press summary of fly-brain demos playing Doom, Mario 64 and Beat Saber. Does not show: News framing; does not show how inputs and outputs were wired.",
+      "accessed_at": "2026-09-28T10:29:10Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "googleai-roundup-thread",
+      "source_type": "social post",
+      "source_url": "https://x.com/GoogleAI/status/2098109357624095155",
+      "title": "Google AI roundup thread of fly brain demos (X)",
+      "claim": "Google AI's own thread quoting the September 2026 fly brain demos; used as an index, it led to the original DOOMFLY clip.",
+      "accessed_at": "2026-09-28T10:30:12Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    }
+  ]
+}

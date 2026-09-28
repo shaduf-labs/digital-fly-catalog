@@ -1,0 +1,364 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://shaduf.ai/p/digital-fly-catalog/assets/data/projects.schema.json",
+ "title": "Digital Fly Lab catalogue record (published 2026-09-28)",
+ "description": "One record per catalogued project. Dates are ISO 8601. 'last_commit' and 'last_release' describe upstream activity; 'last_verified' and 'grade_date' describe our own checks. Values quoted from upstream are in 'claim'; everything else is our own wording.",
+ "type": "object",
+ "required": [
+  "id",
+  "name",
+  "type",
+  "summary",
+  "dataset",
+  "release",
+  "evidence_grade",
+  "grade_basis",
+  "grade_date",
+  "code_licence",
+  "data_licence",
+  "last_commit",
+  "last_release",
+  "link_status",
+  "last_verified",
+  "sources"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9-]*$",
+   "description": "Stable lowercase slug. Never reused for another project."
+  },
+  "name": {
+   "type": "string"
+  },
+  "type": {
+   "enum": [
+    "dataset",
+    "data-tool",
+    "model",
+    "body",
+    "demo-game",
+    "demo-desktop",
+    "demo-art",
+    "browser-demo",
+    "research",
+    "directory"
+   ]
+  },
+  "author_or_org": {
+   "type": "string"
+  },
+  "summary": {
+   "type": "string",
+   "description": "One or two sentences in our own words."
+  },
+  "claim": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "properties": {
+    "text": {
+     "type": "string"
+    },
+    "url": {
+     "type": "string",
+     "format": "uri"
+    }
+   },
+   "description": "Short quote of the project's own headline claim, with its URL. A claim, not a finding."
+  },
+  "dataset": {
+   "type": "string",
+   "description": "FlyWire FAFB | MaleCNS | BANC | MANC | hemibrain | FANC | larval L1 | several (...) | none | unknown"
+  },
+  "release": {
+   "type": "string",
+   "description": "Data release/version, e.g. 'v783', 'v1.0', 'not stated', 'n/a'."
+  },
+  "evidence_grade": {
+   "enum": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "U",
+    "n/a"
+   ],
+   "description": "How well the project's own claim of fly-brain-driven behaviour is supported (not quality or popularity). A: connectome + neural dynamics compared with real-fly data or a proper control (negative results included). B: named connectome release simulated and driving the behaviour, with hand-made input/output mapping, no control. C: subset/stand-in/decorative network, or connectome only triggers scripted programs. D: ordinary game logic, RL without connectome constraints, or LLM; neurons cosmetic. U: mechanism could not be inspected. n/a: infrastructure (datasets, tools, bodies, simulators)."
+  },
+  "mechanism": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "properties": {
+    "wiring": {
+     "type": "string"
+    },
+    "neuron_model": {
+     "type": "string"
+    },
+    "input_mapping": {
+     "type": "string",
+     "description": "hand-made | learned | none (+ detail)"
+    },
+    "output_mapping": {
+     "type": "string",
+     "description": "hand-made | learned | none (+ detail)"
+    },
+    "trained_parts": {
+     "type": "string"
+    },
+    "body": {
+     "type": "string"
+    },
+    "scripted_parts": {
+     "type": "string"
+    }
+   }
+  },
+  "grade_basis": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "What we inspected (file:line, URL), each with a reliability label [direct] / [fetch-summary] / [search-summary]."
+  },
+  "grade_date": {
+   "type": "string",
+   "format": "date"
+  },
+  "measured_result": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Numbers reported from a control or benchmark, with location. Measured by the author unless stated."
+  },
+  "try_url": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "format": "uri",
+   "description": "No-install / browser option."
+  },
+  "try_status": {
+   "type": "string",
+   "description": "e.g. 'page responds (HTTP 200, checked 2026-09-28), not played by us'."
+  },
+  "code_url": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "format": "uri"
+  },
+  "code_licence": {
+   "type": "string",
+   "description": "SPDX id from the LICENSE file, or 'none found', 'custom: ...', 'n/a (no code repository)'."
+  },
+  "code_licence_source": {
+   "type": "string"
+  },
+  "data_licence": {
+   "type": "string"
+  },
+  "platform": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "enum": [
+     "browser",
+     "macOS",
+     "Windows",
+     "Linux",
+     "Colab",
+     "iOS",
+     "Android",
+     "other"
+    ]
+   }
+  },
+  "gpu": {
+   "enum": [
+    "required",
+    "optional",
+    "none",
+    "not stated",
+    null
+   ]
+  },
+  "download_size": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "last_commit": {
+   "oneOf": [
+    {
+     "type": "object",
+     "properties": {
+      "date": {
+       "type": "string"
+      },
+      "hash": {
+       "type": "string"
+      },
+      "branch": {
+       "type": "string"
+      }
+     }
+    },
+    {
+     "const": "n/a"
+    }
+   ],
+   "description": "Upstream: last commit on the default branch (committer date)."
+  },
+  "pushed_at": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Upstream: GitHub pushed_at (any branch)."
+  },
+  "last_release": {
+   "oneOf": [
+    {
+     "type": "object",
+     "properties": {
+      "tag": {
+       "type": "string"
+      },
+      "date": {
+       "type": "string"
+      },
+      "url": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     }
+    },
+    {
+     "enum": [
+      "none",
+      "n/a"
+     ]
+    }
+   ]
+  },
+  "created_at": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Upstream repository creation date. NOT an update date."
+  },
+  "stars": {
+   "type": [
+    "integer",
+    "null"
+   ]
+  },
+  "stars_date": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "archived": {
+   "type": [
+    "boolean",
+    "null"
+   ]
+  },
+  "paper_url": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "peer_review": {
+   "enum": [
+    "peer-reviewed",
+    "preprint",
+    "none"
+   ]
+  },
+  "link_status": {
+   "type": "object",
+   "required": [
+    "url",
+    "status",
+    "http_code",
+    "checked_at"
+   ],
+   "properties": {
+    "url": {
+     "type": "string"
+    },
+    "status": {
+     "enum": [
+      "ok",
+      "redirect",
+      "4xx",
+      "5xx",
+      "blocked",
+      "error"
+     ]
+    },
+    "http_code": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    },
+    "final_url": {
+     "type": "string"
+    },
+    "checked_at": {
+     "type": "string"
+    }
+   }
+  },
+  "last_verified": {
+   "type": "string",
+   "format": "date",
+   "description": "Our last HTTP check of this record's links."
+  },
+  "sources": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "string"
+   }
+  },
+  "notes_limitations": {
+   "type": "string"
+  },
+  "grade_note": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Publisher note for borderline or reviewed grades. The grade itself is unchanged."
+  },
+  "try_note": {
+   "type": "string",
+   "description": "Access note for the try link, for example a required sign-in."
+  },
+  "related_paper_url": {
+   "type": [
+    "string",
+    "null"
+   ]
+  }
+ }
+}

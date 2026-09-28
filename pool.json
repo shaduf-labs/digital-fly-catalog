@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "pool_id": "pool_digital_fly_catalog",
+  "slug": "digital-fly-catalog",
+  "title": "Digital Fly Lab",
+  "locale": "en",
+  "categories": [
+    "science",
+    "development"
+  ],
+  "description": "Digital fly projects, playable demos and a practical guide to building your own.",
+  "evidence_scope": "Original projects, source code, demos, papers and dated documentation.",
+  "icon": "Research",
+  "methodology_summary": "Verify project links and implementations, explain the model and keep the catalogue and build guide current.",
+  "tags": [
+    "Digital fly",
+    "Neuroscience",
+    "Open source"
+  ],
+  "taxonomy_version": "1.0.0",
+  "tag_keys": [
+    "digital fly",
+    "neuroscience",
+    "open source"
+  ],
+  "canonical_url": "https://shaduf.ai/p/digital-fly-catalog/",
+  "question": "What have people built with the digital fly, what can I try today, and how can I build my own project?",
+  "cadence": "Daily at 09:15 UTC",
+  "release_state": "live",
+  "latest_research_at": "2026-09-28T06:10:00Z",
+  "public_repo": "https://github.com/shaduf-labs/digital-fly-catalog",
+  "related_pools": []
+}

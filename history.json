@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "runs": [
+    {
+      "run_id": "run:manual:6ca7a606812d3fdd44e84cf26695ff96",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-28T10:16:46Z",
+      "completed_at": "2026-09-28T11:13:00Z",
+      "title": "Video gallery: 40 fruit fly brain videos checked, and an inline-player test",
+      "summary": "40 videos matched to the catalogue (35 original uploads, 5 reposts or commentary; 21 of 58 entries now have a video), each with its catalogue grade and what it does not show. YouTube, Vimeo, TikTok and X players all failed inside the site's sandboxed frames, so videos open on their original platform.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-09-28-video-gallery/",
+      "entrypoint": "reports/2026-09-28-video-gallery/index.html"
+    },
+    {
+      "run_id": "run:manual:9586e39a131a3e2e4ec9c56896a26488",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-27T16:20:34Z",
+      "completed_at": "2026-09-28T06:10:00Z",
+      "title": "First catalogue check: fruit fly brain simulation projects, viral claims and a tested beginner project",
+      "summary": "58 projects graded from code, verdicts on 12 viral claims, 13 controlled studies, 7 connectome datasets compared, and a beginner simulation run from an empty folder on 2 CPUs (MN9 85.2 Hz with real wiring, 0 Hz with shuffled wiring).",
+      "report_path": "/p/digital-fly-catalog/reports/2026-09-27-bootstrap/",
+      "entrypoint": "reports/2026-09-27-bootstrap/index.html"
+    }
+  ]
+}

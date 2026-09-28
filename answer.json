@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "status": "current",
+  "current_answer": "People have built games, browser demos, desktop apps, art, brain engines and research tests on real fruit fly connectomes, mainly FlyWire (female brain) and MaleCNS (male brain and nerve cord). We checked 58 of them on 28 September 2026: 28 can be opened in a browser or free notebook without installing anything. Most viral demos really run a simulated fly brain, but a person chose which neurons receive the input and which neurons act, and several get most of their movement from scripts or trained parts. No fly has been \"uploaded\", and the three most-watched demo videos (Beat Saber, Bad Apple and NeuroCraft) are the ones we could verify least. Where studies use shuffled-wiring controls, the real wiring matters for fly reflexes but has not helped general machine-learning tasks. A beginner can run the published whole-brain model on a CPU: in our test on 2 CPUs (Linux, 28 minutes) sugar input drove the feeding motor neuron to 85.2 Hz, and shuffled wiring dropped it to 0 Hz.",
+  "catalogue_card": {
+    "question": "What have people built with the digital fruit fly brain, and what is real?",
+    "text": "58 fruit fly brain simulation projects checked in code: 28 you can try online, 40 demo and lab videos with evidence grades, and seven connectome datasets compared."
+  },
+  "summary": [
+    "58 entries checked on 28 Sep 2026: 12 grade A, 12 B, 10 C, 1 D, 5 U and 18 datasets or tools (not graded).",
+    "28 entries have a no-install link; all answered our HTTP check, but none was played by us.",
+    "In viral demos a real connectome usually runs, but people chose the input and output neurons; DesktopFly, FlyCraft, Bad Apple and FlyDrones get much of their visible behaviour from scripts, stimulus or a synthetic network.",
+    "Beat Saber, NeuroCraft and Eon's embodied fly have no inspectable code (grade U).",
+    "Video gallery (28 Sep 2026): 40 videos, 35 of them original uploads by the project's author, lab or institution; 21 of 58 catalogue entries have at least one video. Each card shows the project's grade from the catalogue and what the video does not show.",
+    "The most-watched demo clips are the least checkable: Beat Saber (about 23 million views) and NeuroCraft are grade U, and Bad Apple is grade C because its picture is mostly the stimulus.",
+    "\"91%\" is the share of 164 testable predictions of the brain-only Shiu et al. 2024 model that matched experiments; \"95%\" compares two versions of the model and is not an accuracy.",
+    "Controlled studies: shuffled wiring abolishes fly reflexes (for example MN9 0 Hz vs 67.30 Hz), but fly wiring did no better than random or shuffled wiring on reservoir, language-model and hashing tasks (authors' numbers).",
+    "FlyWire data is CC BY-NC 4.0 (non-commercial); MaleCNS, MANC, hemibrain and BANC data are CC BY.",
+    "Build your own, tested 28 Sep 2026 on Linux with 2 CPUs and no GPU: the Shiu et al. model on FlyWire v783 gave MN9 85.2 ± 3.2 Hz with sugar input at 150 Hz, 0 Hz without input, and 0 Hz in 6 of 6 trials with shuffled wiring; 6 of 6 tests passed."
+  ],
+  "uncertainty": [
+    "No demo was played in a real browser; \"page responds\" is an HTTP check only.",
+    "Control and benchmark numbers are the authors' own; we re-computed only one statistic (larva vs shuffles).",
+    "Four grade A entries are borderline (Fly Worker, fly-brain by Lulzx, The Fly's Hash Function, Fly OCR); DOOMFLY was lowered from a proposed A to B.",
+    "Why the Shiu v783 file has 616 fewer neurons than the FlyWire v783 release is not established; the scope of BANC's \"approximately 188,000 neurons\" is not stated.",
+    "The Beat Saber explanation and the MICrONS figures rest on search summaries only.",
+    "About 50 further candidates were deferred to the next run.",
+    "The Build your own guide is untested on macOS, Windows/WSL, Colab and machines with a C++ compiler; GitHub Pages publishing is untested.",
+    "FlyWire data licence conflict: CC BY-NC 4.0 in the official guidelines vs CC BY 4.0 on the Zenodo v783 record; we follow the stricter, non-commercial reading.",
+    "Video summaries rest on titles, descriptions, captions and thumbnails; we did not watch every video frame by frame. View counts are snapshots from 28 Sep 2026.",
+    "Videos cannot play inside the site: YouTube, Vimeo, TikTok and X players failed in the site's sandboxed frames (tested in headless Chromium only; Safari, Firefox and mobile untested). YouTube and X thumbnails are loaded from their image servers."
+  ],
+  "checked_at": "2026-09-28T11:13:00Z",
+  "meaningfully_updated_at": "2026-09-28T11:13:00Z",
+  "freshness_note": "Catalogue checked 28 Sep 2026 (58 entries); video gallery checked 28 Sep 2026 (40 videos)."
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "items": [
+    {
+      "change_id": "2026-09-28-video-gallery",
+      "changed_at": "2026-09-28T11:13:00Z",
+      "summary": "New Video gallery: 40 fruit fly brain videos (Doom, Minecraft, Beat Saber, Eon and the lab films), each with its project's evidence grade from the catalogue and what the video does not show. Videos open on their original platform.",
+      "path": "/p/digital-fly-catalog/gallery/"
+    },
+    {
+      "change_id": "2026-09-28-first-release",
+      "changed_at": "2026-09-28T06:10:00Z",
+      "summary": "First release: 58 fruit fly brain simulation projects, datasets and tools, each with an evidence grade from code, true update dates, licence and link check (28 Sep 2026).",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-09-28-build-your-own",
+      "changed_at": "2026-09-28T06:10:00Z",
+      "summary": "Build your own: a tested beginner guide that runs the fruit fly whole-brain model from an empty folder on 2 CPUs, with exact commands, expected output, a shuffled-wiring control, tests and the full source.",
+      "path": "/p/digital-fly-catalog/build-your-own/"
+    },
+    {
+      "change_id": "2026-09-28-is-it-real",
+      "changed_at": "2026-09-28T06:10:00Z",
+      "summary": "Verdicts on 12 viral fly-brain claims and 13 controlled or negative studies, plus what \"91%\" and \"95%\" really mean.",
+      "path": "/p/digital-fly-catalog/is-it-real/"
+    },
+    {
+      "change_id": "2026-09-28-datasets",
+      "changed_at": "2026-09-28T06:10:00Z",
+      "summary": "Seven fly connectome datasets compared with data licences (FlyWire is CC BY-NC 4.0) and a reconciliation of the quoted neuron counts.",
+      "path": "/p/digital-fly-catalog/how-it-works/"
+    },
+    {
+      "change_id": "2026-09-28-ways-to-try",
+      "changed_at": "2026-09-28T06:10:00Z",
+      "summary": "28 no-install ways to try a fly brain, grouped by what you can do, with honest check labels.",
+      "path": "/p/digital-fly-catalog/ways-to-try/"
+    },
+    {
+      "change_id": "2026-09-28-agents-json",
+      "changed_at": "2026-09-28T06:10:00Z",
+      "summary": "Machine-readable catalogue (projects.json and its JSON Schema) and instructions for AI agents.",
+      "path": "/p/digital-fly-catalog/for-ai-agents/"
+    },
+    {
+      "change_id": "2026-09-28-report",
+      "changed_at": "2026-09-28T06:10:00Z",
+      "summary": "First research report: methods, findings, open conflicts and next runs.",
+      "path": "/p/digital-fly-catalog/reports/2026-09-27-bootstrap/"
+    }
+  ]
+}
