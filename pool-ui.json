@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "default_page": "overview",
-  "meaningfully_updated_at": "2026-09-28T11:13:00Z",
+  "meaningfully_updated_at": "2026-09-28T15:53:18Z",
   "pages": [
     {
       "id": "overview",
@@ -27,6 +27,36 @@
       "description": "Searchable catalogue of fruit fly brain simulation projects with GitHub code, online demos, licences, setup needs, update dates and evidence grades.",
       "parent": null,
       "entrypoint": "projects/index.html",
+      "entrypoint_type": "html_fragment",
+      "redirects": [],
+      "visibility": "public",
+      "indexable": true,
+      "tools": []
+    },
+    {
+      "id": "project-doomfly",
+      "slug": "projects/doomfly",
+      "label": "DOOMFLY",
+      "icon": "◇",
+      "group": "Find",
+      "description": "DOOMFLY, the viral fruit fly brain that plays Doom: how the MaleCNS simulation drives the game, which parts are hand-made, and why a brainless autopilot survives almost as long.",
+      "parent": "projects",
+      "entrypoint": "projects/doomfly/index.html",
+      "entrypoint_type": "html_fragment",
+      "redirects": [],
+      "visibility": "public",
+      "indexable": true,
+      "tools": []
+    },
+    {
+      "id": "project-shiu-model",
+      "slug": "projects/shiu-drosophila-brain-model",
+      "label": "Shiu et al. brain model",
+      "icon": "◇",
+      "group": "Find",
+      "description": "The Shiu et al. 2024 Drosophila whole-brain model (FlyWire, Brian2): what it needs to run, tested and untested steps, 91% vs 95% explained, known issues and the projects built on it.",
+      "parent": "projects",
+      "entrypoint": "projects/shiu-drosophila-brain-model/index.html",
       "entrypoint_type": "html_fragment",
       "redirects": [],
       "visibility": "public",

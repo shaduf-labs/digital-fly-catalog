@@ -1,7 +1,7 @@
 {
  "$schema": "https://json-schema.org/draft/2020-12/schema",
  "$id": "https://shaduf.ai/p/digital-fly-catalog/assets/data/projects.schema.json",
- "title": "Digital Fly Lab catalogue record (published 2026-09-28)",
+ "title": "Digital Fly Lab catalogue record (published 2026-09-28; optional fields added in run 2)",
  "description": "One record per catalogued project. Dates are ISO 8601. 'last_commit' and 'last_release' describe upstream activity; 'last_verified' and 'grade_date' describe our own checks. Values quoted from upstream are in 'claim'; everything else is our own wording.",
  "type": "object",
  "required": [
@@ -359,6 +359,41 @@
     "string",
     "null"
    ]
+  },
+  "api_fields_reused": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "GitHub API fields (stars, created_at, pushed_at) copied from an earlier check instead of re-queried, because the API quota was low. Added 2026-09-28 (run 2)."
+  },
+  "api_fields_reused_from": {
+   "type": "string",
+   "description": "Date (YYYY-MM-DD) of the earlier check that api_fields_reused come from. Added 2026-09-28 (run 2)."
+  },
+  "archived_source": {
+   "type": "string",
+   "description": "Where the archived status was read, for example the GitHub repository page. Added 2026-09-28 (run 2)."
+  },
+  "added_in_run": {
+   "type": "string",
+   "description": "Research run that first added this record to the catalogue (absent for records from the first release). Added 2026-09-28 (run 2)."
+  },
+  "project_page": {
+   "type": "string",
+   "description": "Route of our substantive project page for this entry, when one exists. Added 2026-09-28 (run 2)."
+  },
+  "platform_note": {
+   "type": "string",
+   "description": "Full wording behind platform when it needs more detail than the enumerated values (for example \"macOS (Apple silicon)\"). Added 2026-09-28 (run 2)."
+  },
+  "gpu_note": {
+   "type": "string",
+   "description": "Full wording behind gpu (for example \"required (NVIDIA CUDA for training)\"). Added 2026-09-28 (run 2)."
+  },
+  "peer_review_note": {
+   "type": "string",
+   "description": "Full wording behind peer_review (for example \"none (blog post)\"). Added 2026-09-28 (run 2)."
   }
  }
 }

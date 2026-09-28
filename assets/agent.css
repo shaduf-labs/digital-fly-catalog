@@ -799,3 +799,30 @@
 [data-agent-document] .dfl-vgnote { display: block; color: var(--dfl-amber); font-size: 12.5px; line-height: 1.5; }
 
 [data-agent-document] .dfl-meta li > span { overflow-wrap: anywhere; }
+
+/* ---- run 2 (2026-09-28): Doom control chart, new-entry tag, D-grade bars, latest box, project pages */
+[data-agent-document] .dfl-svg .bar-real { fill: var(--dfl-grade-a); }
+[data-agent-document] .dfl-svg .bar-auto { fill: #fff; stroke: var(--dfl-handmade-ink); stroke-width: 2; stroke-dasharray: 5 3; }
+[data-agent-document] .dfl-svg .bar-ctl { fill: var(--dfl-faint); }
+[data-agent-document] .dfl-vbar .fill.g-d { fill: var(--dfl-grade-d); stroke: var(--dfl-muted); stroke-width: 1; }
+[data-agent-document] .dfl-tag.is-new { background: var(--dfl-blue-bg); color: var(--dfl-blue); border-color: transparent; }
+[data-agent-document] .dfl-latest {
+  margin: 20px 0 24px;
+  padding: 16px 18px;
+  border: 1px solid var(--dfl-line-strong);
+  border-radius: var(--dfl-radius);
+  background: var(--dfl-tint);
+}
+[data-agent-document] .dfl-latest > h2 { margin: 0 0 6px; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--dfl-blue); }
+[data-agent-document] .dfl-latest > p { margin: 0 0 10px; }
+[data-agent-document] .dfl-latest .dfl-figure { margin: 12px 0; }
+[data-agent-document] .dfl-latest ul { margin: 8px 0 0; padding-left: 1.2em; }
+[data-agent-document] .dfl-latest li { margin: 0 0 4px; overflow-wrap: anywhere; }
+[data-agent-document] .dfl-keyfacts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 18px; margin: 16px 0; padding: 0; list-style: none; }
+[data-agent-document] .dfl-keyfacts li { margin: 0; padding: 10px 0; border-top: 2px solid var(--dfl-ink); }
+[data-agent-document] .dfl-keyfacts strong { display: block; font-size: 22px; line-height: 1.15; font-weight: 650; color: var(--dfl-ink); }
+[data-agent-document] .dfl-keyfacts span { display: block; margin-top: 4px; font-size: 12px; line-height: 1.45; color: var(--dfl-muted); font-family: var(--dfl-ui); }
+@container shaduf-document (max-width: 36em) { [data-agent-document] .dfl-keyfacts { grid-template-columns: minmax(0, 1fr); } }
+[data-agent-document] .dfl-crumb { margin: 0 0 6px; font-size: 13px; color: var(--dfl-muted); }
+[data-agent-document] .dfl-timeline ul.dfl-newlist { list-style: none; padding-left: 0; }
+[data-agent-document] .dfl-newlist .dfl-grade { margin-right: 4px; }

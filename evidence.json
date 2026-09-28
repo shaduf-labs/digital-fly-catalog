@@ -706,8 +706,8 @@
       "source_type": "video",
       "source_url": "https://www.youtube.com/watch?v=70aWzwpmp20",
       "title": "I Put a Fly’s Brain in Minecraft. It Learned to Farm.",
-      "claim": "Original upload by SWOT on YouTube on 22 Sep 2026, 34:00 long. Shows: 34-minute video attempting to train a fly-connectome agent in Minecraft to farm wheat. Does not show: Training is involved by the creator's description; not reviewed by us.",
-      "accessed_at": "2026-09-28T10:30:42Z",
+      "claim": "Original video by SWOT on YouTube; now linked to catalogue entry FlyBridge (grade C): a trained 1,536-neuron FlyWire v783 subset inside a policy network, with scripted walking, aiming and clicking.",
+      "accessed_at": "2026-09-28T15:26:30Z",
       "relation": "context",
       "publication_basis": "linked-summary"
     },
@@ -768,6 +768,196 @@
       "title": "Google AI roundup thread of fly brain demos (X)",
       "claim": "Google AI's own thread quoting the September 2026 fly brain demos; used as an index, it led to the original DOOMFLY clip.",
       "accessed_at": "2026-09-28T10:30:12Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "doom-fly-control",
+      "source_type": "code",
+      "source_url": "https://github.com/gabrycina/doom-fly-control",
+      "title": "doom-fly-control repository (commit 6b22922)",
+      "claim": "Third-party controls with DOOMFLY's own code: real wiring 53.3 s survival, brainless constant autopilot 51.9 s, blind 10.5 s, shuffled 6.7 s, no connections 5.5 s; doomfly-rl scores the same with real, shuffled or no wiring; autopilot constants taken from the real fly's average output (author-measured, not reproduced by us).",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "doomfly-rl",
+      "source_type": "code",
+      "source_url": "https://github.com/nonatofabio/doomfly-rl",
+      "title": "doomfly-rl repository",
+      "claim": "Trained encoder, fly-wired network and policy play Doom; shuffled and no-connectome controls score within one standard deviation (docs/controls.md; author-measured).",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-self-driving",
+      "source_type": "code",
+      "source_url": "https://github.com/suanmiao/fly-self-driving",
+      "title": "Fly Self Driving repository",
+      "claim": "Trained MaleCNS rate network steers a car: 20/19/19 of 20 vs 16/20 rewired on the traffic task; headline numbers only in docs/results.md; one training seed (author-measured).",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flydoom-mutkuoz",
+      "source_type": "code",
+      "source_url": "https://github.com/mutkuoz/flydoom",
+      "title": "flydoom (mutkuoz) repository",
+      "claim": "Untrained FlyWire v783 whole-brain Doom player beats a command-matched random agent only narrowly; mirrored eyes remove the advantage; no licence file (author-measured).",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyconnectome-nulls",
+      "source_type": "code",
+      "source_url": "https://github.com/gyujeongion/flyconnectome-nulls",
+      "title": "flyconnectome-nulls repository",
+      "claim": "Standard random-wiring nulls out-evolve a compressed FlyWire v783 brain (1.78 and 1.77 vs 1.57); boundary-preserving nulls tie (author-measured).",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-exe",
+      "source_type": "code",
+      "source_url": "https://github.com/Ibtisam-Mohammad/Fly.exe",
+      "title": "Fly.exe repository",
+      "claim": "Full MaleCNS v1.0 LIF simulation drives twelve FlyGym bodies through hand-picked descending neurons; only control removes the stimulus (12/12 vs 0/12); GPL-2.0.",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flybridge",
+      "source_type": "code",
+      "source_url": "https://github.com/swotstudio/FlyBridge",
+      "title": "FlyBridge repository",
+      "claim": "A trained 1,536-neuron FlyWire v783 smell-pathway subset inside a policy network; scripted walking, aiming and clicking; no stored shuffled-wiring comparison; grade C.",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-api",
+      "source_type": "code",
+      "source_url": "https://github.com/dtch1997/fly-api",
+      "title": "fly-api repository",
+      "claim": "Wraps the Shiu model for sugar to MN9; walking and visual demos use no connectome; navigation uses an 8,991-neuron subnet with a hand-set gain; grade C.",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "embodied-fly-brain-erojas",
+      "source_type": "code",
+      "source_url": "https://github.com/erojasoficial-byte/fly-brain",
+      "title": "fly-brain (erojas) repository",
+      "claim": "Full FlyWire v783 PyTorch LIF model steers a NeuroMechFly body, but grooming, flight, feeding and escape are scripted routines started at thresholds; grade C (borderline).",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "haltere",
+      "source_type": "code",
+      "source_url": "https://github.com/skulitom/haltere",
+      "title": "Haltere repository",
+      "claim": "30,000-neuron MaleCNS subgraph trained by imitation to fly an FPV drone; hand-written visual pilot sets the goal; 0/2 races vs 1/2 for a PD controller (author-measured).",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "kick-the-fly",
+      "source_type": "code",
+      "source_url": "https://github.com/legendarylolo318-cloud/kick-the-fly",
+      "title": "Kick the Fly repository",
+      "claim": "Live 166,700-neuron MaleCNS simulation triggers scripted game-physics reactions; circuit checks against matched control neurons with published failures; grade C (borderline).",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flybrain-halflife",
+      "source_type": "code",
+      "source_url": "https://github.com/Yusuftmle/FlyBrain-HalfLife",
+      "title": "FlyBrain-HalfLife repository (commit 0ba5548)",
+      "claim": "Default network is generated from region sizes, not loaded from MaleCNS v1.0; real data only if the user supplies an npz file; steering and attacks computed outside the network; grade D.",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flybrain-robot-bridge",
+      "source_type": "code",
+      "source_url": "https://github.com/Frankweb33/flybrain-robot-bridge",
+      "title": "FlyBrain Robot Bridge repository",
+      "claim": "Only working brain backend is eight hand-set units driven by optical flow; the MaleCNS backend is an empty stub; grade D.",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flywire-annotations",
+      "source_type": "data record",
+      "source_url": "https://github.com/flyconnectome/flywire_annotations",
+      "title": "FlyWire neuron annotations repository",
+      "claim": "Annotation tables for FlyWire v783 (release v3.1.0), accompanying Schlegel et al. 2024; no licence file.",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "virtual-fly-brain",
+      "source_type": "web",
+      "source_url": "https://www.virtualflybrain.org/",
+      "title": "Virtual Fly Brain",
+      "claim": "Online atlas and query hub for fly neuroanatomy and connectomes, with Python and R clients and its own hosted MCP server (not tested by us).",
+      "accessed_at": "2026-09-28T15:23:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flybrain-halflife-yt",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=L3R4GfdLu2Q",
+      "title": "I Put a Real Fruit Fly Brain Into Half-Life...",
+      "claim": "Original video by Yusuf Temel on YouTube on 12 Sep 2026, 6:26 long, 137,648 views on 28 Sep 2026. Claims the MaleCNS v1.0 connectome; the released code does not load it by default (catalogue grade D).",
+      "accessed_at": "2026-09-28T15:26:30Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-doom-fly-control-video",
+      "source_type": "video",
+      "source_url": "https://github.com/gabrycina/doom-fly-control",
+      "title": "Is the fly brain actually playing DOOM? (video file)",
+      "claim": "Project-hosted video of the Doom control experiments (12 MB), linked from the README; link only, not re-hosted.",
+      "accessed_at": "2026-09-28T15:26:30Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-fly-exe-swarm-showcase",
+      "source_type": "video",
+      "source_url": "https://github.com/Ibtisam-Mohammad/Fly.exe",
+      "title": "Fly.exe swarm showcase (video file)",
+      "claim": "Project-hosted 1:38 video of twelve embodied flies on the MaleCNS connectome, linked from the README; link only.",
+      "accessed_at": "2026-09-28T15:26:30Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flydoom-mutkuoz-clip",
+      "source_type": "video",
+      "source_url": "https://github.com/mutkuoz/flydoom",
+      "title": "flydoom 30-second clip (video file)",
+      "claim": "Project-hosted clip of the FlyWire whole-brain simulation playing Doom, linked from the README; link only.",
+      "accessed_at": "2026-09-28T15:26:30Z",
       "relation": "context",
       "publication_basis": "linked-summary"
     }

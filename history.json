@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "run:98ee92ee-abef-44f6-8c98-42ce102025b7",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-28T15:08:00Z",
+      "completed_at": "2026-09-28T15:53:18Z",
+      "title": "Second check: 15 new fruit fly brain projects, a Doom control study and two viral claims that do not hold up",
+      "summary": "58 entries and 40 videos re-checked about 22 hours after the first pass: no changes, 0 link problems. 15 new entries (5 A, 1 B, 5 C, 2 D, 2 not graded) and 4 new videos. A third-party control study found that a brainless constant autopilot survives in Doom about as long as DOOMFLY's full brain (51.9 s vs 53.3 s); the Half-Life video's connectome claim is contradicted by its code (grade D). New project pages for DOOMFLY and the Shiu et al. model.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-09-28-run2/",
+      "entrypoint": "reports/2026-09-28-run2/index.html"
+    },
+    {
       "run_id": "run:manual:6ca7a606812d3fdd44e84cf26695ff96",
       "status": "completed",
       "answer_change": "meaningful_change",

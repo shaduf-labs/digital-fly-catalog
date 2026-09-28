@@ -3,7 +3,7 @@
  "collection": "Digital Fly Lab video gallery",
  "publisher": "Digital Fly Lab (independent Shaduf resource)",
  "checked_at": "2026-09-28",
- "record_count": 40,
+ "record_count": 44,
  "schema": "videos.schema.json",
  "rules": [
   "evidence_grade is copied from the catalogue entry (projects.json) at build time; the catalogue record is authoritative and a video never changes a grade.",
@@ -47,7 +47,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:30:13Z"
+    "checked_at": "2026-09-28T15:26:26Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -86,7 +86,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:25:14Z"
+    "checked_at": "2026-09-28T15:26:27Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -125,7 +125,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:31:14Z"
+    "checked_at": "2026-09-28T15:26:27Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -164,7 +164,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:30:12Z"
+    "checked_at": "2026-09-28T15:26:27Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -203,7 +203,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:25:14Z"
+    "checked_at": "2026-09-28T15:26:27Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -242,7 +242,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:25:14Z"
+    "checked_at": "2026-09-28T15:26:27Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -281,7 +281,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:25:13Z"
+    "checked_at": "2026-09-28T15:26:27Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -320,7 +320,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:30:28Z"
+    "checked_at": "2026-09-28T15:26:27Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -359,7 +359,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:25:14Z"
+    "checked_at": "2026-09-28T15:26:27Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -398,7 +398,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:25:15Z"
+    "checked_at": "2026-09-28T15:26:28Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -436,8 +436,212 @@
    "playback": "link-only",
    "link_status": {
     "status": "ok",
+    "http_code": 206,
+    "checked_at": "2026-09-28T15:26:28Z"
+   },
+   "last_checked": "2026-09-28"
+  },
+  {
+   "video_id": "flydoom-mutkuoz-clip",
+   "page_anchor": "/p/digital-fly-catalog/gallery/#v-flydoom-mutkuoz-clip",
+   "group": "g-viral",
+   "title": "Full clip (30 s of game time)",
+   "display_title": "FlyWire whole brain plays Doom (flydoom, 30 s clip)",
+   "title_note": "video file linked from the project README",
+   "platform": "project-site",
+   "url": "https://github.com/mutkuoz/flydoom",
+   "file_url": "https://github.com/mutkuoz/flydoom/raw/main/media/flydoom.mp4",
+   "creator": "mutkuoz (GitHub)",
+   "upload_status": "original",
+   "original_of": null,
+   "reposted_as": [],
+   "uploader_note": "Project's own video file (8 MB) linked from the README; not re-hosted.",
+   "publish_date": null,
+   "duration": null,
+   "duration_s": null,
+   "format": "file",
+   "shows": "30 seconds of game time of the FlyWire v783 whole-brain simulation playing Doom through a compound-eye model.",
+   "does_not_show": "The author's controls show that vision helps only narrowly, in one purpose-built arena, and that classic fly reflexes are absent.",
+   "summary_basis": "README caption and result files; video not watched frame by frame",
+   "catalogue_id": "flydoom-mutkuoz",
+   "catalogue_name": "flydoom",
+   "evidence_grade": "A",
+   "grade_status": "from catalogue",
+   "covers": [],
+   "verdict_anchor": "/p/digital-fly-catalog/is-it-real/#doom-heading",
+   "thumbnail_url": null,
+   "views": null,
+   "views_date": null,
+   "playback": "link-only",
+   "link_status": {
+    "status": "ok",
+    "http_code": 206,
+    "checked_at": "2026-09-28T15:26:30Z"
+   },
+   "last_checked": "2026-09-28"
+  },
+  {
+   "video_id": "fly-exe-swarm-showcase",
+   "page_anchor": "/p/digital-fly-catalog/gallery/#v-fly-exe-swarm-showcase",
+   "group": "g-viral",
+   "title": "Watch the full 1:38 video (swarm showcase)",
+   "display_title": "Twelve embodied flies on the full MaleCNS connectome",
+   "title_note": "video file linked from the project README; display title from the v0.1.0 release name",
+   "platform": "project-site",
+   "url": "https://github.com/Ibtisam-Mohammad/Fly.exe",
+   "file_url": "https://github.com/Ibtisam-Mohammad/Fly.exe/raw/main/artifacts/showcase/swarm3d-v1/swarm3d-showcase-web.mp4",
+   "creator": "Ibtisam Mohammad (GitHub)",
+   "upload_status": "original",
+   "original_of": null,
+   "reposted_as": [],
+   "uploader_note": "Project's own video file (19 MB, 1920x1080) linked from the README; not re-hosted.",
+   "publish_date": null,
+   "duration": "1:38",
+   "duration_s": 98,
+   "format": "file",
+   "shows": "Twelve NeuroMechFly bodies driven by LIF simulations of the MaleCNS v1.0 graph, compared with an identical-seed run without the stimulus.",
+   "does_not_show": "Input goes through an analytic vision encoder and output is read from hand-picked DNp populations into FlyGym's walking controller; shuffled and zero-weight runs are diagnostic only.",
+   "summary_basis": "README caption and repository code; video not watched frame by frame",
+   "catalogue_id": "fly-exe",
+   "catalogue_name": "Fly.exe (MaleCNS Virtual Fly)",
+   "evidence_grade": "B",
+   "grade_status": "from catalogue",
+   "covers": [],
+   "verdict_anchor": null,
+   "thumbnail_url": null,
+   "views": null,
+   "views_date": null,
+   "playback": "link-only",
+   "link_status": {
+    "status": "ok",
+    "http_code": 206,
+    "checked_at": "2026-09-28T15:26:30Z"
+   },
+   "last_checked": "2026-09-28"
+  },
+  {
+   "video_id": "doom-fly-control-video",
+   "page_anchor": "/p/digital-fly-catalog/gallery/#v-doom-fly-control-video",
+   "group": "g-viral",
+   "title": "Is the fly brain actually playing DOOM? (control experiments video)",
+   "display_title": "Is the fly brain actually playing DOOM?",
+   "title_note": "video file linked from the project README; the heading is the README title",
+   "platform": "project-site",
+   "url": "https://github.com/gabrycina/doom-fly-control",
+   "file_url": "https://github.com/gabrycina/doom-fly-control/raw/main/media/doom_fly_control.mp4",
+   "creator": "gabrycina (GitHub)",
+   "upload_status": "original",
+   "original_of": null,
+   "reposted_as": [],
+   "uploader_note": "Project's own video file (12 MB) in the repository, linked from the README; not re-hosted.",
+   "publish_date": "2026-09-27",
+   "duration": null,
+   "duration_s": null,
+   "format": "file",
+   "shows": "Explainer video of the control experiments: DOOMFLY with real, shuffled and no wiring next to a brainless autopilot, and the trained doomfly-rl arms.",
+   "does_not_show": "The numbers are the author's; shuffled arms are small (4 runs per seed) and the autopilot's constants were matched to the fly's average output.",
+   "summary_basis": "repository README and result files; video not watched frame by frame",
+   "catalogue_id": "doom-fly-control",
+   "catalogue_name": "Is the fly brain actually playing DOOM? (control experiments)",
+   "evidence_grade": "A",
+   "grade_status": "from catalogue",
+   "covers": [
+    {
+     "catalogue_id": "doomfly",
+     "evidence_grade": "B"
+    },
+    {
+     "catalogue_id": "doomfly-rl",
+     "evidence_grade": "A"
+    }
+   ],
+   "verdict_anchor": "/p/digital-fly-catalog/is-it-real/#doom-heading",
+   "thumbnail_url": null,
+   "views": null,
+   "views_date": null,
+   "playback": "link-only",
+   "link_status": {
+    "status": "ok",
+    "http_code": 206,
+    "checked_at": "2026-09-28T15:26:30Z"
+   },
+   "last_checked": "2026-09-28"
+  },
+  {
+   "video_id": "swot-flybridge-farming",
+   "page_anchor": "/p/digital-fly-catalog/gallery/#v-swot-flybridge-farming",
+   "group": "g-viral",
+   "title": "I Put a Fly’s Brain in Minecraft. It Learned to Farm.",
+   "display_title": "I Put a Fly’s Brain in Minecraft. It Learned to Farm.",
+   "title_note": null,
+   "platform": "youtube",
+   "url": "https://www.youtube.com/watch?v=70aWzwpmp20",
+   "file_url": null,
+   "creator": "SWOT",
+   "upload_status": "original",
+   "original_of": null,
+   "reposted_as": [],
+   "uploader_note": "Creator's own video; code at github.com/swotstudio/FlyBridge.",
+   "publish_date": "2026-09-22",
+   "duration": "34:00",
+   "duration_s": 2040,
+   "format": "horizontal",
+   "shows": "34-minute video attempting to train a fly-connectome agent in Minecraft to farm wheat.",
+   "does_not_show": "The brain is a 1,536-neuron smell-pathway subset of FlyWire v783 whose synapse gains are trained inside a policy network; a scripted controller walks, aims and clicks, and no stored result compares it with the shuffled or disconnected versions in the code.",
+   "summary_basis": "YouTube description, thumbnail viewed on 28 Sep 2026; repository code inspected on 28 Sep 2026 (catalogue entry flybridge)",
+   "catalogue_id": "flybridge",
+   "catalogue_name": "FlyBridge",
+   "evidence_grade": "C",
+   "grade_status": "from catalogue",
+   "covers": [],
+   "verdict_anchor": "/p/digital-fly-catalog/is-it-real/#v-flybridge",
+   "thumbnail_url": "https://i.ytimg.com/vi/70aWzwpmp20/hqdefault.jpg",
+   "views": 107006,
+   "views_date": "2026-09-28",
+   "playback": "link-only",
+   "link_status": {
+    "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:33:33Z"
+    "checked_at": "2026-09-28T15:26:29Z"
+   },
+   "last_checked": "2026-09-28"
+  },
+  {
+   "video_id": "flybrain-halflife-yt",
+   "page_anchor": "/p/digital-fly-catalog/gallery/#v-flybrain-halflife-yt",
+   "group": "g-viral",
+   "title": "I Put a Real Fruit Fly Brain Into Half-Life...",
+   "display_title": "I Put a Real Fruit Fly Brain Into Half-Life...",
+   "title_note": null,
+   "platform": "youtube",
+   "url": "https://www.youtube.com/watch?v=L3R4GfdLu2Q",
+   "file_url": null,
+   "creator": "Yusuf Temel (@YusufTemel-dev)",
+   "upload_status": "original",
+   "original_of": null,
+   "reposted_as": [],
+   "uploader_note": "Channel name matches the GitHub display name of the repository owner (Yusuftmle = 'Yusuf Temel', GitHub API 2026-09-28); the video does not link the repository, so the attribution rests on the name match.",
+   "publish_date": "2026-09-12",
+   "duration": "6:26",
+   "duration_s": 386,
+   "format": "horizontal",
+   "shows": "A Half-Life session in which an on-screen 'fly brain' network steers, turns and shoots, with a neuron-activity panel.",
+   "does_not_show": "The video description says 'the biological connectome of a fruit fly (Drosophila melanogaster - MaleCNS v1.0) with 12,260 reconstructed neurons'; the released code builds its default 12,260-neuron network procedurally from region sizes, and steering and attack decisions are computed outside the network (catalogue grade D).",
+   "summary_basis": "YouTube oEmbed and watch-page metadata (title, date, duration, description), repository code; video not watched frame by frame",
+   "catalogue_id": "flybrain-halflife",
+   "catalogue_name": "FlyBrain-HalfLife",
+   "evidence_grade": "D",
+   "grade_status": "from catalogue",
+   "covers": [],
+   "verdict_anchor": "/p/digital-fly-catalog/is-it-real/#v-flybrain-halflife",
+   "thumbnail_url": "https://i.ytimg.com/vi/L3R4GfdLu2Q/hqdefault.jpg",
+   "views": 137648,
+   "views_date": "2026-09-28",
+   "playback": "link-only",
+   "link_status": {
+    "status": "ok",
+    "http_code": 200,
+    "checked_at": "2026-09-28T15:26:30Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -479,7 +683,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:25:15Z"
+    "checked_at": "2026-09-28T15:26:28Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -517,8 +721,8 @@
    "playback": "link-only",
    "link_status": {
     "status": "ok",
-    "http_code": 200,
-    "checked_at": "2026-09-28T10:33:32Z"
+    "http_code": 206,
+    "checked_at": "2026-09-28T15:26:28Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -557,7 +761,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:32:32Z"
+    "checked_at": "2026-09-28T15:26:28Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -596,7 +800,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:32:32Z"
+    "checked_at": "2026-09-28T15:26:28Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -635,7 +839,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:28:53Z"
+    "checked_at": "2026-09-28T15:26:28Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -674,7 +878,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:28:54Z"
+    "checked_at": "2026-09-28T15:26:28Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -713,7 +917,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:25:15Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -752,7 +956,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:32:20Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -791,7 +995,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:28:55Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -830,7 +1034,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:28:56Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -868,8 +1072,8 @@
    "playback": "link-only",
    "link_status": {
     "status": "ok",
-    "http_code": 200,
-    "checked_at": "2026-09-28T10:33:32Z"
+    "http_code": 206,
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -908,7 +1112,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:28:57Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -947,7 +1151,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:28:59Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -988,7 +1192,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:28:48Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1027,7 +1231,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:29:01Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1066,7 +1270,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:29:00Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1105,7 +1309,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:29:02Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1144,7 +1348,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:28:50Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1183,7 +1387,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:28:50Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1222,7 +1426,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:32:25Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1261,7 +1465,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:32:26Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1300,7 +1504,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:28:55Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1329,7 +1533,7 @@
    "catalogue_id": null,
    "catalogue_name": null,
    "evidence_grade": null,
-   "grade_status": "not in catalogue, not graded",
+   "grade_status": "not in catalogue: the promoted mod (flyproject.io) publishes no code and its site shows a pump.fun token contract address (checked 28 Sep 2026)",
    "covers": [],
    "verdict_anchor": null,
    "thumbnail_url": "https://i.ytimg.com/vi/BUkLWjcoBc0/hqdefault.jpg",
@@ -1339,46 +1543,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:30:43Z"
-   },
-   "last_checked": "2026-09-28"
-  },
-  {
-   "video_id": "swot-flybridge-farming",
-   "page_anchor": "/p/digital-fly-catalog/gallery/#v-swot-flybridge-farming",
-   "group": "g-uncat",
-   "title": "I Put a Fly’s Brain in Minecraft. It Learned to Farm.",
-   "display_title": "I Put a Fly’s Brain in Minecraft. It Learned to Farm.",
-   "title_note": null,
-   "platform": "youtube",
-   "url": "https://www.youtube.com/watch?v=70aWzwpmp20",
-   "file_url": null,
-   "creator": "SWOT",
-   "upload_status": "original",
-   "original_of": null,
-   "reposted_as": [],
-   "uploader_note": "Creator's own video; code at github.com/swotstudio/FlyBridge.",
-   "publish_date": "2026-09-22",
-   "duration": "34:00",
-   "duration_s": 2040,
-   "format": "horizontal",
-   "shows": "34-minute video attempting to train a fly-connectome agent in Minecraft to farm wheat.",
-   "does_not_show": "Training is involved by the creator's description; not reviewed by us.",
-   "summary_basis": "YouTube description, thumbnail viewed on 28 Sep 2026",
-   "catalogue_id": null,
-   "catalogue_name": null,
-   "evidence_grade": null,
-   "grade_status": "not in catalogue, not graded",
-   "covers": [],
-   "verdict_anchor": null,
-   "thumbnail_url": "https://i.ytimg.com/vi/70aWzwpmp20/hqdefault.jpg",
-   "views": 107006,
-   "views_date": "2026-09-28",
-   "playback": "link-only",
-   "link_status": {
-    "status": "ok",
-    "http_code": 200,
-    "checked_at": "2026-09-28T10:30:42Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1417,7 +1582,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:29:03Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1456,7 +1621,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:31:14Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1495,7 +1660,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:31:14Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1551,7 +1716,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:29:05Z"
+    "checked_at": "2026-09-28T15:26:29Z"
    },
    "last_checked": "2026-09-28"
   },
@@ -1603,7 +1768,7 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T10:29:10Z"
+    "checked_at": "2026-09-28T15:26:30Z"
    },
    "last_checked": "2026-09-28"
   }

@@ -126,11 +126,17 @@
    "description": "YYYY-MM-DD as shown by the platform; null when the host shows none."
   },
   "duration": {
-   "type": "string",
-   "description": "Length as m:ss or h:mm:ss."
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Length as m:ss or h:mm:ss; null when the host does not state it (some project files). Null allowed since 2026-09-28 (run 2)."
   },
   "duration_s": {
-   "type": "number"
+   "type": [
+    "number",
+    "null"
+   ]
   },
   "format": {
    "type": "string",
@@ -186,11 +192,11 @@
   },
   "grade_status": {
    "type": "string",
-   "description": "from catalogue; not graded (dataset, body or tool); not in catalogue, not graded; or commentary."
+   "description": "from catalogue; not graded (dataset, body or tool); commentary; or, for videos not in the catalogue, why they are not graded."
   },
   "covers": {
    "type": "array",
-   "description": "For commentary: catalogue entries discussed, with their catalogue grades.",
+   "description": "Catalogue entries the video discusses, with their catalogue grades (commentary videos, and control studies that test other projects).",
    "items": {
     "type": "object",
     "additionalProperties": false,

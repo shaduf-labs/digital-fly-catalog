@@ -2,6 +2,54 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-09-28-run2-tracking",
+      "changed_at": "2026-09-28T15:53:18Z",
+      "summary": "58 entries re-checked on 28 Sep 2026: 58 unchanged, 0 with new commits, all main links responding; 40 videos re-checked: all available. 0 link problems; 2 dead repositories (fly-survivors, ommatid) excluded. The re-check came about 22 hours after the first pass.",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-09-28-run2-new-entries",
+      "changed_at": "2026-09-28T15:53:18Z",
+      "summary": "15 new catalogue entries graded from code: 5 A (doom-fly-control, doomfly-rl, Fly Self Driving, flydoom by mutkuoz, a null-model study), 1 B (Fly.exe), 5 C (FlyBridge, fly-api, fly-brain by erojas, Haltere, Kick the Fly), 2 D (FlyBrain-HalfLife, FlyBrain Robot Bridge) and 2 data tools (FlyWire annotations, Virtual Fly Brain).",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-09-28-run2-doom-control",
+      "changed_at": "2026-09-28T15:53:18Z",
+      "summary": "Is it real?: a third-party control study found that a brainless constant autopilot survives in Doom about as long as DOOMFLY's full-brain simulation (51.9 s vs 53.3 s; shuffled wiring 6.7 s). DOOMFLY stays grade B. New verdict rows for the Half-Life video (grade D: its code builds a synthetic network by default) and the Minecraft farming video (FlyBridge, grade C).",
+      "path": "/p/digital-fly-catalog/is-it-real/"
+    },
+    {
+      "change_id": "2026-09-28-run2-videos",
+      "changed_at": "2026-09-28T15:53:18Z",
+      "summary": "4 new videos in the gallery: the Half-Life video (grade D) and video files from doom-fly-control (A), Fly.exe (B) and flydoom (A).",
+      "path": "/p/digital-fly-catalog/gallery/"
+    },
+    {
+      "change_id": "2026-09-28-run2-flybridge-video",
+      "changed_at": "2026-09-28T15:53:18Z",
+      "summary": "SWOT's Minecraft farming video now links to its catalogue entry, FlyBridge (grade C).",
+      "path": "/p/digital-fly-catalog/gallery/"
+    },
+    {
+      "change_id": "2026-09-28-run2-doomfly-text",
+      "changed_at": "2026-09-28T15:53:18Z",
+      "summary": "Text correction: the DOOMFLY limitations text no longer contains internal notes on how its grade was reached; the grade (B) and its reasons are unchanged.",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-09-28-run2-project-pages",
+      "changed_at": "2026-09-28T15:53:18Z",
+      "summary": "New project pages: DOOMFLY (mechanism, controls, untested run steps) and the Shiu et al. whole-brain model (tested and untested requirements, results, known issues, 17 projects built on it).",
+      "path": "/p/digital-fly-catalog/projects/doomfly/"
+    },
+    {
+      "change_id": "2026-09-28-run2-report",
+      "changed_at": "2026-09-28T15:53:18Z",
+      "summary": "Research report of the second check: method, tracking results, new entries, the Doom control study and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-09-28-run2/"
+    },
+    {
       "change_id": "2026-09-28-video-gallery",
       "changed_at": "2026-09-28T11:13:00Z",
       "summary": "New Video gallery: 40 fruit fly brain videos (Doom, Minecraft, Beat Saber, Eon and the lab films), each with its project's evidence grade from the catalogue and what the video does not show. Videos open on their original platform.",
