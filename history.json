@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "run:4018cb43-5949-4ecf-911a-0366c3d032ab",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-29T09:24:00Z",
+      "completed_at": "2026-09-29T10:17:36Z",
+      "title": "Third check: two viral fly-brain claims refereed, DesktopFly re-graded to C and a wiring test where scrambled wiring fails",
+      "summary": "73 entries and 44 videos re-checked: 3 new releases, 1 re-grade (DesktopFly B to C), all links responding. Verdicts on two claims with no published code, both grade U: the Raspberry Pi 5 Pokémon stream (input read from game memory, unpublished decoder, chat steers learning) and the Rainbow Six Siege claim (over 1,000,000 neurons matches no fly connectome). 9 new entries and 3 videos, including a grade A study in which scrambled wiring stops a whole-brain fly steering to targets. New DesktopFly project page with a download-lure warning.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-09-29-run3/",
+      "entrypoint": "reports/2026-09-29-run3/index.html"
+    },
+    {
       "run_id": "run:98ee92ee-abef-44f6-8c98-42ce102025b7",
       "status": "completed",
       "answer_change": "meaningful_change",

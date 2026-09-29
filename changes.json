@@ -2,6 +2,66 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-09-29-run3-tracking",
+      "changed_at": "2026-09-29T10:17:36Z",
+      "summary": "73 entries re-checked on 29 Sep 2026: 3 with new commits and releases, 1 re-graded (DesktopFly B to C), all main links responding; 44 videos re-checked: all available; 9 entries and 3 videos added.",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-09-29-run3-pokemon-verdict",
+      "changed_at": "2026-09-29T10:17:36Z",
+      "summary": "Is it real?: new verdict on the Raspberry Pi 5 \"fly plays Pokémon\" Twitch stream (grade U: no code; input read from game memory by the creator's account, unpublished decoder, chat steers learning). The open-source acamilo/flybrain and fly-plays-games (both C) are not the stream's code.",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-fly-pokemon-pi5-stream"
+    },
+    {
+      "change_id": "2026-09-29-run3-r6-verdict",
+      "changed_at": "2026-09-29T10:17:36Z",
+      "summary": "Is it real?: new verdict on \"a fly's digital brain plays Rainbow Six Siege\" (grade U: nothing published; over 1,000,000 neurons matches no fly connectome; skill would come from training on human gameplay).",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-fly-brain-rainbow-six-siege"
+    },
+    {
+      "change_id": "2026-09-29-run3-desktop-fly",
+      "changed_at": "2026-09-29T10:17:36Z",
+      "summary": "DesktopFly re-graded from B (borderline C) to C: neuron rates only switch coded animations, sleep follows idle time and the clock. Verdict row corrected, and a new project page with a download-lure warning.",
+      "path": "/p/digital-fly-catalog/projects/desktop-fly/"
+    },
+    {
+      "change_id": "2026-09-29-run3-wiring-test",
+      "changed_at": "2026-09-29T10:17:36Z",
+      "summary": "Is it real?: a new grade A wiring test (fly-brain-zero-shot) shown next to the Doom test: scrambled wiring stops a whole-brain fly steering to targets (2.96 vs 0.34 poles per 10 s).",
+      "path": "/p/digital-fly-catalog/is-it-real/#wiring-test-heading"
+    },
+    {
+      "change_id": "2026-09-29-run3-new-entries",
+      "changed_at": "2026-09-29T10:17:36Z",
+      "summary": "9 new catalogue entries: 1 A (fly-brain-zero-shot), 4 C (acamilo-flybrain, fly-plays-games, fruitfly-roblox, NeuroWeave), 2 U (the Pokémon stream, the Rainbow Six claim) and 2 data tools (fly-connectome-template, fafbseg).",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-09-29-run3-releases",
+      "changed_at": "2026-09-29T10:17:36Z",
+      "summary": "New releases re-checked: Kick the Fly 2.12.0 (larva brain for headless tests, whose validation fails; stays C), Haltere fast-brain-11 (one full lap, no race finish; stays C) and neuprint-python 0.6.4 (client update).",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-09-29-run3-halflife",
+      "changed_at": "2026-09-29T10:17:36Z",
+      "summary": "FlyBrain-HalfLife re-checked: code unchanged at 0ba5548, grade D stands; a second video's claim \"There is no scripted game AI\" is also contradicted by the code.",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-flybrain-halflife"
+    },
+    {
+      "change_id": "2026-09-29-run3-videos",
+      "changed_at": "2026-09-29T10:17:36Z",
+      "summary": "3 new videos: the fly-brain-zero-shot wiring test (A), the Roblox maze race (C) and Haltere's Straw Bale race (C).",
+      "path": "/p/digital-fly-catalog/gallery/"
+    },
+    {
+      "change_id": "2026-09-29-run3-report",
+      "changed_at": "2026-09-29T10:17:36Z",
+      "summary": "Research report of the third check: lead scan, two verdicts, the DesktopFly re-grade, 9 new entries, the wiring test and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-09-29-run3/"
+    },
+    {
       "change_id": "2026-09-28-run2-tracking",
       "changed_at": "2026-09-28T15:53:18Z",
       "summary": "58 entries re-checked on 28 Sep 2026: 58 unchanged, 0 with new commits, all main links responding; 40 videos re-checked: all available. 0 link problems; 2 dead repositories (fly-survivors, ommatid) excluded. The re-check came about 22 hours after the first pass.",

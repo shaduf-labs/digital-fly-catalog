@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "default_page": "overview",
-  "meaningfully_updated_at": "2026-09-28T15:53:18Z",
+  "meaningfully_updated_at": "2026-09-29T10:17:36Z",
   "pages": [
     {
       "id": "overview",
@@ -57,6 +57,21 @@
       "description": "The Shiu et al. 2024 Drosophila whole-brain model (FlyWire, Brian2): what it needs to run, tested and untested steps, 91% vs 95% explained, known issues and the projects built on it.",
       "parent": "projects",
       "entrypoint": "projects/shiu-drosophila-brain-model/index.html",
+      "entrypoint_type": "html_fragment",
+      "redirects": [],
+      "visibility": "public",
+      "indexable": true,
+      "tools": []
+    },
+    {
+      "id": "project-desktop-fly",
+      "slug": "projects/desktop-fly",
+      "label": "DesktopFly",
+      "icon": "◇",
+      "group": "Find",
+      "description": "DesktopFly, the desktop pet fruit fly: how its 668-neuron FlyWire circuit and MaleCNS leg circuit work, why it is grade C, what you need to build it, and a warning about fake download copies.",
+      "parent": "projects",
+      "entrypoint": "projects/desktop-fly/index.html",
       "entrypoint_type": "html_fragment",
       "redirects": [],
       "visibility": "public",

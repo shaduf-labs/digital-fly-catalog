@@ -155,9 +155,9 @@
       "evidence_id": "desktop-fly",
       "source_type": "code",
       "source_url": "https://github.com/DenisSergeevitch/desktop-fly",
-      "title": "DesktopFly repository",
-      "claim": "A 668-neuron FlyWire circuit runs, but behaviour states come from an ordinary state machine and animation; grade B, borderline C.",
-      "accessed_at": "2026-09-28T05:23:00Z",
+      "title": "DesktopFly repository (commit 32b0001)",
+      "claim": "Re-graded C on 29 Sep 2026: a 668-neuron FlyWire circuit's rates cross hand-set thresholds that switch coded flight, grooming and dart animations; sleep follows idle time and the clock; only walking is driven by a 1,045-neuron MaleCNS leg circuit. The quoted claim is the repository description, not the README. No official app download.",
+      "accessed_at": "2026-09-29T09:41:00Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
     },
@@ -866,8 +866,8 @@
       "source_type": "code",
       "source_url": "https://github.com/skulitom/haltere",
       "title": "Haltere repository",
-      "claim": "30,000-neuron MaleCNS subgraph trained by imitation to fly an FPV drone; hand-written visual pilot sets the goal; 0/2 races vs 1/2 for a PD controller (author-measured).",
-      "accessed_at": "2026-09-28T15:23:00Z",
+      "claim": "30,000-neuron MaleCNS subgraph trained by imitation to fly an FPV drone; hand-written visual pilot sets the goal; 0/2 races vs 1/2 for a PD controller. Release fast-brain-11 (29 Sep 2026) flew one full Straw Bale lap in 1:42.988 but crashed on every flight (author-measured); stays C.",
+      "accessed_at": "2026-09-29T09:41:00Z",
       "relation": "context",
       "publication_basis": "linked-summary"
     },
@@ -876,8 +876,8 @@
       "source_type": "code",
       "source_url": "https://github.com/legendarylolo318-cloud/kick-the-fly",
       "title": "Kick the Fly repository",
-      "claim": "Live 166,700-neuron MaleCNS simulation triggers scripted game-physics reactions; circuit checks against matched control neurons with published failures; grade C (borderline).",
-      "accessed_at": "2026-09-28T15:23:00Z",
+      "claim": "Live 166,700-neuron MaleCNS simulation triggers scripted game-physics reactions; circuit checks against matched control neurons with published failures; grade C (borderline). Release 2.12.0 (29 Sep 2026) adds a headless-only larva brain whose two validation tests fail; re-checked, stays C.",
+      "accessed_at": "2026-09-29T09:41:00Z",
       "relation": "context",
       "publication_basis": "linked-summary"
     },
@@ -886,8 +886,8 @@
       "source_type": "code",
       "source_url": "https://github.com/Yusuftmle/FlyBrain-HalfLife",
       "title": "FlyBrain-HalfLife repository (commit 0ba5548)",
-      "claim": "Default network is generated from region sizes, not loaded from MaleCNS v1.0; real data only if the user supplies an npz file; steering and attacks computed outside the network; grade D.",
-      "accessed_at": "2026-09-28T15:23:00Z",
+      "claim": "Default network is generated from region sizes, not loaded from MaleCNS v1.0; real data only if the user supplies an npz file; steering and attacks computed outside the network; grade D. Re-checked 29 Sep 2026: still commit 0ba5548.",
+      "accessed_at": "2026-09-29T09:41:00Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
     },
@@ -958,6 +958,146 @@
       "title": "flydoom 30-second clip (video file)",
       "claim": "Project-hosted clip of the FlyWire whole-brain simulation playing Doom, linked from the README; link only.",
       "accessed_at": "2026-09-28T15:26:30Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "xda-pokemon-pi5-stream",
+      "source_type": "news article",
+      "source_url": "https://www.xda-developers.com/someone-wired-up-a-digital-flys-brain-in-a-pi-5-to-play-pokmon-and-you-can-help-it-progress/",
+      "title": "XDA Developers: a digital fly's brain on a Pi 5 plays Pokémon (28 Sep 2026)",
+      "claim": "Creator's description as quoted: all 139,255 FlyWire v783 neurons on a Raspberry Pi 5 with mGBA; walls, doors and people read from game memory into looming-detector neurons ('no retinotopy'); descending neurons decoded into buttons; chat zaps reward and punishment neurons. No code linked. Read through a summarising fetch.",
+      "accessed_at": "2026-09-29T09:30:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "twitch-leetzerzz",
+      "source_type": "live stream",
+      "source_url": "https://www.twitch.tv/leetzerzz",
+      "title": "Leetzerzz Twitch channel",
+      "claim": "Channel title on 29 Sep 2026 reports in-game progress and chat commands that stimulate the fly; the stream was not watched by us, and no code or recording is published.",
+      "accessed_at": "2026-09-29T09:41:51Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "acamilo-flybrain",
+      "source_type": "code",
+      "source_url": "https://github.com/acamilo/flybrain",
+      "title": "acamilo/flybrain repository (commit 9f2345d)",
+      "claim": "Whole FlyWire v783 brain with pixel input to L1 columns and a hand-set 8-button decoder; the author's 43-minute check found direction scores frozen with only decoder habituation changing the winner, and the stream log records scripted macro progress; grade C. Not the Pi 5 stream's code (different input and emulator; no link).",
+      "accessed_at": "2026-09-29T09:41:50Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-plays-games",
+      "source_type": "code",
+      "source_url": "https://github.com/blackicon-eth/fly-plays-games",
+      "title": "blackicon-eth/fly-plays-games repository (commit ecb95f7)",
+      "claim": "Pokémon Red chapter: the long walk in its video is a scripted planner; in fly mode a trained readout picks left or right from sprite positions read from memory; MaleCNS via an external package we did not inspect; grade C.",
+      "accessed_at": "2026-09-29T09:41:51Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "devua-rainbow-six-siege",
+      "source_type": "news article",
+      "source_url": "https://dev.ua/en/news/mukha-v-sidzhi-1790577179",
+      "title": "dev.ua: fly's digital brain plays Rainbow Six Siege (28 Sep 2026)",
+      "claim": "Reports an X post (26 Sep 2026) claiming a fly brain model with over 1,000,000 simulated neurons, trained on 20+ TB of pro gameplay, scored a kill. Nothing published; the size matches no fly connectome. Known only through search summaries (the site blocks our fetches).",
+      "accessed_at": "2026-09-29T09:35:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-brain-zero-shot",
+      "source_type": "code",
+      "source_url": "https://github.com/vib2810/fly-brain-zero-shot",
+      "title": "fly-brain-zero-shot repository (commit 6c3a5e7)",
+      "claim": "FlyVis eye model, Shiu et al. whole-brain LIF on FlyWire v783 and a NeuroMechFly body: 2.96 poles per 10 s with real wiring, 0.34 scrambled, 0.12 with turn neurons disconnected; after a two-leg cut 3.14, 0.12, 0.52 (author-measured; means recomputed by us from results_per_fly.csv). Walking is a hand-built rhythm; the brain only steers.",
+      "accessed_at": "2026-09-29T09:41:49Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fruitfly-roblox",
+      "source_type": "code",
+      "source_url": "https://github.com/SolidifiedPlayDoh/fruitfly-roblox",
+      "title": "fruitfly-roblox repository",
+      "claim": "MaleCNS brain races an AI model through a Roblox maze, but 65-80% of the steering command comes from a scripted teacher that also remembers visited cells; grade C.",
+      "accessed_at": "2026-09-29T09:41:51Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "neuroweave",
+      "source_type": "code",
+      "source_url": "https://github.com/Titanium-xd/neuroweave",
+      "title": "NeuroWeave repository",
+      "claim": "150 MaleCNS neurons as a trained sparsity mask; 0.98 vs 1.00 for a random graph of the same density on a ceiling task (one seed); no random-graph control on the memory task; grade C.",
+      "accessed_at": "2026-09-29T09:41:50Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-connectome-template",
+      "source_type": "code",
+      "source_url": "https://github.com/cobanov/fly-connectome-template",
+      "title": "fly-connectome-template repository",
+      "claim": "Browser template rendering MaleCNS v1.0 soma positions; custom attribution licence; example activity is authored synthetic values; not graded (data tool).",
+      "accessed_at": "2026-09-29T09:41:46Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fafbseg",
+      "source_type": "code",
+      "source_url": "https://github.com/natverse/fafbseg",
+      "title": "natverse/fafbseg R package",
+      "claim": "R package for FlyWire/FAFB data (release downloads v783 and v630, meshes, annotations); GPL-3; not graded (data tool).",
+      "accessed_at": "2026-09-29T09:41:46Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flybrain-halflife-second-video",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=ycCVTjW7gxI",
+      "title": "What Happens When a Biological Fly Brain Plays Half-Life? (combat)",
+      "claim": "Second video by the FlyBrain-HalfLife author (23 Sep 2026) says 'There is no scripted game AI or traditional reinforcement learning at play here'; contradicted by the released code, which computes steering, attacks and escapes outside the network. Not in the gallery (shows nothing new).",
+      "accessed_at": "2026-09-29T09:46:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-fly-brain-zero-shot-video",
+      "source_type": "video",
+      "source_url": "https://github.com/vib2810/fly-brain-zero-shot",
+      "title": "Whole-brain fly steers to poles after a leg cut, real vs scrambled wiring (47 s)",
+      "claim": "Original video by vib2810 (GitHub) on the project site, 0:47 long; catalogue grade A. Shows: A closed loop of eye model, FlyWire v783 whole-brain spiking model and NeuroMechFly body steering toward dark poles; two legs are removed mid-walk; the same fly is replayed with scrambled wiring. Does not show: Walking comes from a hand-built rhythm generator; the brain only supplies the turn signal through one tuned gain. The scrambled comparison after the cut uses 16 flies from a single shuffle (catalogue grade A, with these limits).",
+      "accessed_at": "2026-09-29T09:50:05Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-fruitfly-roblox-maze-race",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=0zY_yzrcF9c",
+      "title": "TypeSafe Jev1.13 vs a Fruit Fly Brain in a Roblox maze",
+      "claim": "Original video by SolidifiedPlaydoh (@SolidifiedPlaydoh) on YouTube, 23:32 long; catalogue grade C. Shows: A race through the same Roblox maze between a character driven by a MaleCNS v1.0 fly-brain simulation and one driven by an AI language model (TypeSafe Jev), with overlays. Does not show: In the released code most of the fly character's steering comes from a scripted teacher that is blended with the brain signal (65-80% of the command near walls and rings), the code also remembers visited maze cells, and the trained readout is not used (catalogue grade C).",
+      "accessed_at": "2026-09-29T09:50:05Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-haltere-straw-bale-finish-4x",
+      "source_type": "video",
+      "source_url": "https://github.com/skulitom/haltere/releases/tag/fast-brain-08-experimental",
+      "title": "Connectome-based drone controller finishes a Straw Bale race (4x speed)",
+      "claim": "Original video by skulitom (GitHub) on the project site; catalogue grade C. Shows: The fast-brain-08 motor readout on a 30,000-neuron MaleCNS subgraph flying an FPV drone through a full Straw Bale race in the game Liftoff (5:17 race shown at 4x), with connectome activity beside the gameplay. Does not show: A hand-written visual pilot sets the velocity goal and yaw, and the network's weights and readout are trained by imitation of a non-connectome teacher; there is no shuffled-wiring control for flight (catalogue grade C).",
+      "accessed_at": "2026-09-29T09:50:05Z",
       "relation": "context",
       "publication_basis": "linked-summary"
     }

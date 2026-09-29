@@ -2,8 +2,8 @@
  "schema_version": "1.0.0",
  "collection": "Digital Fly Lab video gallery",
  "publisher": "Digital Fly Lab (independent Shaduf resource)",
- "checked_at": "2026-09-28",
- "record_count": 44,
+ "checked_at": "2026-09-29",
+ "record_count": 47,
  "schema": "videos.schema.json",
  "rules": [
   "evidence_grade is copied from the catalogue entry (projects.json) at build time; the catalogue record is authoritative and a video never changes a grade.",
@@ -47,9 +47,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:26Z"
+    "checked_at": "2026-09-29T09:50:01Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "neurocraft-minecraft-x",
@@ -86,9 +86,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:27Z"
+    "checked_at": "2026-09-29T09:50:01Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "fly-brain-minecraft-blendi-x",
@@ -125,9 +125,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:27Z"
+    "checked_at": "2026-09-29T09:50:01Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "doomfly-announce-x",
@@ -164,9 +164,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:27Z"
+    "checked_at": "2026-09-29T09:50:01Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "bad-apple-linguinelabs-x",
@@ -203,9 +203,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:27Z"
+    "checked_at": "2026-09-29T09:50:01Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "fly64-mario-x",
@@ -242,9 +242,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:27Z"
+    "checked_at": "2026-09-29T09:50:02Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "beat-saber-lyra-x",
@@ -281,9 +281,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:27Z"
+    "checked_at": "2026-09-29T09:50:02Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "doomfly-plays-doom-x",
@@ -320,9 +320,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:27Z"
+    "checked_at": "2026-09-29T09:50:02Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "stonkfly-bitcoin-x",
@@ -359,9 +359,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:27Z"
+    "checked_at": "2026-09-29T09:50:02Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flyhard-parking-x",
@@ -398,9 +398,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:28Z"
+    "checked_at": "2026-09-29T09:50:02Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "bioreservoir-fly-oracle",
@@ -437,9 +437,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-09-28T15:26:28Z"
+    "checked_at": "2026-09-29T09:50:02Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flydoom-mutkuoz-clip",
@@ -476,9 +476,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-09-28T15:26:30Z"
+    "checked_at": "2026-09-29T09:50:05Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "fly-exe-swarm-showcase",
@@ -515,9 +515,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-09-28T15:26:30Z"
+    "checked_at": "2026-09-29T09:50:05Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "doom-fly-control-video",
@@ -563,9 +563,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-09-28T15:26:30Z"
+    "checked_at": "2026-09-29T09:50:05Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "swot-flybridge-farming",
@@ -602,9 +602,87 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
+  },
+  {
+   "video_id": "fruitfly-roblox-maze-race",
+   "page_anchor": "/p/digital-fly-catalog/gallery/#v-fruitfly-roblox-maze-race",
+   "group": "g-viral",
+   "title": "TypeSafe Jev1.13 vs a Fruit Fly Brain in a Roblox maze",
+   "display_title": "TypeSafe Jev1.13 vs a Fruit Fly Brain in a Roblox maze",
+   "title_note": null,
+   "platform": "youtube",
+   "url": "https://www.youtube.com/watch?v=0zY_yzrcF9c",
+   "file_url": null,
+   "creator": "SolidifiedPlaydoh (@SolidifiedPlaydoh)",
+   "upload_status": "original",
+   "original_of": null,
+   "reposted_as": [],
+   "uploader_note": "Linked as 'Video:' on line 5 of the fruitfly-roblox README; the channel name matches the GitHub account SolidifiedPlayDoh.",
+   "publish_date": "2026-09-28",
+   "duration": "23:32",
+   "duration_s": 1412,
+   "format": "horizontal",
+   "shows": "A race through the same Roblox maze between a character driven by a MaleCNS v1.0 fly-brain simulation and one driven by an AI language model (TypeSafe Jev), with overlays.",
+   "does_not_show": "In the released code most of the fly character's steering comes from a scripted teacher that is blended with the brain signal (65-80% of the command near walls and rings), the code also remembers visited maze cells, and the trained readout is not used (catalogue grade C).",
+   "summary_basis": "YouTube oEmbed and watch-page metadata (title, date, duration, description), repository code; video not watched frame by frame",
+   "catalogue_id": "fruitfly-roblox",
+   "catalogue_name": "Fruit fly vs Jev: Roblox maze race",
+   "evidence_grade": "C",
+   "grade_status": "from catalogue",
+   "covers": [],
+   "verdict_anchor": null,
+   "thumbnail_url": "https://i.ytimg.com/vi/0zY_yzrcF9c/hqdefault.jpg",
+   "views": 35,
+   "views_date": "2026-09-29",
+   "playback": "link-only",
+   "link_status": {
+    "status": "ok",
+    "http_code": 200,
+    "checked_at": "2026-09-29T09:50:05Z"
+   },
+   "last_checked": "2026-09-29"
+  },
+  {
+   "video_id": "haltere-straw-bale-finish-4x",
+   "page_anchor": "/p/digital-fly-catalog/gallery/#v-haltere-straw-bale-finish-4x",
+   "group": "g-viral",
+   "title": "fast-brain08-straw-bale-finish-4x.mp4",
+   "display_title": "Connectome-based drone controller finishes a Straw Bale race (4x speed)",
+   "title_note": "video file attached to the project's fast-brain-08 release, linked from the README via the release notes",
+   "platform": "project-site",
+   "url": "https://github.com/skulitom/haltere/releases/tag/fast-brain-08-experimental",
+   "file_url": "https://github.com/skulitom/haltere/releases/download/fast-brain-08-experimental/fast-brain08-straw-bale-finish-4x.mp4",
+   "creator": "skulitom (GitHub)",
+   "upload_status": "original",
+   "original_of": null,
+   "reposted_as": [],
+   "uploader_note": "Project's own release asset; README line 20 links the release notes (docs/fast_brain_08_release.md), which list the videos. Not re-hosted.",
+   "publish_date": "2026-09-25",
+   "duration": null,
+   "duration_s": null,
+   "format": "file",
+   "shows": "The fast-brain-08 motor readout on a 30,000-neuron MaleCNS subgraph flying an FPV drone through a full Straw Bale race in the game Liftoff (5:17 race shown at 4x), with connectome activity beside the gameplay.",
+   "does_not_show": "A hand-written visual pilot sets the velocity goal and yaw, and the network's weights and readout are trained by imitation of a non-connectome teacher; there is no shuffled-wiring control for flight (catalogue grade C).",
+   "summary_basis": "Release notes (docs/fast_brain_08_release.md) and repository code; video not watched frame by frame; publish date is the release commit date",
+   "catalogue_id": "haltere",
+   "catalogue_name": "Haltere",
+   "evidence_grade": "C",
+   "grade_status": "from catalogue",
+   "covers": [],
+   "verdict_anchor": null,
+   "thumbnail_url": null,
+   "views": null,
+   "views_date": null,
+   "playback": "link-only",
+   "link_status": {
+    "status": "ok",
+    "http_code": 206,
+    "checked_at": "2026-09-29T09:50:05Z"
+   },
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flybrain-halflife-yt",
@@ -641,9 +719,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:30Z"
+    "checked_at": "2026-09-29T09:50:05Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "eon-first-multi-behavior-upload-x",
@@ -683,9 +761,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:28Z"
+    "checked_at": "2026-09-29T09:50:03Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "eon-embodied-fly-site-video",
@@ -722,9 +800,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-09-28T15:26:28Z"
+    "checked_at": "2026-09-29T09:50:03Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "shiu-carboncopies-talk",
@@ -761,9 +839,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:28Z"
+    "checked_at": "2026-09-29T09:50:03Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flyvis-turaga-ipam-talk",
@@ -800,9 +878,48 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:28Z"
+    "checked_at": "2026-09-29T09:50:03Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
+  },
+  {
+   "video_id": "fly-brain-zero-shot-video",
+   "page_anchor": "/p/digital-fly-catalog/gallery/#v-fly-brain-zero-shot-video",
+   "group": "g-models",
+   "title": "Full video (47 s)",
+   "display_title": "Whole-brain fly steers to poles after a leg cut, real vs scrambled wiring (47 s)",
+   "title_note": "video file linked from the project README",
+   "platform": "project-site",
+   "url": "https://github.com/vib2810/fly-brain-zero-shot",
+   "file_url": "https://github.com/vib2810/fly-brain-zero-shot/raw/main/assets/fly_brain_zero_shot.mp4",
+   "creator": "vib2810 (GitHub)",
+   "upload_status": "original",
+   "original_of": null,
+   "reposted_as": [],
+   "uploader_note": "Project's own video file (4.7 MB) linked from the README; not re-hosted.",
+   "publish_date": "2026-09-29",
+   "duration": "0:47",
+   "duration_s": 47,
+   "format": "file",
+   "shows": "A closed loop of eye model, FlyWire v783 whole-brain spiking model and NeuroMechFly body steering toward dark poles; two legs are removed mid-walk; the same fly is replayed with scrambled wiring.",
+   "does_not_show": "Walking comes from a hand-built rhythm generator; the brain only supplies the turn signal through one tuned gain. The scrambled comparison after the cut uses 16 flies from a single shuffle (catalogue grade A, with these limits).",
+   "summary_basis": "README caption, code and stored per-fly results; video not watched frame by frame; publish date is the commit date",
+   "catalogue_id": "fly-brain-zero-shot",
+   "catalogue_name": "Are fruit flies zero-shot adapters?",
+   "evidence_grade": "A",
+   "grade_status": "from catalogue",
+   "covers": [],
+   "verdict_anchor": null,
+   "thumbnail_url": null,
+   "views": null,
+   "views_date": null,
+   "playback": "link-only",
+   "link_status": {
+    "status": "ok",
+    "http_code": 206,
+    "checked_at": "2026-09-29T09:50:05Z"
+   },
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flybody-janelia-virtual-fly",
@@ -839,9 +956,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:28Z"
+    "checked_at": "2026-09-29T09:50:03Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flybody-janelia-body-model",
@@ -878,9 +995,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:28Z"
+    "checked_at": "2026-09-29T09:50:03Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flybody-deepmind-x",
@@ -917,9 +1034,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:03Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "neuromechfly-v2-ramdya-x",
@@ -956,9 +1073,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:03Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "neuromechfly-biorob-model",
@@ -995,9 +1112,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "neuromechfly-sfn-2024-workshop",
@@ -1034,9 +1151,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flygym-overview-video",
@@ -1073,9 +1190,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "hemibrain-overview-hhmi",
@@ -1112,9 +1229,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "manc-janelia-release",
@@ -1151,9 +1268,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flywire-connectome-princeton",
@@ -1192,9 +1309,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flywire-cambridge-short",
@@ -1231,9 +1348,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flywire-codex-search-tutorial",
@@ -1270,9 +1387,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "banc-harvard-release",
@@ -1309,9 +1426,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "malecns-janelia-cell-types",
@@ -1348,9 +1465,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "malecns-janelia-visuomotor",
@@ -1387,9 +1504,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "malecns-hhmi-male-brain",
@@ -1426,9 +1543,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "malecns-hhmi-history",
@@ -1465,9 +1582,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "malecns-google-research-short",
@@ -1504,9 +1621,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "ro0oney-minecraft-video",
@@ -1543,9 +1660,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "eon-drbenmiles-short",
@@ -1582,9 +1699,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "eon-rowancheung-tiktok",
@@ -1621,9 +1738,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "flywire-science-tiktok",
@@ -1660,9 +1777,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "betterstack-internet-torturing-fly",
@@ -1716,9 +1833,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:29Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   },
   {
    "video_id": "pcgamer-doom-mario-beatsaber-short",
@@ -1768,9 +1885,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-09-28T15:26:30Z"
+    "checked_at": "2026-09-29T09:50:04Z"
    },
-   "last_checked": "2026-09-28"
+   "last_checked": "2026-09-29"
   }
  ]
 }
