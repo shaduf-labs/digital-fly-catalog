@@ -1100,6 +1100,196 @@
       "accessed_at": "2026-09-29T09:50:05Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyleno-code",
+      "source_type": "code",
+      "source_url": "https://github.com/AgitationSkeleton/flyleno",
+      "title": "FlyLeno (TUURD Talk) repository, commit 078d8fa",
+      "claim": "The whole FlyWire v783 brain (Shiu et al. files, every connection kept) runs as the Shiu et al. LIF model in a Web Worker; inputs and outputs are hand-mapped with fixed gains; gait, balance, food seeking, homing, sleep and an action selector outside the connectome are engineered; no control. Basis of grade B (borderline C).",
+      "accessed_at": "2026-09-30T09:46:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyleno-site",
+      "source_type": "demo",
+      "source_url": "https://flyleno.viosarcade.xyz/",
+      "title": "FlyLeno browser show",
+      "claim": "The show's own claim: \"Tonight's host: Grey Leno, piloted by Drosophila melanogaster\". Page responded on 30 Sep 2026; not played by us.",
+      "accessed_at": "2026-09-30T09:39:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-flyleno-vinesauce-playthrough",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=BOSg6HYVX1o",
+      "title": "Vinny - Fruit Fly Brain pilots Grey Leno (Vinesauce stream)",
+      "claim": "A streamer's playthrough of the FlyLeno show, not the author's upload; 36,763 views on 30 Sep 2026 (16,201 a day earlier), which met our attention bar. Catalogue grade B.",
+      "accessed_at": "2026-09-30T09:41:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "video-fly-naf-best-run",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=4UNPlA-YJtw",
+      "title": "Fruit Fly Brain Plays Five Nights at Freddy's 1 (Fly-NAF best run)",
+      "claim": "The author's recording of the FlyWire brain playing Five Nights at Freddy's (4 AM on night 2, by the author's account); seeing is a pixel-difference threshold and each action comes from one chosen neuron; no control (catalogue grade B).",
+      "accessed_at": "2026-09-30T10:00:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "doom-fly-control-autopilot-sweep",
+      "source_type": "data record",
+      "source_url": "https://github.com/gabrycina/doom-fly-control/tree/6b2292286af9634bb967fcc672b47ff0ad89cbb6/results/a2",
+      "title": "doom-fly-control results/a2/summary.json (commit 6b22922)",
+      "claim": "Real wiring survives 53.34 s (n 20); three degree-preserving shuffles 5.48, 9.29 and 5.48 s (pooled 6.75); no connectome 5.50 s; matched brainless autopilot 51.93 s; the best of a sweep of 12 autopilot settings 53.44 s. Third-party numbers, read by us, not re-run.",
+      "accessed_at": "2026-09-30T09:50:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-cartpole-results",
+      "source_type": "code",
+      "source_url": "https://github.com/Curt-Park/fly-cartpole",
+      "title": "fly-cartpole repository, results/summary.md (commit 0455e2e)",
+      "claim": "Mushroom bodies wired from MaleCNS learn CartPole (233.8 steps over 20 held-out seeds); degree-preserving shuffled wiring learns about as well (218.3, permutation p = 0.20; recomputed by us); a TD actor-critic on the same Kenyon-cell code reaches 302.3.",
+      "accessed_at": "2026-09-30T09:58:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flybrain-connectome-benchmark",
+      "source_type": "code",
+      "source_url": "https://github.com/vichienFF/flybrain-connectome-benchmark",
+      "title": "flybrain-connectome-benchmark repository and preprint",
+      "claim": "A pre-registered benchmark of the Shiu et al. whole-brain model against published fly experiments: single-neuron knockout sensitivity 0.769, specificity 0.989 (authors' numbers, preprint).",
+      "accessed_at": "2026-09-30T09:50:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flybrain-connectome-benchmark-preprint",
+      "source_type": "paper",
+      "source_url": "https://doi.org/10.5281/zenodo.23025560",
+      "title": "flybrain-connectome-benchmark preprint (Zenodo)",
+      "claim": "The preprint record of the pre-registered Shiu et al. model benchmark (not peer-reviewed).",
+      "accessed_at": "2026-09-30T09:50:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "larva-vs-shuffles-results",
+      "source_type": "data record",
+      "source_url": "https://raw.githubusercontent.com/cqw-acq/connectome-null-models/be301d9c2c5fe481c68db174cbed40f1fb2881c9/results/results_cifar10.json",
+      "title": "connectome-null-models results_cifar10.json (commit be301d9)",
+      "claim": "Larval connectome reservoir 43.04 ± 0.40% on CIFAR-10 (15 runs) vs 42.95 ± 0.37% for 15 degree-preserving shuffles; p = 0.51 (recomputed by us).",
+      "accessed_at": "2026-09-30T09:55:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flys-hash-function-results",
+      "source_type": "data record",
+      "source_url": "https://raw.githubusercontent.com/realgauravvyas/flys-hash-function/271cc854dcd2c517a41074c493a504681c12df8a/out/benchmark.json",
+      "title": "The Fly's Hash Function benchmark.json (commit 271cc85)",
+      "claim": "Real hemibrain PN-to-KC wiring gives MNIST precision@16 0.4993 vs 0.5520 for degree-preserving nulls (worse), while beating SimHash (0.2414); recomputed by us.",
+      "accessed_at": "2026-09-30T09:55:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyconnectome-nulls-results",
+      "source_type": "data record",
+      "source_url": "https://github.com/gyujeongion/flyconnectome-nulls/blob/2f5683daa7a9619c228c05949d3208f3d32d3926/results/fix_analysis.txt",
+      "title": "flyconnectome-nulls results/fix_analysis.txt (commit 2f5683d)",
+      "claim": "After 600 generations the connectome reaches fitness 1.57; column shuffle 1.78 and degree swap 1.77 do better; boundary-preserving nulls 1.58 and 1.62 tie it (intervals include 0). The choice of null flips the verdict.",
+      "accessed_at": "2026-09-30T09:55:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "wired-different-results",
+      "source_type": "data record",
+      "source_url": "https://raw.githubusercontent.com/dhruvin-sarkar/ConnectomeLens/03d9c5c2d194532b661141cf3c60f8e58f0707d7/results/null_model_summary.json",
+      "title": "ConnectomeLens null_model_summary.json (commit 03d9c5c)",
+      "claim": "Real MaleCNS topology AUC-PR 0.7589 vs 0.7116 mean over 500 degree-preserving rewirings (0 of 500 at or above real, p = 0.002); neuropil location alone gives 0.722.",
+      "accessed_at": "2026-09-30T09:55:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-brain-zero-shot-per-fly",
+      "source_type": "data record",
+      "source_url": "https://github.com/vib2810/fly-brain-zero-shot/blob/0c63ba5cdd123f8d38eea62deb574353f0ec2632/assets/results_per_fly.csv",
+      "title": "fly-brain-zero-shot results_per_fly.csv (commit 0c63ba5)",
+      "claim": "Intact flies: 2.958 poles per 10 s real (n 48), 0.344 scrambled (n 32), 0.125 with turn neurons disconnected (n 48); unchanged at the new commit (recomputed by us).",
+      "accessed_at": "2026-09-30T09:55:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "making-fly-play-chess-notebook",
+      "source_type": "code",
+      "source_url": "https://github.com/mncrftfrcnm/making-fly-play-chess",
+      "title": "making-fly-play-chess repository (commit 4ddc9b5)",
+      "claim": "A fixed FlyWire patch with a trained readout scores 0.506 against its rewired twin (0.494; the interval spans 0.5) in a run the author marks as a code check, and loses to a material-count player (0.694). Grade C.",
+      "accessed_at": "2026-09-30T09:47:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flykart-code",
+      "source_type": "code",
+      "source_url": "https://github.com/ZENinjaneer/flykart",
+      "title": "FlyKart repository (commit 82d88a1)",
+      "claim": "The whole MaleCNS brain with the Shiu et al. equations steers a go-kart; the game computes the visual input and the controls are hand-mapped; no control run (grade B). The new commit adds a CPU path.",
+      "accessed_at": "2026-09-30T09:47:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "open-fly-code",
+      "source_type": "code",
+      "source_url": "https://github.com/Pr1nted/Open-Fly",
+      "title": "Open Fly repository",
+      "claim": "The whole Shiu et al. brain plays the strategy game Open Doctrines in the browser, with game events mapped to taste neurons and 39 arbitrary action groups; a shuffled control is pre-registered with no result yet (grade B).",
+      "accessed_at": "2026-09-30T09:47:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flygym-pypi",
+      "source_type": "documentation",
+      "source_url": "https://pypi.org/project/flygym/",
+      "title": "FlyGym on PyPI",
+      "claim": "FlyGym 2.1.0 (24 Jun 2026) is the latest release and requires Python >=3.12,<3.15; the last release for Python 3.11 is 1.2.1; no hard GPU dependency; about 170 MB download for 2.1.0 (our estimate from package metadata).",
+      "accessed_at": "2026-09-30T09:39:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "leetzerzz-recheck",
+      "source_type": "web",
+      "source_url": "https://github.com/leetzerzz",
+      "title": "GitHub address of the Pokémon stream's creator",
+      "claim": "Returned HTTP 404 on 30 Sep 2026: still no public code for the Raspberry Pi Pokémon stream; the verdict stays U.",
+      "accessed_at": "2026-09-30T09:42:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "gorilla-tag-video",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=wK4lixw7p4M",
+      "title": "I Taught a Fly How to Play Gorilla Tag",
+      "claim": "415,612 views on 30 Sep 2026; claims the fly \"learned\" with \"its open source brain\" but links no code. Uploaded 26 Sep, before our scan window; not refereed yet and not in the gallery.",
+      "accessed_at": "2026-09-30T09:41:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
     }
   ]
 }

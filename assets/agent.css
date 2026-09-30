@@ -826,3 +826,54 @@
 [data-agent-document] .dfl-crumb { margin: 0 0 6px; font-size: 13px; color: var(--dfl-muted); }
 [data-agent-document] .dfl-timeline ul.dfl-newlist { list-style: none; padding-left: 0; }
 [data-agent-document] .dfl-newlist .dfl-grade { margin-right: 4px; }
+
+/* ---- run 4 (2026-09-30): Does fly wiring help? (controls ledger), wiring-effect tags, catalogue controls */
+[data-agent-document] .dfl { --dfl-fx-helps: #2a8560; --dfl-fx-nodiff: #8a8984; --dfl-fx-worse: #c2503a; --dfl-fx-mixed: #5a6cc0; }
+[data-agent-document] .dfl-svg .fx-helps { fill: var(--dfl-fx-helps); }
+[data-agent-document] .dfl-svg .fx-nodiff { fill: var(--dfl-fx-nodiff); }
+[data-agent-document] .dfl-svg .fx-worse { fill: var(--dfl-fx-worse); }
+[data-agent-document] .dfl-svg .fx-mixed { fill: var(--dfl-fx-mixed); }
+[data-agent-document] .dfl-svg .fx-real { fill: var(--dfl-ink); }
+[data-agent-document] .dfl-svg .fx-none, [data-agent-document] .dfl-svg .fx-open { fill: #fff; stroke: var(--dfl-muted); stroke-width: 1.5; stroke-dasharray: 3 2; }
+[data-agent-document] .dfl-svg .dot { stroke: #fff; stroke-width: 2; }
+[data-agent-document] .dfl-svg .base-mark { fill: #fff; stroke: var(--dfl-ink); stroke-width: 2; }
+[data-agent-document] .dfl-svg .gap-line { stroke: var(--dfl-muted); stroke-width: 2; }
+[data-agent-document] .dfl-svg .row-rule { stroke: var(--dfl-line); stroke-width: 1; }
+[data-agent-document] .dfl-svg .grid-line { stroke: var(--dfl-line); stroke-width: 1; }
+[data-agent-document] .dfl-svg .ref-line { stroke: var(--dfl-line-strong); stroke-width: 1.5; }
+[data-agent-document] .dfl-svg .zone-helps { fill: var(--dfl-green-bg); }
+[data-agent-document] .dfl-svg .zone-same { fill: var(--dfl-soft); stroke: var(--dfl-line); stroke-width: 1; }
+[data-agent-document] .dfl-tag.is-fx-helps { background: var(--dfl-green-bg); color: var(--dfl-green); }
+[data-agent-document] .dfl-tag.is-fx-nodiff { background: var(--dfl-soft); color: var(--dfl-text); border: 1px solid var(--dfl-line-strong); }
+[data-agent-document] .dfl-tag.is-fx-worse { background: var(--dfl-red-bg); color: var(--dfl-red); }
+[data-agent-document] .dfl-tag.is-fx-mixed { background: #eceffa; color: #3f4f9c; }
+[data-agent-document] .dfl-tag.is-fx-none { background: #fff; color: var(--dfl-muted); border: 1px dashed var(--dfl-line-strong); }
+[data-agent-document] .dfl .dfl-ctl { display: inline-block; margin-top: 4px; color: var(--dfl-muted); font-family: var(--dfl-ui); font-size: 12px; }
+[data-agent-document] .dfl-answer .dfl-oneline { font-size: 18px; line-height: 1.45; }
+[data-agent-document] .dfl-caveat {
+  margin: 0 0 30px;
+  padding: 14px 18px 12px;
+  border: 1px solid var(--dfl-amber);
+  border-left-width: 4px;
+  border-radius: 0 var(--dfl-radius) var(--dfl-radius) 0;
+  background: var(--dfl-amber-bg);
+}
+[data-agent-document] .dfl-caveat h2 { margin: 0 0 6px; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--dfl-amber); }
+[data-agent-document] .dfl-caveat p { margin: 0 0 6px; color: var(--dfl-ink); }
+[data-agent-document] .dfl-caveat ul { margin: 0; padding-left: 1.2em; }
+[data-agent-document] .dfl-caveat li { margin: 0 0 4px; color: var(--dfl-ink); overflow-wrap: break-word; }
+[data-agent-document] .dfl .dfl-fxmatrix table { min-width: 36em; }
+[data-agent-document] .dfl .dfl-ledger td:first-child { min-width: 18em; }
+[data-agent-document] .dfl .dfl-ledger td:nth-child(3) { min-width: 16em; }
+[data-agent-document] .dfl-cases { margin: 14px 0 18px; padding-left: 1.4em; }
+[data-agent-document] .dfl-cases > li { margin: 0 0 14px; padding-left: 4px; }
+[data-agent-document] .dfl-cases h4 { margin: 0 0 4px; font-size: 16px; }
+[data-agent-document] .dfl-cases p { margin: 0 0 6px; }
+[data-agent-document] .dfl-checklist { counter-reset: fair; margin: 12px 0 20px; padding: 0; list-style: none; }
+[data-agent-document] .dfl-checklist > li { counter-increment: fair; position: relative; margin: 0 0 10px; padding: 10px 12px 10px 3em; border: 1px solid var(--dfl-line-strong); border-radius: var(--dfl-radius); background: #fff; overflow-wrap: break-word; }
+[data-agent-document] .dfl-checklist > li::before { content: counter(fair); position: absolute; left: .8em; top: .55em; width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--dfl-ink); color: #fff; font-family: var(--dfl-ui); font-size: 13px; font-weight: 700; line-height: 1.6em; text-align: center; }
+[data-agent-document] .dfl-change { padding-left: 1.2em; }
+[data-agent-document] .dfl-change li, [data-agent-document] .dfl-fxlist li { margin: 0 0 8px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-fxlist { margin: 10px 0 18px; padding-left: 0; list-style: none; }
+[data-agent-document] .dfl-fxlist .dfl-tag { margin-right: 4px; }
+[data-agent-document] .dfl-retention .dfl-tall { max-width: 26em; }

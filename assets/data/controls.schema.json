@@ -1,0 +1,1088 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://shaduf.ai/p/digital-fly-catalog/assets/data/controls.schema.json",
+ "title": "Digital Fly Lab controls ledger (first published in run 4, 2026-09-30)",
+ "description": "One study per catalogue entry that compares its fly wiring with a null (shuffled, rewired or random wiring) or a no-brain baseline. Numbers are the authors' unless recomputed_by_us is true; made_by_us marks our own measurement. Derived fields (retention, wiring_effect, fairness.verdict, quality.grade) follow fixed rules described in the Method section of https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "schema_version",
+  "dataset",
+  "version",
+  "generated_at",
+  "run_id",
+  "as_of",
+  "answer",
+  "null_types",
+  "studies",
+  "chart_rows"
+ ],
+ "properties": {
+  "schema_version": {
+   "const": "1.0.0"
+  },
+  "dataset": {
+   "const": "Digital Fly Lab controls ledger"
+  },
+  "version": {
+   "type": "string"
+  },
+  "generated_at": {
+   "type": "string",
+   "format": "date-time"
+  },
+  "run_id": {
+   "type": "string"
+  },
+  "as_of": {
+   "type": "string",
+   "format": "date"
+  },
+  "answer": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "one_line",
+    "short",
+    "counts"
+   ],
+   "properties": {
+    "one_line": {
+     "type": "string",
+     "maxLength": 240
+    },
+    "short": {
+     "type": "string"
+    },
+    "counts": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "studies",
+      "with_wiring_null",
+      "by_family"
+     ],
+     "properties": {
+      "studies": {
+       "type": "integer"
+      },
+      "with_wiring_null": {
+       "type": "integer"
+      },
+      "by_family": {
+       "type": "object",
+       "additionalProperties": false,
+       "properties": {
+        "reflex-circuit": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "helps",
+          "no_difference",
+          "worse",
+          "mixed",
+          "not_tested"
+         ],
+         "properties": {
+          "helps": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "no_difference": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "worse": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "mixed": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "not_tested": {
+           "type": "integer",
+           "minimum": 0
+          }
+         }
+        },
+        "sensory-model": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "helps",
+          "no_difference",
+          "worse",
+          "mixed",
+          "not_tested"
+         ],
+         "properties": {
+          "helps": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "no_difference": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "worse": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "mixed": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "not_tested": {
+           "type": "integer",
+           "minimum": 0
+          }
+         }
+        },
+        "body-steering": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "helps",
+          "no_difference",
+          "worse",
+          "mixed",
+          "not_tested"
+         ],
+         "properties": {
+          "helps": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "no_difference": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "worse": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "mixed": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "not_tested": {
+           "type": "integer",
+           "minimum": 0
+          }
+         }
+        },
+        "game-play": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "helps",
+          "no_difference",
+          "worse",
+          "mixed",
+          "not_tested"
+         ],
+         "properties": {
+          "helps": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "no_difference": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "worse": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "mixed": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "not_tested": {
+           "type": "integer",
+           "minimum": 0
+          }
+         }
+        },
+        "ml-benchmark": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "helps",
+          "no_difference",
+          "worse",
+          "mixed",
+          "not_tested"
+         ],
+         "properties": {
+          "helps": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "no_difference": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "worse": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "mixed": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "not_tested": {
+           "type": "integer",
+           "minimum": 0
+          }
+         }
+        },
+        "reservoir": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "helps",
+          "no_difference",
+          "worse",
+          "mixed",
+          "not_tested"
+         ],
+         "properties": {
+          "helps": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "no_difference": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "worse": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "mixed": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "not_tested": {
+           "type": "integer",
+           "minimum": 0
+          }
+         }
+        },
+        "language-model": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "helps",
+          "no_difference",
+          "worse",
+          "mixed",
+          "not_tested"
+         ],
+         "properties": {
+          "helps": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "no_difference": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "worse": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "mixed": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "not_tested": {
+           "type": "integer",
+           "minimum": 0
+          }
+         }
+        },
+        "forecasting": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "helps",
+          "no_difference",
+          "worse",
+          "mixed",
+          "not_tested"
+         ],
+         "properties": {
+          "helps": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "no_difference": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "worse": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "mixed": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "not_tested": {
+           "type": "integer",
+           "minimum": 0
+          }
+         }
+        },
+        "graph-analysis": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "helps",
+          "no_difference",
+          "worse",
+          "mixed",
+          "not_tested"
+         ],
+         "properties": {
+          "helps": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "no_difference": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "worse": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "mixed": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "not_tested": {
+           "type": "integer",
+           "minimum": 0
+          }
+         }
+        },
+        "evolution": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "helps",
+          "no_difference",
+          "worse",
+          "mixed",
+          "not_tested"
+         ],
+         "properties": {
+          "helps": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "no_difference": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "worse": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "mixed": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "not_tested": {
+           "type": "integer",
+           "minimum": 0
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "null_types": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "id",
+     "label",
+     "keeps",
+     "destroys",
+     "question_answered",
+     "pitfall",
+     "is_wiring_null"
+    ],
+    "properties": {
+     "id": {
+      "enum": [
+       "weight-shuffle",
+       "degree-preserving",
+       "random-graph",
+       "target-permutation",
+       "sign-shuffle",
+       "boundary-preserving",
+       "no-edges",
+       "lesion",
+       "no-graph-model",
+       "untrained",
+       "replay",
+       "no-brain-baseline",
+       "stimulus-absent",
+       "label-shuffle",
+       "fly-data",
+       "other"
+      ]
+     },
+     "label": {
+      "type": "string"
+     },
+     "keeps": {
+      "type": "string"
+     },
+     "destroys": {
+      "type": "string"
+     },
+     "question_answered": {
+      "type": "string"
+     },
+     "pitfall": {
+      "type": "string"
+     },
+     "is_wiring_null": {
+      "type": "boolean"
+     }
+    }
+   }
+  },
+  "studies": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "id",
+     "name",
+     "evidence_grade",
+     "made_by_us",
+     "task_family",
+     "loop",
+     "wiring",
+     "trained_parts",
+     "metric",
+     "real",
+     "floor",
+     "arms",
+     "effect",
+     "wiring_effect",
+     "baseline_beaten",
+     "fairness",
+     "quality",
+     "extraction",
+     "one_line",
+     "commit",
+     "checked_at",
+     "sources"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "evidence_grade": {
+      "enum": [
+       "A",
+       "B",
+       "C",
+       "D",
+       "U",
+       "n/a"
+      ]
+     },
+     "made_by_us": {
+      "type": "boolean"
+     },
+     "task_family": {
+      "enum": [
+       "reflex-circuit",
+       "sensory-model",
+       "body-steering",
+       "game-play",
+       "ml-benchmark",
+       "reservoir",
+       "language-model",
+       "forecasting",
+       "graph-analysis",
+       "evolution"
+      ]
+     },
+     "loop": {
+      "enum": [
+       "closed-loop",
+       "open-loop",
+       "offline"
+      ]
+     },
+     "wiring": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "dataset",
+       "release",
+       "scope"
+      ],
+      "properties": {
+       "dataset": {
+        "type": "string"
+       },
+       "release": {
+        "type": "string"
+       },
+       "scope": {
+        "type": "string"
+       }
+      }
+     },
+     "trained_parts": {
+      "type": "string"
+     },
+     "metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "name",
+       "unit",
+       "higher_is_better"
+      ],
+      "properties": {
+       "name": {
+        "type": "string"
+       },
+       "unit": {
+        "type": "string"
+       },
+       "higher_is_better": {
+        "type": [
+         "boolean",
+         "null"
+        ]
+       }
+      }
+     },
+     "real": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "n",
+       "spread",
+       "source"
+      ],
+      "properties": {
+       "value": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "n": {
+        "type": [
+         "integer",
+         "null"
+        ]
+       },
+       "spread": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source": {
+        "type": "string"
+       }
+      }
+     },
+     "floor": {
+      "oneOf": [
+       {
+        "type": "null"
+       },
+       {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+         "label",
+         "value",
+         "source"
+        ],
+        "properties": {
+         "label": {
+          "type": "string"
+         },
+         "value": {
+          "type": [
+           "number",
+           "null"
+          ]
+         },
+         "source": {
+          "type": "string"
+         }
+        }
+       }
+      ]
+     },
+     "arms": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "additionalProperties": false,
+       "required": [
+        "arm_id",
+        "null_type",
+        "label",
+        "value",
+        "n",
+        "samples",
+        "spread",
+        "readout_refit",
+        "source",
+        "recomputed_by_us"
+       ],
+       "properties": {
+        "arm_id": {
+         "type": "string"
+        },
+        "null_type": {
+         "enum": [
+          "weight-shuffle",
+          "degree-preserving",
+          "random-graph",
+          "target-permutation",
+          "sign-shuffle",
+          "boundary-preserving",
+          "no-edges",
+          "lesion",
+          "no-graph-model",
+          "untrained",
+          "replay",
+          "no-brain-baseline",
+          "stimulus-absent",
+          "label-shuffle",
+          "fly-data",
+          "other"
+         ]
+        },
+        "label": {
+         "type": "string"
+        },
+        "value": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "n": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "samples": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "spread": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "readout_refit": {
+         "type": [
+          "boolean",
+          "null"
+         ]
+        },
+        "source": {
+         "type": "string"
+        },
+        "recomputed_by_us": {
+         "type": "boolean"
+        }
+       }
+      }
+     },
+     "effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "headline_arm",
+       "best_null_arm",
+       "retention",
+       "retention_method",
+       "baseline_arm",
+       "baseline_retention",
+       "difference",
+       "ci",
+       "p",
+       "stat_note"
+      ],
+      "properties": {
+       "headline_arm": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "best_null_arm": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "retention": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "retention_method": {
+        "enum": [
+         "floor",
+         "ratio",
+         "none"
+        ]
+       },
+       "baseline_arm": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "baseline_retention": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "difference": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "ci": {
+        "oneOf": [
+         {
+          "type": "null"
+         },
+         {
+          "type": "array",
+          "items": {
+           "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+         }
+        ]
+       },
+       "p": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "stat_note": {
+        "type": "string"
+       }
+      }
+     },
+     "wiring_effect": {
+      "enum": [
+       "helps",
+       "no-difference",
+       "worse",
+       "mixed",
+       "not-tested"
+      ]
+     },
+     "baseline_beaten": {
+      "enum": [
+       "yes",
+       "no",
+       "not-tested"
+      ]
+     },
+     "fairness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "keeps_degree",
+       "keeps_io_boundary",
+       "tuned_equally",
+       "null_samples",
+       "has_no_brain_baseline",
+       "verdict",
+       "reason"
+      ],
+      "properties": {
+       "keeps_degree": {
+        "type": [
+         "boolean",
+         "null"
+        ]
+       },
+       "keeps_io_boundary": {
+        "type": [
+         "boolean",
+         "null"
+        ]
+       },
+       "tuned_equally": {
+        "type": [
+         "boolean",
+         "null"
+        ]
+       },
+       "null_samples": {
+        "type": [
+         "integer",
+         "null"
+        ]
+       },
+       "has_no_brain_baseline": {
+        "type": "boolean"
+       },
+       "verdict": {
+        "enum": [
+         "fair",
+         "partly-fair",
+         "unfair",
+         "unclear"
+        ]
+       },
+       "reason": {
+        "type": "string"
+       }
+      }
+     },
+     "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "n_per_arm",
+       "held_out",
+       "uncertainty_reported",
+       "results_in_repo_files",
+       "independent_test",
+       "peer_review",
+       "recomputed_by_us",
+       "grade",
+       "reason"
+      ],
+      "properties": {
+       "n_per_arm": {
+        "type": [
+         "integer",
+         "null"
+        ]
+       },
+       "held_out": {
+        "type": [
+         "boolean",
+         "null"
+        ]
+       },
+       "uncertainty_reported": {
+        "type": "boolean"
+       },
+       "results_in_repo_files": {
+        "type": "boolean"
+       },
+       "independent_test": {
+        "type": "boolean"
+       },
+       "peer_review": {
+        "enum": [
+         "peer-reviewed",
+         "preprint",
+         "none"
+        ]
+       },
+       "recomputed_by_us": {
+        "type": "boolean"
+       },
+       "grade": {
+        "enum": [
+         "strong",
+         "moderate",
+         "weak"
+        ]
+       },
+       "reason": {
+        "type": "string"
+       }
+      }
+     },
+     "extraction": {
+      "enum": [
+       "files",
+       "paper",
+       "catalogue-text"
+      ]
+     },
+     "one_line": {
+      "type": "string",
+      "maxLength": 240
+     },
+     "commit": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "checked_at": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "additionalProperties": false,
+       "required": [
+        "url",
+        "label"
+       ],
+       "properties": {
+        "url": {
+         "type": "string"
+        },
+        "label": {
+         "enum": [
+          "direct",
+          "fetch-summary"
+         ]
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "chart_rows": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "study_id",
+     "label",
+     "task_family",
+     "headline_null_type",
+     "retention",
+     "retention_method",
+     "baseline_retention",
+     "wiring_effect",
+     "quality",
+     "fairness"
+    ],
+    "properties": {
+     "study_id": {
+      "type": "string"
+     },
+     "label": {
+      "type": "string"
+     },
+     "task_family": {
+      "enum": [
+       "reflex-circuit",
+       "sensory-model",
+       "body-steering",
+       "game-play",
+       "ml-benchmark",
+       "reservoir",
+       "language-model",
+       "forecasting",
+       "graph-analysis",
+       "evolution"
+      ]
+     },
+     "headline_null_type": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "enum": [
+       "weight-shuffle",
+       "degree-preserving",
+       "random-graph",
+       "target-permutation",
+       "sign-shuffle",
+       "boundary-preserving",
+       null
+      ]
+     },
+     "retention": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "retention_method": {
+      "enum": [
+       "floor",
+       "ratio",
+       "none"
+      ]
+     },
+     "baseline_retention": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "wiring_effect": {
+      "enum": [
+       "helps",
+       "no-difference",
+       "worse",
+       "mixed",
+       "not-tested"
+      ]
+     },
+     "quality": {
+      "enum": [
+       "strong",
+       "moderate",
+       "weak"
+      ]
+     },
+     "fairness": {
+      "enum": [
+       "fair",
+       "partly-fair",
+       "unfair",
+       "unclear"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

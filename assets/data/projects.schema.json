@@ -1,7 +1,7 @@
 {
  "$schema": "https://json-schema.org/draft/2020-12/schema",
  "$id": "https://shaduf.ai/p/digital-fly-catalog/assets/data/projects.schema.json",
- "title": "Digital Fly Lab catalogue record (published 2026-09-28; optional fields added in run 2)",
+ "title": "Digital Fly Lab catalogue record (published 2026-09-28; optional fields added in run 2 and run 4)",
  "description": "One record per catalogued project. Dates are ISO 8601. 'last_commit' and 'last_release' describe upstream activity; 'last_verified' and 'grade_date' describe our own checks. Values quoted from upstream are in 'claim'; everything else is our own wording.",
  "type": "object",
  "required": [
@@ -394,6 +394,24 @@
   "peer_review_note": {
    "type": "string",
    "description": "Full wording behind peer_review (for example \"none (blog post)\"). Added 2026-09-28 (run 2)."
+  },
+  "controls": {
+   "enum": [
+    "wiring-null",
+    "baseline-only",
+    "none"
+   ],
+   "description": "Added in run 4 (2026-09-30), optional. Whether the project tests its result against a wiring null (shuffled, rewired or random wiring), only against a no-brain or no-graph baseline, or has no control. Studies are in assets/data/controls.json."
+  },
+  "wiring_effect": {
+   "enum": [
+    "helps",
+    "no-difference",
+    "worse",
+    "mixed",
+    "not-tested"
+   ],
+   "description": "Added in run 4 (2026-09-30), optional. Copied from the study in controls.json; 'not-tested' whenever controls is not 'wiring-null'."
   }
  }
 }

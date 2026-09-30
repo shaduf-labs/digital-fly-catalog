@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "run:a46416d4-3706-4c00-ba7d-1371567178c4",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-30T09:24:00Z",
+      "completed_at": "2026-09-30T10:55:00Z",
+      "title": "Fourth check: does fly wiring help? 31 control studies compared, a FlyLeno verdict and 12 new entries",
+      "summary": "82 entries and 47 videos re-checked: 7 repositories with new commits, 3 new releases, 0 grade changes, 0 link failures, 0 videos removed. A new page and data file compare 31 control studies: real fly wiring beat scrambled wiring in 10 of 23, mostly reflex, sensory and steering circuits, and tied or lost in trained, reservoir and ML tasks (7); the fly network beats a no-brain baseline in only 2 of 13. FlyLeno graded B (borderline C). 12 new entries and 2 videos; catalogue records gain controls and wiring_effect fields.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-09-30-run4/",
+      "entrypoint": "reports/2026-09-30-run4/index.html"
+    },
+    {
       "run_id": "run:4018cb43-5949-4ecf-911a-0366c3d032ab",
       "status": "completed",
       "answer_change": "meaningful_change",

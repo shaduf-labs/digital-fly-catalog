@@ -2,6 +2,84 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-09-30-run4-tracking",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "82 entries re-checked on 30 Sep 2026: 7 with new commits, 3 new releases, 0 grade changes, 0 main-link failures; 47 videos re-checked: all available, 0 removed; 12 entries and 2 videos added.",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-09-30-run4-wiring-page",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "New page Does fly wiring help?: 31 control studies side by side. Sometimes: real fly wiring beat scrambled wiring in 10 of 23 studies, mostly reflex, sensory and steering circuits; in trained, reservoir and ML tasks it tied or lost (7). The fly network beats a no-brain baseline in only 2 of 13. Only 9 studies are strong; numbers are the authors'.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/"
+    },
+    {
+      "change_id": "2026-09-30-run4-controls-data",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "New data file controls.json with its JSON Schema: every study's arms, source files, retention and rule-based wiring effect, fairness and quality labels.",
+      "path": "/p/digital-fly-catalog/for-ai-agents/#controls-data-heading"
+    },
+    {
+      "change_id": "2026-09-30-run4-flyleno-verdict",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "Is it real?: new verdict on FlyLeno, \"Tonight's host: Grey Leno, piloted by Drosophila melanogaster\" (grade B, borderline C: the whole FlyWire brain runs untrained, but gait, homing and action choice are engineered and there is no control).",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-flyleno"
+    },
+    {
+      "change_id": "2026-09-30-run4-doom-row",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "Is it real?: the DOOMFLY row adds the Doom control study's sweep of 12 autopilot settings: the best survives 53.44 s against DOOMFLY's 53.34 s, next to the matched autopilot's 51.93 s. The controls section now points to the 31-study ledger instead of its 20-study table.",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-doomfly"
+    },
+    {
+      "change_id": "2026-09-30-run4-rechecks",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "Re-checked without change: the Pokémon stream and the Rainbow Six claim (both U), flydoom by mutkuoz (new commits concern a separate variant; stays A) and Haltere (round-6 flights, still no race finish; stays C).",
+      "path": "/p/digital-fly-catalog/is-it-real/#verdicts-heading"
+    },
+    {
+      "change_id": "2026-09-30-run4-new-entries",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "12 new catalogue entries: 2 A (fly-cartpole, flybrain-connectome-benchmark), 5 B (FlyLeno, FlyKart, Open Fly, Fly With Me, Fly-NAF), 2 C (making-fly-play-chess, FlyCNS Tic-Tac-Toe), 1 D (FLYBRAIN Bad Apple x DOOM) and 2 data tools (connectome_interpreter, FlyBrainLab).",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-09-30-run4-releases",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "New releases re-checked: acamilo-flybrain v0.6.7 (damage reward; stays C), FlyWire annotations Version 3.2.0 (annotation release, not a new connectome) and Kick the Fly 2.13.1 (tests and tooling; stays C).",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-09-30-run4-schema-controls",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "projects.json and its schema gain two optional fields on every record: controls (wiring-null 22, baseline-only 8, none 64) and wiring_effect; the catalogue filter gains a Controls filter. Additive: no field removed or renamed.",
+      "path": "/p/digital-fly-catalog/for-ai-agents/#fields-heading"
+    },
+    {
+      "change_id": "2026-09-30-run4-videos",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "2 new videos: Vinesauce's FlyLeno stream (B), labelled as a streamer's playthrough, not the author's upload, and Fly-NAF's best run (B), the author's upload.",
+      "path": "/p/digital-fly-catalog/gallery/"
+    },
+    {
+      "change_id": "2026-09-30-run4-lead-scan",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "Lead scan: 1 claim promoted (FlyLeno); Leetzerzz's Pokémon stream and the Rainbow Six claim unchanged; 0 link failures and 0 video removals.",
+      "path": "/p/digital-fly-catalog/reports/2026-09-30-run4/#scan-heading"
+    },
+    {
+      "change_id": "2026-09-30-run4-build-your-own",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "Build your own: pins unchanged after a PyPI check (full re-test due by 12 Oct 2026); the Add a body path states that FlyGym 2.1.0 needs Python 3.12 to 3.14 and that brain-body coupling is untested.",
+      "path": "/p/digital-fly-catalog/build-your-own/#deeper-heading"
+    },
+    {
+      "change_id": "2026-09-30-run4-report",
+      "changed_at": "2026-09-30T10:55:00Z",
+      "summary": "Research report of the fourth check: the controls ledger, the FlyLeno verdict, 12 new entries, method and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-09-30-run4/"
+    },
+    {
       "change_id": "2026-09-29-run3-tracking",
       "changed_at": "2026-09-29T10:17:36Z",
       "summary": "73 entries re-checked on 29 Sep 2026: 3 with new commits and releases, 1 re-graded (DesktopFly B to C), all main links responding; 44 videos re-checked: all available; 9 entries and 3 videos added.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "default_page": "overview",
-  "meaningfully_updated_at": "2026-09-29T10:17:36Z",
+  "meaningfully_updated_at": "2026-09-30T10:55:00Z",
   "pages": [
     {
       "id": "overview",
@@ -132,6 +132,21 @@
       "description": "Is the fruit fly brain simulation real? Evidence grades and verdicts on viral claims, separating measured wiring from modelled, hand-made, trained and scripted parts.",
       "parent": null,
       "entrypoint": "is-it-real/index.html",
+      "entrypoint_type": "html_fragment",
+      "redirects": [],
+      "visibility": "public",
+      "indexable": true,
+      "tools": []
+    },
+    {
+      "id": "does-fly-wiring-help",
+      "slug": "does-fly-wiring-help",
+      "label": "Does fly wiring help?",
+      "icon": "◐",
+      "group": "Understand",
+      "description": "Does real fruit fly connectome wiring help? 31 control studies compared: where scrambled wiring fails, where it does just as well, brain vs no-brain baselines, and a checklist for fair controls.",
+      "parent": null,
+      "entrypoint": "does-fly-wiring-help/index.html",
       "entrypoint_type": "html_fragment",
       "redirects": [],
       "visibility": "public",
