@@ -16,7 +16,7 @@
     <meta property="og:description" content="Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output and a shuffled-wiring control.">
     <meta property="og:url" content="https://shaduf.ai/p/digital-fly-catalog/build-your-own/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Build your own","description":"Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output and a shuffled-wiring control.","dateModified":"2026-09-30T10:55:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/build-your-own/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Build your own","description":"Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output and a shuffled-wiring control.","dateModified":"2026-10-01T17:59:48Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/build-your-own/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Digital Fly Lab updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_digital_fly_catalog" data-page-id="build-your-own">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -53,15 +53,35 @@
   <p class="dfl-lede">Run the published whole-brain model of the fruit fly on an ordinary CPU. You give 21 sugar-sensing neurons a taste, the simulated brain of 138,639 neurons responds, and you read out the neuron that makes a fly extend its proboscis to feed. Then you change one thing and check the result against shuffled wiring.</p>
 
   <ul class="dfl-meta" aria-label="Guide status">
-    <li><strong>Tested on:</strong> <span>Linux x86_64 (Debian 12), Python 3.11.2, 2 CPUs, no GPU, no C++ compiler, <time datetime="2026-09-28">28 Sep 2026</time></span></li>
+    <li><strong>Tested on:</strong> <span>Linux x86_64 (Debian 12), Python 3.11.2, 2 CPUs, no GPU, no C++ compiler, <time datetime="2026-09-28">28 Sep 2026</time>; re-tested from an empty folder on <time datetime="2026-10-01">1 Oct 2026</time></span></li>
     <li><strong>Full run:</strong> <span>28 min for 20 one-second trials; tests 52 s</span></li>
     <li><strong>Untested:</strong> <span>macOS, Windows/WSL, Colab, machines with a compiler</span></li>
-    <li><strong>Pins:</strong> <span>checked against PyPI on <time datetime="2026-09-30">30 Sep 2026</time>: no pinned package has a newer release since our test; next full re-test due by 12 Oct 2026</span></li>
+    <li><strong>Pins:</strong> <span>unchanged; checked against PyPI on <time datetime="2026-10-01">1 Oct 2026</time> and installed cleanly in the re-test that day</span></li>
   </ul>
 
   <section class="dfl-answer" aria-labelledby="summary-heading">
     <h2 id="summary-heading">In one paragraph</h2>
     <p>We ran this guide from an empty folder on 28 September 2026. With sugar neurons firing at 150 Hz, the proboscis motor neuron MN9 fired at <strong>85.2 ± 3.2 Hz</strong>, so our rule said "extend the proboscis". With no stimulus nothing fired at all. With the same stimulus on <strong>shuffled wiring, MN9 stayed at 0 Hz in 6 of 6 trials</strong>, so the response depends on the real connectome. All 6 tests passed. We have not tried other operating systems, so we cannot promise it runs on yours; the untested parts are labelled on every step.</p>
+    <p><strong>Re-tested on 1 October 2026:</strong> same pins, both data checksums unchanged, 6 tests passed, and the first sugar trial gave <strong>82.0 Hz, bit-exact</strong> with our first run (trial seeds 1 and 2 also matched exactly: 89 and 81 Hz). <a href="#retest-heading">What the re-test covered</a></p>
+  </section>
+
+  <section aria-labelledby="retest-heading">
+    <h2 id="retest-heading">Re-test, 1 October 2026</h2>
+    <div class="table-scroll is-wide">
+      <table>
+        <caption>The beginner path re-run from an empty folder on 1 Oct 2026 (Linux x86_64, Python 3.11.2, 2 CPUs). No page fixes were needed.</caption>
+        <thead><tr><th scope="col">Step</th><th scope="col">Result</th><th scope="col">Time</th></tr></thead>
+        <tbody>
+          <tr><td>Environment without pip, then get-pip (the Debian fallback on this page)</td><td>Worked as written; <code>ensurepip</code> was missing, as the page warns. get-pip.py sha256 <code>fb24e693…8ddf6</code> on 1 Oct 2026 (a dated snapshot: get-pip.py changes over time, so this is not a pin)</td><td>about 8 s</td></tr>
+          <tr><td>Pinned install from <code>requirements.lock</code></td><td>Exit 0; Brian2 2.9.0, numpy 2.3.5; lock file unchanged</td><td>37 s</td></tr>
+          <tr><td>Partial clone of the model at commit 91bdd1e7</td><td>OK</td><td>9 s</td></tr>
+          <tr><td>Data checksums</td><td>Both files match the table on this page</td><td>under 1 s</td></tr>
+          <tr><td>First sugar trial (real wiring, seed 0, 150 Hz, 1 s)</td><td>MN9 82.0 Hz, inside the 75–95 Hz pass band and bit-exact with our first run</td><td>74 s</td></tr>
+          <tr><td><code>pytest -q</code></td><td>6 passed</td><td>56.5 s</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Not re-run on 1 Oct 2026: the full 20-trial <code>run_demo.py</code> and the "change one thing" experiments; their results are from 28 Sep 2026. The re-test covers Linux only, like the first test.</p>
   </section>
 
   <section aria-labelledby="labels-heading">
@@ -315,7 +335,55 @@ print(ft.rate_of(r, ft.MN9))</code></pre>
     <h2 id="control-heading">The shuffled-wiring control, and why it matters</h2>
     <p>A shuffled brain keeps everything except who connects to whom. Our control randomly re-assigns the target of each of the 15.1 million connections (<code>shuffle_seed=1</code> and <code>2</code>). Every neuron keeps its number of inputs and outputs, and its outgoing weights and sign, so excitatory neurons stay excitatory.</p>
     <p><strong>Result:</strong> with the same 150 Hz sugar stimulus, MN9 went from 85.2 Hz to <strong>0 Hz in 6 of 6 trials</strong>. The sugar neurons still fired at about 147 Hz, but activity reached only 120–126 neurons instead of 409. So the response depends on the specific wiring, not only on the number or strength of connections. This matches the direction of the paper (shuffled weights activated MN9 in 1 of 100 runs) and of the drosophila-brain-mlx port (0 Hz); we did not re-run those.</p>
-    <p>This is the test most viral demos skip. When you see a "fly brain" play a game, ask whether it still plays with shuffled wiring. See <a href="../is-it-real/index.html">Is it real?</a> for the demos we checked. We tested only one kind of shuffle; others, such as a weight-only shuffle, are <span class="dfl-tag is-untested">Untested</span>. With only 2 shuffles, our run is a clean but small result; <a href="../does-fly-wiring-help/index.html">Does fly wiring help?</a> compares it with 30 other control studies and gives a four-point checklist for a fairer control (3 or more shuffles of each kind, the same tuning, a no-brain baseline).</p>
+    <p>This is the test most viral demos skip. When you see a "fly brain" play a game, ask whether it still plays with shuffled wiring. See <a href="../is-it-real/index.html">Is it real?</a> for the demos we checked. With only 2 shuffles this is a clean but small result. On 1 Oct 2026 we ran the fuller version: <a href="../does-fly-wiring-help/index.html#fairtest-heading">four kinds of scrambled wiring, five shuffles each, pre-registered</a>. Degree-preserving and weight shuffles gave 0 Hz, a shuffle that keeps the sensory and motor wiring kept 39 Hz, and a sign shuffle made the whole brain fire.</p>
+
+    <aside class="dfl-tryfair" aria-labelledby="tryfair-heading">
+      <h3 id="tryfair-heading">Try a fair control yourself</h3>
+      <p>A fairer control uses <strong>more than one kind of shuffle, several shuffles of each, and a second measurement next to MN9</strong>: how many spikes the whole brain fires. Our test showed why. A sign shuffle pushed MN9 to 214 Hz, far above the real 85 Hz, only because the whole brain ignited; on MN9 alone it would look like a better reflex.</p>
+      <ol>
+        <li><strong>Pick the null.</strong> The three shuffles below are the ones from our test (Python and numpy, MIT licence). Each takes the edge list as three arrays (presynaptic index, postsynaptic index, signed synapse count) and keeps the number of connections and the total synapse count. They passed our unit tests and produced the published results. <span class="dfl-tag is-tested">Run by us 2026-10-01 on Linux</span></li>
+        <li><strong>Wire it into the model.</strong> <code>fly_taste.py</code> only knows the degree-preserving shuffle (<code>shuffle_seed</code>). To use a weight or sign shuffle, the network has to be built from the shuffled signed counts instead of the upstream ones. We did this in our own trial worker, not in the beginner files, so this step as a beginner change is <span class="dfl-tag is-untested">Untested</span>.</li>
+        <li><strong>Measure two things.</strong> Record MN9 and the whole brain's spike count, and run at least 3 shuffles of each kind. A 1 s trial took us 74 s with the real wiring and about 2 minutes with a sign shuffle, on 2 CPUs.</li>
+      </ol>
+      <details class="dfl-code">
+        <summary>Three shuffle functions from our fair test (code as run, comments added; MIT)</summary>
+        <pre><code>import numpy as np
+
+# pre, post: int32 arrays of neuron indices; cnt: int32 signed synapse counts (count x +1/-1).
+# Every function keeps the edge order, the number of edges and the total synapse count.
+
+def null_degree(pre, post, cnt, seed):
+    # Degree-preserving: permute the postsynaptic column (as fly_taste.load_edges does).
+    p = post.copy()
+    np.random.default_rng(seed).shuffle(p)
+    return pre, p, cnt
+
+def null_weight(pre, post, cnt, seed):
+    # Weight shuffle: keep who connects to whom and each edge's sign; permute the sizes.
+    a = np.abs(cnt)
+    perm = np.random.default_rng(seed).permutation(a.size)
+    return pre, post, (np.sign(cnt) * a[perm]).astype(cnt.dtype)
+
+def neuron_signs(pre, cnt, n):
+    """Per-neuron sign (+1/-1) for every neuron with outgoing edges, 0 otherwise.
+    Raises if a presynaptic neuron has edges of both signs (Dale's law violated in the input)."""
+    s = np.zeros(n, dtype=np.int8)
+    sg = np.sign(cnt).astype(np.int8)
+    s[pre] = sg
+    if not np.array_equal(s[pre], sg):
+        raise ValueError("input data has a presynaptic neuron with mixed signs")
+    return s
+
+def null_sign(pre, post, cnt, seed, n):
+    # Sign shuffle with Dale's law: each neuron keeps one sign, signs are permuted across neurons.
+    s = neuron_signs(pre, cnt, n)
+    has = np.nonzero(s != 0)[0]
+    new = np.zeros_like(s)
+    new[has] = np.random.default_rng(seed).permutation(s[has])
+    return pre, post, (np.abs(cnt) * new[pre]).astype(cnt.dtype)</code></pre>
+      </details>
+      <p>The model code they plug into is upstream: <a href="https://github.com/philshiu/Drosophila_brain_model/tree/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960">philshiu/Drosophila_brain_model @ 91bdd1e7</a>. Our numbers to compare with, and the limits of our test, are on <a href="../does-fly-wiring-help/index.html#fairtest-heading">Does fly wiring help?</a></p>
+    </aside>
   </section>
 
   <section aria-labelledby="tests-heading">
@@ -1010,7 +1078,7 @@ non-commercial use only). See README.md.</code></pre>
       <li>FlyWire data licence: <a href="https://flywire.ai/guidelines">flywire.ai/guidelines</a>; Zenodo v783 record: <a href="https://zenodo.org/records/10676866">10676866</a>.</li>
       <li>Brian2 documentation: <a href="https://brian2.readthedocs.io/en/stable/introduction/install.html">installation</a>.</li>
       <li>FlyGym: <a href="https://github.com/NeLy-EPFL/flygym">repository</a>, <a href="https://github.com/NeLy-EPFL/flygym/releases/tag/v2.0.0">v2.0.0 release notes</a>. MaleCNS: <a href="https://male-cns.janelia.org/">portal</a>.</li>
-      <li>Our research record for this guide: <a href="../reports/2026-09-27-bootstrap/index.html">bootstrap research report</a>.</li>
+      <li>Our research record for this guide: <a href="../reports/2026-09-27-bootstrap/index.html">bootstrap research report</a>; the re-test and our fair test: <a href="../reports/2026-10-01-run5/index.html">report of 1 Oct 2026</a>.</li>
     </ul>
   </section>
 
@@ -1033,7 +1101,7 @@ non-commercial use only). See README.md.</code></pre>
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>30 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>1 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Verify project links and implementations, explain the model and keep the catalogue and build guide current.</p><a href="../index.html">Full pool information →</a></section>
     </div>

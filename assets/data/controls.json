@@ -1,22 +1,22 @@
 {
  "schema_version": "1.0.0",
  "dataset": "Digital Fly Lab controls ledger",
- "version": "2026-09-30-run4",
- "generated_at": "2026-09-30T10:06:19Z",
- "run_id": "run:a46416d4-3706-4c00-ba7d-1371567178c4",
- "as_of": "2026-09-30",
+ "version": "2026-10-01-run5",
+ "generated_at": "2026-10-01T17:26:10Z",
+ "run_id": "run:721af05d-86ce-46b6-9c1d-0038d2469d32",
+ "as_of": "2026-10-01",
  "answer": {
-  "one_line": "Sometimes: real fly wiring beat scrambled wiring in 10 of 23 studies, mostly reflex, sensory and steering circuits; in trained, reservoir and ML tasks it tied or lost (7).",
-  "short": "Of 31 control studies in our catalogue, 23 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 10, makes no difference in 5, does worse in 2, gives mixed results in 5 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits (85 Hz vs 0 Hz in our own run), while networks trained for machine-learning or game tasks usually do as well with scrambled wiring, and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: one study's connectome loses to standard shuffles but ties boundary-preserving ones, and most studies are small, single-author and not replicated.",
+  "one_line": "Sometimes: real fly wiring beat scrambled wiring in 10 of 24 studies, mostly reflex, sensory and steering circuits; in trained, reservoir and ML tasks it tied or lost (7).",
+  "short": "Of 32 control studies in our catalogue, 24 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 10, makes no difference in 5, does worse in 2, gives mixed results in 6 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring, and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire; one published study's connectome loses to standard shuffles but ties boundary-preserving ones. Most studies are small, single-author and not replicated.",
   "counts": {
-   "studies": 31,
-   "with_wiring_null": 23,
+   "studies": 32,
+   "with_wiring_null": 24,
    "by_family": {
     "reflex-circuit": {
-     "helps": 4,
+     "helps": 3,
      "no_difference": 0,
      "worse": 0,
-     "mixed": 0,
+     "mixed": 1,
      "not_tested": 0
     },
     "sensory-model": {
@@ -34,7 +34,7 @@
      "not_tested": 2
     },
     "game-play": {
-     "helps": 1,
+     "helps": 2,
      "no_difference": 2,
      "worse": 0,
      "mixed": 2,
@@ -234,7 +234,7 @@
  "studies": [
   {
    "id": "byo-shiu-shuffle",
-   "name": "Build your own: sugar to MN9 with shuffled wiring (our run)",
+   "name": "Build your own: sugar to MN9 against four scrambled-wiring nulls (our run)",
    "evidence_grade": "A",
    "made_by_us": true,
    "task_family": "reflex-circuit",
@@ -253,8 +253,8 @@
    "real": {
     "value": 85.2,
     "n": 5,
-    "spread": "± 3.19 sd",
-    "source": "Digital Fly Lab Build your own run of 2026-09-28, results.json: conditions[0] sugar_150Hz mn9_rate_hz_mean / _sd (per trial 82, 89, 81, 86, 88)"
+    "spread": "± 3.56 sd",
+    "source": "Digital Fly Lab Build your own run of 2026-09-28, results.json conditions[0] (trials 82, 89, 81, 86, 88 Hz); trial seeds 0-2 re-run in run 5 bit-exact (Digital Fly Lab fair test of 2026-10-01, trial files real-0..2.json)"
    },
    "floor": {
     "label": "no stimulus (network silent)",
@@ -263,45 +263,57 @@
    },
    "arms": [
     {
-     "arm_id": "shuffle-seed1",
+     "arm_id": "D-degree-preserving",
      "null_type": "degree-preserving",
-     "label": "shuffled wiring, seed 1 (postsynaptic column permuted; degrees, weights and signs kept)",
+     "label": "Degree-preserving shuffle, 5 shuffle(s) (seeds 1, 2, 3, 4, 5); whole-brain spikes 4021 vs real 13,372-14,284; neurons active 102.7",
      "value": 0,
-     "n": 3,
-     "samples": 1,
-     "spread": "± 0.00 sd",
-     "readout_refit": null,
-     "source": "Digital Fly Lab Build your own run of 2026-09-28, results.json: conditions[4] shuffled_wiring_seed1 (0, 0, 0 Hz; sugar GRNs still 146.6 Hz)",
-     "recomputed_by_us": true
-    },
-    {
-     "arm_id": "shuffle-seed2",
-     "null_type": "degree-preserving",
-     "label": "shuffled wiring, seed 2",
-     "value": 0,
-     "n": 3,
-     "samples": 1,
-     "spread": "± 0.00 sd",
-     "readout_refit": null,
-     "source": "Digital Fly Lab Build your own run of 2026-09-28, results.json: conditions[5] shuffled_wiring_seed2 (0, 0, 0 Hz)",
-     "recomputed_by_us": true
-    },
-    {
-     "arm_id": "stim-50hz",
-     "null_type": "other",
-     "label": "weaker input (sugar GRNs at 50 Hz), real wiring",
-     "value": 16.6,
      "n": 5,
-     "samples": 1,
-     "spread": "± 7.23 sd",
+     "samples": 5,
+     "spread": "± 0.00 sd across 5 shuffles",
      "readout_refit": null,
-     "source": "Digital Fly Lab Build your own run of 2026-09-28, results.json: conditions[2] sugar_50Hz",
+     "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[D]; seed 1: 0 Hz (run 1 results.json shuffled_wiring_seed1 (trial seed 0; all 3 trials 0 Hz; 126 neurons active over 3 trials)); seed 2: 0 Hz (run 1 results.json shuffled_wiring_seed2 (trial seed 0; all 3 trials 0 Hz; 120 neurons active over 3 trials)); seed 3: 0 Hz (trial file D-3.json); seed 4: 0 Hz (trial file D-4.json); seed 5: 0 Hz (trial file D-5.json)",
+     "recomputed_by_us": true
+    },
+    {
+     "arm_id": "W-weight-shuffle",
+     "null_type": "weight-shuffle",
+     "label": "Weight shuffle, 5 shuffle(s) (seeds 101, 102, 103, 104, 105); whole-brain spikes 5363 vs real 13,372-14,284; neurons active 109.0",
+     "value": 0,
+     "n": 5,
+     "samples": 5,
+     "spread": "± 0.00 sd across 5 shuffles",
+     "readout_refit": null,
+     "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[W]; seed 101: 0 Hz (trial file W-101.json); seed 102: 0 Hz (trial file W-102.json); seed 103: 0 Hz (trial file W-103.json); seed 104: 0 Hz (trial file W-104.json); seed 105: 0 Hz (trial file W-105.json)",
+     "recomputed_by_us": true
+    },
+    {
+     "arm_id": "S-sign-shuffle",
+     "null_type": "sign-shuffle",
+     "label": "Sign shuffle (Dale's law kept), 5 shuffle(s) (seeds 201, 202, 203, 204, 205); whole-brain spikes 3.56261e+06 vs real 13,372-14,284; neurons active 60501.4",
+     "value": 214.2,
+     "n": 5,
+     "samples": 5,
+     "spread": "± 43.27 sd across 5 shuffles",
+     "readout_refit": null,
+     "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[S]; seed 201: 268 Hz (trial file S-201.json); seed 202: 188 Hz (trial file S-202.json); seed 203: 191 Hz (trial file S-203.json); seed 204: 253 Hz (trial file S-204.json); seed 205: 171 Hz (trial file S-205.json)",
+     "recomputed_by_us": true
+    },
+    {
+     "arm_id": "B-boundary-preserving",
+     "null_type": "boundary-preserving",
+     "label": "Boundary-preserving shuffle, 5 shuffle(s) (seeds 301, 302, 303, 304, 305); whole-brain spikes 8967 vs real 13,372-14,284; neurons active 215.2",
+     "value": 39,
+     "n": 5,
+     "samples": 5,
+     "spread": "± 1.22 sd across 5 shuffles",
+     "readout_refit": null,
+     "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[B]; seed 301: 38 Hz (trial file B-301.json); seed 302: 39 Hz (trial file B-302.json); seed 303: 39 Hz (trial file B-303.json); seed 304: 41 Hz (trial file B-304.json); seed 305: 38 Hz (trial file B-305.json)",
      "recomputed_by_us": true
     }
    ],
    "effect": {
-    "headline_arm": "shuffle-seed1",
-    "best_null_arm": "shuffle-seed1",
+    "headline_arm": "D-degree-preserving",
+    "best_null_arm": "S-sign-shuffle",
     "retention": 0,
     "retention_method": "floor",
     "baseline_arm": null,
@@ -309,34 +321,34 @@
     "difference": 85.2,
     "ci": null,
     "p": null,
-    "stat_note": "6 of 6 shuffled trials gave 0 Hz (2 shuffles x 3 trials) while the sugar neurons kept firing at about 147 Hz; 120-126 neurons active vs 409 with real wiring. Run on 2026-09-28 by us, Brian2 numpy codegen, Python 3.11.2."
+    "stat_note": "Pre-registered 2026-10-01T10:51:13Z (design published in https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/#prereg-heading). One trial per shuffle at trial seed 0; spread is across shuffles. Degree-preserving shuffle: 0 ± 0 Hz (n 5, retention 0.0); Weight shuffle: 0 ± 0 Hz (n 5, retention 0.0); Sign shuffle (Dale's law kept): 214.2 ± 43.27 Hz (n 5, retention 2.514); Boundary-preserving shuffle: 39 ± 1.22 Hz (n 5, retention 0.458). Gain-matched arm (degree-preserving shuffle 3 at gains 1.5, 2 and 3): not matched, MN9 0 Hz at every gain."
    },
-   "wiring_effect": "helps",
+   "wiring_effect": "mixed",
    "baseline_beaten": "not-tested",
    "fairness": {
     "keeps_degree": true,
-    "keeps_io_boundary": false,
-    "tuned_equally": true,
-    "null_samples": 2,
+    "keeps_io_boundary": true,
+    "tuned_equally": false,
+    "null_samples": 5,
     "has_no_brain_baseline": false,
-    "verdict": "partly-fair",
-    "reason": "The shuffle keeps every neuron's in- and out-degree, weights and signs and uses the same input and readout, with nothing tuned; but only 2 shuffles, and the sensory and motor boundary is rewired too."
+    "verdict": "unfair",
+    "reason": "Four null types with the same stimulus, readout, neuron model, edge count and synapse count; degree-preserving and boundary-preserving arms keep every neuron's degrees, and the boundary arm keeps every sensory/ascending output and motor/descending/endocrine input. Not tuned equally: the degree-preserving null is much less excitable than the real wiring, and the pre-registered gain check (D shuffle 3, w_syn x 1.5: 5063 spikes, MN9 0 Hz, 2: 6865 spikes, MN9 0 Hz, 3: 24024 spikes, MN9 0 Hz) found no gain within 30% of the real 13,828 spikes (status: not matched). MN9 stayed silent across the bracket, which points to mis-routing rather than low excitability, but on one shuffle only."
    },
    "quality": {
-    "n_per_arm": 3,
+    "n_per_arm": 5,
     "held_out": null,
     "uncertainty_reported": true,
     "results_in_repo_files": true,
     "independent_test": true,
     "peer_review": "none",
     "recomputed_by_us": true,
-    "grade": "moderate",
-    "reason": "Our own measurement, saved in a results file with per-trial values; only 2 shuffles and 3 trials each, one input rate."
+    "grade": "weak",
+    "reason": "Our own pre-registered measurement; per-trial files with property checks; one reflex, one model, one trial per shuffle, the pre-registered optional trials (more shuffles, matched-gain trials on two more shuffles) were not reached."
    },
    "extraction": "files",
-   "one_line": "Our own run: the real wiring drives the feeding neuron at 85 Hz; two degree-preserving shuffles give 0 Hz in all six trials.",
+   "one_line": "Our run: real wiring 85 Hz; degree-preserving 0 Hz; weight shuffle 0 Hz; interior-only shuffle 39 Hz; sign shuffle runaway.",
    "commit": "philshiu/Drosophila_brain_model@91bdd1e7",
-   "checked_at": "2026-09-28",
+   "checked_at": "2026-10-01",
    "sources": [
     {
      "url": "https://github.com/philshiu/Drosophila_brain_model",
@@ -1535,6 +1547,102 @@
    "sources": [
     {
      "url": "https://github.com/evnsnclr/neurocraft-fly-public",
+     "label": "direct"
+    }
+   ]
+  },
+  {
+   "id": "brain-runners",
+   "name": "Brain Runners: untrained FlyWire brain (fly2) vs the same rule with no brain and with shuffled wiring",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "game-play",
+   "loop": "closed-loop",
+   "wiring": {
+    "dataset": "FlyWire FAFB",
+    "release": "v783 (Shiu et al. repository at 91bdd1e7, sha256-checked: bakeoff/fly/data.py:10-24)",
+    "scope": "whole brain, untrained Shiu et al. model"
+   },
+   "trained_parts": "none (input channel, readout and thresholds chosen on practice seeds, then frozen)",
+   "metric": {
+    "name": "rows survived on a seeded lane-runner track (of 150), mean over held-out seeds 1200-1399",
+    "unit": "rows",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 82.34,
+    "n": 200,
+    "spread": null,
+    "source": "https://github.com/zack-maz/brain-runners/blob/79d80398637909e10687f09f4457b79125203dc6/docs/calibration/FLY2_REPORT.md 'Controls' table: fly2 held-out mean"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "shuffled-seed1",
+     "null_type": "degree-preserving",
+     "label": "fly2 on shuffled wiring, seed 1 (targets permuted among connections of the same sign; in/out degree by sign kept; bakeoff/fly/shuffle.py:4-6,16-24)",
+     "value": 27.84,
+     "n": 200,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": false,
+     "source": "https://github.com/zack-maz/brain-runners/blob/79d80398637909e10687f09f4457b79125203dc6/docs/calibration/FLY2_REPORT.md 'Controls' table: shuffled wiring (seed 1)",
+     "recomputed_by_us": false
+    },
+    {
+     "arm_id": "no-brain",
+     "null_type": "no-brain-baseline",
+     "label": "the same input mapping and rule with no brain",
+     "value": 74.05,
+     "n": 200,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": null,
+     "source": "https://github.com/zack-maz/brain-runners/blob/79d80398637909e10687f09f4457b79125203dc6/docs/calibration/FLY2_REPORT.md 'Controls' table: no brain",
+     "recomputed_by_us": false
+    }
+   ],
+   "effect": {
+    "headline_arm": "shuffled-seed1",
+    "best_null_arm": "shuffled-seed1",
+    "retention": 0.3381,
+    "retention_method": "ratio",
+    "baseline_arm": "no-brain",
+    "baseline_retention": 0.8993,
+    "difference": 54.5,
+    "ci": null,
+    "p": null,
+    "stat_note": "No spread reported. Floors on practice seeds (not held-out): random 23.93, always-jump 32.13 ('Floors' table). Authors' own reading: 'the shuffled control is weak evidence' (docs/DECISIONS.md:236-275, decision 43). Read by us at commit 79d8039 on 2026-10-01."
+   },
+   "wiring_effect": "helps",
+   "baseline_beaten": "no",
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": false,
+    "tuned_equally": false,
+    "null_samples": 1,
+    "has_no_brain_baseline": true,
+    "verdict": "unfair",
+    "reason": "Same frozen input channel, readout and rule for all arms on the same held-out seeds; the shuffle keeps degrees by sign, but the readout was chosen on the real wiring (the shuffled brain's readout neurons never fire), one shuffle only."
+   },
+   "quality": {
+    "n_per_arm": 200,
+    "held_out": true,
+    "uncertainty_reported": false,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "recomputed_by_us": false,
+    "grade": "weak",
+    "reason": "Pre-specified by the author with held-out seeds, but one shuffle seed and no spread; held-out seeds had been used earlier in candidate research."
+   },
+   "extraction": "files",
+   "one_line": "An untrained fly brain survives 82 rows against 28 on shuffled wiring, but a brainless version of the same rule reaches 74.",
+   "commit": "zack-maz/brain-runners@79d8039",
+   "checked_at": "2026-10-01",
+   "sources": [
+    {
+     "url": "https://github.com/zack-maz/brain-runners",
      "label": "direct"
     }
    ]
@@ -3826,15 +3934,15 @@
  "chart_rows": [
   {
    "study_id": "byo-shiu-shuffle",
-   "label": "Build your own: sugar to MN9 with shuffled wiring (our run)",
+   "label": "Build your own: sugar to MN9 against four scrambled-wiring nulls (our run)",
    "task_family": "reflex-circuit",
    "headline_null_type": "degree-preserving",
    "retention": 0,
    "retention_method": "floor",
    "baseline_retention": null,
-   "wiring_effect": "helps",
-   "quality": "moderate",
-   "fairness": "partly-fair"
+   "wiring_effect": "mixed",
+   "quality": "weak",
+   "fairness": "unfair"
   },
   {
    "study_id": "drosophila-brain-mlx",
@@ -3931,6 +4039,18 @@
    "wiring_effect": "mixed",
    "quality": "weak",
    "fairness": "partly-fair"
+  },
+  {
+   "study_id": "brain-runners",
+   "label": "Brain Runners: untrained FlyWire brain (fly2) vs the same rule with no brain and with shuffled wiring",
+   "task_family": "game-play",
+   "headline_null_type": "degree-preserving",
+   "retention": 0.3381,
+   "retention_method": "ratio",
+   "baseline_retention": 0.8993,
+   "wiring_effect": "helps",
+   "quality": "weak",
+   "fairness": "unfair"
   },
   {
    "study_id": "doom-fly-control",

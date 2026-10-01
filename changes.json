@@ -2,6 +2,66 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-01-run5-tracking",
+      "changed_at": "2026-10-01T17:59:48Z",
+      "summary": "94 entries re-checked on 1 Oct 2026: 3 with new commits, 0 new releases, 0 grade changes; FlyDoom (eganeganegan) returns HTTP 404 and is kept until a re-check; 49 videos re-checked: all available, 0 removed; 6 entries and 2 videos added.",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-10-01-run5-fair-test",
+      "changed_at": "2026-10-01T17:59:48Z",
+      "summary": "Our own pre-registered fair test on Does fly wiring help?: real wiring 85.2 ± 3.56 Hz; degree-preserving and weight shuffles 0 Hz (5 each); boundary-preserving 39 ± 1.22 Hz (retention 0.46); sign shuffle 214 ± 43 Hz with the whole brain ignited; gain check 0 Hz at every gain, not matched. One reflex, one model, one trial per shuffle.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#fairtest-heading"
+    },
+    {
+      "change_id": "2026-10-01-run5-ledger",
+      "changed_at": "2026-10-01T17:59:48Z",
+      "summary": "Controls ledger: 32 studies, 24 with a wiring null (helps 10, no difference 5, worse 2, mixed 6, not yet scored 1). Our own study row now scores mixed, unfair null and weak method by the fixed rules (30 Sep: helps, partly fair, moderate); new study Brain Runners. controls.json updated.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#ownrow-heading"
+    },
+    {
+      "change_id": "2026-10-01-run5-gorilla-tag-verdict",
+      "changed_at": "2026-10-01T17:59:48Z",
+      "summary": "Is it real?: new verdict on \"I Taught a Fly How to Play Gorilla Tag (seriously)\" (527,756 views on 1 Oct 2026): grade U, no model, data or code named; video not watched.",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-fly-gorilla-tag"
+    },
+    {
+      "change_id": "2026-10-01-run5-jjs-verdict",
+      "changed_at": "2026-10-01T17:59:48Z",
+      "summary": "Is it real?: new verdict on \"I Made Two Real Flies Brain Fight Each other in JJS\" (139,364 views): grade U, no code.",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-fly-jjs-fight"
+    },
+    {
+      "change_id": "2026-10-01-run5-doom-chart",
+      "changed_at": "2026-10-01T17:59:48Z",
+      "summary": "New chart: a brainless autopilot plays Doom as well as the fly brain, with all 18 results of the Doom control study's file (DOOMFLY 53.34 s, matched autopilot 51.93 s, best of 12 settings 53.44 s, shuffled wiring 6.75 s); it replaces the earlier Doom bar chart on Is it real? and the DOOMFLY page.",
+      "path": "/p/digital-fly-catalog/is-it-real/#doom-heading"
+    },
+    {
+      "change_id": "2026-10-01-run5-new-entries",
+      "changed_at": "2026-10-01T17:59:48Z",
+      "summary": "6 new catalogue entries: Brain Runners (A), Doodle Fly (B), FLY67 (B), Fly x Jev (C), and the Gorilla Tag and Roblox fight video claims (U).",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-10-01-run5-videos",
+      "changed_at": "2026-10-01T17:59:48Z",
+      "summary": "2 new videos: the creators' own uploads of the Gorilla Tag and Roblox fight videos (both U), described from their titles and descriptions only.",
+      "path": "/p/digital-fly-catalog/gallery/"
+    },
+    {
+      "change_id": "2026-10-01-run5-build-your-own",
+      "changed_at": "2026-10-01T17:59:48Z",
+      "summary": "Build your own re-tested from an empty folder on 1 Oct 2026: pins and data checksums unchanged, 6 tests passed, 82.0 Hz bit-exact with the first run; new box Try a fair control yourself with our shuffle code (wiring it into the beginner files is untested).",
+      "path": "/p/digital-fly-catalog/build-your-own/#retest-heading"
+    },
+    {
+      "change_id": "2026-10-01-run5-report",
+      "changed_at": "2026-10-01T17:59:48Z",
+      "summary": "Research report of the fifth check: our fair test with its pre-registered design and deviations, the two verdicts, the views-sorted lead scan, tracking, new entries, method and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-01-run5/"
+    },
+    {
       "change_id": "2026-09-30-run4-tracking",
       "changed_at": "2026-09-30T10:55:00Z",
       "summary": "82 entries re-checked on 30 Sep 2026: 7 with new commits, 3 new releases, 0 grade changes, 0 main-link failures; 47 videos re-checked: all available, 0 removed; 12 entries and 2 videos added.",

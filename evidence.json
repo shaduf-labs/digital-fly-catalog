@@ -1285,9 +1285,109 @@
       "evidence_id": "gorilla-tag-video",
       "source_type": "video",
       "source_url": "https://www.youtube.com/watch?v=wK4lixw7p4M",
-      "title": "I Taught a Fly How to Play Gorilla Tag",
-      "claim": "415,612 views on 30 Sep 2026; claims the fly \"learned\" with \"its open source brain\" but links no code. Uploaded 26 Sep, before our scan window; not refereed yet and not in the gallery.",
-      "accessed_at": "2026-09-30T09:41:00Z",
+      "title": "I Taught a Fly How to Play Gorilla Tag (seriously)",
+      "claim": "527,756 views on 1 Oct 2026 (415,612 on 30 Sep). The description says the fly learned \"using its open source brain\", but no model, data or code is named; the only link is a linktr.ee page and four GitHub searches found nothing. Grade U; the video was not watched, so on-screen claims are not recorded.",
+      "accessed_at": "2026-10-01T10:58:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fairtest-run5",
+      "source_type": "dataset",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/",
+      "title": "Digital Fly Lab fair test of 1 Oct 2026 (our own measurement)",
+      "claim": "Pre-registered before any scrambled trial: sugar to MN9 in the Shiu et al. model, real 85.2 ± 3.56 Hz; degree-preserving 0 ± 0 Hz and weight shuffle 0 ± 0 Hz (5 shuffles each); boundary-preserving 39 ± 1.22 Hz; sign shuffle 214 ± 43 Hz with about 3.6 million whole-brain spikes; gain check 0 Hz at ×1.5, ×2 and ×3, not matched. One reflex, one model, one trial per shuffle.",
+      "accessed_at": "2026-10-01T17:28:00Z",
+      "relation": "supports",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "shiu-model-code-run5",
+      "source_type": "code",
+      "source_url": "https://github.com/philshiu/Drosophila_brain_model/tree/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+      "title": "Drosophila_brain_model at commit 91bdd1e7",
+      "claim": "The model and default parameters used for our fair test and for the Build your own re-test of 1 Oct 2026 (82.0 Hz bit-exact with the first run; 6 tests passed).",
+      "accessed_at": "2026-10-01T16:56:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "doom-autopilot-summary-run5",
+      "source_type": "dataset",
+      "source_url": "https://github.com/gabrycina/doom-fly-control/blob/6b2292286af9634bb967fcc672b47ff0ad89cbb6/results/a2/summary.json",
+      "title": "doom-fly-control results/a2/summary.json (commit 6b22922)",
+      "claim": "DOOMFLY survives 53.34 s (95% interval 49.73-56.78, n 20); matched spray autopilot 51.93 s; best of 12 autopilot settings (spray_t1_f20) 53.44 s; shuffled wiring 5.48, 9.29 and 5.48 s (pooled 6.75); no connections 5.50 s; no vision 10.46 s. All 5 ledger numbers match.",
+      "accessed_at": "2026-10-01T17:03:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "jjs-fight-video",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=KC7-fpjIRN4",
+      "title": "I Made Two Real Flies Brain Fight Each other in JJS",
+      "claim": "139,364 views on 1 Oct 2026; claims two fly brains control Roblox fighters; only Discord and Roblox-group links, no code found in three GitHub searches. Grade U.",
+      "accessed_at": "2026-10-01T10:58:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "brain-runners-report",
+      "source_type": "code",
+      "source_url": "https://github.com/zack-maz/brain-runners/blob/79d80398637909e10687f09f4457b79125203dc6/docs/calibration/FLY2_REPORT.md",
+      "title": "Brain Runners FLY2_REPORT.md (commit 79d8039)",
+      "claim": "Held-out seeds: untrained FlyWire brain 82.34 rows, shuffled wiring (one seed) 27.84, the same rule with no brain 74.05. Grade A; the no-brain baseline is not beaten.",
+      "accessed_at": "2026-10-01T16:58:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly67-code",
+      "source_type": "code",
+      "source_url": "https://github.com/znatgost/fly67",
+      "title": "FLY67 repository (commit 45f62fd)",
+      "claim": "The whole FlyWire v783 brain with Shiu et al. parameters runs in a browser Web Worker and drives an animated 3D fly through hand-set gains; no scrambled-wiring control. Grade B.",
+      "accessed_at": "2026-10-01T16:58:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "doodle-fly-code",
+      "source_type": "code",
+      "source_url": "https://github.com/dtecx/doodle-fly",
+      "title": "Doodle Fly repository",
+      "claim": "The whole FlyWire v783 brain plays a Doodle-Jump-style game in the browser; its eye-swap and blind controls manipulate input, not wiring. Grade B.",
+      "accessed_at": "2026-10-01T16:58:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-x-jev-code",
+      "source_type": "code",
+      "source_url": "https://github.com/pasangimhana/fly-x-jev",
+      "title": "Fly x Jev repository",
+      "claim": "MaleCNS wiring supplies visual features and a learned valence, but an external commercial model picks every action; no control. Grade C.",
+      "accessed_at": "2026-10-01T16:58:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-cartpole-recheck-run5",
+      "source_type": "code",
+      "source_url": "https://github.com/Curt-Park/fly-cartpole",
+      "title": "fly-cartpole results summary at commit 077dcba",
+      "claim": "392.5 ± 103.1 steps real vs 390.3 ± 96.4 for shuffled wiring (author's permutation p = 0.4771); same verdict as at the ledger's commit (233.8 vs 218.3, p = 0.1953): no difference.",
+      "accessed_at": "2026-10-01T17:00:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flydoom-404-run5",
+      "source_type": "code",
+      "source_url": "https://github.com/eganeganegan/flydoom",
+      "title": "FlyDoom repository (eganeganegan)",
+      "claim": "Returned HTTP 404 on 1 Oct 2026 (removed or made private); the catalogue record (grade C, read at commit b047fab) is kept until a re-check.",
+      "accessed_at": "2026-10-01T16:58:00Z",
       "relation": "unresolved",
       "publication_basis": "linked-summary"
     }

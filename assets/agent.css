@@ -877,3 +877,32 @@
 [data-agent-document] .dfl-fxlist { margin: 10px 0 18px; padding-left: 0; list-style: none; }
 [data-agent-document] .dfl-fxlist .dfl-tag { margin-right: 4px; }
 [data-agent-document] .dfl-retention .dfl-tall { max-width: 26em; }
+
+/* ---- run 5 (2026-10-01): our fair test (retention + activity), Doom autopilot dot plot, data tables, try-it pointer */
+[data-agent-document] .dfl-svg .zone-silent { fill: var(--dfl-soft); }
+[data-agent-document] .dfl-svg .mean-tick { stroke: var(--dfl-ink); stroke-width: 2.5; stroke-linecap: round; }
+[data-agent-document] .dfl-svg .ci-line { stroke: var(--dfl-muted); stroke-width: 1.5; }
+[data-agent-document] .dfl-svg .auto-mark { fill: #fff; stroke: var(--dfl-handmade-ink); stroke-width: 2.5; }
+[data-agent-document] .dfl-svg .auto-mark.is-small { stroke-width: 2; }
+[data-agent-document] .dfl-svg .bar-ctl.dot { stroke: #fff; }
+[data-agent-document] .dfl-fairtest .dfl-tall, [data-agent-document] .dfl-doomauto .dfl-tall { max-width: 26em; }
+[data-agent-document] .dfl-datatable { margin: 4px 0 22px; }
+[data-agent-document] .dfl-datatable > summary { cursor: pointer; color: var(--dfl-blue); font-family: var(--dfl-ui); font-size: 14px; }
+[data-agent-document] .dfl-datatable table { min-width: 40em; }
+[data-agent-document] .dfl-datatable caption { overflow-wrap: anywhere; }
+[data-agent-document] .dfl-arms { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 18px; margin: 14px 0 20px; padding: 0; list-style: none; }
+[data-agent-document] .dfl-arms > li { margin: 0; padding: 12px 14px; border: 1px solid var(--dfl-line-strong); border-radius: var(--dfl-radius); background: #fff; overflow-wrap: break-word; }
+[data-agent-document] .dfl-arms h4 { margin: 0 0 4px; font-size: 15px; }
+[data-agent-document] .dfl-arms p { margin: 0 0 6px; }
+[data-agent-document] .dfl-arms .dfl-tag { margin-left: 4px; }
+@container shaduf-document (max-width: 40em) { [data-agent-document] .dfl-arms { grid-template-columns: minmax(0, 1fr); } }
+[data-agent-document] .dfl-tag.is-reading-silent { background: #fff; color: var(--dfl-text); border: 1px dashed var(--dfl-line-strong); }
+[data-agent-document] .dfl-tag.is-reading-partly { background: #eceffa; color: #3f4f9c; }
+[data-agent-document] .dfl-tag.is-reading-runaway { background: var(--dfl-red-bg); color: var(--dfl-red); }
+[data-agent-document] .dfl-tryfair { margin: 18px 0; padding: 14px 18px; border: 1px solid var(--dfl-line-strong); border-left: 4px solid var(--dfl-fx-helps); border-radius: 0 var(--dfl-radius) var(--dfl-radius) 0; background: var(--dfl-tint); }
+[data-agent-document] .dfl-tryfair h3 { margin: 0 0 6px; }
+[data-agent-document] .dfl-tryfair p, [data-agent-document] .dfl-tryfair li { overflow-wrap: break-word; }
+[data-agent-document] .dfl-fairsec .dfl-callout { margin: 16px 0 22px; padding: 14px 18px 10px; border: 1px solid var(--dfl-line-strong); border-radius: var(--dfl-radius); background: var(--dfl-tint); }
+[data-agent-document] .dfl-fairsec .dfl-callout h3 { margin: 0 0 6px; }
+[data-agent-document] .dfl-fairsec .dfl-callout p { margin: 0 0 8px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-svg .dot.fx-open { fill: #fff; stroke: var(--dfl-ink); stroke-width: 1.5; stroke-dasharray: none; }
