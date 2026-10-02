@@ -1390,6 +1390,146 @@
       "accessed_at": "2026-10-01T16:58:00Z",
       "relation": "unresolved",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "body-test-run6",
+      "source_type": "dataset",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-02-run6/",
+      "title": "Digital Fly Lab body test of 2 Oct 2026 (our own measurement)",
+      "claim": "Pre-registered at 09:35:33 UTC before the first brain trial: the Shiu et al. FlyWire v783 model with DNp09 (P9) stimulated at 150 Hz drove FlyGym 2.1.0's two-number walking drive through our hand-made mapping. Forward distance in 1 s: real brain 13.93 ± 0.58 mm (3 seeds), scrambled 14.15 mm (3 shuffles, identical drives), brainless constant 14.28 mm, brainless random 13.96 ± 0.46 mm, sugar-tasting brain 0 mm, zero drive 0 mm. Retention 1.016 (scrambled), 1.025 (constant). 90 of the 120 drive values of the P9 walks sit at the mapping's 1.2 cap.",
+      "accessed_at": "2026-10-02T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "body-dn-table-run6",
+      "source_type": "dataset",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-02-run6/#dn-heading",
+      "title": "Descending-neuron rates in our brain trials of 2 Oct 2026",
+      "claim": "Sugar with real wiring: MN9 82.0 Hz (bit-exact with earlier runs), all 14 candidate walking neurons 0 Hz. P9 with real wiring: DNa02 recruited, right 21-29 Hz > left 7-11 Hz in all 3 seeds; scrambled brains recruited no mapped neuron; MDN 0 Hz in every trial; P9 rates identical in real seed 0 and all shuffles because they come from our stimulus.",
+      "accessed_at": "2026-10-02T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "flygym-v2-1-0-run6",
+      "source_type": "code",
+      "source_url": "https://github.com/NeLy-EPFL/flygym",
+      "title": "FlyGym 2.1.0 (NeuroMechFly v2)",
+      "claim": "HybridTurningController.step takes a descending signal of shape (2,): element 0 sets the left legs' CPG amplitude, element 1 the right, and a negative value reverses stepping; our direction check showed the fly turns toward the side with the smaller value. Installed with uv and CPython 3.12.11 in 7 s (47 packages, 602 MB) on 2 Oct 2026.",
+      "accessed_at": "2026-10-02T09:51:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "bidaye-2020-p9",
+      "source_type": "paper",
+      "source_url": "https://doi.org/10.1016/j.neuron.2020.07.032",
+      "title": "Bidaye et al. 2020, Neuron: two brain pathways initiate distinct forward walking programs",
+      "claim": "\"P9 drives forward walking with ipsilateral turning\" (abstract); the basis for stimulating DNp09 and for the turning sign used in our mapping (changed before the first body run).",
+      "accessed_at": "2026-10-02T09:42:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "rayshubskiy-2025-dna02",
+      "source_type": "paper",
+      "source_url": "https://doi.org/10.7554/eLife.102230",
+      "title": "Rayshubskiy et al. 2025, eLife",
+      "claim": "\"Unilateral activation of DNa02 influences ipsilateral rotational movements\"; the basis for DNa02 as the turning term of our mapping.",
+      "accessed_at": "2026-10-02T09:42:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "g-addendum-run6",
+      "source_type": "dataset",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-02-run6/#gain-heading",
+      "title": "Gain-matched arm of our fair test (2 Oct 2026)",
+      "claim": "Degree-preserving shuffle 3 at w_syn x2.5: 10,138 spikes (in the 9,680-17,976 band); shuffles 4 and 5 at x2.5: 24,277 and 29,297 (above). Not matched on 3 shuffles; MN9 0 Hz in all six gain trials (x1.5-x3).",
+      "accessed_at": "2026-10-02T09:48:39Z",
+      "relation": "supports",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "fly-terraria-code",
+      "source_type": "code",
+      "source_url": "https://gitlab.com/wdf.gost/terraria-wdf-fly-brain",
+      "title": "terraria-wdf-fly-brain (GitLab, commit 9052966d)",
+      "claim": "MaleCNS v1.0 (166,700 neurons, 25,088,107 signed connections, checksummed inputs) as a sparse spiking model with reward-modulated plasticity drives a Terraria body through hand-mapped sensory and motor populations; 176-life log recomputed by us (mean 278.4 s; median 102.8 s first 44 vs 163.3 s last 44, permutation p = 0.037); no plasticity-off or scrambled control. Grade B.",
+      "accessed_at": "2026-10-02T09:50:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-terraria-video",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=0nniju8lLxk",
+      "title": "I put a fly's brain into Terraria. And tried to train it (Russian title)",
+      "claim": "3,580 views on 1 Oct 2026, 28,244 on 2 Oct 2026 (search page); uploaded 29 Sep 2026, newer than the code's last commit (26 Sep). Not watched by us.",
+      "accessed_at": "2026-10-02T09:42:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "gorilla-tag-recheck-run6",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=wK4lixw7p4M",
+      "title": "I Taught a Fly How to Play Gorilla Tag (seriously): re-check",
+      "claim": "623,504 views on 2 Oct 2026 (search page); still no code or model named in its metadata; grade U unchanged.",
+      "accessed_at": "2026-10-02T09:42:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flydoom-404-run6",
+      "source_type": "code",
+      "source_url": "https://github.com/eganeganegan/flydoom",
+      "title": "FlyDoom repository (eganeganegan): second check",
+      "claim": "HTTP 404 again on 2 Oct 2026 (git ls-remote asks for credentials: gone or private); the record is kept with its last catalogued commit b047fab (14 Sep 2026).",
+      "accessed_at": "2026-10-02T10:10:26Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-cartpole-077dcba",
+      "source_type": "code",
+      "source_url": "https://github.com/Curt-Park/fly-cartpole",
+      "title": "fly-cartpole at commit 077dcba (results unchanged at 854fb1d)",
+      "claim": "Protocol change read and judged like for like (same task, metric, degree-preserving null, 20 fresh seeds per arm); the ledger now uses 392.5 ± 103.1 vs 390.3 ± 96.4 steps (p = 0.4771), frozen 18.7, TD 500.0, random 22.8: no difference, fair, strong.",
+      "accessed_at": "2026-10-02T09:50:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "shiu-model-attractor-code",
+      "source_type": "code",
+      "source_url": "https://github.com/xiangdoz/fly-connectome-attractor",
+      "title": "fly-connectome-attractor (commit 07b01c8)",
+      "claim": "Pre-registered gate plan and raw results: after a strong sugar pulse about 8,100 neurons stay active for 10 s in Shiu et al.'s own Brian2 model (3 seeds, identical in a re-implementation), 0 without the pulse. Grade A.",
+      "accessed_at": "2026-10-02T10:05:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flygym-banc-bridge-code",
+      "source_type": "code",
+      "source_url": "https://github.com/arisliwind/flygym",
+      "title": "arisliwind/flygym, a FlyGym 2.1.0 derivative with BANC v888 bridge scripts (commit 8a794e33)",
+      "claim": "The bridge's descending neuron has no synaptic input inside its sub-circuit, so its rate, and the single CPG gain for all six legs, comes from a tonic current; the closed loop drives a hand-written sinusoid; no control. Grade C; a derivative, not a download lure.",
+      "accessed_at": "2026-10-02T10:00:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-walking-wiring-code",
+      "source_type": "code",
+      "source_url": "https://github.com/kosmoKwan/fly-connectome-wiring",
+      "title": "fly-connectome-wiring (commit c84104a)",
+      "claim": "Code for a submitted manuscript comparing real MaleCNS and MANC leg networks with six rewired families under coded rules; no results public, so the comparison cannot be inspected. Grade B (provisional).",
+      "accessed_at": "2026-10-02T10:00:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "default_page": "overview",
-  "meaningfully_updated_at": "2026-10-01T17:59:48Z",
+  "meaningfully_updated_at": "2026-10-02T11:00:20Z",
   "pages": [
     {
       "id": "overview",
@@ -129,7 +129,7 @@
       "label": "Is it real?",
       "icon": "⚖",
       "group": "Understand",
-      "description": "Is the fruit fly brain simulation real? Evidence grades and verdicts on viral claims, separating measured wiring from modelled, hand-made, trained and scripted parts.",
+      "description": "Is the fruit fly brain simulation real? Evidence grades and verdicts on viral claims, who does the walking when a fly brain drives a body, and what is measured, modelled, hand-made, trained or scripted.",
       "parent": null,
       "entrypoint": "is-it-real/index.html",
       "entrypoint_type": "html_fragment",
@@ -144,7 +144,7 @@
       "label": "Does fly wiring help?",
       "icon": "◐",
       "group": "Understand",
-      "description": "Does real fruit fly connectome wiring help? 32 control studies compared, including our own pre-registered test that scrambles the fly brain four ways: where scrambled wiring fails, where it does just as well, brain vs no-brain baselines, and a checklist for fair controls.",
+      "description": "Does real fruit fly connectome wiring help? 33 control studies compared, including our own pre-registered tests: four ways to scramble the fly brain, and who does the walking when a fly brain drives a FlyGym body. Brain vs no-brain baselines and a checklist for fair controls.",
       "parent": null,
       "entrypoint": "does-fly-wiring-help/index.html",
       "entrypoint_type": "html_fragment",
@@ -159,7 +159,7 @@
       "label": "Build your own",
       "icon": "⚒",
       "group": "Make",
-      "description": "Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output and a shuffled-wiring control.",
+      "description": "Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output, a shuffled-wiring control, and a tested path to drive a FlyGym walking body.",
       "parent": null,
       "entrypoint": "build-your-own/index.html",
       "entrypoint_type": "html_fragment",

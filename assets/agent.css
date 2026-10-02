@@ -906,3 +906,40 @@
 [data-agent-document] .dfl-fairsec .dfl-callout h3 { margin: 0 0 6px; }
 [data-agent-document] .dfl-fairsec .dfl-callout p { margin: 0 0 8px; overflow-wrap: break-word; }
 [data-agent-document] .dfl-svg .dot.fx-open { fill: #fff; stroke: var(--dfl-ink); stroke-width: 1.5; stroke-dasharray: none; }
+
+/* ---- run 6 (2026-10-02): "Who does the walking?" (top-down walking paths), who-does-what split, DN table, body steps */
+[data-agent-document] .dfl-svg .t-brand { font-size: 13px; font-weight: 700; fill: var(--dfl-green); }
+[data-agent-document] .dfl-svg .t-sub { font-size: 13px; fill: var(--dfl-text); }
+[data-agent-document] .dfl-svg .t-lab { font-size: 12.5px; font-weight: 650; }
+[data-agent-document] .dfl-svg .wk-panel { fill: var(--dfl-soft); }
+[data-agent-document] .dfl-svg .wk-axis0 { stroke: var(--dfl-line-strong); stroke-width: 1; stroke-dasharray: 2 3; }
+[data-agent-document] .dfl-svg .wk-band { fill: #eef1fa; }
+[data-agent-document] .dfl-svg .wk-real { fill: none; stroke: var(--dfl-ink); stroke-width: 2.2; stroke-linejoin: round; }
+[data-agent-document] .dfl-svg .wk-scr { fill: none; stroke: var(--dfl-fx-mixed); stroke-width: 5; stroke-opacity: .75; stroke-linejoin: round; }
+[data-agent-document] .dfl-svg .wk-const { fill: none; stroke: var(--dfl-handmade-ink); stroke-width: 2.2; stroke-dasharray: 7 4; }
+[data-agent-document] .dfl-svg .wk-rand { fill: none; stroke: var(--dfl-fx-nodiff); stroke-width: 1.6; stroke-dasharray: 2 3; }
+[data-agent-document] .dfl-svg .wk-real-dot { fill: var(--dfl-ink); }
+[data-agent-document] .dfl-svg .wk-scr-dot { fill: var(--dfl-fx-mixed); }
+[data-agent-document] .dfl-svg .wk-const-dot { fill: var(--dfl-handmade-ink); }
+[data-agent-document] .dfl-svg .wk-rand-dot { fill: var(--dfl-fx-nodiff); }
+[data-agent-document] .dfl-svg .wk-end { stroke: #fff; stroke-width: 1; }
+[data-agent-document] .dfl-svg .wk-sugar { fill: #fff; stroke: var(--dfl-fx-helps); stroke-width: 2.2; }
+[data-agent-document] .dfl-svg .wk-zero { fill: var(--dfl-fx-nodiff); }
+[data-agent-document] .dfl-svg .wk-num { fill: var(--dfl-ink); }
+[data-agent-document] .dfl-walkfig .dfl-tall { max-width: 26em; }
+[data-agent-document] .dfl-walkfig figcaption p { margin: 0 0 6px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-walk-limits { margin: 14px 0 18px; padding: 14px 18px 6px; border: 1px solid var(--dfl-line-strong); border-left: 4px solid var(--dfl-handmade); border-radius: 0 var(--dfl-radius) var(--dfl-radius) 0; background: var(--dfl-tint); }
+[data-agent-document] .dfl-walk-limits p { margin: 0 0 8px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-dntable table { min-width: 36em; }
+[data-agent-document] .dfl-dntable caption { overflow-wrap: anywhere; }
+[data-agent-document] .dfl-bodysteps { counter-reset: bstep; margin: 12px 0 18px; padding: 0; list-style: none; }
+[data-agent-document] .dfl-bodysteps > li { counter-increment: bstep; position: relative; margin: 0 0 14px; padding: 2px 0 0 2.6em; overflow-wrap: break-word; }
+[data-agent-document] .dfl-bodysteps > li::before { content: counter(bstep); position: absolute; left: 0; top: 0; width: 1.8em; height: 1.8em; border-radius: 50%; background: var(--dfl-ink); color: #fff; font-family: var(--dfl-ui); font-size: 13px; font-weight: 700; line-height: 1.8em; text-align: center; }
+[data-agent-document] .dfl-bodysteps h4 { margin: 0 0 4px; font-size: 16px; }
+[data-agent-document] .dfl-signbox { margin: 12px 0 18px; padding: 12px 16px; border: 1px dashed var(--dfl-line-strong); border-radius: var(--dfl-radius); background: #fff; overflow-wrap: break-word; }
+[data-agent-document] .dfl-signbox p { margin: 0 0 6px; }
+[data-agent-document] .dfl-tag.is-act-reduced { background: #fff; color: var(--dfl-text); border: 1px dashed var(--dfl-line-strong); }
+[data-agent-document] .dfl-tag.is-act-comparable { background: var(--dfl-soft); color: var(--dfl-ink); border: 1px solid var(--dfl-line-strong); }
+[data-agent-document] .dfl-tag.is-act-elevated { background: var(--dfl-amber-bg); color: var(--dfl-amber); }
+[data-agent-document] .dfl-tag.is-act-runaway { background: var(--dfl-red-bg); color: var(--dfl-red); }
+[data-agent-document] .dfl-walkintro { margin: 0 0 12px; }

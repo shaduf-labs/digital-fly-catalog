@@ -1,16 +1,16 @@
 {
  "schema_version": "1.0.0",
  "dataset": "Digital Fly Lab controls ledger",
- "version": "2026-10-01-run5",
- "generated_at": "2026-10-01T17:26:10Z",
- "run_id": "run:721af05d-86ce-46b6-9c1d-0038d2469d32",
- "as_of": "2026-10-01",
+ "version": "2026-10-02-run6",
+ "generated_at": "2026-10-02T10:18:16Z",
+ "run_id": "run:03aa82ff-d83b-47ec-bb36-c8edc64e696c",
+ "as_of": "2026-10-02",
  "answer": {
-  "one_line": "Sometimes: real fly wiring beat scrambled wiring in 10 of 24 studies, mostly reflex, sensory and steering circuits; in trained, reservoir and ML tasks it tied or lost (7).",
-  "short": "Of 32 control studies in our catalogue, 24 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 10, makes no difference in 5, does worse in 2, gives mixed results in 6 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring, and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire; one published study's connectome loses to standard shuffles but ties boundary-preserving ones. Most studies are small, single-author and not replicated.",
+  "one_line": "Sometimes: fly wiring beat scrambled wiring in 10 of 25 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (8).",
+  "short": "Of 33 control studies in our catalogue, 25 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 10, makes no difference in 6, does worse in 2, gives mixed results in 6 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring, and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire; one published study's connectome loses to standard shuffles but ties boundary-preserving ones. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). Most studies are small, single-author and not replicated.",
   "counts": {
-   "studies": 32,
-   "with_wiring_null": 24,
+   "studies": 33,
+   "with_wiring_null": 25,
    "by_family": {
     "reflex-circuit": {
      "helps": 3,
@@ -28,7 +28,7 @@
     },
     "body-steering": {
      "helps": 2,
-     "no_difference": 0,
+     "no_difference": 1,
      "worse": 0,
      "mixed": 1,
      "not_tested": 2
@@ -272,7 +272,9 @@
      "spread": "± 0.00 sd across 5 shuffles",
      "readout_refit": null,
      "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[D]; seed 1: 0 Hz (run 1 results.json shuffled_wiring_seed1 (trial seed 0; all 3 trials 0 Hz; 126 neurons active over 3 trials)); seed 2: 0 Hz (run 1 results.json shuffled_wiring_seed2 (trial seed 0; all 3 trials 0 Hz; 120 neurons active over 3 trials)); seed 3: 0 Hz (trial file D-3.json); seed 4: 0 Hz (trial file D-4.json); seed 5: 0 Hz (trial file D-5.json)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": 0.291,
+     "activity_class": "reduced"
     },
     {
      "arm_id": "W-weight-shuffle",
@@ -284,7 +286,9 @@
      "spread": "± 0.00 sd across 5 shuffles",
      "readout_refit": null,
      "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[W]; seed 101: 0 Hz (trial file W-101.json); seed 102: 0 Hz (trial file W-102.json); seed 103: 0 Hz (trial file W-103.json); seed 104: 0 Hz (trial file W-104.json); seed 105: 0 Hz (trial file W-105.json)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": 0.388,
+     "activity_class": "reduced"
     },
     {
      "arm_id": "S-sign-shuffle",
@@ -296,7 +300,9 @@
      "spread": "± 43.27 sd across 5 shuffles",
      "readout_refit": null,
      "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[S]; seed 201: 268 Hz (trial file S-201.json); seed 202: 188 Hz (trial file S-202.json); seed 203: 191 Hz (trial file S-203.json); seed 204: 253 Hz (trial file S-204.json); seed 205: 171 Hz (trial file S-205.json)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": 257.637,
+     "activity_class": "runaway"
     },
     {
      "arm_id": "B-boundary-preserving",
@@ -308,7 +314,9 @@
      "spread": "± 1.22 sd across 5 shuffles",
      "readout_refit": null,
      "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[B]; seed 301: 38 Hz (trial file B-301.json); seed 302: 39 Hz (trial file B-302.json); seed 303: 39 Hz (trial file B-303.json); seed 304: 41 Hz (trial file B-304.json); seed 305: 38 Hz (trial file B-305.json)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": 0.648,
+     "activity_class": "comparable"
     }
    ],
    "effect": {
@@ -321,7 +329,7 @@
     "difference": 85.2,
     "ci": null,
     "p": null,
-    "stat_note": "Pre-registered 2026-10-01T10:51:13Z (design published in https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/#prereg-heading). One trial per shuffle at trial seed 0; spread is across shuffles. Degree-preserving shuffle: 0 ± 0 Hz (n 5, retention 0.0); Weight shuffle: 0 ± 0 Hz (n 5, retention 0.0); Sign shuffle (Dale's law kept): 214.2 ± 43.27 Hz (n 5, retention 2.514); Boundary-preserving shuffle: 39 ± 1.22 Hz (n 5, retention 0.458). Gain-matched arm (degree-preserving shuffle 3 at gains 1.5, 2 and 3): not matched, MN9 0 Hz at every gain."
+    "stat_note": "Pre-registered 2026-10-01T10:51:13Z (design published in https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/#prereg-heading). One trial per shuffle at trial seed 0; spread is across shuffles. Degree-preserving shuffle: 0 ± 0 Hz (n 5, retention 0.0); Weight shuffle: 0 ± 0 Hz (n 5, retention 0.0); Sign shuffle (Dale's law kept): 214.2 ± 43.27 Hz (n 5, retention 2.514); Boundary-preserving shuffle: 39 ± 1.22 Hz (n 5, retention 0.458). Gain-matched arm (G addendum, pre-registered 2026-10-02T09:35:33Z): not matched (bracket: shuffle 3 x1.5: 5,063 spikes, MN9 0 Hz; shuffle 3 x2: 6,865 spikes, MN9 0 Hz; shuffle 3 x2.5: 10,138 spikes, MN9 0 Hz; shuffle 3 x3: 24,024 spikes, MN9 0 Hz; shuffle 4 x2.5: 24,277 spikes, MN9 0 Hz; shuffle 5 x2.5: 29,297 spikes, MN9 0 Hz; band 9,680-17,976; x 2.5 matched shuffle 3 only, shuffles 4 and 5 were above the band at that gain)."
    },
    "wiring_effect": "mixed",
    "baseline_beaten": "not-tested",
@@ -332,7 +340,7 @@
     "null_samples": 5,
     "has_no_brain_baseline": false,
     "verdict": "unfair",
-    "reason": "Four null types with the same stimulus, readout, neuron model, edge count and synapse count; degree-preserving and boundary-preserving arms keep every neuron's degrees, and the boundary arm keeps every sensory/ascending output and motor/descending/endocrine input. Not tuned equally: the degree-preserving null is much less excitable than the real wiring, and the pre-registered gain check (D shuffle 3, w_syn x 1.5: 5063 spikes, MN9 0 Hz, 2: 6865 spikes, MN9 0 Hz, 3: 24024 spikes, MN9 0 Hz) found no gain within 30% of the real 13,828 spikes (status: not matched). MN9 stayed silent across the bracket, which points to mis-routing rather than low excitability, but on one shuffle only."
+    "reason": "Four null types with the same stimulus, readout, neuron model, edge count and synapse count; degree-preserving and boundary-preserving arms keep every neuron's degrees, and the boundary arm keeps every sensory/ascending output and motor/descending/endocrine input. Not tuned equally: the degree-preserving null is much less excitable than the real wiring. The pre-registered gain search matched shuffle 3 at w_syn x 2.5 (10,138 spikes, within 30% of the real 13,828), but shuffles 4 and 5 at the same gain fired 24,277 and 29,297 spikes (above the band), so the arm is not matched on 3 shuffles. MN9 stayed at 0 Hz in all 6 gain trials (x1.5 to x3, 5,063 to 29,297 spikes), which points to mis-routing rather than low excitability."
    },
    "quality": {
     "n_per_arm": 5,
@@ -343,12 +351,12 @@
     "peer_review": "none",
     "recomputed_by_us": true,
     "grade": "weak",
-    "reason": "Our own pre-registered measurement; per-trial files with property checks; one reflex, one model, one trial per shuffle, the pre-registered optional trials (more shuffles, matched-gain trials on two more shuffles) were not reached."
+    "reason": "Our own pre-registered measurement; per-trial files with property checks; one reflex, one model, one trial per shuffle; all 5 pre-registered shuffles per arm ran."
    },
    "extraction": "files",
    "one_line": "Our run: real wiring 85 Hz; degree-preserving 0 Hz; weight shuffle 0 Hz; interior-only shuffle 39 Hz; sign shuffle runaway.",
    "commit": "philshiu/Drosophila_brain_model@91bdd1e7",
-   "checked_at": "2026-10-01",
+   "checked_at": "2026-10-02",
    "sources": [
     {
      "url": "https://github.com/philshiu/Drosophila_brain_model",
@@ -392,7 +400,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "e417b33 README.md:L53-60 (seed 0: \"MN9 fires no spike at all\"; \"four more shuffles (seeds 1 to 4) leave MN9 silent as well\"); docs/figures/control-demo.svg \"MN9 0.0 Hz ... no MN9 spike in 30 trials\"",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -480,7 +490,9 @@
      "spread": "± 0.0132 sem",
      "readout_refit": false,
      "source": "08cf866 public/data/ablation_ladder.json:rungs[key=w_shuffle].score / scoreSem; paired d -0.392 ± 0.0129 se",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "w_shuffle_refit",
@@ -492,7 +504,9 @@
      "spread": "± 0.0182 sem",
      "readout_refit": true,
      "source": "08cf866 public/data/ablation_refit.json:rungs[key=w_shuffle].refit / refitSem (refit baseline 0.7952 ± 0.0062)",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "sign_free",
@@ -504,7 +518,9 @@
      "spread": "± 0.0021 sem",
      "readout_refit": false,
      "source": "08cf866 public/data/ablation_ladder.json:rungs[key=sign_free].score / scoreSem (refit 0.5515, 08cf866 public/data/ablation_refit.json)",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "w_binary",
@@ -516,7 +532,9 @@
      "spread": "± 0.0014 sem",
      "readout_refit": false,
      "source": "08cf866 public/data/ablation_ladder.json:rungs[key=w_binary].score / scoreSem (refit 0.5277, 08cf866 public/data/ablation_refit.json)",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -604,7 +622,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "paper PMC11446845 Results: \"only 1 of 100 shuffled simulations did (Supplementary Table 1d)\"",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -696,7 +716,9 @@
      "spread": "± 5.68 sd",
      "readout_refit": true,
      "source": "48cf341 reports/controls/controls.json: randomized[seed 41,42,43].neural.accuracy = 65.0/63.5/54.5",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "edge_lesion",
@@ -708,7 +730,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "48cf341 reports/controls/controls.json: edge_lesion_original_head.accuracy",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -800,7 +824,9 @@
      "spread": "± 0.010 sd",
      "readout_refit": false,
      "source": "86d99a4 paper/data/m8_shuffled.json deltas.LHN (recomputed)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -892,7 +918,9 @@
      "spread": null,
      "readout_refit": null,
      "source": "paper PMC11525180 (Lappalainen et al. 2024 Nature) Results \"ablation\" paragraph and Extended Data Fig. 2b-d: accurate contrast preference, poor direction selectivity; values only in figure",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "cell-type-connectivity-only",
@@ -904,7 +932,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "paper PMC11525180 (Lappalainen et al. 2024 Nature) Results ablation paragraph / Extended Data Fig. 2: \"predicted neural activity poorly\"; values only in figure",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "merge-e-i",
@@ -916,7 +946,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "paper PMC11525180 (Lappalainen et al. 2024 Nature) Results: \"poor performance on par with the random DMN\"; Extended Data Fig. 2",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "decoder-alone",
@@ -928,7 +960,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "paper PMC11525180 (Lappalainen et al. 2024 Nature) Results: ensemble \"exhibited superior task performance to both the decoder network alone and models with random parameter configurations (Extended Data Fig. 2a)\"; task error only in figure",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "unconstrained-cnn",
@@ -940,7 +974,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "paper PMC11525180 (Lappalainen et al. 2024 Nature) Methods \"Unconstrained CNN\"; task error only in Extended Data Fig. 2a",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -993,6 +1029,128 @@
    ]
   },
   {
+   "id": "byo-flygym-body",
+   "name": "Build your own, Add a body: FlyWire brain drives FlyGym walking (our run)",
+   "evidence_grade": "A",
+   "made_by_us": true,
+   "task_family": "body-steering",
+   "loop": "open-loop",
+   "wiring": {
+    "dataset": "FlyWire FAFB",
+    "release": "v783 (Shiu et al. Completeness_783.csv, Connectivity_783.parquet)",
+    "scope": "whole brain, 138,639 neurons"
+   },
+   "trained_parts": "none (hand-made rate-to-drive mapping)",
+   "metric": {
+    "name": "forward displacement of the FlyGym 2.1.0 fly in 1.0 s of driven body time, DNp09 (P9) stimulated at 150 Hz",
+    "unit": "mm",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 13.9252,
+    "n": 3,
+    "spread": "± 0.58 sd",
+    "source": "Digital Fly Lab body test of 2026-10-02 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-02-run6/), summary.json groups.real; body/P9-real-0..2.json; brain/P9-real-0..2.json"
+   },
+   "floor": {
+    "label": "zero drive (no command)",
+    "value": 0,
+    "source": "Digital Fly Lab body test of 2026-10-02, body run file zero.json"
+   },
+   "arms": [
+    {
+     "arm_id": "D-degree-preserving",
+     "null_type": "degree-preserving",
+     "label": "degree-preserving shuffles 3, 4, 5 (run 5 nulls.py), DNp09 stimulated, same mapping and body",
+     "value": 14.1489,
+     "n": 3,
+     "samples": 3,
+     "spread": "± 0.00 sd",
+     "readout_refit": false,
+     "source": "Digital Fly Lab body test of 2026-10-02 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-02-run6/), summary.json groups.D; body/P9-D3..5.json; brain/P9-D-3..5.json",
+     "recomputed_by_us": true,
+     "activity_ratio": 0.818,
+     "activity_class": "comparable"
+    },
+    {
+     "arm_id": "matched-constant",
+     "null_type": "no-brain-baseline",
+     "label": "no brain: each side's mean real drive, constant for 1 s",
+     "value": 14.2782,
+     "n": 1,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": null,
+     "source": "Digital Fly Lab body test of 2026-10-02 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-02-run6/), summary.json groups.matched; body/matched.json",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "random-drive",
+     "null_type": "no-brain-baseline",
+     "label": "no brain: per-bin random drives with the real drive's per-side mean and sd (seeds 0-2)",
+     "value": 13.9578,
+     "n": 3,
+     "samples": 3,
+     "spread": "± 0.46 sd",
+     "readout_refit": null,
+     "source": "Digital Fly Lab body test of 2026-10-02 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-02-run6/), summary.json groups.random; body/random-0..2.json",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "headline_arm": "D-degree-preserving",
+    "best_null_arm": "D-degree-preserving",
+    "retention": 1.0161,
+    "retention_method": "floor",
+    "baseline_arm": "matched-constant",
+    "baseline_retention": 1.0253,
+    "difference": -0.2237,
+    "ci": null,
+    "p": null,
+    "stat_note": "Pre-registered 2026-10-02T09:35:33Z (design published in https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-02-run6/#prereg-heading; deviation 1: the P9 turning sign, fixed before the first body run). One body run per brain trial; physics is deterministic, so identical drives give identical walks (the three D shuffles sent identical drives: only the stimulated P9 neurons reached the mapped DNs). Retention D 1.0161, matched constant 1.0253, random 1.0023. The rate-to-drive mapping is ours (hand-made, not fitted)."
+   },
+   "wiring_effect": "no-difference",
+   "baseline_beaten": "no",
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": false,
+    "tuned_equally": true,
+    "null_samples": 3,
+    "has_no_brain_baseline": true,
+    "verdict": "fair",
+    "reason": "Same stimulus (DNp09 at 150 Hz), the same fixed mapping and the same FlyGym controller for every arm; nothing was tuned for any arm; brain activity of the scrambled brains is comparable to the real one (whole-brain spikes ratio 0.818). The shuffle does not keep the sensory/motor boundary."
+   },
+   "quality": {
+    "n_per_arm": 3,
+    "held_out": null,
+    "uncertainty_reported": true,
+    "results_in_repo_files": true,
+    "independent_test": true,
+    "peer_review": "none",
+    "recomputed_by_us": true,
+    "grade": "strong",
+    "reason": "Our own pre-registered measurement with per-run files; one stimulus, one model, one body, 3 trial seeds and 3 shuffles; 1 s of walking."
+   },
+   "extraction": "files",
+   "one_line": "Our test: FlyGym fly walks 13.9 mm with real brain, 14.1 mm scrambled, 14.3 mm with a brainless constant drive; the mapping is ours.",
+   "commit": "philshiu/Drosophila_brain_model@91bdd1e7; flygym==2.1.0",
+   "checked_at": "2026-10-02",
+   "sources": [
+    {
+     "url": "https://github.com/philshiu/Drosophila_brain_model",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/NeLy-EPFL/flygym",
+     "label": "direct"
+    }
+   ]
+  },
+  {
    "id": "fly-brain-zero-shot",
    "name": "Are fruit flies zero-shot adapters?",
    "evidence_grade": "A",
@@ -1032,7 +1190,9 @@
      "spread": "± 0.65 sd",
      "readout_refit": true,
      "source": "0c63ba5 assets/results_per_fly.csv (recomputed): intact, wiring scrambled (runs shuffle0, shuffle1); README.md:L59",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "unplugged",
@@ -1044,7 +1204,9 @@
      "spread": "± 0.53 sd",
      "readout_refit": false,
      "source": "0c63ba5 assets/results_per_fly.csv (recomputed): intact, turn neurons unplugged",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -1140,7 +1302,9 @@
      "spread": "± 50.4 sd across 5 networks",
      "readout_refit": true,
      "source": "c9ee19f results/e-compare-recal-v1/summary.json left (recomputed pooled 79/150)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "E_fixed",
@@ -1152,7 +1316,9 @@
      "spread": "± 34.9 sd across 5 networks",
      "readout_refit": false,
      "source": "c9ee19f results/e-compare-fixed-v1/summary.json left (recomputed pooled 47/150)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "D_replay",
@@ -1164,7 +1330,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "c9ee19f README.md:L14",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "B_rule",
@@ -1176,7 +1344,9 @@
      "spread": null,
      "readout_refit": null,
      "source": "c9ee19f results/cd-test-v1/compare-C-vs-B-ab-test-v1/summary.json left.B_successes 30/30",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "A_constant",
@@ -1188,7 +1358,9 @@
      "spread": null,
      "readout_refit": null,
      "source": "c9ee19f results/cd-test-v1/compare-C-vs-A-ab-test-v1/summary.json left.A_successes",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -1287,7 +1459,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "cc25411 docs/evidence/SHUFFLE_CONTROL_REGIME_MATCHED.md table row \"shuffled @ matched gain 0.15 (0, 104) (4, 78) -0.098\"; src/flysim/multifly_live.py:262 _shuffled_graph",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "dp-shuffle-same-gain",
@@ -1299,7 +1473,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "cc25411 docs/evidence/SHUFFLE_CONTROL_REGIME_MATCHED.md table row \"shuffled @ gain 0.40 (23, 160) (5, 117) +0.169\"",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "eon-shuffled-connectome",
@@ -1311,7 +1487,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "cc25411 artifacts/showcase/eon-showcase-v1/acceptance.json:diagnostic_controls.shuffled-connectome.event_targets (value on another scale)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -1407,7 +1585,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "328906f reports/2026-09-09/e03-wheel-pilot/metrics.json initial_successes",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -1491,7 +1671,9 @@
      "spread": null,
      "readout_refit": null,
      "source": "media/README.md:24-29: 'some responses remain under shuffled weights'; numbers not reported",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "no-input",
@@ -1503,7 +1685,9 @@
      "spread": null,
      "readout_refit": null,
      "source": "media/README.md:24-29: baseline cruise moves the body with input off; numbers not reported",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -1587,7 +1771,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "https://github.com/zack-maz/brain-runners/blob/79d80398637909e10687f09f4457b79125203dc6/docs/calibration/FLY2_REPORT.md 'Controls' table: shuffled wiring (seed 1)",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "no-brain",
@@ -1599,7 +1785,9 @@
      "spread": null,
      "readout_refit": null,
      "source": "https://github.com/zack-maz/brain-runners/blob/79d80398637909e10687f09f4457b79125203dc6/docs/calibration/FLY2_REPORT.md 'Controls' table: no brain",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -1687,7 +1875,9 @@
      "spread": "± 2.36 sd",
      "readout_refit": false,
      "source": "6b22922 results/a2/shuf0-2.jsonl (recomputed); summary.json 'shuffled (3 seeds pooled)'",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "noconn",
@@ -1699,7 +1889,9 @@
      "spread": "± 0.40 sd",
      "readout_refit": false,
      "source": "6b22922 results/a2/noconn.jsonl (recomputed)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "blind",
@@ -1711,7 +1903,9 @@
      "spread": "± 3.22 sd",
      "readout_refit": false,
      "source": "6b22922 results/a2/blind.jsonl (recomputed)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "spray_matched",
@@ -1723,7 +1917,9 @@
      "spread": "± 14.04 sd",
      "readout_refit": null,
      "source": "6b22922 results/a2/spray_matched.jsonl (recomputed); summary.json spray_matched",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -1819,7 +2015,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "71ecf53 outputs/doom/bci-validation.json trials[all_edges_disconnected]",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "blank_vision",
@@ -1831,7 +2029,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "71ecf53 outputs/doom/bci-validation.json trials[blank_vision]",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "retina_disconnected",
@@ -1843,7 +2043,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "71ecf53 outputs/doom/bci-validation.json trials[retina_disconnected]",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -1931,7 +2133,9 @@
      "spread": "± 1.65 sd",
      "readout_refit": true,
      "source": "334d915 docs/results/freeplay_heldout_shuffled_s0_final.json: episodes[].R (30 held-out MAP01 episodes)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "noconn",
@@ -1943,7 +2147,9 @@
      "spread": "± 1.28 sd",
      "readout_refit": true,
      "source": "334d915 docs/results/freeplay_heldout_noconn_final.json: episodes[].R (30 held-out MAP01 episodes)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -2042,7 +2248,9 @@
      "spread": "± 0.01 sd",
      "readout_refit": false,
      "source": "c08c86b public/benchmarks/benchmark.json results['silenced connectome'] (recomputed)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "untrained_readout",
@@ -2054,7 +2262,9 @@
      "spread": "± 0.01 sd",
      "readout_refit": false,
      "source": "c08c86b public/benchmarks/benchmark.json results['untrained readout'] (recomputed)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "rule",
@@ -2066,7 +2276,9 @@
      "spread": "± 21.08 sd",
      "readout_refit": null,
      "source": "c08c86b public/benchmarks/benchmark.json results['rule'] (recomputed)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "random",
@@ -2078,7 +2290,9 @@
      "spread": "± 0.33 sd",
      "readout_refit": null,
      "source": "c08c86b public/benchmarks/benchmark.json results['random'] (recomputed)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -2170,7 +2384,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "ecb95f7 retroid/README.md:L119; retroid/retroidsim/ablate.py:1-14",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "rewire",
@@ -2182,7 +2398,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "ecb95f7 retroid/README.md:L120; retroid/retroidsim/ablate.py rewire",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "silence",
@@ -2194,7 +2412,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "ecb95f7 retroid/README.md:L121",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "tracker",
@@ -2206,7 +2426,9 @@
      "spread": null,
      "readout_refit": null,
      "source": "ecb95f7 retroid/README.md:L122",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "random",
@@ -2218,7 +2440,9 @@
      "spread": null,
      "readout_refit": null,
      "source": "ecb95f7 retroid/README.md:L123 (mean of 111 and 174 computed by us)",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "no_input",
@@ -2230,7 +2454,9 @@
      "spread": null,
      "readout_refit": null,
      "source": "ecb95f7 retroid/README.md:L124",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -2322,7 +2548,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "3516a09 docs/results.md:L19; tasks/street/train_street.py:40-41",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "mlp40",
@@ -2334,7 +2562,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "3516a09 docs/results.md:L14",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "linear",
@@ -2346,7 +2576,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "3516a09 docs/results.md:L13",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -2442,7 +2674,9 @@
      "spread": "range 57-66% over 5 runs",
      "readout_refit": null,
      "source": "83b9104 LIMITATIONS.md:L193",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "uniform_noise",
@@ -2454,7 +2688,9 @@
      "spread": "range 46-52% over 5 runs",
      "readout_refit": null,
      "source": "83b9104 LIMITATIONS.md:L194",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "paired_noise_alone",
@@ -2466,7 +2702,9 @@
      "spread": "range 52-63%",
      "readout_refit": null,
      "source": "83b9104 LIMITATIONS.md:L218-219",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -2558,7 +2796,9 @@
      "spread": null,
      "readout_refit": false,
      "source": "3e3e7b5 docs/flight_cards/2026-09-23_matched_full_races.md:L3 \"PD: 1/2 finishes\"; table row Straw Bale 13:04.047",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -2642,7 +2882,9 @@
      "spread": "± 0.081 sd",
      "readout_refit": true,
      "source": "4ddc9b5 notebooks/connectome_vs_classical_architectures.ipynb cell 22 output: 1 - vs rewired match_score (16W/49D/15L of 80 from fly side)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "classical",
@@ -2654,7 +2896,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "4ddc9b5 notebooks/connectome_vs_classical_architectures.ipynb cell 22 output: 1 - vs classical match_score 0.531",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "material",
@@ -2666,7 +2910,9 @@
      "spread": null,
      "readout_refit": null,
      "source": "4ddc9b5 notebooks/connectome_vs_classical_architectures.ipynb cell 22 output: 1 - vs material match_score 0.306",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -2730,84 +2976,92 @@
     "release": "v1.0 flat connectome (minconf 0.5)",
     "scope": "both mushroom bodies: 343 PNs, 1,893 KCs, 48 MBONs, 332 DANs"
    },
-   "trained_parts": "KC->MBON weights by dopamine-gated plasticity (2,000 episodes); hyperparameters tuned on separate seeds",
+   "trained_parts": "KC->MBON weights by dopamine-gated plasticity with posture-shaped reward (3,000 tuning episodes); hyperparameters tuned on separate seeds",
    "metric": {
-    "name": "CartPole mean episode length over the final 100 episodes (held-out seeds 50-69)",
+    "name": "CartPole mean episode length over the final 100 episodes (fresh seeds 70-89)",
     "unit": "steps",
     "higher_is_better": true
    },
    "real": {
-    "value": 233.8,
+    "value": 392.5,
     "n": 20,
-    "spread": "± 43.1 sd",
-    "source": "0455e2e results/summary.md: fly-bilateral row (recomputed 233.65 from per-seed values)"
+    "spread": "± 103.1 sd",
+    "source": "077dcba results/summary.md: fly-bilateral row (fresh seeds 70-89; unchanged at HEAD 854fb1d)"
    },
    "floor": {
     "label": "random pushes (chance)",
-    "value": 22.2,
-    "source": "0455e2e results/summary.md: random row"
+    "value": 22.8,
+    "source": "077dcba results/summary.md: random row"
    },
    "arms": [
     {
      "arm_id": "shuffled",
      "null_type": "degree-preserving",
      "label": "fly-bilateral-shuffled (PN->KC and KC->MBON double-edge swaps)",
-     "value": 218.3,
+     "value": 390.3,
      "n": 20,
      "samples": 20,
-     "spread": "± 66.3 sd",
+     "spread": "± 96.4 sd",
      "readout_refit": true,
-     "source": "0455e2e results/summary.md: fly-bilateral-shuffled row; one shuffle per evaluation seed (per-seed rng), not traced line by line",
-     "recomputed_by_us": true
+     "source": "077dcba results/summary.md: fly-bilateral-shuffled row; one shuffle per evaluation seed (per-seed rng)",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "frozen",
      "null_type": "untrained",
      "label": "fly-bilateral-frozen (no plasticity)",
-     "value": 21.3,
+     "value": 18.7,
      "n": 20,
      "samples": 1,
-     "spread": "± 13.9 sd",
+     "spread": "± 9.9 sd",
      "readout_refit": false,
-     "source": "0455e2e results/summary.md: fly-bilateral-frozen row",
-     "recomputed_by_us": true
+     "source": "077dcba results/summary.md: fly-bilateral-frozen row",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "td",
      "null_type": "no-graph-model",
      "label": "TD actor-critic on the same Kenyon-cell code (not a fly)",
-     "value": 302.3,
+     "value": 500,
      "n": 20,
      "samples": 1,
-     "spread": "± 168.0 sd",
+     "spread": "± 0.0 sd",
      "readout_refit": true,
-     "source": "0455e2e results/summary.md: td row",
-     "recomputed_by_us": true
+     "source": "077dcba results/summary.md: td row (all 20 seeds at the 500 ceiling)",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "random",
      "null_type": "no-brain-baseline",
      "label": "uniform random pushes",
-     "value": 22.2,
+     "value": 22.8,
      "n": 20,
      "samples": 1,
-     "spread": "± 1.0 sd",
+     "spread": "± 0.9 sd",
      "readout_refit": null,
-     "source": "0455e2e results/summary.md: random row",
-     "recomputed_by_us": true
+     "source": "077dcba results/summary.md: random row",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
     "headline_arm": "shuffled",
     "best_null_arm": "shuffled",
-    "retention": 0.9267,
+    "retention": 0.994,
     "retention_method": "floor",
     "baseline_arm": "td",
-    "baseline_retention": 1.3237,
-    "difference": 15.5,
+    "baseline_retention": 1.2908,
+    "difference": 2.2,
     "ci": null,
-    "p": 0.1953,
-    "stat_note": "Author's permutation test on per-seed means, fly-bilateral > fly-bilateral-shuffled, p = 0.1953; our unpaired one-sided permutation p = 0.20. Earlier seed sets pointed both ways (seeds 0-9 p = 0.037 for real; seeds 30-49 shuffled ahead)."
+    "p": 0.4771,
+    "stat_note": "Author's permutation test on per-seed means at 077dcba, fly-bilateral > fly-bilateral-shuffled, p = 0.4771 (fresh seeds 70-89). Updated on 2026-10-02 from 0455e2e (233.8 vs 218.3, p = 0.1953): the comparison is like for like (same task and metric, same degree-preserving null, 20 evaluation seeds per arm, both arms under the same protocol), but the training protocol changed for every condition between the commits (posture-shaped reward and a learning-rate settle term, 2e7ea39; 3,000 tuning episodes, 76240b0). results/summary.md is identical at HEAD 854fb1d."
    },
    "wiring_effect": "no-difference",
    "baseline_beaten": "no",
@@ -2818,7 +3072,7 @@
     "null_samples": 20,
     "has_no_brain_baseline": true,
     "verdict": "fair",
-    "reason": "Degree-preserving swaps inside the PN->KC and KC->MBON layers, dopamine targets kept, same plasticity and hyperparameters, 20 held-out seeds."
+    "reason": "Degree-preserving swaps inside the PN->KC and KC->MBON layers, dopamine targets kept, same plasticity, reward and hyperparameters, 20 fresh seeds."
    },
    "quality": {
     "n_per_arm": 20,
@@ -2829,12 +3083,12 @@
     "peer_review": "none",
     "recomputed_by_us": true,
     "grade": "strong",
-    "reason": "Held-out seeds, hyperparameters tuned elsewhere, permutation tests, per-seed values committed."
+    "reason": "Fresh seeds, hyperparameters tuned elsewhere, permutation tests, per-seed values committed."
    },
    "extraction": "files",
-   "one_line": "Mushroom-body fly learns CartPole (234 steps), but degree-preserving shuffled wiring learns about as well (218, p = 0.20); a TD learner does better.",
-   "commit": "0455e2e",
-   "checked_at": "2026-09-30",
+   "one_line": "Mushroom-body fly learns CartPole (392 steps), but degree-preserving shuffled wiring learns as well (390, p = 0.48); a TD learner reaches the 500 ceiling.",
+   "commit": "077dcba",
+   "checked_at": "2026-10-02",
    "sources": [
     {
      "url": "https://github.com/Curt-Park/fly-cartpole",
@@ -2878,7 +3132,9 @@
      "spread": "± 0.3006 sd across tasks",
      "readout_refit": false,
      "source": "3052ce5 results/flywire783_gain0.45.json:tasks[].controls.rewired.score (mean recomputed by us); specificity key 0.1998",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -2966,7 +3222,9 @@
      "spread": "± 0.0020 sem",
      "readout_refit": null,
      "source": "271cc85 out/benchmark.json: mnist.degree_preserving[\"16\"].mean/sem",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "glomerulus_matched",
@@ -2978,7 +3236,9 @@
      "spread": "± 0.0022 sem",
      "readout_refit": null,
      "source": "271cc85 out/benchmark.json: mnist.glomerulus_matched[\"16\"].mean/sem",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "weight_shuffled",
@@ -2990,7 +3250,9 @@
      "spread": "± 0.0034 sem",
      "readout_refit": null,
      "source": "271cc85 out/benchmark.json: mnist.weight_shuffled[\"16\"].mean/sem",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "random_flyhash",
@@ -3002,7 +3264,9 @@
      "spread": "± 0.0010 sem",
      "readout_refit": null,
      "source": "271cc85 out/benchmark.json: mnist.random_flyhash[\"16\"].mean/sem",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "real_binary",
@@ -3014,7 +3278,9 @@
      "spread": "± 0.0028 sem",
      "readout_refit": null,
      "source": "271cc85 out/benchmark.json: mnist.real_binary[\"16\"].mean/sem",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "simhash",
@@ -3026,7 +3292,9 @@
      "spread": "± 0.0024 sem",
      "readout_refit": null,
      "source": "271cc85 out/benchmark.json: mnist.simhash[\"16\"].mean/sem",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -3121,7 +3389,9 @@
      "spread": "± 0.37 sd",
      "readout_refit": true,
      "source": "be301d9 results/results_cifar10.json: condition=degree_preserving final_acc",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "weight_shuffle",
@@ -3133,7 +3403,9 @@
      "spread": "± 0.62 sd",
      "readout_refit": true,
      "source": "be301d9 results/results_cifar10.json: condition=weight_shuffle final_acc",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "erdos_renyi",
@@ -3145,7 +3417,9 @@
      "spread": "± 0.12 sd",
      "readout_refit": true,
      "source": "be301d9 results/results_cifar10.json: condition=erdos_renyi final_acc",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "no_recurrence",
@@ -3157,7 +3431,9 @@
      "spread": "± 0.00 sd",
      "readout_refit": true,
      "source": "be301d9 results/results_cifar10.json: condition=no_recurrence final_acc",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -3248,7 +3524,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "518f162 artifacts/t001_topology_results.json: A3-CONFIG.test_acc",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "A3-ER",
@@ -3260,7 +3538,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "518f162 artifacts/t001_topology_results.json: A3-ER.test_acc",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "A3-DENSE",
@@ -3272,7 +3552,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "518f162 artifacts/t001_topology_results.json: A3-DENSE.test_acc",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -3360,7 +3642,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "6da6325 README.md:L96",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "weight_shuffle",
@@ -3372,7 +3656,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "6da6325 README.md:L96",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "sign_shuffle",
@@ -3384,7 +3670,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "6da6325 README.md:L96",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "erdos_renyi",
@@ -3396,7 +3684,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "6da6325 README.md:L96",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -3488,7 +3778,9 @@
      "spread": "± 0.000802 sd",
      "readout_refit": false,
      "source": "paper (artificialscientific.com/papers/flies-are-all-you-need) Table 1: Relabeled, without refitting",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "no_edges",
@@ -3500,7 +3792,9 @@
      "spread": "± 0 sd",
      "readout_refit": false,
      "source": "paper (artificialscientific.com/papers/flies-are-all-you-need) Table 1: No edges",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "direct_input",
@@ -3512,7 +3806,9 @@
      "spread": "± 0.000108 sd",
      "readout_refit": true,
      "source": "paper (artificialscientific.com/papers/flies-are-all-you-need) Table 1: Direct-input readout",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -3607,7 +3903,9 @@
      "spread": "± 0.0087 sd",
      "readout_refit": null,
      "source": "ac0253e experiments/001-fly-oracle/results.csv: condition=rewired, p_yes over runs",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "er",
@@ -3619,7 +3917,9 @@
      "spread": "± 0.0557 sd",
      "readout_refit": null,
      "source": "ac0253e experiments/001-fly-oracle/results.csv: condition=er, p_yes over runs",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "no_brain",
@@ -3631,7 +3931,9 @@
      "spread": "± 0.0039 sd",
      "readout_refit": null,
      "source": "ac0253e experiments/001-fly-oracle/results.csv: condition=no_brain, p_yes over runs",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "coin",
@@ -3643,7 +3945,9 @@
      "spread": "± 0.5019 sd",
      "readout_refit": null,
      "source": "ac0253e experiments/001-fly-oracle/results.csv: condition=coin, p_yes over runs",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -3735,7 +4039,9 @@
      "spread": "± 0.0049 sd",
      "readout_refit": true,
      "source": "03d9c5c results/null_model_scores.csv: auc_pr_full, 500 trials (summary json full.null_mean)",
-     "recomputed_by_us": true
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "neuropil_only",
@@ -3747,7 +4053,9 @@
      "spread": null,
      "readout_refit": true,
      "source": "03d9c5c README.md:L104",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -3839,7 +4147,9 @@
      "spread": "95% CI of connectome minus N1 [-0.34, -0.06]",
      "readout_refit": false,
      "source": "2f5683d results/fix_analysis.txt \"final\" block, row ALL \"N1 1.78\"; diff -0.224, p_holm 0.029",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "N2-degree-swap",
@@ -3851,7 +4161,9 @@
      "spread": "95% CI of connectome minus N2 [-0.41, -0.11]",
      "readout_refit": false,
      "source": "2f5683d results/fix_analysis.txt \"final\" block, row ALL \"N2 1.77\"; diff -0.199, p_holm 0.016",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "N4-interior-swap",
@@ -3863,7 +4175,9 @@
      "spread": "95% CI of connectome minus N4 [-0.04, +0.05]",
      "readout_refit": false,
      "source": "2f5683d results/fix_analysis.txt \"final\" block, row ALL \"N4 1.58\"; diff +0.002, p_holm 0.750",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     },
     {
      "arm_id": "N5-interior-shuffle",
@@ -3875,7 +4189,9 @@
      "spread": "95% CI of connectome minus N5 [-0.10, +0.05]",
      "readout_refit": false,
      "source": "2f5683d results/fix_analysis.txt \"final\" block, row ALL \"N5 1.62\"; diff -0.074, p_holm 0.750",
-     "recomputed_by_us": false
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
     }
    ],
    "effect": {
@@ -4003,6 +4319,18 @@
    "wiring_effect": "helps",
    "quality": "weak",
    "fairness": "unfair"
+  },
+  {
+   "study_id": "byo-flygym-body",
+   "label": "Build your own, Add a body: FlyWire brain drives FlyGym walking (our run)",
+   "task_family": "body-steering",
+   "headline_null_type": "degree-preserving",
+   "retention": 1.0161,
+   "retention_method": "floor",
+   "baseline_retention": 1.0253,
+   "wiring_effect": "no-difference",
+   "quality": "strong",
+   "fairness": "fair"
   },
   {
    "study_id": "fly-brain-zero-shot",
@@ -4153,9 +4481,9 @@
    "label": "fly-cartpole",
    "task_family": "ml-benchmark",
    "headline_null_type": "degree-preserving",
-   "retention": 0.9267,
+   "retention": 0.994,
    "retention_method": "floor",
-   "baseline_retention": 1.3237,
+   "baseline_retention": 1.2908,
    "wiring_effect": "no-difference",
    "quality": "strong",
    "fairness": "fair"

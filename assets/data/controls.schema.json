@@ -724,6 +724,21 @@
         },
         "recomputed_by_us": {
          "type": "boolean"
+        },
+        "activity_ratio": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "activity_class": {
+         "enum": [
+          "reduced",
+          "comparable",
+          "elevated",
+          "runaway",
+          "not-reported"
+         ]
         }
        }
       }

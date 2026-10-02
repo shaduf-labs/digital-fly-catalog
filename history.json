@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "run:03aa82ff-d83b-47ec-bb36-c8edc64e696c",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-02T09:19:12Z",
+      "completed_at": "2026-10-02T11:00:20Z",
+      "title": "Sixth check: who does the walking? We gave the fly brain a body, refereed the Terraria fly and added 4 entries",
+      "summary": "Our own pre-registered body test: the Shiu et al. brain model drove FlyGym's walking fly through our hand-made mapping; the fly walked 13.9 mm in 1 s with the real brain, 14.1 mm with scrambled brains (identical drives) and 14.3 mm with a brainless constant drive; the real brain added turning commands, sugar sent no walking command, and the mapping caps the drive. The fair test's gain check was not matched on 3 shuffles (MN9 0 Hz at every gain); no scoring rule changed. Terraria fly graded B (no control). 100 entries and 51 videos re-checked (0 grade changes, FlyDoom still gone), 4 new entries and 1 video, fly-cartpole updated to 077dcba, and Add a body tested on Build your own.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-02-run6/",
+      "entrypoint": "reports/2026-10-02-run6/index.html"
+    },
+    {
       "run_id": "run:721af05d-86ce-46b6-9c1d-0038d2469d32",
       "status": "completed",
       "answer_change": "meaningful_change",

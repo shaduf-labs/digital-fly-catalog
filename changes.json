@@ -2,6 +2,72 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-02-run6-tracking",
+      "changed_at": "2026-10-02T11:00:20Z",
+      "summary": "100 entries re-checked on 2 Oct 2026: 6 with new commits, 0 new releases, 0 grade changes; FlyDoom (eganeganegan) returned HTTP 404 again and its record is kept; 51 videos re-checked: all available, 0 removed; 4 entries and 1 video added.",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-10-02-run6-body-test",
+      "changed_at": "2026-10-02T11:00:20Z",
+      "summary": "Our own pre-registered body test, Who does the walking?: the FlyGym fly walked 13.9 ± 0.58 mm in 1 s with the real brain (P9 stimulated), 14.15 mm with 3 scrambled brains that sent identical drives, 14.28 mm with a brainless constant drive and 13.96 mm with brainless random drives; the real brain added turning commands (DNa02); sugar sent no walking command (MN9 82 Hz) and the fly stood. The rate-to-drive mapping is ours and caps the drive. One stimulus, one model, one body, 1 s, open loop.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#body-heading"
+    },
+    {
+      "change_id": "2026-10-02-run6-ledger",
+      "changed_at": "2026-10-02T11:00:20Z",
+      "summary": "Controls ledger 2026-10-02-run6: 33 studies, 25 with a wiring null (helps 10, no difference 6, worse 2, mixed 6, not yet scored 1); new study byo-flygym-body (no difference, fair, strong; its 3 shuffles sent identical drives). No scoring rule changed; new display-only arm fields activity_ratio and activity_class; stale notes of our fair test fixed at the source; fly-cartpole updated to commit 077dcba (392.5 vs 390.3 steps, p = 0.48).",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/"
+    },
+    {
+      "change_id": "2026-10-02-run6-gain-check",
+      "changed_at": "2026-10-02T11:00:20Z",
+      "summary": "Gain check of our 1 Oct fair test: x2.5 matched shuffle 3 (10,138 spikes) but shuffles 4 and 5 fired 24,277 and 29,297, so the arm is not matched on 3 shuffles and tuned_equally stays false; MN9 stayed at 0 Hz in all six gain trials (0.37 to 2.12 times the real activity). Our row stays mixed, unfair and weak.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#gain-heading"
+    },
+    {
+      "change_id": "2026-10-02-run6-terraria-verdict",
+      "changed_at": "2026-10-02T11:00:20Z",
+      "summary": "New verdict: \"I put a fly's brain into Terraria. And tried to train it\" (28,244 views on 2 Oct 2026), grade B: a checksummed MaleCNS v1.0 connectome with reward-modulated plasticity drives a Terraria body through hand-mapped senses and muscles; no control; the code predates the video.",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-fly-terraria"
+    },
+    {
+      "change_id": "2026-10-02-run6-walk-section",
+      "changed_at": "2026-10-02T11:00:20Z",
+      "summary": "Is it real? gains a Who does the walking? section with our body test as context for embodied claims (Eon, Gorilla Tag, FLY67); it changes no grade. Gorilla Tag re-checked at 623,504 views, still U.",
+      "path": "/p/digital-fly-catalog/is-it-real/#walk-heading"
+    },
+    {
+      "change_id": "2026-10-02-run6-new-entries",
+      "changed_at": "2026-10-02T11:00:20Z",
+      "summary": "4 new entries: Hidden attractor in the Shiu et al. model (A), Digital Fly in Terraria (B), How much of fly walking is written in the wiring? (B, provisional) and FlyGym + BANC v888 bridge (C, a derivative, not a lure).",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-10-02-run6-videos",
+      "changed_at": "2026-10-02T11:00:20Z",
+      "summary": "1 new video in the gallery: the creator's upload of the Terraria fly (grade B). 52 videos; thumbnails unchanged.",
+      "path": "/p/digital-fly-catalog/gallery/#v-fly-terraria"
+    },
+    {
+      "change_id": "2026-10-02-run6-build-your-own",
+      "changed_at": "2026-10-02T11:00:20Z",
+      "summary": "Build your own: the deeper path Add a body is now tested (2 Oct 2026): brain tested, body tested (uv, CPython 3.12.11, flygym 2.1.0, MUJOCO_GL=disable, TMPDIR fix), mapping ours, with commands, pins, expected numbers and the full source.",
+      "path": "/p/digital-fly-catalog/build-your-own/#body-heading"
+    },
+    {
+      "change_id": "2026-10-02-run6-how-it-works",
+      "changed_at": "2026-10-02T11:00:20Z",
+      "summary": "How it works: a measured who-does-what diagram for a brain driving a body (stimulus, brain, our mapping, body controller).",
+      "path": "/p/digital-fly-catalog/how-it-works/#split-heading"
+    },
+    {
+      "change_id": "2026-10-02-run6-report",
+      "changed_at": "2026-10-02T11:00:20Z",
+      "summary": "Sixth research report: our body test, the gain check, the Terraria verdict, tracking, new entries, method and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-02-run6/"
+    },
+    {
       "change_id": "2026-10-01-run5-tracking",
       "changed_at": "2026-10-01T17:59:48Z",
       "summary": "94 entries re-checked on 1 Oct 2026: 3 with new commits, 0 new releases, 0 grade changes; FlyDoom (eganeganegan) returns HTTP 404 and is kept until a re-check; 49 videos re-checked: all available, 0 removed; 6 entries and 2 videos added.",

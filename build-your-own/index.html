@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>Build your own · Digital Fly Lab · Shaduf</title>
-    <meta name="description" content="Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output and a shuffled-wiring control.">
+    <meta name="description" content="Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output, a shuffled-wiring control, and a tested path to drive a FlyGym walking body.">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
     <link rel="canonical" href="https://shaduf.ai/p/digital-fly-catalog/build-your-own/">
     <link rel="icon" href="../assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="../assets/apple-touch-icon.png" type="image/png" sizes="180x180"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180">
@@ -13,10 +13,10 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Shaduf">
     <meta property="og:title" content="Build your own · Digital Fly Lab · Shaduf">
-    <meta property="og:description" content="Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output and a shuffled-wiring control.">
+    <meta property="og:description" content="Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output, a shuffled-wiring control, and a tested path to drive a FlyGym walking body.">
     <meta property="og:url" content="https://shaduf.ai/p/digital-fly-catalog/build-your-own/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Build your own","description":"Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output and a shuffled-wiring control.","dateModified":"2026-10-01T17:59:48Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/build-your-own/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Build your own","description":"Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output, a shuffled-wiring control, and a tested path to drive a FlyGym walking body.","dateModified":"2026-10-02T11:00:20Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/build-your-own/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Digital Fly Lab updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_digital_fly_catalog" data-page-id="build-your-own">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -53,7 +53,7 @@
   <p class="dfl-lede">Run the published whole-brain model of the fruit fly on an ordinary CPU. You give 21 sugar-sensing neurons a taste, the simulated brain of 138,639 neurons responds, and you read out the neuron that makes a fly extend its proboscis to feed. Then you change one thing and check the result against shuffled wiring.</p>
 
   <ul class="dfl-meta" aria-label="Guide status">
-    <li><strong>Tested on:</strong> <span>Linux x86_64 (Debian 12), Python 3.11.2, 2 CPUs, no GPU, no C++ compiler, <time datetime="2026-09-28">28 Sep 2026</time>; re-tested from an empty folder on <time datetime="2026-10-01">1 Oct 2026</time></span></li>
+    <li><strong>Tested on:</strong> <span>Linux x86_64 (Debian 12), Python 3.11.2, 2 CPUs, no GPU, no C++ compiler, <time datetime="2026-09-28">28 Sep 2026</time>; re-tested from an empty folder on <time datetime="2026-10-01">1 Oct 2026</time>; "Add a body" (brain to a FlyGym fly) tested on <time datetime="2026-10-02">2 Oct 2026</time></span></li>
     <li><strong>Full run:</strong> <span>28 min for 20 one-second trials; tests 52 s</span></li>
     <li><strong>Untested:</strong> <span>macOS, Windows/WSL, Colab, machines with a compiler</span></li>
     <li><strong>Pins:</strong> <span>unchanged; checked against PyPI on <time datetime="2026-10-01">1 Oct 2026</time> and installed cleanly in the re-test that day</span></li>
@@ -63,6 +63,7 @@
     <h2 id="summary-heading">In one paragraph</h2>
     <p>We ran this guide from an empty folder on 28 September 2026. With sugar neurons firing at 150 Hz, the proboscis motor neuron MN9 fired at <strong>85.2 ± 3.2 Hz</strong>, so our rule said "extend the proboscis". With no stimulus nothing fired at all. With the same stimulus on <strong>shuffled wiring, MN9 stayed at 0 Hz in 6 of 6 trials</strong>, so the response depends on the real connectome. All 6 tests passed. We have not tried other operating systems, so we cannot promise it runs on yours; the untested parts are labelled on every step.</p>
     <p><strong>Re-tested on 1 October 2026:</strong> same pins, both data checksums unchanged, 6 tests passed, and the first sugar trial gave <strong>82.0 Hz, bit-exact</strong> with our first run (trial seeds 1 and 2 also matched exactly: 89 and 81 Hz). <a href="#retest-heading">What the re-test covered</a></p>
+    <p><strong>New, 2 October 2026: Add a body, tested.</strong> We connected the same brain model to the walking fly of FlyGym 2.1.0: brain tested, body tested, and the rule that turns neuron rates into leg commands is ours. With its forward-walking neurons stimulated, the fly walked 13.9 mm in 1 s with the real brain, 14.1 mm with scrambled wiring and 14.3 mm with no brain at all. <a href="#body-heading">The steps and what the numbers mean</a></p>
   </section>
 
   <section aria-labelledby="retest-heading">
@@ -90,6 +91,8 @@
       <li><span class="dfl-tag is-tested">Tested 2026-09-28 on Linux</span><span>We ran this exact step in a clean folder on Linux x86_64, Python 3.11.2, 2 CPUs, no GPU, no compiler, on 28 September 2026. The output is saved in our research notes.</span></li>
       <li><span class="dfl-tag is-untested">Untested</span><span>We did not run this step. It follows the upstream documentation and may need changes on your system.</span></li>
       <li><span class="dfl-tag is-responds">Partly tested</span><span>Part of the step ran; the rest is labelled in the text.</span></li>
+      <li><span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span><span>The "Add a body" steps: run on the same kind of machine (Linux x86_64, 2 CPUs, no GPU, 3 GB memory shared) on 2 October 2026, Python 3.11.2 for the brain and CPython 3.12.11 for the body.</span></li>
+      <li><span class="dfl-tag is-responds">Ours: hand-made mapping</span><span>A rule we wrote ourselves, not part of the brain model or the body; it shapes the result and is labelled wherever it appears.</span></li>
     </ul>
     <figure class="dfl-figure">
 <!-- DIAGRAM:path:START -->
@@ -425,12 +428,15 @@ def null_sign(pre, post, cnt, seed, n):
       <summary>Errors on the deeper paths (FlyGym, flybody, Eon fly-brain)</summary>
       <div class="table-scroll is-wide">
         <table>
-          <caption>Errors reported for deeper paths. Only the first two FlyGym rows were hit by us.</caption>
+          <caption>Errors reported for deeper paths. The rows marked "hit by us" happened in our tests.</caption>
           <thead><tr><th scope="col">Project</th><th scope="col">Symptom</th><th scope="col">Cause and fix</th><th scope="col">Source</th></tr></thead>
           <tbody>
             <tr><td>FlyGym 2.x</td><td><code>pip install flygym</code> fails, or gives 1.x, on Python 3.10 or 3.11</td><td>FlyGym 2.1.0 needs Python 3.12 to 3.14. Use a separate environment, for example <code>uv venv -p 3.12</code> (tested)</td><td>PyPI metadata; our run</td></tr>
+            <tr><td>FlyGym 2.x (uv)</td><td><code>No space left on device (os error 28)</code> while installing, writing <code>libllvmlite.so</code></td><td>With <code>--no-cache</code>, uv unpacks wheels in <code>$TMPDIR</code>; a small <code>/tmp</code> (ours: 512 MB) runs out. Set <code>TMPDIR</code> to a folder with about 400 MB free (fix tested, 2 Oct 2026)</td><td>Hit by us</td></tr>
+            <tr><td>FlyGym 2.x</td><td>A left-only P9 fly turns right</td><td>FlyGym turns toward the side with the smaller drive. Feed each side the other side's P9 rate (our mapping; tested 2 Oct 2026)</td><td>Hit by us</td></tr>
+            <tr><td>FlyGym 2.x</td><td>A fly spinning more than 180° reads as a right turn</td><td>The thorax heading is wrapped to ±180°; unwrap it sample by sample (fixed in our <code>body_run.py</code>)</td><td>Hit by us</td></tr>
             <tr><td>FlyGym 2.x</td><td><code>unrecognized name 'nmf/lf_coxa' of sensorized object</code></td><td>Add joints and actuators to the fly before <code>world.add_fly(...)</code>, as in FlyGym's <code>tests/conftest.py</code> (fix tested)</td><td>Hit by us</td></tr>
-            <tr><td>FlyGym 2.x</td><td>Old tutorials with Gymnasium-style <code>env.step()</code> break</td><td>v2.0.0 (2 Apr 2026) was a full rewrite. Follow the v2 docs, or pin <code>flygym&lt;2</code></td><td><a href="https://github.com/NeLy-EPFL/flygym/releases/tag/v2.0.0">Release notes</a></td></tr>
+            <tr><td>FlyGym 2.x</td><td>Old tutorials with Gymnasium-style <code>env.step()</code>, <code>NeuroMechFly</code> or <code>flygym.examples</code> break</td><td>v2.0.0 (2 Apr 2026) was a full rewrite; the walking controller now lives in <code>flygym_demo.complex_terrain</code>. Follow the v2 docs, or pin <code>flygym&lt;2</code></td><td><a href="https://github.com/NeLy-EPFL/flygym/releases/tag/v2.0.0">Release notes</a></td></tr>
             <tr><td>FlyGym</td><td>neuromechfly.org showed an expired-domain page (22 Sep 2026)</td><td>Renewed by the maintainers the same week</td><td><a href="https://github.com/NeLy-EPFL/flygym/issues/307">flygym#307</a></td></tr>
             <tr><td>flybody</td><td>"Only supports python 3.10"</td><td>The TensorFlow and Ray extras need older wheels; use Python 3.10 for them</td><td><a href="https://github.com/TuragaLab/flybody/issues/1">flybody#1</a> (open)</td></tr>
             <tr><td>flybody</td><td><code>CUDA_ERROR_NO_DEVICE</code> during Ray training</td><td>Expected for actor processes (only the learner sees the GPU); add cuDNN to <code>LD_LIBRARY_PATH</code> as in the README</td><td><a href="https://github.com/TuragaLab/flybody/issues/16">flybody#16</a></td></tr>
@@ -482,6 +488,97 @@ Data: FlyWire v783, CC BY-NC 4.0 (non-commercial, attribution required).</code><
     <p>A video of the results (screen recording or a plot of per-trial rates) is <span class="dfl-tag is-untested">Untested</span>.</p>
   </section>
 
+
+  <section aria-labelledby="body-heading">
+    <h2 id="body-heading">Add a body: let the brain drive a walking fly (tested 2 Oct 2026)</h2>
+    <p>This is the deeper path most people ask about: the fly brain model from this guide drives a simulated fly that walks. It connects the Shiu et al. whole-brain model to the walking fly of <a href="https://github.com/NeLy-EPFL/flygym">FlyGym</a> 2.1.0 (NeuroMechFly v2, Apache-2.0). FlyGym's walking controller takes <strong>two numbers</strong>, one for the left legs and one for the right, that set how strongly each side steps; a negative number makes that side step backwards. The brain sends its descending neurons' rates every 100 ms, and <strong>a rule we wrote by hand</strong> turns them into the two numbers.</p>
+    <div class="table-scroll is-wide">
+      <table>
+        <caption>Who does what in "Add a body" (read this first).</caption>
+        <thead><tr><th scope="col">Part</th><th scope="col">Whose</th><th scope="col">Status on 2 Oct 2026</th></tr></thead>
+        <tbody>
+          <tr><td>Brain: the Brian2 model of 138,639 neurons, Poisson stimulus at 150 Hz, 1 s</td><td>Shiu et al. 2024 (<code>model.py</code> at 91bdd1e7)</td><td><span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span></td></tr>
+          <tr><td>Which neurons are stimulated: DNp09 ("P9") for walking, the sugar neurons for the taste reflex</td><td>our choice, from Bidaye et al. 2020 and Shiu et al. 2024</td><td><span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span></td></tr>
+          <tr><td>Rate-to-drive mapping (<code>mapping.py</code>): descending-neuron rates → two numbers every 100 ms</td><td><strong>ours, hand-made, not fitted</strong></td><td><span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span> (8 unit tests) <span class="dfl-tag is-responds">Ours: hand-made mapping</span></td></tr>
+          <tr><td>Body: legs, rhythm, balance, adhesion (<code>HybridTurningController</code>)</td><td>FlyGym 2.1.0 (<code>flygym_demo.complex_terrain</code>)</td><td><span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>You need two separate Python environments, and on a small machine never both at once:</strong> run the brain part, keep only its small JSON outputs, delete the brain environment, then install the body. On our 3 GB machine the brain trials peaked at 0.77 GB each and the body runs at 0.27 GB.</p>
+    <ol class="dfl-bodysteps">
+      <li>
+        <h4>Brain trials: record what the descending neurons send <span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span></h4>
+        <p>Finish the beginner project first (its <code>.venv</code> from <code>requirements.lock</code> and <code>upstream/</code> at 91bdd1e7 with the two v783 files). Put <code>run_nulls.py</code> and <code>nulls.py</code> (in <a href="#body-source-heading">the source below</a>) in a new folder next to it. You also need FlyWire's annotation table (31.7 MB; it lists the 1,299 descending neurons). The table is fetched from its <code>main</code> branch, which is not pinned.</p>
+        <pre><code>export FLY_PROJECT=/path/to/your/byo/project
+curl -LO https://raw.githubusercontent.com/flyconnectome/flywire_annotations/main/supplemental_files/Supplemental_file1_neuron_annotations.tsv
+$FLY_PROJECT/.venv/bin/python run_nulls.py prep    --annot Supplemental_file1_neuron_annotations.tsv --sides sides.npz
+$FLY_PROJECT/.venv/bin/python run_nulls.py prep-dn --annot Supplemental_file1_neuron_annotations.tsv --out dn_info.json
+# one trial: stimulate P9 (both sides), real wiring, trial seed 0 (about 55-75 s, 0.75 GB RAM)
+$FLY_PROJECT/.venv/bin/python run_nulls.py one real 0 --stim P9 --dn dn_info.json --sides sides.npz --style run6 --out brain/
+# the same with a degree-preserving shuffle (seed 3)
+$FLY_PROJECT/.venv/bin/python run_nulls.py one D 3 --stim P9 --dn dn_info.json --sides sides.npz --style run6 --out brain/
+# the taste reflex instead of walking: --stim SUG (expect MN9 82 Hz and every walking neuron at 0 Hz)</code></pre>
+        <p>Each trial file holds, for every active descending neuron, its spike counts in ten 100 ms bins. Recording spikes does not change the dynamics: our sugar gate trial gave MN9 82.0 Hz, bit-exact with the beginner project.</p>
+      </li>
+      <li>
+        <h4>Make the drives with our mapping (any Python with numpy) <span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span> <span class="dfl-tag is-responds">Ours: hand-made mapping</span></h4>
+        <pre><code>python make_drives.py brain/ drives/</code></pre>
+        <p>This applies <code>mapping.py</code> to every brain trial and also writes the brainless drives: zero, FlyGym's default (1, 1), a constant drive matched to the real brain's average, and three random drives with the same mean and spread.</p>
+        <aside class="dfl-signbox" aria-label="The turning sign, explained">
+          <p><strong>The mapping, in words.</strong> Each 100 ms, for each side: forward = the P9 rate ÷ 100 Hz; minus the backward neurons (MDN) ÷ 100 Hz; minus half the left–right difference of the turning neurons DNa02 ÷ 100 Hz; capped between −1.2 and 1.2. Nothing was fitted.</p>
+          <p><strong>Why each side uses the other side's P9 rate.</strong> FlyGym turns a fly toward the side with the <em>smaller</em> number, like a tank that slows one track: our check with 1.0 on the left and 0.3 on the right turned the fly 129° to the right. A fly with only its left P9 active should turn left (Bidaye et al. 2020). If the left legs got the left P9 rate, they would step harder and the fly would turn right, the wrong way. Feeding each side the other side's P9 rate fixes the direction. We made this change before the first body run and logged it as a deviation from our plan. With both P9s active it changes each number by only about 0.1.</p>
+        </aside>
+      </li>
+      <li>
+        <h4>Delete the brain environment <span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span></h4>
+        <p>Keep <code>brain/</code> and <code>drives/</code> (small JSON files); remove the beginner project's <code>.venv</code> or move to another machine if space is tight.</p>
+      </li>
+      <li>
+        <h4>Install the body: uv, CPython 3.12.11, flygym 2.1.0 <span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span></h4>
+        <pre><code>S=$PWD/body-env; mkdir -p $S/tmp
+export UV_CACHE_DIR=$S/uvcache UV_PYTHON_INSTALL_DIR=$S/pythons UV_PYTHON_BIN_DIR=$S/bin TMPDIR=$S/tmp
+pip install uv==0.9.0            # or any uv; we used 0.9.0 (latest on 2 Oct 2026: 0.12.22, untested)
+uv python install 3.12           # CPython 3.12.11, 2 s, 103 MB
+uv venv -p 3.12 $S/.venv
+uv pip install --no-cache -p $S/.venv/bin/python -r requirements-body.lock   # flygym==2.1.0 and its pins; 7 s</code></pre>
+        <p><strong>Set <code>TMPDIR</code> to a folder with about 400 MB free.</strong> Our first install failed with <code>No space left on device</code>: with <code>--no-cache</code>, uv unpacks the llvmlite wheel in the temporary folder, and our <code>/tmp</code> held only 512 MB. The lock file pins 47 packages (mujoco 3.9.0, numba 0.68.0, numpy 2.5.3); the environment is 602 MB. Our pip lacked <code>ensurepip</code>, so we installed uv into a throwaway environment through get-pip, as in the beginner path (10 s).</p>
+        <p><strong>Warning: FlyGym 2.0 rewrote the interface.</strong> Code written for FlyGym 1.x (<code>NeuroMechFly</code>, <code>HybridTurningController</code> in <code>flygym.examples</code>, Gymnasium-style <code>env.step()</code>) does not run on 2.1.0 unchanged. The last release for Python 3.11, 1.2.1, has the old interface and is <span class="dfl-tag is-untested">Untested</span> with this project.</p>
+      </li>
+      <li>
+        <h4>Run the body <span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span></h4>
+        <pre><code>export MUJOCO_GL=disable          # no rendering, CPU only
+$S/.venv/bin/python body_run.py one drives/P9-real-0.json body/P9-real-0.json   # expect about 13.3 mm forward
+$S/.venv/bin/python body_run.py one drives/zero.json body/zero.json             # expect 0 mm</code></pre>
+        <p>Each run settles for 0.2 s at drive (0, 0), then walks 1.0 s with each 100 ms bin of the drive held for 100 ms, and records the thorax every 10 ms. It took about 50–70 s per run on one CPU (0.25 GB RAM).</p>
+      </li>
+      <li>
+        <h4>Analyse <span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span></h4>
+        <pre><code>python3 analyze_body.py results/ chart.json      # standard library only; expects results/brain, results/drives, results/body</code></pre>
+        <p>Tests of the mapping: <code>python -m pytest -q tests/test_mapping.py</code> (8 passed). They check that zero rates give (0, 0), P9 alone gives equal positive drives, MDN gives negative drives, more DNa02 on one side slows that side, the cap at 1.2, and that left-only P9 turns the fly left.</p>
+      </li>
+    </ol>
+    <h3 id="body-expect-heading">Expected numbers</h3>
+    <div class="table-scroll is-wide">
+      <table>
+        <caption>Our runs of 2 Oct 2026 (forward distance along the starting heading in 1.0 s; heading + = left). The physics is deterministic, so the same drive gives the same walk.</caption>
+        <thead><tr><th scope="col">Run</th><th scope="col">Forward (mm)</th><th scope="col">Heading (°)</th></tr></thead>
+        <tbody>
+          <tr><td>Real brain, P9, trial seeds 0, 1, 2</td><td>13.26, 14.35, 14.17 (mean 13.93 ± 0.58)</td><td>−26.3, −0.4, −14.4</td></tr>
+          <tr><td>Scrambled brain (shuffles 3, 4, 5), P9: identical drives</td><td>14.15 each</td><td>−14.6</td></tr>
+          <tr><td>No brain, constant drive (left 1.18, right 1.06)</td><td>14.28</td><td>−11.3</td></tr>
+          <tr><td>No brain, random drives (seeds 0, 1, 2)</td><td>14.01, 14.39, 13.48</td><td>−9.7, −7.5, −27.2</td></tr>
+          <tr><td>Real brain tasting sugar</td><td>0.00 (stands)</td><td>0.0</td></tr>
+          <tr><td>Zero drive</td><td>0.00</td><td>0.0</td></tr>
+          <tr><td>FlyGym default (1, 1), no brain</td><td>13.01</td><td>+6.7</td></tr>
+          <tr><td>Left P9 only: real / scrambled</td><td>−4.77 / −2.18 (spins left)</td><td>+254 / +210</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>What the numbers mean:</strong> in this model and this body, the walk comes from the P9 neurons we stimulate and from FlyGym's controller. The rest of the brain adds turning commands (DNa02) that change the heading but not how far the fly walks. Our mapping decides how much those commands matter: it caps each number at 1.2, and most bins sit at the cap, so another mapping could give another answer. One stimulus, one model, one body, 1 s, open loop. The chart, the controls and the limits are on <a href="../does-fly-wiring-help/index.html#body-heading">Does fly wiring help?</a></p>
+    <p><strong>If you publish a walking-fly demo:</strong> say which neurons you stimulate, that the body has its own walking controller, and that the rate-to-leg rule is yours; and show the same walk with scrambled wiring and with no brain.</p>
+    <p>Untested by us: macOS and Windows, a GPU, rendering video (we ran with <code>MUJOCO_GL=disable</code>), longer walks, other stimuli or neuron types, and a closed loop in which the body feeds back to the brain. <span class="dfl-tag is-untested">Untested</span></p>
+  </section>
+
   <section aria-labelledby="deeper-heading">
     <h2 id="deeper-heading">Deeper paths</h2>
     <p>Once the first project works, you can go further. Each path is larger and is labelled separately.</p>
@@ -490,7 +587,7 @@ Data: FlyWire v783, CC BY-NC 4.0 (non-commercial, attribution required).</code><
         <caption>Optional next steps after the beginner project.</caption>
         <thead><tr><th scope="col">Path</th><th scope="col">Status</th><th scope="col">What we know</th></tr></thead>
         <tbody>
-          <tr><td><strong>Add a body</strong> with <a href="https://github.com/NeLy-EPFL/flygym">NeuroMechFly (FlyGym)</a> 2.1.0 (Apache-2.0)</td><td>Install and CPU physics: <span class="dfl-tag is-tested">Tested 2026-09-28 on Linux</span><br>Brain–body coupling: <span class="dfl-tag is-untested">Untested</span></td><td>FlyGym 2.1.0 (24 Jun 2026) is still the latest release (PyPI, 30 Sep 2026). It requires Python <code>&gt;=3.12,&lt;3.15</code>, so use a separate environment; the last release for Python 3.11 is 1.2.1, with the older interface, and we have not tested it. <code>uv pip install flygym==2.1.0</code> in a Python 3.12 environment took 9 s (602 MB) on 28 Sep 2026. NeuroMechFly on flat ground compiled and ran 2,000 physics steps (0.2 s simulated) in 0.41 s on CPU, without rendering. FlyGym has no brain: linking MN9 or other neurons to a body joint is an author-made mapping and must be labelled that way. Connecting the brain model to the body is still untested by us.</td></tr>
+          <tr><td><strong>Add a body</strong> with <a href="https://github.com/NeLy-EPFL/flygym">NeuroMechFly (FlyGym)</a> 2.1.0 (Apache-2.0)</td><td>Install, body and brain–body coupling: <span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span><br>Mapping: <span class="dfl-tag is-responds">Ours: hand-made mapping</span></td><td><strong>Now tested end to end: see <a href="#body-heading">Add a body</a> above.</strong> FlyGym 2.1.0 (24 Jun 2026) is still the latest release (PyPI, 2 Oct 2026). It requires Python <code>&gt;=3.12,&lt;3.15</code>, so use a separate environment; the last release for Python 3.11 is 1.2.1, with the older interface, and we have not tested it. <code>uv pip install flygym==2.1.0</code> in a Python 3.12 environment took 9 s (602 MB) on 28 Sep 2026. NeuroMechFly on flat ground compiled and ran 2,000 physics steps (0.2 s simulated) in 0.41 s on CPU, without rendering. FlyGym has no brain: linking MN9 or other neurons to a body joint is an author-made mapping and must be labelled that way. On 2 Oct 2026 we connected the brain model to FlyGym's two-number walking drive through our own labelled mapping.</td></tr>
           <tr><td><strong>Use the male fly:</strong> MaleCNS v1.0 (CC BY)</td><td><span class="dfl-tag is-untested">Untested</span></td><td>The data licence allows commercial use with attribution. Files download without a token from the <a href="https://male-cns.janelia.org/download/">MaleCNS download page</a>: the weights file is 1,051.2 MB, plus about 58 MB of annotations and transmitters. You must convert them to the upstream format and find MaleCNS IDs for the sugar neurons and MN9 (FlyWire IDs do not carry over). It needs more memory than FlyWire v783.</td></tr>
           <tr><td><strong>Faster on a Mac:</strong> <a href="https://github.com/Kisame76/drosophila-brain-mlx">drosophila-brain-mlx</a> (MIT)</td><td><span class="dfl-tag is-untested">Untested</span></td><td>A port of the same model to Apple MLX. Its author reports 0.29 s per simulated second on an M4 Pro and a shuffled-wiring control. Apple Silicon only.</td></tr>
           <tr><td><strong>Poke any neuron:</strong> <a href="https://github.com/vshapenko/flypoke">flypoke</a> (MIT)</td><td><span class="dfl-tag is-untested">Untested</span></td><td>A laptop LIF simulation of the full FlyWire connectome. Reported download of about 850 MB, not verified.</td></tr>
@@ -1068,6 +1165,1319 @@ non-commercial use only). See README.md.</code></pre>
     </details>
   </section>
 
+  <section aria-labelledby="body-source-heading">
+    <h2 id="body-source-heading">The Add-a-body source</h2>
+    <p>The files we ran on 2 Oct 2026 for <a href="#body-heading">Add a body</a>. Code is MIT (Digital Fly Lab); FlyGym itself is Apache-2.0 and the FlyWire data is CC BY-NC 4.0. <code>run_nulls.py</code> imports <code>fly_taste.py</code> from the beginner project.</p>
+    <details class="dfl-code">
+      <summary><code>mapping.py</code>: our rate-to-drive mapping (83 lines). One path on our machine is replaced by a placeholder; otherwise verbatim.</summary>
+      <pre><code>&quot;&quot;&quot;OUR rate-to-drive mapping (hand-made by Digital Fly Lab, run 6, 2026-10-02; pre-registered 2026-10-02T09:35:33Z).
+
+This is NOT part of the Shiu et al. brain model and NOT part of FlyGym. It turns descending-neuron (DN) firing rates
+from a brain trial into FlyGym&#x27;s two-number descending drive (one number per side, as HybridTurningController expects).
+Nothing here was fitted or tuned to results. Pure numpy; no FlyGym import. Licence: MIT.
+
+For each 100 ms bin k and side s (o = the other side), rates in Hz, R = 100 Hz fixed in advance:
+    p_s = rate(DNp09_s) / R
+    m_s = mean rate(MDN on side s) / R
+    a_s = rate(DNa02_s) / R
+    drive_s(k) = clip(p_s - m_s - 0.5 * (a_s - a_o), -1.2, 1.2)
+Each bin&#x27;s drive is held for 100 ms of body time.
+
+DEVIATION 1 (logged in ../preregistration.md before the first body run): the basis check (../basis.md) found that
+unilateral P9 drives IPSILATERAL turning (Bidaye et al. 2020: &quot;P9 drives forward walking with ipsilateral turning&quot;).
+With p_s on its own side, P9_L alone gives drive (p, 0): the left legs step, the right legs stand, and the fly turns
+right (contralateral). The fix used for every body run:
+    drive_s(k) = clip(pbar - 0.5 * (p_s - p_o) - m_s - 0.5 * (a_s - a_o), -1.2, 1.2),  pbar = (p_L + p_R) / 2
+i.e. forward = mean P9 rate, plus an ipsilateral P9 turning term with the same 0.5 gain as DNa02. Algebraically
+pbar - 0.5 * (p_s - p_o) = p_o, so each side&#x27;s forward term is the OTHER side&#x27;s P9 rate. Under bilateral P9 with
+equal rates nothing changes. `drive_from_rates_prereg` keeps the pre-registered formula for comparison.
+&quot;&quot;&quot;
+from __future__ import annotations
+
+import numpy as np
+
+R_HZ = 100.0
+CLIP = 1.2
+BIN_MS = 100
+FORMULA = (&quot;OUR MAPPING (hand-made, not fitted): drive_s = clip(pbar - 0.5*(p_s - p_o) - m_s - 0.5*(a_s - a_o), &quot;
+           &quot;-1.2, 1.2) with p = rate(DNp09)/R, pbar = mean of both sides&#x27; p, m = mean rate(MDN)/R, a = rate(DNa02)/R, &quot;
+           &quot;R = 100 Hz, per 100 ms bin, held 100 ms; s = side (left, right), o = the other side. Pre-registered &quot;
+           &quot;version: forward term p_s; changed to the ipsilateral-turning P9 term before the first body run &quot;
+           &quot;(deviation 1, after the basis check)&quot;)
+
+# FlyWire v783 root IDs (our run 6 candidate list; checked against the
+# annotation table in run 6)
+DN_IDS = {
+    &quot;DNp09&quot;: {&quot;left&quot;: [720575940635872101], &quot;right&quot;: [720575940627652358]},
+    &quot;MDN&quot;: {&quot;left&quot;: [720575940631082808, 720575940616026939], &quot;right&quot;: [720575940610236514, 720575940640331472]},
+    &quot;DNa02&quot;: {&quot;left&quot;: [720575940629327659], &quot;right&quot;: [720575940604737708]},
+    # recorded and reported, NOT mapped:
+    &quot;DNa01&quot;: {&quot;left&quot;: [720575940627787609], &quot;right&quot;: [720575940644438551]},
+    &quot;DNp01&quot;: {&quot;left&quot;: [720575940622838154], &quot;right&quot;: [720575940632499757]},
+    &quot;DNg62&quot;: {&quot;left&quot;: [720575940624319124], &quot;right&quot;: [720575940616185531]},
+}
+MAPPED = (&quot;DNp09&quot;, &quot;MDN&quot;, &quot;DNa02&quot;)
+
+
+def drive_from_rates_prereg(p, m, a):
+    &quot;&quot;&quot;The pre-registered formula (forward term p_s). Kept for comparison; not used for the body runs.&quot;&quot;&quot;
+    p, m, a = (np.asarray(x, dtype=float) / R_HZ for x in (p, m, a))
+    turn = a - a[:, ::-1]  # a_s - a_o
+    return np.clip(p - m - 0.5 * turn, -CLIP, CLIP)
+
+
+def drive_from_rates(p, m, a):
+    &quot;&quot;&quot;p, m, a: arrays of shape (n_bins, 2) in Hz, columns (left, right). Returns drive (n_bins, 2).
+    Deviation 1: the P9 term turns ipsilaterally (pbar - 0.5*(p_s - p_o) = p_o).&quot;&quot;&quot;
+    p, m, a = (np.asarray(x, dtype=float) / R_HZ for x in (p, m, a))
+    pbar = p.mean(axis=1, keepdims=True)
+    p_turn = p - p[:, ::-1]  # p_s - p_o
+    a_turn = a - a[:, ::-1]  # a_s - a_o
+    return np.clip(pbar - 0.5 * p_turn - m - 0.5 * a_turn, -CLIP, CLIP)
+
+
+def rates_from_trial(trial: dict, n_bins: int = 10):
+    &quot;&quot;&quot;Per-bin rates (Hz) of the six candidate cell types per side from a run 6 brain trial file (field &#x27;dn&#x27;).&quot;&quot;&quot;
+    bins = {int(x[&quot;id&quot;]): x[&quot;bins&quot;] for x in trial[&quot;dn&quot;][&quot;active&quot;]}
+    scale = 1000.0 / trial[&quot;dn&quot;][&quot;bin_ms&quot;]
+    out = {}
+    for ct, sides in DN_IDS.items():
+        out[ct] = {}
+        for side, ids in sides.items():
+            arr = np.array([bins.get(i, [0] * n_bins) for i in ids], dtype=float) * scale
+            out[ct][side] = arr.mean(axis=0)  # mean over the neurons of this type on this side
+    return out
+
+
+def drive_from_trial(trial: dict):
+    r = rates_from_trial(trial)
+    col = lambda ct: np.stack([r[ct][&quot;left&quot;], r[ct][&quot;right&quot;]], axis=1)
+    return drive_from_rates(col(&quot;DNp09&quot;), col(&quot;MDN&quot;), col(&quot;DNa02&quot;)), r</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>tests/test_mapping.py</code>: the 8 tests of the mapping (58 lines). Verbatim.</summary>
+      <pre><code>import sys
+from pathlib import Path
+
+import numpy as np
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import mapping as mp  # noqa: E402
+
+Z = np.zeros((10, 2))
+
+
+def test_zero_rates_give_zero_drive():
+    assert np.array_equal(mp.drive_from_rates(Z, Z, Z), np.zeros((10, 2)))
+
+
+def test_p9_only_gives_equal_positive_drives():
+    d = mp.drive_from_rates(np.full((10, 2), 50.0), Z, Z)
+    assert np.allclose(d, 0.5) and np.all(d[:, 0] == d[:, 1])
+
+
+def test_mdn_only_gives_negative_drives():
+    d = mp.drive_from_rates(Z, np.full((10, 2), 40.0), Z)
+    assert np.all(d &lt; 0) and np.allclose(d, -0.4)
+
+
+def test_dna02_left_slows_left():
+    a = np.zeros((10, 2)); a[:, 0] = 60.0
+    d = mp.drive_from_rates(np.full((10, 2), 80.0), Z, a)
+    assert np.all(d[:, 0] &lt; d[:, 1])
+    assert np.allclose(d[:, 0], 0.8 - 0.3) and np.allclose(d[:, 1], 0.8 + 0.3)
+
+
+def test_clipping():
+    assert np.allclose(mp.drive_from_rates(np.full((10, 2), 500.0), Z, Z), 1.2)
+    assert np.allclose(mp.drive_from_rates(Z, np.full((10, 2), 500.0), Z), -1.2)
+
+
+def test_rates_from_trial_bins():
+    tr = {&quot;dn&quot;: {&quot;bin_ms&quot;: 100, &quot;active&quot;: [{&quot;id&quot;: 720575940635872101, &quot;bins&quot;: [10] * 10},
+                                             {&quot;id&quot;: 720575940631082808, &quot;bins&quot;: [4] * 10}]}}
+    d, r = mp.drive_from_trial(tr)
+    assert np.allclose(r[&quot;DNp09&quot;][&quot;left&quot;], 100.0) and np.allclose(r[&quot;DNp09&quot;][&quot;right&quot;], 0.0)
+    assert np.allclose(r[&quot;MDN&quot;][&quot;left&quot;], 20.0)  # mean of the two left MDNs (40 Hz and 0 Hz)
+    # deviation 1: P9_L alone drives the RIGHT side (the fly turns left, ipsilateral); MDN_L slows the left side
+    assert np.allclose(d[:, 0], 0.0 - 0.2) and np.allclose(d[:, 1], 1.0)
+
+
+def test_unilateral_p9_turns_ipsilateral():
+    p = np.zeros((10, 2)); p[:, 0] = 80.0
+    d = mp.drive_from_rates(p, Z, Z)
+    assert np.all(d[:, 0] &lt; d[:, 1])  # left P9 -&gt; left side slower -&gt; left (ipsilateral) turn
+    dp = mp.drive_from_rates_prereg(p, Z, Z)
+    assert np.all(dp[:, 0] &gt; dp[:, 1])  # the pre-registered formula turned the other way
+
+
+def test_fix_changes_nothing_under_equal_bilateral_p9():
+    p = np.full((10, 2), 70.0); a = np.zeros((10, 2)); a[:, 1] = 30.0
+    assert np.allclose(mp.drive_from_rates(p, Z, a), mp.drive_from_rates_prereg(p, Z, a))</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>make_drives.py</code>: brain trials → drives, plus the brainless drives (77 lines). Verbatim.</summary>
+      <pre><code>&quot;&quot;&quot;Turn run 6 brain trials into two-number body drives with OUR mapping (mapping.py), plus the brainless drives.
+Digital Fly Lab, run 6 (2026-10-02). Licence: MIT. numpy only.
+
+Usage: python make_drives.py BRAIN_DIR DRIVES_DIR
+Writes one DRIVES_DIR/&lt;condition&gt;.json per body run: {id, group, drive [10 x 2], drive_prereg, dn_rates_hz, source, note}.
+Conditions (pre-registered): P9-real-0..2, P9-D3..5, SUG-real-0 (from brain trials); zero, const-1, matched, random-0..2
+(brainless); fill: SUG-D3..5, P9L-real-0, P9L-D3 when their brain trials exist.
+&quot;&quot;&quot;
+import json
+import os
+import sys
+from pathlib import Path
+
+import numpy as np
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import mapping as mp  # noqa: E402
+
+BRAIN = {&quot;P9-real-0&quot;: &quot;P9-real-0&quot;, &quot;P9-real-1&quot;: &quot;P9-real-1&quot;, &quot;P9-real-2&quot;: &quot;P9-real-2&quot;, &quot;P9-D3&quot;: &quot;P9-D-3&quot;,
+         &quot;P9-D4&quot;: &quot;P9-D-4&quot;, &quot;P9-D5&quot;: &quot;P9-D-5&quot;, &quot;SUG-real-0&quot;: &quot;SUG-real-0&quot;, &quot;SUG-D3&quot;: &quot;SUG-D-3&quot;, &quot;SUG-D4&quot;: &quot;SUG-D-4&quot;,
+         &quot;SUG-D5&quot;: &quot;SUG-D-5&quot;, &quot;P9L-real-0&quot;: &quot;P9L-real-0&quot;, &quot;P9L-D3&quot;: &quot;P9L-D-3&quot;}
+def group_of(cid):
+    stim, arm = cid.split(&quot;-&quot;)[0], cid.split(&quot;-&quot;)[1]
+    if stim == &quot;SUG&quot;:
+        return &quot;sugar&quot; if arm == &quot;real&quot; else &quot;sugar-scrambled&quot;
+    return &quot;brain-real&quot; if arm == &quot;real&quot; else &quot;brain-scrambled&quot;
+
+
+def write(out_dir, rec):
+    p = Path(out_dir) / f&quot;{rec[&#x27;id&#x27;]}.json&quot;
+    tmp = p.with_suffix(&quot;.tmp&quot;)
+    tmp.write_text(json.dumps(rec, indent=1))
+    os.replace(tmp, p)
+
+
+def main(brain_dir, out_dir):
+    Path(out_dir).mkdir(parents=True, exist_ok=True)
+    real = []
+    for cid, fname in BRAIN.items():
+        f = Path(brain_dir) / f&quot;{fname}.json&quot;
+        if not f.exists():
+            continue
+        tr = json.loads(f.read_text())
+        if tr.get(&quot;status&quot;) != &quot;ok&quot;:
+            continue
+        drive, rates = mp.drive_from_trial(tr)
+        col = lambda ct: np.stack([rates[ct][&quot;left&quot;], rates[ct][&quot;right&quot;]], axis=1)
+        prereg = mp.drive_from_rates_prereg(col(&quot;DNp09&quot;), col(&quot;MDN&quot;), col(&quot;DNa02&quot;))
+        grp = group_of(cid)
+        write(out_dir, {&quot;id&quot;: cid, &quot;group&quot;: grp, &quot;drive&quot;: drive.round(6).tolist(), &quot;drive_prereg&quot;: prereg.round(6).tolist(),
+                        &quot;dn_rates_hz&quot;: {ct: {s: v.round(3).tolist() for s, v in d.items()} for ct, d in rates.items()},
+                        &quot;source&quot;: f&quot;body/results/brain/{f.name}&quot;, &quot;mapping&quot;: mp.FORMULA})
+        if cid.startswith(&quot;P9-real-&quot;):
+            real.append(drive)
+    z = np.zeros((10, 2))
+    write(out_dir, {&quot;id&quot;: &quot;zero&quot;, &quot;group&quot;: &quot;floor&quot;, &quot;drive&quot;: z.tolist(), &quot;source&quot;: &quot;none (no command)&quot;})
+    write(out_dir, {&quot;id&quot;: &quot;const-1&quot;, &quot;group&quot;: &quot;sanity&quot;, &quot;drive&quot;: np.ones((10, 2)).tolist(),
+                    &quot;source&quot;: &quot;none (FlyGym&#x27;s default straight walk; sanity check, not an arm)&quot;})
+    if len(real) &gt;= 1:
+        R = np.stack(real)  # runs x bins x 2
+        mean_s = R.mean(axis=(0, 1))
+        sd_s = R.std(axis=(0, 1), ddof=1) if R.shape[0] * R.shape[1] &gt; 1 else np.zeros(2)
+        src = &quot;, &quot;.join(f&quot;body/results/brain/{BRAIN[k]}.json&quot; for k in (&quot;P9-real-0&quot;, &quot;P9-real-1&quot;, &quot;P9-real-2&quot;))
+        write(out_dir, {&quot;id&quot;: &quot;matched&quot;, &quot;group&quot;: &quot;no-brain&quot;, &quot;drive&quot;: np.tile(mean_s, (10, 1)).round(6).tolist(),
+                        &quot;per_side_mean&quot;: mean_s.round(6).tolist(), &quot;n_real_runs&quot;: len(real),
+                        &quot;source&quot;: f&quot;mean over all bins of the real P9 drives ({src})&quot;})
+        for seed in range(3):
+            rng = np.random.default_rng(seed)
+            d = np.clip(rng.normal(mean_s, sd_s, size=(10, 2)), -mp.CLIP, mp.CLIP)
+            write(out_dir, {&quot;id&quot;: f&quot;random-{seed}&quot;, &quot;group&quot;: &quot;no-brain&quot;, &quot;drive&quot;: d.round(6).tolist(), &quot;seed&quot;: seed,
+                            &quot;per_side_mean&quot;: mean_s.round(6).tolist(), &quot;per_side_sd&quot;: sd_s.round(6).tolist(),
+                            &quot;source&quot;: f&quot;numpy default_rng({seed}).normal(per-side mean, per-side sd of the real P9 drive bins), clipped to +-1.2; {src}&quot;})
+    print(&quot;drives:&quot;, sorted(p.stem for p in Path(out_dir).glob(&quot;*.json&quot;)))
+
+
+if __name__ == &quot;__main__&quot;:
+    main(sys.argv[1], sys.argv[2])</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>body_run.py</code>: one FlyGym walk from a drive file (218 lines). Verbatim.</summary>
+      <pre><code>&quot;&quot;&quot;Run the FlyGym 2.1.0 body with a two-number descending drive (Digital Fly Lab, run 6, 2026-10-02). Licence: MIT.
+
+The walking (legs, rhythm, balance, adhesion) is FlyGym&#x27;s own HybridTurningController (flygym_demo.complex_terrain,
+NeuroMechFly v2&#x27;s two-number descending interface). This script only feeds it a drive file made by make_drives.py
+(OUR rate-to-drive mapping) and records where the thorax goes. Construction follows upstream
+tests/examples/test_complex_terrain_locomotion.py at v2.1.0.
+
+Usage
+  MUJOCO_GL=disable python body_run.py one DRIVE.json OUT.json [--settle 0.2] [--driven 1.0] [--smoke]
+  MUJOCO_GL=disable python body_run.py queue DRIVES_DIR OUT_DIR --order a,b,c --start-cut ISO --kill ISO --log LOG
+Timeline: settle s at drive (0, 0), then driven s in 10 equal bins (bin k of the drive held for driven/10 s).
+Thorax x, y (mm), z and heading are saved every 10 ms. Metric: forward displacement along the heading at the start of
+the driven period (mm); also heading change (deg, + = left/counter-clockwise) and path length (mm).
+&quot;&quot;&quot;
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import platform
+import resource
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+
+GIB = 1024 ** 3
+CG = Path(&quot;/sys/fs/cgroup/memory.current&quot;)
+
+
+def now():
+    return datetime.now(timezone.utc).strftime(&quot;%Y-%m-%dT%H:%M:%SZ&quot;)
+
+
+def mem():
+    try:
+        return int(CG.read_text())
+    except OSError:
+        return None
+
+
+def thorax_state(sim, mujoco, bid):
+    pos = sim.mj_data.xpos[bid].copy()
+    xm = sim.mj_data.xmat[bid].reshape(3, 3)
+    fwd = xm[:, 0]  # body x axis in world frame
+    import math
+    return pos, math.atan2(fwd[1], fwd[0])
+
+
+def one(drive_path, out_path, settle=0.2, driven=1.0, smoke=False):
+    t0 = time.time()
+    mem_launch = int(os.environ.get(&quot;BODY_MEM_AT_LAUNCH&quot;, &quot;0&quot;)) or mem()
+    import math
+    import numpy as np
+    import mujoco
+    import flygym
+    from flygym.compose import FlatGroundWorld
+    from flygym.simulation import Simulation
+    from flygym.utils.math import Rotation3D
+    from flygym_demo.complex_terrain import (HybridControllerObservation, HybridTurningController,
+                                             PreprogrammedSteps, apply_locomotion_action, make_locomotion_fly)
+
+    spec = json.loads(Path(drive_path).read_text())
+    drive = np.asarray(spec[&quot;drive&quot;], dtype=float)
+    assert drive.shape == (10, 2), drive.shape
+    fly = make_locomotion_fly()
+    world = FlatGroundWorld()
+    world.add_fly(fly, spawn_position=[0, 0, 1.0], spawn_rotation=Rotation3D(&quot;quat&quot;, [1, 0, 0, 0]),
+                  add_ground_contact_sensors=False)
+    sim = Simulation(world)
+    sim.reset()
+    ctrl = HybridTurningController(timestep=sim.mj_model.opt.timestep, preprogrammed_steps=PreprogrammedSteps())
+    seed_note = &quot;controller has no seed argument; default construction&quot;
+    if hasattr(ctrl, &quot;reset&quot;):
+        try:
+            ctrl.reset(seed=0)
+            seed_note = &quot;controller.reset(seed=0)&quot;
+        except TypeError:
+            try:
+                ctrl.reset()
+                seed_note = &quot;controller.reset() (no seed argument)&quot;
+            except Exception as e:  # noqa: BLE001
+                seed_note = f&quot;controller.reset failed: {e!r}&quot;
+    names = [mujoco.mj_id2name(sim.mj_model, mujoco.mjtObj.mjOBJ_BODY, i) for i in range(sim.mj_model.nbody)]
+    cand = [i for i, n in enumerate(names) if n and &quot;thorax&quot; in n.lower()]
+    bid = cand[0]
+    dt = sim.mj_model.opt.timestep
+    n_settle = int(round(settle / dt))
+    n_driven = 0 if smoke else int(round(driven / dt))
+    per_bin = max(1, n_driven // 10)
+    rec_every = max(1, int(round(0.01 / dt)))
+    traj = []
+    status, err = &quot;ok&quot;, None
+    start_pos = start_head = None
+    try:
+        for k in range(n_settle + n_driven):
+            if k &lt; n_settle:
+                d = np.zeros(2)
+            else:
+                d = drive[min((k - n_settle) // per_bin, 9)]
+                if start_pos is None:
+                    start_pos, start_head = thorax_state(sim, mujoco, bid)
+            obs = HybridControllerObservation.from_sim(sim, fly.name)
+            action = ctrl.step(d, obs)
+            apply_locomotion_action(sim, fly.name, action)
+            sim.step()
+            if (k + 1) % rec_every == 0:
+                p, h = thorax_state(sim, mujoco, bid)
+                if not np.all(np.isfinite(p)):
+                    status, err = &quot;failed-physics&quot;, f&quot;non-finite thorax position at step {k}&quot;
+                    break
+                traj.append([round((k + 1) * dt, 4), float(p[0]), float(p[1]), float(p[2]), float(h)])
+    except Exception as e:  # noqa: BLE001
+        status, err = &quot;failed-physics&quot;, repr(e)
+    if start_pos is None:
+        start_pos, start_head = (np.array(traj[0][1:4]), traj[0][4]) if traj else (np.zeros(3), 0.0)
+    T = np.asarray(traj) if traj else np.zeros((0, 5))
+    res = {}
+    if len(T):
+        drv = T[T[:, 0] &gt; settle + 1e-9] if not smoke else T
+        last = T[T[:, 0] &gt;= T[-1, 0] - 0.1]
+        if status == &quot;ok&quot; and np.any(last[:, 3] &lt; 0.3):
+            status, err = &quot;failed-physics&quot;, &quot;thorax z below 0.3 mm in the last 0.1 s (fallen)&quot;
+        if len(drv):
+            dx, dy = drv[-1, 1] - start_pos[0], drv[-1, 2] - start_pos[1]
+            fwd = dx * math.cos(start_head) + dy * math.sin(start_head)
+            lat = -dx * math.sin(start_head) + dy * math.cos(start_head)
+            # unwrapped heading change, sample by sample (fixed after run 6: the run 6 files hold the wrapped value)
+            hs = np.concatenate([[start_head], drv[:, 4]])
+            dh = math.degrees(float(np.sum(np.arctan2(np.sin(np.diff(hs)), np.cos(np.diff(hs))))))
+            xy = np.vstack([start_pos[:2], drv[:, 1:3]])
+            res = {&quot;forward_mm&quot;: round(float(fwd), 4), &quot;lateral_mm&quot;: round(float(lat), 4),
+                   &quot;heading_deg&quot;: round(float(dh), 3),
+                   &quot;path_mm&quot;: round(float(np.sum(np.linalg.norm(np.diff(xy, axis=0), axis=1))), 4),
+                   &quot;min_z_mm_last_0.1s&quot;: round(float(last[:, 3].min()), 4)}
+    out = {&quot;id&quot;: spec.get(&quot;id&quot;), &quot;group&quot;: spec.get(&quot;group&quot;), &quot;status&quot;: status, &quot;error&quot;: err,
+           &quot;settle_s&quot;: settle, &quot;driven_s&quot;: 0 if smoke else driven, &quot;smoke&quot;: smoke, **res,
+           &quot;start_xy_mm&quot;: [float(start_pos[0]), float(start_pos[1])], &quot;start_heading_rad&quot;: float(start_head),
+           &quot;trajectory_cols&quot;: [&quot;t_s&quot;, &quot;x_mm&quot;, &quot;y_mm&quot;, &quot;z_mm&quot;, &quot;heading_rad&quot;],
+           &quot;trajectory&quot;: [[round(v, 5) for v in r] for r in T.tolist()],
+           &quot;drive&quot;: drive.tolist(), &quot;drive_source&quot;: str(drive_path), &quot;brain_source&quot;: spec.get(&quot;source&quot;),
+           &quot;thorax_body&quot;: names[bid], &quot;timestep_s&quot;: dt, &quot;controller&quot;: &quot;flygym_demo.complex_terrain.HybridTurningController (defaults)&quot;,
+           &quot;controller_seed&quot;: seed_note, &quot;ground_contact_sensors&quot;: False,
+           &quot;versions&quot;: {&quot;python&quot;: platform.python_version(), &quot;flygym&quot;: getattr(flygym, &quot;__version__&quot;, &quot;?&quot;),
+                        &quot;mujoco&quot;: mujoco.__version__, &quot;numpy&quot;: np.__version__},
+           &quot;mujoco_gl&quot;: os.environ.get(&quot;MUJOCO_GL&quot;), &quot;wall_s&quot;: round(time.time() - t0, 2),
+           &quot;peak_rss_kb&quot;: resource.getrusage(resource.RUSAGE_SELF).ru_maxrss, &quot;memory_current_at_launch&quot;: mem_launch,
+           &quot;finished_at&quot;: now()}
+    tmp = Path(str(out_path) + &quot;.tmp&quot;)
+    tmp.write_text(json.dumps(out))
+    os.replace(tmp, out_path)
+    print(f&quot;{Path(out_path).name}: {status} fwd {res.get(&#x27;forward_mm&#x27;)} mm, heading {res.get(&#x27;heading_deg&#x27;)} deg, &quot;
+          f&quot;path {res.get(&#x27;path_mm&#x27;)} mm, wall {out[&#x27;wall_s&#x27;]} s, rss {out[&#x27;peak_rss_kb&#x27;] / 1e6:.2f} GB&quot;, flush=True)
+
+
+def queue(drives_dir, out_dir, order, start_cut, kill, log):
+    sc = datetime.fromisoformat(start_cut.replace(&quot;Z&quot;, &quot;+00:00&quot;)).timestamp()
+    kl = datetime.fromisoformat(kill.replace(&quot;Z&quot;, &quot;+00:00&quot;)).timestamp()
+    Path(out_dir).mkdir(parents=True, exist_ok=True)
+
+    def L(r):
+        with open(log, &quot;a&quot;) as f:
+            f.write(json.dumps(r) + &quot;\n&quot;)
+    for cid in order:
+        d = Path(drives_dir) / f&quot;{cid}.json&quot;
+        o = Path(out_dir) / f&quot;{cid}.json&quot;
+        if o.exists() or not d.exists():
+            continue
+        if time.time() &gt;= sc:
+            L({&quot;event&quot;: &quot;start-cut&quot;, &quot;run&quot;: cid, &quot;at&quot;: now()})
+            break
+        m = mem()
+        waited = 0
+        while m is not None and m &gt; 2.4 * GIB and waited &lt; 180:
+            time.sleep(30)
+            waited += 30
+            m = mem()
+        if m is not None and m &gt; 2.6 * GIB:
+            L({&quot;event&quot;: &quot;skipped-memory&quot;, &quot;run&quot;: cid, &quot;mem&quot;: m, &quot;at&quot;: now()})
+            continue
+        L({&quot;event&quot;: &quot;start&quot;, &quot;run&quot;: cid, &quot;mem&quot;: m, &quot;waited_s&quot;: waited, &quot;at&quot;: now()})
+        t0 = time.time()
+        p = subprocess.Popen([sys.executable, __file__, &quot;one&quot;, str(d), str(o)], env=dict(os.environ, BODY_MEM_AT_LAUNCH=str(m or 0)))
+        try:
+            rc = p.wait(timeout=max(1, min(120, kl - t0)))
+        except subprocess.TimeoutExpired:
+            p.kill()
+            p.wait()
+            if time.time() &gt;= kl - 1:
+                L({&quot;event&quot;: &quot;killed-at-kill-time&quot;, &quot;run&quot;: cid, &quot;at&quot;: now()})
+                break
+            rec = {&quot;id&quot;: cid, &quot;status&quot;: &quot;timeout&quot;, &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;finished_at&quot;: now()}
+            Path(str(o) + &quot;.tmp&quot;).write_text(json.dumps(rec))
+            os.replace(str(o) + &quot;.tmp&quot;, o)
+            L({&quot;event&quot;: &quot;timeout&quot;, &quot;run&quot;: cid, &quot;at&quot;: now()})
+            continue
+        L({&quot;event&quot;: &quot;end&quot;, &quot;run&quot;: cid, &quot;rc&quot;: rc, &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;at&quot;: now()})
+    L({&quot;event&quot;: &quot;queue-done&quot;, &quot;at&quot;: now()})
+
+
+if __name__ == &quot;__main__&quot;:
+    ap = argparse.ArgumentParser()
+    ap.add_argument(&quot;cmd&quot;, choices=[&quot;one&quot;, &quot;queue&quot;])
+    ap.add_argument(&quot;a&quot;)
+    ap.add_argument(&quot;b&quot;)
+    ap.add_argument(&quot;--settle&quot;, type=float, default=0.2)
+    ap.add_argument(&quot;--driven&quot;, type=float, default=1.0)
+    ap.add_argument(&quot;--smoke&quot;, action=&quot;store_true&quot;)
+    ap.add_argument(&quot;--order&quot;)
+    ap.add_argument(&quot;--start-cut&quot;)
+    ap.add_argument(&quot;--kill&quot;)
+    ap.add_argument(&quot;--log&quot;)
+    a = ap.parse_args()
+    if a.cmd == &quot;one&quot;:
+        one(a.a, a.b, a.settle, a.driven, a.smoke)
+    else:
+        queue(a.a, a.b, a.order.split(&quot;,&quot;), a.start_cut, a.kill, a.log)</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>analyze_body.py</code>: the fixed analysis, standard library only (164 lines). One path on our machine is replaced by a placeholder; otherwise verbatim.</summary>
+      <pre><code>&quot;&quot;&quot;Fixed analysis of the run 6 &quot;Add a body&quot; test (Digital Fly Lab, 2026-10-02). Licence: MIT. Standard library only.
+
+Usage: python3 analyze_body.py RESULTS_DIR CHART_OUT.json
+Reads RESULTS_DIR/brain/*.json, RESULTS_DIR/drives/*.json, RESULTS_DIR/body/*.json; writes RESULTS_DIR/summary.json,
+RESULTS_DIR/dn-table.json and CHART_OUT.json. Pre-registered readings (preregistration.md):
+retention = (null - zero) / (real - zero) on the mean forward displacement; &gt;= 0.9 &quot;does not need the fly wiring&quot;,
+&lt;= 0.1 &quot;the wiring shapes the walking command&quot;, between &quot;partly&quot;; matched-constant retention &gt;= 0.9 &quot;a brainless
+constant command walks as well as the brain&quot;.
+&quot;&quot;&quot;
+import glob, json, math, os, re, statistics, sys
+
+RES, CHART = sys.argv[1], sys.argv[2]
+REL = &quot;body/results/&quot;
+src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), &quot;mapping.py&quot;)).read()
+DN_IDS = eval(re.search(r&quot;DN_IDS = (\{.*?\n\})&quot;, src, re.S).group(1))
+FORMULA = eval(re.search(r&quot;FORMULA = (\(.*?\))\n&quot;, src, re.S).group(1))
+MAPPED = (&quot;DNp09&quot;, &quot;MDN&quot;, &quot;DNa02&quot;)
+
+
+def load(d):
+    return {os.path.basename(f)[:-5]: json.load(open(f)) for f in sorted(glob.glob(os.path.join(RES, d, &quot;*.json&quot;)))}
+
+
+brain, drives, body = load(&quot;brain&quot;), load(&quot;drives&quot;), load(&quot;body&quot;)
+
+
+def unwrapped_heading(v):
+    &quot;&quot;&quot;Heading change over the driven period, unwrapped sample by sample (10 ms). The run 6 body files store
+    heading_deg wrapped to (-180, 180], which misreads spins of more than 180 deg (the P9L runs).&quot;&quot;&quot;
+    prev, tot = v[&quot;start_heading_rad&quot;], 0.0
+    for t, x, y, z, h in v[&quot;trajectory&quot;]:
+        if t &gt; v[&quot;settle_s&quot;] + 1e-9:
+            tot += math.atan2(math.sin(h - prev), math.cos(h - prev))
+            prev = h
+    return round(math.degrees(tot), 3)
+
+
+for v in body.values():
+    if v.get(&quot;status&quot;) == &quot;ok&quot; and v.get(&quot;trajectory&quot;):
+        v[&quot;heading_wrapped_deg&quot;] = v.get(&quot;heading_deg&quot;)
+        v[&quot;heading_deg&quot;] = unwrapped_heading(v)
+
+
+def ms(vals):
+    vals = [v for v in vals if v is not None]
+    if not vals:
+        return None, None, 0
+    return round(statistics.mean(vals), 4), (round(statistics.stdev(vals), 4) if len(vals) &gt; 1 else None), len(vals)
+
+
+GROUPS = {&quot;real&quot;: [&quot;P9-real-0&quot;, &quot;P9-real-1&quot;, &quot;P9-real-2&quot;], &quot;D&quot;: [&quot;P9-D3&quot;, &quot;P9-D4&quot;, &quot;P9-D5&quot;], &quot;matched&quot;: [&quot;matched&quot;],
+          &quot;random&quot;: [&quot;random-0&quot;, &quot;random-1&quot;, &quot;random-2&quot;], &quot;zero&quot;: [&quot;zero&quot;], &quot;const-1&quot;: [&quot;const-1&quot;], &quot;SUG-real&quot;: [&quot;SUG-real-0&quot;],
+          &quot;SUG-D&quot;: [&quot;SUG-D3&quot;, &quot;SUG-D4&quot;, &quot;SUG-D5&quot;], &quot;P9L-real&quot;: [&quot;P9L-real-0&quot;], &quot;P9L-D&quot;: [&quot;P9L-D3&quot;]}
+ok = {k: v for k, v in body.items() if v.get(&quot;status&quot;) == &quot;ok&quot;}
+per = {}
+for k, v in body.items():
+    per[k] = {f: v.get(f) for f in (&quot;status&quot;, &quot;error&quot;, &quot;forward_mm&quot;, &quot;lateral_mm&quot;, &quot;heading_deg&quot;, &quot;heading_wrapped_deg&quot;, &quot;path_mm&quot;, &quot;min_z_mm_last_0.1s&quot;, &quot;wall_s&quot;, &quot;peak_rss_kb&quot;)}
+    per[k][&quot;source&quot;] = REL + f&quot;body/{k}.json&quot;
+groups = {}
+for g, ids in GROUPS.items():
+    have = [i for i in ids if i in ok]
+    f = ms([ok[i][&quot;forward_mm&quot;] for i in have])
+    h = ms([ok[i][&quot;heading_deg&quot;] for i in have])
+    p = ms([ok[i][&quot;path_mm&quot;] for i in have])
+    groups[g] = {&quot;runs&quot;: have, &quot;missing_or_failed&quot;: [i for i in ids if i not in ok], &quot;forward_mm_mean&quot;: f[0], &quot;forward_mm_sd&quot;: f[1],
+                 &quot;heading_deg_mean&quot;: h[0], &quot;heading_deg_sd&quot;: h[1], &quot;abs_heading_deg_mean&quot;: ms([abs(ok[i][&quot;heading_deg&quot;]) for i in have])[0],
+                 &quot;path_mm_mean&quot;: p[0], &quot;n&quot;: f[2], &quot;status&quot;: &quot;complete&quot; if f[2] == len(ids) else (&quot;incomplete&quot; if f[2] else &quot;not run&quot;)}
+zero = groups[&quot;zero&quot;][&quot;forward_mm_mean&quot;]
+real = groups[&quot;real&quot;][&quot;forward_mm_mean&quot;]
+
+
+def ret(g):
+    v = groups[g][&quot;forward_mm_mean&quot;]
+    if v is None or real is None or zero is None or abs(real - zero) &lt; 1e-9:
+        return None
+    return round((v - zero) / (real - zero), 4)
+
+
+def reading(r, kind):
+    if r is None:
+        return &quot;not computed&quot;
+    if kind == &quot;D&quot;:
+        return (&quot;the walk does not need the fly wiring: it comes from the stimulated command neurons and FlyGym&#x27;s controller&quot;
+                if r &gt;= 0.9 else &quot;the brain&#x27;s wiring shapes the walking command&quot; if r &lt;= 0.1 else &quot;partly&quot;)
+    return &quot;a brainless constant command walks as well as the brain&quot; if r &gt;= 0.9 else (
+        &quot;the brainless constant command walks less far than the brain&quot; if r &lt; 0.9 else &quot;&quot;)
+
+
+retention = {&quot;D&quot;: ret(&quot;D&quot;), &quot;matched&quot;: ret(&quot;matched&quot;), &quot;random&quot;: ret(&quot;random&quot;)}
+readings = {&quot;D&quot;: reading(retention[&quot;D&quot;], &quot;D&quot;), &quot;matched&quot;: reading(retention[&quot;matched&quot;], &quot;matched&quot;),
+            &quot;random&quot;: (&quot;the brainless random drive walks as well as the brain&quot; if (retention[&quot;random&quot;] or 0) &gt;= 0.9 else &quot;the brainless random drive walks less far than the brain&quot;) if retention[&quot;random&quot;] is not None else &quot;not computed&quot;}
+# sugar: every mapped DN at 0 Hz with real wiring?
+sug = brain.get(&quot;SUG-real-0&quot;)
+
+
+def cand_rates(tr):
+    b = {int(x[&quot;id&quot;]): x[&quot;bins&quot;] for x in tr[&quot;dn&quot;][&quot;active&quot;]}
+    out = {}
+    for ct, sides in DN_IDS.items():
+        out[ct] = {s: [round(statistics.mean([b.get(i, [0] * 10)[k] for i in ids]) * 10.0, 2) for k in range(10)] for s, ids in sides.items()}
+    return out
+
+
+sug_zero = None
+if sug:
+    r = cand_rates(sug)
+    sug_zero = all(v == 0 for ct in MAPPED for s in r[ct].values() for v in s)
+    readings[&quot;SUG&quot;] = (&quot;tasting sugar sends no walking command in this model (all mapped DNs 0 Hz; MN9 %g Hz)&quot; % sug[&quot;mn9_hz&quot;]) if sug_zero else &quot;sugar drives at least one mapped DN&quot;
+# DN table
+dn_table = {}
+for k, tr in brain.items():
+    r = cand_rates(tr)
+    top = sorted(tr[&quot;dn&quot;][&quot;active&quot;], key=lambda x: -x[&quot;total&quot;])[:10]
+    dn_table[k] = {&quot;stim&quot;: tr[&quot;stim&quot;], &quot;arm&quot;: tr[&quot;arm&quot;], &quot;trial_seed&quot;: tr[&quot;trial_seed&quot;], &quot;shuffle_seed&quot;: tr[&quot;shuffle_seed&quot;],
+                   &quot;mn9_hz&quot;: tr[&quot;mn9_hz&quot;], &quot;whole_brain_spikes&quot;: tr[&quot;whole_brain_spikes&quot;], &quot;neurons_active&quot;: tr[&quot;neurons_active&quot;],
+                   &quot;dn_active&quot;: tr[&quot;dn&quot;][&quot;n_active&quot;], &quot;dn_total&quot;: tr[&quot;dn&quot;][&quot;n_descending&quot;],
+                   &quot;candidates_hz_per_100ms_bin&quot;: r,
+                   &quot;candidates_hz_1s&quot;: {ct: {s: round(sum(v) / 10, 2) for s, v in d.items()} for ct, d in r.items()},
+                   &quot;top10&quot;: [{&quot;id&quot;: x[&quot;id&quot;], &quot;cell_type&quot;: x[&quot;cell_type&quot;], &quot;side&quot;: x[&quot;side&quot;], &quot;hz&quot;: x[&quot;total&quot;]} for x in top],
+                   &quot;property_checks_ok&quot;: all(tr[&quot;property_checks&quot;].values()) if tr[&quot;property_checks&quot;] else None,
+                   &quot;source&quot;: REL + f&quot;brain/{k}.json&quot;}
+json.dump({&quot;generated_by&quot;: &quot;analyze_body.py (run 6)&quot;, &quot;bin_ms&quot;: 100, &quot;trials&quot;: dn_table}, open(os.path.join(RES, &quot;dn-table.json&quot;), &quot;w&quot;), indent=1)
+# activity of the brain trials (display only): P9 real vs D
+act = {g: ms([brain[k][&quot;whole_brain_spikes&quot;] for k in ks if k in brain])[0] for g, ks in
+       {&quot;P9-real&quot;: [&quot;P9-real-0&quot;, &quot;P9-real-1&quot;, &quot;P9-real-2&quot;], &quot;P9-D&quot;: [&quot;P9-D-3&quot;, &quot;P9-D-4&quot;, &quot;P9-D-5&quot;]}.items()}
+summary = {&quot;generated_by&quot;: &quot;analyze_body.py (run 6)&quot;, &quot;metric&quot;: &quot;forward displacement of the thorax along the heading at the start of the 1.0 s driven period (mm)&quot;,
+           &quot;heading_note&quot;: &quot;heading_deg = unwrapped heading change (deg, + = left) over the driven period, from the 10 ms trajectory; the body files&#x27; own heading_deg is wrapped to (-180, 180] (kept as heading_wrapped_deg)&quot;,
+           &quot;mapping&quot;: FORMULA, &quot;per_run&quot;: per, &quot;groups&quot;: groups, &quot;retention&quot;: retention, &quot;readings&quot;: readings,
+           &quot;sugar_all_mapped_dns_zero&quot;: sug_zero, &quot;brain_activity_whole_brain_spikes_mean&quot;: act,
+           &quot;activity_ratio_D_vs_real&quot;: round(act[&quot;P9-D&quot;] / act[&quot;P9-real&quot;], 3) if act[&quot;P9-D&quot;] and act[&quot;P9-real&quot;] else None}
+json.dump(summary, open(os.path.join(RES, &quot;summary.json&quot;), &quot;w&quot;), indent=1)
+# chart
+LABEL = {&quot;brain-real&quot;: &quot;real brain, P9 stimulated&quot;, &quot;brain-scrambled&quot;: &quot;scrambled brain (degree-preserving), P9 stimulated&quot;,
+         &quot;no-brain&quot;: &quot;no brain&quot;, &quot;sugar&quot;: &quot;real brain tasting sugar&quot;, &quot;floor&quot;: &quot;zero drive&quot;, &quot;sanity&quot;: &quot;FlyGym default drive (1, 1)&quot;,
+         &quot;sugar-scrambled&quot;: &quot;scrambled brain tasting sugar&quot;}
+conds = []
+for k, v in ok.items():
+    if v.get(&quot;smoke&quot;):
+        continue
+    d = drives.get(k, {})
+    x0, y0 = v[&quot;start_xy_mm&quot;]
+    h0 = v[&quot;start_heading_rad&quot;]
+    pts = [[0.0, 0.0]]
+    for t, x, y, z, h in v[&quot;trajectory&quot;]:
+        if t &gt; v[&quot;settle_s&quot;] + 1e-9:
+            dx, dy = x - x0, y - y0
+            pts.append([round(dx * math.cos(h0) + dy * math.sin(h0), 3), round(-dx * math.sin(h0) + dy * math.cos(h0), 3)])
+    grp = {&quot;sanity&quot;: &quot;no-brain&quot;}.get(v[&quot;group&quot;], v[&quot;group&quot;])
+    lab = (LABEL.get(v[&quot;group&quot;], v[&quot;group&quot;]) + f&quot; ({k})&quot;)
+    conds.append({&quot;id&quot;: k, &quot;label&quot;: lab, &quot;group&quot;: grp if grp in (&quot;brain-real&quot;, &quot;brain-scrambled&quot;, &quot;no-brain&quot;, &quot;sugar&quot;, &quot;floor&quot;) else (&quot;sugar&quot; if &quot;sugar&quot; in grp else grp),
+                  &quot;path_xy_mm&quot;: pts[:121], &quot;forward_mm&quot;: v[&quot;forward_mm&quot;], &quot;heading_deg&quot;: v[&quot;heading_deg&quot;], &quot;path_mm&quot;: v[&quot;path_mm&quot;],
+                  &quot;drive&quot;: d.get(&quot;drive&quot;),
+                  &quot;dn_rates_hz&quot;: ({ct: d[&quot;dn_rates_hz&quot;][ct] for ct in MAPPED} if d.get(&quot;dn_rates_hz&quot;) else None),
+                  &quot;source&quot;: [REL + f&quot;body/{k}.json&quot;, REL + f&quot;drives/{k}.json&quot;] + ([d[&quot;source&quot;]] if d.get(&quot;source&quot;, &quot;&quot;).startswith(&quot;body/&quot;) else [])})
+chart = {&quot;title&quot;: &quot;Who does the walking?&quot;, &quot;metric&quot;: summary[&quot;metric&quot;], &quot;path_frame&quot;: &quot;x = forward along the starting heading, y = left (mm); 1.0 s of driven body time after a 0.2 s settle&quot;,
+         &quot;mapping&quot;: &quot;OUR MAPPING (hand-made): &quot; + FORMULA, &quot;flygym_version&quot;: &quot;2.1.0 (HybridTurningController, NeuroMechFly v2)&quot;,
+         &quot;brain_commit&quot;: &quot;philshiu/Drosophila_brain_model@91bdd1e7 (FlyWire v783)&quot;,
+         &quot;n&quot;: {g: groups[g][&quot;n&quot;] for g in groups}, &quot;retention&quot;: {&quot;D&quot;: retention[&quot;D&quot;], &quot;matched&quot;: retention[&quot;matched&quot;], &quot;random&quot;: retention[&quot;random&quot;]},
+         &quot;one_line&quot;: None, &quot;caption&quot;: [&quot;Legs, rhythm and balance come from FlyGym&#x27;s walking controller.&quot;,
+                                       &quot;The brain sends two numbers every 100 ms.&quot;, &quot;How neuron rates become those numbers is our mapping.&quot;],
+         &quot;conditions&quot;: sorted(conds, key=lambda c: c[&quot;id&quot;])}
+json.dump(chart, open(CHART, &quot;w&quot;), indent=1)
+print(json.dumps({g: (groups[g][&quot;forward_mm_mean&quot;], groups[g][&quot;forward_mm_sd&quot;], groups[g][&quot;heading_deg_mean&quot;], groups[g][&quot;n&quot;]) for g in groups}))
+print(&quot;retention&quot;, retention, &quot;readings&quot;, readings)</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>run_nulls.py</code>: the brain worker with the P9 stimulus and the descending-neuron recording (490 lines). One path on our machine is replaced by a placeholder; otherwise verbatim.</summary>
+      <pre><code>&quot;&quot;&quot;Fair-test batch driver and trial worker (Digital Fly Lab, run 5; extended in run 6). Licence: MIT.
+
+Run 6 (run:03aa82ff-d83b-47ec-bb36-c8edc64e696c, 2026-10-02) adds, without changing the run 5 code path:
+  --stim SUG|P9|P9L   which neurons get the upstream Poisson input (SUG = the 21 sugar GRNs, as run 5; P9 = DNp09 L+R;
+                      P9L = DNp09 left only). The Poisson input itself is exactly upstream&#x27;s.
+  --dn DN_INFO.json   record every spike (SpikeMonitor record=True; does not change the dynamics) and write, for each
+                      descending neuron (FlyWire super_class &quot;descending&quot;), spike counts in 10 bins of 100 ms.
+  --style run6        trial file name &lt;stim&gt;-&lt;arm&gt;-&lt;seed&gt;[-g&lt;gain&gt;].json
+  prep-dn             DN_INFO.json (model index, root ID, cell type, side of every descending neuron) from the annotation table
+  queue6              the run 6 brain queue (gate, core, G addendum with its adaptive gain rule, fill), skipping existing files
+
+Imports fly_taste.py (the bootstrap Build-your-own project) from FLY_PROJECT, which must also hold
+upstream/ (philshiu/Drosophila_brain_model at 91bdd1e7 with the FlyWire v783 files).
+
+Commands
+  python run_nulls.py prep  --annot ANNOT.tsv --sides SIDES.npz
+        input/output side flags from the FlyWire annotation table (super_class, v783 root IDs)
+  python run_nulls.py one   ARM SEED [--gain G] --out TRIALS_DIR [--sides SIDES.npz]
+        one trial in this process (ARM: real, D, W, S, B, G, B&#x27;); writes TRIALS_DIR/&lt;arm&gt;-&lt;seed&gt;[-g&lt;gain&gt;].json atomically
+  python run_nulls.py queue --out TRIALS_DIR [--sides SIDES.npz] [--deadline ISO] [--queue core|tier2|fill|all]
+        runs the pre-registered queue, one fresh process per trial, skipping trial files that exist
+&quot;&quot;&quot;
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import platform
+import resource
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+PROJECT = Path(os.environ.get(&quot;FLY_PROJECT&quot;, &quot;byo&quot;))
+CGROUP_MEM = Path(&quot;/sys/fs/cgroup/memory.current&quot;)
+GIB = 1024 ** 3
+TIMEOUT_S = 240
+UPSTREAM_COMMIT = &quot;91bdd1e7dcf193f3e7ca5a8933497fcef63b7960&quot;
+INPUT_CLASSES = (&quot;sensory&quot;, &quot;ascending&quot;, &quot;sensory_ascending&quot;)  # sensory_ascending: see report deviation 1
+OUTPUT_CLASSES = (&quot;motor&quot;, &quot;descending&quot;, &quot;endocrine&quot;)
+
+ARM_SEEDS_CORE = [(&quot;B&quot;, 301), (&quot;W&quot;, 101), (&quot;D&quot;, 3), (&quot;S&quot;, 201), (&quot;B&quot;, 302), (&quot;W&quot;, 102), (&quot;D&quot;, 4), (&quot;S&quot;, 202),
+                  (&quot;B&quot;, 303), (&quot;W&quot;, 103), (&quot;D&quot;, 5), (&quot;S&quot;, 203), (&quot;B&quot;, 304), (&quot;W&quot;, 104), (&quot;S&quot;, 204), (&quot;B&quot;, 305),
+                  (&quot;W&quot;, 105), (&quot;S&quot;, 205)]
+
+
+def now():
+    return datetime.now(timezone.utc).strftime(&quot;%Y-%m-%dT%H:%M:%SZ&quot;)
+
+
+def mem_current():
+    try:
+        return int(CGROUP_MEM.read_text())
+    except OSError:
+        return None
+
+
+def trial_name(arm, seed, gain=None, stim=None):
+    a = &quot;Bp&quot; if arm == &quot;B&#x27;&quot; else arm
+    pre = f&quot;{stim}-&quot; if stim else &quot;&quot;
+    return pre + f&quot;{a}-{seed}&quot; + (f&quot;-g{gain:g}&quot; if gain is not None else &quot;&quot;) + &quot;.json&quot;
+
+
+P9_IDS = {&quot;L&quot;: 720575940635872101, &quot;R&quot;: 720575940627652358}  # DNp09 (FlyWire v783), from run6-dn-candidates.md
+
+
+def stim_ids(stim, ft):
+    if stim == &quot;SUG&quot;:
+        return list(ft.SUGAR_GRNS_V783)
+    if stim == &quot;P9&quot;:
+        return [P9_IDS[&quot;L&quot;], P9_IDS[&quot;R&quot;]]
+    if stim == &quot;P9L&quot;:
+        return [P9_IDS[&quot;L&quot;]]
+    raise SystemExit(f&quot;unknown stim {stim}&quot;)
+
+
+def prep_dn(annot, out):
+    import csv
+    sys.path.insert(0, str(PROJECT))
+    os.environ.setdefault(&quot;FLY_UPSTREAM&quot;, str(PROJECT / &quot;upstream&quot;))
+    import fly_taste as ft
+    ids = ft.load_ids()
+    id2i = {int(f): i for i, f in enumerate(ids)}
+    rows = []
+    with open(annot, newline=&quot;&quot;) as f:
+        for row in csv.DictReader(f, delimiter=&quot;\t&quot;):
+            if row[&quot;super_class&quot;] == &quot;descending&quot;:
+                rid = int(row[&quot;root_id&quot;])
+                if rid in id2i:
+                    rows.append({&quot;i&quot;: id2i[rid], &quot;id&quot;: rid, &quot;cell_type&quot;: row.get(&quot;cell_type&quot;) or &quot;&quot;,
+                                 &quot;side&quot;: row.get(&quot;side&quot;) or &quot;&quot;})
+    rows.sort(key=lambda r: r[&quot;i&quot;])
+    json.dump({&quot;n&quot;: len(rows), &quot;neurons&quot;: rows}, open(out, &quot;w&quot;))
+    print(&quot;descending neurons in the model:&quot;, len(rows))
+
+
+# ------------------------------------------------------------------ prep
+def prep(annot, sides_out):
+    import csv
+    import numpy as np
+    sys.path.insert(0, str(PROJECT))
+    os.environ.setdefault(&quot;FLY_UPSTREAM&quot;, str(PROJECT / &quot;upstream&quot;))
+    import fly_taste as ft
+    ids = ft.load_ids()
+    cls = {}
+    with open(annot, newline=&quot;&quot;) as f:
+        for row in csv.DictReader(f, delimiter=&quot;\t&quot;):
+            cls[int(row[&quot;root_id&quot;])] = row[&quot;super_class&quot;]
+    names = sorted(set(cls.values()))
+    code = np.full(ids.size, -1, dtype=np.int16)
+    for i, fid in enumerate(ids):
+        c = cls.get(int(fid))
+        if c is not None:
+            code[i] = names.index(c)
+    matched = int((code &gt;= 0).sum())
+    inp = np.isin(code, [names.index(c) for c in INPUT_CLASSES if c in names])
+    out = np.isin(code, [names.index(c) for c in OUTPUT_CLASSES if c in names])
+    np.savez(sides_out, code=code, names=np.array(names), input_side=inp, output_side=out)
+    info = {&quot;n_model_ids&quot;: int(ids.size), &quot;n_annot_rows&quot;: len(cls), &quot;matched&quot;: matched,
+            &quot;match_fraction&quot;: matched / ids.size, &quot;n_input_side&quot;: int(inp.sum()), &quot;n_output_side&quot;: int(out.sum()),
+            &quot;classes&quot;: {n: int((code == k).sum()) for k, n in enumerate(names)}}
+    print(json.dumps(info, indent=1))
+    return info
+
+
+# ------------------------------------------------------------------ one trial (worker)
+def one(arm, seed, gain, out_dir, sides_path, stim=&quot;SUG&quot;, dn_info=None, style=None):
+    t_start = time.time()
+    mem_launch = int(os.environ.get(&quot;FAIRNULL_MEM_AT_LAUNCH&quot;, &quot;0&quot;)) or mem_current()
+    import numpy as np
+    sys.path.insert(0, str(PROJECT))
+    os.environ.setdefault(&quot;FLY_UPSTREAM&quot;, str(PROJECT / &quot;upstream&quot;))
+    import brian2 as b2
+    from brian2 import Hz, ms, mV
+    import fly_taste as ft
+    import nulls
+    from model import default_params
+
+    ids = ft.load_ids()
+    n = ids.size
+    id2i = {int(f): i for i, f in enumerate(ids)}
+    exc = [id2i[int(f)] for f in stim_ids(stim, ft)]
+    mn9 = id2i[ft.MN9]
+    sides = np.load(sides_path) if sides_path and Path(sides_path).exists() else None
+
+    pre = ft._read_column(&quot;Presynaptic_Index&quot;, np.int32)
+    post = ft._read_column(&quot;Postsynaptic_Index&quot;, np.int32)
+    cnt = ft._read_column(&quot;Excitatory x Connectivity&quot;, np.float64)
+    assert np.array_equal(cnt, np.round(cnt))
+    cnt = cnt.astype(np.int32)
+    real = (pre, post, cnt)
+
+    checks, stats = {}, {}
+    if arm == &quot;real&quot;:
+        new = real
+    elif arm in (&quot;D&quot;, &quot;G&quot;):
+        new = nulls.null_degree(pre, post, cnt, seed)
+    elif arm == &quot;W&quot;:
+        new = nulls.null_weight(pre, post, cnt, seed)
+    elif arm == &quot;S&quot;:
+        new = nulls.null_sign(pre, post, cnt, seed, n)
+    elif arm == &quot;B&quot;:
+        new = nulls.null_boundary(pre, post, cnt, seed, sides[&quot;input_side&quot;], sides[&quot;output_side&quot;])
+    elif arm == &quot;B&#x27;&quot;:
+        new = nulls.null_stimreadout(pre, post, cnt, seed, exc, mn9, n)
+    else:
+        raise SystemExit(f&quot;unknown arm {arm}&quot;)
+    if arm != &quot;real&quot;:
+        kw = {}
+        if arm == &quot;B&quot;:
+            kw = dict(input_side=sides[&quot;input_side&quot;], output_side=sides[&quot;output_side&quot;])
+        if arm == &quot;B&#x27;&quot;:
+            kw = dict(stim_idx=exc, readout_idx=mn9)
+        checks = nulls.check(arm, real, new, n, **kw)
+        if not all(checks.values()):
+            print(&quot;PROPERTY CHECK FAILED&quot;, checks, file=sys.stderr)
+            sys.exit(3)  # no data recorded
+        s0 = nulls.structure_stats(pre, post, n)
+        s1 = nulls.structure_stats(new[0], new[1], n)
+        stats = {&quot;self_loops_real&quot;: s0[&quot;self_loops&quot;], &quot;self_loops_null&quot;: s1[&quot;self_loops&quot;],
+                 &quot;self_loops_created&quot;: s1[&quot;self_loops&quot;] - s0[&quot;self_loops&quot;],
+                 &quot;duplicate_pairs_real&quot;: s0[&quot;duplicate_pairs&quot;], &quot;duplicate_pairs_null&quot;: s1[&quot;duplicate_pairs&quot;],
+                 &quot;duplicate_pairs_created&quot;: s1[&quot;duplicate_pairs&quot;] - s0[&quot;duplicate_pairs&quot;]}
+    edge_sha = nulls.sha256_arrays(*new)
+    npre, npost, ncnt = new
+    del real, pre, post, cnt
+    if arm != &quot;real&quot;:
+        del new
+    t_null = time.time() - t_start
+
+    # ---- build the upstream LIF network exactly as fly_taste.build_network, from arrays
+    params = dict(default_params)
+    params[&quot;r_poi&quot;] = 150.0 * Hz
+    b2.prefs.codegen.target = ft.pick_codegen_target()
+    b2.start_scope()
+    t0 = time.time()
+    neu = b2.NeuronGroup(N=n, model=params[&quot;eqs&quot;], method=&quot;linear&quot;, threshold=params[&quot;eq_th&quot;],
+                         reset=params[&quot;eq_rst&quot;], refractory=&quot;rfc&quot;, name=&quot;default_neurons&quot;, namespace=params)
+    neu.v = params[&quot;v_0&quot;]
+    neu.g = 0 * mV
+    neu.rfc = params[&quot;t_rfc&quot;]
+    syn = b2.Synapses(neu, neu, &quot;w : volt&quot;, on_pre=&quot;g += w&quot;, delay=params[&quot;t_dly&quot;], name=&quot;default_synapses&quot;)
+    step = 2_000_000
+    for k in range(0, npre.size, step):
+        syn.connect(i=npre[k:k + step], j=npost[k:k + step])
+    w_syn = float(params[&quot;w_syn&quot;]) * (gain if gain is not None else 1.0)  # gain scales recurrent synapses only
+    for k in range(0, ncnt.size, step):
+        syn.w_[k:k + step] = ncnt[k:k + step].astype(np.float64) * w_syn
+    n_syn = len(syn)
+    del npre, npost, ncnt
+    pois = []
+    for i in exc:  # Poisson input exactly as upstream poi(); the stimulus is not re-tuned
+        pois.append(b2.PoissonInput(target=neu[i], target_var=&quot;v&quot;, N=1, rate=params[&quot;r_poi&quot;],
+                                    weight=params[&quot;w_syn&quot;] * params[&quot;f_poi&quot;]))
+        neu[i].rfc = 0 * ms
+    mon = b2.SpikeMonitor(neu, record=bool(dn_info))  # run 6: record=True only to bin DN spikes
+    net = b2.Network(neu, syn, mon, *pois)
+    t_build = time.time() - t0
+    t1 = time.time()
+    b2.seed(seed if arm == &quot;real&quot; else 0)  # trial seed: real arm = its seed; nulls = trial seed 0
+    net.run(1000 * ms)
+    t_sim = time.time() - t1
+    c = np.asarray(mon.count[:], dtype=np.int64)
+
+    order = np.argsort(-c, kind=&quot;stable&quot;)[:20]
+    rec = {
+        &quot;stim&quot;: stim, &quot;stim_ids&quot;: [int(ids[i]) for i in exc] if stim != &quot;SUG&quot; else &quot;21 sugar GRNs (fly_taste.SUGAR_GRNS_V783)&quot;,
+        &quot;arm&quot;: arm, &quot;null_type&quot;: {&quot;real&quot;: None, &quot;D&quot;: &quot;degree-preserving&quot;, &quot;W&quot;: &quot;weight-shuffle&quot;, &quot;S&quot;: &quot;sign-shuffle&quot;,
+                                  &quot;B&quot;: &quot;boundary-preserving&quot;, &quot;G&quot;: &quot;degree-preserving&quot;, &quot;B&#x27;&quot;: &quot;other&quot;}[arm],
+        &quot;shuffle_seed&quot;: None if arm == &quot;real&quot; else seed, &quot;trial_seed&quot;: seed if arm == &quot;real&quot; else 0,
+        &quot;gain&quot;: gain, &quot;status&quot;: &quot;ok&quot;,
+        &quot;mn9_hz&quot;: float(c[mn9]), &quot;sugar_grn_mean_hz&quot;: float(c[exc].mean()),
+        &quot;whole_brain_spikes&quot;: int(c.sum()), &quot;neurons_active&quot;: int((c &gt; 0).sum()),
+        &quot;top20&quot;: [{&quot;id&quot;: int(ids[i]), &quot;hz&quot;: int(c[i])} for i in order if c[i] &gt; 0],
+        &quot;n_synapses&quot;: int(n_syn), &quot;property_checks&quot;: checks, &quot;structure&quot;: stats, &quot;edge_sha256&quot;: edge_sha,
+        &quot;wall_s&quot;: round(time.time() - t_start, 1), &quot;null_s&quot;: round(t_null, 1), &quot;build_s&quot;: round(t_build, 1),
+        &quot;sim_s&quot;: round(t_sim, 1), &quot;peak_rss_kb&quot;: resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+        &quot;memory_current_at_launch&quot;: mem_launch, &quot;upstream_commit&quot;: UPSTREAM_COMMIT,
+        &quot;versions&quot;: {&quot;python&quot;: platform.python_version(), &quot;brian2&quot;: b2.__version__, &quot;numpy&quot;: np.__version__,
+                     &quot;codegen_target&quot;: b2.prefs.codegen.target},
+        &quot;finished_at&quot;: now(),
+    }
+    if sides is not None:
+        names = [str(x) for x in sides[&quot;names&quot;]]
+        code = sides[&quot;code&quot;]
+        act = c &gt; 0
+        for cl in (&quot;motor&quot;, &quot;descending&quot;):
+            if cl in names:
+                m = code == names.index(cl)
+                rec[f&quot;active_{cl}&quot;] = int((act &amp; m).sum())
+                rec[f&quot;{cl}_total&quot;] = int(m.sum())
+    if dn_info:
+        info = json.load(open(dn_info))[&quot;neurons&quot;]
+        di = np.array([r[&quot;i&quot;] for r in info], dtype=np.int64)
+        isdn = np.zeros(n, dtype=bool)
+        isdn[di] = True
+        sp_i = np.asarray(mon.i[:], dtype=np.int64)
+        sp_t = np.asarray(mon.t[:] / ms, dtype=np.float64)
+        keep = isdn[sp_i]
+        b = np.minimum((sp_t[keep] // 100).astype(np.int64), 9)
+        bins = {}
+        for i_, k_ in zip(sp_i[keep], b):
+            bins.setdefault(int(i_), [0] * 10)[int(k_)] += 1
+        meta = {r[&quot;i&quot;]: r for r in info}
+        rec[&quot;dn&quot;] = {&quot;n_descending&quot;: int(di.size), &quot;bin_ms&quot;: 100, &quot;n_bins&quot;: 10, &quot;n_active&quot;: len(bins),
+                     &quot;active&quot;: [{&quot;id&quot;: meta[i][&quot;id&quot;], &quot;cell_type&quot;: meta[i][&quot;cell_type&quot;], &quot;side&quot;: meta[i][&quot;side&quot;],
+                                 &quot;bins&quot;: v, &quot;total&quot;: int(sum(v))} for i, v in sorted(bins.items(), key=lambda kv: -sum(kv[1]))]}
+        assert sum(x[&quot;total&quot;] for x in rec[&quot;dn&quot;][&quot;active&quot;]) == int(c[di].sum())  # bins agree with mon.count
+    out = Path(out_dir) / trial_name(arm, seed, gain, stim if style == &quot;run6&quot; else None)
+    tmp = out.with_suffix(&quot;.tmp&quot;)
+    tmp.write_text(json.dumps(rec, indent=1))
+    os.replace(tmp, out)
+    print(f&quot;{out.name}: MN9 {rec[&#x27;mn9_hz&#x27;]:.0f} Hz, spikes {rec[&#x27;whole_brain_spikes&#x27;]}, active {rec[&#x27;neurons_active&#x27;]}, &quot;
+          f&quot;wall {rec[&#x27;wall_s&#x27;]} s, rss {rec[&#x27;peak_rss_kb&#x27;] / 1e6:.2f} GB&quot;, flush=True)
+
+
+# ------------------------------------------------------------------ queue (driver)
+def build_queue(which, out_dir):
+    q = []
+    if which in (&quot;core&quot;, &quot;all&quot;):
+        q += [(&quot;real&quot;, 1, None), (&quot;real&quot;, 2, None)] + [(a, s, None) for a, s in ARM_SEEDS_CORE]
+    if which in (&quot;tier2&quot;, &quot;all&quot;):
+        q += [(&quot;G&quot;, 3, 1.5), (&quot;G&quot;, 3, 2.0), (&quot;G&quot;, 3, 3.0)]
+    if which in (&quot;fill&quot;,):
+        g = os.environ.get(&quot;FAIRNULL_MATCHED_GAIN&quot;)
+        if g:
+            q += [(&quot;G&quot;, 4, float(g)), (&quot;G&quot;, 5, float(g))]
+        q += [(&quot;B&#x27;&quot;, 401, None), (&quot;B&#x27;&quot;, 402, None), (&quot;B&#x27;&quot;, 403, None)]
+    return q
+
+
+def queue(out_dir, sides_path, deadline, which):
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    log = out_dir.parent / &quot;queue-log.jsonl&quot;
+    dl = datetime.fromisoformat(deadline.replace(&quot;Z&quot;, &quot;+00:00&quot;)).timestamp() if deadline else None
+    timeouts = {}
+    for arm, seed, gain in build_queue(which, out_dir):
+        f = out_dir / trial_name(arm, seed, gain)
+        if f.exists():
+            continue
+        if dl and time.time() &gt;= dl:
+            _log(log, {&quot;event&quot;: &quot;deadline&quot;, &quot;at&quot;: now()})
+            break
+        if timeouts.get(arm, 0) &gt;= 2:
+            _log(log, {&quot;event&quot;: &quot;arm-stopped-2-timeouts&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;at&quot;: now()})
+            continue
+        m = mem_current()
+        waited = 0
+        while m is not None and m &gt; 2.4 * GIB and waited &lt; 180:
+            time.sleep(30)
+            waited += 30
+            m = mem_current()
+        if m is not None and m &gt; 2.6 * GIB:
+            _log(log, {&quot;event&quot;: &quot;skipped-memory&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;gain&quot;: gain, &quot;mem&quot;: m, &quot;at&quot;: now()})
+            continue
+        cmd = [sys.executable, str(HERE / &quot;run_nulls.py&quot;), &quot;one&quot;, arm, str(seed), &quot;--out&quot;, str(out_dir)]
+        if gain is not None:
+            cmd += [&quot;--gain&quot;, str(gain)]
+        if sides_path:
+            cmd += [&quot;--sides&quot;, str(sides_path)]
+        env = dict(os.environ, FAIRNULL_MEM_AT_LAUNCH=str(m or 0))
+        t0 = time.time()
+        limit = TIMEOUT_S if not dl else max(1, min(TIMEOUT_S, dl - t0))
+        _log(log, {&quot;event&quot;: &quot;start&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;gain&quot;: gain, &quot;mem&quot;: m, &quot;waited_s&quot;: waited, &quot;at&quot;: now()})
+        p = subprocess.Popen(cmd, env=env)
+        try:
+            rc = p.wait(timeout=limit)
+        except subprocess.TimeoutExpired:
+            p.kill()
+            p.wait()
+            if dl and time.time() &gt;= dl - 1 and limit &lt; TIMEOUT_S:
+                _log(log, {&quot;event&quot;: &quot;killed-at-deadline&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;gain&quot;: gain, &quot;at&quot;: now()})
+                break
+            timeouts[arm] = timeouts.get(arm, 0) + 1
+            rec = {&quot;arm&quot;: arm, &quot;shuffle_seed&quot;: None if arm == &quot;real&quot; else seed, &quot;gain&quot;: gain, &quot;status&quot;: &quot;timeout&quot;,
+                   &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;memory_current_at_launch&quot;: m, &quot;finished_at&quot;: now()}
+            tmp = f.with_suffix(&quot;.tmp&quot;)
+            tmp.write_text(json.dumps(rec, indent=1))
+            os.replace(tmp, f)
+            _log(log, {&quot;event&quot;: &quot;timeout&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;gain&quot;: gain, &quot;at&quot;: now()})
+            continue
+        _log(log, {&quot;event&quot;: &quot;end&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;gain&quot;: gain, &quot;rc&quot;: rc,
+                   &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;at&quot;: now()})
+
+
+# ------------------------------------------------------------------ run 6 queue (driver)
+G_LO, G_HI, G_TARGET = 9680, 17976, 13828  # +-30% of the real whole-brain spikes (run 5 pre-registration)
+G_KNOWN = {1.5: 5063, 2.0: 6865, 3.0: 24024}  # run 5 G-3 trials (fairnull/results/trials/G-3-g*.json in run 5)
+
+
+def _run_one6(item, log, start_cut, kill_at):
+    &quot;&quot;&quot;item: dict(stim, arm, seed, gain, out, style). Returns &#x27;exists&#x27;|&#x27;ran&#x27;|&#x27;cut&#x27;|&#x27;killed&#x27;|&#x27;skipped-memory&#x27;|&#x27;timeout&#x27;.&quot;&quot;&quot;
+    f = Path(item[&quot;out&quot;]) / trial_name(item[&quot;arm&quot;], item[&quot;seed&quot;], item[&quot;gain&quot;], item[&quot;stim&quot;] if item[&quot;style&quot;] == &quot;run6&quot; else None)
+    if f.exists():
+        return &quot;exists&quot;
+    if time.time() &gt;= start_cut:
+        _log(log, {&quot;event&quot;: &quot;start-cut&quot;, &quot;trial&quot;: f.name, &quot;at&quot;: now()})
+        return &quot;cut&quot;
+    m = mem_current()
+    waited = 0
+    while m is not None and m &gt; 2.4 * GIB and waited &lt; 180:
+        time.sleep(30)
+        waited += 30
+        m = mem_current()
+    if m is not None and m &gt; 2.6 * GIB:
+        _log(log, {&quot;event&quot;: &quot;skipped-memory&quot;, &quot;trial&quot;: f.name, &quot;mem&quot;: m, &quot;at&quot;: now()})
+        return &quot;skipped-memory&quot;
+    cmd = [sys.executable, str(HERE / &quot;run_nulls.py&quot;), &quot;one&quot;, item[&quot;arm&quot;], str(item[&quot;seed&quot;]), &quot;--out&quot;, str(item[&quot;out&quot;]),
+           &quot;--stim&quot;, item[&quot;stim&quot;], &quot;--dn&quot;, item[&quot;dn&quot;], &quot;--sides&quot;, item[&quot;sides&quot;]]
+    if item[&quot;gain&quot;] is not None:
+        cmd += [&quot;--gain&quot;, str(item[&quot;gain&quot;])]
+    if item[&quot;style&quot;]:
+        cmd += [&quot;--style&quot;, item[&quot;style&quot;]]
+    env = dict(os.environ, FAIRNULL_MEM_AT_LAUNCH=str(m or 0))
+    t0 = time.time()
+    _log(log, {&quot;event&quot;: &quot;start&quot;, &quot;trial&quot;: f.name, &quot;mem&quot;: m, &quot;waited_s&quot;: waited, &quot;at&quot;: now()})
+    p = subprocess.Popen(cmd, env=env)
+    try:
+        rc = p.wait(timeout=max(1, min(TIMEOUT_S, kill_at - t0)))
+    except subprocess.TimeoutExpired:
+        p.kill()
+        p.wait()
+        if time.time() &gt;= kill_at - 1:
+            _log(log, {&quot;event&quot;: &quot;killed-at-kill-time&quot;, &quot;trial&quot;: f.name, &quot;at&quot;: now()})
+            return &quot;killed&quot;
+        rec = {&quot;stim&quot;: item[&quot;stim&quot;], &quot;arm&quot;: item[&quot;arm&quot;], &quot;seed&quot;: item[&quot;seed&quot;], &quot;gain&quot;: item[&quot;gain&quot;], &quot;status&quot;: &quot;timeout&quot;,
+               &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;memory_current_at_launch&quot;: m, &quot;finished_at&quot;: now()}
+        tmp = f.with_suffix(&quot;.tmp&quot;)
+        tmp.write_text(json.dumps(rec, indent=1))
+        os.replace(tmp, f)
+        _log(log, {&quot;event&quot;: &quot;timeout&quot;, &quot;trial&quot;: f.name, &quot;at&quot;: now()})
+        return &quot;timeout&quot;
+    _log(log, {&quot;event&quot;: &quot;end&quot;, &quot;trial&quot;: f.name, &quot;rc&quot;: rc, &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;at&quot;: now()})
+    return &quot;ran&quot;
+
+
+def queue6(brain_out, g_out, sides, dn, start_cut_iso, kill_iso, log):
+    sc = datetime.fromisoformat(start_cut_iso.replace(&quot;Z&quot;, &quot;+00:00&quot;)).timestamp()
+    kl = datetime.fromisoformat(kill_iso.replace(&quot;Z&quot;, &quot;+00:00&quot;)).timestamp()
+    Path(brain_out).mkdir(parents=True, exist_ok=True)
+    Path(g_out).mkdir(parents=True, exist_ok=True)
+    B = dict(out=brain_out, style=&quot;run6&quot;, sides=sides, dn=dn, gain=None)
+    gate = [dict(B, stim=&quot;SUG&quot;, arm=&quot;real&quot;, seed=0)]
+    core = [dict(B, stim=&quot;P9&quot;, arm=a, seed=s) for a, s in ((&quot;real&quot;, 0), (&quot;D&quot;, 3), (&quot;D&quot;, 4), (&quot;D&quot;, 5), (&quot;real&quot;, 1), (&quot;real&quot;, 2))]
+    for it in gate + core:
+        if _run_one6(it, log, sc, kl) in (&quot;cut&quot;, &quot;killed&quot;):
+            return
+    # G addendum (pre-registered): D shuffle 3 at 2.5; below the band -&gt; 2.75, above -&gt; 2.25; then bisect inside the
+    # tightest bracket (run 5 points included); at most 3 new gains; matched = closest to 13,828 within the band.
+    G = dict(out=g_out, style=None, sides=sides, dn=dn, stim=&quot;SUG&quot;, arm=&quot;G&quot;)
+    known = dict(G_KNOWN)
+    gain = 2.5
+    for k in range(3):
+        st = _run_one6(dict(G, seed=3, gain=gain), log, sc, kl)
+        if st in (&quot;cut&quot;, &quot;killed&quot;):
+            return
+        f = Path(g_out) / trial_name(&quot;G&quot;, 3, gain)
+        r = json.loads(f.read_text())
+        if r.get(&quot;status&quot;) != &quot;ok&quot;:
+            break
+        known[gain] = r[&quot;whole_brain_spikes&quot;]
+        if G_LO &lt;= r[&quot;whole_brain_spikes&quot;] &lt;= G_HI:
+            break
+        lo = max([g for g, v in known.items() if v &lt; G_LO], default=None)
+        hi = min([g for g, v in known.items() if v &gt; G_HI], default=None)
+        if k == 0:
+            gain = 2.75 if r[&quot;whole_brain_spikes&quot;] &lt; G_LO else 2.25
+        else:
+            gain = round((lo + hi) / 2, 4) if lo is not None and hi is not None else None
+        if gain is None or gain in known:
+            break
+    inband = {g: v for g, v in known.items() if G_LO &lt;= v &lt;= G_HI and g not in G_KNOWN}
+    if inband:
+        mg = min(inband, key=lambda g: abs(inband[g] - G_TARGET))
+        _log(log, {&quot;event&quot;: &quot;matched-gain&quot;, &quot;gain&quot;: mg, &quot;spikes&quot;: inband[mg], &quot;at&quot;: now()})
+        for s in (4, 5):
+            if _run_one6(dict(G, seed=s, gain=mg), log, sc, kl) in (&quot;cut&quot;, &quot;killed&quot;):
+                return
+    else:
+        _log(log, {&quot;event&quot;: &quot;no-matched-gain&quot;, &quot;known&quot;: {str(k): v for k, v in known.items()}, &quot;at&quot;: now()})
+    fill = [dict(B, stim=&quot;SUG&quot;, arm=&quot;D&quot;, seed=s) for s in (3, 4, 5)] + \
+           [dict(B, stim=&quot;P9L&quot;, arm=&quot;real&quot;, seed=0), dict(B, stim=&quot;P9L&quot;, arm=&quot;D&quot;, seed=3)]
+    for it in fill:
+        if _run_one6(it, log, sc, kl) in (&quot;cut&quot;, &quot;killed&quot;):
+            return
+    _log(log, {&quot;event&quot;: &quot;queue-done&quot;, &quot;at&quot;: now()})
+
+
+def _log(path, rec):
+    with open(path, &quot;a&quot;) as f:
+        f.write(json.dumps(rec) + &quot;\n&quot;)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument(&quot;cmd&quot;, choices=[&quot;prep&quot;, &quot;one&quot;, &quot;queue&quot;, &quot;prep-dn&quot;, &quot;queue6&quot;])
+    ap.add_argument(&quot;--stim&quot;, default=&quot;SUG&quot;, choices=[&quot;SUG&quot;, &quot;P9&quot;, &quot;P9L&quot;])
+    ap.add_argument(&quot;--dn&quot;)
+    ap.add_argument(&quot;--style&quot;)
+    ap.add_argument(&quot;--g-out&quot;)
+    ap.add_argument(&quot;--start-cut&quot;)
+    ap.add_argument(&quot;--kill&quot;)
+    ap.add_argument(&quot;--log&quot;)
+    ap.add_argument(&quot;arm&quot;, nargs=&quot;?&quot;)
+    ap.add_argument(&quot;seed&quot;, nargs=&quot;?&quot;, type=int)
+    ap.add_argument(&quot;--gain&quot;, type=float)
+    ap.add_argument(&quot;--out&quot;)
+    ap.add_argument(&quot;--sides&quot;)
+    ap.add_argument(&quot;--annot&quot;)
+    ap.add_argument(&quot;--deadline&quot;)
+    ap.add_argument(&quot;--queue&quot;, default=&quot;all&quot;)
+    a = ap.parse_args()
+    if a.cmd == &quot;prep&quot;:
+        prep(a.annot, a.sides)
+    elif a.cmd == &quot;one&quot;:
+        one(a.arm, a.seed, a.gain, a.out, a.sides, a.stim, a.dn, a.style)
+    elif a.cmd == &quot;prep-dn&quot;:
+        prep_dn(a.annot, a.out)
+    elif a.cmd == &quot;queue6&quot;:
+        queue6(a.out, a.g_out, a.sides, a.dn, a.start_cut, a.kill, a.log)
+    else:
+        queue(a.out, a.sides, a.deadline, a.queue)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>nulls.py</code>: the wiring shuffles, unchanged since our 1 Oct test (147 lines). Verbatim.</summary>
+      <pre><code>&quot;&quot;&quot;Null (scrambled-wiring) generators and property checks for the fair test (Digital Fly Lab, run 5).
+
+Licence: MIT (same as the bootstrap project). Pre-registration: ../preregistration.md.
+
+Every generator takes the real edge list as numpy arrays
+    pre   int32 [E]  presynaptic neuron index (Brian2 index = row of Completeness_783.csv)
+    post  int32 [E]  postsynaptic neuron index
+    cnt   int32 [E]  signed synapse count (upstream &quot;Excitatory x Connectivity&quot;: count x +1/-1)
+and returns new (pre, post, cnt) arrays. Edge order is kept, so the number of edges and the
+total synapse count (sum |cnt|) are always unchanged.
+
+Arms (null_type in the controls ledger):
+  D  degree-preserving   permute the post column over all edges (identical to the bootstrap
+                         fly_taste.load_edges(seed): np.random.default_rng(seed).shuffle(post))
+  W  weight-shuffle      permute |cnt| over all edges; graph and each edge&#x27;s sign kept
+  S  sign-shuffle        permute the per-neuron transmitter sign over presynaptic neurons
+                         (Dale&#x27;s law: one sign per neuron); graph and |cnt| kept
+  B  boundary-preserving permute the post column over interior edges only (pre not on the input
+                         side and post not on the output side); boundary edges unchanged
+  B&#x27; other               permute the post column over all edges except those out of the stimulus
+                         neurons and those into the readout neuron
+&quot;&quot;&quot;
+from __future__ import annotations
+
+import hashlib
+
+import numpy as np
+
+
+# ---------------------------------------------------------------- generators
+def null_degree(pre, post, cnt, seed):
+    p = post.copy()
+    np.random.default_rng(seed).shuffle(p)
+    return pre, p, cnt
+
+
+def null_weight(pre, post, cnt, seed):
+    a = np.abs(cnt)
+    perm = np.random.default_rng(seed).permutation(a.size)
+    return pre, post, (np.sign(cnt) * a[perm]).astype(cnt.dtype)
+
+
+def neuron_signs(pre, cnt, n):
+    &quot;&quot;&quot;Per-neuron sign (+1/-1) for every neuron with outgoing edges, 0 otherwise.
+    Raises if a presynaptic neuron has edges of both signs (Dale&#x27;s law violated in the input).&quot;&quot;&quot;
+    s = np.zeros(n, dtype=np.int8)
+    sg = np.sign(cnt).astype(np.int8)
+    s[pre] = sg
+    if not np.array_equal(s[pre], sg):
+        raise ValueError(&quot;input data has a presynaptic neuron with mixed signs&quot;)
+    return s
+
+
+def null_sign(pre, post, cnt, seed, n):
+    s = neuron_signs(pre, cnt, n)
+    has = np.nonzero(s != 0)[0]
+    new = np.zeros_like(s)
+    new[has] = np.random.default_rng(seed).permutation(s[has])
+    return pre, post, (np.abs(cnt) * new[pre]).astype(cnt.dtype)
+
+
+def interior_mask_boundary(pre, post, input_side, output_side):
+    &quot;&quot;&quot;Interior edge = presynaptic neuron not on the input side AND postsynaptic neuron not on the output side.&quot;&quot;&quot;
+    return ~input_side[pre] &amp; ~output_side[post]
+
+
+def null_masked(pre, post, cnt, seed, interior):
+    &quot;&quot;&quot;Permute post only among edges where interior is True.&quot;&quot;&quot;
+    p = post.copy()
+    idx = np.nonzero(interior)[0]
+    vals = p[idx]
+    np.random.default_rng(seed).shuffle(vals)
+    p[idx] = vals
+    return pre, p, cnt
+
+
+def null_boundary(pre, post, cnt, seed, input_side, output_side):
+    m = interior_mask_boundary(pre, post, input_side, output_side)
+    return null_masked(pre, post, cnt, seed, m)
+
+
+def null_stimreadout(pre, post, cnt, seed, stim_idx, readout_idx, n):
+    keep = np.zeros(n, dtype=bool)
+    keep[np.asarray(stim_idx)] = True
+    m = ~keep[pre] &amp; (post != readout_idx)
+    return null_masked(pre, post, cnt, seed, m)
+
+
+# ---------------------------------------------------------------- property checks
+def _deg(a, n):
+    return np.bincount(a, minlength=n)
+
+
+def check(arm, real, null, n, input_side=None, output_side=None, stim_idx=None, readout_idx=None):
+    &quot;&quot;&quot;Return a dict of named boolean checks for the arm; all must be True.&quot;&quot;&quot;
+    pre0, post0, cnt0 = real
+    pre1, post1, cnt1 = null
+    c = {
+        &quot;n_edges_kept&quot;: pre1.size == pre0.size == post1.size == cnt1.size,
+        &quot;total_synapses_kept&quot;: int(np.abs(cnt1).sum(dtype=np.int64)) == int(np.abs(cnt0).sum(dtype=np.int64)),
+    }
+    if arm in (&quot;D&quot;, &quot;G&quot;, &quot;B&quot;, &quot;B&#x27;&quot;):
+        c[&quot;out_degree_kept&quot;] = np.array_equal(pre1, pre0)
+        c[&quot;in_degree_kept&quot;] = np.array_equal(_deg(post1, n), _deg(post0, n))
+        c[&quot;edge_counts_kept_with_pre&quot;] = np.array_equal(cnt1, cnt0)
+    if arm == &quot;B&quot;:
+        m = interior_mask_boundary(pre0, post0, input_side, output_side)
+        c[&quot;boundary_edges_unchanged&quot;] = np.array_equal(post1[~m], post0[~m])
+        c[&quot;interior_stays_interior&quot;] = bool((~output_side[post1[m]]).all())
+    if arm == &quot;B&#x27;&quot;:
+        keep = np.zeros(n, dtype=bool)
+        keep[np.asarray(stim_idx)] = True
+        fixed = keep[pre0] | (post0 == readout_idx)
+        c[&quot;stim_out_and_readout_in_unchanged&quot;] = np.array_equal(post1[fixed], post0[fixed])
+        c[&quot;no_new_edges_into_readout&quot;] = int((post1 == readout_idx).sum()) == int((post0 == readout_idx).sum())
+    if arm == &quot;W&quot;:
+        c[&quot;graph_kept&quot;] = np.array_equal(pre1, pre0) and np.array_equal(post1, post0)
+        c[&quot;edge_signs_kept&quot;] = np.array_equal(np.sign(cnt1), np.sign(cnt0))
+        c[&quot;abs_count_multiset_kept&quot;] = np.array_equal(np.sort(np.abs(cnt1)), np.sort(np.abs(cnt0)))
+    if arm == &quot;S&quot;:
+        c[&quot;graph_kept&quot;] = np.array_equal(pre1, pre0) and np.array_equal(post1, post0)
+        c[&quot;abs_counts_kept&quot;] = np.array_equal(np.abs(cnt1), np.abs(cnt0))
+        try:
+            s1 = neuron_signs(pre1, cnt1, n)
+            s0 = neuron_signs(pre0, cnt0, n)
+            c[&quot;one_sign_per_presynaptic_neuron&quot;] = True
+            c[&quot;n_excitatory_neurons_kept&quot;] = int((s1 &gt; 0).sum()) == int((s0 &gt; 0).sum())
+            c[&quot;n_inhibitory_neurons_kept&quot;] = int((s1 &lt; 0).sum()) == int((s0 &lt; 0).sum())
+        except ValueError:
+            c[&quot;one_sign_per_presynaptic_neuron&quot;] = False
+    return {k: bool(v) for k, v in c.items()}
+
+
+def structure_stats(pre, post, n):
+    &quot;&quot;&quot;Self-loops and duplicate (pre, post) pairs (extra copies beyond the first).&quot;&quot;&quot;
+    key = pre.astype(np.int64) * n + post.astype(np.int64)
+    key.sort()
+    dup = int((key[1:] == key[:-1]).sum())
+    del key
+    return {&quot;self_loops&quot;: int((pre == post).sum()), &quot;duplicate_pairs&quot;: dup}
+
+
+def sha256_arrays(*arrays):
+    h = hashlib.sha256()
+    for a in arrays:
+        h.update(np.ascontiguousarray(a).tobytes())
+    return h.hexdigest()</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>requirements-body.lock</code>: the 47 pins of the body environment, from <code>uv pip freeze</code></summary>
+      <pre><code>absl-py==2.5.0
+asttokens==3.0.2
+contourpy==1.4.0
+cycler==0.12.1
+etils==1.14.0
+executing==2.2.1
+flygym==2.1.0
+fonttools==4.66.1
+fsspec==2026.9.0
+glfw==2.10.2
+imageio==2.38.0
+imageio-ffmpeg==0.6.0
+ipython==9.17.1
+ipython-pygments-lexers==1.1.1
+jaxtyping==0.3.7
+jedi==0.20.0
+kiwisolver==1.5.1
+llvmlite==0.50.0
+loguru==0.7.3
+matplotlib==3.11.2
+matplotlib-inline==0.2.2
+mediapy==1.2.7
+mujoco==3.9.0
+numba==0.68.0
+numpy==2.5.3
+packaging==26.3
+parso==0.8.7
+pexpect==4.9.0
+pillow==12.3.0
+prompt-toolkit==3.0.53
+psutil==7.2.2
+ptyprocess==0.7.0
+pure-eval==0.2.4
+pygments==2.21.0
+pyopengl==3.1.10
+pyparsing==3.3.3
+python-dateutil==2.9.0.post0
+pyyaml==6.0.3
+scipy==1.18.1
+six==1.17.0
+stack-data==0.6.3
+tabulate==0.9.0
+traitlets==5.16.1
+typing-extensions==4.16.0
+wadler-lindig==0.1.7
+wcwidth==0.9.1
+zipp==4.1.0</code></pre>
+    </details>
+  </section>
+
   <section aria-labelledby="sources-heading">
     <h2 id="sources-heading">Sources</h2>
     <ul class="dfl-sourcelist">
@@ -1077,8 +2487,9 @@ non-commercial use only). See README.md.</code></pre>
       <li>Dorkenwald et al. 2024, <em>Nature</em> 634, 124–138: <a href="https://doi.org/10.1038/s41586-024-07558-y">doi</a>. Schlegel et al. 2024, <em>Nature</em> 634, 139–152: <a href="https://doi.org/10.1038/s41586-024-07686-5">doi</a>.</li>
       <li>FlyWire data licence: <a href="https://flywire.ai/guidelines">flywire.ai/guidelines</a>; Zenodo v783 record: <a href="https://zenodo.org/records/10676866">10676866</a>.</li>
       <li>Brian2 documentation: <a href="https://brian2.readthedocs.io/en/stable/introduction/install.html">installation</a>.</li>
-      <li>FlyGym: <a href="https://github.com/NeLy-EPFL/flygym">repository</a>, <a href="https://github.com/NeLy-EPFL/flygym/releases/tag/v2.0.0">v2.0.0 release notes</a>. MaleCNS: <a href="https://male-cns.janelia.org/">portal</a>.</li>
-      <li>Our research record for this guide: <a href="../reports/2026-09-27-bootstrap/index.html">bootstrap research report</a>; the re-test and our fair test: <a href="../reports/2026-10-01-run5/index.html">report of 1 Oct 2026</a>.</li>
+      <li>FlyGym: <a href="https://github.com/NeLy-EPFL/flygym">repository</a>, <a href="https://github.com/NeLy-EPFL/flygym/releases/tag/v2.0.0">v2.0.0 release notes</a>; NeuroMechFly v2: Wang-Chen et al. 2024, <em>Nature Methods</em>, <a href="https://doi.org/10.1038/s41592-024-02497-y">doi</a>. MaleCNS: <a href="https://male-cns.janelia.org/">portal</a>.</li>
+      <li>Walking neurons: Bidaye et al. 2020, <em>Neuron</em> (P9), <a href="https://doi.org/10.1016/j.neuron.2020.07.032">doi</a>; Bidaye et al. 2014, <em>Science</em> (MDN), <a href="https://doi.org/10.1126/science.1249964">doi</a>; Rayshubskiy et al. 2025, <em>eLife</em> (DNa02), <a href="https://doi.org/10.7554/eLife.102230">doi</a>. FlyWire annotations: <a href="https://github.com/flyconnectome/flywire_annotations">flyconnectome/flywire_annotations</a>.</li>
+      <li>Our research record for this guide: <a href="../reports/2026-09-27-bootstrap/index.html">bootstrap research report</a>; the re-test and our fair test: <a href="../reports/2026-10-01-run5/index.html">report of 1 Oct 2026</a>; Add a body: <a href="../reports/2026-10-02-run6/index.html">report of 2 Oct 2026</a>.</li>
     </ul>
   </section>
 
@@ -1101,7 +2512,7 @@ non-commercial use only). See README.md.</code></pre>
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>1 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>2 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Verify project links and implementations, explain the model and keep the catalogue and build guide current.</p><a href="../index.html">Full pool information →</a></section>
     </div>
