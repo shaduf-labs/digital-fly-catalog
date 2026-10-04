@@ -1,16 +1,16 @@
 {
  "schema_version": "1.0.0",
  "dataset": "Digital Fly Lab controls ledger",
- "version": "2026-10-02-run6",
- "generated_at": "2026-10-02T10:18:16Z",
- "run_id": "run:03aa82ff-d83b-47ec-bb36-c8edc64e696c",
- "as_of": "2026-10-02",
+ "version": "2026-10-03-run7",
+ "generated_at": "2026-10-03T10:07:51Z",
+ "run_id": "run:5bfca8cc-f3cb-4020-83e6-5c1225da9200",
+ "as_of": "2026-10-03",
  "answer": {
-  "one_line": "Sometimes: fly wiring beat scrambled wiring in 10 of 25 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (8).",
-  "short": "Of 33 control studies in our catalogue, 25 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 10, makes no difference in 6, does worse in 2, gives mixed results in 6 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring, and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire; one published study's connectome loses to standard shuffles but ties boundary-preserving ones. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). Most studies are small, single-author and not replicated.",
+  "one_line": "Sometimes: fly wiring beat scrambled wiring in 11 of 26 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (8).",
+  "short": "Of 34 control studies in our catalogue, 26 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 11, makes no difference in 6, does worse in 2, gives mixed results in 6 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire; one published study's connectome loses to standard shuffles but ties boundary-preserving ones. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). One project changed sides on 3 Oct 2026: fly-cartpole's redesigned flight circuit loses most of its balance with shuffled wiring (166 vs 500 steps), yet its own linear map balances as well. Most studies are small, single-author and not replicated.",
   "counts": {
-   "studies": 33,
-   "with_wiring_null": 25,
+   "studies": 34,
+   "with_wiring_null": 26,
    "by_family": {
     "reflex-circuit": {
      "helps": 3,
@@ -35,14 +35,14 @@
     },
     "game-play": {
      "helps": 2,
-     "no_difference": 2,
+     "no_difference": 3,
      "worse": 0,
      "mixed": 2,
      "not_tested": 4
     },
     "ml-benchmark": {
-     "helps": 0,
-     "no_difference": 3,
+     "helps": 1,
+     "no_difference": 2,
      "worse": 1,
      "mixed": 1,
      "not_tested": 0
@@ -1011,12 +1011,12 @@
     "peer_review": "peer-reviewed",
     "recomputed_by_us": false,
     "grade": "weak",
-    "reason": "Peer-reviewed with held-out validation data, but control values are figure-only; we could not extract numbers."
+    "reason": "Numbers quoted from the full text (Europe PMC XML, read 2026-10-03). The random-parameter and ablation nulls are shown only in Extended Data Fig. 2, with no number in the text, the SI or the peer-review file and no Source Data, so we record no null values. There is no shuffled-wiring null; a referee asked for a generic network with the same sparseness (peer-review file)."
    },
    "extraction": "paper",
    "one_line": "Connectome-constrained optic-lobe model beats decoder-alone and random-parameter models; ablation values are figure-only, no wiring shuffle.",
    "commit": "92b3845cc426dd309a1a0e1b3890156c42e14021",
-   "checked_at": "2026-09-30T09:45:34Z",
+   "checked_at": "2026-10-03",
    "sources": [
     {
      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11525180/fullTextXML",
@@ -1024,6 +1024,10 @@
     },
     {
      "url": "https://github.com/TuragaLab/flyvis",
+     "label": "direct"
+    },
+    {
+     "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-024-07939-3/MediaObjects/41586_2024_7939_MOESM4_ESM.pdf",
      "label": "direct"
     }
    ]
@@ -1831,6 +1835,110 @@
    "sources": [
     {
      "url": "https://github.com/zack-maz/brain-runners",
+     "label": "direct"
+    }
+   ]
+  },
+  {
+   "id": "chessfly",
+   "name": "ChessFly",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "game-play",
+   "loop": "closed-loop",
+   "wiring": {
+    "dataset": "FlyWire FAFB",
+    "release": "v783 (Shiu et al. packaging), PN->KC edges >= 5 synapses",
+    "scope": "mushroom-body input layer: 285 PNs, 5,177 KCs, 21,509 connections"
+   },
+   "trained_parts": "KC->MBON weights and a board-channel shortcut by a prediction-error rule from self-play (10,000 games per fly); identical schedule for every wiring",
+   "metric": {
+    "name": "Chess exam rating after 10,000 self-play games (Elo scale, Random bot = 400; 40-game exams against 4 fixed opponents)",
+    "unit": "Elo",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 1680,
+    "n": 1,
+    "spread": "single fly (seed 1); no spread reported",
+    "source": "52276aa brains/adult.json: curve, exam at 10,000 games (wiring 'flywire')"
+   },
+   "floor": {
+    "label": "untrained egg (0 games), same for every wiring",
+    "value": 660,
+    "source": "52276aa brains/adult.json: curve, exam at 10,000 games: curve[0]"
+   },
+   "arms": [
+    {
+     "arm_id": "shuffled",
+     "null_type": "degree-preserving",
+     "label": "shuffled claws: same claw count per KC, partners re-drawn from the pool of real PN partners (PN popularity kept in expectation)",
+     "value": 1675,
+     "n": 1,
+     "samples": 1,
+     "spread": "single fly",
+     "readout_refit": true,
+     "source": "52276aa brains/adult-shuffled.json: curve, exam at 10,000 games; src/brain.js:90-105",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "random-design",
+     "null_type": "random-graph",
+     "label": "the original random design: 4,000 KCs with 7 random inputs straight from the board channels",
+     "value": 1850,
+     "n": 1,
+     "samples": 1,
+     "spread": "single fly",
+     "readout_refit": true,
+     "source": "52276aa brains/adult-random.json: curve, exam at 10,000 games",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "headline_arm": "shuffled",
+    "best_null_arm": "random-design",
+    "retention": 0.9951,
+    "retention_method": "floor",
+    "baseline_arm": null,
+    "baseline_retention": null,
+    "difference": 5,
+    "ci": null,
+    "p": null,
+    "stat_note": "One fly per wiring and one shuffle (seed 1); ratings from 40-game exams, so differences of tens of Elo are within noise. README (not in files): 200-game exams 1690 / 1695 / 1755 and real vs shuffled 53% to 47% head to head (100 games)."
+   },
+   "wiring_effect": "no-difference",
+   "baseline_beaten": "not-tested",
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": true,
+    "tuned_equally": true,
+    "null_samples": 1,
+    "has_no_brain_baseline": false,
+    "reason": "Shuffle keeps each KC's claw count and the PN pool; same self-play schedule and learning rule for all three flies; only one shuffle and one fly per arm.",
+    "verdict": "partly-fair"
+   },
+   "quality": {
+    "n_per_arm": 1,
+    "held_out": false,
+    "uncertainty_reported": false,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "recomputed_by_us": false,
+    "grade": "weak",
+    "reason": "Single fly and single shuffle per arm, no uncertainty; exam values are committed in the brain files."
+   },
+   "extraction": "files",
+   "one_line": "Chess-learning mushroom body: real FlyWire wiring rates 1680, shuffled claws 1675 and a random design 1850 after 10,000 games (one fly each).",
+   "commit": "52276aa",
+   "checked_at": "2026-10-03",
+   "sources": [
+    {
+     "url": "https://github.com/znatgost/chessfly",
      "label": "direct"
     }
    ]
@@ -2973,66 +3081,80 @@
    "loop": "closed-loop",
    "wiring": {
     "dataset": "MaleCNS",
-    "release": "v1.0 flat connectome (minconf 0.5)",
-    "scope": "both mushroom bodies: 343 PNs, 1,893 KCs, 48 MBONs, 332 DANs"
+    "release": "v1.0",
+    "scope": "flight-stabilisation circuit: 5,459 neurons (ocellar, haltere and HS sensory groups to wing-amplitude motor neurons), linear rate units"
    },
-   "trained_parts": "KC->MBON weights by dopamine-gated plasticity with posture-shaped reward (3,000 tuning episodes); hyperparameters tuned on separate seeds",
+   "trained_parts": "Three sensor gains (five with the landmark) by reward-modulated random search; the circuit's couplings never change. Learning rates chosen by the author's reflex-tune search.",
    "metric": {
-    "name": "CartPole mean episode length over the final 100 episodes (fresh seeds 70-89)",
+    "name": "CartPole mean episode length over the final 100 episodes (fresh seeds 160-179)",
     "unit": "steps",
     "higher_is_better": true
    },
    "real": {
-    "value": 392.5,
+    "value": 499.9,
     "n": 20,
-    "spread": "± 103.1 sd",
-    "source": "077dcba results/summary.md: fly-bilateral row (fresh seeds 70-89; unchanged at HEAD 854fb1d)"
+    "spread": "± 0.3 sd",
+    "source": "a8c6257 results/linear-retuned/summary.md: fly-reflex-adaptive row (same numbers in results/reflex/summary.md, 930ab65)"
    },
    "floor": {
     "label": "random pushes (chance)",
-    "value": 22.8,
-    "source": "077dcba results/summary.md: random row"
+    "value": 22.1,
+    "source": "a8c6257 results/linear-retuned/summary.md: random row"
    },
    "arms": [
     {
      "arm_id": "shuffled",
      "null_type": "degree-preserving",
-     "label": "fly-bilateral-shuffled (PN->KC and KC->MBON double-edge swaps)",
-     "value": 390.3,
+     "label": "fly-reflex-adaptive-shuffled (directed double-edge swaps; couplings travel with their edges; sensor and motor identities kept)",
+     "value": 165.9,
      "n": 20,
      "samples": 20,
-     "spread": "± 96.4 sd",
+     "spread": "± 182.8 sd",
      "readout_refit": true,
-     "source": "077dcba results/summary.md: fly-bilateral-shuffled row; one shuffle per evaluation seed (per-seed rng)",
-     "recomputed_by_us": true,
+     "source": "a8c6257 results/linear-retuned/summary.md: fly-reflex-adaptive-shuffled row; reflex.py shuffle_flight, one shuffle per evaluation seed (reflex_report.py line 196)",
+     "recomputed_by_us": false,
      "activity_ratio": null,
      "activity_class": "not-reported"
     },
     {
-     "arm_id": "frozen",
+     "arm_id": "untuned",
      "null_type": "untrained",
-     "label": "fly-bilateral-frozen (no plasticity)",
-     "value": 18.7,
+     "label": "fly-reflex (wiring only, no tuning)",
+     "value": 275.6,
      "n": 20,
      "samples": 1,
-     "spread": "± 9.9 sd",
+     "spread": "± 9.4 sd",
      "readout_refit": false,
-     "source": "077dcba results/summary.md: fly-bilateral-frozen row",
-     "recomputed_by_us": true,
+     "source": "a8c6257 results/linear-retuned/summary.md: fly-reflex row",
+     "recomputed_by_us": false,
      "activity_ratio": null,
      "activity_class": "not-reported"
     },
     {
-     "arm_id": "td",
+     "arm_id": "linear",
      "null_type": "no-graph-model",
-     "label": "TD actor-critic on the same Kenyon-cell code (not a fly)",
+     "label": "the circuit replaced by its own linear map, tuned the same way (seeds 280-299)",
+     "value": 499.6,
+     "n": 20,
+     "samples": 1,
+     "spread": "± 0.7 sd",
+     "readout_refit": true,
+     "source": "a8c6257 results/linear-retuned/summary.md: linear-adaptive row; author's two-sided permutation p = 0.1797 against the circuit",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "lqr",
+     "null_type": "no-graph-model",
+     "label": "LQR designed from CartPole's equations, no learning (seeds 300-319)",
      "value": 500,
      "n": 20,
      "samples": 1,
      "spread": "± 0.0 sd",
-     "readout_refit": true,
-     "source": "077dcba results/summary.md: td row (all 20 seeds at the 500 ceiling)",
-     "recomputed_by_us": true,
+     "readout_refit": null,
+     "source": "a8c6257 results/linear-retuned/summary.md: lqr row",
+     "recomputed_by_us": false,
      "activity_ratio": null,
      "activity_class": "not-reported"
     },
@@ -3040,13 +3162,13 @@
      "arm_id": "random",
      "null_type": "no-brain-baseline",
      "label": "uniform random pushes",
-     "value": 22.8,
+     "value": 22.1,
      "n": 20,
      "samples": 1,
-     "spread": "± 0.9 sd",
+     "spread": "± 0.8 sd",
      "readout_refit": null,
-     "source": "077dcba results/summary.md: random row",
-     "recomputed_by_us": true,
+     "source": "a8c6257 results/linear-retuned/summary.md: random row",
+     "recomputed_by_us": false,
      "activity_ratio": null,
      "activity_class": "not-reported"
     }
@@ -3054,16 +3176,16 @@
    "effect": {
     "headline_arm": "shuffled",
     "best_null_arm": "shuffled",
-    "retention": 0.994,
+    "retention": 0.301,
     "retention_method": "floor",
-    "baseline_arm": "td",
-    "baseline_retention": 1.2908,
-    "difference": 2.2,
+    "baseline_arm": "lqr",
+    "baseline_retention": 1.0002,
+    "difference": 334,
     "ci": null,
-    "p": 0.4771,
-    "stat_note": "Author's permutation test on per-seed means at 077dcba, fly-bilateral > fly-bilateral-shuffled, p = 0.4771 (fresh seeds 70-89). Updated on 2026-10-02 from 0455e2e (233.8 vs 218.3, p = 0.1953): the comparison is like for like (same task and metric, same degree-preserving null, 20 evaluation seeds per arm, both arms under the same protocol), but the training protocol changed for every condition between the commits (posture-shaped reward and a learning-rate settle term, 2e7ea39; 3,000 tuning episodes, 76240b0). results/summary.md is identical at HEAD 854fb1d."
+    "p": 0.0001,
+    "stat_note": "Re-read on 2026-10-03 at a8c6257 (re-grade, material): the author's headline experiment is now the MaleCNS flight-stabilisation circuit (README 'Results'). Author's permutation test, fly-reflex-adaptive > fly-reflex-adaptive-shuffled, p = 0.0001 (fresh seeds 160-179). The circuit's own linear map tuned the same way scores 499.6 (p = 0.18, two-sided) and LQR 500, so balancing alone needs no more than a small linear controller (author's words); the circuit beats its linear map only on holding station past the 500-step cap (results/lqr-station/summary.md). The real arm sits at the 500 ceiling. The previous study (both mushroom bodies, fly-bilateral 392.5 vs degree-preserving shuffled 390.3, p = 0.4771, results/summary.md) is unchanged in the repository but is no longer the headline."
    },
-   "wiring_effect": "no-difference",
+   "wiring_effect": "helps",
    "baseline_beaten": "no",
    "fairness": {
     "keeps_degree": true,
@@ -3072,7 +3194,7 @@
     "null_samples": 20,
     "has_no_brain_baseline": true,
     "verdict": "fair",
-    "reason": "Degree-preserving swaps inside the PN->KC and KC->MBON layers, dopamine targets kept, same plasticity, reward and hyperparameters, 20 fresh seeds."
+    "reason": "Degree-preserving directed double-edge swaps with couplings travelling, sensor and motor identities kept, the same self-tuning of sensor gains and rates, 20 fresh seeds with one shuffle each; a random-push baseline and an equally tuned linear-map baseline."
    },
    "quality": {
     "n_per_arm": 20,
@@ -3081,15 +3203,23 @@
     "results_in_repo_files": true,
     "independent_test": false,
     "peer_review": "none",
-    "recomputed_by_us": true,
+    "recomputed_by_us": false,
     "grade": "strong",
-    "reason": "Fresh seeds, hyperparameters tuned elsewhere, permutation tests, per-seed values committed."
+    "reason": "Fresh seeds, the same tuning for every arm, author's permutation tests and per-seed values committed; not recomputed by us this run; the real arm is at the 500-step ceiling."
    },
    "extraction": "files",
-   "one_line": "Mushroom-body fly learns CartPole (392 steps), but degree-preserving shuffled wiring learns as well (390, p = 0.48); a TD learner reaches the 500 ceiling.",
-   "commit": "077dcba",
-   "checked_at": "2026-10-02",
+   "one_line": "Fly flight circuit balances CartPole (499.9 steps) and shuffled wiring drops it to 165.9 (p = 0.0001), but its own linear map also reaches 499.6.",
+   "commit": "a8c6257",
+   "checked_at": "2026-10-03",
    "sources": [
+    {
+     "url": "https://github.com/Curt-Park/fly-cartpole/blob/a8c62579bb4566baa517e55c63d53f85344018d4/results/linear-retuned/summary.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/Curt-Park/fly-cartpole/blob/a8c62579bb4566baa517e55c63d53f85344018d4/results/reflex/summary.md",
+     "label": "direct"
+    },
     {
      "url": "https://github.com/Curt-Park/fly-cartpole",
      "label": "direct"
@@ -4381,6 +4511,18 @@
    "fairness": "unfair"
   },
   {
+   "study_id": "chessfly",
+   "label": "ChessFly",
+   "task_family": "game-play",
+   "headline_null_type": "degree-preserving",
+   "retention": 0.9951,
+   "retention_method": "floor",
+   "baseline_retention": null,
+   "wiring_effect": "no-difference",
+   "quality": "weak",
+   "fairness": "partly-fair"
+  },
+  {
    "study_id": "doom-fly-control",
    "label": "Is the fly brain actually playing DOOM? (control experiments)",
    "task_family": "game-play",
@@ -4481,10 +4623,10 @@
    "label": "fly-cartpole",
    "task_family": "ml-benchmark",
    "headline_null_type": "degree-preserving",
-   "retention": 0.994,
+   "retention": 0.301,
    "retention_method": "floor",
-   "baseline_retention": 1.2908,
-   "wiring_effect": "no-difference",
+   "baseline_retention": 1.0002,
+   "wiring_effect": "helps",
    "quality": "strong",
    "fairness": "fair"
   },

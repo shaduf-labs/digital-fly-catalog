@@ -2,6 +2,54 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-03-run7-tracking",
+      "changed_at": "2026-10-03T10:53:54Z",
+      "summary": "104 entries re-checked on 3 Oct 2026: 3 with new commits, 0 new releases, 1 re-grade (fly-cartpole, grade unchanged); FlyDoom (eganeganegan) returned HTTP 404 a third time and its link status is now 'gone' (record kept); 52 videos re-checked: all available, 0 removed; 3 entries added.",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-10-03-run7-browser-check",
+      "changed_at": "2026-10-03T10:53:54Z",
+      "summary": "Does it actually run? Our headless-browser check of six fly-brain demos (Chromium 154, Linux, no GPU, 3 Oct 2026; not a play test): Fly Worker, FLY67 and flybrain.app ran (17.55, 33.28 and 12.72 MB); FlyLeno and Help the Fly Escape loaded, then froze in our no-GPU browser; fly-brain (Lulzx) stopped at our 1.6 GB memory limit. No demo computed on a server. New chart 'What your browser downloads to run a fly brain' and a results table.",
+      "path": "/p/digital-fly-catalog/ways-to-try/#run-heading"
+    },
+    {
+      "change_id": "2026-10-03-run7-browser-fields",
+      "changed_at": "2026-10-03T10:53:54Z",
+      "summary": "Catalogue: six records gain the optional field browser_check, shown in the catalogue table, the filter tool and Ways to try; FLY67's download size corrected from 'about 100 MB' to 33.3 MB. link_status.status gains the value 'gone'. Both documented on For AI agents.",
+      "path": "/p/digital-fly-catalog/for-ai-agents/#fields-heading"
+    },
+    {
+      "change_id": "2026-10-03-run7-flyvis-page",
+      "changed_at": "2026-10-03T10:53:54Z",
+      "summary": "New project page for flyvis: numbers quoted from the full text, our ablation wording corrected (direction selectivity without synapse counts; only the T4/T5 preferred direction needs single-neuron detail), licences (code and pretrained models MIT), the 50 pretrained models' validation losses (median 5.300, range 5.137-5.678), the missing shuffled-wiring control and our CPU pre-check (no-go now).",
+      "path": "/p/digital-fly-catalog/projects/flyvis/"
+    },
+    {
+      "change_id": "2026-10-03-run7-freshness",
+      "changed_at": "2026-10-03T10:53:54Z",
+      "summary": "Is it real?: a Last checked column on all 20 verdict rows (13 code unchanged since graded, 7 no code, 0 code changed); view counts updated (Gorilla Tag 724,625, still U); a driving compilation appears to show Flyhard (thumbnail-only match); FlyLeno row gains our browser-check line.",
+      "path": "/p/digital-fly-catalog/is-it-real/#verdicts-heading"
+    },
+    {
+      "change_id": "2026-10-03-run7-ledger",
+      "changed_at": "2026-10-03T10:53:54Z",
+      "summary": "Controls ledger 2026-10-03-run7: 34 studies, 26 with a wiring null (helps 11, no difference 6, worse 2, mixed 6, not yet scored 1). New study ChessFly (no difference: 1680 vs 1675 Elo, weak). fly-cartpole re-read at a8c6257: no difference -> helps (499.9 vs 165.9 steps) but its linear map (499.6) and LQR (500) match it, so the baseline is not beaten. No scoring rule changed.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed-heading"
+    },
+    {
+      "change_id": "2026-10-03-run7-new-entries",
+      "changed_at": "2026-10-03T10:53:54Z",
+      "summary": "3 new entries: ChessFly (A, a negative result), flypoker (C) and neurafly (C); a FlyLeno fan page excluded.",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-10-03-run7-report",
+      "changed_at": "2026-10-03T10:53:54Z",
+      "summary": "Seventh research report: the browser check with its protocol, deviations and limits, the flyvis dossier, verdict freshness, the fly-cartpole re-grade, new entries, tracking and method.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-03-run7/"
+    },
+    {
       "change_id": "2026-10-02-run6-tracking",
       "changed_at": "2026-10-02T11:00:20Z",
       "summary": "100 entries re-checked on 2 Oct 2026: 6 with new commits, 0 new releases, 0 grade changes; FlyDoom (eganeganegan) returned HTTP 404 again and its record is kept; 51 videos re-checked: all available, 0 removed; 4 entries and 1 video added.",

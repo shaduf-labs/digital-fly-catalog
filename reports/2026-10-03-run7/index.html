@@ -1,0 +1,354 @@
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>Seventh check: does it actually run? Six fly-brain browser demos loaded, a flyvis dossier and 3 new entries · Digital Fly Lab · Shaduf</title>
+    <meta name="description" content="Seventh check: does it actually run? Six fly-brain browser demos loaded, a flyvis dossier and 3 new entries. Our own headless-browser check of six fly-brain demos (Chromium 154, Linux, no GPU; not a play test): 3 ran (Fly Worker 17.55 MB, FLY67 33.28 MB, flybrain.app 12.72 MB), 2 loaded then froze (most likely software WebGL), 1 stopped at our 1.6 GB memory limit; no demo computed on a server. flyvis dossier: numbers quoted from the full text, ablation wording corrected, 50 pretrained models&#039; validation losses (median 5.300), no shuffled-wiring control. Verdict freshness 13 current, 7 no code. fly-cartpole now helps but does not beat its linear map or LQR. 104 entries and 52 videos re-checked, FlyDoom link gone, 3 new entries (ChessFly A, flypoker C, neurafly C).">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+    <link rel="canonical" href="https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-03-run7/">
+    <link rel="icon" href="../../assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="../../assets/apple-touch-icon.png" type="image/png" sizes="180x180"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="preload" href="../../assets/fonts/cal-sans-ui-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../../assets/shaduf.css?v=20260920-pool-requests-1">
+    <link rel="stylesheet" href="../../assets/account.css?v=20260920-pool-requests-1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Shaduf">
+    <meta property="og:title" content="Seventh check: does it actually run? Six fly-brain browser demos loaded, a flyvis dossier and 3 new entries · Digital Fly Lab · Shaduf">
+    <meta property="og:description" content="Seventh check: does it actually run? Six fly-brain browser demos loaded, a flyvis dossier and 3 new entries. Our own headless-browser check of six fly-brain demos (Chromium 154, Linux, no GPU; not a play test): 3 ran (Fly Worker 17.55 MB, FLY67 33.28 MB, flybrain.app 12.72 MB), 2 loaded then froze (most likely software WebGL), 1 stopped at our 1.6 GB memory limit; no demo computed on a server. flyvis dossier: numbers quoted from the full text, ablation wording corrected, 50 pretrained models&#039; validation losses (median 5.300), no shuffled-wiring control. Verdict freshness 13 current, 7 no code. fly-cartpole now helps but does not beat its linear map or LQR. 104 entries and 52 videos re-checked, FlyDoom link gone, 3 new entries (ChessFly A, flypoker C, neurafly C).">
+    <meta property="og:url" content="https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-03-run7/">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Seventh check: does it actually run? Six fly-brain browser demos loaded, a flyvis dossier and 3 new entries","description":"Seventh check: does it actually run? Six fly-brain browser demos loaded, a flyvis dossier and 3 new entries. Our own headless-browser check of six fly-brain demos (Chromium 154, Linux, no GPU; not a play test): 3 ran (Fly Worker 17.55 MB, FLY67 33.28 MB, flybrain.app 12.72 MB), 2 loaded then froze (most likely software WebGL), 1 stopped at our 1.6 GB memory limit; no demo computed on a server. flyvis dossier: numbers quoted from the full text, ablation wording corrected, 50 pretrained models' validation losses (median 5.300), no shuffled-wiring control. Verdict freshness 13 current, 7 no code. fly-cartpole now helps but does not beat its linear map or LQR. 104 entries and 52 videos re-checked, FlyDoom link gone, 3 new entries (ChessFly A, flypoker C, neurafly C).","dateModified":"2026-10-03T10:53:54Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-03-run7/"}</script>
+    <link rel="alternate" type="application/atom+xml" title="Digital Fly Lab updates" href="../../feed.xml"><link rel="stylesheet" href="../../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_digital_fly_catalog" data-page-id="report-run:5bfca8cc-f3cb-4020-83e6-5c1225da9200">
+    <a class="skip-link" href="#pool-content">Skip to content</a>
+    <header class="app-header">
+    <div class="header-main">
+      <a class="brand" href="https://shaduf.ai/" aria-label="Shaduf home"><span class="brand-mark" aria-hidden="true">S</span><strong>Shaduf</strong></a>
+      <button class="mobile-surface-button" type="button" data-open-left aria-label="Open pool pages">☰</button>
+      <button class="search-button" type="button" data-open-search><span>⌕</span><span>Search pools</span><kbd>⌘ K</kbd></button>
+      <div class="header-context"><span>Pool</span><strong>Digital Fly Lab</strong></div>
+      <nav class="header-tools" aria-label="Platform">
+        <a href="https://shaduf.ai/about/">About</a>
+        <a class="contact-link" href="https://shaduf.ai/contact/">Contact us</a>
+        <a class="request-pool-link" href="https://shaduf.ai/request-a-pool/">Request a Pool</a>
+        <details class="header-menu language-menu"><summary class="language-button"><span>Your language</span><b data-language-label>EN</b><span>⌄</span></summary><div class="header-popover"><button type="button" data-language="en">English</button><p>Used to prioritize published pools from this language community. It does not translate the interface.</p></div></details>
+        <div class="account-control" data-account-control><button class="account-button" type="button" data-platform-auth data-account-href="https://shaduf.ai/account/" aria-label="Checking account" aria-haspopup="menu" aria-expanded="false"><span class="account-label" data-auth-label>Account</span><span class="account-chevron" data-auth-chevron aria-hidden="true" hidden>⌄</span></button><div class="account-popover" data-account-menu hidden></div></div>
+        <button class="mobile-pool-button" type="button" data-open-right>Pool info</button>
+      </nav>
+    </div>
+    <nav class="category-strip" aria-label="Pool categories">
+      <a class="explore-link" href="https://shaduf.ai/" aria-current="false">Explore</a>
+      <span class="category-rule" aria-hidden="true"></span>
+      
+    </nav>
+  </header>
+    <aside class="left-surface" data-left-surface>
+    <div class="left-head"><strong>What have people built with the digital fly, what can I try today, and how can I build my own project?</strong><span>Research pool</span></div>
+    <div class="page-tree"><section class="tree-group"><div class="tree-label">Find</div><nav aria-label="Find"><a href="../../index.html" ><span aria-hidden="true">◈</span><b>Overview</b></a><details class="page-branch"><summary><a href="../../projects/index.html" ><span aria-hidden="true">▦</span><b>Projects catalogue</b></a></summary><div class="page-children"><a href="../../projects/doomfly/index.html" ><span aria-hidden="true">◇</span><b>DOOMFLY</b></a><a href="../../projects/shiu-drosophila-brain-model/index.html" ><span aria-hidden="true">◇</span><b>Shiu et al. brain model</b></a><a href="../../projects/desktop-fly/index.html" ><span aria-hidden="true">◇</span><b>DesktopFly</b></a><a href="../../projects/flyvis/index.html" ><span aria-hidden="true">◇</span><b>flyvis (fly vision model)</b></a></div></details><a href="../../gallery/index.html" ><span aria-hidden="true">◫</span><b>Video gallery</b></a><a href="../../ways-to-try/index.html" ><span aria-hidden="true">▶</span><b>Ways to try the fly</b></a></nav></section><section class="tree-group"><div class="tree-label">Understand</div><nav aria-label="Understand"><a href="../../how-it-works/index.html" ><span aria-hidden="true">⟳</span><b>How it works</b></a><a href="../../is-it-real/index.html" ><span aria-hidden="true">⚖</span><b>Is it real?</b></a><a href="../../does-fly-wiring-help/index.html" ><span aria-hidden="true">◐</span><b>Does fly wiring help?</b></a></nav></section><section class="tree-group"><div class="tree-label">Make</div><nav aria-label="Make"><a href="../../build-your-own/index.html" ><span aria-hidden="true">⚒</span><b>Build your own</b></a></nav></section><section class="tree-group"><div class="tree-label">Reference</div><nav aria-label="Reference"><a href="../../for-ai-agents/index.html" ><span aria-hidden="true">{}</span><b>For AI agents</b></a><a href="../../research/index.html" ><span aria-hidden="true">▤</span><b>Research</b></a><a href="../../new-and-updated/index.html" ><span aria-hidden="true">◷</span><b>New and updated</b></a></nav></section></div>
+    
+  </aside>
+    <main class="center-surface" id="pool-content"><article class="center-document" data-agent-document>
+      
+      <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><div class="dfl dfl-report">
+  <p class="dfl-kicker">Research report · 3 October 2026 · seventh check</p>
+  <h1>Seventh check: does it actually run? Six fly-brain browser demos loaded, a flyvis dossier and 3 new entries</h1>
+  <p class="dfl-lede">This check opened six fly-brain browser demos in a real (headless) browser and recorded what each downloads, whether it keeps computing and where the brain runs. It also read the flyvis paper and the authors' 50 pretrained models, re-checked every viral-claim verdict for freshness, re-read fly-cartpole after a redesign and added three entries.</p>
+
+  <ul class="dfl-meta" aria-label="Report details">
+    <li><strong>Run:</strong> <span>run:5bfca8cc-f3cb-4020-83e6-5c1225da9200</span></li>
+    <li><strong>Research time:</strong> <span>3 Oct 2026, 09:32–10:12 UTC, one session, no host interruptions</span></li>
+    <li><strong>Catalogue version:</strong> <span>2026-10-03-run7 (107 entries)</span></li>
+    <li><strong>Gallery:</strong> <span>52 videos</span></li>
+    <li><strong>Controls ledger:</strong> <span>2026-10-03-run7 (34 studies)</span></li>
+  </ul>
+
+  <section class="dfl-answer" aria-labelledby="short-heading">
+    <h2 id="short-heading">Short answer</h2>
+    <p><strong>Does it actually run?</strong> In a headless browser without a GPU, <strong>3 of 6 checked demos ran</strong> (Fly Worker 17.6 MB, FLY67 33.3 MB, flybrain.app 12.7 MB), two froze after loading, and one passed our 1.6 GB memory limit. No demo computed its brain on a server.</p>
+    <p><strong>Lead scan: no claim promoted.</strong> Two new videos passed 20,000 views with a fly-brain claim and neither qualified: "Scientists Teach A Fly How To Drive" is a compilation (63,935 views in 14 hours) that appears to show Flyhard, which already has a verdict; "I put a fruit fly's brain in me" (+22,162 views) is an animation with no mechanism claim. Gorilla Tag gained 101,121 views and still has no code.</p>
+    <ul>
+      <li><strong>fly-cartpole switched sides in the ledger:</strong> its redesigned MaleCNS flight-stabilisation circuit scores 499.9 steps against 165.9 with shuffled wiring (p = 0.0001), but its own linear map scores 499.6 and LQR 500. Ledger effect: no difference → helps; baseline not beaten; grade A unchanged.</li>
+      <li><strong>flyvis:</strong> every number now has a direct quote from the full text, our ablation wording was corrected, the 50 pretrained models' validation losses were read from the authors' files (median 5.300, range 5.137–5.678), and the pretrained models are MIT-licensed (added 29 Sep 2026). A CPU wiring test is no-go under this run's memory plan; a conditional go for run 9 with a null that needs no retraining.</li>
+      <li><strong>Verdict freshness:</strong> of the 20 verdict rows, 13 are current (code unchanged since graded), 7 have no code and 0 have changed code.</li>
+      <li><strong>Catalogue:</strong> 107 entries, 3 new: ChessFly (A, a negative result: real 1680 vs shuffled 1675 Elo), flypoker (C) and neurafly (C); 1 excluded. FlyDoom's link is set to "gone". 52 videos, all available. Ledger: 34 studies, 26 with a wiring null: helps 11, no difference 6, worse 2, mixed 6, not scored 1.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="changed-heading">
+    <h2 id="changed-heading">What changed</h2>
+    <ul class="dfl-figures">
+      <li><strong>104 → 107</strong><span>catalogue entries (3 new: 1 A, 2 C); 1 excluded</span></li>
+      <li><strong>6</strong><span>browser demos loaded by us; 3 ran</span></li>
+      <li><strong>33 → 34</strong><span>control studies; 26 with a wiring null</span></li>
+      <li><strong>1</strong><span>re-grade (fly-cartpole, grade A unchanged); FlyDoom link now "gone"</span></li>
+    </ul>
+    <!-- WIRING:units:START -->
+    <figure class="dfl-figure">
+<svg class="dfl-svg dfl-wide" viewBox="0 0 720 200" role="img" aria-labelledby="fx-wide-title fx-wide-desc"><title id="fx-wide-title">What 34 control studies found when the fly wiring was scrambled</title><desc id="fx-wide-desc">34 control studies, one square per study: Real wiring helps 11; No difference 6; Real wiring does worse 2; Mixed: depends on the null 6; Not yet scored 1; Baselines only, no wiring null 8. 26 studies compare the real wiring with a scrambled or rewired copy.</desc><text x="0" y="22" text-anchor="start" class="t-small">Real wiring helps</text><rect x="230" y="8" width="18" height="18" rx="3" class="fx-helps"><title>drosophila-brain-mlx: helps (Reflex circuits)</title></rect><rect x="253" y="8" width="18" height="18" rx="3" class="fx-helps"><title>Drosophila_brain_model (Shiu et al. 2024): helps (Reflex circuits)</title></rect><rect x="276" y="8" width="18" height="18" rx="3" class="fx-helps"><title>fly-brain: helps (Reflex circuits)</title></rect><rect x="299" y="8" width="18" height="18" rx="3" class="fx-helps"><title>flydoom: helps (Sensory models)</title></rect><rect x="322" y="8" width="18" height="18" rx="3" class="fx-helps"><title>Fly OCR: helps (Sensory models)</title></rect><rect x="345" y="8" width="18" height="18" rx="3" class="fx-helps"><title>Are fruit flies zero-shot adapters?: helps (Steering a body)</title></rect><rect x="368" y="8" width="18" height="18" rx="3" class="fx-helps"><title>FLY-lab: What a fly connectome adds to controlling a body: helps (Steering a body)</title></rect><rect x="391" y="8" width="18" height="18" rx="3" class="fx-helps"><title>Is the fly brain actually playing DOOM? (control experiments): helps (Playing games)</title></rect><rect x="414" y="8" width="18" height="18" rx="3" class="fx-helps"><title>Brain Runners: helps (Playing games)</title></rect><rect x="437" y="8" width="18" height="18" rx="3" class="fx-helps"><title>fly-cartpole: helps (Machine-learning benchmarks)</title></rect><rect x="460" y="8" width="18" height="18" rx="3" class="fx-helps"><title>Wired Different (ConnectomeLens): helps (Graph analysis, no simulation)</title></rect><text x="489" y="23" text-anchor="start" class="t-head">11</text><text x="0" y="52" text-anchor="start" class="t-small">No difference</text><rect x="230" y="38" width="18" height="18" rx="3" class="fx-nodiff"><title>Build your own, Add a body: FlyWire brain drives FlyGym walking (our run): no difference (Steering a body)</title></rect><rect x="253" y="38" width="18" height="18" rx="3" class="fx-nodiff"><title>making-fly-play-chess: no difference (Playing games)</title></rect><rect x="276" y="38" width="18" height="18" rx="3" class="fx-nodiff"><title>ChessFly: no difference (Playing games)</title></rect><rect x="299" y="38" width="18" height="18" rx="3" class="fx-nodiff"><title>doomfly-rl: no difference (Playing games)</title></rect><rect x="322" y="38" width="18" height="18" rx="3" class="fx-nodiff"><title>Does the larval connectome beat its own shuffles? (connectome-null-models): no difference (Machine-learning benchmarks)</title></rect><rect x="345" y="38" width="18" height="18" rx="3" class="fx-nodiff"><title>NeuroWeave: no difference (Machine-learning benchmarks)</title></rect><text x="374" y="53" text-anchor="start" class="t-head">6</text><text x="0" y="82" text-anchor="start" class="t-small">Real wiring does worse</text><rect x="230" y="68" width="18" height="18" rx="3" class="fx-worse"><title>The Fly's Hash Function: worse (Machine-learning benchmarks)</title></rect><rect x="253" y="68" width="18" height="18" rx="3" class="fx-worse"><title>flybrain-reservoir: worse (Reservoir computing)</title></rect><text x="282" y="83" text-anchor="start" class="t-head">2</text><text x="0" y="112" text-anchor="start" class="t-small">Mixed: depends on the null</text><rect x="230" y="98" width="18" height="18" rx="3" class="fx-mixed"><title>Build your own: sugar to MN9 against four scrambled-wiring nulls (our run): mixed (Reflex circuits)</title></rect><rect x="253" y="98" width="18" height="18" rx="3" class="fx-mixed"><title>Fly.exe (MaleCNS Virtual Fly): mixed (Steering a body)</title></rect><rect x="276" y="98" width="18" height="18" rx="3" class="fx-mixed"><title>Fly Self Driving: mixed (Playing games)</title></rect><rect x="299" y="98" width="18" height="18" rx="3" class="fx-mixed"><title>fly-plays-games (Pokémon Red chapter; formerly fly-plays-pokemon): mixed (Playing games)</title></rect><rect x="322" y="98" width="18" height="18" rx="3" class="fx-mixed"><title>flybench: mixed (Machine-learning benchmarks)</title></rect><rect x="345" y="98" width="18" height="18" rx="3" class="fx-mixed"><title>Null-model treatment of the sensory-motor boundary changes an evolutionary connectome comparison: mixed (Evolved controllers)</title></rect><text x="374" y="113" text-anchor="start" class="t-head">6</text><text x="0" y="142" text-anchor="start" class="t-small">Not yet scored</text><rect x="230" y="128" width="18" height="18" rx="3" class="fx-none fx-open"><title>BioReservoir: not yet scored (Forecasting)</title></rect><text x="259" y="143" text-anchor="start" class="t-head">1</text><line x1="0" y1="154" x2="720" y2="154" class="rule"></line><text x="0" y="180" text-anchor="start" class="t-small">Baselines only, no wiring null</text><rect x="230" y="166" width="18" height="18" rx="3" class="fx-none fx-open"><title>flyvis: no wiring null (Sensory models)</title></rect><rect x="253" y="166" width="18" height="18" rx="3" class="fx-none fx-open"><title>Flyhard (The Driving Fly): no wiring null (Steering a body)</title></rect><rect x="276" y="166" width="18" height="18" rx="3" class="fx-none fx-open"><title>NeuroCraft Fly: no wiring null (Steering a body)</title></rect><rect x="299" y="166" width="18" height="18" rx="3" class="fx-none fx-open"><title>DOOMFLY: no wiring null (Playing games)</title></rect><rect x="322" y="166" width="18" height="18" rx="3" class="fx-none fx-open"><title>Fly Dino (flyjump): no wiring null (Playing games)</title></rect><rect x="345" y="166" width="18" height="18" rx="3" class="fx-none fx-open"><title>Fly Worker: no wiring null (Playing games)</title></rect><rect x="368" y="166" width="18" height="18" rx="3" class="fx-none fx-open"><title>Haltere: no wiring null (Playing games)</title></rect><rect x="391" y="166" width="18" height="18" rx="3" class="fx-none fx-open"><title>FLM - Fly Language Model: no wiring null (Language models)</title></rect><text x="420" y="181" text-anchor="start" class="t-head">8</text><path d="M512 10 H520 V146 H512" class="bracket"></path><text x="530" y="81" text-anchor="start" class="t-muted">26 with a wiring null</text></svg>
+<svg class="dfl-svg dfl-tall" viewBox="0 0 300 352" role="img" aria-labelledby="fx-tall-title"><title id="fx-tall-title">34 control studies, one square per study: Real wiring helps 11; No difference 6; Real wiring does worse 2; Mixed: depends on the null 6; Not yet scored 1; Baselines only, no wiring null 8. 26 studies compare the real wiring with a scrambled or rewired copy.</title><text x="0" y="16" text-anchor="start" class="t-small">Helps: 11</text><rect x="0" y="24" width="20" height="20" rx="3" class="fx-helps"></rect><rect x="26" y="24" width="20" height="20" rx="3" class="fx-helps"></rect><rect x="52" y="24" width="20" height="20" rx="3" class="fx-helps"></rect><rect x="78" y="24" width="20" height="20" rx="3" class="fx-helps"></rect><rect x="104" y="24" width="20" height="20" rx="3" class="fx-helps"></rect><rect x="130" y="24" width="20" height="20" rx="3" class="fx-helps"></rect><rect x="156" y="24" width="20" height="20" rx="3" class="fx-helps"></rect><rect x="182" y="24" width="20" height="20" rx="3" class="fx-helps"></rect><rect x="208" y="24" width="20" height="20" rx="3" class="fx-helps"></rect><rect x="234" y="24" width="20" height="20" rx="3" class="fx-helps"></rect><rect x="0" y="50" width="20" height="20" rx="3" class="fx-helps"></rect><text x="0" y="94" text-anchor="start" class="t-small">No difference: 6</text><rect x="0" y="102" width="20" height="20" rx="3" class="fx-nodiff"></rect><rect x="26" y="102" width="20" height="20" rx="3" class="fx-nodiff"></rect><rect x="52" y="102" width="20" height="20" rx="3" class="fx-nodiff"></rect><rect x="78" y="102" width="20" height="20" rx="3" class="fx-nodiff"></rect><rect x="104" y="102" width="20" height="20" rx="3" class="fx-nodiff"></rect><rect x="130" y="102" width="20" height="20" rx="3" class="fx-nodiff"></rect><text x="0" y="146" text-anchor="start" class="t-small">Worse: 2</text><rect x="0" y="154" width="20" height="20" rx="3" class="fx-worse"></rect><rect x="26" y="154" width="20" height="20" rx="3" class="fx-worse"></rect><text x="0" y="198" text-anchor="start" class="t-small">Mixed: 6</text><rect x="0" y="206" width="20" height="20" rx="3" class="fx-mixed"></rect><rect x="26" y="206" width="20" height="20" rx="3" class="fx-mixed"></rect><rect x="52" y="206" width="20" height="20" rx="3" class="fx-mixed"></rect><rect x="78" y="206" width="20" height="20" rx="3" class="fx-mixed"></rect><rect x="104" y="206" width="20" height="20" rx="3" class="fx-mixed"></rect><rect x="130" y="206" width="20" height="20" rx="3" class="fx-mixed"></rect><text x="0" y="250" text-anchor="start" class="t-small">Not yet scored: 1</text><rect x="0" y="258" width="20" height="20" rx="3" class="fx-none fx-open"></rect><line x1="0" y1="294" x2="300" y2="294" class="rule"></line><text x="0" y="308" text-anchor="start" class="t-small">No wiring null: 8</text><rect x="0" y="316" width="20" height="20" rx="3" class="fx-none fx-open"></rect><rect x="26" y="316" width="20" height="20" rx="3" class="fx-none fx-open"></rect><rect x="52" y="316" width="20" height="20" rx="3" class="fx-none fx-open"></rect><rect x="78" y="316" width="20" height="20" rx="3" class="fx-none fx-open"></rect><rect x="104" y="316" width="20" height="20" rx="3" class="fx-none fx-open"></rect><rect x="130" y="316" width="20" height="20" rx="3" class="fx-none fx-open"></rect><rect x="156" y="316" width="20" height="20" rx="3" class="fx-none fx-open"></rect><rect x="182" y="316" width="20" height="20" rx="3" class="fx-none fx-open"></rect></svg>
+      <figcaption>One square per study; hover a square for its name. 26 of the 34 studies compare the real wiring with a scrambled or rewired copy (a "wiring null"); the other 8 test only against a no-brain baseline or an ablation. Labels follow fixed rules applied to the authors' numbers.</figcaption>
+    </figure>
+    <!-- WIRING:units:END -->
+  </section>
+
+  <section aria-labelledby="run-heading">
+    <h2 id="run-heading">Does it actually run?</h2>
+    <p>"Page responds" only means a link answered. This time we loaded six fly-brain browser demos in headless Chromium 154 (puppeteer-core, 1280 × 800) on our Linux server with 2 CPUs, a 3 GiB memory limit and no GPU. For each demo we took the one action its README describes, watched for 60–90 s with a screenshot every 5 s, counted every byte the page, its workers and its service worker downloaded, and noted where the brain computation ran. Only one browser ran at a time, and each demo got at most 2 loads.</p>
+    <h3 id="protocol-heading">Written down first</h3>
+    <p>The procedure was timestamped at <strong>09:38:51 UTC</strong>, before any demo load (the only earlier loads were smoke tests on example.com, a blank page and a local test worker). It holds the plan unchanged, the one action per demo, and 12 completions that fix details the plan left open: the time origin, what counts as first activity and as a connectome-sized file, the list of analytics calls, how bytes are counted and the "matches catalogue" rule. The planner did not pre-register those completions; they are listed with the deviations.</p>
+    <!-- BROWSER:chart:START -->
+    <figure class="dfl-figure dfl-bcfig">
+<svg class="dfl-svg dfl-wide" viewBox="0 0 760 424" role="img" aria-labelledby="brrep-wide-title brrep-wide-desc"><title id="brrep-wide-title">What your browser downloads to run a fly brain</title><desc id="brrep-wide-desc">What your browser downloads to run a fly brain: megabytes transferred in the first 60–90 s by six fly-brain browser demos in our check of 3 Oct 2026 (headless Chromium 154, Linux, no GPU). FlyLeno (grade B): 33.95 MB, of which brain data 31.36 MB; Loaded, then froze in our no-GPU browser; brain ran in your browser tab (Web Worker). fly-brain (Lulzx) (grade A): 33.93 MB, of which brain data 14.63 MB; Stopped at our 1.6 GB memory limit; brain ran unclear. FLY67 (grade B): 33.28 MB, of which brain data 31.24 MB; Ran; brain ran in your browser tab (Web Worker). Fly Worker (grade A): 17.55 MB, of which brain data 7.55 MB; Ran; brain ran in your browser tab (Web Worker). FlyBrain (flybrain.app) (grade C): 12.72 MB, of which brain data 12.45 MB; Ran; brain ran unclear. Help the Fly Escape (grade B): 2.57 MB, of which brain data none (its 9.9 MB brain graph never arrived); Loaded, then froze in our no-GPU browser; brain ran unclear. 3 of 6 ran. No demo computed on a server. Not a play test.</desc><line x1="214" y1="48" x2="214" y2="370" class="grid-line"></line><text x="214" y="386" text-anchor="middle" class="t-muted">0 MB</text><line x1="305.7" y1="48" x2="305.7" y2="370" class="grid-line"></line><text x="305.7" y="386" text-anchor="middle" class="t-muted">10 MB</text><line x1="397.3" y1="48" x2="397.3" y2="370" class="grid-line"></line><text x="397.3" y="386" text-anchor="middle" class="t-muted">20 MB</text><line x1="489" y1="48" x2="489" y2="370" class="grid-line"></line><text x="489" y="386" text-anchor="middle" class="t-muted">30 MB</text><line x1="214" y1="370" x2="544" y2="370" class="axis"></line><text x="0" y="14" text-anchor="start" class="t-muted">Demo, grade and where the brain ran</text><text x="214" y="14" text-anchor="start" class="t-muted">Status in our browser · megabytes downloaded</text><g><text x="0" y="46" text-anchor="start" class="t-lab">FlyLeno</text><text x="0" y="64" text-anchor="start" class="t-muted">Grade B · brain in a Web Worker</text><circle cx="219" cy="42" r="5.5" class="bc-froze-ring"></circle><line x1="217.2" y1="39.4" x2="217.2" y2="44.6" class="bc-pause"></line><line x1="220.8" y1="39.4" x2="220.8" y2="44.6" class="bc-pause"></line><text x="230" y="46" text-anchor="start" class="t-small">Loaded, then froze in our no-GPU browser</text><rect x="214" y="53" width="287.5" height="15" rx="2" class="bc-froze"><title>FlyLeno: brain data 31.36 MB (connectome.bin.gz)</title></rect><rect x="502.5" y="53" width="22.7" height="15" rx="2" class="bc-froze bc-light"><title>FlyLeno: other files 2.59 MB (code, 3-D assets)</title></rect><text x="533.2" y="65" text-anchor="start" class="t-head">33.95 MB</text></g><g><text x="0" y="104" text-anchor="start" class="t-lab">fly-brain (Lulzx)</text><text x="0" y="122" text-anchor="start" class="t-muted">Grade A · brain location unclear</text><rect x="214" y="95" width="10" height="10" rx="2" class="bc-memory"></rect><text x="230" y="104" text-anchor="start" class="t-small">Stopped at our 1.6 GB memory limit</text><rect x="214" y="111" width="134.1" height="15" rx="2" class="bc-memory"><title>fly-brain (Lulzx): brain data 14.63 MB (graph.flyg)</title></rect><rect x="349.1" y="111" width="175.9" height="15" rx="2" class="bc-memory bc-light"><title>fly-brain (Lulzx): other files 19.30 MB (code, 3-D assets)</title></rect><text x="533" y="123" text-anchor="start" class="t-head">33.93 MB</text></g><g><text x="0" y="162" text-anchor="start" class="t-lab">FLY67</text><text x="0" y="180" text-anchor="start" class="t-muted">Grade B · brain in a Web Worker</text><circle cx="219" cy="158" r="5.5" class="bc-runs"></circle><path d="M216.4 158 l1.9 2 l3.4 -3.8" class="bc-tick"></path><text x="230" y="162" text-anchor="start" class="t-small">Ran</text><rect x="214" y="169" width="286.4" height="15" rx="2" class="bc-runs"><title>FLY67: brain data 31.24 MB (connectome.bin.gz.part00 + connectome.bin.gz.part01)</title></rect><rect x="501.4" y="169" width="17.7" height="15" rx="2" class="bc-runs bc-light"><title>FLY67: other files 2.04 MB (code, 3-D assets)</title></rect><text x="527.1" y="181" text-anchor="start" class="t-head">33.28 MB</text></g><g><text x="0" y="220" text-anchor="start" class="t-lab">Fly Worker</text><text x="0" y="238" text-anchor="start" class="t-muted">Grade A · brain in a Web Worker</text><circle cx="219" cy="216" r="5.5" class="bc-runs"></circle><path d="M216.4 216 l1.9 2 l3.4 -3.8" class="bc-tick"></path><text x="230" y="220" text-anchor="start" class="t-small">Ran</text><rect x="214" y="227" width="69.2" height="15" rx="2" class="bc-runs"><title>Fly Worker: brain data 7.55 MB (brain.bin)</title></rect><rect x="284.2" y="227" width="90.7" height="15" rx="2" class="bc-runs bc-light"><title>Fly Worker: other files 10.00 MB (code, 3-D assets, GTA1 game data)</title></rect><text x="382.9" y="239" text-anchor="start" class="t-head">17.55 MB</text></g><g><text x="0" y="278" text-anchor="start" class="t-lab">FlyBrain (flybrain.app)</text><text x="0" y="296" text-anchor="start" class="t-muted">Grade C · brain location unclear</text><circle cx="219" cy="274" r="5.5" class="bc-runs"></circle><path d="M216.4 274 l1.9 2 l3.4 -3.8" class="bc-tick"></path><text x="230" y="278" text-anchor="start" class="t-small">Ran</text><rect x="214" y="285" width="114.1" height="15" rx="2" class="bc-runs"><title>FlyBrain (flybrain.app): brain data 12.45 MB (connectome.bin.gz)</title></rect><rect x="329.1" y="285" width="1.5" height="15" rx="2" class="bc-runs bc-light"><title>FlyBrain (flybrain.app): other files 0.27 MB (code, 3-D assets)</title></rect><text x="338.6" y="297" text-anchor="start" class="t-head">12.72 MB</text></g><g><text x="0" y="336" text-anchor="start" class="t-lab">Help the Fly Escape</text><text x="0" y="354" text-anchor="start" class="t-muted">Grade B · brain location unclear</text><circle cx="219" cy="332" r="5.5" class="bc-froze-ring"></circle><line x1="217.2" y1="329.4" x2="217.2" y2="334.6" class="bc-pause"></line><line x1="220.8" y1="329.4" x2="220.8" y2="334.6" class="bc-pause"></line><text x="230" y="336" text-anchor="start" class="t-small">Loaded, then froze in our no-GPU browser</text><rect x="214" y="343" width="23.6" height="15" rx="2" class="bc-froze bc-light"><title>Help the Fly Escape: other files 2.57 MB (code, 3-D assets)</title></rect><rect x="239.6" y="343" width="90.8" height="15" rx="2" class="bc-ghost"><title>Help the Fly Escape: its 9.9 MB brain graph never arrived</title></rect><text x="338.4" y="355" text-anchor="start" class="t-small">2.57 MB · brain graph (9.9 MB) never arrived</text></g><rect x="0" y="404" width="14" height="12" rx="2" class="bc-runs"></rect><text x="20" y="414" text-anchor="start" class="t-small">brain data file</text><rect x="124" y="404" width="14" height="12" rx="2" class="bc-runs bc-light"></rect><text x="144" y="414" text-anchor="start" class="t-small">other files</text><rect x="226" y="404" width="14" height="12" rx="2" class="bc-ghost"></rect><text x="246" y="414" text-anchor="start" class="t-small">not downloaded</text><circle cx="370" cy="410" r="5.5" class="bc-runs"></circle><path d="M367.4 410 l1.9 2 l3.4 -3.8" class="bc-tick"></path><text x="381" y="414" text-anchor="start" class="t-small">ran</text><circle cx="420" cy="410" r="5.5" class="bc-froze-ring"></circle><line x1="418.2" y1="407.4" x2="418.2" y2="412.6" class="bc-pause"></line><line x1="421.8" y1="407.4" x2="421.8" y2="412.6" class="bc-pause"></line><text x="431" y="414" text-anchor="start" class="t-small">loaded, then froze</text><rect x="543" y="405" width="10" height="10" rx="2" class="bc-memory"></rect><text x="559" y="414" text-anchor="start" class="t-small">memory limit</text></svg>
+<svg class="dfl-svg dfl-tall" viewBox="0 0 300 586" role="img" aria-labelledby="brrep-tall-title"><title id="brrep-tall-title">What your browser downloads to run a fly brain: megabytes transferred in the first 60–90 s by six fly-brain browser demos in our check of 3 Oct 2026 (headless Chromium 154, Linux, no GPU). FlyLeno (grade B): 33.95 MB, of which brain data 31.36 MB; Loaded, then froze in our no-GPU browser; brain ran in your browser tab (Web Worker). fly-brain (Lulzx) (grade A): 33.93 MB, of which brain data 14.63 MB; Stopped at our 1.6 GB memory limit; brain ran unclear. FLY67 (grade B): 33.28 MB, of which brain data 31.24 MB; Ran; brain ran in your browser tab (Web Worker). Fly Worker (grade A): 17.55 MB, of which brain data 7.55 MB; Ran; brain ran in your browser tab (Web Worker). FlyBrain (flybrain.app) (grade C): 12.72 MB, of which brain data 12.45 MB; Ran; brain ran unclear. Help the Fly Escape (grade B): 2.57 MB, of which brain data none (its 9.9 MB brain graph never arrived); Loaded, then froze in our no-GPU browser; brain ran unclear. 3 of 6 ran. No demo computed on a server. Not a play test.</title><text x="0" y="18" text-anchor="start" class="t-muted">Megabytes downloaded</text><text x="0" y="50" text-anchor="start" class="t-lab">FlyLeno</text><circle cx="6" cy="64" r="5.5" class="bc-froze-ring"></circle><line x1="4.2" y1="61.4" x2="4.2" y2="66.6" class="bc-pause"></line><line x1="7.8" y1="61.4" x2="7.8" y2="66.6" class="bc-pause"></line><text x="17" y="68" text-anchor="start" class="t-small">Loaded, then froze</text><rect x="4" y="76" width="148.1" height="14" rx="2" class="bc-froze"></rect><rect x="153.1" y="76" width="11.2" height="14" rx="2" class="bc-froze bc-light"></rect><text x="170.3" y="88" text-anchor="start" class="t-small">34.0 MB</text><text x="0" y="108" text-anchor="start" class="t-muted">Brain: Web Worker</text><text x="0" y="130" text-anchor="start" class="t-lab">fly-brain (Lulzx)</text><rect x="1" y="139" width="10" height="10" rx="2" class="bc-memory"></rect><text x="17" y="148" text-anchor="start" class="t-small">Stopped: memory limit</text><rect x="4" y="156" width="69.1" height="14" rx="2" class="bc-memory"></rect><rect x="74.1" y="156" width="90.1" height="14" rx="2" class="bc-memory bc-light"></rect><text x="170.2" y="168" text-anchor="start" class="t-small">33.9 MB</text><text x="0" y="188" text-anchor="start" class="t-muted">Brain: unclear</text><text x="0" y="210" text-anchor="start" class="t-lab">FLY67</text><circle cx="6" cy="224" r="5.5" class="bc-runs"></circle><path d="M3.4 224 l1.9 2 l3.4 -3.8" class="bc-tick"></path><text x="17" y="228" text-anchor="start" class="t-small">Ran</text><rect x="4" y="236" width="147.5" height="14" rx="2" class="bc-runs"></rect><rect x="152.5" y="236" width="8.7" height="14" rx="2" class="bc-runs bc-light"></rect><text x="167.2" y="248" text-anchor="start" class="t-small">33.3 MB</text><text x="0" y="268" text-anchor="start" class="t-muted">Brain: Web Worker</text><text x="0" y="290" text-anchor="start" class="t-lab">Fly Worker</text><circle cx="6" cy="304" r="5.5" class="bc-runs"></circle><path d="M3.4 304 l1.9 2 l3.4 -3.8" class="bc-tick"></path><text x="17" y="308" text-anchor="start" class="t-small">Ran</text><rect x="4" y="316" width="35.7" height="14" rx="2" class="bc-runs"></rect><rect x="40.7" y="316" width="46.2" height="14" rx="2" class="bc-runs bc-light"></rect><text x="92.9" y="328" text-anchor="start" class="t-small">17.6 MB</text><text x="0" y="348" text-anchor="start" class="t-muted">Brain: Web Worker</text><text x="0" y="370" text-anchor="start" class="t-lab">flybrain.app</text><circle cx="6" cy="384" r="5.5" class="bc-runs"></circle><path d="M3.4 384 l1.9 2 l3.4 -3.8" class="bc-tick"></path><text x="17" y="388" text-anchor="start" class="t-small">Ran</text><rect x="4" y="396" width="58.8" height="14" rx="2" class="bc-runs"></rect><rect x="63.8" y="396" width="1.0" height="14" rx="2" class="bc-runs bc-light"></rect><text x="70.1" y="408" text-anchor="start" class="t-small">12.7 MB</text><text x="0" y="428" text-anchor="start" class="t-muted">Brain: unclear</text><text x="0" y="450" text-anchor="start" class="t-lab">Help the Fly Escape</text><circle cx="6" cy="464" r="5.5" class="bc-froze-ring"></circle><line x1="4.2" y1="461.4" x2="4.2" y2="466.6" class="bc-pause"></line><line x1="7.8" y1="461.4" x2="7.8" y2="466.6" class="bc-pause"></line><text x="17" y="468" text-anchor="start" class="t-small">Loaded, then froze</text><rect x="4" y="476" width="12.1" height="14" rx="2" class="bc-froze bc-light"></rect><rect x="18.1" y="476" width="46.8" height="14" rx="2" class="bc-ghost"></rect><text x="70.9" y="488" text-anchor="start" class="t-small">2.6 MB</text><text x="0" y="508" text-anchor="start" class="t-muted">Brain: unclear</text><rect x="0" y="526" width="14" height="12" rx="2" class="bc-runs"></rect><text x="20" y="536" text-anchor="start" class="t-small">brain data file</text><rect x="0" y="546" width="14" height="12" rx="2" class="bc-runs bc-light"></rect><text x="20" y="556" text-anchor="start" class="t-small">other files</text><rect x="0" y="566" width="14" height="12" rx="2" class="bc-ghost"></rect><text x="20" y="576" text-anchor="start" class="t-small">never arrived</text></svg>
+      <figcaption><strong>What your browser downloads to run a fly brain.</strong> One bar per demo: megabytes transferred in the first 60–90 s, counted over the page, its workers and its service worker. The solid part is the brain data file (the connectome or brain graph); the light part is everything else, such as code, 3-D models and, for Fly Worker, GTA1 game data. 3 of 6 demos ran: FLY67 33.28 MB, Fly Worker 17.55 MB, FlyBrain (flybrain.app) 12.72 MB. <strong>No demo computed on a server</strong>: where we could locate the brain, it ran in a Web Worker inside your browser tab. Our check of 3 Oct 2026, pre-registered before the first load; numbers in the <a href="../../ways-to-try/index.html#run-table-heading">results table</a>.</figcaption>
+    </figure>
+    <div class="dfl-callout dfl-bc-caveat">
+      <p><strong>Read this before sharing.</strong> Checked in headless Chromium 154 on a Linux server without a GPU, 3 Oct 2026. Shows whether the page loads, downloads its brain data and keeps computing; it is not a play test. Safari, Firefox, phones and GPU machines were not tested.</p>
+      <p>Every 3-D page fell back to software WebGL because our machine has no GPU. <strong>The two freezes most likely come from that, not from the demos</strong>; on a computer with a graphics card they may run normally. "Stopped at our 1.6 GB memory limit" means our test machine's limit was reached, not that the demo is faulty. A frozen or stopped page may also have downloaded less than it would on a GPU machine.</p>
+    </div>
+    <!-- BROWSER:chart:END -->
+    <!-- BROWSER:table:START -->
+    <div class="table-scroll is-wide dfl-bctable">
+      <table>
+        <caption>Our browser check of six fly-brain demos, 3 Oct 2026 (headless Chromium 154 on Linux, 2 CPUs, no GPU; one action per demo taken from its README; at most 2 loads per demo, one browser at a time). Downloads count the first 60–90 s. Errors: console errors / page errors. Memory: the browser's peak memory; our limit was 1.6 GB. Each row comes from one result file of our run, listed in the <a href="index.html#run-heading">report of 3 Oct 2026</a>.</caption>
+        <thead><tr><th scope="col">Demo and grade</th><th scope="col">In our browser</th><th scope="col">Where the brain ran</th><th scope="col">Downloaded</th><th scope="col">Largest file</th><th scope="col">First movement</th><th scope="col">Errors</th><th scope="col">Memory peak</th><th scope="col">Matches our catalogue?</th><th scope="col">What we saw</th></tr></thead>
+        <tbody>
+          <tr>
+            <th scope="row"><a href="../../projects/index.html#p-flyleno">FlyLeno</a> <span class="dfl-grade g-b">B</span><br><small><a href="https://flyleno.viosarcade.xyz/">Open the demo</a></small></th>
+            <td><span class="dfl-tag is-bc-froze">Loaded, then froze in our no-GPU browser</span><br><small>Our one action: Start without music (the page did not answer)</small></td>
+            <td>in your browser tab (Web Worker)</td>
+            <td><strong>33.95 MB</strong><br><small>brain data 31.36 MB</small></td>
+            <td><small>connectome.bin.gz 31.36 MB (worker)</small></td>
+            <td>10.4 s</td>
+            <td>0 / 0</td>
+            <td>1.04 GB</td>
+            <td><small>Unclear: the page did not run to the end (froze)</small></td>
+            <td><small>Its 31.4 MB connectome reached a Web Worker and the counters started; then the 3-D stage stopped answering after about 10 s.</small></td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="../../projects/index.html#p-fly-brain-lulzx">fly-brain (Lulzx)</a> <span class="dfl-grade g-a">A</span><br><small><a href="https://lulzx.com/fly-brain/arena.html">Open the demo</a></small></th>
+            <td><span class="dfl-tag is-bc-memory">Stopped at our 1.6 GB memory limit</span><br><small>Our one action: Play (clicked)</small></td>
+            <td>unclear</td>
+            <td><strong>33.93 MB</strong><br><small>brain data 14.63 MB</small></td>
+            <td><small>graph.flyg 14.63 MB (service worker)</small></td>
+            <td><small>not seen in screenshots</small></td>
+            <td>2 / 0</td>
+            <td>1.63 GB</td>
+            <td><small>Unclear: the page did not run to the end (memory stop)</small></td>
+            <td><small>Fetched its 14.6 MB MaleCNS graph and WebAssembly and started 4–5 workers, then passed our 1.6 GB browser memory limit on both loads (at 29 s and 44 s).</small></td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="../../projects/index.html#p-fly67">FLY67</a> <span class="dfl-grade g-b">B</span><br><small><a href="https://znatgost.github.io/fly67/">Open the demo</a></small></th>
+            <td><span class="dfl-tag is-bc-runs">Ran</span><br><small>Our one action: Feed it sugar (worked)</small></td>
+            <td>in your browser tab (Web Worker)</td>
+            <td><strong>33.28 MB</strong><br><small>brain data 31.24 MB</small></td>
+            <td><small>connectome.bin.gz.part00 15.74 MB (worker)</small></td>
+            <td>11.6 s</td>
+            <td>0 / 0</td>
+            <td>1.00 GB</td>
+            <td><small>No: our catalogue said about 100 MB (an estimate); corrected to 33.3 MB. The mechanism matches.</small></td>
+            <td><small>Two connectome parts (15.7 + 15.5 MB) load into a Web Worker; the fly moved and the sugar button worked. Our old &quot;~100 MB&quot; estimate was wrong.</small></td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="../../projects/index.html#p-fly-worker">Fly Worker</a> <span class="dfl-grade g-a">A</span><br><small><a href="https://hwkim3330.github.io/flyworker/">Open the demo</a></small></th>
+            <td><span class="dfl-tag is-bc-runs">Ran</span><br><small>Our one action: Hire a fly (worked)</small></td>
+            <td>in your browser tab (Web Worker)</td>
+            <td><strong>17.55 MB</strong><br><small>brain data 7.55 MB</small></td>
+            <td><small>carnage3D.data 8.18 MB</small></td>
+            <td><small>not seen in screenshots</small></td>
+            <td>0 / 0</td>
+            <td>1.09 GB</td>
+            <td><small>Yes (worker seen; 17.55 MB vs ~13 MB)</small></td>
+            <td><small>Its 7.6 MB brain file runs in a Web Worker and the on-page simulation numbers kept changing; 8.2 MB more is GTA1 game data.</small></td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="../../projects/index.html#p-flybrain-app-snedea">FlyBrain (flybrain.app)</a> <span class="dfl-grade g-c">C</span><br><small>reserve, replaced fly-brain (Lulzx)</small><br><small><a href="https://flybrain.app">Open the demo</a></small></th>
+            <td><span class="dfl-tag is-bc-runs">Ran</span><br><small>No documented action</small></td>
+            <td>unclear<br><small>also tries a chat WebSocket and chat server (both failed here)</small></td>
+            <td><strong>12.72 MB</strong><br><small>brain data 12.45 MB</small></td>
+            <td><small>connectome.bin.gz 12.45 MB</small></td>
+            <td>10.9 s</td>
+            <td>2 / 0</td>
+            <td>0.87 GB</td>
+            <td><small>Yes (worker seen; 12.72 MB vs ~12.4 MB)</small></td>
+            <td><small>Its 12.5 MB connectome loads and a Web Worker runs; the page also tries a chat WebSocket and a chat server (both failed here), so where the brain runs is unclear by our fixed rule.</small></td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="../../projects/index.html#p-help-the-fly-escape">Help the Fly Escape</a> <span class="dfl-grade g-b">B</span><br><small><a href="https://fly-escape.vercel.app/">Open the demo</a></small></th>
+            <td><span class="dfl-tag is-bc-froze">Loaded, then froze in our no-GPU browser</span><br><small>Our one action: Release the flies (the page did not answer)</small></td>
+            <td>unclear</td>
+            <td><strong>2.57 MB</strong><br><small>its 9.9 MB brain graph never arrived</small></td>
+            <td><small>index-DzgoIUHH.js 1.56 MB</small></td>
+            <td><small>not seen in screenshots</small></td>
+            <td>0 / 0</td>
+            <td>0.86 GB</td>
+            <td><small>Unclear: the page did not run to the end (froze)</small></td>
+            <td><small>Loaded its WebAssembly (1 MB) and a worker, but stopped answering from the first screenshot; its 9.9 MB brain graph never arrived in 84 s.</small></td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="../../projects/index.html#p-webgpu-fly">webgpu-fly</a> <span class="dfl-grade g-c">C</span><br><small>extra 20 s record, not the full check</small></th>
+            <td><span class="dfl-tag is-bc-froze">Did not start: needs WebGPU</span></td>
+            <td>not reached</td>
+            <td><strong>0.29 MB</strong><br><small>fonts only</small></td>
+            <td><small>fonts</small></td>
+            <td><small>none in 20 s</small></td>
+            <td>0 / 0</td>
+            <td>0.72 GB</td>
+            <td><small>Yes: the catalogue says it needs a GPU with WebGPU</small></td>
+            <td><small>Chrome logged "No available adapters.", its WebGPU message: our browser has no GPU adapter. Our script's fixed rule called this "loads, no activity".</small></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- BROWSER:table:END -->
+    <h3 id="where-heading">Where the brain runs, compared with the catalogue</h3>
+    <ul>
+      <li><strong>No demo computed on a server.</strong> Where the brain could be located, it ran in a Web Worker in the tab, as our catalogue says: FlyLeno, Fly Worker and FLY67.</li>
+      <li><strong>flybrain.app</strong> ran its connectome and a worker, but also opens a chat WebSocket (<code>wss://caretaker.flybrain.app/</code>) and calls a chat server on port 7600; both failed in our browser. By our fixed rule, where its brain runs is therefore "unclear"; its catalogue notes now say so, for a re-read in run 8.</li>
+      <li>The one "no" (FLY67) is about our own download estimate, not the mechanism: we had written about 100 MB; it downloaded 33.3 MB. Fixed in the entry.</li>
+      <li>fly-brain (Lulzx) warned that the page was not cross-origin isolated, so SharedArrayBuffer was unavailable in our browser.</li>
+      <li>The pre-registered action worked on Fly Worker ("Hire a fly") and FLY67 (the sugar scenario). FlyLeno and Help the Fly Escape had frozen when their action came due.</li>
+      <li><strong>webgpu-fly</strong> (an extra 20 s record, not the full check): 0.29 MB, no start; Chrome logged "No available adapters.", its WebGPU message. Our hook did not see the adapter request, so the script's fixed rule said "loads, no activity" rather than "needs a GPU". Consistent with the catalogue (GPU required).</li>
+    </ul>
+    <h3 id="deviations-heading">Deviations, in plain words</h3>
+    <ul>
+      <li><strong>A tool bug on the first load (D1).</strong> FlyLeno's main thread was saturated by software WebGL, so screenshots and the end-of-run probe timed out. The first script read the missing probe as a blank page, called it a failure and did not enforce the 90 s cap. That false result made the queue start the reserve demo, which we stopped after about 30 s. Fixes: "blank" now needs a probe that answered; a new status, page-unresponsive (probe failed and at least 3 screenshots in a row timed out); a hard deadline; short timeouts on every browser call. FlyLeno was loaded once more (its second and last allowed load); the bad record is kept.</li>
+      <li><strong>Two tool gaps found after the queue (D2), no status changed:</strong> Cloudflare's analytics beacon was missing from the analytics list, and a failed text read was counted as "text changed".</li>
+      <li><strong>Retry order (D3).</strong> fly-brain (Lulzx) stopped on memory, and the reserve ran before its one allowed retry. The retry also stopped on memory, so the reserve (flybrain.app) stands.</li>
+    </ul>
+    <h3 id="memory-heading">Memory</h3>
+    <p>The highest machine reading was 1.73 GiB (Lulzx, second load); our 2.6 GiB guard never fired. The 1.6 GB browser-memory guard fired twice, both on Lulzx. Idle use before the queue was about 0.6 GiB.</p>
+    <h3 id="browser-limits-heading">Limits of this check</h3>
+    <ul>
+      <li>One headless Chromium without a GPU. "Froze" and "stopped at our memory limit" describe this machine only. Every 3-D page fell back to software WebGL; both freezes are most likely caused by that rather than by the demos. GPU machines, Safari, Firefox and phones were not tested.</li>
+      <li>Activity detection is coarse: screenshots every 5 s, and Fly Worker's 3-D frame never changed in screenshots (its on-page simulation text did).</li>
+      <li>Traffic inside cross-origin frames (FlyLeno's YouTube embed) is not counted, and bytes cover only the first 60–90 s.</li>
+      <li>A GPU or software-graphics variant would change the environment, so a re-run under it needs its own written plan. Next candidates (run 9 or later): Vial, Doodle Fly, flybrain.app again, Infinite Sugar and possibly Fly Dino; re-check these six after 14 days.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="flyvis-heading">
+    <h2 id="flyvis-heading">flyvis: quotes, a correction and the pretrained models</h2>
+    <p>The new <a href="../../projects/flyvis/index.html">flyvis project page</a> has the full detail. In short:</p>
+    <ul>
+      <li><strong>Quotes upgraded.</strong> Every number in our record now has a direct quote with its section, from the Europe PMC full text (PMC11525180): 64 cell types; 45,669 neurons, 1,513,231 connections and 721 columns; 734 free parameters; contrast preference right for all 32 characterised cell types (ensemble median) and 30 of 32 (best single model); r = 0.60, P = 2.6 × 10⁻⁶; 26 studies; the random-parameter and ablation statements.</li>
+      <li><strong>Correction at source.</strong> Our record said "ablations show synapse counts are needed for direction tuning". The paper says direction <em>selectivity</em> can be predicted without synapse counts; only the <em>preferred direction</em> of T4/T5 needs single-neuron connectome detail.</li>
+      <li><strong>Supplement and peer-review file (text search only).</strong> Neither contains an ablation number, so the ledger arms stay figure-only and nothing was digitised. A referee asked for exactly the missing control: "what is missing is a demonstration that the specific connectivity of the fly visual system is what enables optimal performance, rather than a generic neural network with the same level of sparseness". The text extraction was crude (no PDF tool), so the search of the supplement is incomplete.</li>
+      <li><strong>Pretrained models.</strong> The authors' zip (3,417,042 bytes; its sha256 equals the checksum in their download script) holds 50 models with one stored validation loss each: min 5.137, Q1 5.279, median 5.300, Q3 5.333, max 5.678. Training task: optic flow on Sintel movies, <code>l2norm</code> loss, 250,000 iterations. These measure the training task, not a match to biology. The files were read with numpy and h5py unpacked into scratch and then deleted.</li>
+      <li><strong>Licences.</strong> Code MIT; pretrained models MIT (<code>license.txt</code> in the same folder, created 29 Sep 2026); connectome FlyEM FIB-25/FIB-19 compiled by the authors, no separate data licence stated.</li>
+      <li><strong>Pre-check for a CPU wiring test: no-go now, conditional go for run 9.</strong> flyvis's direct dependencies are 654 MB of wheels with PyPI's PyTorch 2.14.1 (554.6 MB), about 290 MB with the CPU-only PyTorch (196.3 MB); unpacked an estimated 0.8–1.2 GB, above our 0.5 GB scratch cap. Flash stimuli are synthetic and the connectome path is a setting. Because trained synapse strengths are stored per pair of cell types, a null without retraining must keep the same connected type pairs (for example shuffling column offsets within each pair); that answers a weaker question than a retrained null.</li>
+      <li><strong>Ledger row.</strong> Metric and arms unchanged; no rule changed. The quality note now says the nulls are figure-only, a referee asked for one, and there is no shuffled-wiring null.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="fresh-heading">
+    <h2 id="fresh-heading">Verdict freshness and row updates</h2>
+    <ul>
+      <li><strong>13 current, 7 no code, 0 code changed</strong> of the 20 verdict rows. All 13 GitHub-backed rows have the same latest commit as on 2 Oct; the Terraria fly's GitLab HEAD is still the graded commit 9052966d. The comparison is by date, so a same-day commit after grading would be missed; the commit comparison with 2 Oct covers that gap for this run. <a href="../../is-it-real/index.html#verdicts-heading">Last checked column</a></li>
+      <li><strong>View counts</strong> (YouTube search pages, 3 Oct): Gorilla Tag 724,625; SWOT/FlyBridge 174,130; Half-Life 148,442; Roblox fight 144,054; FlyLeno 46,672; Terraria 32,632.</li>
+      <li><strong>Flyhard:</strong> a compilation by Daily Dose of Science says "a simulation of a fly's brain is driving a car". Its thumbnail shows a fly at a steering wheel in a 3-D town with a fountain roundabout, which looks like Flyhard in CARLA; the match rests on the thumbnail only, so the row says it "appears to show" Flyhard. Grade B unchanged.</li>
+      <li><strong>FlyLeno:</strong> our browser check fetched its 31.4 MB connectome into a Web Worker, then the page froze. This fits the row (the whole brain really runs in a worker); not a play test.</li>
+      <li><strong>A data bug fixed at source.</strong> The 71 first-release records have no grade date of their own, and earlier builds stamped them with the run date (30 Sep and 1 Oct). Since run 6 they carry the true date, 28 Sep 2026, and the build script now warns when another date is passed.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="leads-heading">
+    <h2 id="leads-heading">Lead scan</h2>
+    <p>Window: since 2 Oct 2026, 09:35 UTC; decision written at 09:43 UTC. Hacker News (6 story and 6 comment queries: no fly-brain story), Google News (1 in-window item, coverage of the MaleCNS release, no new claim), Reddit (HTTP 403, unchanged), dataset pages (no new release), 18 GitHub searches (199 hits, none with 20 or more stars), 21 YouTube date-sorted, 14 views-sorted and 8 re-check queries, and 4 searches for the driving clip's original (not found). The four new search terms ("fly brain browser", "fly brain online", "flyvis", "fruit fly vision model") found no new browser-demo or flyvis video this week.</p>
+    <p><strong>A gap for next time:</strong> "I Taught a Fly How to Play Minecraft (Yes, Really)" (Fiouze and Aywen, 571,248 views, about 3 weeks old) was seen for the first time; it is outside our 14-day window and which Minecraft project it uses is unknown. Run 8 should map it.</p>
+  </section>
+
+  <section aria-labelledby="regrade-heading">
+    <h2 id="regrade-heading">Re-grade: fly-cartpole</h2>
+    <p>HEAD moved from 854fb1d to a8c6257. The README now leads with a MaleCNS flight-stabilisation circuit of 5,459 linear rate units; only the sensor gains are tuned. From the author's <code>results/linear-retuned/summary.md</code>:</p>
+    <div class="table-scroll">
+      <table>
+        <caption>fly-cartpole at commit a8c6257: mean episode length over the final 100 episodes, 20 fresh seeds (the author's numbers; not recomputed by us).</caption>
+        <thead><tr><th scope="col">Condition</th><th scope="col">Score (steps)</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Self-tuned circuit (real wiring)</th><td>499.9 ± 0.3</td></tr>
+          <tr><th scope="row">Degree-preserving shuffled wiring (one shuffle per seed)</th><td>165.9 ± 182.8 (p = 0.0001)</td></tr>
+          <tr><th scope="row">Untuned circuit</th><td>275.6</td></tr>
+          <tr><th scope="row">The circuit's own linear map, tuned the same way</th><td>499.6 (p = 0.18)</td></tr>
+          <tr><th scope="row">LQR, designed from the cart-pole equations</th><td>500</td></tr>
+          <tr><th scope="row">Random pushes</th><td>22.1</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Grade A stays. The ledger study was rebuilt on this experiment: wiring effect <strong>no difference → helps</strong> (retention 0.30), <strong>baseline not beaten</strong>, fair null, strong method. The real arm sits at the 500-step ceiling. The earlier mushroom-body result (392.5 vs 390.3, p = 0.48) stays in the repository. fly-naf was re-read (tablet vision; still a pixel-difference input with no control; B unchanged), and flyvis's wording was corrected (grade unchanged).</p>
+  </section>
+
+  <section aria-labelledby="new-heading">
+    <h2 id="new-heading">New entries and exclusions</h2>
+    <ul>
+      <li><span class="dfl-grade g-a">A</span> <a href="../../projects/index.html#p-chessfly">ChessFly</a> (znatgost/chessfly, 52276aa, MIT): FlyWire v783 mushroom-body input layer (285 projection neurons, 5,177 Kenyon cells, 21,509 connections of 5+ synapses) learns chess by self-play; after 10,000 games real wiring 1680, shuffled claws 1675, random design 1850 Elo; untrained 660. New ledger study: no difference (retention 0.995), partly fair, weak (one fly and one shuffle per arm).</li>
+      <li><span class="dfl-grade g-c">C</span> <a href="../../projects/index.html#p-flypoker">flypoker</a> (0909-BoB/flypoker, e1ed8f6, no licence file): a 6,194-neuron MaleCNS subgraph; hand equity is computed by Monte Carlo outside the brain and fed in at gain 8; a linear decoder cloned from human hands is the only learned part, with a 12% floor on every action.</li>
+      <li><span class="dfl-grade g-c">C</span> <a href="../../projects/index.html#p-neurafly">neurafly</a> (emiliano-go/neurafly, ab0e853, MIT): FlyWire v783, 2,052,622 edges; audio bands are assigned to neurons by their position in a 2-D layout, and the picture reads the same neurons the audio is injected into.</li>
+      <li><strong>Excluded:</strong> a FlyLeno fan landing page whose own code is a scripted point-cloud animation and an 834-neuron toy network. A known DesktopFly name copy stays on the never-link list. About 30 low-star repositories from the window are deferred.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="tracking-heading">
+    <h2 id="tracking-heading">Tracking</h2>
+    <ul>
+      <li><strong>Commits:</strong> 91 repositories; 4 changed (fafbseg, acamilo-flybrain, fly-cartpole and the uncatalogued fly.ai kernel); 1 gone (FlyDoom).</li>
+      <li><strong>Links:</strong> 107 entries; 103 ok, 2 redirect, 1 blocked (paper sites, as before), 1 gone (FlyDoom: a third HTTP 404; the record is kept). The YouTube links rate-limited yesterday answered today.</li>
+      <li><strong>Videos:</strong> 52 of 52 available; none new, none removed; thumbnails unchanged.</li>
+      <li><strong>fly-walking-wiring:</strong> unchanged since c84104a (30 Sep 2026); no results public yet.</li>
+      <li><strong>PyPI (Python 3.12, nothing installed):</strong> flyvis 1.2.0, flygym 2.1.0, brian2 2.10.1, torch 2.14.1, numpy 2.5.3, mujoco 3.14.0, h5py 3.16.0; no release since 2 Oct.</li>
+      <li><strong>Run 8 pre-check:</strong> FLY67's looming circuit (LC4/LPLC2 to the giant fibre and DNa02 turning) was read in code; the neuron IDs per eye are chosen at run time from published annotations, so run 8 lists them first, then checks the turn direction against the literature and runs a wiring null.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="method-heading">
+    <h2 id="method-heading">Method and limits</h2>
+    <ul>
+      <li>One runner session of about 41 minutes; no cut fired. Fill items not reached: a star refresh, the gain-check gap filling and more admissions.</li>
+      <li>GitHub API: 3 core calls (metadata for the new entries) and 18 paced searches; tracking used plain git and raw files.</li>
+      <li>Memory: machine peak 1.73 GiB; scratch peak about 0.1 GB, deleted at the end. No third-party data was kept: screenshots were hashed in memory, and READMEs, HTML, PDFs, the model zip and the thumbnail were deleted.</li>
+      <li>The fly-cartpole re-grade uses the author's numbers, not recomputed, with the real arm at the ceiling. ChessFly's A rests on one fly and one shuffle per arm. The Flyhard mapping rests on one thumbnail. YouTube view counts come from search pages.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="sources-heading">
+    <h2 id="sources-heading">Sources</h2>
+    <ul class="dfl-sourcelist">
+      <li>The six demos as linked in the results table; their result files and the written procedure are kept with our research materials.</li>
+      <li>Lappalainen et al. 2024, <a href="https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11525180/fullTextXML">full text</a> and <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-024-07939-3/MediaObjects/41586_2024_7939_MOESM4_ESM.pdf">peer-review file</a>; <a href="https://github.com/TuragaLab/flyvis">flyvis</a>.</li>
+      <li><a href="https://github.com/Curt-Park/fly-cartpole/blob/a8c62579bb4566baa517e55c63d53f85344018d4/results/linear-retuned/summary.md">fly-cartpole results at a8c6257</a>; <a href="https://github.com/znatgost/chessfly">ChessFly</a>; <a href="https://github.com/0909-BoB/flypoker">flypoker</a>; <a href="https://github.com/emiliano-go/neurafly">neurafly</a>.</li>
+      <li>The driving compilation: <a href="https://www.youtube.com/watch?v=UnPNLv4KKgI">"Scientists Teach A Fly How To Drive"</a> (Daily Dose of Science).</li>
+      <li>Data: <a href="../../assets/data/projects.json">projects.json</a> (with <code>browser_check</code>), <a href="../../assets/data/controls.json">controls.json</a>, <a href="../../assets/data/videos.json">videos.json</a>.</li>
+    </ul>
+  </section>
+
+  <aside class="dfl-note" aria-label="About this report">
+    <p><strong>Independent research.</strong> Digital Fly Lab is not connected to the projects checked here. The browser check is ours; every other number is the authors' unless stated.</p>
+  </aside>
+</div>
+<!-- SHADUF_AGENT_DOCUMENT_END --></div>
+    </article><div class="center-fade" aria-hidden="true"></div></main>
+    <aside class="right-surface" data-right-surface>
+    <div class="right-scroll">
+      <header class="right-title"><span>Pool info</span><button type="button" data-close-right aria-label="Close pool information">×</button></header>
+      
+      <div class="right-hero"><h2>Digital Fly Lab</h2><div class="tag-list"><a class="pool-tag tone-1" href="https://shaduf.ai/?tag=digital%20fly#pool-catalogue" aria-label="Filter pools by tag: Digital fly">Digital fly</a><a class="pool-tag tone-2" href="https://shaduf.ai/?tag=neuroscience#pool-catalogue" aria-label="Filter pools by tag: Neuroscience">Neuroscience</a><a class="pool-tag tone-3" href="https://shaduf.ai/?tag=open%20source#pool-catalogue" aria-label="Filter pools by tag: Open source">Open source</a></div></div>
+      <section class="right-actions">
+        <form method="get" action="https://shaduf.ai/p/digital-fly-catalog/?funding=intent"><button type="submit" class="primary-button">Fund this pool</button></form>
+        <button type="button" class="secondary-button" data-follow aria-label="Follow this pool"><span>Follow this pool</span></button>
+        <p>Funding supports future research and never purchases a conclusion. Follow saves this pool to your account; notifications are not enabled.</p>
+      </section>
+      <section class="right-section">
+        <h3>Current position</h3>
+        <div class="release-state state-live"><i></i><span>live</span></div>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>3 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+      </section>
+      <section class="right-section"><h3>Research boundary</h3><p>Verify project links and implementations, explain the model and keep the catalogue and build guide current.</p><a href="../../index.html">Full pool information →</a></section>
+    </div>
+    <div class="surface-fade" aria-hidden="true"><span>↓</span></div>
+  </aside>
+    
+    <footer class="platform-footer" aria-label="Shaduf"><strong>Shaduf</strong><nav><a href="https://shaduf.ai/">Explore</a><a href="https://shaduf.ai/about/">About</a></nav></footer>
+    <footer class="mobile-contact" aria-label="Contact Shaduf"><a href="/contact/">Contact us</a><span aria-hidden="true">·</span><a href="/request-a-pool/">Request a Pool</a></footer>
+    <div class="drawer-backdrop" data-drawer-backdrop></div>
+    <dialog class="search-dialog" data-search-dialog><form method="get" action="https://shaduf.ai/explore/"><header><strong>Search Shaduf</strong><button value="cancel" formmethod="dialog" aria-label="Close">×</button></header><label><span>⌕</span><input type="search" name="q" placeholder="Search pools, reports, evidence" autocomplete="off"></label><div class="search-suggestions"><button type="button" data-search-tag="Digital fly">Digital fly</button><button type="button" data-search-tag="Neuroscience">Neuroscience</button><button type="button" data-search-tag="Open source">Open source</button></div><div class="search-results" data-search-results aria-live="polite"><p>Search published pools, pages, reports, and evidence.</p></div></form></dialog><div class="peek-layer" data-peek-layer aria-hidden="true"><div class="peek-backdrop" data-close-peek></div><article class="peek-panel"><header><span data-peek-crumb>Research report</span><nav><button type="button" data-peek-side>Side peek</button><a data-peek-open href="#">Open page</a><button type="button" data-close-peek aria-label="Close">×</button></nav></header><iframe title="Research report" data-peek-frame sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe></article></div>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../../assets/shaduf.js?v=20260920-pool-requests-1" defer></script>
+  </body></html>

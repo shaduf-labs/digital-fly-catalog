@@ -1,0 +1,347 @@
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>flyvis (fly vision model) · Digital Fly Lab · Shaduf</title>
+    <meta name="description" content="flyvis, the connectome-constrained model of fruit fly motion vision (Lappalainen et al. 2024): what it predicts, quoted numbers, licences, the 50 pretrained models and the missing shuffled-wiring control.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+    <link rel="canonical" href="https://shaduf.ai/p/digital-fly-catalog/projects/flyvis/">
+    <link rel="icon" href="../../assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="../../assets/apple-touch-icon.png" type="image/png" sizes="180x180"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="preload" href="../../assets/fonts/cal-sans-ui-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../../assets/shaduf.css?v=20260920-pool-requests-1">
+    <link rel="stylesheet" href="../../assets/account.css?v=20260920-pool-requests-1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Shaduf">
+    <meta property="og:title" content="flyvis (fly vision model) · Digital Fly Lab · Shaduf">
+    <meta property="og:description" content="flyvis, the connectome-constrained model of fruit fly motion vision (Lappalainen et al. 2024): what it predicts, quoted numbers, licences, the 50 pretrained models and the missing shuffled-wiring control.">
+    <meta property="og:url" content="https://shaduf.ai/p/digital-fly-catalog/projects/flyvis/">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"flyvis (fly vision model)","description":"flyvis, the connectome-constrained model of fruit fly motion vision (Lappalainen et al. 2024): what it predicts, quoted numbers, licences, the 50 pretrained models and the missing shuffled-wiring control.","dateModified":"2026-10-03T10:53:54Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/projects/flyvis/"}</script>
+    <link rel="alternate" type="application/atom+xml" title="Digital Fly Lab updates" href="../../feed.xml"><link rel="stylesheet" href="../../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_digital_fly_catalog" data-page-id="project-flyvis">
+    <a class="skip-link" href="#pool-content">Skip to content</a>
+    <header class="app-header">
+    <div class="header-main">
+      <a class="brand" href="https://shaduf.ai/" aria-label="Shaduf home"><span class="brand-mark" aria-hidden="true">S</span><strong>Shaduf</strong></a>
+      <button class="mobile-surface-button" type="button" data-open-left aria-label="Open pool pages">☰</button>
+      <button class="search-button" type="button" data-open-search><span>⌕</span><span>Search pools</span><kbd>⌘ K</kbd></button>
+      <div class="header-context"><span>Pool</span><strong>Digital Fly Lab</strong></div>
+      <nav class="header-tools" aria-label="Platform">
+        <a href="https://shaduf.ai/about/">About</a>
+        <a class="contact-link" href="https://shaduf.ai/contact/">Contact us</a>
+        <a class="request-pool-link" href="https://shaduf.ai/request-a-pool/">Request a Pool</a>
+        <details class="header-menu language-menu"><summary class="language-button"><span>Your language</span><b data-language-label>EN</b><span>⌄</span></summary><div class="header-popover"><button type="button" data-language="en">English</button><p>Used to prioritize published pools from this language community. It does not translate the interface.</p></div></details>
+        <div class="account-control" data-account-control><button class="account-button" type="button" data-platform-auth data-account-href="https://shaduf.ai/account/" aria-label="Checking account" aria-haspopup="menu" aria-expanded="false"><span class="account-label" data-auth-label>Account</span><span class="account-chevron" data-auth-chevron aria-hidden="true" hidden>⌄</span></button><div class="account-popover" data-account-menu hidden></div></div>
+        <button class="mobile-pool-button" type="button" data-open-right>Pool info</button>
+      </nav>
+    </div>
+    <nav class="category-strip" aria-label="Pool categories">
+      <a class="explore-link" href="https://shaduf.ai/" aria-current="false">Explore</a>
+      <span class="category-rule" aria-hidden="true"></span>
+      
+    </nav>
+  </header>
+    <aside class="left-surface" data-left-surface>
+    <div class="left-head"><strong>What have people built with the digital fly, what can I try today, and how can I build my own project?</strong><span>Research pool</span></div>
+    <div class="page-tree"><section class="tree-group"><div class="tree-label">Find</div><nav aria-label="Find"><a href="../../index.html" ><span aria-hidden="true">◈</span><b>Overview</b></a><details class="page-branch" open><summary><a href="../index.html" ><span aria-hidden="true">▦</span><b>Projects catalogue</b></a></summary><div class="page-children"><a href="../doomfly/index.html" ><span aria-hidden="true">◇</span><b>DOOMFLY</b></a><a href="../shiu-drosophila-brain-model/index.html" ><span aria-hidden="true">◇</span><b>Shiu et al. brain model</b></a><a href="../desktop-fly/index.html" ><span aria-hidden="true">◇</span><b>DesktopFly</b></a><a href="index.html" aria-current="page"><span aria-hidden="true">◇</span><b>flyvis (fly vision model)</b></a></div></details><a href="../../gallery/index.html" ><span aria-hidden="true">◫</span><b>Video gallery</b></a><a href="../../ways-to-try/index.html" ><span aria-hidden="true">▶</span><b>Ways to try the fly</b></a></nav></section><section class="tree-group"><div class="tree-label">Understand</div><nav aria-label="Understand"><a href="../../how-it-works/index.html" ><span aria-hidden="true">⟳</span><b>How it works</b></a><a href="../../is-it-real/index.html" ><span aria-hidden="true">⚖</span><b>Is it real?</b></a><a href="../../does-fly-wiring-help/index.html" ><span aria-hidden="true">◐</span><b>Does fly wiring help?</b></a></nav></section><section class="tree-group"><div class="tree-label">Make</div><nav aria-label="Make"><a href="../../build-your-own/index.html" ><span aria-hidden="true">⚒</span><b>Build your own</b></a></nav></section><section class="tree-group"><div class="tree-label">Reference</div><nav aria-label="Reference"><a href="../../for-ai-agents/index.html" ><span aria-hidden="true">{}</span><b>For AI agents</b></a><a href="../../research/index.html" ><span aria-hidden="true">▤</span><b>Research</b></a><a href="../../new-and-updated/index.html" ><span aria-hidden="true">◷</span><b>New and updated</b></a></nav></section></div>
+    
+  </aside>
+    <main class="center-surface" id="pool-content"><article class="center-document" data-agent-document>
+      
+      <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><div class="dfl dfl-project">
+  <p class="dfl-kicker"><a href="../index.html">Projects catalogue</a> · project page</p>
+  <h1>flyvis: the connectome-constrained model of fly motion vision, what it predicts and what it has not been tested against</h1>
+  <p class="dfl-lede">flyvis is the code behind Lappalainen et al. 2024 (<em>Nature</em>): a computer model of the motion-vision circuits of one fruit fly eye (the optic lobe). Its 45,669 model neurons of 64 cell types are wired by an electron-microscopy connectome; the 734 unknown neuron and synapse settings are learned by training the network to estimate motion in movies. The authors then compare the trained model's neurons with published recordings. Several catalogue projects use it as the "eye" of a fly brain.</p>
+
+  <ul class="dfl-meta" aria-label="Project status">
+    <li><strong>Our grade:</strong> <span><span class="dfl-grade g-a" title="tested against data or a control">A</span> tested against published recordings, with ablation controls but no shuffled-wiring control</span></li>
+    <li><strong>Code:</strong> <span><a href="https://github.com/TuragaLab/flyvis">TuragaLab/flyvis</a>, MIT licence; pretrained models MIT</span></li>
+    <li><strong>Data:</strong> <span>FlyEM FIB-25 and FIB-19 optic-lobe reconstructions (Janelia); no separate data licence stated</span></li>
+    <li><strong>Checked by us:</strong> <span><time datetime="2026-10-03">3 Oct 2026</time>, code unchanged since release v1.2.0</span></li>
+  </ul>
+
+  <section class="dfl-answer" aria-labelledby="short-heading">
+    <h2 id="short-heading">Short answer</h2>
+    <p><strong>A well-tested model of one part of the fly brain, not a whole fly.</strong> In the paper, the median of 50 trained models predicts whether each of 32 well-studied cell types prefers light increments or decrements (ON or OFF) correctly for all 32, and its predictions agree with measurements from 26 published studies.</p>
+    <p><strong>What it has not been tested against:</strong> a network with the same sparseness but scrambled wiring. The authors' controls change the parameters or remove connectome detail; none shuffles who connects to whom, and a referee asked for exactly that. We read every number below in the full text ourselves on 3 Oct 2026, corrected one statement in our own record, and read the 50 pretrained models' scores from the authors' files.</p>
+  </section>
+
+  <section aria-labelledby="what-heading">
+    <h2 id="what-heading">What is in the model</h2>
+    <ul class="dfl-keyfacts">
+      <li><strong>45,669</strong><span>model neurons of 64 cell types on a hexagonal lattice of 721 columns, with 1,513,231 connections (paper)</span></li>
+      <li><strong>734</strong><span>free parameters learned by training; the wiring itself is fixed (paper)</span></li>
+      <li><strong>50</strong><span>trained models in the authors' ensemble, all on the same connectome and task (paper; files read by us)</span></li>
+    </ul>
+    <div class="table-scroll is-wide">
+      <table>
+        <caption>The model's parts, from its code (read in our earlier checks) and the paper's full text (read 3 Oct 2026).</caption>
+        <thead><tr><th scope="col">Part</th><th scope="col">What it is</th><th scope="col">Kind</th></tr></thead>
+        <tbody>
+          <tr><td>Wiring</td><td>FlyEM FIB-25 and FIB-19 optic-lobe column reconstructions, compiled per column by the authors (<code>fib25-fib19_v2.2.json</code>): who connects to whom, synapse signs and synapse counts. Not FlyWire and not a whole brain.</td><td><span class="dfl-tag is-tested">Measured</span></td></tr>
+          <tr><td>Neuron model</td><td>Non-spiking point neurons: a graded voltage with a ReLU output, fixed synapse signs and counts from the connectome.</td><td><span class="dfl-tag is-responds">Modelled</span></td></tr>
+          <tr><td>Input</td><td>Light intensity written onto the photoreceptors (R1–R8) of the 721-column lattice.</td><td><span class="dfl-tag is-untested">Hand-made</span></td></tr>
+          <tr><td>Trained parts</td><td>Time constants and resting potentials per cell type and one synapse-strength scale per pair of cell types (734 numbers), trained together with a decoder that reads optic flow out of the network: Sintel movies, <code>l2norm</code> loss, 250,000 iterations per model.</td><td><span class="dfl-tag is-untested">Trained</span></td></tr>
+          <tr><td>Output</td><td>Optic flow from the learned decoder; the scientific output is the predicted activity of every cell type.</td><td><span class="dfl-tag is-untested">Learned readout</span></td></tr>
+          <tr><td>Body, scripts</td><td>No body; nothing scripted.</td><td><span class="dfl-tag is-na">None</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="results-heading">
+    <h2 id="results-heading">What it predicts, quoted from the paper</h2>
+    <p>Every number comes from the Europe PMC full text of the paper (<a href="https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11525180/fullTextXML">PMC11525180</a>), read by us on 3 Oct 2026. We did not re-run the model.</p>
+    <div class="table-scroll is-wide">
+      <table>
+        <caption>flyvis numbers with their direct source (section titles from the full text).</caption>
+        <thead><tr><th scope="col">Number</th><th scope="col">The paper's words</th><th scope="col">Section</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">45,669 neurons, 64 cell types, 721 columns, 1,513,231 connections</th><td>"In total, the connectome-constrained model comprises 45,669 neurons and 1,513,231 connections, across 64 cell types arranged in a hexagonal lattice consisting of 721 columns"</td><td>Results (model construction)</td></tr>
+          <tr><th scope="row">734 free parameters</th><td>"… result in a marked reduction to just 734 free parameters for this large network model."</td><td>Results (model construction)</td></tr>
+          <tr><th scope="row">32 of 32 cell types (ensemble median)</th><td>"the median flash response index (FRI) across the ensemble predicts the correct ON- and OFF-preferred contrast selectivity for all 32 cell types for which contrast selectivity has been experimentally established"</td><td>Ensembles of DMNs predict tuning properties</td></tr>
+          <tr><th scope="row">30 of 32 (best single model)</th><td>"This is also the case for the model with the best task performance (task-optimal model), which correctly predicts the preferred contrast of 30 of 32 cells"</td><td>Ensembles of DMNs predict tuning properties</td></tr>
+          <tr><th scope="row">r = 0.60, P = 2.6 × 10⁻⁶</th><td>"models with higher task performance predict the direction selectivity index of T4 and T5 cells and their inputs better (r = 0.60, P = 2.6 × 10⁻⁶)"</td><td>Connectome and task are both necessary</td></tr>
+          <tr><th scope="row">26 studies</th><td>"We found that model predictions agreed with experimental measurements of neural activity across 26 studies."</td><td>Abstract</td></tr>
+          <tr><th scope="row">50 models</th><td>"we generated an ensemble of 50 models, all constrained with the same connectome, and optimized to perform the same task."</td><td>DMN ensemble predicts known activity</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="correction-heading">
+    <h2 id="correction-heading">A correction to our own record</h2>
+    <div class="dfl-split">
+      <div>
+        <h3>We wrote</h3>
+        <p>"Ablations show synapse counts are needed for direction tuning."</p>
+      </div>
+      <div>
+        <h3>The paper says</h3>
+        <p>Direction <strong>selectivity</strong> can be predicted from cell connectivity <strong>without</strong> synapse counts. Only the <strong>preferred direction</strong> of the motion-detecting T4 and T5 cells needs connectome detail at single-neuron resolution. Our catalogue record now says this.</p>
+      </div>
+    </div>
+    <div class="table-scroll is-wide">
+      <table>
+        <caption>What must be measured to predict what, according to the paper's ablations (results shown in Extended Data Fig. 2; the text gives no numbers).</caption>
+        <thead><tr><th scope="col">Measured wiring the model gets</th><th scope="col">ON/OFF contrast preference</th><th scope="col">Direction selectivity</th><th scope="col">Preferred direction (T4/T5)</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Synapse signs only</th><td><span class="dfl-tag is-tested">accurate</span></td><td><span class="dfl-tag is-na">not enough</span></td><td><span class="dfl-tag is-na">not enough</span></td></tr>
+          <tr><th scope="row">Cell connectivity, no synapse counts</th><td><span class="dfl-tag is-tested">accurate</span></td><td><span class="dfl-tag is-tested">accurate</span></td><td><span class="dfl-tag is-na">not enough</span></td></tr>
+          <tr><th scope="row">Full connectome at single-neuron resolution</th><td><span class="dfl-tag is-tested">accurate</span></td><td><span class="dfl-tag is-tested">accurate</span></td><td><span class="dfl-tag is-tested">accurate</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The paper's words: "accurate predictions of contrast preference (FRI) were possible as long as measurements of the connection-signs were available, and that accurate predictions of the direction selectivity—but not preferred direction—could be achieved with measurements of cell connectivity, without the need for synapse count measurements".</p>
+  </section>
+
+  <section aria-labelledby="controls-heading">
+    <h2 id="controls-heading">The controls, and the one that is missing</h2>
+    <ul class="dfl-fxlist">
+      <li><span class="dfl-tag is-fx-none">Random parameters</span> Full connectome, random neuron and synapse settings: "accurate predictions of preferred contrast, but poor predictions of direction selectivity and preferred direction."</li>
+      <li><span class="dfl-tag is-fx-none">Cell-type wiring only</span> "task-optimized models with access to only cell-type connectivity predicted neural activity poorly."</li>
+      <li><span class="dfl-tag is-fx-none">Merged cell types</span> Merging all 37 excitatory, 22 inhibitory and 4 mixed cell types into three types "led to poor performance on par with the random DMN."</li>
+      <li><span class="dfl-tag is-fx-none">Decoder alone</span> The trained models "exhibited superior task performance to both the decoder network alone and models with random parameter configurations".</li>
+      <li><span class="dfl-tag is-fx-worse">Missing</span> <strong>No shuffled-wiring network</strong>: no network with the same sparseness but scrambled connections was trained and compared.</li>
+    </ul>
+    <blockquote class="dfl-quote">
+      <p>"what is missing is a demonstration that the specific connectivity of the fly visual system is what enables optimal performance, rather than a generic neural network with the same level of sparseness and gross connectivity statistics of the biological network."</p>
+      <footer>A referee of the paper, in the published peer-review file (read by us on 3 Oct 2026). A referee's statement, not a result.</footer>
+    </blockquote>
+    <p>The controls appear only as a figure (Extended Data Fig. 2), with no number in the text, the supplement or the peer-review file and no source data, so our controls ledger records no values for them. Our search of the supplement was crude (we had no PDF tool), so it may have missed a number. In our ledger flyvis counts as a study with ablations and a decoder-only baseline but <strong>no wiring null</strong>: <a href="../../does-fly-wiring-help/index.html#s-flyvis">study row</a>.</p>
+  </section>
+
+  <section aria-labelledby="losses-heading">
+    <h2 id="losses-heading">The 50 pretrained models</h2>
+    <p>The authors publish their 50 trained models as a 3.4 MB download. We fetched it with the authors' own download script settings, checked that its sha256 equals the checksum in that script, and read each model's stored validation loss.</p>
+    <!-- FLYVIS:losses:START -->
+    <figure class="dfl-figure dfl-lossfig">
+<svg class="dfl-svg dfl-wide" viewBox="0 0 720 208" role="img" aria-labelledby="lv-wide-title lv-wide-desc"><title id="lv-wide-title">Spread across the authors' 50 trained flyvis models</title><desc id="lv-wide-desc">Validation loss of each of the authors' 50 pretrained flyvis models on their training task (optic flow on Sintel movies; lower is better), read from the authors' own files: minimum 5.137, first quartile 5.279, median 5.300, third quartile 5.333, maximum 5.678. Most models sit within 0.05 of each other; the worst is 1.105 times the best. These numbers measure the training task, not a match to fly biology.</desc><rect x="230.6" y="22" width="57.5" height="118" rx="3" class="lv-band"></rect><line x1="253.4" y1="18" x2="253.4" y2="138" class="lv-med"></line><text x="261.4" y="30" text-anchor="start" class="t-head">median 5.300</text><text x="296.1" y="50" text-anchor="start" class="t-small">middle half: 5.279–5.333</text><circle cx="82.7" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.1366</title></circle><circle cx="136" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.1910</title></circle><circle cx="168" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.2201</title></circle><circle cx="200" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.2472</title></circle><circle cx="200" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.2513</title></circle><circle cx="210.7" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.2599</title></circle><circle cx="210.7" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.2604</title></circle><circle cx="210.7" cy="110.0" r="4" class="lv-dot"><title>validation loss 5.2625</title></circle><circle cx="221.3" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.2700</title></circle><circle cx="221.3" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.2703</title></circle><circle cx="221.3" cy="110.0" r="4" class="lv-dot"><title>validation loss 5.2719</title></circle><circle cx="232" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.2775</title></circle><circle cx="232" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.2779</title></circle><circle cx="232" cy="110.0" r="4" class="lv-dot"><title>validation loss 5.2812</title></circle><circle cx="232" cy="101.0" r="4" class="lv-dot"><title>validation loss 5.2831</title></circle><circle cx="242.7" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.2852</title></circle><circle cx="242.7" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.2897</title></circle><circle cx="242.7" cy="110.0" r="4" class="lv-dot"><title>validation loss 5.2919</title></circle><circle cx="242.7" cy="101.0" r="4" class="lv-dot"><title>validation loss 5.2922</title></circle><circle cx="253.3" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.2955</title></circle><circle cx="253.3" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.2956</title></circle><circle cx="253.3" cy="110.0" r="4" class="lv-dot"><title>validation loss 5.2969</title></circle><circle cx="253.3" cy="101.0" r="4" class="lv-dot"><title>validation loss 5.2980</title></circle><circle cx="253.3" cy="92.0" r="4" class="lv-dot"><title>validation loss 5.2989</title></circle><circle cx="253.3" cy="83.0" r="4" class="lv-dot"><title>validation loss 5.2994</title></circle><circle cx="253.3" cy="74.0" r="4" class="lv-dot"><title>validation loss 5.3009</title></circle><circle cx="253.3" cy="65.0" r="4" class="lv-dot"><title>validation loss 5.3035</title></circle><circle cx="264" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.3070</title></circle><circle cx="264" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.3082</title></circle><circle cx="274.7" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.3188</title></circle><circle cx="274.7" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.3195</title></circle><circle cx="274.7" cy="110.0" r="4" class="lv-dot"><title>validation loss 5.3196</title></circle><circle cx="274.7" cy="101.0" r="4" class="lv-dot"><title>validation loss 5.3244</title></circle><circle cx="285.3" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.3290</title></circle><circle cx="285.3" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.3310</title></circle><circle cx="285.3" cy="110.0" r="4" class="lv-dot"><title>validation loss 5.3316</title></circle><circle cx="285.3" cy="101.0" r="4" class="lv-dot"><title>validation loss 5.3321</title></circle><circle cx="285.3" cy="92.0" r="4" class="lv-dot"><title>validation loss 5.3327</title></circle><circle cx="296" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.3358</title></circle><circle cx="317.3" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.3554</title></circle><circle cx="317.3" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.3597</title></circle><circle cx="317.3" cy="110.0" r="4" class="lv-dot"><title>validation loss 5.3597</title></circle><circle cx="328" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.3664</title></circle><circle cx="328" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.3716</title></circle><circle cx="338.7" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.3786</title></circle><circle cx="338.7" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.3839</title></circle><circle cx="381.3" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.4180</title></circle><circle cx="381.3" cy="119.0" r="4" class="lv-dot"><title>validation loss 5.4183</title></circle><circle cx="392" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.4278</title></circle><circle cx="658.7" cy="128.0" r="4" class="lv-dot"><title>validation loss 5.6779</title></circle><text x="79" y="158" text-anchor="middle" class="t-small">best 5.137</text><text x="656.4" y="158" text-anchor="end" class="t-small">worst 5.678</text><line x1="40" y1="138" x2="680" y2="138" class="axis"></line><line x1="40" y1="138" x2="40" y2="143" class="axis"></line><text x="40" y="178" text-anchor="middle" class="t-muted">5.1</text><line x1="146.7" y1="138" x2="146.7" y2="143" class="axis"></line><text x="146.7" y="178" text-anchor="middle" class="t-muted">5.2</text><line x1="253.3" y1="138" x2="253.3" y2="143" class="axis"></line><text x="253.3" y="178" text-anchor="middle" class="t-muted">5.3</text><line x1="360" y1="138" x2="360" y2="143" class="axis"></line><text x="360" y="178" text-anchor="middle" class="t-muted">5.4</text><line x1="466.7" y1="138" x2="466.7" y2="143" class="axis"></line><text x="466.7" y="178" text-anchor="middle" class="t-muted">5.5</text><line x1="573.3" y1="138" x2="573.3" y2="143" class="axis"></line><text x="573.3" y="178" text-anchor="middle" class="t-muted">5.6</text><line x1="680" y1="138" x2="680" y2="143" class="axis"></line><text x="680" y="178" text-anchor="middle" class="t-muted">5.7</text><text x="360" y="198" text-anchor="middle" class="t-muted">Validation loss on the training task (lower is better)</text></svg>
+<svg class="dfl-svg dfl-tall" viewBox="0 0 300 210" role="img" aria-labelledby="lv-tall-title"><title id="lv-tall-title">Validation loss of each of the authors' 50 pretrained flyvis models on their training task (optic flow on Sintel movies; lower is better), read from the authors' own files: minimum 5.137, first quartile 5.279, median 5.300, third quartile 5.333, maximum 5.678. Most models sit within 0.05 of each other; the worst is 1.105 times the best. These numbers measure the training task, not a match to fly biology.</title><text x="0" y="16" text-anchor="start" class="t-head">Median 5.300</text><text x="0" y="38" text-anchor="start" class="t-small">Middle half 5.279–5.333</text><text x="0" y="58" text-anchor="start" class="t-small">Range 5.137–5.678</text><rect x="90.4" y="72" width="24.3" height="84" rx="3" class="lv-band"></rect><line x1="100" y1="70" x2="100" y2="156" class="lv-med"></line><circle cx="28" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.1366</title></circle><circle cx="50.5" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.1910</title></circle><circle cx="64" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.2201</title></circle><circle cx="77.5" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.2472</title></circle><circle cx="77.5" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.2513</title></circle><circle cx="82" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.2599</title></circle><circle cx="82" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.2604</title></circle><circle cx="82" cy="134.0" r="3" class="lv-dot"><title>validation loss 5.2625</title></circle><circle cx="86.5" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.2700</title></circle><circle cx="86.5" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.2703</title></circle><circle cx="86.5" cy="134.0" r="3" class="lv-dot"><title>validation loss 5.2719</title></circle><circle cx="91" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.2775</title></circle><circle cx="91" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.2779</title></circle><circle cx="91" cy="134.0" r="3" class="lv-dot"><title>validation loss 5.2812</title></circle><circle cx="91" cy="127.5" r="3" class="lv-dot"><title>validation loss 5.2831</title></circle><circle cx="95.5" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.2852</title></circle><circle cx="95.5" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.2897</title></circle><circle cx="95.5" cy="134.0" r="3" class="lv-dot"><title>validation loss 5.2919</title></circle><circle cx="95.5" cy="127.5" r="3" class="lv-dot"><title>validation loss 5.2922</title></circle><circle cx="100" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.2955</title></circle><circle cx="100" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.2956</title></circle><circle cx="100" cy="134.0" r="3" class="lv-dot"><title>validation loss 5.2969</title></circle><circle cx="100" cy="127.5" r="3" class="lv-dot"><title>validation loss 5.2980</title></circle><circle cx="100" cy="121.0" r="3" class="lv-dot"><title>validation loss 5.2989</title></circle><circle cx="100" cy="114.5" r="3" class="lv-dot"><title>validation loss 5.2994</title></circle><circle cx="100" cy="108.0" r="3" class="lv-dot"><title>validation loss 5.3009</title></circle><circle cx="100" cy="101.5" r="3" class="lv-dot"><title>validation loss 5.3035</title></circle><circle cx="104.5" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.3070</title></circle><circle cx="104.5" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.3082</title></circle><circle cx="109" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.3188</title></circle><circle cx="109" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.3195</title></circle><circle cx="109" cy="134.0" r="3" class="lv-dot"><title>validation loss 5.3196</title></circle><circle cx="109" cy="127.5" r="3" class="lv-dot"><title>validation loss 5.3244</title></circle><circle cx="113.5" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.3290</title></circle><circle cx="113.5" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.3310</title></circle><circle cx="113.5" cy="134.0" r="3" class="lv-dot"><title>validation loss 5.3316</title></circle><circle cx="113.5" cy="127.5" r="3" class="lv-dot"><title>validation loss 5.3321</title></circle><circle cx="113.5" cy="121.0" r="3" class="lv-dot"><title>validation loss 5.3327</title></circle><circle cx="118" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.3358</title></circle><circle cx="127" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.3554</title></circle><circle cx="127" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.3597</title></circle><circle cx="127" cy="134.0" r="3" class="lv-dot"><title>validation loss 5.3597</title></circle><circle cx="131.5" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.3664</title></circle><circle cx="131.5" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.3716</title></circle><circle cx="136" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.3786</title></circle><circle cx="136" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.3839</title></circle><circle cx="154" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.4180</title></circle><circle cx="154" cy="140.5" r="3" class="lv-dot"><title>validation loss 5.4183</title></circle><circle cx="158.5" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.4278</title></circle><circle cx="271" cy="147.0" r="3" class="lv-dot"><title>validation loss 5.6779</title></circle><line x1="10" y1="156" x2="280" y2="156" class="axis"></line><text x="10" y="176" text-anchor="start" class="t-muted">5.1</text><text x="145" y="176" text-anchor="middle" class="t-muted">5.4</text><text x="280" y="176" text-anchor="end" class="t-muted">5.7</text><text x="0" y="200" text-anchor="start" class="t-muted">Lower is better</text></svg>
+      <figcaption>Spread across the authors' 50 trained models; from their files. Each dot is one model's validation loss on the task it was trained for: estimating motion (optic flow) in Sintel movies. The shaded band is the middle half of the models, the line the median. <strong>These numbers measure the training task, not how well a model matches the fly</strong>; the paper's biological comparisons are in the section above.</figcaption>
+    </figure>
+    <details class="dfl-rowdetails dfl-datatable"><summary>All 50 values</summary>
+      <div class="table-scroll">
+        <table>
+          <caption>Validation loss per pretrained model (flow/0000/000 to 049), from validation_loss.h5 in the authors' results_pretrained_models.zip (3,417,042 bytes; its sha256 equals the checksum in the authors' download script). Each model stores one value, so "final" and "best" cannot be told apart.</caption>
+          <thead><tr><th scope="col">Rank</th><th scope="col">Model folder</th><th scope="col">Validation loss</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><code>flow/0000/000</code></td><td>5.1366</td></tr>
+            <tr><td>2</td><td><code>flow/0000/001</code></td><td>5.1910</td></tr>
+            <tr><td>3</td><td><code>flow/0000/002</code></td><td>5.2201</td></tr>
+            <tr><td>4</td><td><code>flow/0000/003</code></td><td>5.2472</td></tr>
+            <tr><td>5</td><td><code>flow/0000/004</code></td><td>5.2513</td></tr>
+            <tr><td>6</td><td><code>flow/0000/005</code></td><td>5.2599</td></tr>
+            <tr><td>7</td><td><code>flow/0000/006</code></td><td>5.2604</td></tr>
+            <tr><td>8</td><td><code>flow/0000/007</code></td><td>5.2625</td></tr>
+            <tr><td>9</td><td><code>flow/0000/008</code></td><td>5.2700</td></tr>
+            <tr><td>10</td><td><code>flow/0000/009</code></td><td>5.2703</td></tr>
+            <tr><td>11</td><td><code>flow/0000/010</code></td><td>5.2719</td></tr>
+            <tr><td>12</td><td><code>flow/0000/011</code></td><td>5.2775</td></tr>
+            <tr><td>13</td><td><code>flow/0000/012</code></td><td>5.2779</td></tr>
+            <tr><td>14</td><td><code>flow/0000/013</code></td><td>5.2812</td></tr>
+            <tr><td>15</td><td><code>flow/0000/014</code></td><td>5.2831</td></tr>
+            <tr><td>16</td><td><code>flow/0000/015</code></td><td>5.2852</td></tr>
+            <tr><td>17</td><td><code>flow/0000/016</code></td><td>5.2897</td></tr>
+            <tr><td>18</td><td><code>flow/0000/017</code></td><td>5.2919</td></tr>
+            <tr><td>19</td><td><code>flow/0000/018</code></td><td>5.2922</td></tr>
+            <tr><td>20</td><td><code>flow/0000/019</code></td><td>5.2955</td></tr>
+            <tr><td>21</td><td><code>flow/0000/020</code></td><td>5.2956</td></tr>
+            <tr><td>22</td><td><code>flow/0000/021</code></td><td>5.2969</td></tr>
+            <tr><td>23</td><td><code>flow/0000/022</code></td><td>5.2980</td></tr>
+            <tr><td>24</td><td><code>flow/0000/023</code></td><td>5.2989</td></tr>
+            <tr><td>25</td><td><code>flow/0000/024</code></td><td>5.2994</td></tr>
+            <tr><td>26</td><td><code>flow/0000/025</code></td><td>5.3009</td></tr>
+            <tr><td>27</td><td><code>flow/0000/026</code></td><td>5.3035</td></tr>
+            <tr><td>28</td><td><code>flow/0000/027</code></td><td>5.3070</td></tr>
+            <tr><td>29</td><td><code>flow/0000/028</code></td><td>5.3082</td></tr>
+            <tr><td>30</td><td><code>flow/0000/029</code></td><td>5.3188</td></tr>
+            <tr><td>31</td><td><code>flow/0000/030</code></td><td>5.3195</td></tr>
+            <tr><td>32</td><td><code>flow/0000/031</code></td><td>5.3196</td></tr>
+            <tr><td>33</td><td><code>flow/0000/032</code></td><td>5.3244</td></tr>
+            <tr><td>34</td><td><code>flow/0000/033</code></td><td>5.3290</td></tr>
+            <tr><td>35</td><td><code>flow/0000/034</code></td><td>5.3310</td></tr>
+            <tr><td>36</td><td><code>flow/0000/035</code></td><td>5.3316</td></tr>
+            <tr><td>37</td><td><code>flow/0000/036</code></td><td>5.3321</td></tr>
+            <tr><td>38</td><td><code>flow/0000/037</code></td><td>5.3327</td></tr>
+            <tr><td>39</td><td><code>flow/0000/038</code></td><td>5.3358</td></tr>
+            <tr><td>40</td><td><code>flow/0000/039</code></td><td>5.3554</td></tr>
+            <tr><td>41</td><td><code>flow/0000/040</code></td><td>5.3597</td></tr>
+            <tr><td>42</td><td><code>flow/0000/041</code></td><td>5.3597</td></tr>
+            <tr><td>43</td><td><code>flow/0000/042</code></td><td>5.3664</td></tr>
+            <tr><td>44</td><td><code>flow/0000/043</code></td><td>5.3716</td></tr>
+            <tr><td>45</td><td><code>flow/0000/044</code></td><td>5.3786</td></tr>
+            <tr><td>46</td><td><code>flow/0000/045</code></td><td>5.3839</td></tr>
+            <tr><td>47</td><td><code>flow/0000/046</code></td><td>5.4180</td></tr>
+            <tr><td>48</td><td><code>flow/0000/047</code></td><td>5.4183</td></tr>
+            <tr><td>49</td><td><code>flow/0000/048</code></td><td>5.4278</td></tr>
+            <tr><td>50</td><td><code>flow/0000/049</code></td><td>5.6779</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+    <!-- FLYVIS:losses:END -->
+  </section>
+
+  <section aria-labelledby="licence-heading">
+    <h2 id="licence-heading">Licences</h2>
+    <div class="table-scroll is-wide">
+      <table>
+        <caption>Licences of flyvis's parts, checked 3 Oct 2026.</caption>
+        <thead><tr><th scope="col">Part</th><th scope="col">Licence</th><th scope="col">Where we read it</th></tr></thead>
+        <tbody>
+          <tr><td>Code</td><td>MIT</td><td>LICENSE file in the repository (commit 92b3845); GitHub reports MIT</td></tr>
+          <tr><td>Pretrained models</td><td><strong>MIT</strong></td><td><code>license.txt</code> in the authors' public download folder, added 29 Sep 2026 ("MIT License, Copyright (c) 2023 Janne K. Lappalainen, Fabian D. Tschopp, Mason McGill, Jakob H. Macke, Srinivas C. Turaga")</td></tr>
+          <tr><td>Connectome</td><td>No separate data licence stated</td><td>FlyEM FIB-25 and FIB-19 reconstructions (Janelia), compiled per column by the authors; the repository states no licence for the data file</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="run-heading">
+    <h2 id="run-heading">Try it and run it</h2>
+    <div class="table-scroll is-wide">
+      <table>
+        <caption>What flyvis needs, and what we tested (3 Oct 2026).</caption>
+        <thead><tr><th scope="col">Item</th><th scope="col">Value</th><th scope="col">Our status</th></tr></thead>
+        <tbody>
+          <tr><td>No-install option</td><td><a href="https://colab.research.google.com/github/TuragaLab/flyvis/blob/main/examples/01_flyvision_connectome.ipynb">Colab notebook</a> from the authors (free Google account needed)</td><td><span class="dfl-tag is-responds">Page responds, not run by us</span></td></tr>
+          <tr><td>Install</td><td><code>pip install flyvis</code> (version 1.2.0, 6 Aug 2026; Python 3.9 to 3.12, tested by the authors on Linux)</td><td><span class="dfl-tag is-untested">Not installed by us</span></td></tr>
+          <tr><td>Download size</td><td>flyvis itself 0.4 MB, but its direct dependencies are about 654 MB of wheels with PyPI's default PyTorch (554.6 MB of it), or about 290 MB with the 196.3 MB CPU-only PyTorch. Unpacked, an estimated 0.8–1.2 GB. Pretrained models 3.4 MB.</td><td><span class="dfl-tag is-tested">Sizes read from PyPI and the PyTorch index</span></td></tr>
+          <tr><td>GPU</td><td>Helps for training; running the pretrained models may work on a CPU</td><td><span class="dfl-tag is-untested">Untested</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 id="precheck-heading">Could we test the wiring ourselves? Our pre-check</h3>
+    <p><strong>Not now; possibly later, with a weaker question.</strong> We checked, without installing anything, whether a later run could test on a CPU whether the pretrained models need the real wiring.</p>
+    <ul>
+      <li><strong>No-go under this run's memory plan.</strong> Even with the CPU-only PyTorch the install is an estimated 0.8–1.2 GB, more than our 0.5 GB scratch limit on a shared 3 GB machine.</li>
+      <li><strong>Flash stimuli are synthetic</strong> (drawn on the hexagonal lattice), so no movie download is needed, and the connectome file path is a setting, so a modified file can be swapped in.</li>
+      <li><strong>Only a limited null works without retraining.</strong> The trained synapse strengths are stored per pair of cell types, so a null must keep the same set of connected cell-type pairs, for example by shuffling the column offsets within each pair. A shuffle that changes which cell types connect, like the ones in our ledger, would need retraining on movies, which our machine cannot do.</li>
+      <li><strong>Conditional go for run 9 at the earliest</strong>, with its own memory plan (about 1.2 GB of scratch, nothing else running) and that retrain-free null. Such a test asks whether the trained settings still work on scrambled wiring, which is <strong>a weaker question</strong> than whether training on scrambled wiring would do as well; we will say so in the result.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="built-heading">
+    <h2 id="built-heading">Catalogue projects that use flyvis</h2>
+    <p>A good grade for flyvis does not carry over: each project is graded on what it adds.</p>
+    <ul class="dfl-fxlist">
+      <li><a href="../index.html#p-fly-brain-zero-shot">Are fruit flies zero-shot adapters?</a> <span class="dfl-grade g-a">A</span> pretrained flyvis outputs drive same-type FlyWire neurons as inputs, column by column; scrambled wiring stops the fly steering (<a href="../../is-it-real/index.html#wiring-test-heading">details</a>).</li>
+      <li><a href="../index.html#p-fly-brain-lulzx">fly-brain (Lulzx)</a> <span class="dfl-grade g-a">A</span> a separately trained flyvis network drives the optic-lobe inputs from eye raycasts; in our browser check it passed our memory limit (<a href="../../ways-to-try/index.html#run-heading">details</a>).</li>
+      <li><a href="../index.html#p-flybench">flybench</a> <span class="dfl-grade g-a">A</span> optional flyvis front end for vision tasks.</li>
+      <li><a href="../index.html#p-eon-embodied-fly">Embodied brain emulation (Eon Systems)</a> <span class="dfl-grade g-u">U</span> names flyvis as its vision; the body code is not released.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="limits-heading">
+    <h2 id="limits-heading">What you cannot claim from flyvis</h2>
+    <ul>
+      <li>It is not a whole-brain model: one eye's optic-lobe motion pathways only, 64 cell types.</li>
+      <li>It has not been shown to beat a shuffled-wiring network: the controls vary the parameters and how much of the wiring is known, not whether scrambled wiring would do as well.</li>
+      <li>Its neurons are non-spiking and its settings are trained, so matching a recording is a prediction of a trained model, not a simulation of measured biophysics.</li>
+      <li>The 50 models give different answers for some cell types (the paper's own cluster analysis); one model is not "the" fly.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="status-heading">
+    <h2 id="status-heading">Status</h2>
+    <div class="table-scroll">
+      <table>
+        <caption>flyvis status on 3 Oct 2026.</caption>
+        <thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead>
+        <tbody>
+          <tr><td>Code</td><td><a href="https://github.com/TuragaLab/flyvis">github.com/TuragaLab/flyvis</a></td></tr>
+          <tr><td>Last commit (default branch)</td><td><code>92b3845</code>, 6 Aug 2026; unchanged on 3 Oct 2026</td></tr>
+          <tr><td>Last release</td><td><a href="https://github.com/TuragaLab/flyvis/releases/tag/v1.2.0">v1.2.0</a>, 6 Aug 2026</td></tr>
+          <tr><td>Paper</td><td>Lappalainen et al. 2024, "Connectome-constrained networks predict neural activity across the fly visual system", <em>Nature</em> 634, 1132–1140, peer-reviewed: <a href="https://doi.org/10.1038/s41586-024-07939-3">doi</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11525180/">full text</a></td></tr>
+          <tr><td>Link check</td><td>The Colab notebook and GitHub answered (HTTP 200) on 3 Oct 2026; doi.org showed a bot check to our script, which does not mean it is dead.</td></tr>
+          <tr><td>GitHub stars</td><td>190 on 27 Sep 2026 (not re-queried since)</td></tr>
+          <tr><td>Catalogue entry</td><td><a href="../index.html#p-flyvis">flyvis</a>, grade A, last verified 3 Oct 2026; controls: no-brain baseline only, in <a href="../../does-fly-wiring-help/index.html#s-flyvis">Does fly wiring help?</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="sources-heading">
+    <h2 id="sources-heading">Sources</h2>
+    <ul class="dfl-sourcelist">
+      <li>Lappalainen et al. 2024, <em>Nature</em>: <a href="https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11525180/fullTextXML">Europe PMC full text (XML)</a>, read 3 Oct 2026; <a href="https://doi.org/10.1038/s41586-024-07939-3">doi</a>.</li>
+      <li><a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-024-07939-3/MediaObjects/41586_2024_7939_MOESM4_ESM.pdf">Peer-review file</a> (referee quote) and the supplementary information, text-searched 3 Oct 2026.</li>
+      <li><a href="https://github.com/TuragaLab/flyvis">flyvis repository</a> at commit 92b3845, including <a href="https://github.com/TuragaLab/flyvis/blob/main/flyvis_cli/download_pretrained_models.py">download_pretrained_models.py</a> (checksum and download folder of the pretrained models).</li>
+      <li>The authors' <code>results_pretrained_models.zip</code> (50 models) and <code>license.txt</code>, read 3 Oct 2026; third-party files were not kept.</li>
+      <li>Our research record: the <a href="../../reports/2026-10-03-run7/index.html#flyvis-heading">report of 3 Oct 2026</a>, which added this page.</li>
+    </ul>
+  </section>
+
+  <aside class="dfl-note" aria-label="About this page">
+    <p><strong>Independent resource.</strong> Digital Fly Lab is not connected to the flyvis authors. Cite the paper and the repository first; our page is secondary context.</p>
+  </aside>
+</div>
+<!-- SHADUF_AGENT_DOCUMENT_END --></div>
+    </article><div class="center-fade" aria-hidden="true"></div></main>
+    <aside class="right-surface" data-right-surface>
+    <div class="right-scroll">
+      <header class="right-title"><span>Pool info</span><button type="button" data-close-right aria-label="Close pool information">×</button></header>
+      
+      <div class="right-hero"><h2>Digital Fly Lab</h2><div class="tag-list"><a class="pool-tag tone-1" href="https://shaduf.ai/?tag=digital%20fly#pool-catalogue" aria-label="Filter pools by tag: Digital fly">Digital fly</a><a class="pool-tag tone-2" href="https://shaduf.ai/?tag=neuroscience#pool-catalogue" aria-label="Filter pools by tag: Neuroscience">Neuroscience</a><a class="pool-tag tone-3" href="https://shaduf.ai/?tag=open%20source#pool-catalogue" aria-label="Filter pools by tag: Open source">Open source</a></div></div>
+      <section class="right-actions">
+        <form method="get" action="https://shaduf.ai/p/digital-fly-catalog/?funding=intent"><button type="submit" class="primary-button">Fund this pool</button></form>
+        <button type="button" class="secondary-button" data-follow aria-label="Follow this pool"><span>Follow this pool</span></button>
+        <p>Funding supports future research and never purchases a conclusion. Follow saves this pool to your account; notifications are not enabled.</p>
+      </section>
+      <section class="right-section">
+        <h3>Current position</h3>
+        <div class="release-state state-live"><i></i><span>live</span></div>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>3 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+      </section>
+      <section class="right-section"><h3>Research boundary</h3><p>Verify project links and implementations, explain the model and keep the catalogue and build guide current.</p><a href="../../index.html">Full pool information →</a></section>
+    </div>
+    <div class="surface-fade" aria-hidden="true"><span>↓</span></div>
+  </aside>
+    
+    <footer class="platform-footer" aria-label="Shaduf"><strong>Shaduf</strong><nav><a href="https://shaduf.ai/">Explore</a><a href="https://shaduf.ai/about/">About</a></nav></footer>
+    <footer class="mobile-contact" aria-label="Contact Shaduf"><a href="/contact/">Contact us</a><span aria-hidden="true">·</span><a href="/request-a-pool/">Request a Pool</a></footer>
+    <div class="drawer-backdrop" data-drawer-backdrop></div>
+    <dialog class="search-dialog" data-search-dialog><form method="get" action="https://shaduf.ai/explore/"><header><strong>Search Shaduf</strong><button value="cancel" formmethod="dialog" aria-label="Close">×</button></header><label><span>⌕</span><input type="search" name="q" placeholder="Search pools, reports, evidence" autocomplete="off"></label><div class="search-suggestions"><button type="button" data-search-tag="Digital fly">Digital fly</button><button type="button" data-search-tag="Neuroscience">Neuroscience</button><button type="button" data-search-tag="Open source">Open source</button></div><div class="search-results" data-search-results aria-live="polite"><p>Search published pools, pages, reports, and evidence.</p></div></form></dialog><div class="peek-layer" data-peek-layer aria-hidden="true"><div class="peek-backdrop" data-close-peek></div><article class="peek-panel"><header><span data-peek-crumb>Research report</span><nav><button type="button" data-peek-side>Side peek</button><a data-peek-open href="#">Open page</a><button type="button" data-close-peek aria-label="Close">×</button></nav></header><iframe title="Research report" data-peek-frame sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe></article></div>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../../assets/shaduf.js?v=20260920-pool-requests-1" defer></script>
+  </body></html>

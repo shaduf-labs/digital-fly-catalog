@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "run:5bfca8cc-f3cb-4020-83e6-5c1225da9200",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-03T09:32:06Z",
+      "completed_at": "2026-10-03T10:53:54Z",
+      "title": "Seventh check: does it actually run? Six fly-brain browser demos loaded, a flyvis dossier and 3 new entries",
+      "summary": "Our own headless-browser check of six fly-brain demos (Chromium 154, Linux, no GPU; not a play test): 3 ran (Fly Worker 17.55 MB, FLY67 33.28 MB, flybrain.app 12.72 MB), 2 loaded then froze (most likely software WebGL), 1 stopped at our 1.6 GB memory limit; no demo computed on a server. flyvis dossier: numbers quoted from the full text, ablation wording corrected, 50 pretrained models' validation losses (median 5.300), no shuffled-wiring control. Verdict freshness 13 current, 7 no code. fly-cartpole now helps but does not beat its linear map or LQR. 104 entries and 52 videos re-checked, FlyDoom link gone, 3 new entries (ChessFly A, flypoker C, neurafly C).",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-03-run7/",
+      "entrypoint": "reports/2026-10-03-run7/index.html"
+    },
+    {
       "run_id": "run:03aa82ff-d83b-47ec-bb36-c8edc64e696c",
       "status": "completed",
       "answer_change": "meaningful_change",

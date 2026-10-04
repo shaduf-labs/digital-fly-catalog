@@ -1,7 +1,7 @@
 {
  "$schema": "https://json-schema.org/draft/2020-12/schema",
  "$id": "https://shaduf.ai/p/digital-fly-catalog/assets/data/projects.schema.json",
- "title": "Digital Fly Lab catalogue record (published 2026-09-28; optional fields added in run 2 and run 4)",
+ "title": "Digital Fly Lab catalogue record (published 2026-09-28; optional fields added in runs 2, 4 and 7)",
  "description": "One record per catalogued project. Dates are ISO 8601. 'last_commit' and 'last_release' describe upstream activity; 'last_verified' and 'grade_date' describe our own checks. Values quoted from upstream are in 'claim'; everything else is our own wording.",
  "type": "object",
  "required": [
@@ -311,7 +311,8 @@
       "4xx",
       "5xx",
       "blocked",
-      "error"
+      "error",
+      "gone"
      ]
     },
     "http_code": {
@@ -412,6 +413,87 @@
     "not-tested"
    ],
    "description": "Added in run 4 (2026-09-30), optional. Copied from the study in controls.json; 'not-tested' whenever controls is not 'wiring-null'."
+  },
+  "browser_check": {
+   "type": "object",
+   "additionalProperties": false,
+   "description": "Added 2026-10-03 (run 7), optional: result of our pre-registered headless-browser check (headless Chromium 154, Linux, no GPU). Shows whether the page loads, downloads its brain data and keeps computing; not a play test. source names the published result file.",
+   "required": [
+    "status",
+    "checked_at",
+    "browser",
+    "compute",
+    "matches_catalogue"
+   ],
+   "properties": {
+    "status": {
+     "enum": [
+      "runs",
+      "runs-with-errors",
+      "loads-no-activity",
+      "needs-gpu",
+      "fails",
+      "blocked",
+      "stopped-memory",
+      "page-unresponsive",
+      "moves-no-compute-signal",
+      "not-checked",
+      "skipped-memory"
+     ]
+    },
+    "checked_at": {
+     "type": "string"
+    },
+    "browser": {
+     "type": "string"
+    },
+    "transferred_mb": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "compute": {
+     "enum": [
+      "in-browser-worker",
+      "in-browser-wasm",
+      "in-browser-main-thread",
+      "server",
+      "unclear"
+     ]
+    },
+    "first_activity_s": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "console_errors": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    },
+    "page_errors": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    },
+    "matches_catalogue": {
+     "enum": [
+      "yes",
+      "no",
+      "unclear"
+     ]
+    },
+    "note": {
+     "type": "string"
+    },
+    "source": {
+     "type": "string"
+    }
+   }
   }
  }
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "default_page": "overview",
-  "meaningfully_updated_at": "2026-10-02T11:00:20Z",
+  "meaningfully_updated_at": "2026-10-03T10:53:54Z",
   "pages": [
     {
       "id": "overview",
@@ -79,6 +79,21 @@
       "tools": []
     },
     {
+      "id": "project-flyvis",
+      "slug": "projects/flyvis",
+      "label": "flyvis (fly vision model)",
+      "icon": "◇",
+      "group": "Find",
+      "description": "flyvis, the connectome-constrained model of fruit fly motion vision (Lappalainen et al. 2024): what it predicts, quoted numbers, licences, the 50 pretrained models and the missing shuffled-wiring control.",
+      "parent": "projects",
+      "entrypoint": "projects/flyvis/index.html",
+      "entrypoint_type": "html_fragment",
+      "redirects": [],
+      "visibility": "public",
+      "indexable": true,
+      "tools": []
+    },
+    {
       "id": "gallery",
       "slug": "gallery",
       "label": "Video gallery",
@@ -99,7 +114,7 @@
       "label": "Ways to try the fly",
       "icon": "▶",
       "group": "Find",
-      "description": "Fly brain in a computer: online browser demos, notebooks and no-install options, with the date, device and browser we checked them on.",
+      "description": "Fly brain in a computer: online browser demos, notebooks and no-install options, and our headless-browser check of six demos: which ran, what they download and where the brain runs.",
       "parent": null,
       "entrypoint": "ways-to-try/index.html",
       "entrypoint_type": "html_fragment",
@@ -129,7 +144,7 @@
       "label": "Is it real?",
       "icon": "⚖",
       "group": "Understand",
-      "description": "Is the fruit fly brain simulation real? Evidence grades and verdicts on viral claims, who does the walking when a fly brain drives a body, and what is measured, modelled, hand-made, trained or scripted.",
+      "description": "Is the fruit fly brain simulation real? Evidence grades and verdicts on viral claims with the date each was last checked, who does the walking when a fly brain drives a body, and what is measured, modelled, hand-made, trained or scripted.",
       "parent": null,
       "entrypoint": "is-it-real/index.html",
       "entrypoint_type": "html_fragment",
@@ -144,7 +159,7 @@
       "label": "Does fly wiring help?",
       "icon": "◐",
       "group": "Understand",
-      "description": "Does real fruit fly connectome wiring help? 33 control studies compared, including our own pre-registered tests: four ways to scramble the fly brain, and who does the walking when a fly brain drives a FlyGym body. Brain vs no-brain baselines and a checklist for fair controls.",
+      "description": "Does real fruit fly connectome wiring help? 34 control studies compared, including our own pre-registered tests: four ways to scramble the fly brain, and who does the walking when a fly brain drives a FlyGym body. Brain vs no-brain baselines and a checklist for fair controls.",
       "parent": null,
       "entrypoint": "does-fly-wiring-help/index.html",
       "entrypoint_type": "html_fragment",
