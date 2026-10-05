@@ -976,3 +976,40 @@
 [data-agent-document] .dfl-quote { margin: 14px 0 18px; padding: 10px 16px; border-left: 3px solid var(--dfl-line-strong); color: var(--dfl-ink); font-family: var(--serif, Georgia, serif); overflow-wrap: break-word; }
 [data-agent-document] .dfl-quote p { margin: 0 0 6px; }
 [data-agent-document] .dfl-quote footer { color: var(--dfl-muted); font-family: var(--dfl-ui); font-size: 12px; }
+
+/* ---- run 8 (2026-10-05): "We ran the map" looming chart, brain table, plain answers, language labels */
+[data-agent-document] .dfl-svg .lm-panel { fill: var(--dfl-soft); }
+[data-agent-document] .dfl-svg .lm-axis0 { stroke: var(--dfl-line-strong); stroke-width: 1; stroke-dasharray: 2 3; }
+[data-agent-document] .dfl-svg .lm-loom { fill: var(--dfl-ink); fill-opacity: .82; }
+[data-agent-document] .dfl-svg .lm-loom-ring { fill: none; stroke: var(--dfl-ink); stroke-width: 1.3; stroke-dasharray: 2 3; }
+[data-agent-document] .dfl-svg .lm-real { fill: none; stroke: var(--dfl-ink); stroke-width: 2.4; stroke-linejoin: round; stroke-linecap: round; }
+[data-agent-document] .dfl-svg .lm-scr { fill: none; stroke: var(--dfl-fx-mixed); stroke-width: 6; stroke-opacity: .55; stroke-linejoin: round; stroke-linecap: round; }
+[data-agent-document] .dfl-svg .lm-floor { fill: none; stroke: var(--dfl-handmade-ink); stroke-width: 1.6; stroke-dasharray: 6 4; }
+[data-agent-document] .dfl-svg .lm-rand { fill: none; stroke: var(--dfl-fx-nodiff); stroke-width: 1.4; stroke-dasharray: 2 3; }
+[data-agent-document] .dfl-svg .lm-real-dot { fill: var(--dfl-ink); }
+[data-agent-document] .dfl-svg .lm-scr-dot { fill: var(--dfl-fx-mixed); }
+[data-agent-document] .dfl-svg .lm-floor-dot { fill: var(--dfl-handmade-ink); }
+[data-agent-document] .dfl-svg .lm-rand-dot { fill: var(--dfl-fx-nodiff); }
+[data-agent-document] .dfl-svg .lm-end { stroke: #fff; stroke-width: 1.2; }
+[data-agent-document] .dfl-svg .lm-start { fill: #fff; stroke: var(--dfl-ink); stroke-width: 1.6; }
+[data-agent-document] .dfl-svg .lm-thresh { stroke: var(--dfl-fx-helps); stroke-width: 1.4; stroke-dasharray: 4 3; }
+[data-agent-document] .dfl-svg .lm-zero { stroke: var(--dfl-line-strong); stroke-width: 1.2; }
+[data-agent-document] .dfl-loomfig .dfl-tall { max-width: 26em; }
+[data-agent-document] .dfl-loomfig figcaption p { margin: 0 0 6px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-loomfig figcaption p:first-child { color: var(--dfl-ink); font-size: 14px; }
+[data-agent-document] .dfl-loom-limits { margin: 14px 0 18px; padding: 14px 18px 6px; border: 1px solid var(--dfl-line-strong); border-left: 4px solid var(--dfl-handmade); border-radius: 0 var(--dfl-radius) var(--dfl-radius) 0; background: var(--dfl-tint); }
+[data-agent-document] .dfl-loom-limits p, [data-agent-document] .dfl-loom-limits li { margin: 0 0 8px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-loom-limits ul { margin: 0 0 8px; padding-left: 1.2em; }
+[data-agent-document] .dfl-loomtable table { min-width: 52em; }
+[data-agent-document] .dfl-loomtable caption { overflow-wrap: anywhere; }
+[data-agent-document] .dfl-loomtable tr.is-author th, [data-agent-document] .dfl-loomtable tr.is-author td { background: var(--dfl-amber-bg); }
+[data-agent-document] .dfl-mapquote { margin: 0 0 16px; padding: 14px 18px; border-left: 4px solid var(--dfl-ink); background: var(--dfl-soft); border-radius: 0 var(--dfl-radius) var(--dfl-radius) 0; font-size: 17px; line-height: 1.5; color: var(--dfl-ink); overflow-wrap: break-word; }
+[data-agent-document] .dfl-mapquote p { margin: 0; }
+[data-agent-document] .dfl-loomnums { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 0 0 14px; padding: 0; list-style: none; }
+[data-agent-document] .dfl-loomnums li { margin: 0; min-width: 0; }
+[data-agent-document] .dfl-loomnums strong { display: block; font-size: 30px; line-height: 1.1; font-weight: 800; color: var(--dfl-ink); }
+[data-agent-document] .dfl-loomnums li.is-scr strong { color: #3f4f9c; }
+[data-agent-document] .dfl-loomnums span { color: var(--dfl-text); font-size: 13px; }
+[data-agent-document] .dfl-faq .dfl-unsure { margin: 8px 0 0; padding: 8px 12px; border-left: 3px solid var(--dfl-line-strong); background: var(--dfl-soft); font-size: 13px; color: var(--dfl-text); overflow-wrap: break-word; }
+[data-agent-document] .dfl-tag.is-lang { background: #fff; color: var(--dfl-ink); border: 1px solid var(--dfl-line-strong); margin-right: 4px; }
+[data-agent-document] .dfl-faq summary .dfl-faq-short { display: block; margin-top: 4px; color: var(--dfl-text); font-size: 14px; font-weight: 400; line-height: 1.5; overflow-wrap: break-word; }

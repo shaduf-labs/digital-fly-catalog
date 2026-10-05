@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "run:3fed5f73-77cc-4b37-853f-e1e8258b4f9f",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-05T09:38:02Z",
+      "completed_at": "2026-10-05T10:52:36Z",
+      "title": "Eighth check: we ran the map. A looming shadow, the fly's wiring and a simulated turn, plus four plain answers and 4 new entries",
+      "summary": "Our own pre-registered looming test: with the real FlyWire map a shadow on one eye turned our simulated FlyGym fly away in 4 of 4 runs, with scrambled maps in 0 of 3 (small n; much quieter scrambled brains; one model, open loop, our hand-made mapping, a constant external walking drive, 1 s; not a real fly). fly67's brain rule reproduced in Brian2 (giant fibre 111.5-120.5 Hz); fly67 stays B. Beginner re-test passed (82.0 Hz bit-exact). Sourced answers to four common questions. 111 entries (4 new), 53 videos with a language field, ledger 38 studies (helps 13 of 30), verdicts 13 current / 7 no code.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-05-run8/",
+      "entrypoint": "reports/2026-10-05-run8/index.html"
+    },
+    {
       "run_id": "run:5bfca8cc-f3cb-4020-83e6-5c1225da9200",
       "status": "completed",
       "answer_change": "meaningful_change",

@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>Build your own · Digital Fly Lab · Shaduf</title>
-    <meta name="description" content="Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output, a shuffled-wiring control, and a tested path to drive a FlyGym walking body.">
+    <meta name="description" content="Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with exact commands, a shuffled-wiring control, a FlyGym walking body and a tested looming sense.">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
     <link rel="canonical" href="https://shaduf.ai/p/digital-fly-catalog/build-your-own/">
     <link rel="icon" href="../assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="../assets/apple-touch-icon.png" type="image/png" sizes="180x180"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180">
@@ -13,10 +13,10 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Shaduf">
     <meta property="og:title" content="Build your own · Digital Fly Lab · Shaduf">
-    <meta property="og:description" content="Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output, a shuffled-wiring control, and a tested path to drive a FlyGym walking body.">
+    <meta property="og:description" content="Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with exact commands, a shuffled-wiring control, a FlyGym walking body and a tested looming sense.">
     <meta property="og:url" content="https://shaduf.ai/p/digital-fly-catalog/build-your-own/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Build your own","description":"Build your own fruit fly brain simulation: a tested beginner guide from an empty folder to a working project, with exact commands, expected output, a shuffled-wiring control, and a tested path to drive a FlyGym walking body.","dateModified":"2026-10-03T10:53:54Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/build-your-own/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Build your own","description":"Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with exact commands, a shuffled-wiring control, a FlyGym walking body and a tested looming sense.","dateModified":"2026-10-05T10:52:36Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/build-your-own/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Digital Fly Lab updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_digital_fly_catalog" data-page-id="build-your-own">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -53,36 +53,37 @@
   <p class="dfl-lede">Run the published whole-brain model of the fruit fly on an ordinary CPU. You give 21 sugar-sensing neurons a taste, the simulated brain of 138,639 neurons responds, and you read out the neuron that makes a fly extend its proboscis to feed. Then you change one thing and check the result against shuffled wiring.</p>
 
   <ul class="dfl-meta" aria-label="Guide status">
-    <li><strong>Tested on:</strong> <span>Linux x86_64 (Debian 12), Python 3.11.2, 2 CPUs, no GPU, no C++ compiler, <time datetime="2026-09-28">28 Sep 2026</time>; re-tested from an empty folder on <time datetime="2026-10-01">1 Oct 2026</time>; "Add a body" (brain to a FlyGym fly) tested on <time datetime="2026-10-02">2 Oct 2026</time></span></li>
+    <li><strong>Tested on:</strong> <span>Linux x86_64 (Debian 12), Python 3.11.2, 2 CPUs, no GPU, no C++ compiler, <time datetime="2026-09-28">28 Sep 2026</time>; re-tested from an empty folder on <time datetime="2026-10-01">1 Oct 2026</time> and <time datetime="2026-10-05">5 Oct 2026</time>; "Add a body" (brain to a FlyGym fly) tested on <time datetime="2026-10-02">2 Oct 2026</time>; "Add a sense: looming" tested on <time datetime="2026-10-05">5 Oct 2026</time></span></li>
     <li><strong>Full run:</strong> <span>28 min for 20 one-second trials; tests 52 s</span></li>
     <li><strong>Untested:</strong> <span>macOS, Windows/WSL, Colab, machines with a compiler</span></li>
-    <li><strong>Pins:</strong> <span>unchanged; checked against PyPI on <time datetime="2026-10-01">1 Oct 2026</time> and installed cleanly in the re-test that day</span></li>
+    <li><strong>Pins:</strong> <span>unchanged; checked against PyPI on <time datetime="2026-10-05">5 Oct 2026</time> (no pinned package released anything since 3 Oct) and installed cleanly in the re-test that day; next re-test due 19 Oct 2026</span></li>
   </ul>
 
   <section class="dfl-answer" aria-labelledby="summary-heading">
     <h2 id="summary-heading">In one paragraph</h2>
     <p>We ran this guide from an empty folder on 28 September 2026. With sugar neurons firing at 150 Hz, the proboscis motor neuron MN9 fired at <strong>85.2 ± 3.2 Hz</strong>, so our rule said "extend the proboscis". With no stimulus nothing fired at all. With the same stimulus on <strong>shuffled wiring, MN9 stayed at 0 Hz in 6 of 6 trials</strong>, so the response depends on the real connectome. All 6 tests passed. We have not tried other operating systems, so we cannot promise it runs on yours; the untested parts are labelled on every step.</p>
-    <p><strong>Re-tested on 1 October 2026:</strong> same pins, both data checksums unchanged, 6 tests passed, and the first sugar trial gave <strong>82.0 Hz, bit-exact</strong> with our first run (trial seeds 1 and 2 also matched exactly: 89 and 81 Hz). <a href="#retest-heading">What the re-test covered</a></p>
+    <p><strong>Beginner path re-tested 5 Oct 2026 (6 of 6 tests, 82.0 Hz bit-exact):</strong> same pins, both data checksums unchanged, and the first sugar trial gave MN9 <strong>82.0 Hz, bit-exact</strong> with our runs of 28 Sep, 1 Oct and 2 Oct 2026. <a href="#retest-heading">What the re-test covered</a></p>
     <p><strong>New, 2 October 2026: Add a body, tested.</strong> We connected the same brain model to the walking fly of FlyGym 2.1.0: brain tested, body tested, and the rule that turns neuron rates into leg commands is ours. With its forward-walking neurons stimulated, the fly walked 13.9 mm in 1 s with the real brain, 14.1 mm with scrambled wiring and 14.3 mm with no brain at all. <a href="#body-heading">The steps and what the numbers mean</a></p>
+    <p><strong>New, 5 October 2026: Add a sense: looming, tested.</strong> A looming shadow on one eye of the same brain model (every LC4 and LPLC2 neuron of that eye at 80 Hz) steers the FlyGym fly through our hand-made mapping: with the real wiring it turned away in 4 of 4 runs, with scrambled wiring in 0 of 3. Small n and one model; the walking drive and the mapping are ours. <a href="#loom-heading">The commands and what each part does</a></p>
   </section>
 
   <section aria-labelledby="retest-heading">
-    <h2 id="retest-heading">Re-test, 1 October 2026</h2>
+    <h2 id="retest-heading">Re-test, 5 October 2026: 6 of 6 tests, 82.0 Hz bit-exact</h2>
     <div class="table-scroll is-wide">
       <table>
-        <caption>The beginner path re-run from an empty folder on 1 Oct 2026 (Linux x86_64, Python 3.11.2, 2 CPUs). No page fixes were needed.</caption>
+        <caption>The beginner path re-run from an empty folder on 5 Oct 2026 (Linux x86_64, Python 3.11.2, 2 CPUs). No page fixes were needed.</caption>
         <thead><tr><th scope="col">Step</th><th scope="col">Result</th><th scope="col">Time</th></tr></thead>
         <tbody>
-          <tr><td>Environment without pip, then get-pip (the Debian fallback on this page)</td><td>Worked as written; <code>ensurepip</code> was missing, as the page warns. get-pip.py sha256 <code>fb24e693…8ddf6</code> on 1 Oct 2026 (a dated snapshot: get-pip.py changes over time, so this is not a pin)</td><td>about 8 s</td></tr>
-          <tr><td>Pinned install from <code>requirements.lock</code></td><td>Exit 0; Brian2 2.9.0, numpy 2.3.5; lock file unchanged</td><td>37 s</td></tr>
-          <tr><td>Partial clone of the model at commit 91bdd1e7</td><td>OK</td><td>9 s</td></tr>
+          <tr><td>Environment without pip, then get-pip (the Debian fallback on this page)</td><td>Worked as written. get-pip.py sha256 <code>fb24e693…8ddf6</code>, the same as on 1 and 2 Oct 2026 (a dated snapshot, not a pin). Our machine had no <code>curl</code>; the <code>python3 -c "import urllib.request; …"</code> download on this page worked</td><td>a few seconds</td></tr>
+          <tr><td>Pinned install from <code>requirements.lock</code></td><td>Exit 0; <code>pip freeze</code> equals the lock file line for line (Brian2 2.9.0, numpy 2.3.5, pandas 2.3.3)</td><td>31 s</td></tr>
+          <tr><td>Partial clone of the model at commit 91bdd1e7</td><td>OK</td><td>a few seconds</td></tr>
           <tr><td>Data checksums</td><td>Both files match the table on this page</td><td>under 1 s</td></tr>
-          <tr><td>First sugar trial (real wiring, seed 0, 150 Hz, 1 s)</td><td>MN9 82.0 Hz, inside the 75–95 Hz pass band and bit-exact with our first run</td><td>74 s</td></tr>
-          <tr><td><code>pytest -q</code></td><td>6 passed</td><td>56.5 s</td></tr>
+          <tr><td><code>pytest -q</code></td><td><strong>6 passed</strong></td><td>61.6 s</td></tr>
+          <tr><td>First sugar trial (real wiring, seed 0, 150 Hz, 1 s)</td><td>MN9 <strong>82.0 Hz</strong>, inside the 75–95 Hz pass band and bit-exact with our runs of 28 Sep, 1 Oct and 2 Oct (13,372 spikes, 383 neurons active)</td><td>73 s (peak memory 0.77 GB)</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Not re-run on 1 Oct 2026: the full 20-trial <code>run_demo.py</code> and the "change one thing" experiments; their results are from 28 Sep 2026. The re-test covers Linux only, like the first test.</p>
+    <p>Earlier re-test: 1 Oct 2026, same result (seeds 1 and 2 also matched exactly: 89 and 81 Hz). Not re-run on 5 Oct 2026: the full 20-trial <code>run_demo.py</code> and the "change one thing" experiments; their results are from 28 Sep 2026. The re-test covers Linux only, like the first test. Next re-test due 19 Oct 2026, or earlier if a pinned package changes.</p>
   </section>
 
   <section aria-labelledby="labels-heading">
@@ -92,6 +93,7 @@
       <li><span class="dfl-tag is-untested">Untested</span><span>We did not run this step. It follows the upstream documentation and may need changes on your system.</span></li>
       <li><span class="dfl-tag is-responds">Partly tested</span><span>Part of the step ran; the rest is labelled in the text.</span></li>
       <li><span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span><span>The "Add a body" steps: run on the same kind of machine (Linux x86_64, 2 CPUs, no GPU, 3 GB memory shared) on 2 October 2026, Python 3.11.2 for the brain and CPython 3.12.11 for the body.</span></li>
+      <li><span class="dfl-tag is-tested">Tested 2026-10-05 on Linux</span><span>The "Add a sense: looming" steps: run on the same kind of machine on 5 October 2026, Python 3.11.2 for the brain and CPython 3.12.11 for the body. <span class="dfl-tag is-untested">Not run in our test</span> marks a command we list but did not run.</span></li>
       <li><span class="dfl-tag is-responds">Ours: hand-made mapping</span><span>A rule we wrote ourselves, not part of the brain model or the body; it shapes the result and is labelled wherever it appears.</span></li>
     </ul>
     <figure class="dfl-figure">
@@ -577,6 +579,77 @@ $S/.venv/bin/python body_run.py one drives/zero.json body/zero.json             
     <p><strong>What the numbers mean:</strong> in this model and this body, the walk comes from the P9 neurons we stimulate and from FlyGym's controller. The rest of the brain adds turning commands (DNa02) that change the heading but not how far the fly walks. Our mapping decides how much those commands matter: it caps each number at 1.2, and most bins sit at the cap, so another mapping could give another answer. One stimulus, one model, one body, 1 s, open loop. The chart, the controls and the limits are on <a href="../does-fly-wiring-help/index.html#body-heading">Does fly wiring help?</a></p>
     <p><strong>If you publish a walking-fly demo:</strong> say which neurons you stimulate, that the body has its own walking controller, and that the rate-to-leg rule is yours; and show the same walk with scrambled wiring and with no brain.</p>
     <p>Untested by us: macOS and Windows, a GPU, rendering video (we ran with <code>MUJOCO_GL=disable</code>), longer walks, other stimuli or neuron types, and a closed loop in which the body feeds back to the brain. <span class="dfl-tag is-untested">Untested</span></p>
+  </section>
+
+  <section aria-labelledby="loom-heading">
+    <h2 id="loom-heading">Add a sense: looming (tested 5 Oct 2026)</h2>
+    <p>The next step after <a href="#body-heading">Add a body</a>: give the brain something to see. A looming shadow on one eye drives that eye's looming detectors, the visual neurons LC4 and LPLC2. The brain model decides what its descending neurons do, and our hand-made mapping turns the turning neurons (DNa02) and the backward neurons (MDN) into FlyGym's two-number drive, on top of a <strong>constant walking drive of 0.8 that is ours</strong>, not the brain's. This is the test behind <a href="../is-it-real/index.html#loom-heading">We ran the map</a>, with the exact commands we ran. The files are in <a href="#loom-source-heading">the source below</a>; the walking body and its install are the same as in Add a body.</p>
+    <div class="table-scroll is-wide">
+      <table>
+        <caption>Who does what in "Add a sense: looming" (read this first).</caption>
+        <thead><tr><th scope="col">Part</th><th scope="col">Whose</th><th scope="col">Kind</th><th scope="col">Status on 5 Oct 2026</th></tr></thead>
+        <tbody>
+          <tr><td>The shadow: every v783 neuron with cell type LC4 or LPLC2 on one side (162 left, 152 right), random spikes at 80 Hz for 1 s</td><td>our choice, following fly67's selector and rate</td><td><span class="dfl-swatch k-handmade"></span> Stimulus (hand-made)</td><td><span class="dfl-tag is-tested">Tested 2026-10-05 on Linux</span></td></tr>
+          <tr><td>What the brain does with it: the Brian2 model of 138,639 neurons on FlyWire v783 (giant fibre, DNa02, MDN and every other descending neuron, in ten 100 ms bins)</td><td>Shiu et al. 2024 (<code>model.py</code> at 91bdd1e7)</td><td><span class="dfl-swatch k-modelled"></span> Neural simulation</td><td><span class="dfl-tag is-tested">Tested 2026-10-05 on Linux</span></td></tr>
+          <tr><td>Rates to drive (<code>make_loom_drives.py</code>): <code>drive_s = clip(0.8 − m_s − 0.5·(a_s − a_o), −1.2, 1.2)</code>, a = DNa02 ÷ 100 Hz, m = MDN ÷ 100 Hz; the 0.8 is an external walking drive</td><td><strong>ours, hand-made, not fitted</strong></td><td><span class="dfl-swatch k-handmade"></span> Our mapping</td><td><span class="dfl-tag is-tested">Tested 2026-10-05 on Linux</span> <span class="dfl-tag is-responds">Ours: hand-made mapping</span></td></tr>
+          <tr><td>Legs, rhythm, balance and turning from the two numbers (<code>HybridTurningController</code>)</td><td>FlyGym 2.1.0</td><td><span class="dfl-swatch k-scripted"></span> Body controller</td><td><span class="dfl-tag is-tested">Tested 2026-10-05 on Linux</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>What you need: the finished beginner project folder (its <code>.venv</code> from <code>requirements.lock</code> and <code>upstream/</code> at 91bdd1e7) as <code>FLY_PROJECT</code>, and, for the body, the Python 3.12 environment from <a href="#body-heading">Add a body</a> (<code>requirements-body.lock</code>, FlyGym 2.1.0). Do not install both at once on a small machine: each needs about 0.6–0.8 GB.</p>
+    <ol class="dfl-bodysteps">
+      <li>
+        <h4>Which neurons see the looming shadow (2 minutes) <span class="dfl-tag is-tested">Tested 2026-10-05 on Linux</span></h4>
+        <pre><code># the FlyWire v783 annotation table of Schlegel et al. (31.7 MB; commit a83b2776 on 2026-10-05)
+python3 -c "import urllib.request; urllib.request.urlretrieve('https://raw.githubusercontent.com/flyconnectome/flywire_annotations/main/supplemental_files/Supplemental_file1_neuron_annotations.tsv', 'annot.tsv')"
+python3 step0.py annot.tsv $FLY_PROJECT/upstream/Completeness_783.csv step0.json
+# expect: L = 54 LC4 + 108 LPLC2 = 162, R = 50 LC4 + 102 LPLC2 = 152, none missing from v783</code></pre>
+        <p>The selector is fly67's: <code>cell_type</code> exactly LC4 or LPLC2, and <code>side</code> = the soma side. <code>step0.json</code> must sit one folder above <code>run_loom.py</code> (for example <code>loom/step0.json</code> and <code>loom/project/run_loom.py</code>). The table comes from its <code>main</code> branch, which is not pinned.</p>
+      </li>
+      <li>
+        <h4>The brain trials (about 160 s each on 2 CPUs, 0.77 GB RAM) <span class="dfl-tag is-tested">Tested 2026-10-05 on Linux</span></h4>
+        <pre><code>$FLY_PROJECT/.venv/bin/python -m pytest -q tests/                     # expect 12 passed (no FlyWire data needed except step0.json)
+$FLY_PROJECT/.venv/bin/python run_loom.py prep    --annot annot.tsv --sides sides.npz
+$FLY_PROJECT/.venv/bin/python run_loom.py prep-dn --annot annot.tsv --out dn_info.json   # 1,299 descending neurons
+# one looming trial, left eye, real wiring, trial seed 0  -> results/brain/LOOML-real-0.json
+$FLY_PROJECT/.venv/bin/python run_loom.py one real 0 --stim LOOML --rate 80 --style run8 --out results/brain --sides sides.npz --dn dn_info.json
+# the same with a degree-preserving shuffle (shuffle seed 3)
+$FLY_PROJECT/.venv/bin/python run_loom.py one D 3 --stim LOOML --rate 80 --style run8 --out results/brain --sides sides.npz --dn dn_info.json
+python3 brain_readout.py results/brain/LOOML-real-0.json   # giant fibre, DNa02 L/R, LI, fly67's pass rule</code></pre>
+        <p>Expected (our run): left-eye shadow, real wiring: giant fibre 129 / 94 Hz (left / right), DNa02 right 23 Hz, left 0 Hz (fly67's own engine: 114.8 Hz mean, 25 and 0). Scrambled wiring: every readout 0 Hz. Each trial file also holds every descending neuron's spikes in ten 100 ms bins. We ran these trials through the worker's pre-registered queue, which calls the same trial code.</p>
+        <p>Not run in our test: the giant fibre silenced (all synapses from both DNp01 set to 0) <span class="dfl-tag is-untested">Not run in our test</span></p>
+        <pre><code>$FLY_PROJECT/.venv/bin/python run_loom.py one real 0 --stim LOOML --rate 80 --silence GF --style run8 --out results/brain --sides sides.npz --dn dn_info.json</code></pre>
+      </li>
+      <li>
+        <h4>Rates to a walking drive (our mapping, hand-made, not fitted) <span class="dfl-tag is-tested">Tested 2026-10-05 on Linux</span> <span class="dfl-tag is-responds">Ours: hand-made mapping</span></h4>
+        <pre><code>drive_s = clip(0.8 - m_s - 0.5 * (a_s - a_o), -1.2, 1.2)
+a = DNa02 rate / 100 Hz, m = mean MDN rate on side s / 100 Hz, s = this side, o = the other side</code></pre>
+        <pre><code>python make_loom_drives.py results/brain results/drives      # also writes the floor F and the brainless random arm</code></pre>
+        <p>The 0.8 is a constant <strong>external</strong> walking drive, not the brain (fly67 and optogenetic experiments do the same). Each drive file has 12 bins of 100 ms: two at (0.8, 0.8) before the looming onset, then the ten brain bins. DNa02 slows the legs on its own side, so the fly turns toward the side where DNa02 fires; that this means "away" rests on this sign and on fly67's claim, and the direction in real flies was not verified by us.</p>
+      </li>
+      <li>
+        <h4>The body (FlyGym 2.1.0, about 60 s per run on 2 CPUs) <span class="dfl-tag is-tested">Tested 2026-10-05 on Linux</span></h4>
+        <pre><code>MUJOCO_GL=disable python body_run.py one results/drives/L-real-0.json results/body/L-real-0.json
+MUJOCO_GL=disable python body_run.py queue results/drives results/body --order F,L-real-0,R-real-0 --start-cut &lt;ISO&gt; --kill &lt;ISO&gt; --log body-log.jsonl
+python3 analyze_loom.py results charts/loom-turn.json          # the pre-registered reading</code></pre>
+        <p><code>heading_after_onset_deg</code> is the turn over the 1.0 s after onset (+ = left, FlyGym's convention). For a left-eye shadow a right turn (negative) is "away". <code>--start-cut</code> and <code>--kill</code> are the clock limits of our queue (UTC times); for your own runs pick times that leave room.</p>
+      </li>
+    </ol>
+    <h3 id="loom-expect-heading">Expected numbers</h3>
+    <div class="table-scroll is-wide">
+      <table>
+        <caption>Our runs of 5 Oct 2026: turn away from the shadow in the 1.0 s after onset (+ = away). A run "turns away" when it turns more than 10° beyond the no-brain floor. The physics is deterministic, so the same drive gives the same walk.</caption>
+        <thead><tr><th scope="col">Runs</th><th scope="col">Turn away (°)</th><th scope="col">Turned away</th></tr></thead>
+        <tbody>
+          <tr><td>Real map, left-eye shadow (seeds 0, 1)</td><td>33.6, 40.6</td><td>2 of 2</td></tr>
+          <tr><td>Real map, right-eye shadow (seeds 0, 1)</td><td>64.1, 68.3</td><td>2 of 2</td></tr>
+          <tr><td>Scrambled map (shuffles 3, 4 left; 3 right): drives identical to the floor</td><td>1.5, 1.5, −1.5</td><td>0 of 3</td></tr>
+          <tr><td>No brain, constant (0.8, 0.8): the floor</td><td>drifts 1.5° to the right; 11.5 mm forward after onset</td><td>reference</td></tr>
+          <tr><td>No brain, random steering (3 per eye)</td><td>−6.6, −10.4, 1.1 (left eye); 19.8, 14.8, 18.7 (right eye)</td><td>3 of 6</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>What the numbers mean:</strong> with the same shadow, the same mapping and the same body, only the real wiring sent turning commands, so in this model the map's wiring makes the turn. <strong>Limits:</strong> one model, open loop, our hand-made mapping, a constant external walking drive, 1 s; not a real fly. Only 4 real and 3 scrambled runs; the scrambled brains fired about half as many spikes, and we did not reach an activity-matched scramble. The stimulus is strong and artificial (every looming detector of one eye at 80 Hz). Untested by us: the giant fibre silenced, other stimulus rates, a realistic looming object, a closed loop in which the body's movement changes what the eye sees, macOS, Windows and GPUs. <span class="dfl-tag is-untested">Untested</span></p>
   </section>
 
   <section aria-labelledby="deeper-heading">
@@ -2478,6 +2551,1433 @@ zipp==4.1.0</code></pre>
     </details>
   </section>
 
+  <section aria-labelledby="loom-source-heading">
+    <h2 id="loom-source-heading">The Add-a-sense source</h2>
+    <p>The files we ran on 5 Oct 2026 for <a href="#loom-heading">Add a sense: looming</a>. Code is MIT (Digital Fly Lab); FlyGym itself is Apache-2.0 and the FlyWire data is CC BY-NC 4.0. <code>run_loom.py</code> imports <code>fly_taste.py</code> from the beginner project and <code>nulls.py</code> from <a href="#body-source-heading">the Add-a-body source</a> (unchanged).</p>
+    <details class="dfl-code">
+      <summary><code>step0.py</code>: which neurons see the shadow (41 lines). Verbatim.</summary>
+      <pre><code>import csv, json, sys, hashlib
+annot, compl, out = sys.argv[1:4]
+ids = set()
+with open(compl) as f:
+    r = csv.reader(f); h = next(r)
+    for row in r: ids.add(int(row[0]))
+sets = {&quot;L&quot;: {&quot;LC4&quot;: [], &quot;LPLC2&quot;: []}, &quot;R&quot;: {&quot;LC4&quot;: [], &quot;LPLC2&quot;: []}}
+other_side = {&quot;LC4&quot;: {}, &quot;LPLC2&quot;: {}}
+read = {}
+RO = {&quot;DNp01&quot;, &quot;DNa02&quot;, &quot;DNa01&quot;, &quot;DNp09&quot;, &quot;DNg62&quot;, &quot;CB0701&quot;, &quot;MDN&quot;}
+hemi_alias = []
+with open(annot, newline=&quot;&quot;) as f:
+    for row in csv.DictReader(f, delimiter=&quot;\t&quot;):
+        ct = row.get(&quot;cell_type&quot;) or &quot;&quot;
+        side = row.get(&quot;side&quot;) or &quot;&quot;
+        rid = int(row[&quot;root_id&quot;])
+        if ct in (&quot;LC4&quot;, &quot;LPLC2&quot;):
+            if side == &quot;left&quot;: sets[&quot;L&quot;][ct].append(rid)
+            elif side == &quot;right&quot;: sets[&quot;R&quot;][ct].append(rid)
+            else: other_side[ct][side] = other_side[ct].get(side, 0) + 1
+        if ct in RO:
+            read.setdefault(ct, []).append({&quot;id&quot;: rid, &quot;side&quot;: side, &quot;in_v783&quot;: rid in ids})
+        ht = row.get(&quot;hemibrain_type&quot;) or &quot;&quot;
+        if ht in RO and ct not in RO:
+            hemi_alias.append({&quot;id&quot;: rid, &quot;cell_type&quot;: ct, &quot;hemibrain_type&quot;: ht, &quot;side&quot;: side})
+res = {&quot;source&quot;: &quot;flyconnectome/flywire_annotations supplemental_files/Supplemental_file1_neuron_annotations.tsv&quot;,
+       &quot;annotation_commit&quot;: &quot;a83b2776d60d5764cef36b927f5f9679c16c47a2&quot;,
+       &quot;annotation_sha256&quot;: hashlib.sha256(open(annot,&#x27;rb&#x27;).read()).hexdigest(),
+       &quot;completeness&quot;: &quot;philshiu/Drosophila_brain_model Completeness_783.csv at 91bdd1e7 (%d neurons)&quot; % len(ids),
+       &quot;selector&quot;: &quot;cell_type exactly LC4 or LPLC2; side == left/right (soma side), as fly67 src/circuits.js&quot;,
+       &quot;counts&quot;: {s: {t: len(v) for t, v in d.items()} | {&quot;total&quot;: sum(len(v) for v in d.values())} for s, d in sets.items()},
+       &quot;expected&quot;: {&quot;L&quot;: {&quot;LC4&quot;: 54, &quot;LPLC2&quot;: 108, &quot;total&quot;: 162}, &quot;R&quot;: {&quot;LC4&quot;: 50, &quot;LPLC2&quot;: 102, &quot;total&quot;: 152}},
+       &quot;missing_from_v783&quot;: [i for s in sets.values() for v in s.values() for i in v if i not in ids],
+       &quot;dropped_other_side&quot;: other_side,
+       &quot;readouts&quot;: read, &quot;hemibrain_alias_not_used&quot;: hemi_alias,
+       &quot;ids&quot;: {s: sorted(i for v in d.values() for i in v) for s, d in sets.items()}}
+res[&quot;matches_expected&quot;] = all(res[&quot;counts&quot;][s][k] == res[&quot;expected&quot;][s][k] for s in &quot;LR&quot; for k in (&quot;LC4&quot;, &quot;LPLC2&quot;))
+json.dump(res, open(out, &quot;w&quot;), indent=1)
+print(json.dumps({k: res[k] for k in (&quot;counts&quot;, &quot;matches_expected&quot;, &quot;missing_from_v783&quot;, &quot;dropped_other_side&quot;)}))
+print({k: [(r[&quot;id&quot;], r[&quot;side&quot;], r[&quot;in_v783&quot;]) for r in v] for k, v in read.items()})
+print(hemi_alias)</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>run_loom.py</code>: the brain worker with the looming stimulus (616 lines). Paths and run identifiers of our machine are replaced by neutral wording; otherwise verbatim.</summary>
+      <pre><code>&quot;&quot;&quot;Run 8 looming worker (Digital Fly Lab, 2026-10-05). Licence: MIT.
+
+A copy of run 6&#x27;s run_nulls.py (the Add-a-body worker on this page) with three additions that do not
+change the run 5/6 code path for SUG/P9 trials:
+  --stim LOOML|LOOMR   every v783 neuron with cell_type LC4 or LPLC2 and soma side left/right (IDs from ../step0.json,
+                       built by step0.py from the Schlegel et al. annotation table, fly67&#x27;s selector)
+  --rate HZ            Poisson rate per stimulated neuron (default 150 Hz = upstream; looming uses 80 Hz as fly67)
+  --silence GF         zero every synapse FROM both DNp01 (giant fibre), as upstream silence()
+  queue8               the pre-registered run 8 brain queue (gate, 12 core trials, GF-off and G fill), skipping
+                       existing files; refuses to start a LOOM trial unless ../preregistration.md exists
+Trial files: results/brain/&lt;STIM&gt;-&lt;arm&gt;-&lt;seed&gt;[-g&lt;gain&gt;][-gfoff].json, written atomically.
+Original docstring follows.
+Fair-test batch driver and trial worker (Digital Fly Lab, run 5; extended in run 6). Licence: MIT.
+
+Run 6 (run:03aa82ff-d83b-47ec-bb36-c8edc64e696c, 2026-10-02) adds, without changing the run 5 code path:
+  --stim SUG|P9|P9L   which neurons get the upstream Poisson input (SUG = the 21 sugar GRNs, as run 5; P9 = DNp09 L+R;
+                      P9L = DNp09 left only). The Poisson input itself is exactly upstream&#x27;s.
+  --dn DN_INFO.json   record every spike (SpikeMonitor record=True; does not change the dynamics) and write, for each
+                      descending neuron (FlyWire super_class &quot;descending&quot;), spike counts in 10 bins of 100 ms.
+  --style run6        trial file name &lt;stim&gt;-&lt;arm&gt;-&lt;seed&gt;[-g&lt;gain&gt;].json
+  prep-dn             DN_INFO.json (model index, root ID, cell type, side of every descending neuron) from the annotation table
+  queue6              the run 6 brain queue (gate, core, G addendum with its adaptive gain rule, fill), skipping existing files
+
+Imports fly_taste.py (the bootstrap Build-your-own project) from FLY_PROJECT, which must also hold
+upstream/ (philshiu/Drosophila_brain_model at 91bdd1e7 with the FlyWire v783 files).
+
+Commands
+  python run_nulls.py prep  --annot ANNOT.tsv --sides SIDES.npz
+        input/output side flags from the FlyWire annotation table (super_class, v783 root IDs)
+  python run_nulls.py one   ARM SEED [--gain G] --out TRIALS_DIR [--sides SIDES.npz]
+        one trial in this process (ARM: real, D, W, S, B, G, B&#x27;); writes TRIALS_DIR/&lt;arm&gt;-&lt;seed&gt;[-g&lt;gain&gt;].json atomically
+  python run_nulls.py queue --out TRIALS_DIR [--sides SIDES.npz] [--deadline ISO] [--queue core|tier2|fill|all]
+        runs the pre-registered queue, one fresh process per trial, skipping trial files that exist
+&quot;&quot;&quot;
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import platform
+import resource
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+PROJECT = Path(os.environ.get(&quot;FLY_PROJECT&quot;, &quot;byo&quot;))
+CGROUP_MEM = Path(&quot;/sys/fs/cgroup/memory.current&quot;)
+GIB = 1024 ** 3
+TIMEOUT_S = 240
+UPSTREAM_COMMIT = &quot;91bdd1e7dcf193f3e7ca5a8933497fcef63b7960&quot;
+INPUT_CLASSES = (&quot;sensory&quot;, &quot;ascending&quot;, &quot;sensory_ascending&quot;)  # sensory_ascending: see report deviation 1
+OUTPUT_CLASSES = (&quot;motor&quot;, &quot;descending&quot;, &quot;endocrine&quot;)
+
+ARM_SEEDS_CORE = [(&quot;B&quot;, 301), (&quot;W&quot;, 101), (&quot;D&quot;, 3), (&quot;S&quot;, 201), (&quot;B&quot;, 302), (&quot;W&quot;, 102), (&quot;D&quot;, 4), (&quot;S&quot;, 202),
+                  (&quot;B&quot;, 303), (&quot;W&quot;, 103), (&quot;D&quot;, 5), (&quot;S&quot;, 203), (&quot;B&quot;, 304), (&quot;W&quot;, 104), (&quot;S&quot;, 204), (&quot;B&quot;, 305),
+                  (&quot;W&quot;, 105), (&quot;S&quot;, 205)]
+
+
+def now():
+    return datetime.now(timezone.utc).strftime(&quot;%Y-%m-%dT%H:%M:%SZ&quot;)
+
+
+def mem_current():
+    try:
+        return int(CGROUP_MEM.read_text())
+    except OSError:
+        return None
+
+
+def trial_name(arm, seed, gain=None, stim=None, silence=None):
+    a = &quot;Bp&quot; if arm == &quot;B&#x27;&quot; else arm
+    pre = f&quot;{stim}-&quot; if stim else &quot;&quot;
+    return pre + f&quot;{a}-{seed}&quot; + (f&quot;-g{gain:g}&quot; if gain is not None else &quot;&quot;) + (&quot;-gfoff&quot; if silence else &quot;&quot;) + &quot;.json&quot;
+
+
+P9_IDS = {&quot;L&quot;: 720575940635872101, &quot;R&quot;: 720575940627652358}  # DNp09 (FlyWire v783), from run6-dn-candidates.md
+
+
+STEP0 = HERE.parent / &quot;step0.json&quot;
+GF_IDS = [720575940622838154, 720575940632499757]  # DNp01 left, right (step0.json readouts)
+
+
+def silence_counts(npre, ncnt, slnc_idx):
+    &quot;&quot;&quot;As upstream silence(): zero every synapse FROM the silenced neurons. Returns a copy if anything is silenced.&quot;&quot;&quot;
+    import numpy as np
+    if not len(slnc_idx):
+        return ncnt
+    out = ncnt.copy()
+    out[np.isin(npre, slnc_idx)] = 0
+    return out
+
+
+def stim_ids(stim, ft):
+    if stim in (&quot;LOOML&quot;, &quot;LOOMR&quot;):
+        return list(json.load(open(STEP0))[&quot;ids&quot;][stim[-1]])
+    if stim == &quot;SUG&quot;:
+        return list(ft.SUGAR_GRNS_V783)
+    if stim == &quot;P9&quot;:
+        return [P9_IDS[&quot;L&quot;], P9_IDS[&quot;R&quot;]]
+    if stim == &quot;P9L&quot;:
+        return [P9_IDS[&quot;L&quot;]]
+    raise SystemExit(f&quot;unknown stim {stim}&quot;)
+
+
+def prep_dn(annot, out):
+    import csv
+    sys.path.insert(0, str(PROJECT))
+    os.environ.setdefault(&quot;FLY_UPSTREAM&quot;, str(PROJECT / &quot;upstream&quot;))
+    import fly_taste as ft
+    ids = ft.load_ids()
+    id2i = {int(f): i for i, f in enumerate(ids)}
+    rows = []
+    with open(annot, newline=&quot;&quot;) as f:
+        for row in csv.DictReader(f, delimiter=&quot;\t&quot;):
+            if row[&quot;super_class&quot;] == &quot;descending&quot;:
+                rid = int(row[&quot;root_id&quot;])
+                if rid in id2i:
+                    rows.append({&quot;i&quot;: id2i[rid], &quot;id&quot;: rid, &quot;cell_type&quot;: row.get(&quot;cell_type&quot;) or &quot;&quot;,
+                                 &quot;side&quot;: row.get(&quot;side&quot;) or &quot;&quot;})
+    rows.sort(key=lambda r: r[&quot;i&quot;])
+    json.dump({&quot;n&quot;: len(rows), &quot;neurons&quot;: rows}, open(out, &quot;w&quot;))
+    print(&quot;descending neurons in the model:&quot;, len(rows))
+
+
+# ------------------------------------------------------------------ prep
+def prep(annot, sides_out):
+    import csv
+    import numpy as np
+    sys.path.insert(0, str(PROJECT))
+    os.environ.setdefault(&quot;FLY_UPSTREAM&quot;, str(PROJECT / &quot;upstream&quot;))
+    import fly_taste as ft
+    ids = ft.load_ids()
+    cls = {}
+    with open(annot, newline=&quot;&quot;) as f:
+        for row in csv.DictReader(f, delimiter=&quot;\t&quot;):
+            cls[int(row[&quot;root_id&quot;])] = row[&quot;super_class&quot;]
+    names = sorted(set(cls.values()))
+    code = np.full(ids.size, -1, dtype=np.int16)
+    for i, fid in enumerate(ids):
+        c = cls.get(int(fid))
+        if c is not None:
+            code[i] = names.index(c)
+    matched = int((code &gt;= 0).sum())
+    inp = np.isin(code, [names.index(c) for c in INPUT_CLASSES if c in names])
+    out = np.isin(code, [names.index(c) for c in OUTPUT_CLASSES if c in names])
+    np.savez(sides_out, code=code, names=np.array(names), input_side=inp, output_side=out)
+    info = {&quot;n_model_ids&quot;: int(ids.size), &quot;n_annot_rows&quot;: len(cls), &quot;matched&quot;: matched,
+            &quot;match_fraction&quot;: matched / ids.size, &quot;n_input_side&quot;: int(inp.sum()), &quot;n_output_side&quot;: int(out.sum()),
+            &quot;classes&quot;: {n: int((code == k).sum()) for k, n in enumerate(names)}}
+    print(json.dumps(info, indent=1))
+    return info
+
+
+# ------------------------------------------------------------------ one trial (worker)
+def one(arm, seed, gain, out_dir, sides_path, stim=&quot;SUG&quot;, dn_info=None, style=None, rate=150.0, silence=None):
+    t_start = time.time()
+    mem_launch = int(os.environ.get(&quot;FAIRNULL_MEM_AT_LAUNCH&quot;, &quot;0&quot;)) or mem_current()
+    import numpy as np
+    sys.path.insert(0, str(PROJECT))
+    os.environ.setdefault(&quot;FLY_UPSTREAM&quot;, str(PROJECT / &quot;upstream&quot;))
+    import brian2 as b2
+    from brian2 import Hz, ms, mV
+    import fly_taste as ft
+    import nulls
+    from model import default_params
+
+    ids = ft.load_ids()
+    n = ids.size
+    id2i = {int(f): i for i, f in enumerate(ids)}
+    exc = [id2i[int(f)] for f in stim_ids(stim, ft)]
+    mn9 = id2i[ft.MN9]
+    sides = np.load(sides_path) if sides_path and Path(sides_path).exists() else None
+
+    pre = ft._read_column(&quot;Presynaptic_Index&quot;, np.int32)
+    post = ft._read_column(&quot;Postsynaptic_Index&quot;, np.int32)
+    cnt = ft._read_column(&quot;Excitatory x Connectivity&quot;, np.float64)
+    assert np.array_equal(cnt, np.round(cnt))
+    cnt = cnt.astype(np.int32)
+    real = (pre, post, cnt)
+
+    checks, stats = {}, {}
+    if arm == &quot;real&quot;:
+        new = real
+    elif arm in (&quot;D&quot;, &quot;G&quot;):
+        new = nulls.null_degree(pre, post, cnt, seed)
+    elif arm == &quot;W&quot;:
+        new = nulls.null_weight(pre, post, cnt, seed)
+    elif arm == &quot;S&quot;:
+        new = nulls.null_sign(pre, post, cnt, seed, n)
+    elif arm == &quot;B&quot;:
+        new = nulls.null_boundary(pre, post, cnt, seed, sides[&quot;input_side&quot;], sides[&quot;output_side&quot;])
+    elif arm == &quot;B&#x27;&quot;:
+        new = nulls.null_stimreadout(pre, post, cnt, seed, exc, mn9, n)
+    else:
+        raise SystemExit(f&quot;unknown arm {arm}&quot;)
+    if arm != &quot;real&quot;:
+        kw = {}
+        if arm == &quot;B&quot;:
+            kw = dict(input_side=sides[&quot;input_side&quot;], output_side=sides[&quot;output_side&quot;])
+        if arm == &quot;B&#x27;&quot;:
+            kw = dict(stim_idx=exc, readout_idx=mn9)
+        checks = nulls.check(arm, real, new, n, **kw)
+        if not all(checks.values()):
+            print(&quot;PROPERTY CHECK FAILED&quot;, checks, file=sys.stderr)
+            sys.exit(3)  # no data recorded
+        s0 = nulls.structure_stats(pre, post, n)
+        s1 = nulls.structure_stats(new[0], new[1], n)
+        stats = {&quot;self_loops_real&quot;: s0[&quot;self_loops&quot;], &quot;self_loops_null&quot;: s1[&quot;self_loops&quot;],
+                 &quot;self_loops_created&quot;: s1[&quot;self_loops&quot;] - s0[&quot;self_loops&quot;],
+                 &quot;duplicate_pairs_real&quot;: s0[&quot;duplicate_pairs&quot;], &quot;duplicate_pairs_null&quot;: s1[&quot;duplicate_pairs&quot;],
+                 &quot;duplicate_pairs_created&quot;: s1[&quot;duplicate_pairs&quot;] - s0[&quot;duplicate_pairs&quot;]}
+    edge_sha = nulls.sha256_arrays(*new)
+    npre, npost, ncnt = new
+    slnc_idx = [id2i[i] for i in GF_IDS] if silence == &quot;GF&quot; else []
+    ncnt = silence_counts(npre, ncnt, slnc_idx)
+    del real, pre, post, cnt
+    if arm != &quot;real&quot;:
+        del new
+    t_null = time.time() - t_start
+
+    # ---- build the upstream LIF network exactly as fly_taste.build_network, from arrays
+    params = dict(default_params)
+    params[&quot;r_poi&quot;] = float(rate) * Hz
+    b2.prefs.codegen.target = ft.pick_codegen_target()
+    b2.start_scope()
+    t0 = time.time()
+    neu = b2.NeuronGroup(N=n, model=params[&quot;eqs&quot;], method=&quot;linear&quot;, threshold=params[&quot;eq_th&quot;],
+                         reset=params[&quot;eq_rst&quot;], refractory=&quot;rfc&quot;, name=&quot;default_neurons&quot;, namespace=params)
+    neu.v = params[&quot;v_0&quot;]
+    neu.g = 0 * mV
+    neu.rfc = params[&quot;t_rfc&quot;]
+    syn = b2.Synapses(neu, neu, &quot;w : volt&quot;, on_pre=&quot;g += w&quot;, delay=params[&quot;t_dly&quot;], name=&quot;default_synapses&quot;)
+    step = 2_000_000
+    for k in range(0, npre.size, step):
+        syn.connect(i=npre[k:k + step], j=npost[k:k + step])
+    w_syn = float(params[&quot;w_syn&quot;]) * (gain if gain is not None else 1.0)  # gain scales recurrent synapses only
+    for k in range(0, ncnt.size, step):
+        syn.w_[k:k + step] = ncnt[k:k + step].astype(np.float64) * w_syn
+    n_syn = len(syn)
+    del npre, npost, ncnt
+    pois = []
+    for i in exc:  # Poisson input exactly as upstream poi(); the stimulus is not re-tuned
+        pois.append(b2.PoissonInput(target=neu[i], target_var=&quot;v&quot;, N=1, rate=params[&quot;r_poi&quot;],
+                                    weight=params[&quot;w_syn&quot;] * params[&quot;f_poi&quot;]))
+        neu[i].rfc = 0 * ms
+    mon = b2.SpikeMonitor(neu, record=bool(dn_info))  # run 6: record=True only to bin DN spikes
+    net = b2.Network(neu, syn, mon, *pois)
+    t_build = time.time() - t0
+    t1 = time.time()
+    b2.seed(seed if arm == &quot;real&quot; else 0)  # trial seed: real arm = its seed; nulls = trial seed 0
+    net.run(1000 * ms)
+    t_sim = time.time() - t1
+    c = np.asarray(mon.count[:], dtype=np.int64)
+
+    order = np.argsort(-c, kind=&quot;stable&quot;)[:20]
+    rec = {
+        &quot;stim&quot;: stim, &quot;stim_ids&quot;: [int(ids[i]) for i in exc] if stim != &quot;SUG&quot; else &quot;21 sugar GRNs (fly_taste.SUGAR_GRNS_V783)&quot;,
+        &quot;arm&quot;: arm, &quot;null_type&quot;: {&quot;real&quot;: None, &quot;D&quot;: &quot;degree-preserving&quot;, &quot;W&quot;: &quot;weight-shuffle&quot;, &quot;S&quot;: &quot;sign-shuffle&quot;,
+                                  &quot;B&quot;: &quot;boundary-preserving&quot;, &quot;G&quot;: &quot;degree-preserving&quot;, &quot;B&#x27;&quot;: &quot;other&quot;}[arm],
+        &quot;shuffle_seed&quot;: None if arm == &quot;real&quot; else seed, &quot;trial_seed&quot;: seed if arm == &quot;real&quot; else 0,
+        &quot;gain&quot;: gain, &quot;status&quot;: &quot;ok&quot;, &quot;rate_hz&quot;: float(rate), &quot;silenced&quot;: [int(ids[i]) for i in slnc_idx],
+        &quot;stim_n&quot;: len(exc), &quot;stim_spikes&quot;: int(c[exc].sum()),
+        &quot;mn9_hz&quot;: float(c[mn9]), &quot;sugar_grn_mean_hz&quot;: float(c[exc].mean()),
+        &quot;whole_brain_spikes&quot;: int(c.sum()), &quot;neurons_active&quot;: int((c &gt; 0).sum()),
+        &quot;top20&quot;: [{&quot;id&quot;: int(ids[i]), &quot;hz&quot;: int(c[i])} for i in order if c[i] &gt; 0],
+        &quot;n_synapses&quot;: int(n_syn), &quot;property_checks&quot;: checks, &quot;structure&quot;: stats, &quot;edge_sha256&quot;: edge_sha,
+        &quot;wall_s&quot;: round(time.time() - t_start, 1), &quot;null_s&quot;: round(t_null, 1), &quot;build_s&quot;: round(t_build, 1),
+        &quot;sim_s&quot;: round(t_sim, 1), &quot;peak_rss_kb&quot;: resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+        &quot;memory_current_at_launch&quot;: mem_launch, &quot;upstream_commit&quot;: UPSTREAM_COMMIT,
+        &quot;versions&quot;: {&quot;python&quot;: platform.python_version(), &quot;brian2&quot;: b2.__version__, &quot;numpy&quot;: np.__version__,
+                     &quot;codegen_target&quot;: b2.prefs.codegen.target},
+        &quot;finished_at&quot;: now(),
+    }
+    if sides is not None:
+        names = [str(x) for x in sides[&quot;names&quot;]]
+        code = sides[&quot;code&quot;]
+        act = c &gt; 0
+        for cl in (&quot;motor&quot;, &quot;descending&quot;):
+            if cl in names:
+                m = code == names.index(cl)
+                rec[f&quot;active_{cl}&quot;] = int((act &amp; m).sum())
+                rec[f&quot;{cl}_total&quot;] = int(m.sum())
+    if dn_info:
+        info = json.load(open(dn_info))[&quot;neurons&quot;]
+        di = np.array([r[&quot;i&quot;] for r in info], dtype=np.int64)
+        isdn = np.zeros(n, dtype=bool)
+        isdn[di] = True
+        sp_i = np.asarray(mon.i[:], dtype=np.int64)
+        sp_t = np.asarray(mon.t[:] / ms, dtype=np.float64)
+        keep = isdn[sp_i]
+        b = np.minimum((sp_t[keep] // 100).astype(np.int64), 9)
+        bins = {}
+        for i_, k_ in zip(sp_i[keep], b):
+            bins.setdefault(int(i_), [0] * 10)[int(k_)] += 1
+        meta = {r[&quot;i&quot;]: r for r in info}
+        rec[&quot;dn&quot;] = {&quot;n_descending&quot;: int(di.size), &quot;bin_ms&quot;: 100, &quot;n_bins&quot;: 10, &quot;n_active&quot;: len(bins),
+                     &quot;active&quot;: [{&quot;id&quot;: meta[i][&quot;id&quot;], &quot;cell_type&quot;: meta[i][&quot;cell_type&quot;], &quot;side&quot;: meta[i][&quot;side&quot;],
+                                 &quot;bins&quot;: v, &quot;total&quot;: int(sum(v))} for i, v in sorted(bins.items(), key=lambda kv: -sum(kv[1]))]}
+        assert sum(x[&quot;total&quot;] for x in rec[&quot;dn&quot;][&quot;active&quot;]) == int(c[di].sum())  # bins agree with mon.count
+    out = Path(out_dir) / trial_name(arm, seed, gain, stim if style in (&quot;run6&quot;, &quot;run8&quot;) else None, silence)
+    tmp = out.with_suffix(&quot;.tmp&quot;)
+    tmp.write_text(json.dumps(rec, indent=1))
+    os.replace(tmp, out)
+    print(f&quot;{out.name}: MN9 {rec[&#x27;mn9_hz&#x27;]:.0f} Hz, spikes {rec[&#x27;whole_brain_spikes&#x27;]}, active {rec[&#x27;neurons_active&#x27;]}, &quot;
+          f&quot;wall {rec[&#x27;wall_s&#x27;]} s, rss {rec[&#x27;peak_rss_kb&#x27;] / 1e6:.2f} GB&quot;, flush=True)
+
+
+# ------------------------------------------------------------------ queue (driver)
+def build_queue(which, out_dir):
+    q = []
+    if which in (&quot;core&quot;, &quot;all&quot;):
+        q += [(&quot;real&quot;, 1, None), (&quot;real&quot;, 2, None)] + [(a, s, None) for a, s in ARM_SEEDS_CORE]
+    if which in (&quot;tier2&quot;, &quot;all&quot;):
+        q += [(&quot;G&quot;, 3, 1.5), (&quot;G&quot;, 3, 2.0), (&quot;G&quot;, 3, 3.0)]
+    if which in (&quot;fill&quot;,):
+        g = os.environ.get(&quot;FAIRNULL_MATCHED_GAIN&quot;)
+        if g:
+            q += [(&quot;G&quot;, 4, float(g)), (&quot;G&quot;, 5, float(g))]
+        q += [(&quot;B&#x27;&quot;, 401, None), (&quot;B&#x27;&quot;, 402, None), (&quot;B&#x27;&quot;, 403, None)]
+    return q
+
+
+def queue(out_dir, sides_path, deadline, which):
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    log = out_dir.parent / &quot;queue-log.jsonl&quot;
+    dl = datetime.fromisoformat(deadline.replace(&quot;Z&quot;, &quot;+00:00&quot;)).timestamp() if deadline else None
+    timeouts = {}
+    for arm, seed, gain in build_queue(which, out_dir):
+        f = out_dir / trial_name(arm, seed, gain)
+        if f.exists():
+            continue
+        if dl and time.time() &gt;= dl:
+            _log(log, {&quot;event&quot;: &quot;deadline&quot;, &quot;at&quot;: now()})
+            break
+        if timeouts.get(arm, 0) &gt;= 2:
+            _log(log, {&quot;event&quot;: &quot;arm-stopped-2-timeouts&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;at&quot;: now()})
+            continue
+        m = mem_current()
+        waited = 0
+        while m is not None and m &gt; 2.4 * GIB and waited &lt; 180:
+            time.sleep(30)
+            waited += 30
+            m = mem_current()
+        if m is not None and m &gt; 2.6 * GIB:
+            _log(log, {&quot;event&quot;: &quot;skipped-memory&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;gain&quot;: gain, &quot;mem&quot;: m, &quot;at&quot;: now()})
+            continue
+        cmd = [sys.executable, str(HERE / &quot;run_nulls.py&quot;), &quot;one&quot;, arm, str(seed), &quot;--out&quot;, str(out_dir)]
+        if gain is not None:
+            cmd += [&quot;--gain&quot;, str(gain)]
+        if sides_path:
+            cmd += [&quot;--sides&quot;, str(sides_path)]
+        env = dict(os.environ, FAIRNULL_MEM_AT_LAUNCH=str(m or 0))
+        t0 = time.time()
+        limit = TIMEOUT_S if not dl else max(1, min(TIMEOUT_S, dl - t0))
+        _log(log, {&quot;event&quot;: &quot;start&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;gain&quot;: gain, &quot;mem&quot;: m, &quot;waited_s&quot;: waited, &quot;at&quot;: now()})
+        p = subprocess.Popen(cmd, env=env)
+        try:
+            rc = p.wait(timeout=limit)
+        except subprocess.TimeoutExpired:
+            p.kill()
+            p.wait()
+            if dl and time.time() &gt;= dl - 1 and limit &lt; TIMEOUT_S:
+                _log(log, {&quot;event&quot;: &quot;killed-at-deadline&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;gain&quot;: gain, &quot;at&quot;: now()})
+                break
+            timeouts[arm] = timeouts.get(arm, 0) + 1
+            rec = {&quot;arm&quot;: arm, &quot;shuffle_seed&quot;: None if arm == &quot;real&quot; else seed, &quot;gain&quot;: gain, &quot;status&quot;: &quot;timeout&quot;,
+                   &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;memory_current_at_launch&quot;: m, &quot;finished_at&quot;: now()}
+            tmp = f.with_suffix(&quot;.tmp&quot;)
+            tmp.write_text(json.dumps(rec, indent=1))
+            os.replace(tmp, f)
+            _log(log, {&quot;event&quot;: &quot;timeout&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;gain&quot;: gain, &quot;at&quot;: now()})
+            continue
+        _log(log, {&quot;event&quot;: &quot;end&quot;, &quot;arm&quot;: arm, &quot;seed&quot;: seed, &quot;gain&quot;: gain, &quot;rc&quot;: rc,
+                   &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;at&quot;: now()})
+
+
+# ------------------------------------------------------------------ run 6 queue (driver)
+G_LO, G_HI, G_TARGET = 9680, 17976, 13828  # +-30% of the real whole-brain spikes (run 5 pre-registration)
+G_KNOWN = {1.5: 5063, 2.0: 6865, 3.0: 24024}  # run 5 G-3 trials (fairnull/results/trials/G-3-g*.json in run 5)
+
+
+def _run_one6(item, log, start_cut, kill_at):
+    &quot;&quot;&quot;item: dict(stim, arm, seed, gain, out, style). Returns &#x27;exists&#x27;|&#x27;ran&#x27;|&#x27;cut&#x27;|&#x27;killed&#x27;|&#x27;skipped-memory&#x27;|&#x27;timeout&#x27;.&quot;&quot;&quot;
+    f = Path(item[&quot;out&quot;]) / trial_name(item[&quot;arm&quot;], item[&quot;seed&quot;], item[&quot;gain&quot;], item[&quot;stim&quot;] if item[&quot;style&quot;] == &quot;run6&quot; else None)
+    if f.exists():
+        return &quot;exists&quot;
+    if time.time() &gt;= start_cut:
+        _log(log, {&quot;event&quot;: &quot;start-cut&quot;, &quot;trial&quot;: f.name, &quot;at&quot;: now()})
+        return &quot;cut&quot;
+    m = mem_current()
+    waited = 0
+    while m is not None and m &gt; 2.4 * GIB and waited &lt; 180:
+        time.sleep(30)
+        waited += 30
+        m = mem_current()
+    if m is not None and m &gt; 2.6 * GIB:
+        _log(log, {&quot;event&quot;: &quot;skipped-memory&quot;, &quot;trial&quot;: f.name, &quot;mem&quot;: m, &quot;at&quot;: now()})
+        return &quot;skipped-memory&quot;
+    cmd = [sys.executable, str(HERE / &quot;run_nulls.py&quot;), &quot;one&quot;, item[&quot;arm&quot;], str(item[&quot;seed&quot;]), &quot;--out&quot;, str(item[&quot;out&quot;]),
+           &quot;--stim&quot;, item[&quot;stim&quot;], &quot;--dn&quot;, item[&quot;dn&quot;], &quot;--sides&quot;, item[&quot;sides&quot;]]
+    if item[&quot;gain&quot;] is not None:
+        cmd += [&quot;--gain&quot;, str(item[&quot;gain&quot;])]
+    if item[&quot;style&quot;]:
+        cmd += [&quot;--style&quot;, item[&quot;style&quot;]]
+    env = dict(os.environ, FAIRNULL_MEM_AT_LAUNCH=str(m or 0))
+    t0 = time.time()
+    _log(log, {&quot;event&quot;: &quot;start&quot;, &quot;trial&quot;: f.name, &quot;mem&quot;: m, &quot;waited_s&quot;: waited, &quot;at&quot;: now()})
+    p = subprocess.Popen(cmd, env=env)
+    try:
+        rc = p.wait(timeout=max(1, min(TIMEOUT_S, kill_at - t0)))
+    except subprocess.TimeoutExpired:
+        p.kill()
+        p.wait()
+        if time.time() &gt;= kill_at - 1:
+            _log(log, {&quot;event&quot;: &quot;killed-at-kill-time&quot;, &quot;trial&quot;: f.name, &quot;at&quot;: now()})
+            return &quot;killed&quot;
+        rec = {&quot;stim&quot;: item[&quot;stim&quot;], &quot;arm&quot;: item[&quot;arm&quot;], &quot;seed&quot;: item[&quot;seed&quot;], &quot;gain&quot;: item[&quot;gain&quot;], &quot;status&quot;: &quot;timeout&quot;,
+               &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;memory_current_at_launch&quot;: m, &quot;finished_at&quot;: now()}
+        tmp = f.with_suffix(&quot;.tmp&quot;)
+        tmp.write_text(json.dumps(rec, indent=1))
+        os.replace(tmp, f)
+        _log(log, {&quot;event&quot;: &quot;timeout&quot;, &quot;trial&quot;: f.name, &quot;at&quot;: now()})
+        return &quot;timeout&quot;
+    _log(log, {&quot;event&quot;: &quot;end&quot;, &quot;trial&quot;: f.name, &quot;rc&quot;: rc, &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;at&quot;: now()})
+    return &quot;ran&quot;
+
+
+def queue6(brain_out, g_out, sides, dn, start_cut_iso, kill_iso, log):
+    sc = datetime.fromisoformat(start_cut_iso.replace(&quot;Z&quot;, &quot;+00:00&quot;)).timestamp()
+    kl = datetime.fromisoformat(kill_iso.replace(&quot;Z&quot;, &quot;+00:00&quot;)).timestamp()
+    Path(brain_out).mkdir(parents=True, exist_ok=True)
+    Path(g_out).mkdir(parents=True, exist_ok=True)
+    B = dict(out=brain_out, style=&quot;run6&quot;, sides=sides, dn=dn, gain=None)
+    gate = [dict(B, stim=&quot;SUG&quot;, arm=&quot;real&quot;, seed=0)]
+    core = [dict(B, stim=&quot;P9&quot;, arm=a, seed=s) for a, s in ((&quot;real&quot;, 0), (&quot;D&quot;, 3), (&quot;D&quot;, 4), (&quot;D&quot;, 5), (&quot;real&quot;, 1), (&quot;real&quot;, 2))]
+    for it in gate + core:
+        if _run_one6(it, log, sc, kl) in (&quot;cut&quot;, &quot;killed&quot;):
+            return
+    # G addendum (pre-registered): D shuffle 3 at 2.5; below the band -&gt; 2.75, above -&gt; 2.25; then bisect inside the
+    # tightest bracket (run 5 points included); at most 3 new gains; matched = closest to 13,828 within the band.
+    G = dict(out=g_out, style=None, sides=sides, dn=dn, stim=&quot;SUG&quot;, arm=&quot;G&quot;)
+    known = dict(G_KNOWN)
+    gain = 2.5
+    for k in range(3):
+        st = _run_one6(dict(G, seed=3, gain=gain), log, sc, kl)
+        if st in (&quot;cut&quot;, &quot;killed&quot;):
+            return
+        f = Path(g_out) / trial_name(&quot;G&quot;, 3, gain)
+        r = json.loads(f.read_text())
+        if r.get(&quot;status&quot;) != &quot;ok&quot;:
+            break
+        known[gain] = r[&quot;whole_brain_spikes&quot;]
+        if G_LO &lt;= r[&quot;whole_brain_spikes&quot;] &lt;= G_HI:
+            break
+        lo = max([g for g, v in known.items() if v &lt; G_LO], default=None)
+        hi = min([g for g, v in known.items() if v &gt; G_HI], default=None)
+        if k == 0:
+            gain = 2.75 if r[&quot;whole_brain_spikes&quot;] &lt; G_LO else 2.25
+        else:
+            gain = round((lo + hi) / 2, 4) if lo is not None and hi is not None else None
+        if gain is None or gain in known:
+            break
+    inband = {g: v for g, v in known.items() if G_LO &lt;= v &lt;= G_HI and g not in G_KNOWN}
+    if inband:
+        mg = min(inband, key=lambda g: abs(inband[g] - G_TARGET))
+        _log(log, {&quot;event&quot;: &quot;matched-gain&quot;, &quot;gain&quot;: mg, &quot;spikes&quot;: inband[mg], &quot;at&quot;: now()})
+        for s in (4, 5):
+            if _run_one6(dict(G, seed=s, gain=mg), log, sc, kl) in (&quot;cut&quot;, &quot;killed&quot;):
+                return
+    else:
+        _log(log, {&quot;event&quot;: &quot;no-matched-gain&quot;, &quot;known&quot;: {str(k): v for k, v in known.items()}, &quot;at&quot;: now()})
+    fill = [dict(B, stim=&quot;SUG&quot;, arm=&quot;D&quot;, seed=s) for s in (3, 4, 5)] + \
+           [dict(B, stim=&quot;P9L&quot;, arm=&quot;real&quot;, seed=0), dict(B, stim=&quot;P9L&quot;, arm=&quot;D&quot;, seed=3)]
+    for it in fill:
+        if _run_one6(it, log, sc, kl) in (&quot;cut&quot;, &quot;killed&quot;):
+            return
+    _log(log, {&quot;event&quot;: &quot;queue-done&quot;, &quot;at&quot;: now()})
+
+
+# ------------------------------------------------------------------ run 8 queue (driver)
+MEM_START_MAX = 2.2 * GIB   # run 8 memory guard: wait (30 s steps, up to 2 min) until below 2.2 GiB
+MEM_STOP = 2.7 * GIB        # during a trial: stop it above 2.7 GiB and log stopped-memory
+
+
+def _run_one8(item, log, start_cut, kill_at, prereg):
+    f = Path(item[&quot;out&quot;]) / trial_name(item[&quot;arm&quot;], item[&quot;seed&quot;], item[&quot;gain&quot;], item[&quot;stim&quot;], item.get(&quot;silence&quot;))
+    if f.exists():
+        return &quot;exists&quot;
+    if time.time() &gt;= start_cut:
+        _log(log, {&quot;event&quot;: &quot;not-run (clock)&quot;, &quot;trial&quot;: f.name, &quot;at&quot;: now()})
+        return &quot;cut&quot;
+    if item[&quot;stim&quot;].startswith(&quot;LOOM&quot;) and not Path(prereg).exists():
+        _log(log, {&quot;event&quot;: &quot;refused-no-preregistration&quot;, &quot;trial&quot;: f.name, &quot;at&quot;: now()})
+        raise SystemExit(&quot;pre-registration file missing&quot;)
+    m = mem_current(); waited = 0
+    while m is not None and m &gt; MEM_START_MAX and waited &lt; 120:
+        time.sleep(30); waited += 30; m = mem_current()
+    if m is not None and m &gt; MEM_START_MAX:
+        _log(log, {&quot;event&quot;: &quot;skipped-memory&quot;, &quot;trial&quot;: f.name, &quot;mem&quot;: m, &quot;at&quot;: now()})
+        return &quot;skipped-memory&quot;
+    cmd = [sys.executable, str(HERE / &quot;run_loom.py&quot;), &quot;one&quot;, item[&quot;arm&quot;], str(item[&quot;seed&quot;]), &quot;--out&quot;, str(item[&quot;out&quot;]),
+           &quot;--stim&quot;, item[&quot;stim&quot;], &quot;--dn&quot;, item[&quot;dn&quot;], &quot;--sides&quot;, item[&quot;sides&quot;], &quot;--style&quot;, &quot;run8&quot;,
+           &quot;--rate&quot;, str(item[&quot;rate&quot;])]
+    if item[&quot;gain&quot;] is not None:
+        cmd += [&quot;--gain&quot;, str(item[&quot;gain&quot;])]
+    if item.get(&quot;silence&quot;):
+        cmd += [&quot;--silence&quot;, item[&quot;silence&quot;]]
+    env = dict(os.environ, FAIRNULL_MEM_AT_LAUNCH=str(m or 0))
+    t0 = time.time()
+    _log(log, {&quot;event&quot;: &quot;start&quot;, &quot;trial&quot;: f.name, &quot;mem&quot;: m, &quot;waited_s&quot;: waited, &quot;at&quot;: now()})
+    p = subprocess.Popen(cmd, env=env)
+    peak = m or 0
+    while True:
+        try:
+            rc = p.wait(timeout=2)
+            break
+        except subprocess.TimeoutExpired:
+            mm = mem_current() or 0
+            peak = max(peak, mm)
+            if mm &gt; MEM_STOP:
+                p.kill(); p.wait()
+                _log(log, {&quot;event&quot;: &quot;stopped-memory&quot;, &quot;trial&quot;: f.name, &quot;mem&quot;: mm, &quot;at&quot;: now()})
+                return &quot;stopped-memory&quot;
+            if time.time() &gt;= kill_at or time.time() - t0 &gt; TIMEOUT_S:
+                p.kill(); p.wait()
+                ev = &quot;killed-at-kill-time&quot; if time.time() &gt;= kill_at else &quot;timeout&quot;
+                _log(log, {&quot;event&quot;: ev, &quot;trial&quot;: f.name, &quot;at&quot;: now()})
+                return &quot;killed&quot; if ev.startswith(&quot;killed&quot;) else &quot;timeout&quot;
+    _log(log, {&quot;event&quot;: &quot;end&quot;, &quot;trial&quot;: f.name, &quot;rc&quot;: rc, &quot;wall_s&quot;: round(time.time() - t0, 1),
+               &quot;cgroup_peak_during&quot;: peak, &quot;at&quot;: now()})
+    return &quot;ran&quot;
+
+
+def queue8(out, sides, dn, start_cut_iso, fill_cut_iso, kill_iso, log, prereg):
+    ts = lambda x: datetime.fromisoformat(x.replace(&quot;Z&quot;, &quot;+00:00&quot;)).timestamp()
+    sc, fc, kl = ts(start_cut_iso), ts(fill_cut_iso), ts(kill_iso)
+    Path(out).mkdir(parents=True, exist_ok=True)
+    B = dict(out=out, sides=sides, dn=dn, gain=None, rate=80.0)
+    gate = [dict(B, stim=&quot;SUG&quot;, arm=&quot;real&quot;, seed=0, rate=150.0)]
+    core = []
+    for k, (arm, seed) in enumerate([(&quot;real&quot;, 0), (&quot;D&quot;, 3), (&quot;real&quot;, 1), (&quot;D&quot;, 4), (&quot;real&quot;, 2), (&quot;D&quot;, 5)]):
+        for side in (&quot;L&quot;, &quot;R&quot;):
+            core.append(dict(B, stim=&quot;LOOM&quot; + side, arm=arm, seed=seed))
+    for it in gate + core:
+        if _run_one8(it, log, sc, kl, prereg) in (&quot;cut&quot;, &quot;killed&quot;):
+            return
+    # fill 1: GF-off (both DNp01 silenced), L-real-0 and R-real-0
+    for side in (&quot;L&quot;, &quot;R&quot;):
+        if _run_one8(dict(B, stim=&quot;LOOM&quot; + side, arm=&quot;real&quot;, seed=0, silence=&quot;GF&quot;), log, fc, kl, prereg) in (&quot;cut&quot;, &quot;killed&quot;):
+            return
+    # fill 2: per-shuffle G gain search on LOOM-L: gains 1.5, 2, 3 until whole-brain spikes within +-30% of L-real-0
+    ref = json.loads((Path(out) / trial_name(&quot;real&quot;, 0, None, &quot;LOOML&quot;)).read_text())[&quot;whole_brain_spikes&quot;]
+    lo, hi = 0.7 * ref, 1.3 * ref
+    for s in (3, 4, 5):
+        for g in (1.5, 2.0, 3.0):
+            st = _run_one8(dict(B, stim=&quot;LOOML&quot;, arm=&quot;G&quot;, seed=s, gain=g), log, fc, kl, prereg)
+            if st in (&quot;cut&quot;, &quot;killed&quot;):
+                return
+            f = Path(out) / trial_name(&quot;G&quot;, s, g, &quot;LOOML&quot;)
+            if f.exists():
+                r = json.loads(f.read_text())
+                if r.get(&quot;status&quot;) == &quot;ok&quot; and lo &lt;= r[&quot;whole_brain_spikes&quot;] &lt;= hi:
+                    _log(log, {&quot;event&quot;: &quot;matched-gain&quot;, &quot;seed&quot;: s, &quot;gain&quot;: g, &quot;spikes&quot;: r[&quot;whole_brain_spikes&quot;],
+                               &quot;band&quot;: [lo, hi], &quot;at&quot;: now()})
+                    break
+    _log(log, {&quot;event&quot;: &quot;queue-done&quot;, &quot;at&quot;: now()})
+
+
+def _log(path, rec):
+    with open(path, &quot;a&quot;) as f:
+        f.write(json.dumps(rec) + &quot;\n&quot;)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument(&quot;cmd&quot;, choices=[&quot;prep&quot;, &quot;one&quot;, &quot;queue&quot;, &quot;prep-dn&quot;, &quot;queue6&quot;, &quot;queue8&quot;])
+    ap.add_argument(&quot;--stim&quot;, default=&quot;SUG&quot;, choices=[&quot;SUG&quot;, &quot;P9&quot;, &quot;P9L&quot;, &quot;LOOML&quot;, &quot;LOOMR&quot;])
+    ap.add_argument(&quot;--rate&quot;, type=float, default=150.0)
+    ap.add_argument(&quot;--silence&quot;, choices=[&quot;GF&quot;])
+    ap.add_argument(&quot;--prereg&quot;)
+    ap.add_argument(&quot;--fill-cut&quot;)
+    ap.add_argument(&quot;--dn&quot;)
+    ap.add_argument(&quot;--style&quot;)
+    ap.add_argument(&quot;--g-out&quot;)
+    ap.add_argument(&quot;--start-cut&quot;)
+    ap.add_argument(&quot;--kill&quot;)
+    ap.add_argument(&quot;--log&quot;)
+    ap.add_argument(&quot;arm&quot;, nargs=&quot;?&quot;)
+    ap.add_argument(&quot;seed&quot;, nargs=&quot;?&quot;, type=int)
+    ap.add_argument(&quot;--gain&quot;, type=float)
+    ap.add_argument(&quot;--out&quot;)
+    ap.add_argument(&quot;--sides&quot;)
+    ap.add_argument(&quot;--annot&quot;)
+    ap.add_argument(&quot;--deadline&quot;)
+    ap.add_argument(&quot;--queue&quot;, default=&quot;all&quot;)
+    a = ap.parse_args()
+    if a.cmd == &quot;prep&quot;:
+        prep(a.annot, a.sides)
+    elif a.cmd == &quot;one&quot;:
+        one(a.arm, a.seed, a.gain, a.out, a.sides, a.stim, a.dn, a.style, a.rate, a.silence)
+    elif a.cmd == &quot;prep-dn&quot;:
+        prep_dn(a.annot, a.out)
+    elif a.cmd == &quot;queue8&quot;:
+        queue8(a.out, a.sides, a.dn, a.start_cut, a.fill_cut, a.kill, a.log, a.prereg)
+    elif a.cmd == &quot;queue6&quot;:
+        queue6(a.out, a.g_out, a.sides, a.dn, a.start_cut, a.kill, a.log)
+    else:
+        queue(a.out, a.sides, a.deadline, a.queue)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>brain_readout.py</code>: giant fibre, DNa02 and fly67's pass rule for one trial (48 lines). Verbatim.</summary>
+      <pre><code>&quot;&quot;&quot;Per-trial looming readouts from a run 8 brain trial file (Digital Fly Lab, 2026-10-05). Licence: MIT.
+Rates in Hz over 1 s (trial = 1,000 ms, so spike count = Hz). fly67 set means: gf = mean of both DNp01,
+back = mean of the 4 MDN, mn9 = mean of both CB0701, groom = mean of both DNg62.
+Gate (fly67&#x27;s own rule, validation tolerances in tools/probe.mjs): gf &gt; 50 and DNa02_contra &gt; 3 * DNa02_ipsi + 5.
+LI = (DNa02_contra - DNa02_ipsi) / (DNa02_contra + DNa02_ipsi + 1 Hz). Selectivity = DNa02_contra / whole-brain
+spikes per s x 1000 (display only).&quot;&quot;&quot;
+import json
+import sys
+
+IDS = {&quot;DNp01&quot;: {&quot;L&quot;: 720575940622838154, &quot;R&quot;: 720575940632499757},
+       &quot;DNa02&quot;: {&quot;L&quot;: 720575940629327659, &quot;R&quot;: 720575940604737708},
+       &quot;DNa01&quot;: {&quot;L&quot;: 720575940627787609, &quot;R&quot;: 720575940644438551},
+       &quot;DNp09&quot;: {&quot;L&quot;: 720575940635872101, &quot;R&quot;: 720575940627652358},
+       &quot;DNg62&quot;: {&quot;L&quot;: 720575940624319124, &quot;R&quot;: 720575940616185531},
+       &quot;CB0701&quot;: {&quot;L&quot;: 720575940618238523, &quot;R&quot;: 720575940660219265}}
+MDN = {&quot;L&quot;: [720575940631082808, 720575940616026939], &quot;R&quot;: [720575940610236514, 720575940640331472]}
+
+
+def readout(t):
+    tot = {int(x[&quot;id&quot;]): x[&quot;total&quot;] for x in t[&quot;dn&quot;][&quot;active&quot;]}
+    top = {int(x[&quot;id&quot;]): x[&quot;hz&quot;] for x in t.get(&quot;top20&quot;, [])}
+    g = lambda i: float(tot.get(i, top.get(i, 0)))
+    side = t[&quot;stim&quot;][-1] if t[&quot;stim&quot;].startswith(&quot;LOOM&quot;) else None
+    r = {f&quot;{k.lower()}_{s.lower()}&quot;: g(v[s]) for k, v in IDS.items() for s in &quot;LR&quot;}
+    r[&quot;mdn_l&quot;] = sum(g(i) for i in MDN[&quot;L&quot;]) / 2
+    r[&quot;mdn_r&quot;] = sum(g(i) for i in MDN[&quot;R&quot;]) / 2
+    r[&quot;gf_mean&quot;] = (r[&quot;dnp01_l&quot;] + r[&quot;dnp01_r&quot;]) / 2
+    r[&quot;mdn_mean&quot;] = (r[&quot;mdn_l&quot;] + r[&quot;mdn_r&quot;]) / 2
+    r[&quot;mn9_mean&quot;] = (r[&quot;cb0701_l&quot;] + r[&quot;cb0701_r&quot;]) / 2
+    if side:
+        o = &quot;r&quot; if side == &quot;L&quot; else &quot;l&quot;
+        ip = &quot;l&quot; if side == &quot;L&quot; else &quot;r&quot;
+        c, i_ = r[f&quot;dna02_{o}&quot;], r[f&quot;dna02_{ip}&quot;]
+        r[&quot;dna02_contra&quot;], r[&quot;dna02_ipsi&quot;] = c, i_
+        r[&quot;li&quot;] = (c - i_) / (c + i_ + 1.0)
+        r[&quot;gate_gf&quot;] = r[&quot;gf_mean&quot;] &gt; 50
+        r[&quot;gate_turn&quot;] = c &gt; 3 * i_ + 5
+        r[&quot;gate_pass&quot;] = r[&quot;gate_gf&quot;] and r[&quot;gate_turn&quot;]
+        r[&quot;selectivity&quot;] = c / t[&quot;whole_brain_spikes&quot;] * 1000 if t[&quot;whole_brain_spikes&quot;] else None
+    r.update(side=side, whole_brain_spikes=t[&quot;whole_brain_spikes&quot;], active_neurons=t[&quot;neurons_active&quot;],
+             stim_spikes=t.get(&quot;stim_spikes&quot;), stim_n=t.get(&quot;stim_n&quot;))
+    return r
+
+
+if __name__ == &quot;__main__&quot;:
+    for f in sys.argv[1:]:
+        t = json.load(open(f))
+        print(f.split(&quot;/&quot;)[-1], json.dumps({k: (round(v, 3) if isinstance(v, float) else v) for k, v in readout(t).items()}))</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>make_loom_drives.py</code>: our mapping, the floor and the random arm (119 lines). Verbatim.</summary>
+      <pre><code>&quot;&quot;&quot;Run 8 drive builder: brain trial -&gt; FlyGym two-number drive (Digital Fly Lab, 2026-10-05). Licence: MIT.
+
+OUR MAPPING (hand-made, not fitted; pre-registered 2026-10-05T09:42:47Z, loom/preregistration.md):
+    drive_s = clip(0.8 - m_s - 0.5 * (a_s - a_o), -1.2, 1.2)
+    a = rate(DNa02 on side s) / R, m = mean rate(MDN on side s) / R, R = 100 Hz, per 100 ms brain bin.
+    0.8 = constant EXTERNAL walking drive (not the brain), as in fly67 and optogenetic experiments. No P9 term.
+Timeline per drive file: 12 bins of 100 ms = 2 pre-onset bins at (0.8, 0.8) + the 10 brain bins; onset_s = 0.2.
+Conditions:
+    F                floor: (0.8, 0.8) for all 12 bins
+    &lt;S&gt;-real-k, &lt;S&gt;-D&lt;k&gt;, GFoff-&lt;S&gt;   from the brain trial files (S = L or R, the looming side)
+    rand-&lt;S&gt;&lt;k&gt;      brainless: turning term t ~ N(0, s) per brain bin, s = RMS of the real runs&#x27; turning terms
+                     0.5*(a_s - a_o) over all bins and both sides; drive = (0.8 - t, 0.8 + t); no MDN term.
+                     Generator: numpy default_rng(seed + 100 * (side == &#x27;R&#x27;)) (implementation detail fixed before
+                     the first body run; logged as a deviation in preregistration.md)
+Identical drives (sha256 over the float64 drive array) are marked dedup_of = the first condition with that drive.
+Usage: python make_loom_drives.py BRAIN_DIR DRIVES_DIR
+&quot;&quot;&quot;
+from __future__ import annotations
+
+import hashlib
+import json
+import sys
+from pathlib import Path
+
+import numpy as np
+
+R_HZ, CLIP, FWD, PRE_BINS = 100.0, 1.2, 0.8, 2
+IDS = {&quot;DNa02&quot;: {&quot;left&quot;: [720575940629327659], &quot;right&quot;: [720575940604737708]},
+       &quot;MDN&quot;: {&quot;left&quot;: [720575940631082808, 720575940616026939], &quot;right&quot;: [720575940610236514, 720575940640331472]}}
+FORMULA = (&quot;OUR MAPPING (hand-made, not fitted): drive_s = clip(0.8 - m_s - 0.5*(a_s - a_o), -1.2, 1.2); &quot;
+           &quot;a = rate(DNa02_s)/R, m = mean rate(MDN_s)/R, R = 100 Hz, per 100 ms bin; 0.8 = constant external walking &quot;
+           &quot;drive, not the brain; 2 pre-onset bins at (0.8, 0.8) then 10 brain bins&quot;)
+
+
+def rates(trial):
+    bins = {int(x[&quot;id&quot;]): x[&quot;bins&quot;] for x in trial[&quot;dn&quot;][&quot;active&quot;]}
+    sc = 1000.0 / trial[&quot;dn&quot;][&quot;bin_ms&quot;]
+    out = {}
+    for ct, sides in IDS.items():
+        out[ct] = np.stack([np.mean([np.array(bins.get(i, [0] * 10), float) for i in sides[s]], axis=0) * sc
+                            for s in (&quot;left&quot;, &quot;right&quot;)], axis=1)  # (10, 2)
+    return out
+
+
+def drive_from_trial(trial):
+    r = rates(trial)
+    a, m = r[&quot;DNa02&quot;] / R_HZ, r[&quot;MDN&quot;] / R_HZ
+    turn = 0.5 * (a - a[:, ::-1])
+    raw = FWD - m - turn
+    d = np.clip(raw, -CLIP, CLIP)
+    return d, turn, raw
+
+
+def sha(d):
+    return hashlib.sha256(np.ascontiguousarray(np.asarray(d, dtype=np.float64)).tobytes()).hexdigest()
+
+
+def full(d10):
+    return np.vstack([np.full((PRE_BINS, 2), FWD), d10])
+
+
+def main(brain_dir, drives_dir):
+    B, D = Path(brain_dir), Path(drives_dir)
+    D.mkdir(parents=True, exist_ok=True)
+    conds = []  # (id, group, side, wiring, seed, brain file)
+    for k in (0, 1, 2):
+        for s in &quot;LR&quot;:
+            conds.append((f&quot;{s}-real-{k}&quot;, &quot;real&quot;, s, &quot;real&quot;, k, f&quot;LOOM{s}-real-{k}.json&quot;))
+    for k in (3, 4, 5):
+        for s in &quot;LR&quot;:
+            conds.append((f&quot;{s}-D{k}&quot;, &quot;scrambled&quot;, s, &quot;D&quot;, k, f&quot;LOOM{s}-D-{k}.json&quot;))
+    for s in &quot;LR&quot;:
+        conds.append((f&quot;GFoff-{s}&quot;, &quot;gf-off&quot;, s, &quot;real-gf-silenced&quot;, 0, f&quot;LOOM{s}-real-0-gfoff.json&quot;))
+    seen, turns_real, written = {}, [], []
+
+    def write(cid, rec):
+        drive = np.asarray(rec[&quot;drive&quot;], float)
+        h = sha(drive)
+        rec[&quot;drive_sha256&quot;] = h
+        rec[&quot;dedup_of&quot;] = seen.get(h)
+        seen.setdefault(h, cid)
+        rec[&quot;clipped_share&quot;] = float(np.mean(np.abs(drive[PRE_BINS:]) &gt;= CLIP - 1e-12))
+        rec.update(id=cid, onset_s=0.2, bin_s=0.1, formula=FORMULA)
+        p = D / f&quot;{cid}.json&quot;
+        tmp = p.with_suffix(&quot;.tmp&quot;)
+        tmp.write_text(json.dumps(rec, indent=1))
+        tmp.replace(p)
+        written.append(cid)
+
+    write(&quot;F&quot;, {&quot;group&quot;: &quot;floor&quot;, &quot;side&quot;: None, &quot;wiring&quot;: None, &quot;seed&quot;: None, &quot;source&quot;: None,
+                &quot;drive&quot;: np.full((12, 2), FWD).tolist()})
+    for cid, grp, s, wir, k, fn in conds:
+        f = B / fn
+        if not f.exists():
+            continue
+        t = json.loads(f.read_text())
+        if t.get(&quot;status&quot;) != &quot;ok&quot;:
+            continue
+        d, turn, raw = drive_from_trial(t)
+        if grp == &quot;real&quot;:
+            turns_real.append(turn)
+        write(cid, {&quot;group&quot;: grp, &quot;side&quot;: s, &quot;wiring&quot;: wir, &quot;seed&quot;: k, &quot;source&quot;: f&quot;results/brain/{fn}&quot;,
+                    &quot;drive&quot;: full(d).tolist(), &quot;turn_term&quot;: turn.tolist(), &quot;unclipped_brain_bins&quot;: raw.tolist()})
+    if turns_real:
+        sd = float(np.sqrt(np.mean(np.concatenate([x.ravel() for x in turns_real]) ** 2)))
+        for s in &quot;LR&quot;:
+            for k in (0, 1, 2):
+                rng = np.random.default_rng(k + 100 * (s == &quot;R&quot;))
+                t = rng.normal(0.0, sd, size=10) if sd &gt; 0 else np.zeros(10)
+                d = np.clip(np.stack([FWD - t, FWD + t], axis=1), -CLIP, CLIP)
+                write(f&quot;rand-{s}{k}&quot;, {&quot;group&quot;: &quot;random&quot;, &quot;side&quot;: s, &quot;wiring&quot;: None, &quot;seed&quot;: k, &quot;source&quot;: None,
+                                       &quot;random_sd&quot;: sd, &quot;n_real_runs_for_sd&quot;: len(turns_real),
+                                       &quot;rng&quot;: f&quot;numpy.default_rng({k + 100 * (s == &#x27;R&#x27;)})&quot;, &quot;turn_term&quot;: t.tolist(),
+                                       &quot;drive&quot;: full(d).tolist()})
+    print(&quot;drives:&quot;, &quot;, &quot;.join(written))
+
+
+if __name__ == &quot;__main__&quot;:
+    main(*sys.argv[1:3])</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>body_run.py</code>: one FlyGym walk from a drive file, with the onset (252 lines). Paths and run identifiers of our machine are replaced by neutral wording; otherwise verbatim.</summary>
+      <pre><code>&quot;&quot;&quot;Run 8 copy (2026-10-05): the drive may have any number of 100 ms bins (run 8: 12 = two
+pre-onset bins at the constant external drive (0.8, 0.8) plus ten brain bins); `onset_s` in the drive file marks the
+looming onset in driven time, and the result adds `heading_after_onset_deg` (unwrapped, + = left), the thorax path
+every 50 ms after onset (`path_xy_mm`, relative to the onset position) and `forward_after_onset_mm`. Usage as below,
+with --driven = number of bins x 0.1 s (set automatically when --driven is omitted).
+
+Run the FlyGym 2.1.0 body with a two-number descending drive (Digital Fly Lab, run 6, 2026-10-02). Licence: MIT.
+
+The walking (legs, rhythm, balance, adhesion) is FlyGym&#x27;s own HybridTurningController (flygym_demo.complex_terrain,
+NeuroMechFly v2&#x27;s two-number descending interface). This script only feeds it a drive file made by make_drives.py
+(OUR rate-to-drive mapping) and records where the thorax goes. Construction follows upstream
+tests/examples/test_complex_terrain_locomotion.py at v2.1.0.
+
+Usage
+  MUJOCO_GL=disable python body_run.py one DRIVE.json OUT.json [--settle 0.2] [--driven 1.0] [--smoke]
+  MUJOCO_GL=disable python body_run.py queue DRIVES_DIR OUT_DIR --order a,b,c --start-cut ISO --kill ISO --log LOG
+Timeline: settle s at drive (0, 0), then driven s in 10 equal bins (bin k of the drive held for driven/10 s).
+Thorax x, y (mm), z and heading are saved every 10 ms. Metric: forward displacement along the heading at the start of
+the driven period (mm); also heading change (deg, + = left/counter-clockwise) and path length (mm).
+&quot;&quot;&quot;
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import platform
+import resource
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+
+GIB = 1024 ** 3
+CG = Path(&quot;/sys/fs/cgroup/memory.current&quot;)
+
+
+def now():
+    return datetime.now(timezone.utc).strftime(&quot;%Y-%m-%dT%H:%M:%SZ&quot;)
+
+
+def mem():
+    try:
+        return int(CG.read_text())
+    except OSError:
+        return None
+
+
+def thorax_state(sim, mujoco, bid):
+    pos = sim.mj_data.xpos[bid].copy()
+    xm = sim.mj_data.xmat[bid].reshape(3, 3)
+    fwd = xm[:, 0]  # body x axis in world frame
+    import math
+    return pos, math.atan2(fwd[1], fwd[0])
+
+
+def one(drive_path, out_path, settle=0.2, driven=None, smoke=False):
+    t0 = time.time()
+    mem_launch = int(os.environ.get(&quot;BODY_MEM_AT_LAUNCH&quot;, &quot;0&quot;)) or mem()
+    import math
+    import numpy as np
+    import mujoco
+    import flygym
+    from flygym.compose import FlatGroundWorld
+    from flygym.simulation import Simulation
+    from flygym.utils.math import Rotation3D
+    from flygym_demo.complex_terrain import (HybridControllerObservation, HybridTurningController,
+                                             PreprogrammedSteps, apply_locomotion_action, make_locomotion_fly)
+
+    spec = json.loads(Path(drive_path).read_text())
+    drive = np.asarray(spec[&quot;drive&quot;], dtype=float)
+    assert drive.ndim == 2 and drive.shape[1] == 2, drive.shape
+    nb = drive.shape[0]
+    if driven is None:
+        driven = round(nb * 0.1, 6)
+    onset = float(spec.get(&quot;onset_s&quot;, 0.0))
+    fly = make_locomotion_fly()
+    world = FlatGroundWorld()
+    world.add_fly(fly, spawn_position=[0, 0, 1.0], spawn_rotation=Rotation3D(&quot;quat&quot;, [1, 0, 0, 0]),
+                  add_ground_contact_sensors=False)
+    sim = Simulation(world)
+    sim.reset()
+    ctrl = HybridTurningController(timestep=sim.mj_model.opt.timestep, preprogrammed_steps=PreprogrammedSteps())
+    seed_note = &quot;controller has no seed argument; default construction&quot;
+    if hasattr(ctrl, &quot;reset&quot;):
+        try:
+            ctrl.reset(seed=0)
+            seed_note = &quot;controller.reset(seed=0)&quot;
+        except TypeError:
+            try:
+                ctrl.reset()
+                seed_note = &quot;controller.reset() (no seed argument)&quot;
+            except Exception as e:  # noqa: BLE001
+                seed_note = f&quot;controller.reset failed: {e!r}&quot;
+    names = [mujoco.mj_id2name(sim.mj_model, mujoco.mjtObj.mjOBJ_BODY, i) for i in range(sim.mj_model.nbody)]
+    cand = [i for i, n in enumerate(names) if n and &quot;thorax&quot; in n.lower()]
+    bid = cand[0]
+    dt = sim.mj_model.opt.timestep
+    n_settle = int(round(settle / dt))
+    n_driven = 0 if smoke else int(round(driven / dt))
+    per_bin = max(1, n_driven // nb)
+    rec_every = max(1, int(round(0.01 / dt)))
+    traj = []
+    status, err = &quot;ok&quot;, None
+    start_pos = start_head = None
+    try:
+        for k in range(n_settle + n_driven):
+            if k &lt; n_settle:
+                d = np.zeros(2)
+            else:
+                d = drive[min((k - n_settle) // per_bin, nb - 1)]
+                if start_pos is None:
+                    start_pos, start_head = thorax_state(sim, mujoco, bid)
+            obs = HybridControllerObservation.from_sim(sim, fly.name)
+            action = ctrl.step(d, obs)
+            apply_locomotion_action(sim, fly.name, action)
+            sim.step()
+            if (k + 1) % rec_every == 0:
+                p, h = thorax_state(sim, mujoco, bid)
+                if not np.all(np.isfinite(p)):
+                    status, err = &quot;failed-physics&quot;, f&quot;non-finite thorax position at step {k}&quot;
+                    break
+                traj.append([round((k + 1) * dt, 4), float(p[0]), float(p[1]), float(p[2]), float(h)])
+    except Exception as e:  # noqa: BLE001
+        status, err = &quot;failed-physics&quot;, repr(e)
+    if start_pos is None:
+        start_pos, start_head = (np.array(traj[0][1:4]), traj[0][4]) if traj else (np.zeros(3), 0.0)
+    T = np.asarray(traj) if traj else np.zeros((0, 5))
+    res = {}
+    if len(T):
+        drv = T[T[:, 0] &gt; settle + 1e-9] if not smoke else T
+        last = T[T[:, 0] &gt;= T[-1, 0] - 0.1]
+        if status == &quot;ok&quot; and np.any(last[:, 3] &lt; 0.3):
+            status, err = &quot;failed-physics&quot;, &quot;thorax z below 0.3 mm in the last 0.1 s (fallen)&quot;
+        if len(drv):
+            dx, dy = drv[-1, 1] - start_pos[0], drv[-1, 2] - start_pos[1]
+            fwd = dx * math.cos(start_head) + dy * math.sin(start_head)
+            lat = -dx * math.sin(start_head) + dy * math.cos(start_head)
+            # unwrapped heading change, sample by sample (fixed after run 6: the run 6 files hold the wrapped value)
+            hs = np.concatenate([[start_head], drv[:, 4]])
+            dh = math.degrees(float(np.sum(np.arctan2(np.sin(np.diff(hs)), np.cos(np.diff(hs))))))
+            xy = np.vstack([start_pos[:2], drv[:, 1:3]])
+            res = {&quot;forward_mm&quot;: round(float(fwd), 4), &quot;lateral_mm&quot;: round(float(lat), 4),
+                   &quot;heading_deg&quot;: round(float(dh), 3),
+                   &quot;path_mm&quot;: round(float(np.sum(np.linalg.norm(np.diff(xy, axis=0), axis=1))), 4),
+                   &quot;min_z_mm_last_0.1s&quot;: round(float(last[:, 3].min()), 4)}
+            # run 8: after onset
+            t_on = settle + onset
+            on = T[T[:, 0] &gt;= t_on - 1e-9]
+            if len(on) &gt; 1:
+                hs2 = on[:, 4]
+                dh2 = math.degrees(float(np.sum(np.arctan2(np.sin(np.diff(hs2)), np.cos(np.diff(hs2))))))
+                x0, y0, h0 = on[0, 1], on[0, 2], on[0, 4]
+                ddx, ddy = on[-1, 1] - x0, on[-1, 2] - y0
+                res[&quot;heading_after_onset_deg&quot;] = round(dh2, 3)
+                res[&quot;forward_after_onset_mm&quot;] = round(float(ddx * math.cos(h0) + ddy * math.sin(h0)), 4)
+                res[&quot;onset_t_s&quot;] = round(float(on[0, 0]), 4)
+                sel = on[::5]
+                res[&quot;path_xy_mm&quot;] = [[round(float(r[1] - x0), 4), round(float(r[2] - y0), 4)] for r in sel]
+    out = {&quot;id&quot;: spec.get(&quot;id&quot;), &quot;group&quot;: spec.get(&quot;group&quot;), &quot;status&quot;: status, &quot;error&quot;: err,
+           &quot;settle_s&quot;: settle, &quot;driven_s&quot;: 0 if smoke else driven, &quot;smoke&quot;: smoke, **res,
+           &quot;start_xy_mm&quot;: [float(start_pos[0]), float(start_pos[1])], &quot;start_heading_rad&quot;: float(start_head),
+           &quot;trajectory_cols&quot;: [&quot;t_s&quot;, &quot;x_mm&quot;, &quot;y_mm&quot;, &quot;z_mm&quot;, &quot;heading_rad&quot;],
+           &quot;trajectory&quot;: [[round(v, 5) for v in r] for r in T.tolist()],
+           &quot;drive&quot;: drive.tolist(), &quot;drive_source&quot;: str(drive_path), &quot;brain_source&quot;: spec.get(&quot;source&quot;),
+           &quot;thorax_body&quot;: names[bid], &quot;timestep_s&quot;: dt, &quot;controller&quot;: &quot;flygym_demo.complex_terrain.HybridTurningController (defaults)&quot;,
+           &quot;controller_seed&quot;: seed_note, &quot;ground_contact_sensors&quot;: False,
+           &quot;versions&quot;: {&quot;python&quot;: platform.python_version(), &quot;flygym&quot;: getattr(flygym, &quot;__version__&quot;, &quot;?&quot;),
+                        &quot;mujoco&quot;: mujoco.__version__, &quot;numpy&quot;: np.__version__},
+           &quot;mujoco_gl&quot;: os.environ.get(&quot;MUJOCO_GL&quot;), &quot;wall_s&quot;: round(time.time() - t0, 2),
+           &quot;peak_rss_kb&quot;: resource.getrusage(resource.RUSAGE_SELF).ru_maxrss, &quot;memory_current_at_launch&quot;: mem_launch,
+           &quot;finished_at&quot;: now()}
+    tmp = Path(str(out_path) + &quot;.tmp&quot;)
+    tmp.write_text(json.dumps(out))
+    os.replace(tmp, out_path)
+    print(f&quot;{Path(out_path).name}: {status} fwd {res.get(&#x27;forward_mm&#x27;)} mm, heading {res.get(&#x27;heading_deg&#x27;)} deg, &quot;
+          f&quot;path {res.get(&#x27;path_mm&#x27;)} mm, wall {out[&#x27;wall_s&#x27;]} s, rss {out[&#x27;peak_rss_kb&#x27;] / 1e6:.2f} GB&quot;, flush=True)
+
+
+def queue(drives_dir, out_dir, order, start_cut, kill, log):
+    sc = datetime.fromisoformat(start_cut.replace(&quot;Z&quot;, &quot;+00:00&quot;)).timestamp()
+    kl = datetime.fromisoformat(kill.replace(&quot;Z&quot;, &quot;+00:00&quot;)).timestamp()
+    Path(out_dir).mkdir(parents=True, exist_ok=True)
+
+    def L(r):
+        with open(log, &quot;a&quot;) as f:
+            f.write(json.dumps(r) + &quot;\n&quot;)
+    for cid in order:
+        d = Path(drives_dir) / f&quot;{cid}.json&quot;
+        o = Path(out_dir) / f&quot;{cid}.json&quot;
+        if o.exists():
+            continue
+        if not d.exists():
+            L({&quot;event&quot;: &quot;no-drive-file&quot;, &quot;run&quot;: cid, &quot;at&quot;: now()})
+            continue
+        dd = json.loads(d.read_text())
+        if dd.get(&quot;dedup_of&quot;):  # identical drive (same sha256) already run: physics is deterministic, take that result
+            src = Path(out_dir) / f&quot;{dd[&#x27;dedup_of&#x27;]}.json&quot;
+            if src.exists():
+                r = json.loads(src.read_text()); r[&quot;id&quot;] = cid; r[&quot;dedup_of&quot;] = dd[&quot;dedup_of&quot;]; r[&quot;group&quot;] = dd.get(&quot;group&quot;)
+                Path(str(o) + &quot;.tmp&quot;).write_text(json.dumps(r)); os.replace(str(o) + &quot;.tmp&quot;, o)
+                L({&quot;event&quot;: &quot;dedup&quot;, &quot;run&quot;: cid, &quot;of&quot;: dd[&quot;dedup_of&quot;], &quot;at&quot;: now()})
+                continue
+        if time.time() &gt;= sc:
+            L({&quot;event&quot;: &quot;not-run (clock)&quot;, &quot;run&quot;: cid, &quot;at&quot;: now()})
+            continue
+        m = mem()
+        waited = 0
+        while m is not None and m &gt; 2.2 * GIB and waited &lt; 120:
+            time.sleep(30)
+            waited += 30
+            m = mem()
+        if m is not None and m &gt; 2.2 * GIB:
+            L({&quot;event&quot;: &quot;skipped-memory&quot;, &quot;run&quot;: cid, &quot;mem&quot;: m, &quot;at&quot;: now()})
+            continue
+        L({&quot;event&quot;: &quot;start&quot;, &quot;run&quot;: cid, &quot;mem&quot;: m, &quot;waited_s&quot;: waited, &quot;at&quot;: now()})
+        t0 = time.time()
+        p = subprocess.Popen([sys.executable, __file__, &quot;one&quot;, str(d), str(o)], env=dict(os.environ, BODY_MEM_AT_LAUNCH=str(m or 0)))
+        try:
+            rc = p.wait(timeout=max(1, min(180, kl - t0)))
+        except subprocess.TimeoutExpired:
+            p.kill()
+            p.wait()
+            if time.time() &gt;= kl - 1:
+                L({&quot;event&quot;: &quot;killed-at-kill-time&quot;, &quot;run&quot;: cid, &quot;at&quot;: now()})
+                break
+            rec = {&quot;id&quot;: cid, &quot;status&quot;: &quot;timeout&quot;, &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;finished_at&quot;: now()}
+            Path(str(o) + &quot;.tmp&quot;).write_text(json.dumps(rec))
+            os.replace(str(o) + &quot;.tmp&quot;, o)
+            L({&quot;event&quot;: &quot;timeout&quot;, &quot;run&quot;: cid, &quot;at&quot;: now()})
+            continue
+        L({&quot;event&quot;: &quot;end&quot;, &quot;run&quot;: cid, &quot;rc&quot;: rc, &quot;wall_s&quot;: round(time.time() - t0, 1), &quot;at&quot;: now()})
+    L({&quot;event&quot;: &quot;queue-done&quot;, &quot;at&quot;: now()})
+
+
+if __name__ == &quot;__main__&quot;:
+    ap = argparse.ArgumentParser()
+    ap.add_argument(&quot;cmd&quot;, choices=[&quot;one&quot;, &quot;queue&quot;])
+    ap.add_argument(&quot;a&quot;)
+    ap.add_argument(&quot;b&quot;)
+    ap.add_argument(&quot;--settle&quot;, type=float, default=0.2)
+    ap.add_argument(&quot;--driven&quot;, type=float, default=None)
+    ap.add_argument(&quot;--smoke&quot;, action=&quot;store_true&quot;)
+    ap.add_argument(&quot;--order&quot;)
+    ap.add_argument(&quot;--start-cut&quot;)
+    ap.add_argument(&quot;--kill&quot;)
+    ap.add_argument(&quot;--log&quot;)
+    a = ap.parse_args()
+    if a.cmd == &quot;one&quot;:
+        one(a.a, a.b, a.settle, a.driven, a.smoke)
+    else:
+        queue(a.a, a.b, a.order.split(&quot;,&quot;), a.start_cut, a.kill, a.log)</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>analyze_loom.py</code>: the pre-registered reading, standard library only (188 lines). Paths and run identifiers of our machine are replaced by neutral wording; otherwise verbatim.</summary>
+      <pre><code>&quot;&quot;&quot;Run 8 looming analysis (Digital Fly Lab, 2026-10-05). Licence: MIT. Applies the pre-registered rules in
+../preregistration.md (2026-10-05T09:42:47Z, with deviations 3-5 logged before any body run).
+Usage: python3 analyze_loom.py RESULTS_DIR CHART_OUT
+Reads RESULTS_DIR/brain/*.json, drives/*.json, body/*.json; writes RESULTS_DIR/summary.json, dn-table.json and the
+chart data file.&quot;&quot;&quot;
+import glob, json, math, os, sys
+from pathlib import Path
+from statistics import mean, pstdev
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from brain_readout import readout  # noqa: E402
+
+RD = Path(sys.argv[1]); CHART = Path(sys.argv[2])
+REL = &quot;loom/results/&quot;
+FLY67 = {&quot;url&quot;: &quot;https://github.com/znatgost/fly67/blob/45f62fd9b867632141f84cc6daa77d871a2259bb/validation/circuits.json&quot;,
+         &quot;commit&quot;: &quot;45f62fd9b867632141f84cc6daa77d871a2259bb&quot;, &quot;engine&quot;: &quot;the author&#x27;s own JavaScript engine (not ours)&quot;,
+         &quot;loom_left&quot;: {&quot;gf&quot;: 114.8, &quot;turnR&quot;: 25, &quot;turnL&quot;: 0, &quot;walkL&quot;: 0.7, &quot;back&quot;: 0.8},
+         &quot;loom_right&quot;: {&quot;gf&quot;: 120.3, &quot;turnL&quot;: 43, &quot;turnR&quot;: 0, &quot;back&quot;: 3.3}, &quot;no_input&quot;: &quot;every readout 0&quot;}
+CAVEAT = (&quot;One model (Shiu et al. LIF on FlyWire v783), open loop, our hand-made mapping, a constant external walking &quot;
+          &quot;drive, 1 s; not a real fly.&quot;)
+
+
+def atomic(path, obj):
+    tmp = Path(str(path) + &quot;.tmp&quot;); tmp.write_text(json.dumps(obj, indent=1)); os.replace(tmp, path)
+
+
+def tid(t):
+    s = t[&quot;stim&quot;][-1]
+    base = f&quot;{s}-real-{t[&#x27;trial_seed&#x27;]}&quot; if t[&quot;arm&quot;] == &quot;real&quot; else f&quot;{s}-{t[&#x27;arm&#x27;]}{t[&#x27;shuffle_seed&#x27;]}&quot;
+    if t.get(&quot;gain&quot;):
+        base += f&quot;-g{t[&#x27;gain&#x27;]:g}&quot;
+    if t.get(&quot;silenced&quot;):
+        base = f&quot;GFoff-{s}&quot;
+    return base
+
+
+brain_rows, dn_rows, checks = [], [], []
+for f in sorted(glob.glob(str(RD / &quot;brain&quot; / &quot;LOOM*.json&quot;))):
+    t = json.load(open(f))
+    if t.get(&quot;status&quot;) != &quot;ok&quot;:
+        brain_rows.append({&quot;trial&quot;: Path(f).stem, &quot;status&quot;: t.get(&quot;status&quot;), &quot;source&quot;: REL + &quot;brain/&quot; + Path(f).name}); continue
+    r = readout(t)
+    row = {&quot;trial&quot;: tid(t), &quot;file&quot;: Path(f).name, &quot;side&quot;: r[&quot;side&quot;],
+           &quot;wiring&quot;: &quot;real&quot; if t[&quot;arm&quot;] == &quot;real&quot; else (&quot;D&quot; if t[&quot;arm&quot;] == &quot;D&quot; else t[&quot;arm&quot;]),
+           &quot;seed&quot;: t[&quot;trial_seed&quot;] if t[&quot;arm&quot;] == &quot;real&quot; else t[&quot;shuffle_seed&quot;], &quot;gain&quot;: t.get(&quot;gain&quot;),
+           &quot;silenced&quot;: t.get(&quot;silenced&quot;) or [],
+           &quot;gf_l&quot;: r[&quot;dnp01_l&quot;], &quot;gf_r&quot;: r[&quot;dnp01_r&quot;], &quot;gf_mean&quot;: r[&quot;gf_mean&quot;], &quot;dna02_l&quot;: r[&quot;dna02_l&quot;],
+           &quot;dna02_r&quot;: r[&quot;dna02_r&quot;], &quot;dna02_contra&quot;: r[&quot;dna02_contra&quot;], &quot;dna02_ipsi&quot;: r[&quot;dna02_ipsi&quot;],
+           &quot;li&quot;: round(r[&quot;li&quot;], 4), &quot;dna01_l&quot;: r[&quot;dna01_l&quot;], &quot;dna01_r&quot;: r[&quot;dna01_r&quot;], &quot;mdn_l&quot;: r[&quot;mdn_l&quot;], &quot;mdn_r&quot;: r[&quot;mdn_r&quot;],
+           &quot;mdn_mean&quot;: r[&quot;mdn_mean&quot;], &quot;dnp09_l&quot;: r[&quot;dnp09_l&quot;], &quot;dnp09_r&quot;: r[&quot;dnp09_r&quot;], &quot;dng62_mean&quot;: (r[&quot;dng62_l&quot;] + r[&quot;dng62_r&quot;]) / 2,
+           &quot;mn9_l&quot;: r[&quot;cb0701_l&quot;], &quot;mn9_r&quot;: r[&quot;cb0701_r&quot;], &quot;whole_brain_spikes&quot;: r[&quot;whole_brain_spikes&quot;],
+           &quot;active_neurons&quot;: r[&quot;active_neurons&quot;], &quot;stim_n&quot;: r[&quot;stim_n&quot;], &quot;stim_spikes&quot;: r[&quot;stim_spikes&quot;],
+           &quot;selectivity&quot;: round(r[&quot;selectivity&quot;], 4) if r[&quot;selectivity&quot;] is not None else None,
+           &quot;gate_gf&quot;: r[&quot;gate_gf&quot;], &quot;gate_turn&quot;: r[&quot;gate_turn&quot;], &quot;gate_pass&quot;: r[&quot;gate_pass&quot;],
+           &quot;wall_s&quot;: t[&quot;wall_s&quot;], &quot;sim_s&quot;: t[&quot;sim_s&quot;], &quot;peak_rss_gb&quot;: round(t[&quot;peak_rss_kb&quot;] / 1e6, 3),
+           &quot;source&quot;: REL + &quot;brain/&quot; + Path(f).name}
+    brain_rows.append(row)
+    if t[&quot;arm&quot;] != &quot;real&quot;:
+        checks.append({&quot;trial&quot;: row[&quot;trial&quot;], &quot;property_checks&quot;: t[&quot;property_checks&quot;], &quot;all_pass&quot;: all(t[&quot;property_checks&quot;].values()),
+                       &quot;edge_sha256&quot;: t[&quot;edge_sha256&quot;], &quot;structure&quot;: t[&quot;structure&quot;]})
+    dn_rows.append({&quot;trial&quot;: row[&quot;trial&quot;], &quot;n_active_dn&quot;: t[&quot;dn&quot;][&quot;n_active&quot;],
+                    &quot;top_dn&quot;: [{k: x[k] for k in (&quot;id&quot;, &quot;cell_type&quot;, &quot;side&quot;, &quot;total&quot;)} for x in t[&quot;dn&quot;][&quot;active&quot;][:25]]})
+
+ok = [r for r in brain_rows if &quot;gf_mean&quot; in r]
+core = [r for r in ok if not r[&quot;silenced&quot;] and not r[&quot;gain&quot;]]
+real = [r for r in core if r[&quot;wiring&quot;] == &quot;real&quot;]
+D = [r for r in core if r[&quot;wiring&quot;] == &quot;D&quot;]
+gate = {s: next((r for r in real if r[&quot;side&quot;] == s and r[&quot;seed&quot;] == 0), None) for s in &quot;LR&quot;}
+gate_pass = all(g and g[&quot;gate_pass&quot;] for g in gate.values())
+brain = {
+    &quot;gate&quot;: {s: ({k: g[k] for k in (&quot;gf_mean&quot;, &quot;gf_l&quot;, &quot;gf_r&quot;, &quot;dna02_contra&quot;, &quot;dna02_ipsi&quot;, &quot;gate_gf&quot;, &quot;gate_turn&quot;, &quot;gate_pass&quot;)} if g else None) for s, g in gate.items()},
+    &quot;gate_result&quot;: &quot;reproduced in our Brian2 run&quot; if gate_pass else &quot;not reproduced in our Brian2 run&quot;,
+    &quot;n&quot;: {&quot;real&quot;: len(real), &quot;D&quot;: len(D), &quot;gfoff&quot;: len([r for r in ok if r[&quot;silenced&quot;]]), &quot;G&quot;: len([r for r in ok if r[&quot;gain&quot;]])},
+    &quot;real_mean&quot;: {k: round(mean(r[k] for r in real), 3) for k in (&quot;li&quot;, &quot;gf_mean&quot;, &quot;dna02_contra&quot;, &quot;dna02_ipsi&quot;, &quot;whole_brain_spikes&quot;, &quot;active_neurons&quot;, &quot;selectivity&quot;, &quot;mdn_mean&quot;)} if real else None,
+    &quot;D_mean&quot;: {k: round(mean(r[k] for r in D), 3) for k in (&quot;li&quot;, &quot;gf_mean&quot;, &quot;dna02_contra&quot;, &quot;dna02_ipsi&quot;, &quot;whole_brain_spikes&quot;, &quot;active_neurons&quot;, &quot;selectivity&quot;, &quot;mdn_mean&quot;)} if D else None,
+    &quot;fly67_rule_pass&quot;: {&quot;real&quot;: sum(r[&quot;gate_pass&quot;] for r in real), &quot;D&quot;: sum(r[&quot;gate_pass&quot;] for r in D)},
+    &quot;shuffle_checks_all_pass&quot;: all(c[&quot;all_pass&quot;] for c in checks) if checks else None,
+}
+if real and D:
+    rm, dm = brain[&quot;real_mean&quot;], brain[&quot;D_mean&quot;]
+    brain[&quot;retention_display&quot;] = {&quot;LI_D_over_real&quot;: round(dm[&quot;li&quot;] / rm[&quot;li&quot;], 4) if rm[&quot;li&quot;] else None,
+                                  &quot;GF_D_over_real&quot;: round(dm[&quot;gf_mean&quot;] / rm[&quot;gf_mean&quot;], 4) if rm[&quot;gf_mean&quot;] else None,
+                                  &quot;selectivity_D_over_real&quot;: round(dm[&quot;selectivity&quot;] / rm[&quot;selectivity&quot;], 4) if rm[&quot;selectivity&quot;] else None,
+                                  &quot;activity_ratio_spikes_D_over_real&quot;: round(dm[&quot;whole_brain_spikes&quot;] / rm[&quot;whole_brain_spikes&quot;], 4)}
+
+# ------------------------------------------------------------------ body
+drives = {Path(f).stem: json.load(open(f)) for f in glob.glob(str(RD / &quot;drives&quot; / &quot;*.json&quot;))}
+bodies = {Path(f).stem: json.load(open(f)) for f in glob.glob(str(RD / &quot;body&quot; / &quot;*.json&quot;))}
+body_runs, body = [], {}
+F = bodies.get(&quot;F&quot;)
+f_dh = F.get(&quot;heading_after_onset_deg&quot;) if F and F.get(&quot;status&quot;) == &quot;ok&quot; else None
+f_away = {&quot;L&quot;: -f_dh, &quot;R&quot;: f_dh} if f_dh is not None else None
+for cid, b in sorted(bodies.items()):
+    d = drives.get(cid, {})
+    side = d.get(&quot;side&quot;)
+    dh = b.get(&quot;heading_after_onset_deg&quot;)
+    away = None if dh is None or side is None else (-dh if side == &quot;L&quot; else dh)
+    rel = None if away is None or f_away is None else away - f_away[side]
+    dr = d.get(&quot;drive&quot;)
+    clip = None
+    if dr:
+        vals = [abs(v) for row in dr[2:] for v in row]
+        clip = sum(v &gt;= 1.2 - 1e-12 for v in vals) / len(vals)
+    body_runs.append({&quot;id&quot;: cid, &quot;group&quot;: d.get(&quot;group&quot;) or b.get(&quot;group&quot;), &quot;side&quot;: side, &quot;wiring&quot;: d.get(&quot;wiring&quot;),
+                      &quot;seed&quot;: d.get(&quot;seed&quot;), &quot;status&quot;: b.get(&quot;status&quot;), &quot;heading_after_onset_deg&quot;: dh,
+                      &quot;heading_away_deg&quot;: None if away is None else round(away, 3),
+                      &quot;heading_away_minus_floor_deg&quot;: None if rel is None else round(rel, 3),
+                      &quot;turns_away&quot;: None if rel is None else rel &gt; 10, &quot;forward_mm&quot;: b.get(&quot;forward_after_onset_mm&quot;),
+                      &quot;forward_driven_mm&quot;: b.get(&quot;forward_mm&quot;), &quot;clipped_share&quot;: clip,
+                      &quot;drive_sha256&quot;: d.get(&quot;drive_sha256&quot;), &quot;dedup_of&quot;: d.get(&quot;dedup_of&quot;),
+                      &quot;path_xy_mm&quot;: b.get(&quot;path_xy_mm&quot;), &quot;source&quot;: REL + &quot;body/&quot; + cid + &quot;.json&quot;,
+                      &quot;drive_source&quot;: REL + &quot;drives/&quot; + cid + &quot;.json&quot;, &quot;brain_source&quot;: d.get(&quot;source&quot;) and &quot;loom/&quot; + d[&quot;source&quot;],
+                      &quot;wall_s&quot;: b.get(&quot;wall_s&quot;)})
+grp = lambda g: [r for r in body_runs if r[&quot;group&quot;] == g and r[&quot;heading_away_deg&quot;] is not None]
+R_, D_, RND, GF = grp(&quot;real&quot;), grp(&quot;scrambled&quot;), grp(&quot;random&quot;), grp(&quot;gf-off&quot;)
+if f_away is not None and R_:
+    def fl(rs): return mean(f_away[r[&quot;side&quot;]] for r in rs)
+    real_away, real_f = mean(r[&quot;heading_away_deg&quot;] for r in R_), fl(R_)
+    ret = None
+    if D_ and abs(real_away - real_f) &gt; 1e-9:
+        ret = (mean(r[&quot;heading_away_deg&quot;] for r in D_) - fl(D_)) / (real_away - real_f)
+    rnd_ret = ((mean(r[&quot;heading_away_deg&quot;] for r in RND) - fl(RND)) / (real_away - real_f)) if RND else None
+    n_real, k_real = len(R_), sum(r[&quot;turns_away&quot;] for r in R_)
+    need = math.ceil(5 / 6 * n_real)
+    clip_vals = [r[&quot;clipped_share&quot;] for r in R_ + D_ if r[&quot;clipped_share&quot;] is not None]
+    clip_share = mean(clip_vals) if clip_vals else None
+    rand_k = sum(r[&quot;turns_away&quot;] for r in RND)
+    if k_real &lt; need:
+        reading = &quot;no reliable turn in our body test&quot;
+    elif ret is not None and ret &lt;= 0.1:
+        reading = &quot;the turn away needs the wiring&quot;
+    elif ret is not None and ret &gt;= 0.9:
+        reading = &quot;it does not&quot;
+    elif ret is not None:
+        reading = &quot;partly&quot;
+    else:
+        reading = &quot;no D runs&quot;
+    flags = []
+    if clip_share is not None and clip_share &gt; 0.10:
+        flags.append(&quot;partly by construction&quot;)
+    if len(RND) &gt;= 6 and rand_k &gt;= 5:
+        flags.append(&quot;indistinguishable from random steering&quot;)
+    body = {&quot;floor&quot;: {&quot;heading_after_onset_deg&quot;: f_dh, &quot;away_L&quot;: f_away[&quot;L&quot;], &quot;away_R&quot;: f_away[&quot;R&quot;],
+                      &quot;forward_mm&quot;: F.get(&quot;forward_after_onset_mm&quot;), &quot;forward_driven_mm&quot;: F.get(&quot;forward_mm&quot;),
+                      &quot;walks_5mm&quot;: (F.get(&quot;forward_mm&quot;) or 0) &gt;= 5},
+            &quot;n&quot;: {&quot;real&quot;: n_real, &quot;D&quot;: len(D_), &quot;D_unique_drives&quot;: len({r[&quot;drive_sha256&quot;] for r in D_}), &quot;random&quot;: len(RND), &quot;gfoff&quot;: len(GF)},
+            &quot;real_turns_away&quot;: k_real, &quot;required&quot;: need, &quot;D_turns_away&quot;: sum(r[&quot;turns_away&quot;] for r in D_),
+            &quot;random_turns_away&quot;: rand_k, &quot;gfoff_turns_away&quot;: sum(r[&quot;turns_away&quot;] for r in GF),
+            &quot;side_swap&quot;: {&quot;L_real_away&quot;: sum(r[&quot;turns_away&quot;] for r in R_ if r[&quot;side&quot;] == &quot;L&quot;), &quot;L_real_n&quot;: sum(r[&quot;side&quot;] == &quot;L&quot; for r in R_),
+                          &quot;R_real_away&quot;: sum(r[&quot;turns_away&quot;] for r in R_ if r[&quot;side&quot;] == &quot;R&quot;), &quot;R_real_n&quot;: sum(r[&quot;side&quot;] == &quot;R&quot; for r in R_)},
+            &quot;mean_away_deg&quot;: {&quot;real&quot;: round(real_away, 3), &quot;D&quot;: round(mean(r[&quot;heading_away_deg&quot;] for r in D_), 3) if D_ else None,
+                              &quot;random&quot;: round(mean(r[&quot;heading_away_deg&quot;] for r in RND), 3) if RND else None,
+                              &quot;floor_for_real&quot;: round(real_f, 3)},
+            &quot;sd_away_deg&quot;: {&quot;real&quot;: round(pstdev([r[&quot;heading_away_deg&quot;] for r in R_]), 3) if len(R_) &gt; 1 else None,
+                            &quot;D&quot;: round(pstdev([r[&quot;heading_away_deg&quot;] for r in D_]), 3) if len(D_) &gt; 1 else None,
+                            &quot;random&quot;: round(pstdev([r[&quot;heading_away_deg&quot;] for r in RND]), 3) if len(RND) &gt; 1 else None},
+            &quot;retention_D&quot;: None if ret is None else round(ret, 4), &quot;retention_random&quot;: None if rnd_ret is None else round(rnd_ret, 4),
+            &quot;clip_share_real_and_D&quot;: clip_share, &quot;dedup&quot;: [{&quot;id&quot;: r[&quot;id&quot;], &quot;of&quot;: r[&quot;dedup_of&quot;]} for r in body_runs if r[&quot;dedup_of&quot;]],
+            &quot;reading&quot;: reading, &quot;flags&quot;: flags}
+summary = {&quot;checked_at&quot;: &quot;2026-10-05&quot;, &quot;preregistered_utc&quot;: &quot;2026-10-05T09:42:47Z&quot;, &quot;brain&quot;: brain, &quot;body&quot;: body,
+           &quot;shuffle_checks&quot;: checks, &quot;brain_rows&quot;: brain_rows, &quot;body_runs&quot;: [{k: v for k, v in r.items() if k != &quot;path_xy_mm&quot;} for r in body_runs]}
+atomic(RD / &quot;summary.json&quot;, summary)
+atomic(RD / &quot;dn-table.json&quot;, {&quot;checked_at&quot;: &quot;2026-10-05&quot;, &quot;note&quot;: &quot;top 25 descending neurons by spikes per trial (1 s, so spikes = Hz)&quot;, &quot;trials&quot;: dn_rows})
+SENT = {
+    &quot;the turn away needs the wiring&quot;: &quot;We ran the map. A looming shadow on one eye turned our simulated fly away in {X} of {N} runs. With the same map scrambled (same number of connections per neuron) it turned away in {Y} of {M}. Here the map&#x27;s wiring, not the stimulus or our code, makes the turn.&quot;,
+    &quot;it does not&quot;: &quot;We ran the map. A looming shadow turned our simulated fly away, but scrambled maps turned it away just as much. The turn comes from the stimulus and our mapping, not from the map&#x27;s wiring.&quot;,
+    &quot;partly&quot;: &quot;We ran the map. Scrambled maps kept about {Z}% of the turn away that the real map produced.&quot;,
+    &quot;no reliable turn in our body test&quot;: &quot;We ran the map, and it did not reliably turn the fly away from a looming shadow in our test. {WHY}&quot;,
+}
+reading = body.get(&quot;reading&quot;) if body else None
+sentence = None
+if reading in SENT:
+    sentence = SENT[reading].format(X=body[&quot;real_turns_away&quot;], N=body[&quot;n&quot;][&quot;real&quot;], Y=body[&quot;D_turns_away&quot;], M=body[&quot;n&quot;][&quot;D&quot;],
+                                    Z=None if body[&quot;retention_D&quot;] is None else round(100 * body[&quot;retention_D&quot;]),
+                                    WHY=&quot;The body turns were below 10°.&quot; if gate_pass else &quot;The brain gate failed.&quot;)
+chart = {&quot;checked_at&quot;: &quot;2026-10-05&quot;, &quot;preregistered_utc&quot;: &quot;2026-10-05T09:42:47Z&quot;,
+         &quot;model&quot;: &quot;Shiu et al. 2024 LIF (philshiu/Drosophila_brain_model@91bdd1e7), FlyWire v783, Brian2 2.9.0 numpy, dt 0.1 ms, 1 s per trial; LOOM-L = 54 LC4 + 108 LPLC2, LOOM-R = 50 LC4 + 102 LPLC2, Poisson 80 Hz each&quot;,
+         &quot;body&quot;: &quot;FlyGym 2.1.0 HybridTurningController, flat terrain, 0.2 s settle, 0.2 s at (0.8, 0.8) before onset, then 1.0 s of brain bins&quot;,
+         &quot;mapping&quot;: &quot;OUR MAPPING (hand-made, not fitted): drive_s = clip(0.8 - m_s - 0.5*(a_s - a_o), -1.2, 1.2); a = DNa02 rate / 100 Hz, m = mean MDN rate on side s / 100 Hz; 0.8 = external walking drive, not the brain&quot;,
+         &quot;caveat&quot;: CAVEAT, &quot;reading&quot;: reading, &quot;flags&quot;: body.get(&quot;flags&quot;) if body else None, &quot;sentence&quot;: sentence,
+         &quot;brain_gate&quot;: brain[&quot;gate_result&quot;],
+         &quot;clip_share&quot;: body.get(&quot;clip_share_real_and_D&quot;) if body else None, &quot;retention&quot;: body.get(&quot;retention_D&quot;) if body else None,
+         &quot;heading_sign&quot;: &quot;heading_away_deg &gt; 0 = turned away from the looming side; FlyGym heading is + to the left&quot;,
+         &quot;brain_rows&quot;: [{k: r.get(k) for k in (&quot;trial&quot;, &quot;side&quot;, &quot;wiring&quot;, &quot;seed&quot;, &quot;gf_l&quot;, &quot;gf_r&quot;, &quot;gf_mean&quot;, &quot;dna02_l&quot;, &quot;dna02_r&quot;, &quot;li&quot;, &quot;mdn_mean&quot;, &quot;dnp09_l&quot;, &quot;dnp09_r&quot;, &quot;whole_brain_spikes&quot;, &quot;active_neurons&quot;, &quot;selectivity&quot;, &quot;gate_pass&quot;, &quot;source&quot;)} for r in ok],
+         &quot;body_runs&quot;: [{k: r.get(k) for k in (&quot;id&quot;, &quot;group&quot;, &quot;side&quot;, &quot;wiring&quot;, &quot;seed&quot;, &quot;heading_away_deg&quot;, &quot;heading_away_minus_floor_deg&quot;, &quot;turns_away&quot;, &quot;forward_mm&quot;, &quot;clipped_share&quot;, &quot;drive_sha256&quot;, &quot;dedup_of&quot;, &quot;path_xy_mm&quot;, &quot;source&quot;)} for r in body_runs],
+         &quot;fly67_reference&quot;: FLY67, &quot;summary_source&quot;: REL + &quot;summary.json&quot;}
+atomic(CHART, chart)
+print(json.dumps({&quot;brain&quot;: {k: brain[k] for k in (&quot;gate_result&quot;, &quot;n&quot;, &quot;real_mean&quot;, &quot;D_mean&quot;, &quot;fly67_rule_pass&quot;, &quot;shuffle_checks_all_pass&quot;)} | {&quot;ret&quot;: brain.get(&quot;retention_display&quot;)}, &quot;body&quot;: {k: v for k, v in body.items() if k not in (&quot;dedup&quot;,)}, &quot;sentence&quot;: sentence}, indent=1))</code></pre>
+    </details>
+    <details class="dfl-code">
+      <summary><code>tests/test_loom.py</code> and <code>tests/test_nulls.py</code>: the 12 tests (40 and 95 lines). Verbatim.</summary>
+      <pre><code># tests/test_loom.py
+&quot;&quot;&quot;Run 8 looming worker checks (no FlyWire data needed except ../step0.json). Licence: MIT.&quot;&quot;&quot;
+import json
+import sys
+from pathlib import Path
+
+import numpy as np
+
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE.parent))
+import run_loom  # noqa: E402
+
+
+def test_stim_sets_match_step0():
+    s0 = json.load(open(HERE.parent.parent / &quot;step0.json&quot;))
+    L, R = run_loom.stim_ids(&quot;LOOML&quot;, None), run_loom.stim_ids(&quot;LOOMR&quot;, None)
+    assert len(L) == s0[&quot;counts&quot;][&quot;L&quot;][&quot;total&quot;] == 162
+    assert len(R) == s0[&quot;counts&quot;][&quot;R&quot;][&quot;total&quot;] == 152
+    assert not set(L) &amp; set(R)
+
+
+def test_trial_names():
+    assert run_loom.trial_name(&quot;real&quot;, 0, None, &quot;LOOML&quot;) == &quot;LOOML-real-0.json&quot;
+    assert run_loom.trial_name(&quot;D&quot;, 3, None, &quot;LOOMR&quot;) == &quot;LOOMR-D-3.json&quot;
+    assert run_loom.trial_name(&quot;G&quot;, 4, 1.5, &quot;LOOML&quot;) == &quot;LOOML-G-4-g1.5.json&quot;
+    assert run_loom.trial_name(&quot;real&quot;, 0, None, &quot;LOOML&quot;, &quot;GF&quot;) == &quot;LOOML-real-0-gfoff.json&quot;
+
+
+def test_silence_zeroes_only_outgoing_edges():
+    pre = np.array([0, 1, 2, 1, 3], dtype=np.int32)
+    post = np.array([1, 2, 1, 0, 1], dtype=np.int32)
+    cnt = np.array([5, -3, 2, 4, 7], dtype=np.int32)
+    out = run_loom.silence_counts(pre, cnt, [1])
+    assert out.tolist() == [5, 0, 2, 0, 7]
+    assert cnt.tolist() == [5, -3, 2, 4, 7]  # input unchanged
+    assert run_loom.silence_counts(pre, cnt, []) is cnt
+
+
+def test_gf_ids_are_dnp01():
+    s0 = json.load(open(HERE.parent.parent / &quot;step0.json&quot;))
+    assert sorted(r[&quot;id&quot;] for r in s0[&quot;readouts&quot;][&quot;DNp01&quot;]) == sorted(run_loom.GF_IDS)</code></pre>
+      <pre><code># tests/test_nulls.py
+&quot;&quot;&quot;Synthetic-graph tests for nulls.py (no FlyWire data; seconds). Run: python -m pytest -q tests/test_nulls.py&quot;&quot;&quot;
+import sys
+from pathlib import Path
+
+import numpy as np
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import nulls  # noqa: E402
+
+N = 200
+
+
+def graph(seed=0, e=5000):
+    rng = np.random.default_rng(seed)
+    pre = rng.integers(0, N, e).astype(np.int32)
+    post = rng.integers(0, N, e).astype(np.int32)
+    sign = np.where(rng.random(N) &lt; 0.6, 1, -1)  # one sign per neuron (Dale&#x27;s law)
+    cnt = (rng.integers(1, 50, e) * sign[pre]).astype(np.int32)
+    return pre, post, cnt
+
+
+def sides():
+    inp = np.zeros(N, bool)
+    inp[:20] = True
+    out = np.zeros(N, bool)
+    out[-15:] = True
+    return inp, out
+
+
+def test_degree():
+    r = graph()
+    n = nulls.null_degree(*r, seed=3)
+    c = nulls.check(&quot;D&quot;, r, n, N)
+    assert all(c.values()), c
+    assert not np.array_equal(n[1], r[1])
+
+
+def test_degree_matches_bootstrap_load_edges():
+    r = graph()
+    p = r[1].copy()
+    np.random.default_rng(1).shuffle(p)
+    assert np.array_equal(nulls.null_degree(*r, seed=1)[1], p)
+
+
+def test_weight():
+    r = graph()
+    n = nulls.null_weight(*r, seed=101)
+    c = nulls.check(&quot;W&quot;, r, n, N)
+    assert all(c.values()), c
+    assert not np.array_equal(n[2], r[2])
+
+
+def test_sign():
+    r = graph()
+    n = nulls.null_sign(*r, seed=201, n=N)
+    c = nulls.check(&quot;S&quot;, r, n, N)
+    assert all(c.values()), c
+    assert not np.array_equal(n[2], r[2])
+
+
+def test_boundary():
+    r = graph()
+    inp, out = sides()
+    n = nulls.null_boundary(*r, seed=301, input_side=inp, output_side=out)
+    c = nulls.check(&quot;B&quot;, r, n, N, input_side=inp, output_side=out)
+    assert all(c.values()), c
+    assert not np.array_equal(n[1], r[1])
+
+
+def test_stimreadout():
+    r = graph()
+    n = nulls.null_stimreadout(*r, seed=401, stim_idx=[0, 1, 2], readout_idx=N - 1, n=N)
+    c = nulls.check(&quot;B&#x27;&quot;, r, n, N, stim_idx=[0, 1, 2], readout_idx=N - 1)
+    assert all(c.values()), c
+
+
+def test_checks_catch_violations():
+    r = graph()
+    inp, out = sides()
+    bad = (r[0], np.random.default_rng(9).permutation(r[1]), r[2])  # full shuffle moves boundary edges
+    assert not all(nulls.check(&quot;B&quot;, r, bad, N, input_side=inp, output_side=out).values())
+    badw = (r[0], r[1], -r[2])  # flips every sign
+    assert not nulls.check(&quot;W&quot;, r, badw, N)[&quot;edge_signs_kept&quot;]
+    mixed = r[2].copy()
+    mixed[0] = -mixed[0]  # one edge of a neuron gets the other sign
+    assert not nulls.check(&quot;S&quot;, r, (r[0], r[1], mixed), N)[&quot;one_sign_per_presynaptic_neuron&quot;]
+    shorter = (r[0][:-1], r[1][:-1], r[2][:-1])
+    assert not nulls.check(&quot;D&quot;, r, shorter, N)[&quot;n_edges_kept&quot;]
+
+
+def test_structure_stats():
+    pre = np.array([0, 0, 1, 2], np.int32)
+    post = np.array([1, 1, 1, 2], np.int32)
+    s = nulls.structure_stats(pre, post, 3)
+    assert s == {&quot;self_loops&quot;: 2, &quot;duplicate_pairs&quot;: 1}</code></pre>
+    </details>
+  </section>
+
   <section aria-labelledby="sources-heading">
     <h2 id="sources-heading">Sources</h2>
     <ul class="dfl-sourcelist">
@@ -2489,7 +3989,8 @@ zipp==4.1.0</code></pre>
       <li>Brian2 documentation: <a href="https://brian2.readthedocs.io/en/stable/introduction/install.html">installation</a>.</li>
       <li>FlyGym: <a href="https://github.com/NeLy-EPFL/flygym">repository</a>, <a href="https://github.com/NeLy-EPFL/flygym/releases/tag/v2.0.0">v2.0.0 release notes</a>; NeuroMechFly v2: Wang-Chen et al. 2024, <em>Nature Methods</em>, <a href="https://doi.org/10.1038/s41592-024-02497-y">doi</a>. MaleCNS: <a href="https://male-cns.janelia.org/">portal</a>.</li>
       <li>Walking neurons: Bidaye et al. 2020, <em>Neuron</em> (P9), <a href="https://doi.org/10.1016/j.neuron.2020.07.032">doi</a>; Bidaye et al. 2014, <em>Science</em> (MDN), <a href="https://doi.org/10.1126/science.1249964">doi</a>; Rayshubskiy et al. 2025, <em>eLife</em> (DNa02), <a href="https://doi.org/10.7554/eLife.102230">doi</a>. FlyWire annotations: <a href="https://github.com/flyconnectome/flywire_annotations">flyconnectome/flywire_annotations</a>.</li>
-      <li>Our research record for this guide: <a href="../reports/2026-09-27-bootstrap/index.html">bootstrap research report</a>; the re-test and our fair test: <a href="../reports/2026-10-01-run5/index.html">report of 1 Oct 2026</a>; Add a body: <a href="../reports/2026-10-02-run6/index.html">report of 2 Oct 2026</a>.</li>
+      <li>Looming: von Reyn et al. 2017, <em>Neuron</em> (LC4 to the giant fibre), <a href="https://doi.org/10.1016/j.neuron.2017.05.036">doi</a>; Ache et al. 2019, <em>Current Biology</em> (LPLC2 and LC4 onto the giant fibre), <a href="https://doi.org/10.1016/j.cub.2019.01.079">doi</a>; fly67's looming rule: <a href="https://github.com/znatgost/fly67/blob/45f62fd9b867632141f84cc6daa77d871a2259bb/validation/circuits.json">validation/circuits.json at 45f62fd9</a>.</li>
+      <li>Our research record for this guide: <a href="../reports/2026-09-27-bootstrap/index.html">bootstrap research report</a>; the re-test and our fair test: <a href="../reports/2026-10-01-run5/index.html">report of 1 Oct 2026</a>; Add a body: <a href="../reports/2026-10-02-run6/index.html">x: looming and the 5 Oct re-test: <a href="../reports/2026-10-05-run8/index.html">report of 5 Oct 2026</a>.</li>
     </ul>
   </section>
 
@@ -2512,7 +4013,7 @@ zipp==4.1.0</code></pre>
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>3 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>5 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Verify project links and implementations, explain the model and keep the catalogue and build guide current.</p><a href="../index.html">Full pool information →</a></section>
     </div>

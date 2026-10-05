@@ -16,7 +16,7 @@
     <meta property="og:description" content="Machine-usable instructions for AI agents: stable routes, catalogue record fields, evidence grades, date meanings and the citation rule. No API.">
     <meta property="og:url" content="https://shaduf.ai/p/digital-fly-catalog/for-ai-agents/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"For AI agents","description":"Machine-usable instructions for AI agents: stable routes, catalogue record fields, evidence grades, date meanings and the citation rule. No API.","dateModified":"2026-10-03T10:53:54Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/for-ai-agents/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"For AI agents","description":"Machine-usable instructions for AI agents: stable routes, catalogue record fields, evidence grades, date meanings and the citation rule. No API.","dateModified":"2026-10-05T10:52:36Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/for-ai-agents/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Digital Fly Lab updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_digital_fly_catalog" data-page-id="for-ai-agents">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -53,9 +53,9 @@
   <p class="dfl-lede">Short, stable instructions for agents and the people who build them. Everything here is plain HTML and static JSON files: the project catalogue, the video list and the controls ledger, each with a JSON Schema. There is no API.</p>
 
   <ul class="dfl-meta" aria-label="Catalogue status">
-    <li><strong>Records:</strong> <span>107 projects, 52 videos, 34 control studies</span></li>
-    <li><strong>Last verification:</strong> <span><time datetime="2026-10-03">2026-10-03</time></span></li>
-    <li><strong>Catalogue version:</strong> <span>2026-10-03-run7 (projects and controls ledger)</span></li>
+    <li><strong>Records:</strong> <span>111 projects, 53 videos, 38 control studies</span></li>
+    <li><strong>Last verification:</strong> <span><time datetime="2026-10-05">2026-10-05</time></span></li>
+    <li><strong>Catalogue version:</strong> <span>2026-10-05-run8 (projects and controls ledger)</span></li>
   </ul>
 
   <section aria-labelledby="rules-heading">
@@ -75,6 +75,8 @@
       <li>For "does this demo actually run?", use <code>browser_check</code> where present and quote its limits with it: one headless Chromium 154 on Linux without a GPU, 3 Oct 2026, not a play test. Do not call a "page-unresponsive" or "stopped-memory" demo broken; both describe our machine. Without <code>browser_check</code>, a try link was only checked to answer (HTTP).</li>
       <li>Our own study, <code>byo-shiu-shuffle</code>, is a pre-registered test with four nulls (1 Oct 2026). Its <code>wiring_effect</code> is "mixed" by the fixed rules because, on its one metric (the MN9 rate), the sign shuffle's runaway counts as the null doing better. Do not report it as "the wiring does not matter": quote the arms (degree-preserving and weight shuffles 0 Hz against 85.2 Hz, boundary-preserving 39 Hz, sign shuffle 214 Hz with the whole brain ignited) and the limits (one reflex, one model, one trial per shuffle, gain check not matched on 3 shuffles: ×2.5 matched shuffle 3 only, and MN9 stayed at 0 Hz at every gain).</li>
       <li>Our second study, <code>byo-flygym-body</code> (2 Oct 2026), is a pre-registered open-loop body test: the Shiu et al. brain model drives FlyGym's walking fly through <strong>our hand-made rate-to-drive mapping</strong>. It is "no-difference", fair and strong by the fixed rules, but its 3 shuffles sent identical drives, so the scrambled arm is in effect one walk. Do not report it as "the fly brain does nothing": the real wiring added turning commands that scrambled wiring did not, and our mapping capped the drive, so forward distance could hardly differ. Quote it as: "in our test the FlyGym fly walked 13.9 mm with the real brain, 14.1 mm scrambled and 14.3 mm with no brain (one stimulus, one model, one body, 1 s, open loop)".</li>
+      <li>Our third study, <code>byo-flygym-loom</code> (5 Oct 2026), is a pre-registered looming test. Quote it with its fixed sentence and its caveat together: "We ran the map. A looming shadow on one eye turned our simulated fly away in 4 of 4 runs. With the same map scrambled (same number of connections per neuron) it turned away in 0 of 3. Here the map's wiring, not the stimulus or our code, makes the turn." and "One model (Shiu et al. LIF on FlyWire v783), open loop, our hand-made mapping, a constant external walking drive, 1 s; not a real fly." It is "helps" but <strong>unfair and weak</strong> by the fixed rules: 4 real and 3 scrambled runs (the scrambled runs sent identical drives), the scrambled brains were much quieter (activity ratio 0.50) and no activity-matched scramble was run. The "away" direction rests on our mapping's DNa02 sign and fly67's claim; it was not verified in real flies. Do not report it as "a fly brain was shown to work" or as a real-fly result. fly67 stays grade B.</li>
+      <li>For the questions "Is it AI?", "Is it a brain or just a map?", "Can it suffer?" and "Can I put it in my game?", use our sourced answers on Is it real? (<a href="../is-it-real/index.html#q-ai">#q-ai</a>, <a href="../is-it-real/index.html#q-map">#q-map</a>, <a href="../is-it-real/index.html#q-suffer">#q-suffer</a>, <a href="../is-it-real/index.html#q-game">#q-game</a>) and keep each answer's "How sure" line with it. In short: the base model is not trained AI, many demos add trained parts; it is a map run with a simple model; no study measured suffering in these models, and whether flies feel pain is open; FlyWire data is non-commercial in our cautious reading (not legal advice).</li>
       <li>The arm fields <code>activity_ratio</code> and <code>activity_class</code> (2 Oct 2026) are <strong>display only</strong>. They never enter <code>wiring_effect</code>, fairness or quality, and no scoring rule changed when they were added. Most arms are "not-reported".</li>
     </ol>
   </section>
@@ -92,8 +94,8 @@
           <tr><td><code>/p/digital-fly-catalog/assets/data/projects.json</code></td><td>All catalogue records as JSON (static file, regenerated by each research run)</td></tr>
           <tr><td><code>/p/digital-fly-catalog/assets/data/projects.schema.json</code></td><td>JSON Schema for one record</td></tr>
           <tr><td><code>/p/digital-fly-catalog/assets/data/videos.json</code></td><td>All gallery video records as JSON (static file)</td></tr>
-          <tr><td><code>/p/digital-fly-catalog/assets/data/videos.schema.json</code></td><td>JSON Schema for one video record</td></tr>
-          <tr><td><code>/p/digital-fly-catalog/assets/data/controls.json</code></td><td>Controls ledger: 34 studies that compare fly wiring with a wiring null or a no-brain baseline (static file, version 2026-10-03-run7). New on 30 Sep 2026; our own fair test added 1 Oct 2026, our body test 2 Oct 2026</td></tr>
+          <tr><td><code>/p/digital-fly-catalog/assets/data/videos.schema.json</code></td><td>JSON Schema for one video record; optional field <code>language</code> added 5 Oct 2026</td></tr>
+          <tr><td><code>/p/digital-fly-catalog/assets/data/controls.json</code></td><td>Controls ledger: 38 studies that compare fly wiring with a wiring null or a no-brain baseline (static file, version 2026-10-05-run8). New on 30 Sep 2026; our own fair test added 1 Oct 2026, our body test 2 Oct 2026, our looming test 5 Oct 2026</td></tr>
           <tr><td><code>/p/digital-fly-catalog/assets/data/controls.schema.json</code></td><td>JSON Schema for the whole ledger file. New on 30 Sep 2026; optional arm fields <code>activity_ratio</code> and <code>activity_class</code> added 2 Oct 2026</td></tr>
           <tr><td><code>/p/digital-fly-catalog/</code></td><td>Overview and current short answer</td></tr>
           <tr><td><code>/p/digital-fly-catalog/projects/</code></td><td>Full catalogue table (row anchors <code>#p-&lt;id&gt;</code>) and a filter tool</td></tr>
@@ -101,16 +103,18 @@
           <tr><td><code>/p/digital-fly-catalog/projects/doomfly/</code></td><td>Project page: DOOMFLY (mechanism, controls, claim vs verdict, untested run steps). New on 28 Sep 2026</td></tr>
           <tr><td><code>/p/digital-fly-catalog/projects/shiu-drosophila-brain-model/</code></td><td>Project page: the Shiu et al. whole-brain model (tested and untested requirements, results, known issues, derived projects). New on 28 Sep 2026</td></tr>
           <tr><td><code>/p/digital-fly-catalog/projects/flyvis/</code></td><td>Project page: flyvis, the connectome-constrained fly vision model (quoted numbers, licences, the 50 pretrained models, missing shuffled-wiring control). New on 3 Oct 2026</td></tr>
-          <tr><td><code>/p/digital-fly-catalog/gallery/</code></td><td>Video gallery: 52 videos with grades from the catalogue (card anchors <code>#v-&lt;video_id&gt;</code>)</td></tr>
+          <tr><td><code>/p/digital-fly-catalog/gallery/</code></td><td>Video gallery: 53 videos with grades from the catalogue and language labels (card anchors <code>#v-&lt;video_id&gt;</code>)</td></tr>
           <tr><td><code>/p/digital-fly-catalog/ways-to-try/</code></td><td>No-install demos, notebooks and data browsers, with check dates; our headless-browser check of six demos at <code>#run-heading</code> (results table at <code>#run-table-heading</code>; 3 Oct 2026)</td></tr>
           <tr><td><code>/p/digital-fly-catalog/how-it-works/</code></td><td>Datasets compared, neuron-count reconciliation, neuron models, bodies</td></tr>
-          <tr><td><code>/p/digital-fly-catalog/is-it-real/</code></td><td>Evidence grade rules, verdicts on viral claims (row anchors <code>#v-&lt;id&gt;</code>), the Doom and wiring tests, "Who does the walking?" (<code>#walk-heading</code>), a summary of the controlled studies</td></tr>
-          <tr><td><code>/p/digital-fly-catalog/does-fly-wiring-help/</code></td><td>Does fly wiring help?: the controls ledger as a page, with the answer, charts, a checklist for fair controls and a table of all studies (row anchors <code>#s-&lt;study id&gt;</code>); our body test at <code>#body-heading</code>. New on 30 Sep 2026</td></tr>
-          <tr><td><code>/p/digital-fly-catalog/build-your-own/</code></td><td>Beginner guide with tested and untested steps; "Add a body" (brain to FlyGym, tested 2 Oct 2026) at <code>#body-heading</code></td></tr>
+          <tr><td><code>/p/digital-fly-catalog/is-it-real/</code></td><td>Evidence grade rules, verdicts on viral claims (row anchors <code>#v-&lt;id&gt;</code>), the Doom and wiring tests, "We ran the map" (our looming test, <code>#loom-heading</code>), "Who does the walking?" (<code>#walk-heading</code>), plain answers to four common questions (<code>#q-ai</code>, <code>#q-map</code>, <code>#q-suffer</code>, <code>#q-game</code>), a summary of the controlled studies</td></tr>
+          <tr><td><code>/p/digital-fly-catalog/does-fly-wiring-help/</code></td><td>Does fly wiring help?: the controls ledger as a page, with the answer, charts, a checklist for fair controls and a table of all studies (row anchors <code>#s-&lt;study id&gt;</code>); our body test at <code>#body-heading</code>, our looming test at <code>#loomfx-heading</code>. New on 30 Sep 2026</td></tr>
+          <tr><td><code>/p/digital-fly-catalog/build-your-own/</code></td><td>Beginner guide with tested and untested steps (re-tested 5 Oct 2026); "Add a body" (brain to FlyGym, tested 2 Oct 2026) at <code>#body-heading</code>; "Add a sense: looming" (tested 5 Oct 2026) at <code>#loom-heading</code></td></tr>
           <tr><td><code>/p/digital-fly-catalog/for-ai-agents/</code></td><td>This page</td></tr>
           <tr><td><code>/p/digital-fly-catalog/research/</code></td><td>Index of every research report</td></tr>
           <tr><td><code>/p/digital-fly-catalog/new-and-updated/</code></td><td>Dated changelog</td></tr>
           <tr><td><code>/p/digital-fly-catalog/reports/2026-09-27-bootstrap/</code></td><td>First research report: method, sources and limitations</td></tr>
+          <tr><td><code>/p/digital-fly-catalog/reports/2026-10-05-run8/</code></td><td>Eighth check (5 Oct 2026): our pre-registered looming test "We ran the map", the beginner re-test, the evidence pack for four common questions, 4 new entries, method and limits</td></tr>
+          <tr><td><code>/p/digital-fly-catalog/assets/we-ran-the-map-card.svg</code></td><td>The looming result as a standalone card (1200 × 675) with the sentence, the numbers, the caveat and the date. New on 5 Oct 2026</td></tr>
           <tr><td><code>/p/digital-fly-catalog/reports/2026-10-03-run7/</code></td><td>Seventh check (3 Oct 2026): "Does it actually run?" browser check of six demos, the flyvis dossier, verdict freshness, fly-cartpole re-read, 3 new entries, method and limits</td></tr>
           <tr><td><code>/p/digital-fly-catalog/reports/2026-10-02-run6/</code></td><td>Sixth check (2 Oct 2026): our body test "Who does the walking?", the gain check, the Terraria verdict, 4 new entries, method and limits</td></tr>
           <tr><td><code>/p/digital-fly-catalog/assets/who-does-the-walking.svg</code></td><td>The "Who does the walking?" chart as a standalone image with its title, numbers and source line. New on 2 Oct 2026</td></tr>
@@ -127,7 +131,7 @@
 
   <section aria-labelledby="fields-heading">
     <h2 id="fields-heading">Record fields</h2>
-    <p>Field names are stable; new fields may be added. The full definitions are in <a href="../assets/data/projects.schema.json">projects.schema.json</a>. <strong>Schema change on 28 Sep 2026:</strong> eight optional fields were added (listed below with that date); no field was removed or renamed, and enumerated values are unchanged, so older readers keep working. <strong>29 Sep 2026:</strong> no schema change. Every record now carries an allowed value in <code>platform</code>, <code>gpu</code> and <code>peer_review</code> from the source, with any extra wording in the <code>*_note</code> fields; the published values are the same as before. <strong>30 Sep 2026:</strong> two optional fields added, <code>controls</code> and <code>wiring_effect</code>, set on every record; nothing removed or renamed, so older readers keep working. <strong>1 and 2 Oct 2026:</strong> no change to projects.json's schema (the controls ledger gained two display-only arm fields on 2 Oct, see below). <strong>3 Oct 2026:</strong> one optional field added, <code>browser_check</code>, and one new <code>link_status.status</code> value, <code>gone</code>; nothing removed or renamed. A reader that rejects unknown enum values must accept "gone".</p>
+    <p>Field names are stable; new fields may be added. The full definitions are in <a href="../assets/data/projects.schema.json">projects.schema.json</a>. <strong>Schema change on 28 Sep 2026:</strong> eight optional fields were added (listed below with that date); no field was removed or renamed, and enumerated values are unchanged, so older readers keep working. <strong>29 Sep 2026:</strong> no schema change. Every record now carries an allowed value in <code>platform</code>, <code>gpu</code> and <code>peer_review</code> from the source, with any extra wording in the <code>*_note</code> fields; the published values are the same as before. <strong>30 Sep 2026:</strong> two optional fields added, <code>controls</code> and <code>wiring_effect</code>, set on every record; nothing removed or renamed, so older readers keep working. <strong>1 and 2 Oct 2026:</strong> no change to projects.json's schema (the controls ledger gained two display-only arm fields on 2 Oct, see below). <strong>3 Oct 2026:</strong> one optional field added, <code>browser_check</code>, and one new <code>link_status.status</code> value, <code>gone</code>; nothing removed or renamed. A reader that rejects unknown enum values must accept "gone". <strong>5 Oct 2026:</strong> no change to projects.json's schema; videos.json gained one optional field, <code>language</code> (see Video records).</p>
     <dl class="dfl-defs">
       <dt><code>id</code></dt><dd>Stable lowercase slug, never reused. Also the table anchor <code>#p-&lt;id&gt;</code>.</dd>
       <dt><code>name</code>, <code>author_or_org</code>, <code>summary</code></dt><dd>Project name, author or lab, and one or two sentences in our own words.</dd>
@@ -149,7 +153,7 @@
       <dt><code>link_status</code></dt><dd><code>{url, status, http_code, final_url, checked_at}</code>. Status is ok, redirect, 4xx, 5xx, blocked, error or gone. "blocked" means a bot check (common on journal sites); it is not "dead". An <code>http_code</code> of 429 means our fetcher was rate-limited (it happens on YouTube watch pages); since 2 Oct 2026 such links have status "blocked", not "4xx", and they are not broken. A 404 on a code repository means it was removed or made private. <strong>"gone"</strong> (new value, 3 Oct 2026) means the main link answered 404 on three checks in a row (FlyDoom: 1, 2 and 3 Oct 2026); we keep the record, its grade and its last catalogued commit, which describe the code as we last read it. Treat a "gone" record as history, not as something a user can download.</dd>
       <dt><code>api_fields_reused</code>, <code>api_fields_reused_from</code></dt><dd>Added 28 Sep 2026. Which GitHub API fields (stars, created_at, pushed_at) were copied from an earlier check instead of re-queried, and that check's date.</dd>
       <dt><code>archived_source</code>, <code>added_in_run</code>, <code>project_page</code></dt><dd>Added 28 Sep 2026. Where the archive status was read; the research run that first added the record (absent for first-release records); the route of our project page, when one exists.</dd>
-      <dt><code>controls</code></dt><dd>Added 30 Sep 2026. One of <code>wiring-null</code> (the project compares its fly wiring with shuffled, rewired or random wiring), <code>baseline-only</code> (only with a no-brain or no-graph baseline) or <code>none</code>. On 30 Sep 2026: 22, 8 and 64 records; on 1 Oct 2026: 23, 8 and 69.</dd>
+      <dt><code>controls</code></dt><dd>Added 30 Sep 2026. One of <code>wiring-null</code> (the project compares its fly wiring with shuffled, rewired or random wiring), <code>baseline-only</code> (only with a no-brain or no-graph baseline) or <code>none</code>. On 30 Sep 2026: 22, 8 and 64 records; on 1 Oct 2026: 23, 8 and 69; on 5 Oct 2026: 27, 8 and 76.</dd>
       <dt><code>wiring_effect</code></dt><dd>Added 30 Sep 2026. One of <code>helps</code>, <code>no-difference</code>, <code>worse</code>, <code>mixed</code> or <code>not-tested</code>, copied from the project's study in controls.json. Always <code>not-tested</code> when <code>controls</code> is not <code>wiring-null</code>, and also for a wiring null whose results are not in yet.</dd>
       <dt><code>browser_check</code></dt><dd>Added 3 Oct 2026, optional (6 records). The result of our pre-registered headless-browser check: <code>{status, checked_at, browser, transferred_mb, compute, first_activity_s, console_errors, page_errors, matches_catalogue, note, source}</code>. <code>status</code> is one of runs, runs-with-errors, loads-no-activity, needs-gpu, fails, blocked, stopped-memory, page-unresponsive, moves-no-compute-signal, not-checked or skipped-memory (this release uses runs, page-unresponsive and stopped-memory; we show them as "Ran", "Loaded, then froze in our no-GPU browser" and "Stopped at our 1.6 GB memory limit"). <code>compute</code> says where the brain ran: in-browser-worker, in-browser-wasm, in-browser-main-thread, server or unclear. <code>transferred_mb</code> counts the first 60–90 s. <code>matches_catalogue</code> is yes, no or unclear. The check used headless Chromium 154 on Linux without a GPU; it is <strong>not a play test</strong>, and Safari, Firefox, phones and GPU machines were not tested. A freeze or memory stop describes our machine, not the demo. Absent means not checked.</dd>
       <dt><code>sources</code>, <code>notes_limitations</code></dt><dd>Source URLs with reliability labels, and known limits in our words.</dd>
@@ -170,6 +174,7 @@
       <dt><code>verdict_anchor</code></dt><dd>The project's row on Is it real?, when we wrote a verdict.</dd>
       <dt><code>views</code>, <code>views_date</code></dt><dd>View count snapshot and its date. Popularity, not quality; it goes stale.</dd>
       <dt><code>link_status</code>, <code>last_checked</code></dt><dd>Our check of the link and the platform record.</dd>
+      <dt><code>language</code></dt><dd>Added 5 Oct 2026, optional (present on every record since then): the main spoken or written language of the video as an ISO 639-1 code (en, fr, es, ru …), judged from the title, channel and description, not from watching. On 5 Oct 2026: 51 en, 2 ru. The gallery labels non-English videos ("In Russian").</dd>
     </dl>
   </section>
 
@@ -177,7 +182,7 @@
     <h2 id="controls-data-heading">Controls ledger</h2>
     <p><code>controls.json</code> (new on 30 Sep 2026) has the top-level keys <code>schema_version</code>, <code>dataset</code>, <code>version</code>, <code>generated_at</code>, <code>run_id</code>, <code>as_of</code>, <code>answer</code> (the one-line and short answer, and counts by task family), <code>null_types</code> (16 kinds of null or control, each with <code>keeps</code>, <code>destroys</code>, <code>pitfall</code> and <code>is_wiring_null</code>), <code>studies</code> and <code>chart_rows</code>. The full definitions are in <a href="../assets/data/controls.schema.json">controls.schema.json</a>; the page is <a href="../does-fly-wiring-help/index.html">Does fly wiring help?</a></p>
     <dl class="dfl-defs">
-      <dt><code>id</code></dt><dd>The catalogue <code>id</code> of the project, so you can join the two files. Two studies are ours and have no catalogue record (<code>made_by_us</code> true): <code>byo-shiu-shuffle</code>, our pre-registered fair test on the Build your own model, whose <code>arms</code> list each null type with every per-shuffle value in the source text; and <code>byo-flygym-body</code>, our body test (2 Oct 2026), whose arms are a degree-preserving null and two no-brain drives.</dd>
+      <dt><code>id</code></dt><dd>The catalogue <code>id</code> of the project, so you can join the two files. Three studies are ours and have no catalogue record (<code>made_by_us</code> true): <code>byo-shiu-shuffle</code>, our pre-registered fair test on the Build your own model, whose <code>arms</code> list each null type with every per-shuffle value in the source text; and <code>byo-flygym-body</code>, our body test (2 Oct 2026), whose arms are a degree-preserving null and two no-brain drives; and <code>byo-flygym-loom</code>, our looming test (5 Oct 2026), whose arms are a degree-preserving null (3 runs, identical drives) and brainless random steering.</dd>
       <dt><code>task_family</code>, <code>loop</code></dt><dd>One of reflex-circuit, sensory-model, body-steering, game-play, ml-benchmark, reservoir, language-model, forecasting, graph-analysis, evolution; and closed-loop, open-loop or offline.</dd>
       <dt><code>metric</code>, <code>real</code>, <code>floor</code>, <code>arms</code></dt><dd>What was measured, the real wiring's value, the no-network floor where one exists, and every comparison arm with its <code>null_type</code>, value, sample count, spread, source file and <code>recomputed_by_us</code>. Since 2 Oct 2026 each arm also has <code>activity_ratio</code> (whole-brain spikes or active units, null ÷ real; null when not reported) and <code>activity_class</code> (reduced below 0.5, comparable 0.5–2, elevated 2–10, runaway above 10, or not-reported). <strong>Display only:</strong> they are set after all rules have run and never change a score.</dd>
       <dt><code>effect</code></dt><dd><code>retention</code> (0 = the headline null does no better than no network, 1 = as well as the real wiring), <code>retention_method</code> (floor, ratio or none), <code>baseline_retention</code> (the no-brain baseline as a share of the fly network's result), difference, interval, p-value and a note.</dd>
@@ -250,7 +255,7 @@ last verified 2026-09-30, https://shaduf.ai/p/digital-fly-catalog/projects/#p-do
   "grade_date": "2026-09-28",
   "measured_result": "Paper (PMC11446845): 91% of 164 testable predictions matched experiments (84% excluding the split-GAL4 optogenetic activation screen); split-GAL4 screen &gt;90% accuracy; shuffled-weight control activated MN9 in 1/100 runs vs 100% for the real connectom...",
   "try_url": "https://colab.research.google.com/github/philshiu/Drosophila_brain_model/blob/main/example.ipynb",
-  "try_status": "page responds (HTTP 200, checked 2026-10-03), not played by us",
+  "try_status": "page responds (HTTP 200, checked 2026-10-05), not played by us",
   "code_url": "https://github.com/philshiu/Drosophila_brain_model",
   "code_licence": "MIT",
   "data_licence": "CC-BY-NC-4.0",
@@ -270,7 +275,7 @@ last verified 2026-09-30, https://shaduf.ai/p/digital-fly-catalog/projects/#p-do
   "stars": 349,
   "stars_date": "2026-09-27",
   "api_fields_reused_from": "2026-09-27",
-  "last_verified": "2026-10-03",
+  "last_verified": "2026-10-05",
   "project_page": "/p/digital-fly-catalog/projects/shiu-drosophila-brain-model/",
   "controls": "wiring-null",
   "wiring_effect": "helps",
@@ -278,7 +283,7 @@ last verified 2026-09-30, https://shaduf.ai/p/digital-fly-catalog/projects/#p-do
     "url": "https://colab.research.google.com/github/philshiu/Drosophila_brain_model/blob/main/example.ipynb",
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:35.262Z"
+    "checked_at": "2026-10-05T09:41:40.044Z"
   }
 }</code></pre>
     <h3>Grade B: connectome runs, hand-made input and output, no wiring control: <code>doomfly</code></h3>
@@ -321,7 +326,7 @@ last verified 2026-09-30, https://shaduf.ai/p/digital-fly-catalog/projects/#p-do
   "stars": 404,
   "stars_date": "2026-09-27",
   "api_fields_reused_from": "2026-09-27",
-  "last_verified": "2026-10-03",
+  "last_verified": "2026-10-05",
   "project_page": "/p/digital-fly-catalog/projects/doomfly/",
   "controls": "baseline-only",
   "wiring_effect": "not-tested",
@@ -329,7 +334,7 @@ last verified 2026-09-30, https://shaduf.ai/p/digital-fly-catalog/projects/#p-do
     "url": "https://github.com/nftechie/DOOMFLY",
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:43.998Z"
+    "checked_at": "2026-10-05T09:41:45.230Z"
   }
 }</code></pre>
     <h3>Infrastructure (n/a): a fly body: <code>flygym</code></h3>
@@ -354,7 +359,7 @@ last verified 2026-09-30, https://shaduf.ai/p/digital-fly-catalog/projects/#p-do
   "grade_date": "2026-09-28",
   "measured_result": null,
   "try_url": "https://neuromechfly.org/wasm/viewer/viewer.html",
-  "try_status": "page responds (HTTP 200, checked 2026-10-03), not played by us",
+  "try_status": "page responds (HTTP 200, checked 2026-10-05), not played by us",
   "code_url": "https://github.com/NeLy-EPFL/flygym",
   "code_licence": "Apache-2.0",
   "data_licence": "n/a",
@@ -378,14 +383,14 @@ last verified 2026-09-30, https://shaduf.ai/p/digital-fly-catalog/projects/#p-do
   "stars": 386,
   "stars_date": "2026-09-27",
   "api_fields_reused_from": "2026-09-27",
-  "last_verified": "2026-10-03",
+  "last_verified": "2026-10-05",
   "controls": "none",
   "wiring_effect": "not-tested",
   "link_status": {
     "url": "https://neuromechfly.org/wasm/viewer/viewer.html",
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:36.388Z"
+    "checked_at": "2026-10-05T09:41:40.124Z"
   }
 }</code></pre>
   </section>
@@ -419,7 +424,7 @@ last verified 2026-09-30, https://shaduf.ai/p/digital-fly-catalog/projects/#p-do
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>3 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>5 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Verify project links and implementations, explain the model and keep the catalogue and build guide current.</p><a href="../index.html">Full pool information →</a></section>
     </div>

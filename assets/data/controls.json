@@ -1,16 +1,16 @@
 {
  "schema_version": "1.0.0",
  "dataset": "Digital Fly Lab controls ledger",
- "version": "2026-10-03-run7",
- "generated_at": "2026-10-03T10:07:51Z",
- "run_id": "run:5bfca8cc-f3cb-4020-83e6-5c1225da9200",
- "as_of": "2026-10-03",
+ "version": "2026-10-05-run8",
+ "generated_at": "2026-10-05T10:21:44Z",
+ "run_id": "run:3fed5f73-77cc-4b37-853f-e1e8258b4f9f",
+ "as_of": "2026-10-05",
  "answer": {
-  "one_line": "Sometimes: fly wiring beat scrambled wiring in 11 of 26 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (8).",
-  "short": "Of 34 control studies in our catalogue, 26 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 11, makes no difference in 6, does worse in 2, gives mixed results in 6 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire; one published study's connectome loses to standard shuffles but ties boundary-preserving ones. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). One project changed sides on 3 Oct 2026: fly-cartpole's redesigned flight circuit loses most of its balance with shuffled wiring (166 vs 500 steps), yet its own linear map balances as well. Most studies are small, single-author and not replicated.",
+  "one_line": "Sometimes: fly wiring beat scrambled wiring in 13 of 30 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (10).",
+  "short": "Of 38 control studies in our catalogue, 30 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 13, makes no difference in 8, does worse in 2, gives mixed results in 6 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5 Oct 2026), a shadow on one eye turned the fly away in 4 of 4 runs with the real map and 0 of 3 with scrambled maps, which silence the steering neurons; the scrambled brains were also much quieter, and no activity-matched shuffle was run. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
   "counts": {
-   "studies": 34,
-   "with_wiring_null": 26,
+   "studies": 38,
+   "with_wiring_null": 30,
    "by_family": {
     "reflex-circuit": {
      "helps": 3,
@@ -27,15 +27,15 @@
      "not_tested": 1
     },
     "body-steering": {
-     "helps": 2,
-     "no_difference": 1,
+     "helps": 4,
+     "no_difference": 2,
      "worse": 0,
      "mixed": 1,
      "not_tested": 2
     },
     "game-play": {
      "helps": 2,
-     "no_difference": 3,
+     "no_difference": 4,
      "worse": 0,
      "mixed": 2,
      "not_tested": 4
@@ -1155,6 +1155,247 @@
    ]
   },
   {
+   "id": "byo-flygym-loom",
+   "name": "Build your own, Add a sense: a looming shadow turns the FlyGym fly (our run)",
+   "evidence_grade": "A",
+   "made_by_us": true,
+   "task_family": "body-steering",
+   "loop": "open-loop",
+   "wiring": {
+    "dataset": "FlyWire FAFB",
+    "release": "v783 (Shiu et al. Completeness_783.csv, Connectivity_783.parquet)",
+    "scope": "whole brain, 138,639 neurons"
+   },
+   "trained_parts": "none (hand-made rate-to-drive mapping)",
+   "metric": {
+    "name": "heading change away from the looming side, deg, 1.0 s after onset (FlyGym 2.1.0, constant external forward drive 0.8; LC4+LPLC2 of one eye at 80 Hz)",
+    "unit": "deg",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 51.6463,
+    "n": 4,
+    "spread": "± 14.81 sd",
+    "source": "Digital Fly Lab looming test of 2026-10-05 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/), summary.json body.mean_away_deg.real; body/{L,R}-real-*.json"
+   },
+   "floor": {
+    "label": "constant external drive (0.8, 0.8), no brain; signed per looming side and pooled",
+    "value": 0,
+    "source": "Digital Fly Lab looming test of 2026-10-05, body run file F.json"
+   },
+   "arms": [
+    {
+     "arm_id": "D-degree-preserving",
+     "null_type": "degree-preserving",
+     "label": "degree-preserving shuffles (run 5 nulls.py), same stimulus, mapping and body",
+     "value": 0.4957,
+     "n": 3,
+     "samples": 2,
+     "spread": "± 1.40 sd",
+     "readout_refit": false,
+     "source": "Digital Fly Lab looming test of 2026-10-05 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/), summary.json; body/{L,R}-D*.json (deduplicated drives: L-D3=F, L-D4=F, R-D3=F)",
+     "recomputed_by_us": true,
+     "activity_ratio": 0.4972,
+     "activity_class": "reduced"
+    },
+    {
+     "arm_id": "random-steering",
+     "null_type": "no-brain-baseline",
+     "label": "no brain: random turning term per 100 ms bin, N(0, s) with s = RMS of the real turning terms; no MDN term",
+     "value": 6.23,
+     "n": 6,
+     "samples": 6,
+     "spread": "± 12.10 sd",
+     "readout_refit": null,
+     "source": "Digital Fly Lab looming test of 2026-10-05, body run file rand-*.json",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "stat_note": "Pre-registered 2026-10-05T09:42:47Z (design published in https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/#prereg-heading; deviations 3-5 logged before any body run: the brain trials took about 160 s, so the pre-registered time limits left real seeds 0-1 and shuffles [3, 4] per side). Reading by the pre-registered rule: 'the turn away needs the wiring'. Real runs turned away in 4 of 4 (threshold 10 deg over the floor), shuffles in 0 of 3, random in 3 of 6. Floor-referenced retention D 0.0, random 0.1206. Clip share 0.0. Brain gate (fly67's rule) reproduced in our Brian2 run. The rate-to-drive mapping is ours (hand-made, not fitted); the 0.8 forward drive is external.",
+    "ci": null,
+    "p": null,
+    "headline_arm": "D-degree-preserving",
+    "best_null_arm": "D-degree-preserving",
+    "baseline_arm": "random-steering",
+    "retention": 0.0096,
+    "retention_method": "floor",
+    "baseline_retention": 0.1206,
+    "difference": 51.1506
+   },
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": false,
+    "tuned_equally": false,
+    "null_samples": 2,
+    "has_no_brain_baseline": true,
+    "reason": "Same stimulus, the same fixed mapping and the same FlyGym controller for every arm; nothing was tuned for any arm, but no gain-matched arm was reached (the G search was cut by the clock), and the scrambled brains are much quieter outside the stimulated neurons. The shuffle does not keep the sensory/motor boundary.",
+    "verdict": "unfair"
+   },
+   "quality": {
+    "n_per_arm": 3,
+    "held_out": null,
+    "uncertainty_reported": true,
+    "results_in_repo_files": true,
+    "independent_test": true,
+    "peer_review": "none",
+    "recomputed_by_us": true,
+    "reason": "Our own pre-registered measurement with per-run files; one stimulus, one model, one body; 4 real runs and 3 scrambled runs (identical drives deduplicated); 1 s after onset.",
+    "grade": "weak"
+   },
+   "extraction": "files",
+   "one_line": "Our test: a looming shadow turned the FlyGym fly away in 4 of 4 real-brain runs (52 deg), 0 of 3 scrambled; our mapping.",
+   "commit": "philshiu/Drosophila_brain_model@91bdd1e7; flygym==2.1.0",
+   "checked_at": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://github.com/philshiu/Drosophila_brain_model",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/znatgost/fly67",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/NeLy-EPFL/flygym",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "helps",
+   "baseline_beaten": "yes"
+  },
+  {
+   "id": "flight-test-the-fly",
+   "name": "Flight-test the fly",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "body-steering",
+   "loop": "closed-loop",
+   "wiring": {
+    "dataset": "FlyWire FAFB",
+    "release": "v783 (Shiu et al. 2024 packaging), edges >= 5 synapses",
+    "scope": "T4/T5-to-DNa02/DNg02 subcircuit within 4 hops: 20,556 neurons, 251,358 simulated edges"
+   },
+   "trained_parts": "none; one scalar rudder gain K per wiring chosen on tuning seeds 0-9 by the same margin-constrained grid rule as the classical yaw damper (Shiu LIF parameters unchanged)",
+   "metric": {
+    "name": "mean RMS yaw rate on 20 held-out turbulence seeds (100-119), JSBSim c172x 6-DOF, moderate MIL-spec turbulence, 60 s flights",
+    "unit": "deg/s",
+    "higher_is_better": false
+   },
+   "real": {
+    "value": 3.195,
+    "n": 20,
+    "spread": null,
+    "source": "d3fa996 results/phase2b_metrics.json: controllers.fly_real.mean_rms_r = 0.05576 rad/s (README table: 3.19 deg/s)"
+   },
+   "floor": {
+    "label": "bare airframe, no yaw controller (wings-level roll hold only)",
+    "value": 3.923,
+    "source": "d3fa996 results/phase2b_metrics.json: controllers.bare.mean_rms_r = 0.06848 rad/s (README table: 3.92 deg/s)"
+   },
+   "arms": [
+    {
+     "arm_id": "shuffle-median",
+     "null_type": "degree-preserving",
+     "label": "median of 10 degree- and sign-preserving shuffles (Maslov-Sneppen swaps of post endpoints; in/out degree, edge weights and each neuron's sign kept), each with its own K from the same tuning rule",
+     "value": 3.922,
+     "n": 20,
+     "samples": 10,
+     "spread": null,
+     "readout_refit": true,
+     "source": "d3fa996 results/phase2b_metrics.json: H3_H2b.mean_rms_by_wiring, median of fly_shuffle_00..09 (computed by us from the committed per-wiring means)",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "shuffle-best",
+     "null_type": "degree-preserving",
+     "label": "best of the 10 shuffles (fly_shuffle_08; K = 0.268, rudder saturated in 99.97% of steps, a relay controller)",
+     "value": 3.309,
+     "n": 20,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": true,
+     "source": "d3fa996 results/phase2b_metrics.json: controllers.fly_shuffle_08.mean_rms_r = 0.05775 rad/s (README table: best scrambled wiring 3.31 deg/s)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "yaw-damper",
+     "null_type": "no-brain-baseline",
+     "label": "classical washout yaw damper on measured yaw rate (K = 7.2 per rad/s, same tuning rule and budget)",
+     "value": 1.689,
+     "n": 20,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": null,
+     "source": "d3fa996 results/phase2b_metrics.json: controllers.yaw_damper.mean_rms_r (README table: 1.69 deg/s)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "headline_arm": "shuffle-median",
+    "best_null_arm": "shuffle-best",
+    "retention": 0.0014,
+    "retention_method": "floor",
+    "baseline_arm": "yaw-damper",
+    "baseline_retention": 3.0687,
+    "difference": -0.727,
+    "ci": [
+     -0.8,
+     -0.64
+    ],
+    "p": 0.0909,
+    "stat_note": "CI: 95% percentile bootstrap CI of real minus per-seed median shuffle, -0.72 deg/s [-0.80, -0.64] over 20 test seeds (phase2b_metrics.json H3_H2b, -0.01255 rad/s [-0.01397, -0.01113]; README H2b/H3 row). p = 1/11 is the rank p (real lowest of 11 wirings), the floor with 10 shuffles. Shuffles 01, 02 and 08 selected the top gain and act as saturated relays (RMS sideslip 7.1-7.4 deg vs 1.77 real). 2-state Dutch-roll plant: real 2.65, best shuffle 2.91, bare 3.09, damper 1.50 deg/s (README). Open loop, 1 Hz coherence: real 0.98 vs 19 degree-preserving shuffles median 0.31 and vs 19 type-preserving (boundary-preserving) shuffles max 0.97, rank 1/20, p = 0.05 (results/phase1_summary.md; different metric, not entered as an arm)."
+   },
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": null,
+    "tuned_equally": true,
+    "null_samples": 10,
+    "has_no_brain_baseline": true,
+    "verdict": "fair",
+    "reason": "Degree-, weight- and sign-preserving shuffles on the simulated edges, each tuned with the same gain grid and margin rule as the real wiring and the damper; 10 closed-loop shuffles, held-out test seeds. Whether the shuffle keeps the T4/T5 input and DNa02 readout boundary was not checked (the type-preserving variant that does was run open loop only)."
+   },
+   "quality": {
+    "n_per_arm": 20,
+    "held_out": true,
+    "uncertainty_reported": true,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "recomputed_by_us": true,
+    "grade": "strong",
+    "reason": "Pre-registered, 20 held-out seeds per arm, 10 shuffles, bootstrap CIs in a committed metrics file; one author, not peer reviewed."
+   },
+   "extraction": "files",
+   "one_line": "Fly yaw-damper circuit: RMS yaw rate 3.19 deg/s vs 3.92 median of 10 degree-preserving shuffles (best 3.31); classical damper 1.69, bare airframe 3.92.",
+   "commit": "d3fa996e943e8fc6949c60c79e77444ce533cb08",
+   "checked_at": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://github.com/aryawidjaja/flight-test-the-fly/blob/d3fa996e943e8fc6949c60c79e77444ce533cb08/results/phase2b_metrics.json",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/aryawidjaja/flight-test-the-fly/blob/d3fa996e943e8fc6949c60c79e77444ce533cb08/README.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/aryawidjaja/flight-test-the-fly/blob/d3fa996e943e8fc6949c60c79e77444ce533cb08/results/phase1_summary.md",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "helps",
+   "baseline_beaten": "no"
+  },
+  {
    "id": "fly-brain-zero-shot",
    "name": "Are fruit flies zero-shot adapters?",
    "evidence_grade": "A",
@@ -1552,6 +1793,114 @@
      "label": "direct"
     }
    ]
+  },
+  {
+   "id": "flyarm",
+   "name": "FlyArm",
+   "evidence_grade": "B",
+   "made_by_us": false,
+   "task_family": "body-steering",
+   "loop": "closed-loop",
+   "wiring": {
+    "dataset": "MaleCNS",
+    "release": "v1.0, edges >= 3 contacts",
+    "scope": "whole CNS rate network: 166,700 neurons, 10,520,377 edges; input 1,846 ascending neurons, readout 1,314 descending + 708 motor neurons"
+   },
+   "trained_parts": "encoder into ascending neurons and linear decoder (behaviour cloning with DAgger); connectome frozen; identical pipeline for connectome, shuffle and GRU",
+   "metric": {
+    "name": "pick-and-place lift success, first protocol, 6 training seeds x 24 episodes",
+    "unit": "% of episodes",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 72.2,
+    "n": 144,
+    "spread": null,
+    "source": "ab3922e docs/results/pick-place-first-protocol-topology.json: outcomes.lift.connectome_rate = 0.7222 (104/144)"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "shuffle",
+     "null_type": "degree-preserving",
+     "label": "degree-preserving shuffle (in/out degree, contact multiset, sign and input/output sets kept), 9 shuffles over 6 seeds, same pipeline",
+     "value": 55.9,
+     "n": 144,
+     "samples": 9,
+     "spread": null,
+     "readout_refit": true,
+     "source": "ab3922e docs/results/pick-place-first-protocol-topology.json: outcomes.lift.shuffled_rate = 0.5590 (shuffles averaged within seed); src/flyarm/whole_brain/shuffle.py",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "gru",
+     "null_type": "no-graph-model",
+     "label": "GRU controller, same encoder/decoder pipeline",
+     "value": 56.9,
+     "n": 144,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": true,
+     "source": "ab3922e docs/results/pick-place-first-protocol-topology.json: outcomes.lift.per_seed[*].gru, pooled by us (82/144)",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "headline_arm": "shuffle",
+    "best_null_arm": "shuffle",
+    "retention": 0.7742,
+    "retention_method": "ratio",
+    "baseline_arm": "gru",
+    "baseline_retention": 0.7881,
+    "difference": 16.3,
+    "ci": null,
+    "p": 0.125,
+    "stat_note": "p = seed-level exact sign-flip p over 6 seeds (4 better, 2 worse); episode-level p 0.061 (same file). Other outcomes in the same file: grasp 86.1% vs 88.9% shuffle (p 0.72), place 24.3% vs 19.1% (p 0.14). The earlier 3-seed result (58/72 vs 27/72, RESEARCH_LOG E3) did not replicate in seeds 3-5. Other tracks (RESEARCH_LOG at ab3922e, not entered as arms because metrics differ): kitchen fly above shuffle 25 vs 0, 21.25 vs 15, 25 vs 0 (p 0.125); dexterous hand seed 0 tie 62 vs 63 of 64. Shuffle runs for the headline PPO manipulation protocol (76.3%) were stopped unfinished (STATUS.md), so no shuffle arm exists for it."
+   },
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": true,
+    "tuned_equally": true,
+    "null_samples": 9,
+    "has_no_brain_baseline": false,
+    "verdict": "fair",
+    "reason": "Degree-preserving shuffle keeps in/out degree, contacts, signs and interface sets and goes through the identical training pipeline; 9 shuffles over 6 seeds; trained encoder and decoder can absorb much of the skill."
+   },
+   "quality": {
+    "n_per_arm": 144,
+    "held_out": null,
+    "uncertainty_reported": true,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "recomputed_by_us": true,
+    "grade": "strong",
+    "reason": "6 seeds x 24 episodes per arm, 9 shuffles, seed- and episode-level p in a committed results file; author says the wiring advantage is not established."
+   },
+   "extraction": "files",
+   "one_line": "Frozen MaleCNS arm controller: pick-and-place lift 72% vs 56% for degree-preserving shuffles over 6 seeds (p 0.125); grasp tied, kitchen ahead, dexterous tie.",
+   "commit": "ab3922e7d3dacb8057f95d29bee7f0394a96b7a7",
+   "checked_at": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://github.com/yusenthebot/FlyArm/blob/ab3922e7d3dacb8057f95d29bee7f0394a96b7a7/docs/results/pick-place-first-protocol-topology.json",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/yusenthebot/FlyArm/blob/ab3922e7d3dacb8057f95d29bee7f0394a96b7a7/docs/RESEARCH_LOG.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/yusenthebot/FlyArm/blob/ab3922e7d3dacb8057f95d29bee7f0394a96b7a7/STATUS.md",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "no-difference",
+   "baseline_beaten": "no"
   },
   {
    "id": "flyhard",
@@ -2867,6 +3216,135 @@
      "label": "direct"
     }
    ]
+  },
+  {
+   "id": "flyaim",
+   "name": "FlyAim",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "game-play",
+   "loop": "closed-loop",
+   "wiring": {
+    "dataset": "MaleCNS",
+    "release": "v1.0",
+    "scope": "whole CNS: 166,700 neurons, 25,582,938 edges (124,177,616 synapses); input 6,098 ol_sensory photoreceptors, readout 1,360 descending neurons"
+   },
+   "trained_parts": "ridge-regression readout from the 1,360 descending neurons to crosshair velocity (lambda 10, 2 training seeds x 500 frames); connectome weights frozen (assert_connectome_frozen)",
+   "metric": {
+    "name": "mean crosshair-to-target distance in a 640x480 aiming arena (10 seeds x 900 frames)",
+    "unit": "px",
+    "higher_is_better": false
+   },
+   "real": {
+    "value": 412.51,
+    "n": 10,
+    "spread": "± 133.64 sd",
+    "source": "15d800f flyaim/runs/20261003-195410-phase3/raw_results.json: results.fly[*].summary.mean_target_dist_px, mean and sd over seeds 0-9 (recomputed; REPORT.md table 412.5)"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "shuffle",
+     "null_type": "degree-preserving",
+     "label": "shuffled wiring: CSR column indices permuted, per-row nnz and weight multiset kept (one shuffle)",
+     "value": 430.88,
+     "n": 10,
+     "samples": 1,
+     "spread": "± 136.67 sd",
+     "readout_refit": null,
+     "source": "15d800f flyaim/runs/20261003-195410-phase3/raw_results.json: results.shuffle (recomputed; REPORT.md 430.9); flyaim/baselines/shuffle.py",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "random",
+     "null_type": "no-brain-baseline",
+     "label": "uniform random walker",
+     "value": 251.69,
+     "n": 10,
+     "samples": 1,
+     "spread": "± 73.29 sd",
+     "readout_refit": null,
+     "source": "15d800f flyaim/runs/20261003-195410-phase3/raw_results.json: results.random (recomputed; REPORT.md 251.7)",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "pid",
+     "null_type": "no-brain-baseline",
+     "label": "PID controller that reads the target position (upper reference)",
+     "value": 155.83,
+     "n": 10,
+     "samples": 1,
+     "spread": "± 12.82 sd",
+     "readout_refit": null,
+     "source": "15d800f flyaim/runs/20261003-195410-phase3/raw_results.json: results.pid (recomputed; REPORT.md 155.8)",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "headline_arm": "shuffle",
+    "best_null_arm": "shuffle",
+    "retention": null,
+    "retention_method": "none",
+    "baseline_arm": "pid",
+    "baseline_retention": null,
+    "difference": -18.37,
+    "ci": [
+     -109.8,
+     73
+    ],
+    "p": 0.66,
+    "stat_note": "Paired fly minus shuffle over seeds 0-9: mean -18.4 px, 95% t CI computed by us from per-seed values; p = 0.66 is the author's paired test on distance (README table; dz -0.14). The REPORT's pre-registered rule used hit rate (0 for both network arms, p = 1.0). Fly vs random +160.8 px (p 0.0069) and shuffle vs random +179.2 px (p 0.0080): both network arms are worse than random. Plasticity arm (flyaim/runs/plastic/verdict.json, per catalogue grade basis, not re-read): real plastic 432.9 vs shuffle plastic 432.2 px, p 0.68; not entered as an arm because its real value differs. Readout refit for the shuffle arm not confirmed in code; this run's config uses dt 1 ms x 33 steps per frame."
+   },
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": true,
+    "tuned_equally": null,
+    "null_samples": 1,
+    "has_no_brain_baseline": true,
+    "verdict": "partly-fair",
+    "reason": "Shuffle keeps each row's nnz (one side of the degree) and the weight multiset, and the photoreceptor input and DN readout sets; one shuffle; whether the readout was refit on the shuffled network was not confirmed."
+   },
+   "quality": {
+    "n_per_arm": 10,
+    "held_out": true,
+    "uncertainty_reported": true,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "recomputed_by_us": true,
+    "grade": "moderate",
+    "reason": "Pre-registered, 10 seeds per arm in a committed raw_results.json, recomputed; one shuffle; readout trained on separate seeds 9000+."
+   },
+   "extraction": "files",
+   "one_line": "Whole MaleCNS LIF aiming a crosshair: 412.5 px mean target distance vs 430.9 shuffled (p 0.66); both worse than a random walker (251.7).",
+   "commit": "15d800f40c1cf8a69a5fb3d1aed18ddc2120c081",
+   "checked_at": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://github.com/0Sakura721/flyaim/blob/15d800f40c1cf8a69a5fb3d1aed18ddc2120c081/flyaim/runs/20261003-195410-phase3/raw_results.json",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/0Sakura721/flyaim/blob/15d800f40c1cf8a69a5fb3d1aed18ddc2120c081/flyaim/runs/20261003-195410-phase3/REPORT.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/0Sakura721/flyaim/blob/15d800f40c1cf8a69a5fb3d1aed18ddc2120c081/README.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/0Sakura721/flyaim/blob/15d800f40c1cf8a69a5fb3d1aed18ddc2120c081/flyaim/baselines/shuffle.py",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "no-difference",
+   "baseline_beaten": "no"
   },
   {
    "id": "haltere",
@@ -4463,6 +4941,30 @@
    "fairness": "fair"
   },
   {
+   "study_id": "byo-flygym-loom",
+   "label": "Build your own, Add a sense: a looming shadow turns the FlyGym fly (our run)",
+   "task_family": "body-steering",
+   "headline_null_type": "degree-preserving",
+   "retention": 0.0096,
+   "retention_method": "floor",
+   "baseline_retention": 0.1206,
+   "wiring_effect": "helps",
+   "quality": "weak",
+   "fairness": "unfair"
+  },
+  {
+   "study_id": "flight-test-the-fly",
+   "label": "Flight-test the fly",
+   "task_family": "body-steering",
+   "headline_null_type": "degree-preserving",
+   "retention": 0.0014,
+   "retention_method": "floor",
+   "baseline_retention": 3.0687,
+   "wiring_effect": "helps",
+   "quality": "strong",
+   "fairness": "fair"
+  },
+  {
    "study_id": "fly-brain-zero-shot",
    "label": "Are fruit flies zero-shot adapters?",
    "task_family": "body-steering",
@@ -4497,6 +4999,18 @@
    "wiring_effect": "mixed",
    "quality": "weak",
    "fairness": "partly-fair"
+  },
+  {
+   "study_id": "flyarm",
+   "label": "FlyArm",
+   "task_family": "body-steering",
+   "headline_null_type": "degree-preserving",
+   "retention": 0.7742,
+   "retention_method": "ratio",
+   "baseline_retention": 0.7881,
+   "wiring_effect": "no-difference",
+   "quality": "strong",
+   "fairness": "fair"
   },
   {
    "study_id": "brain-runners",
@@ -4593,6 +5107,18 @@
    "wiring_effect": "not-tested",
    "quality": "weak",
    "fairness": "unclear"
+  },
+  {
+   "study_id": "flyaim",
+   "label": "FlyAim",
+   "task_family": "game-play",
+   "headline_null_type": "degree-preserving",
+   "retention": null,
+   "retention_method": "none",
+   "baseline_retention": null,
+   "wiring_effect": "no-difference",
+   "quality": "moderate",
+   "fairness": "partly-fair"
   },
   {
    "study_id": "haltere",

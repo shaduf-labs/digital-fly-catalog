@@ -1640,6 +1640,146 @@
       "accessed_at": "2026-10-03T09:43:00Z",
       "relation": "unresolved",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "loom-test-run8",
+      "source_type": "dataset",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/#loom-heading",
+      "title": "Digital Fly Lab looming test of 5 Oct 2026 (our own measurement)",
+      "claim": "Pre-registered at 09:42:47 UTC before the first trial. Every LC4 and LPLC2 neuron of one eye at 80 Hz in the Shiu et al. FlyWire v783 model; DNa02 and MDN rates turned into a FlyGym 2.1.0 drive by our hand-made mapping on a constant 0.8 walking drive. Real wiring turned away in 4 of 4 runs (33.6, 40.6, 64.1, 68.3 degrees), degree-preserving shuffles in 0 of 3 (drives identical to the no-brain floor), random brainless steering in 3 of 6. Reading: the turn away needs the wiring. Small n; scrambled brains activity ratio 0.50; no gain-matched arm.",
+      "accessed_at": "2026-10-05T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "fly67-circuits-run8",
+      "source_type": "code",
+      "source_url": "https://github.com/znatgost/fly67/blob/45f62fd9b867632141f84cc6daa77d871a2259bb/validation/circuits.json",
+      "title": "fly67 validation/circuits.json (the author's own engine)",
+      "claim": "Left loom: giant fibre 114.8 Hz, DNa02 right 25 Hz, left 0; right loom: giant fibre 120.3 Hz, DNa02 left 43 Hz, right 0. Our Brian2 run of the Shiu model reproduced the author's pass rule on both sides (111.5-120.5 Hz; 23-44 Hz vs 0).",
+      "accessed_at": "2026-10-05T09:43:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "loom-basis-vonreyn-run8",
+      "source_type": "paper",
+      "source_url": "https://doi.org/10.1016/j.neuron.2017.05.036",
+      "title": "von Reyn et al. 2017, Neuron",
+      "claim": "LC4 conveys looming (angular expansion velocity) to the giant fibre escape circuit (abstract).",
+      "accessed_at": "2026-10-05T09:44:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "loom-basis-ache-run8",
+      "source_type": "paper",
+      "source_url": "https://doi.org/10.1016/j.cub.2019.01.079",
+      "title": "Ache et al. 2019, Current Biology",
+      "claim": "LPLC2 and LC4 synapse directly onto the giant fibre; LPLC2 provides the size component (abstract).",
+      "accessed_at": "2026-10-05T09:44:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "loom-basis-sen-run8",
+      "source_type": "paper",
+      "source_url": "https://doi.org/10.1016/j.cub.2017.02.008",
+      "title": "Sen et al. 2017, Current Biology",
+      "claim": "The closest source found: insects tend to steer away from imminent threats, and looming-responsive LC16 neurons elicit backward walking and turning through MDN. A direct statement that walking flies turn away from a lateral loom through DNa02 was not found, so the direction in our test is fly67's claim, not verified by us.",
+      "accessed_at": "2026-10-05T09:45:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "nociception-plos-run8",
+      "source_type": "paper",
+      "source_url": "https://doi.org/10.1371/journal.pone.0030090",
+      "title": "PLoS ONE 2012: Drosophila TRPA channel Painless and nociceptors",
+      "claim": "\"The Drosophila TRPA channel Painless is required for the function of polymodal nociceptors which detect noxious heat and noxious mechanical stimuli.\" Detecting harm is shown in fly larvae; felt pain is not shown either way.",
+      "accessed_at": "2026-10-05T09:55:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flybrain-app-caretaker-run8",
+      "source_type": "web",
+      "source_url": "https://flybrain.app/",
+      "title": "flybrain.app page and caretaker script (read 5 Oct 2026)",
+      "claim": "The page says 'Claude plays two roles' (caretaker and 'HR Partner'), and its approvals drop food or dim the lights: a language model acts on the fly's environment, not inside the brain model; the server code is not public.",
+      "accessed_at": "2026-10-05T09:49:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "byo-retest-run8",
+      "source_type": "dataset",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/build-your-own/#retest-heading",
+      "title": "Build your own beginner re-test of 5 Oct 2026 (our own measurement)",
+      "claim": "Pins installed and equal to the lock file; both data checksums match; 6 of 6 tests passed; the sugar gate trial gave MN9 82.0 Hz, bit-exact with our runs of 28 Sep, 1 Oct and 2 Oct 2026.",
+      "accessed_at": "2026-10-05T09:44:06Z",
+      "relation": "supports",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "flight-test-the-fly-run8",
+      "source_type": "code",
+      "source_url": "https://github.com/aryawidjaja/flight-test-the-fly",
+      "title": "Flight-test the fly (aryawidjaja)",
+      "claim": "RMS yaw rate 3.19 deg/s with the real FlyWire subcircuit vs 3.92 median of 10 degree-preserving shuffles (best 3.31) on 20 held-out seeds; classical yaw damper 1.69, bare airframe 3.92 (committed metrics file at d3fa996).",
+      "accessed_at": "2026-10-05T09:58:24Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyaim-run8",
+      "source_type": "code",
+      "source_url": "https://github.com/0Sakura721/flyaim",
+      "title": "FlyAim (0Sakura721)",
+      "claim": "Pre-registered: whole MaleCNS v1.0 aiming task, mean target distance 412.5 px real vs 430.9 px shuffled (p = 0.66), random walker 251.7, PID 155.8.",
+      "accessed_at": "2026-10-05T09:58:24Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyarm-run8",
+      "source_type": "code",
+      "source_url": "https://github.com/yusenthebot/FlyArm",
+      "title": "FlyArm (yusenthebot)",
+      "claim": "Frozen MaleCNS between trained encoder and decoder: pick-and-place lift 72.2% vs 55.9% for 9 degree-preserving shuffles over 6 seeds (p = 0.125), GRU 56.9%; the author says the wiring advantage is not established.",
+      "accessed_at": "2026-10-05T09:58:24Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flywire-gba-run8",
+      "source_type": "code",
+      "source_url": "https://github.com/LakoMoor/FlyWireGBA",
+      "title": "FlyWireGBA (LakoMoor)",
+      "claim": "A 128-neuron FlyWire v783 subgraph gates feeding through MN9 in a Game Boy Advance game; locomotion and everything else is a heuristic controller; data licence CC BY-NC 4.0.",
+      "accessed_at": "2026-10-05T09:58:24Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "gorilla-tag-recheck-run8",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=wK4lixw7p4M",
+      "title": "I Taught a Fly How to Play Gorilla Tag (seriously)",
+      "claim": "868,853 views on 5 Oct 2026 (+144,228 since 3 Oct); still no code; grade U.",
+      "accessed_at": "2026-10-05T09:46:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "dentrave-video-run8",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=3R1m1DTIeic",
+      "title": "Как Google случайно запустил настоящую Матрицу (DenTrave)",
+      "claim": "Russian explainer (128,757 views on 5 Oct 2026) that comments on DOOMFLY, Stonkfly, the Shiu et al. model and MaleCNS; added to the gallery as a commentary card.",
+      "accessed_at": "2026-10-05T09:43:25Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }

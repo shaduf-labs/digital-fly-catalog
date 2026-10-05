@@ -2,8 +2,8 @@
  "schema_version": "1.0.0",
  "collection": "Digital Fly Lab video gallery",
  "publisher": "Digital Fly Lab (independent Shaduf resource)",
- "checked_at": "2026-10-02",
- "record_count": 52,
+ "checked_at": "2026-10-05",
+ "record_count": 53,
  "schema": "videos.schema.json",
  "rules": [
   "evidence_grade is copied from the catalogue entry (projects.json) at build time; the catalogue record is authoritative and a video never changes a grade.",
@@ -47,9 +47,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:18Z"
+    "checked_at": "2026-10-05T09:41:19Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "neurocraft-minecraft-x",
@@ -86,9 +87,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:18Z"
+    "checked_at": "2026-10-05T09:41:19Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "fly-brain-minecraft-blendi-x",
@@ -125,9 +127,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:18Z"
+    "checked_at": "2026-10-05T09:41:19Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "doomfly-announce-x",
@@ -164,9 +167,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:18Z"
+    "checked_at": "2026-10-05T09:41:19Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "bad-apple-linguinelabs-x",
@@ -203,9 +207,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:19Z"
+    "checked_at": "2026-10-05T09:41:20Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "fly64-mario-x",
@@ -242,9 +247,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:19Z"
+    "checked_at": "2026-10-05T09:41:20Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "beat-saber-lyra-x",
@@ -281,9 +287,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:19Z"
+    "checked_at": "2026-10-05T09:41:20Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "doomfly-plays-doom-x",
@@ -320,9 +327,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:19Z"
+    "checked_at": "2026-10-05T09:41:20Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "stonkfly-bitcoin-x",
@@ -359,9 +367,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:20Z"
+    "checked_at": "2026-10-05T09:41:20Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flyhard-parking-x",
@@ -398,9 +407,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:20Z"
+    "checked_at": "2026-10-05T09:41:20Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "bioreservoir-fly-oracle",
@@ -437,9 +447,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-03T09:46:20Z"
+    "checked_at": "2026-10-05T09:41:20Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flydoom-mutkuoz-clip",
@@ -476,9 +487,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-03T09:46:23Z"
+    "checked_at": "2026-10-05T09:41:23Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "fly-exe-swarm-showcase",
@@ -515,9 +527,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-03T09:46:23Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "doom-fly-control-video",
@@ -563,9 +576,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-03T09:46:23Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "swot-flybridge-farming",
@@ -602,9 +616,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "fruitfly-roblox-maze-race",
@@ -641,9 +656,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:23Z"
+    "checked_at": "2026-10-05T09:41:23Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "haltere-straw-bale-finish-4x",
@@ -680,9 +696,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-03T09:46:24Z"
+    "checked_at": "2026-10-05T09:41:23Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flybrain-halflife-yt",
@@ -719,9 +736,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:23Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "fly-naf-best-run",
@@ -758,9 +776,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:24Z"
+    "checked_at": "2026-10-05T09:41:23Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flyleno-vinesauce-playthrough",
@@ -797,9 +816,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:24Z"
+    "checked_at": "2026-10-05T09:41:23Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "fly-gorilla-tag",
@@ -836,9 +856,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:24Z"
+    "checked_at": "2026-10-05T09:41:23Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "fly-jjs-fight",
@@ -875,9 +896,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:24Z"
+    "checked_at": "2026-10-05T09:41:23Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "fly-terraria",
@@ -914,9 +936,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:24Z"
+    "checked_at": "2026-10-05T09:41:24Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "ru"
   },
   {
    "video_id": "eon-first-multi-behavior-upload-x",
@@ -956,9 +979,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:20Z"
+    "checked_at": "2026-10-05T09:41:20Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "eon-embodied-fly-site-video",
@@ -995,9 +1019,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-03T09:46:20Z"
+    "checked_at": "2026-10-05T09:41:20Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "shiu-carboncopies-talk",
@@ -1034,9 +1059,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:21Z"
+    "checked_at": "2026-10-05T09:41:20Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flyvis-turaga-ipam-talk",
@@ -1073,9 +1099,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:21Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "fly-brain-zero-shot-video",
@@ -1112,9 +1139,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-03T09:46:23Z"
+    "checked_at": "2026-10-05T09:41:23Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flybody-janelia-virtual-fly",
@@ -1151,9 +1179,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:21Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flybody-janelia-body-model",
@@ -1190,9 +1219,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:21Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flybody-deepmind-x",
@@ -1229,9 +1259,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:21Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "neuromechfly-v2-ramdya-x",
@@ -1268,9 +1299,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:21Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "neuromechfly-biorob-model",
@@ -1307,9 +1339,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:21Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "neuromechfly-sfn-2024-workshop",
@@ -1346,9 +1379,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:21Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flygym-overview-video",
@@ -1385,9 +1419,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-03T09:46:21Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "hemibrain-overview-hhmi",
@@ -1424,9 +1459,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "manc-janelia-release",
@@ -1463,9 +1499,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flywire-connectome-princeton",
@@ -1504,9 +1541,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flywire-cambridge-short",
@@ -1543,9 +1581,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flywire-codex-search-tutorial",
@@ -1582,9 +1621,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "banc-harvard-release",
@@ -1621,9 +1661,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "malecns-janelia-cell-types",
@@ -1660,9 +1701,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "malecns-janelia-visuomotor",
@@ -1699,9 +1741,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "malecns-hhmi-male-brain",
@@ -1738,9 +1781,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:21Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "malecns-hhmi-history",
@@ -1777,9 +1821,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "malecns-google-research-short",
@@ -1816,9 +1861,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "ro0oney-minecraft-video",
@@ -1855,9 +1901,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "eon-drbenmiles-short",
@@ -1894,9 +1941,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:22Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "eon-rowancheung-tiktok",
@@ -1933,9 +1981,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:23Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "flywire-science-tiktok",
@@ -1972,9 +2021,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:23Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "betterstack-internet-torturing-fly",
@@ -2028,9 +2078,10 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:23Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
   },
   {
    "video_id": "pcgamer-doom-mario-beatsaber-short",
@@ -2080,9 +2131,67 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-03T09:46:23Z"
+    "checked_at": "2026-10-05T09:41:22Z"
    },
-   "last_checked": "2026-10-03"
+   "last_checked": "2026-10-05",
+   "language": "en"
+  },
+  {
+   "video_id": "dentrave-google-matrix-ru",
+   "page_anchor": "/p/digital-fly-catalog/gallery/#v-dentrave-google-matrix-ru",
+   "group": "g-reposts",
+   "title": "Как Google случайно запустил настоящую Матрицу",
+   "display_title": "Как Google случайно запустил настоящую Матрицу",
+   "title_note": "Russian title (\"How Google accidentally launched the real Matrix\"). YouTube serves this video under two titles (a title test): search results on 2026-10-03 and 2026-10-05 also show \"Google впервые оцифровал настоящий мозг. Цифровое бессмертие уже здесь?\" (\"Google digitised a real brain for the first time. Is digital immortality already here?\").",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/watch?v=3R1m1DTIeic",
+   "file_url": null,
+   "creator": "DenTrave",
+   "upload_status": "commentary",
+   "original_of": null,
+   "reposted_as": [],
+   "uploader_note": "Third-party Russian-language explainer (31.3K subscribers). The description lists its sources with timestamps: the MaleCNS paper (4:07), DOOMFLY (5:47), Steve Furber in The Register (7:33) and the Shiu et al. 2024 Nature model (7:46); later parts turn to science fiction and AI agents.",
+   "publish_date": "2026-10-02",
+   "duration": null,
+   "duration_s": null,
+   "format": "horizontal",
+   "shows": "Long-form Russian explainer: the fly connectome, the Doom, Minecraft and crypto-trading demos, and whether this is a step towards 'digital immortality'.",
+   "does_not_show": "Commentary; check each project's own grade. A wiring map run with a simple neuron model is not an uploaded or living fly (see Is it real?).",
+   "summary_basis": "YouTube watch-page metadata (title, description, views, date) read 2026-10-05; the video itself was not watched; duration not stated on the page we read",
+   "catalogue_id": null,
+   "catalogue_name": null,
+   "evidence_grade": null,
+   "grade_status": "commentary: see the projects it covers",
+   "covers": [
+    {
+     "catalogue_id": "doomfly",
+     "evidence_grade": "B"
+    },
+    {
+     "catalogue_id": "stonkfly",
+     "evidence_grade": "B"
+    },
+    {
+     "catalogue_id": "shiu-drosophila-brain-model",
+     "evidence_grade": "A"
+    },
+    {
+     "catalogue_id": "malecns",
+     "evidence_grade": "n/a"
+    }
+   ],
+   "verdict_anchor": null,
+   "thumbnail_url": "https://i.ytimg.com/vi/3R1m1DTIeic/hqdefault.jpg",
+   "views": 128757,
+   "views_date": "2026-10-05",
+   "playback": "link-only",
+   "link_status": {
+    "status": "ok",
+    "http_code": 200,
+    "checked_at": "2026-10-05T09:43:25Z"
+   },
+   "last_checked": "2026-10-05",
+   "language": "ru"
   }
  ]
 }

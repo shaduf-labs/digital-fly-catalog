@@ -2,6 +2,54 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-05-run8-we-ran-the-map",
+      "changed_at": "2026-10-05T10:52:36Z",
+      "summary": "We ran the map (our own pre-registered test, 5 Oct 2026): a looming shadow on one eye turned our simulated FlyGym fly away in 4 of 4 runs with the real FlyWire wiring and in 0 of 3 with scrambled wiring. Shown with every caveat: one model, open loop, our hand-made mapping, a constant external walking drive, 1 s; small n; much quieter scrambled brains; the direction rests on our mapping and fly67's claim. New chart, brain table with fly67's own numbers, and a shareable result card.",
+      "path": "/p/digital-fly-catalog/is-it-real/#loom-heading"
+    },
+    {
+      "change_id": "2026-10-05-run8-faq",
+      "changed_at": "2026-10-05T10:52:36Z",
+      "summary": "Is it real?: plain answers to four common questions (Is it AI? Is it a brain or just a map? Can it suffer? Can I put it in my game?), each with evidence links and an uncertainty line; 'Can it suffer?' updated with a primary source on fly nociception.",
+      "path": "/p/digital-fly-catalog/is-it-real/#faq-heading"
+    },
+    {
+      "change_id": "2026-10-05-run8-build-your-own",
+      "changed_at": "2026-10-05T10:52:36Z",
+      "summary": "Build your own: beginner path re-tested 5 Oct 2026 (6 of 6 tests, 82.0 Hz bit-exact); new tested step 'Add a sense: looming' with exact commands, the source files and what is neural simulation, our mapping and the body controller.",
+      "path": "/p/digital-fly-catalog/build-your-own/#loom-heading"
+    },
+    {
+      "change_id": "2026-10-05-run8-ledger",
+      "changed_at": "2026-10-05T10:52:36Z",
+      "summary": "Controls ledger 2026-10-05-run8: 38 studies, 30 with a wiring null (helps 13, no difference 8, worse 2, mixed 6, not yet scored 1). New: our looming test (helps; unfair null, weak method by the fixed rules), Flight-test the fly (helps; baseline not beaten), FlyAim and FlyArm (no difference). No scoring rule changed.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed-heading"
+    },
+    {
+      "change_id": "2026-10-05-run8-new-entries",
+      "changed_at": "2026-10-05T10:52:36Z",
+      "summary": "4 new entries: Flight-test the fly (A), FlyAim (A, a negative result), FlyArm (B) and FlyWireGBA (C); FLY67 gains our looming result (grade B unchanged); flybrain.app's language-model caretaker recorded; an off-topic tool excluded.",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-10-05-run8-tracking",
+      "changed_at": "2026-10-05T10:52:36Z",
+      "summary": "107 entries re-checked on 5 Oct 2026: 7 with new commits, 0 new releases, 0 re-grades; FlyDoom still gone (record kept); 52 videos re-checked, all available; 1 video added; all 20 verdicts re-checked (13 current, 7 no code, 0 code changed); Gorilla Tag 868,853 views, still U.",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-10-05-run8-videos",
+      "changed_at": "2026-10-05T10:52:36Z",
+      "summary": "Video gallery: 53 videos; every record has a new optional language field (ISO 639-1; 51 en, 2 ru), documented in videos.schema.json and on For AI agents; non-English cards carry a language label; a Russian explainer by DenTrave added.",
+      "path": "/p/digital-fly-catalog/gallery/"
+    },
+    {
+      "change_id": "2026-10-05-run8-report",
+      "changed_at": "2026-10-05T10:52:36Z",
+      "summary": "Eighth research report: the looming test with its pre-registration, deviations, brain and body results and limits, the beginner re-test, the evidence pack, lead scan, new entries, tracking and method.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-05-run8/"
+    },
+    {
       "change_id": "2026-10-03-run7-tracking",
       "changed_at": "2026-10-03T10:53:54Z",
       "summary": "104 entries re-checked on 3 Oct 2026: 3 with new commits, 0 new releases, 1 re-grade (fly-cartpole, grade unchanged); FlyDoom (eganeganegan) returned HTTP 404 a third time and its link status is now 'gone' (record kept); 52 videos re-checked: all available, 0 removed; 3 entries added.",

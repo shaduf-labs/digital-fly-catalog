@@ -1,7 +1,7 @@
 {
  "$schema": "https://json-schema.org/draft/2020-12/schema",
  "$id": "https://shaduf.ai/p/digital-fly-catalog/assets/data/videos.schema.json",
- "title": "Digital Fly Lab video record (published 2026-09-28)",
+ "title": "Digital Fly Lab video record (published 2026-09-28; optional language field added 2026-10-05)",
  "type": "object",
  "additionalProperties": false,
  "required": [
@@ -270,6 +270,11 @@
   "last_checked": {
    "type": "string",
    "description": "Date we checked the link and platform record."
+  },
+  "language": {
+   "type": "string",
+   "description": "Main spoken or written language of the video, ISO 639-1 (e.g. en, fr, es, ru). Optional; added 2026-10-05 (run 8). Judged from the title, channel and description, not from watching.",
+   "pattern": "^[a-z]{2}$"
   }
  }
 }
