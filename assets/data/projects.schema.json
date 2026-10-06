@@ -1,7 +1,7 @@
 {
  "$schema": "https://json-schema.org/draft/2020-12/schema",
  "$id": "https://shaduf.ai/p/digital-fly-catalog/assets/data/projects.schema.json",
- "title": "Digital Fly Lab catalogue record (published 2026-09-28; optional fields added in runs 2, 4 and 7)",
+ "title": "Digital Fly Lab catalogue record (published 2026-09-28; optional fields added in runs 2, 4, 7 and 9)",
  "description": "One record per catalogued project. Dates are ISO 8601. 'last_commit' and 'last_release' describe upstream activity; 'last_verified' and 'grade_date' describe our own checks. Values quoted from upstream are in 'claim'; everything else is our own wording.",
  "type": "object",
  "required": [
@@ -417,7 +417,7 @@
   "browser_check": {
    "type": "object",
    "additionalProperties": false,
-   "description": "Added 2026-10-03 (run 7), optional: result of our pre-registered headless-browser check (headless Chromium 154, Linux, no GPU). Shows whether the page loads, downloads its brain data and keeps computing; not a play test. source names the published result file.",
+   "description": "Added 2026-10-03 (run 7), optional: result of our pre-registered headless-browser check (headless Chromium 154, Linux, no GPU; checks of 3 and 6 Oct 2026). Shows whether the page loads, downloads its brain data and keeps computing; not a play test. source names the published result file.",
    "required": [
     "status",
     "checked_at",
@@ -494,6 +494,23 @@
      "type": "string"
     }
    }
+  },
+  "trained_class": {
+   "enum": [
+    "none",
+    "readout-or-decoder",
+    "front-end",
+    "whole-network-or-per-synapse",
+    "policy-or-llm",
+    "other",
+    "not-assessed"
+   ],
+   "description": "Added 2026-10-06, optional. 'Is it AI?': which part of the project, if any, is trained, learned or tuned by search in its main (default) path. none = no trained part; readout-or-decoder = a trained readout, decoder or fitted readout on a frozen connectome network; front-end = a pretrained sensory front end (for example a vision model) in front of the wiring; whole-network-or-per-synapse = synapse weights or per-cell parameters inside the network are trained; policy-or-llm = a trained policy or language model chooses actions outside the wiring; other = learning rules during a run (STDP, dopamine plasticity) or a few parameters optimised by search; not-assessed = not graded (evidence grade U or n/a)."
+  },
+  "trained_class_note": {
+   "type": "string",
+   "maxLength": 160,
+   "description": "Added 2026-10-06, optional. Plain-text detail for trained_class, for example an optional trained part that the main path does not use."
   }
  }
 }

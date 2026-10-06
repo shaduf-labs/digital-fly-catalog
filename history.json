@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "run:c0ecce13-d7a1-40c8-b30e-661b847df700",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-06T09:38:22Z",
+      "completed_at": "2026-10-06T10:48:16Z",
+      "title": "Ninth check: where in the wiring is the turn? Busy scrambled brains, an \"Is it AI?\" field, download sizes and five more browser demos",
+      "summary": "Our pre-registered brain-only looming follow-up: We turned the scrambled maps up until they were as busy as the real one. They still did not produce the turn: the wiring, not the amount of activity, makes it. Inside-only scramble: Scrambling only the inside of the map kept about -9% of the turn command and 69% of the escape signal. Giant fibre silenced: With the escape neuron silenced, the turn command stayed. (expected from the map). Brain only; 7 drives await body runs. Ledger 41 studies (helps 15 of 33; our looming row now fair and strong). trained_class on 116 records (45 of 83 graded with a trained part). Download facts for 8 releases. Five more browser demos, all ran. 5 new entries, 54 videos.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-06-run9/",
+      "entrypoint": "reports/2026-10-06-run9/index.html"
+    },
+    {
       "run_id": "run:3fed5f73-77cc-4b37-853f-e1e8258b4f9f",
       "status": "completed",
       "answer_change": "meaningful_change",

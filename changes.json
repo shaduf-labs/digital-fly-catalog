@@ -2,6 +2,60 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-06-run9-where-in-the-wiring",
+      "changed_at": "2026-10-06T10:48:16Z",
+      "summary": "Where in the wiring is the turn? (our own pre-registered test, brain only, 6 Oct 2026): We turned the scrambled maps up until they were as busy as the real one. They still did not produce the turn: the wiring, not the amount of activity, makes it. Also: Scrambling only the inside of the map kept about -9% of the turn command and 69% of the escape signal. (-9% means none: the far-side command was absent in all 6 trials) and With the escape neuron silenced, the turn command stayed. (expected: no giant fibre to DNa02 connections). Shown with every caveat in the chart: brain only, 7 drives await body runs, n per arm, a faster input checked first. New chart, census diagram and share card.",
+      "path": "/p/digital-fly-catalog/is-it-real/#loom2-heading"
+    },
+    {
+      "change_id": "2026-10-06-run9-is-it-ai",
+      "changed_at": "2026-10-06T10:48:16Z",
+      "summary": "'Is it AI?' as a catalogue field: trained_class on all 116 records (45 of 83 graded projects have a trained, learning or search-tuned part in the main path); a filter on Projects, a chart, an updated answer and the field documented on For AI agents.",
+      "path": "/p/digital-fly-catalog/is-it-real/#q-ai"
+    },
+    {
+      "change_id": "2026-10-06-run9-downloads",
+      "changed_at": "2026-10-06T10:48:16Z",
+      "summary": "Download facts: sizes, checksums, licences and access for 8 releases (403 files, from storage metadata): the beginner path needs 104.1 MB; FlyWire v783 10.6 GB, MaleCNS 31.3 GB, BANC 536.1 GB (308.3 GB on request). FlyWire's CC BY vs CC BY-NC conflict stays open; MANC and larva L1 sizes not stated. New answer 'What do I have to download?'.",
+      "path": "/p/digital-fly-catalog/how-it-works/#downloads-heading"
+    },
+    {
+      "change_id": "2026-10-06-run9-browser",
+      "changed_at": "2026-10-06T10:48:16Z",
+      "summary": "Browser check of five more demos (6 Oct 2026): Vial, Doodle Fly, Infinite Sugar, Fly Dino and Neural Canvas all ran; Neural Canvas's ~77 MB brain download was not seen in our check window. No server computing.",
+      "path": "/p/digital-fly-catalog/ways-to-try/#run9-heading"
+    },
+    {
+      "change_id": "2026-10-06-run9-ledger",
+      "changed_at": "2026-10-06T10:48:16Z",
+      "summary": "Controls ledger 2026-10-06-run9: 41 studies, 33 with a wiring null (helps 15, no difference 8, worse 2, mixed 7, not yet scored 1). Our looming row now fair and strong by the fixed rules; new: fly tennis, FlyBrain Flappy (helps) and Fly-Racer (mixed); Fly Dino's baseline corrected to not beaten. No scoring rule changed.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed-heading"
+    },
+    {
+      "change_id": "2026-10-06-run9-new-entries",
+      "changed_at": "2026-10-06T10:48:16Z",
+      "summary": "5 new entries: fly tennis (A), FlyBrain Flappy (B), Fly-Racer (C), FlyWire Pong (C) and Fly VNC Walking Simulation (C); download sizes of 8 datasets and 5 browser demos updated; Fly-NAF and flybrain-connectome-benchmark records updated.",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-10-06-run9-tracking",
+      "changed_at": "2026-10-06T10:48:16Z",
+      "summary": "111 entries re-checked on 6 Oct 2026: 4 with new commits, 0 new releases, 0 re-grades; FlyDoom still gone (record kept); 53 videos re-checked, all available; all 20 verdicts re-checked (13 current, 7 no code, 0 code changed); Gorilla Tag 899,151 views, still U.",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-10-06-run9-videos",
+      "changed_at": "2026-10-06T10:48:16Z",
+      "summary": "Video gallery: 54 videos; a Spanish Doom explainer by Vm granmisterio added (language es).",
+      "path": "/p/digital-fly-catalog/gallery/"
+    },
+    {
+      "change_id": "2026-10-06-run9-report",
+      "changed_at": "2026-10-06T10:48:16Z",
+      "summary": "Ninth research report: the looming follow-up with its pre-registration, gate V, the gain search, every trial, deviations and limits; ledger changes; trained_class; download facts; the browser rotation; new entries, tracking and method.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-06-run9/"
+    },
+    {
       "change_id": "2026-10-05-run8-we-ran-the-map",
       "changed_at": "2026-10-05T10:52:36Z",
       "summary": "We ran the map (our own pre-registered test, 5 Oct 2026): a looming shadow on one eye turned our simulated FlyGym fly away in 4 of 4 runs with the real FlyWire wiring and in 0 of 3 with scrambled wiring. Shown with every caveat: one model, open loop, our hand-made mapping, a constant external walking drive, 1 s; small n; much quieter scrambled brains; the direction rests on our mapping and fly67's claim. New chart, brain table with fly67's own numbers, and a shareable result card.",

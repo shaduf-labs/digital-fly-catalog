@@ -1780,6 +1780,146 @@
       "accessed_at": "2026-10-05T09:43:25Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "loom-where-run9",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-06-run9/#loom2-heading",
+      "title": "Digital Fly Lab: where in the wiring is the turn? (6 Oct 2026)",
+      "claim": "Brain-only, pre-registered: 3 of 3 gain-matched scrambles (activity 0.98 x real) gave a 0 Hz turn command; inside-only scramble: turn LI retention -0.085, escape retention 0.69 ('partly'); giant fibre silenced: turn command stayed (2 of 2). 7 drives await body runs.",
+      "accessed_at": "2026-10-06T10:05:56Z",
+      "relation": "supports",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "census-run9",
+      "source_type": "dataset",
+      "source_url": "https://doi.org/10.5281/zenodo.10676866",
+      "title": "FlyWire FAFB v783 (counted from the Shiu et al. copy at 91bdd1e7)",
+      "claim": "Our census: no direct LC4/LPLC2-to-DNa02 synapses; 832 / 1,053 direct synapses onto the same-side giant fibre; top relay to the far-side DNa02 is PVLP141 (361 / 451 in, 98 / 81 out); no giant fibre to DNa02 edges.",
+      "accessed_at": "2026-10-06T09:42:37Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "card-dickinson-2008",
+      "source_type": "paper",
+      "source_url": "https://doi.org/10.1016/j.cub.2008.07.094",
+      "title": "Card and Dickinson 2008, Current Biology 18(17)",
+      "claim": "'flies can use visual information to plan a jump directly away from a looming threat' (abstract); covers take-off direction only, not walking turns or DNa02.",
+      "accessed_at": "2026-10-06T09:50:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flywire-zenodo-sizes-run9",
+      "source_type": "dataset",
+      "source_url": "https://doi.org/10.5281/zenodo.10676866",
+      "title": "FlyWire FAFB v783 Zenodo record",
+      "claim": "5 files, 10.6 GB in total (proofread_connections_783.feather 852,022,274 B), md5 per file; record licence CC BY 4.0, which conflicts with flywire.ai's CC BY-NC 4.0.",
+      "accessed_at": "2026-10-06T09:45:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "shiu-files-sizes-run9",
+      "source_type": "code",
+      "source_url": "https://github.com/philshiu/Drosophila_brain_model/tree/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+      "title": "Shiu et al. repository data copies at 91bdd1e7",
+      "claim": "Connectivity_783.parquet 100,804,642 B and Completeness_783.csv 3,327,347 B (HEAD, identity encoding): the beginner path's two files.",
+      "accessed_at": "2026-10-06T09:45:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "malecns-sizes-run9",
+      "source_type": "dataset",
+      "source_url": "https://male-cns.janelia.org/",
+      "title": "MaleCNS v1.0 flat connectome",
+      "claim": "11 files, 31.3 GB; traced-only weights 508,025,642 B; CC BY 4.0.",
+      "accessed_at": "2026-10-06T09:45:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "banc-sizes-run9",
+      "source_type": "dataset",
+      "source_url": "https://doi.org/10.7910/DVN/7WTH1N",
+      "title": "BANC v888 deposit (Harvard Dataverse, version 3.0)",
+      "claim": "379 files, 536.1 GB; 277 influence-matrix chunks (308.3 GB) on request; MD5 per file; CC BY 4.0.",
+      "accessed_at": "2026-10-06T09:46:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "browser-run9",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/ways-to-try/#run9-heading",
+      "title": "Digital Fly Lab browser check (6 Oct 2026)",
+      "claim": "Vial 7.43 MB, Doodle Fly 34.99 MB, Infinite Sugar 36.04 MB, Fly Dino 3.81 MB and Neural Canvas 5.87 MB all ran in headless Chromium 154 without a GPU; Neural Canvas's ~77 MB brain download was not seen in the check window.",
+      "accessed_at": "2026-10-06T10:12:50Z",
+      "relation": "supports",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "fly-tennis-run9",
+      "source_type": "code",
+      "source_url": "https://github.com/castor639/fly-tennis",
+      "title": "Connectome ping pong (castor639)",
+      "claim": "Committed logs: 54 hits with the real MaleCNS wiring vs 10 with one degree-preserving shuffle and 14 for a parked fly; one 40 s match per condition.",
+      "accessed_at": "2026-10-06T09:55:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flybrain-flappy-run9",
+      "source_type": "code",
+      "source_url": "https://github.com/programmingWTF/FlyBrain",
+      "title": "FlyBrain Flappy (programmingWTF)",
+      "claim": "README: mean score 100.8 with the real FlyWire wiring vs 0.00 shuffled or cut; input gains tuned on the real wiring only.",
+      "accessed_at": "2026-10-06T09:58:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-racer-run9",
+      "source_type": "code",
+      "source_url": "https://github.com/supat-roong/fly-racer",
+      "title": "Fly-Racer (supat-roong)",
+      "claim": "README: 903.2 real vs 883.7 degree shuffle, 896.9 sign shuffle, 894.0 MLP; one seed per core.",
+      "accessed_at": "2026-10-06T09:55:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-dino-baseline-run9",
+      "source_type": "code",
+      "source_url": "https://github.com/cobanov/flyjump",
+      "title": "Fly Dino benchmark at e34c6614",
+      "claim": "A 243-parameter network with no connectome survives 180.00 s on 100 of 100 courses vs 179.37 s for the connectome: the no-brain baseline is not beaten.",
+      "accessed_at": "2026-10-06T09:59:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "gorilla-tag-recheck-run9",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=wK4lixw7p4M",
+      "title": "I Taught a Fly How to Play Gorilla Tag (seriously)",
+      "claim": "899,151 views on 6 Oct 2026 (+30,353 since 5 Oct); still no code; grade U.",
+      "accessed_at": "2026-10-06T09:47:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "granmisterio-video-run9",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=usIOOUopFGA",
+      "title": "Metieron el CEREBRO de una MOSCA en un Ordenador… y jugó a DOOM (Vm granmisterio)",
+      "claim": "Spanish explainer (490,717 views on 6 Oct 2026) on DOOMFLY, Eon's embodied fly, MaleCNS and FlyWire; added to the gallery as commentary.",
+      "accessed_at": "2026-10-06T09:53:19Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }

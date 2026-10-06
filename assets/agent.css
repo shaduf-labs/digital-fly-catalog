@@ -1013,3 +1013,38 @@
 [data-agent-document] .dfl-faq .dfl-unsure { margin: 8px 0 0; padding: 8px 12px; border-left: 3px solid var(--dfl-line-strong); background: var(--dfl-soft); font-size: 13px; color: var(--dfl-text); overflow-wrap: break-word; }
 [data-agent-document] .dfl-tag.is-lang { background: #fff; color: var(--dfl-ink); border: 1px solid var(--dfl-line-strong); margin-right: 4px; }
 [data-agent-document] .dfl-faq summary .dfl-faq-short { display: block; margin-top: 4px; color: var(--dfl-text); font-size: 14px; font-weight: 400; line-height: 1.5; overflow-wrap: break-word; }
+
+/* ---- run 9 (2026-10-06): "Where in the wiring is the turn?", census diagram, Is it AI? field, download facts, browser rotation */
+[data-agent-document] .dfl-svg .lw-band { fill: var(--dfl-green-bg); }
+[data-agent-document] .dfl-svg .lw-hi { fill: var(--dfl-amber-bg); fill-opacity: .55; }
+[data-agent-document] .dfl-svg .lw-open-real { fill: #fff; stroke: var(--dfl-ink); stroke-width: 1.8; }
+[data-agent-document] .dfl-svg .lw-open-scr { fill: #fff; stroke: var(--dfl-fx-mixed); stroke-width: 1.6; }
+[data-agent-document] .dfl-svg .lw-none { stroke: var(--dfl-muted); stroke-width: 1.4; stroke-dasharray: 3 4; }
+[data-agent-document] .dfl-svg .lw-cut { fill: var(--dfl-fx-worse); }
+[data-agent-document] .dfl-svg .lw-src { fill: var(--dfl-soft); }
+[data-agent-document] .dfl-svg .tc-none { fill: var(--dfl-fx-nodiff); }
+[data-agent-document] .dfl-svg .tc-yes { fill: var(--dfl-trained); }
+[data-agent-document] .dfl-svg .tc-na { fill: #fff; stroke: var(--dfl-muted); stroke-width: 1.3; stroke-dasharray: 4 3; }
+[data-agent-document] .dfl-svg .dl-beginner { fill: var(--dfl-green); }
+[data-agent-document] .dfl-svg .dl-file { fill: var(--dfl-scripted); }
+[data-agent-document] .dfl-svg .dl-release { fill: var(--dfl-modelled); }
+[data-agent-document] .dfl-loom2fig .dfl-tall, [data-agent-document] .dfl-censusfig .dfl-tall, [data-agent-document] .dfl-aifig .dfl-tall, [data-agent-document] .dfl-dlfig .dfl-tall { max-width: 26em; }
+[data-agent-document] .dfl-loom2fig .dfl-loom2-limits { margin: 14px 0 4px; }
+[data-agent-document] .dfl-readings { margin: 14px 0 18px; padding-left: 1.4em; }
+[data-agent-document] .dfl-readings > li { margin: 0 0 12px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-readings q { font-family: var(--serif, Georgia, serif); color: var(--dfl-ink); }
+[data-agent-document] .dfl-readings small { display: block; margin-top: 4px; color: var(--dfl-text); font-size: 13px; line-height: 1.55; }
+[data-agent-document] .dfl-readings .dfl-descr { margin: 6px 0 0; padding: 6px 10px; border-left: 3px dashed var(--dfl-line-strong); font-size: 13px; color: var(--dfl-text); }
+[data-agent-document] .dfl-tag.is-prereg { background: var(--dfl-green-bg); color: var(--dfl-green); }
+[data-agent-document] .dfl-tag.is-descr { background: #fff; color: var(--dfl-text); border: 1px dashed var(--dfl-line-strong); }
+[data-agent-document] .dfl-sharecard { margin: 0 0 14px; font-size: 14px; }
+[data-agent-document] .dfl-loom2table table { min-width: 70em; }
+[data-agent-document] .dfl-loom2table caption, [data-agent-document] .dfl-dltable caption { overflow-wrap: anywhere; }
+[data-agent-document] .dfl-dltable table { min-width: 48em; }
+[data-agent-document] .dfl-dlfiles { margin: 10px 0 12px; padding-left: 1.2em; }
+[data-agent-document] .dfl-dlfiles li { margin: 0 0 6px; overflow-wrap: anywhere; }
+[data-agent-document] .dfl-dl-licence { margin: 14px 0 18px; padding: 12px 16px 4px; border: 1px solid var(--dfl-line-strong); border-left: 4px solid var(--dfl-amber); border-radius: 0 var(--dfl-radius) var(--dfl-radius) 0; background: var(--dfl-amber-bg); }
+[data-agent-document] .dfl-dl-licence p { margin: 0 0 8px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-tag.is-tc-none { background: var(--dfl-soft); color: var(--dfl-ink); border: 1px solid var(--dfl-line-strong); }
+[data-agent-document] .dfl-tag.is-tc-yes { background: #ece9f8; color: var(--dfl-trained); }
+[data-agent-document] .dfl-tag.is-tc-na { background: #fff; color: var(--dfl-muted); border: 1px dashed var(--dfl-line-strong); }
