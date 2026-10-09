@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>Build your own · Digital Fly Lab · Shaduf</title>
-    <meta name="description" content="Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with the two data files you download (104 MB), exact commands, a shuffled-wiring control, a FlyGym walking body and a tested looming sense.">
+    <meta name="description" content="Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with the two data files you download (104 MB), exact commands, a shuffled-wiring control, a FlyGym walking body, brain and body in one environment, a tested looming sense and a 20-minute class plan.">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
     <link rel="canonical" href="https://shaduf.ai/p/digital-fly-catalog/build-your-own/">
     <link rel="icon" href="../assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="../assets/apple-touch-icon.png" type="image/png" sizes="180x180"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180">
@@ -13,10 +13,10 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Shaduf">
     <meta property="og:title" content="Build your own · Digital Fly Lab · Shaduf">
-    <meta property="og:description" content="Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with the two data files you download (104 MB), exact commands, a shuffled-wiring control, a FlyGym walking body and a tested looming sense.">
+    <meta property="og:description" content="Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with the two data files you download (104 MB), exact commands, a shuffled-wiring control, a FlyGym walking body, brain and body in one environment, a tested looming sense and a 20-minute class plan.">
     <meta property="og:url" content="https://shaduf.ai/p/digital-fly-catalog/build-your-own/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Build your own","description":"Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with the two data files you download (104 MB), exact commands, a shuffled-wiring control, a FlyGym walking body and a tested looming sense.","dateModified":"2026-10-06T10:48:16Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/build-your-own/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Build your own","description":"Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with the two data files you download (104 MB), exact commands, a shuffled-wiring control, a FlyGym walking body, brain and body in one environment, a tested looming sense and a 20-minute class plan.","dateModified":"2026-10-08T11:12:14Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/build-your-own/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Digital Fly Lab updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_digital_fly_catalog" data-page-id="build-your-own">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -53,10 +53,10 @@
   <p class="dfl-lede">Run the published whole-brain model of the fruit fly on an ordinary CPU. You give 21 sugar-sensing neurons a taste, the simulated brain of 138,639 neurons responds, and you read out the neuron that makes a fly extend its proboscis to feed. Then you change one thing and check the result against shuffled wiring.</p>
 
   <ul class="dfl-meta" aria-label="Guide status">
-    <li><strong>Tested on:</strong> <span>Linux x86_64 (Debian 12), Python 3.11.2, 2 CPUs, no GPU, no C++ compiler, <time datetime="2026-09-28">28 Sep 2026</time>; re-tested from an empty folder on <time datetime="2026-10-01">1 Oct 2026</time> and <time datetime="2026-10-05">5 Oct 2026</time>; "Add a body" (brain to a FlyGym fly) tested on <time datetime="2026-10-02">2 Oct 2026</time>; "Add a sense: looming" tested on <time datetime="2026-10-05">5 Oct 2026</time></span></li>
+    <li><strong>Tested on:</strong> <span>Linux x86_64 (Debian 12), Python 3.11.2, 2 CPUs, no GPU, no C++ compiler, <time datetime="2026-09-28">28 Sep 2026</time>; re-tested from an empty folder on <time datetime="2026-10-01">1 Oct 2026</time> and <time datetime="2026-10-05">5 Oct 2026</time>; "Add a body" (brain to a FlyGym fly) tested on <time datetime="2026-10-02">2 Oct 2026</time>; "Add a sense: looming" tested on <time datetime="2026-10-05">5 Oct 2026</time> (two more body runs on <time datetime="2026-10-08">8 Oct 2026</time>); brain and body in one environment tested on <time datetime="2026-10-08">8 Oct 2026</time></span></li>
     <li><strong>Full run:</strong> <span>28 min for 20 one-second trials; tests 52 s</span></li>
     <li><strong>Untested:</strong> <span>macOS, Windows/WSL, Colab, machines with a compiler</span></li>
-    <li><strong>Pins:</strong> <span>unchanged; checked against PyPI on <time datetime="2026-10-06">6 Oct 2026</time> (since 5 Oct only mujoco released a new version, 3.15.0; the body steps keep their pin, 3.9.0) and installed cleanly in the re-test of 5 Oct; next re-test due 19 Oct 2026</span></li>
+    <li><strong>Pins:</strong> <span>unchanged; checked against PyPI on <time datetime="2026-10-08">8 Oct 2026</time> (latest: Brian2 2.10.1, numpy 2.5.3, pandas 3.0.6, mujoco 3.15.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0) and installed cleanly in the re-test of 5 Oct; Brian2 2.9.0 does not import with numpy 2.5.3 (<a href="#errors-heading">common errors</a>); next re-test due 19 Oct 2026</span></li>
     <li><strong>Download:</strong> <span>104.1 MB of FlyWire data for the beginner path (<a href="#download-heading">what you download</a>)</span></li>
   </ul>
 
@@ -65,7 +65,9 @@
     <p>We ran this guide from an empty folder on 28 September 2026. With sugar neurons firing at 150 Hz, the proboscis motor neuron MN9 fired at <strong>85.2 ± 3.2 Hz</strong>, so our rule said "extend the proboscis". With no stimulus nothing fired at all. With the same stimulus on <strong>shuffled wiring, MN9 stayed at 0 Hz in 6 of 6 trials</strong>, so the response depends on the real connectome. All 6 tests passed. We have not tried other operating systems, so we cannot promise it runs on yours; the untested parts are labelled on every step.</p>
     <p><strong>Beginner path re-tested 5 Oct 2026 (6 of 6 tests, 82.0 Hz bit-exact):</strong> same pins, both data checksums unchanged, and the first sugar trial gave MN9 <strong>82.0 Hz, bit-exact</strong> with our runs of 28 Sep, 1 Oct and 2 Oct 2026. <a href="#retest-heading">What the re-test covered</a></p>
     <p><strong>New, 2 October 2026: Add a body, tested.</strong> We connected the same brain model to the walking fly of FlyGym 2.1.0: brain tested, body tested, and the rule that turns neuron rates into leg commands is ours. With its forward-walking neurons stimulated, the fly walked 13.9 mm in 1 s with the real brain, 14.1 mm with scrambled wiring and 14.3 mm with no brain at all. <a href="#body-heading">The steps and what the numbers mean</a></p>
-    <p><strong>New, 5 October 2026: Add a sense: looming, tested.</strong> A looming shadow on one eye of the same brain model (every LC4 and LPLC2 neuron of that eye at 80 Hz) steers the FlyGym fly through our hand-made mapping: with the real wiring it turned away in 4 of 4 runs, with scrambled wiring in 0 of 3. Small n and one model; the walking drive and the mapping are ours. <a href="#loom-heading">The commands and what each part does</a></p>
+    <p><strong>New, 5 October 2026: Add a sense: looming, tested.</strong> A looming shadow on one eye of the same brain model (every LC4 and LPLC2 neuron of that eye at 80 Hz) steers the FlyGym fly through our hand-made mapping: with the real wiring it turned away in 4 of 4 runs, with scrambled wiring in 0 of 3; with two more real-brain runs on 8 Oct, 6 of 6 (left eye 3 of 3, right eye 3 of 3). Small n and one model; the body does the walking with its own controller, and the walking drive and the mapping are ours. <a href="#loom-heading">The commands and what each part does</a></p>
+    <p><strong>New, 8 October 2026: brain and body in one environment, tested.</strong> Brain (Brian2 2.9.0) and body (FlyGym 2.1.0) installed together in one Python 3.12 environment: 1.1 GB on disk, tested 8 Oct 2026, with numpy pinned to 2.3.5 (Brian2 2.9.0 does not import with numpy 2.5.3). <a href="#onenv-heading">The two commands and the check</a></p>
+    <p><strong>Teaching?</strong> A 20-minute class plan on this beginner path, with a no-install option: <a href="#class-heading">Use in class</a>.</p>
   </section>
 
   <section aria-labelledby="retest-heading">
@@ -87,6 +89,53 @@
     <p>Earlier re-test: 1 Oct 2026, same result (seeds 1 and 2 also matched exactly: 89 and 81 Hz). Not re-run on 5 Oct 2026: the full 20-trial <code>run_demo.py</code> and the "change one thing" experiments; their results are from 28 Sep 2026. The re-test covers Linux only, like the first test. Next re-test due 19 Oct 2026, or earlier if a pinned package changes.</p>
   </section>
 
+  <!-- CLASS:box:START -->
+  <section class="dfl-class" aria-labelledby="class-heading">
+    <p class="dfl-crumb">New 8 Oct 2026 · for teachers · built only from our tested results, no new measurements</p>
+    <h2 id="class-heading">Use in class: does a fly's wiring map do anything? (20 minutes)</h2>
+    <p>Secondary or first-year university class; the teacher runs the commands, the class reads and discusses the numbers. It uses the beginner path of this guide (sugar neurons → the feeding motor neuron MN9) and the Shiu et al. model on FlyWire v783.</p>
+    <figure class="dfl-figure dfl-classfig">
+<svg class="dfl-svg dfl-wide" viewBox="0 0 760 94" role="img" aria-labelledby="cls-wide-title cls-wide-desc"><title id="cls-wide-title">Use in class: six steps in 20 minutes</title><desc id="cls-wide-desc">A 20-minute class plan in six steps: 0-3 min, The question; 3-6 min, Taste sugar; 6-9 min, Read the result; 9-13 min, Scramble the map (the control); 13-15 min, A shadow from one side (the looming result); 15-20 min, Discuss. The teacher runs one sugar trial live (about 73 s); the scrambled-map control and the looming result are shown from our tests, not run live.</desc><rect x="0.0" y="20" width="111.0" height="46" rx="5" class="cl-talk"><title>0-3 min: The question</title></rect><text x="8.0" y="38" text-anchor="start" class="t-lab">1</text><text x="8.0" y="56" text-anchor="start" class="t-small">The question</text><rect x="114.0" y="20" width="111.0" height="46" rx="5" class="cl-run"><title>3-6 min: Taste sugar</title></rect><text x="122.0" y="38" text-anchor="start" class="t-lab">2</text><text x="122.0" y="56" text-anchor="start" class="t-small">Taste sugar</text><rect x="228.0" y="20" width="111.0" height="46" rx="5" class="cl-read"><title>6-9 min: Read the result</title></rect><text x="236.0" y="38" text-anchor="start" class="t-lab">3</text><text x="236.0" y="56" text-anchor="start" class="t-small">Read the result</text><rect x="342.0" y="20" width="149.0" height="46" rx="5" class="cl-ctrl"><title>9-13 min: Scramble the map (the control)</title></rect><text x="350.0" y="38" text-anchor="start" class="t-lab">4</text><text x="350.0" y="56" text-anchor="start" class="t-small">Scramble the map</text><rect x="494.0" y="20" width="73.0" height="46" rx="5" class="cl-read"><title>13-15 min: A shadow from one side (the looming result)</title></rect><text x="502.0" y="38" text-anchor="start" class="t-lab">5</text><text x="502.0" y="56" text-anchor="start" class="t-small">A shadow</text><rect x="570.0" y="20" width="187.0" height="46" rx="5" class="cl-talk"><title>15-20 min: Discuss</title></rect><text x="578.0" y="38" text-anchor="start" class="t-lab">6</text><text x="578.0" y="56" text-anchor="start" class="t-small">Discuss</text><text x="0.0" y="86" text-anchor="start" class="t-muted">0 min</text><text x="190.0" y="86" text-anchor="middle" class="t-muted">5 min</text><text x="380.0" y="86" text-anchor="middle" class="t-muted">10 min</text><text x="570.0" y="86" text-anchor="middle" class="t-muted">15 min</text><text x="760.0" y="86" text-anchor="end" class="t-muted">20 min</text><text x="0" y="12" text-anchor="start" class="t-muted">Live: one sugar trial (step 2). Shown from our tests: the scramble (4) and the shadow (5).</text></svg>
+<svg class="dfl-svg dfl-tall" viewBox="0 0 300 316" role="img" aria-labelledby="cls-tall-title"><title id="cls-tall-title">A 20-minute class plan in six steps: 0-3 min, The question; 3-6 min, Taste sugar; 6-9 min, Read the result; 9-13 min, Scramble the map (the control); 13-15 min, A shadow from one side (the looming result); 15-20 min, Discuss. The teacher runs one sugar trial live (about 73 s); the scrambled-map control and the looming result are shown from our tests, not run live.</title><rect x="0" y="6" width="56" height="42" rx="5" class="cl-talk"></rect><text x="8" y="26" text-anchor="start" class="t-lab">1</text><text x="66" y="22" text-anchor="start" class="t-small">The question</text><text x="66" y="37" text-anchor="start" class="t-muted">0-3 min</text><rect x="0" y="51" width="56" height="42" rx="5" class="cl-run"></rect><text x="8" y="71" text-anchor="start" class="t-lab">2</text><text x="66" y="67" text-anchor="start" class="t-small">Taste sugar</text><text x="66" y="82" text-anchor="start" class="t-muted">3-6 min</text><rect x="0" y="96" width="56" height="42" rx="5" class="cl-read"></rect><text x="8" y="116" text-anchor="start" class="t-lab">3</text><text x="66" y="112" text-anchor="start" class="t-small">Read the result</text><text x="66" y="127" text-anchor="start" class="t-muted">6-9 min</text><rect x="0" y="141" width="56" height="57" rx="5" class="cl-ctrl"></rect><text x="8" y="161" text-anchor="start" class="t-lab">4</text><text x="66" y="157" text-anchor="start" class="t-small">Scramble the map</text><text x="66" y="172" text-anchor="start" class="t-muted">9-13 min</text><rect x="0" y="201" width="56" height="31" rx="5" class="cl-read"></rect><text x="8" y="221" text-anchor="start" class="t-lab">5</text><text x="66" y="217" text-anchor="start" class="t-small">A shadow</text><text x="66" y="232" text-anchor="start" class="t-muted">13-15 min</text><rect x="0" y="235" width="56" height="72" rx="5" class="cl-talk"></rect><text x="8" y="255" text-anchor="start" class="t-lab">6</text><text x="66" y="251" text-anchor="start" class="t-small">Discuss</text><text x="66" y="266" text-anchor="start" class="t-muted">15-20 min</text></svg>
+      <figcaption>Six steps, 3 + 3 + 3 + 4 + 2 + 5 minutes. Times are from our 2-CPU test machine and will differ on school computers.</figcaption>
+    </figure>
+    <div class="dfl-split">
+      <div>
+        <h3 id="class-steps-heading">The plan</h3>
+        <ol class="dfl-cl-steps">
+          <li><span class="dfl-cl-min">0-3 min</span> <strong>The question.</strong> Ask: a brain scan is a map of which neurons connect. Can a map do anything? Read the plain answer 'Is it a brain or just a map?' aloud. <small>Source: <a href="../is-it-real/index.html#faq-heading">our plain answers</a>.</small></li>
+          <li><span class="dfl-cl-min">3-6 min</span> <strong>Taste sugar.</strong> Run one sugar trial (21 sugar-sensing neurons stimulated at 150 spikes per second for 1 s). It takes about 73 s; while it runs, explain that MN9 is a motor neuron used for feeding.</li>
+          <li><span class="dfl-cl-min">6-9 min</span> <strong>Read the result.</strong> MN9 fires at 82.0 spikes per second. The same number came out in every re-test (bit-exact), so the class can check it.</li>
+          <li><span class="dfl-cl-min">9-13 min</span> <strong>Scramble the map (the control).</strong> Show our degree-preserving shuffles: every neuron keeps its number of connections but the partners are mixed up. In all 5 shuffles MN9 stayed at 0 spikes per second. Ask: what does this tell us about the wiring? (Results shown from our run 5 test; the beginner project has no shuffle command, so this is not run live.)</li>
+          <li><span class="dfl-cl-min">13-15 min</span> <strong>A shadow from one side (the looming result).</strong> Read this sentence aloud: <q>We ran the map. A looming shadow on one eye turned our simulated fly away in 6 of 6 runs. With the same map scrambled (same number of connections per neuron) it turned away in 0 of 3. Here the map's wiring, not the stimulus or our code, makes the turn.</q> Then add: one model, brain plus simulated body, not a real fly; the body does the walking with its own controller, and the rule that turns neuron rates into leg commands is ours. <small>Source: <a href="../is-it-real/index.html#loom-heading">our looming test, 5 and 8 Oct 2026</a>.</small></li>
+          <li><span class="dfl-cl-min">15-20 min</span> <strong>Discuss.</strong> Pick two or three of the questions below.</li>
+        </ol>
+      </div>
+      <div>
+        <h3 id="class-before-heading">Before class (the teacher, once)</h3>
+        <ul>
+          <li>Install once, the day before: Python 3.11 venv, pip install -r requirements.lock, download the two data files, run the 6 tests. The pinned install took 31 s, the 6 tests 61.6 s and one sugar trial 72.6 s on our machine (<a href="#retest-heading">our re-test</a>).</li>
+          <li><strong>Device:</strong> Python 3.11; we used 2 CPUs and no GPU; one trial peaks at about 0.77 GB of memory.</li>
+          <li><strong>Downloads:</strong> about 220 MB in total (approximate): about 85.4 MB of Python packages for the 6 direct pins (their own dependencies not counted), the two data files (100.8 + 3.3 MB) and the 31.7 MB neuron annotation table, which only the deeper paths need. Disk use of the installed environment was not measured in these logs.</li>
+          <li><strong>The control is shown, not run live:</strong> the beginner project has no shuffle command. Our result: MN9 0 Hz in 5 of 5 degree-preserving shuffles, against 82.0 Hz with the real map (<a href="../does-fly-wiring-help/index.html#fairtest-heading">our fair test</a>).</li>
+        </ul>
+        <h3 id="class-noinstall-heading">No install? Two alternatives</h3>
+        <ul>
+          <li><strong>Browser demos</strong> that ran in our headless check of 6 Oct 2026: <ul><li><a href="https://raphaelsr.github.io/fly-vial/">vial</a>: ran in our check, about 7.4 MB downloaded; where the brain runs: in your browser (Web Worker).</li><li><a href="https://dtecx.github.io/doodle-fly/">doodle-fly</a>: ran in our check, about 35 MB downloaded; where the brain runs: in your browser (Web Worker).</li><li><a href="https://flydino.cobanov.dev/">fly-dino</a>: ran in our check, about 3.8 MB downloaded; where the brain runs: unclear (where the brain runs could not be decided).</li></ul> <small>Checked in headless Chromium 154 on a Linux server without a GPU, 6 Oct 2026: the page loads, downloads its data and keeps computing; not a play test. Safari, Firefox, phones and GPU machines were not tested.</small></li>
+          <li><strong>Outside option:</strong> <a href="https://play.drosophila.io/">play.drosophila.io</a>, "Guess the Fly": players predict what a MaleCNS model will do, with a free teacher PDF (EN/TR). Not ours, and not checked by us.</li>
+        </ul>
+      </div>
+    </div>
+    <h3 id="class-questions-heading">Questions for the discussion</h3>
+    <ol class="dfl-cl-questions">
+      <li>The model got 82 spikes per second from the real map and 0 from a scrambled one. Does that make it a brain, or still a map? What does the model leave out?</li>
+      <li>Every connection comes from the fly's wiring and one strength is set by hand; nothing is learned. Is this AI? What changes when a demo adds a trained part?</li>
+      <li>Real fly larvae have sensory neurons that detect harmful heat and pressure. Is detecting harm the same as feeling pain? Could a program that copies the wiring suffer?</li>
+    </ol>
+    <p class="dfl-sources">Built from our plain answers on <a href="../is-it-real/index.html#q-map">Is it a brain or just a map?</a>, <a href="../is-it-real/index.html#q-ai">Is it AI?</a> and <a href="../is-it-real/index.html#q-suffer">Can it suffer?</a>; a fourth, <a href="../is-it-real/index.html#q-game">Can I put it in my game?</a>, can replace one. One model (Shiu et al. LIF on FlyWire v783); a computer program, not a real fly. Times are from our 2-CPU test machine and will differ on school computers.</p>
+  </section>
+  <!-- CLASS:box:END -->
+
   <section aria-labelledby="labels-heading">
     <h2 id="labels-heading">How to read this guide</h2>
     <ul class="dfl-status-key">
@@ -95,6 +144,7 @@
       <li><span class="dfl-tag is-responds">Partly tested</span><span>Part of the step ran; the rest is labelled in the text.</span></li>
       <li><span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span><span>The "Add a body" steps: run on the same kind of machine (Linux x86_64, 2 CPUs, no GPU, 3 GB memory shared) on 2 October 2026, Python 3.11.2 for the brain and CPython 3.12.11 for the body.</span></li>
       <li><span class="dfl-tag is-tested">Tested 2026-10-05 on Linux</span><span>The "Add a sense: looming" steps: run on the same kind of machine on 5 October 2026, Python 3.11.2 for the brain and CPython 3.12.11 for the body. <span class="dfl-tag is-untested">Not run in our test</span> marks a command we list but did not run.</span></li>
+      <li><span class="dfl-tag is-tested">Tested 2026-10-08 on Linux</span><span>Brain and body in one Python 3.12.11 environment (Add a body, optional step): run on the same kind of machine on 8 October 2026.</span></li>
       <li><span class="dfl-tag is-responds">Ours: hand-made mapping</span><span>A rule we wrote ourselves, not part of the brain model or the body; it shapes the result and is labelled wherever it appears.</span></li>
     </ul>
     <figure class="dfl-figure">
@@ -432,6 +482,7 @@ def null_sign(pre, post, cnt, seed, n):
         <tbody>
           <tr><td><code>ensurepip is not available</code> when creating the environment</td><td>Debian and Ubuntu system Python ships without it</td><td>Install <code>python3.11-venv</code>, or use <code>--without-pip</code> and <code>get-pip.py</code> (step 1)</td><td>Hit by us; fix tested</td></tr>
           <tr><td>pip installs an older Brian2 than the docs show</td><td>Brian2 2.10 needs Python 3.12 or newer; on 3.11 pip picks 2.9.0</td><td>Pin <code>brian2==2.9.0</code> on 3.10 or 3.11, as our lock file does</td><td>PyPI metadata, 27 Sep 2026</td></tr>
+          <tr id="error-numpy-ptp"><td><code>AttributeError: type object 'numpy.ndarray' has no attribute 'ptp'</code> on <code>import brian2</code></td><td>Brian2 2.9.0 with numpy 2.5.3: Brian2 wraps <code>np.ndarray.ptp</code> (in <code>brian2/units/fundamentalunits.py</code>), which numpy 2.5.3 does not have. You get numpy 2.5.3 if you upgrade numpy, or if you add Brian2 to the FlyGym body environment, whose lock pins numpy 2.5.3</td><td>Pin numpy 2.3.5, as our beginner lock file does: <code>pip install numpy==2.3.5</code> (in a uv environment: <code>uv pip install -p .venv/bin/python numpy==2.3.5</code>). FlyGym 2.1.0 and its pins work with it (<a href="#onenv-heading">one environment</a>). Whether Brian2 2.10.x imports with numpy 2.5 is untested by us</td><td>Hit by us, 8 Oct 2026; fix tested</td></tr>
           <tr><td><code>Cannot use Cython, a test compilation failed</code>, then a slow run</td><td>No C++ compiler, or a read-only home folder (Brian2 cache in <code>~/.cython</code>)</td><td>Harmless: the model runs with numpy. For speed, install a compiler (Linux <code>g++</code>, macOS <code>xcode-select --install</code>); our code then switches to Cython (<span class="dfl-tag is-untested">Untested</span>). Set <code>FLY_CODEGEN=numpy</code> to skip the test compile</td><td>Hit by us; <a href="https://brian2.readthedocs.io/en/stable/introduction/install.html">Brian2 install docs</a></td></tr>
           <tr><td><code>Killed</code>, exit code 137, or <code>BrokenProcessPool</code></td><td>Out of memory. Upstream <code>create_model()</code> loads all 8 columns of the 15.1-million-row table (about 1 GB) for every trial and every parallel worker</td><td>Use our loader (about 0.6 GB per trial). With upstream code, set <code>n_proc=1</code> and use 8 GB of RAM or more. Do not keep the environment or data on a RAM-backed <code>/tmp</code></td><td>Hit by us 11 times in a shared 3 GiB sandbox; fix tested</td></tr>
           <tr><td><code>KeyError: 720575940620900446</code> with the v783 files</td><td>The notebooks list v630 IDs; one sugar neuron changed in v783</td><td>Use <code>720575940639259967</code> instead</td><td><a href="https://github.com/philshiu/Drosophila_brain_model/issues/7">Issue #7</a>; reproduced by us</td></tr>
@@ -525,6 +576,19 @@ Data: FlyWire v783, CC BY-NC 4.0 (non-commercial, attribution required).</code><
       </table>
     </div>
     <p><strong>You need two separate Python environments, and on a small machine never both at once:</strong> run the brain part, keep only its small JSON outputs, delete the brain environment, then install the body. On our 3 GB machine the brain trials peaked at 0.77 GB each and the body runs at 0.27 GB.</p>
+    <aside class="dfl-callout dfl-onenv" aria-labelledby="onenv-heading">
+      <h3 id="onenv-heading">Optional: brain and body in one environment <span class="dfl-tag is-tested">Tested 2026-10-08 on Linux</span></h3>
+      <p class="dfl-tested-line"><strong>Brain (Brian2 2.9.0) and body (FlyGym 2.1.0) installed together in one Python 3.12 environment: 1.1 GB on disk, tested 8 Oct 2026.</strong> Condition: numpy pinned to 2.3.5, because Brian2 2.9.0 does not import with numpy 2.5.3 (the body lock's version; <a href="#error-numpy-ptp">the error and its fix</a>).</p>
+      <p>After step 4 below (the body environment from <code>requirements-body.lock</code>), add the brain packages to the same environment with the body lock as constraints, so no body package changes, then pin numpy:</p>
+      <pre><code>uv pip install --no-cache -p $S/.venv/bin/python -c requirements-body.lock brian2==2.9.0 cython==3.3.0 sympy==1.14.0 mpmath==1.3.0 jinja2==3.1.6 markupsafe==3.0.3 pandas==2.3.3 pyarrow==25.0.1 pytz==2026.4 tzdata==2026.4 cloudpickle==3.1.2 joblib==1.6.0 pytest==9.1.1 iniconfig==2.3.0 pluggy==1.6.0
+uv pip install --no-cache -p $S/.venv/bin/python numpy==2.3.5    # the only change to the body pins</code></pre>
+      <ul>
+        <li><strong>Disk:</strong> 1,087 MiB (1.1 GB) during our trials, including the 0.1 GB Shiu et al. data; 1.3 GB at the peak of the install, while the data clone still had its git history. The resolver also added setuptools 84.0.0 (a Brian2 dependency); the 47 body pins stayed as they were, except numpy.</li>
+        <li><strong>What we checked:</strong> a looming brain trial in this environment gave numbers identical to our separate Python 3.11 brain environment, and the no-brain body run repeated our 5 Oct run exactly. The 13 unit tests of our looming code passed.</li>
+        <li><strong>Memory:</strong> run the brain and the body one after the other, not at once, on a small machine. A brain trial used about 0.8 GB, a body run about 0.25 GB.</li>
+        <li><strong>Not covered:</strong> the brain and the body stepping together in one loop, with the body's movement changing what the eyes see, is not yet tested; this environment only removes the need for two installs. macOS, Windows and GPUs: <span class="dfl-tag is-untested">Untested</span></li>
+      </ul>
+    </aside>
     <ol class="dfl-bodysteps">
       <li>
         <h4>Brain trials: record what the descending neurons send <span class="dfl-tag is-tested">Tested 2026-10-02 on Linux</span></h4>
@@ -596,7 +660,7 @@ $S/.venv/bin/python body_run.py one drives/zero.json body/zero.json             
     </div>
     <p><strong>What the numbers mean:</strong> in this model and this body, the walk comes from the P9 neurons we stimulate and from FlyGym's controller. The rest of the brain adds turning commands (DNa02) that change the heading but not how far the fly walks. Our mapping decides how much those commands matter: it caps each number at 1.2, and most bins sit at the cap, so another mapping could give another answer. One stimulus, one model, one body, 1 s, open loop. The chart, the controls and the limits are on <a href="../does-fly-wiring-help/index.html#body-heading">Does fly wiring help?</a></p>
     <p><strong>If you publish a walking-fly demo:</strong> say which neurons you stimulate, that the body has its own walking controller, and that the rate-to-leg rule is yours; and show the same walk with scrambled wiring and with no brain.</p>
-    <p>Untested by us: macOS and Windows, a GPU, rendering video (we ran with <code>MUJOCO_GL=disable</code>), longer walks, other stimuli or neuron types, and a closed loop in which the body feeds back to the brain. <span class="dfl-tag is-untested">Untested</span></p>
+    <p>Untested by us: macOS and Windows, a GPU, rendering video (we ran with <code>MUJOCO_GL=disable</code>), longer walks, other stimuli or neuron types, and a coupled run in which the body feeds back to the brain (not yet tested). <span class="dfl-tag is-untested">Untested</span></p>
   </section>
 
   <section aria-labelledby="loom-heading">
@@ -635,7 +699,7 @@ $FLY_PROJECT/.venv/bin/python run_loom.py one real 0 --stim LOOML --rate 80 --st
 $FLY_PROJECT/.venv/bin/python run_loom.py one D 3 --stim LOOML --rate 80 --style run8 --out results/brain --sides sides.npz --dn dn_info.json
 python3 brain_readout.py results/brain/LOOML-real-0.json   # giant fibre, DNa02 L/R, LI, fly67's pass rule</code></pre>
         <p>Expected (our run): left-eye shadow, real wiring: giant fibre 129 / 94 Hz (left / right), DNa02 right 23 Hz, left 0 Hz (fly67's own engine: 114.8 Hz mean, 25 and 0). Scrambled wiring: every readout 0 Hz. Each trial file also holds every descending neuron's spikes in ten 100 ms bins. We ran these trials through the worker's pre-registered queue, which calls the same trial code.</p>
-        <p>Not run in our test: the giant fibre silenced (all synapses from both DNp01 set to 0) <span class="dfl-tag is-untested">Not run in our test</span></p>
+        <p>Not run with these commands: the giant fibre silenced (all synapses from both DNp01 set to 0) <span class="dfl-tag is-untested">Not run in our test</span>. We ran it later with our follow-up code (brain 6 Oct, body 8 Oct 2026): with the escape neuron silenced, the fly still turned away (<a href="../is-it-real/index.html#loom3-heading">details</a>).</p>
         <pre><code>$FLY_PROJECT/.venv/bin/python run_loom.py one real 0 --stim LOOML --rate 80 --silence GF --style run8 --out results/brain --sides sides.npz --dn dn_info.json</code></pre>
       </li>
       <li>
@@ -656,18 +720,19 @@ python3 analyze_loom.py results charts/loom-turn.json          # the pre-registe
     <h3 id="loom-expect-heading">Expected numbers</h3>
     <div class="table-scroll is-wide">
       <table>
-        <caption>Our runs of 5 Oct 2026: turn away from the shadow in the 1.0 s after onset (+ = away). A run "turns away" when it turns more than 10° beyond the no-brain floor. The physics is deterministic, so the same drive gives the same walk.</caption>
+        <caption>Our runs of 5 Oct 2026 and the two real-brain runs added on 8 Oct 2026: turn away from the shadow in the 1.0 s after onset (+ = away). A run "turns away" when it turns more than 10° beyond the no-brain floor. The physics is deterministic, so the same drive gives the same walk; on 8 Oct the floor run repeated the 5 Oct run exactly.</caption>
         <thead><tr><th scope="col">Runs</th><th scope="col">Turn away (°)</th><th scope="col">Turned away</th></tr></thead>
         <tbody>
           <tr><td>Real map, left-eye shadow (seeds 0, 1)</td><td>33.6, 40.6</td><td>2 of 2</td></tr>
           <tr><td>Real map, right-eye shadow (seeds 0, 1)</td><td>64.1, 68.3</td><td>2 of 2</td></tr>
+          <tr><td>Real map, seed 2, 8 Oct (left eye; right eye)</td><td>38.7; 53.9</td><td>2 of 2 (all real: 6 of 6)</td></tr>
           <tr><td>Scrambled map (shuffles 3, 4 left; 3 right): drives identical to the floor</td><td>1.5, 1.5, −1.5</td><td>0 of 3</td></tr>
           <tr><td>No brain, constant (0.8, 0.8): the floor</td><td>drifts 1.5° to the right; 11.5 mm forward after onset</td><td>reference</td></tr>
           <tr><td>No brain, random steering (3 per eye)</td><td>−6.6, −10.4, 1.1 (left eye); 19.8, 14.8, 18.7 (right eye)</td><td>3 of 6</td></tr>
         </tbody>
       </table>
     </div>
-    <p><strong>What the numbers mean:</strong> with the same shadow, the same mapping and the same body, only the real wiring sent turning commands, so in this model the map's wiring makes the turn. <strong>Limits:</strong> one model, open loop, our hand-made mapping, a constant external walking drive, 1 s; not a real fly. Only 4 real and 3 scrambled runs; the scrambled brains fired about half as many spikes, and we did not reach an activity-matched scramble. The stimulus is strong and artificial (every looming detector of one eye at 80 Hz). Untested by us: the giant fibre silenced, other stimulus rates, a realistic looming object, a closed loop in which the body's movement changes what the eye sees, macOS, Windows and GPUs. <span class="dfl-tag is-untested">Untested</span></p>
+    <p><strong>What the numbers mean:</strong> with the same shadow, the same mapping and the same body, only the real wiring sent turning commands, so in this model the map's wiring makes the turn. <strong>Limits:</strong> one model, open loop, our hand-made mapping, a constant external walking drive, 1 s; not a real fly. On 5 Oct only 4 real and 3 scrambled runs, and the scrambled brains fired about half as many spikes. Since then (brain and body runs of 6 and 8 Oct, on <a href="../is-it-real/index.html#loom3-heading">Is it real?</a>): 6 of 6 real runs turned away; scrambled maps turned up to the real activity still sent the no-brain drive; with only the inside of the map scrambled, the fly turned away in 0 of 6 runs; with the escape neuron silenced, the fly still turned away (2 of 2); and in the brain alone the turn command appeared from about 30 spikes per second per looming neuron. The stimulus is a rate we set for every looming detector of one eye, not a measured response to a real shadow. Untested by us: an approaching object with its own geometry and timing, a coupled run in which the body's movement changes what the eye sees (not yet tested), macOS, Windows and GPUs. <span class="dfl-tag is-untested">Untested</span></p>
   </section>
 
   <section aria-labelledby="deeper-heading">
@@ -4031,7 +4096,7 @@ def test_structure_stats():
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>6 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>8 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Verify project links and implementations, explain the model and keep the catalogue and build guide current.</p><a href="../index.html">Full pool information →</a></section>
     </div>

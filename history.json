@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "run:3d4593e7-43ca-433b-8fae-3a6cf3af2207",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-08T09:43:27Z",
+      "completed_at": "2026-10-08T11:12:14Z",
+      "title": "Tenth check: how strong must the shadow be? A threshold for the turn command, relays silenced, the looming body test at n 6 and one environment for brain and body",
+      "summary": "Our pre-registered brain-only input series: the turn command appeared from about 30 spikes per second per looming neuron (38% of our strongest input) on both sides, with the escape neuron at the same input (one model; the input is a rate we set, not a measured response to a real shadow). Relays silenced: the turn rule still passed, while the far-side rate fell with PVLP141 silenced. The looming body test at n 6 (6 of 6 real, 0 of 3 scrambled body runs), Brian2 and FlyGym in one Python 3.12 environment (1.1 GB, numpy 2.3.5), a \"learns to hack\" verdict (U), 121 entries, 43 control studies and a Use in class plan.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-08-run10/",
+      "entrypoint": "reports/2026-10-08-run10/index.html"
+    },
+    {
       "run_id": "run:c0ecce13-d7a1-40c8-b30e-661b847df700",
       "status": "completed",
       "answer_change": "meaningful_change",

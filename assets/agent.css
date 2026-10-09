@@ -1048,3 +1048,41 @@
 [data-agent-document] .dfl-tag.is-tc-none { background: var(--dfl-soft); color: var(--dfl-ink); border: 1px solid var(--dfl-line-strong); }
 [data-agent-document] .dfl-tag.is-tc-yes { background: #ece9f8; color: var(--dfl-trained); }
 [data-agent-document] .dfl-tag.is-tc-na { background: #fff; color: var(--dfl-muted); border: 1px dashed var(--dfl-line-strong); }
+
+/* ---- run 10 (2026-10-08): "How strong must the shadow be?", relays silenced, one environment, Use in class */
+[data-agent-document] .dfl-svg .ls-dot { fill: var(--dfl-ink); }
+[data-agent-document] .dfl-svg .ls-dot-open { fill: #fff; stroke: var(--dfl-ink); stroke-width: 1.8; }
+[data-agent-document] .dfl-svg .ls-seed { fill: var(--dfl-modelled); }
+[data-agent-document] .dfl-svg .ls-seed-open { fill: #fff; stroke: var(--dfl-modelled); stroke-width: 1.6; }
+[data-agent-document] .dfl-svg .ls-line { fill: none; stroke: var(--dfl-text); stroke-width: 1.4; stroke-linejoin: round; }
+[data-agent-document] .dfl-svg .ls-line-r { stroke-dasharray: 5 4; }
+[data-agent-document] .dfl-svg .ls-zone { fill: var(--dfl-soft); }
+[data-agent-document] .dfl-svg .ls-thr { stroke: var(--dfl-green); stroke-width: 1.6; stroke-dasharray: 5 4; }
+[data-agent-document] .dfl-svg .ls-drop { stroke: var(--dfl-fx-worse); stroke-width: 1.6; stroke-dasharray: 3 3; }
+[data-agent-document] .dfl-svg .ls-note { fill: var(--dfl-amber-bg); stroke: var(--dfl-amber); stroke-width: 1; }
+[data-agent-document] .dfl-loom3fig .dfl-tall, [data-agent-document] .dfl-classfig .dfl-tall { max-width: 26em; }
+[data-agent-document] .dfl-loom3fig figcaption p { margin: 0 0 6px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-loom3fig figcaption p:first-child { color: var(--dfl-ink); font-size: 14px; }
+[data-agent-document] .dfl-loom3table table { min-width: 64em; }
+[data-agent-document] .dfl-loom3table caption { overflow-wrap: anywhere; }
+[data-agent-document] .dfl p.dfl-descr { margin: 10px 0 14px; padding: 8px 12px; border-left: 3px dashed var(--dfl-line-strong); font-size: 14px; color: var(--dfl-text); overflow-wrap: break-word; }
+[data-agent-document] .dfl p.dfl-descr small { display: block; margin-top: 4px; font-size: 13px; }
+[data-agent-document] .dfl-onenv { margin: 14px 0 20px; padding: 14px 18px 6px; border: 1px solid var(--dfl-line-strong); border-left: 4px solid var(--dfl-green); border-radius: 0 var(--dfl-radius) var(--dfl-radius) 0; background: var(--dfl-tint); }
+[data-agent-document] .dfl-onenv h3 { margin: 0 0 8px; }
+[data-agent-document] .dfl-onenv p, [data-agent-document] .dfl-onenv li { margin: 0 0 8px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-onenv ul { margin: 0 0 8px; padding-left: 1.2em; }
+[data-agent-document] .dfl-onenv pre { margin: 8px 0 12px; }
+[data-agent-document] .dfl-tested-line { padding: 8px 12px; background: var(--dfl-green-bg); border-radius: 6px; color: var(--dfl-ink); }
+[data-agent-document] .dfl-class { margin: 28px 0; padding: 18px 20px 8px; border: 1px solid var(--dfl-line-strong); border-radius: var(--dfl-radius); background: var(--dfl-tint); }
+[data-agent-document] .dfl-class h2 { margin-top: 4px; }
+[data-agent-document] .dfl-class li { overflow-wrap: break-word; }
+[data-agent-document] .dfl-cl-steps { margin: 0 0 12px; padding-left: 1.3em; }
+[data-agent-document] .dfl-cl-steps > li { margin: 0 0 10px; }
+[data-agent-document] .dfl-cl-steps q { font-family: var(--serif, Georgia, serif); color: var(--dfl-ink); }
+[data-agent-document] .dfl-cl-min { display: inline-block; min-width: 4.4em; color: var(--dfl-muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+[data-agent-document] .dfl-cl-questions { margin: 0 0 12px; padding-left: 1.3em; }
+[data-agent-document] .dfl-cl-questions > li { margin: 0 0 8px; }
+[data-agent-document] .dfl-svg .cl-talk { fill: var(--dfl-soft); stroke: var(--dfl-line-strong); stroke-width: 1; }
+[data-agent-document] .dfl-svg .cl-run { fill: var(--dfl-green-bg); stroke: var(--dfl-green); stroke-width: 1.2; }
+[data-agent-document] .dfl-svg .cl-read { fill: var(--dfl-blue-bg); stroke: var(--dfl-modelled); stroke-width: 1; }
+[data-agent-document] .dfl-svg .cl-ctrl { fill: #fff; stroke: var(--dfl-fx-mixed); stroke-width: 1.4; stroke-dasharray: 4 3; }

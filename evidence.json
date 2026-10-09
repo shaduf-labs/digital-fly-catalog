@@ -1920,6 +1920,106 @@
       "accessed_at": "2026-10-06T09:53:19Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "loom3-strength-run10",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-08-run10/#strength-heading",
+      "title": "Digital Fly Lab: input-strength series, 8 Oct 2026",
+      "claim": "Our pre-registered brain-only series: the turn command appeared from about 30 spikes per second per looming neuron (38% of our strongest input) on both sides; below that the model did not turn; the escape neuron started at the same input; a second seed agreed. One model; the input is a rate we set, not a measured response to a real shadow.",
+      "accessed_at": "2026-10-08T10:08:00Z",
+      "relation": "supports",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "loom3-relays-run10",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-08-run10/#relays-heading",
+      "title": "Digital Fly Lab: relay silencing, 8 Oct 2026",
+      "claim": "With PVLP141 or all 21-23 two-step relays silenced the pre-registered turn rule still passed (the turn command 'stayed'); the LI ratio saturates because the near side is at 0 Hz; with PVLP141 silenced the far-side rate fell from 25 to 17 Hz (left) and 41 to 24 Hz (right).",
+      "accessed_at": "2026-10-08T10:12:00Z",
+      "relation": "limits",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "loom-body-n6-run10",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-08-run10/#body-heading",
+      "title": "Digital Fly Lab: looming body runs completed, 8 Oct 2026",
+      "claim": "Real map 6 of 6 turned away, scrambled 0 of 3 body runs (+3 floor-identical); giant fibre silenced 2 of 2 turned away; inside-only scramble 0 of 6; floor run repeated exactly. Our hand-made mapping; the body walks with FlyGym's controller.",
+      "accessed_at": "2026-10-08T09:58:00Z",
+      "relation": "supports",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "one-env-run10",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-08-run10/#env-heading",
+      "title": "Digital Fly Lab: Brian2 and FlyGym in one environment, 8 Oct 2026",
+      "claim": "Brian2 2.9.0 and FlyGym 2.1.0 in one Python 3.12 environment: 1,087 MiB (1.1 GB) on disk with numpy 2.3.5; with numpy 2.5.3 import brian2 fails with AttributeError: type object 'numpy.ndarray' has no attribute 'ptp'.",
+      "accessed_at": "2026-10-08T09:56:05Z",
+      "relation": "supports",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "lc4-rate-basis-search-run10",
+      "source_type": "paper search",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28LC4+OR+LPLC2%29+AND+looming+AND+%28spike+OR+%22firing+rate%22+OR+electrophysiology+OR+%22whole-cell%22%29+AND+drosophila&format=json&resultType=core&pageSize=8",
+      "title": "Europe PMC abstract search for LC4/LPLC2 firing rates during looming",
+      "claim": "No abstract among the top 8 results states an LC4 or LPLC2 firing rate during looming, so our input rates have no measured real-fly comparison; full texts were not read.",
+      "accessed_at": "2026-10-08T10:07:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "dzuma-hack-video-run10",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=m5Q_aIO_K8o",
+      "title": "Can A Conscious Fly Brain Learn how to Hack? (dzuma)",
+      "claim": "Uploaded 7 Oct 2026; approximately 37,310 views on 8 Oct 2026 (watch page); the description links papers, the FlyWire Codex, Brian 2 and two practice targets, but no code or data; grade U.",
+      "accessed_at": "2026-10-08T09:50:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "gorilla-tag-recheck-run10",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=wK4lixw7p4M",
+      "title": "I Taught a Fly How to Play Gorilla Tag (seriously)",
+      "claim": "Approximately 928,414 views on 8 Oct 2026 (search page); still no code; grade U.",
+      "accessed_at": "2026-10-08T09:47:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "connectocopter-run10",
+      "source_type": "code",
+      "source_url": "https://github.com/TheJustas228/connectocopter",
+      "title": "Connectocopter",
+      "claim": "At fb75ff8: real FlyWire wiring escapes 15 of 15 looming balls and one degree- and sign-preserving rewiring 0 of 15 (raw files recounted by us); a hand-written controller also escapes 15 of 15 (README).",
+      "accessed_at": "2026-10-08T09:55:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "synaptera-run10",
+      "source_type": "code",
+      "source_url": "https://github.com/omeruk/synaptera",
+      "title": "Synaptera",
+      "claim": "At e93fcbf, from the author's report: the landing neuron DNp07 responds 9.6 Hz more to expanding flow than to a static grating, while the shuffled connectome gave up to 15.6 Hz.",
+      "accessed_at": "2026-10-08T09:55:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "play-drosophila-run10",
+      "source_type": "website",
+      "source_url": "https://play.drosophila.io/",
+      "title": "play.drosophila.io: Guess the Fly",
+      "claim": "An outside no-install option for classes (players predict what a MaleCNS model will do; a teacher PDF); not ours and not checked by us in this run.",
+      "accessed_at": "2026-10-08T09:50:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }

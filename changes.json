@@ -2,6 +2,60 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-08-run10-how-strong",
+      "changed_at": "2026-10-08T11:12:14Z",
+      "summary": "How strong must the shadow be? (our own pre-registered test, brain only, 8 Oct 2026): We lowered the input to the looming neurons step by step, from 80 to 10 spikes per second each. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. The escape neuron started firing at the same input as the turn command. A second seed agreed. Caveat in the chart: one model, brain only; the input is a rate we set for every LC4/LPLC2 of one eye, not a measured response to a real shadow; not a real fly; no measured real-fly rate found to compare. New chart and share card.",
+      "path": "/p/digital-fly-catalog/is-it-real/#loom3-heading"
+    },
+    {
+      "change_id": "2026-10-08-run10-relays",
+      "changed_at": "2026-10-08T11:12:14Z",
+      "summary": "Relays silenced (brain only, 8 Oct 2026): With one relay neuron (PVLP141) silenced, the turn command stayed. With all 21-23 relay neurons between the looming neurons and the turn neuron silenced, the turn command stayed. Disclosed beside them: 'stayed' means the pre-registered turn rule still passed; the ratio we used saturates because the near-side turn neuron is always at 0 Hz; with PVLP141 silenced the far-side rate did fall (left 25 to 17 Hz, right 41 to 24 Hz).",
+      "path": "/p/digital-fly-catalog/is-it-real/#relays-heading"
+    },
+    {
+      "change_id": "2026-10-08-run10-body-n6",
+      "changed_at": "2026-10-08T11:12:14Z",
+      "summary": "The looming body test, now n 6: real map 6 of 6 turned away (left 3 of 3, right 3 of 3), scrambled 0 of 3 body runs (+3 drives identical to the floor); with the escape neuron silenced, the fly still turned away (2 of 2); with only the inside of the map scrambled, the fly turned away in 0 of 6 runs. The 5 Oct floor run repeated exactly. Updated walking chart.",
+      "path": "/p/digital-fly-catalog/is-it-real/#loom-heading"
+    },
+    {
+      "change_id": "2026-10-08-run10-one-environment",
+      "changed_at": "2026-10-08T11:12:14Z",
+      "summary": "Build your own: brain (Brian2 2.9.0) and body (FlyGym 2.1.0) installed together in one Python 3.12 environment: 1.1 GB on disk, tested 8 Oct 2026, with numpy pinned to 2.3.5; new common error: AttributeError: type object 'numpy.ndarray' has no attribute 'ptp' on import brian2 with numpy 2.5.3, and its fix.",
+      "path": "/p/digital-fly-catalog/build-your-own/#onenv-heading"
+    },
+    {
+      "change_id": "2026-10-08-run10-use-in-class",
+      "changed_at": "2026-10-08T11:12:14Z",
+      "summary": "Use in class: a 20-minute plan on the tested beginner path (six steps, one live sugar trial, the control and the looming result shown from our tests, three discussion questions), with browser demos and play.drosophila.io as no-install alternatives.",
+      "path": "/p/digital-fly-catalog/build-your-own/#class-heading"
+    },
+    {
+      "change_id": "2026-10-08-run10-dzuma-verdict",
+      "changed_at": "2026-10-08T11:12:14Z",
+      "summary": "New verdict: \"Can A Conscious Fly Brain Learn how to Hack?\" by dzuma (approximately 37,310 views on 8 Oct 2026, read from the video page): no code linked, grade U. All 21 verdicts re-checked; Gorilla Tag approximately 928,414 views, still U.",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-dzuma-hack"
+    },
+    {
+      "change_id": "2026-10-08-run10-ledger",
+      "changed_at": "2026-10-08T11:12:14Z",
+      "summary": "Controls ledger: 43 studies, 34 with a wiring null (helps 16, no difference 8, worse 2, mixed 7, not yet scored 1). New: Connectocopter (helps, but a hand-written controller ties it) and Synaptera (baselines only by the fixed rules); our looming row has real n 6 and an inside-only arm. The README-only convention (extraction files with results_in_repo_files false) is documented. No scoring rule changed.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed-heading"
+    },
+    {
+      "change_id": "2026-10-08-run10-entries",
+      "changed_at": "2026-10-08T11:12:14Z",
+      "summary": "121 entries (5 new): Connectocopter (A), Synaptera (B), Fly Brain Tetris (B), fly-jumpshot (C) and the dzuma video claim (U); 48 of 87 graded projects have a trained part; 55 videos (the dzuma claim video added, link only). projects.json and controls.json version 2026-10-08-run10.",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-10-08-run10-report",
+      "changed_at": "2026-10-08T11:12:14Z",
+      "summary": "Research report of the tenth check (8 Oct 2026): the strength series and relay silencing with every trial, the body completion, the one-environment test, ledger changes, the lead scan, new entries, method and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-08-run10/"
+    },
+    {
       "change_id": "2026-10-06-run9-where-in-the-wiring",
       "changed_at": "2026-10-06T10:48:16Z",
       "summary": "Where in the wiring is the turn? (our own pre-registered test, brain only, 6 Oct 2026): We turned the scrambled maps up until they were as busy as the real one. They still did not produce the turn: the wiring, not the amount of activity, makes it. Also: Scrambling only the inside of the map kept about -9% of the turn command and 69% of the escape signal. (-9% means none: the far-side command was absent in all 6 trials) and With the escape neuron silenced, the turn command stayed. (expected: no giant fibre to DNa02 connections). Shown with every caveat in the chart: brain only, 7 drives await body runs, n per arm, a faster input checked first. New chart, census diagram and share card.",

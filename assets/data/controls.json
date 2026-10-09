@@ -1,16 +1,16 @@
 {
  "schema_version": "1.0.0",
  "dataset": "Digital Fly Lab controls ledger",
- "version": "2026-10-06-run9",
- "generated_at": "2026-10-06T11:04:41Z",
- "run_id": "run:c0ecce13-d7a1-40c8-b30e-661b847df700",
- "as_of": "2026-10-06",
+ "version": "2026-10-08-run10",
+ "generated_at": "2026-10-08T10:19:06Z",
+ "run_id": "run:3d4593e7-43ca-433b-8fae-3a6cf3af2207",
+ "as_of": "2026-10-08",
  "answer": {
-  "one_line": "Sometimes: fly wiring beat scrambled wiring in 15 of 33 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (10).",
-  "short": "Of 41 control studies in our catalogue, 33 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 15, makes no difference in 8, does worse in 2, gives mixed results in 7 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-6 Oct 2026), a shadow on one eye turned the fly away in 4 of 4 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+  "one_line": "Sometimes: fly wiring beat scrambled wiring in 16 of 34 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (10).",
+  "short": "Of 43 control studies in our catalogue, 34 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 16, makes no difference in 8, does worse in 2, gives mixed results in 7 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
   "counts": {
-   "studies": 41,
-   "with_wiring_null": 33,
+   "studies": 43,
+   "with_wiring_null": 34,
    "by_family": {
     "reflex-circuit": {
      "helps": 3,
@@ -24,10 +24,10 @@
      "no_difference": 0,
      "worse": 0,
      "mixed": 0,
-     "not_tested": 1
+     "not_tested": 2
     },
     "body-steering": {
-     "helps": 4,
+     "helps": 5,
      "no_difference": 2,
      "worse": 0,
      "mixed": 1,
@@ -1033,6 +1033,92 @@
    ]
   },
   {
+   "id": "synaptera",
+   "name": "Synaptera: landing descending-neuron response vs a shuffled connectome (open loop)",
+   "evidence_grade": "B",
+   "made_by_us": false,
+   "task_family": "sensory-model",
+   "loop": "open-loop",
+   "wiring": {
+    "dataset": "FlyWire FAFB",
+    "release": "v783",
+    "scope": "whole brain, 138,639 neurons"
+   },
+   "trained_parts": "pretrained FlyVis visual front end",
+   "metric": {
+    "name": "DNp07 rate difference, expanding flow minus static grating, 5 seeds",
+    "unit": "Hz",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 9.6,
+    "n": 5,
+    "spread": null,
+    "source": "REPORT.md section 3 (H4 landing) at e93fcbf"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "shuffled",
+     "null_type": "other",
+     "label": "shuffled connectome (method not inspected by us); null maximum",
+     "value": 15.6,
+     "n": null,
+     "samples": null,
+     "spread": null,
+     "readout_refit": null,
+     "source": "REPORT.md section 3 (H4 landing) at e93fcbf: 'the shuffled connectome gave larger differences (null maximum 15.6 Hz)'",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "headline_arm": null,
+    "best_null_arm": null,
+    "retention": null,
+    "retention_method": "none",
+    "baseline_arm": null,
+    "baseline_retention": null,
+    "difference": null,
+    "ci": null,
+    "p": null,
+    "stat_note": "Author's report: the real-wiring effect does not exceed the shuffled null; 1 of 21 a-priori visual DN tests passed overall (README)."
+   },
+   "wiring_effect": "not-tested",
+   "baseline_beaten": "not-tested",
+   "fairness": {
+    "keeps_degree": null,
+    "keeps_io_boundary": null,
+    "tuned_equally": null,
+    "null_samples": null,
+    "has_no_brain_baseline": false,
+    "verdict": "unclear",
+    "reason": "Shuffle method not inspected in this run."
+   },
+   "quality": {
+    "n_per_arm": 5,
+    "held_out": null,
+    "uncertainty_reported": false,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "recomputed_by_us": false,
+    "grade": "weak",
+    "reason": "Read from the author's report only; not recounted."
+   },
+   "extraction": "files",
+   "one_line": "The model's landing neuron responds to expanding flow, but no more than in a shuffled connectome.",
+   "commit": "e93fcbffddfde088552c61c6274cdae92ebe2df9",
+   "checked_at": "2026-10-08",
+   "sources": [
+    {
+     "url": "https://github.com/omeruk/synaptera",
+     "label": "direct"
+    }
+   ]
+  },
+  {
    "id": "byo-flygym-body",
    "name": "Build your own, Add a body: FlyWire brain drives FlyGym walking (our run)",
    "evidence_grade": "A",
@@ -1173,10 +1259,10 @@
     "higher_is_better": true
    },
    "real": {
-    "value": 51.6463,
-    "n": 4,
-    "spread": "± 14.81 sd",
-    "source": "Digital Fly Lab looming test of 2026-10-05 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/), summary.json body.mean_away_deg.real; body/{L,R}-real-*.json"
+    "value": 49.8647,
+    "n": 6,
+    "spread": "± 13.12 sd",
+    "source": "Digital Fly Lab looming body runs of 2026-10-08 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-08-run10/), loom-body6.json mean_away_deg.real; Digital Fly Lab body runs of 2026-10-05, files {L,R}-real-{0,1}.json; Digital Fly Lab body runs of 2026-10-08, files LOOM{L,R}-real-2-f.json"
    },
    "floor": {
     "label": "constant external drive (0.8, 0.8), no brain; signed per looming side and pooled",
@@ -1193,7 +1279,7 @@
      "samples": 3,
      "spread": "± 1.49 sd",
      "readout_refit": false,
-     "source": "Digital Fly Lab looming test of 2026-10-05 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/), summary.json; body/{L,R}-D*.json (deduplicated drives: L-D3=F, L-D4=F, R-D3=F); run 9: Digital Fly Lab looming follow-up of 2026-10-06, drive files  (floor-identical by sha256: LOOML-D-5-f, LOOMR-D-4-f, LOOMR-D-5-f)",
+     "source": "Digital Fly Lab looming test of 2026-10-05 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/), summary.json; body/{L,R}-D*.json (deduplicated drives: L-D3=F, L-D4=F, R-D3=F); 6 Oct 2026: Digital Fly Lab looming follow-up of 2026-10-06, drive files (floor-identical by sha256: LOOML-D-5-f, LOOMR-D-4-f, LOOMR-D-5-f)",
      "recomputed_by_us": true,
      "activity_ratio": 0.4972,
      "activity_class": "reduced"
@@ -1225,10 +1311,24 @@
      "recomputed_by_us": true,
      "activity_ratio": 0.9864,
      "activity_class": "comparable"
+    },
+    {
+     "arm_id": "B-boundary-preserving",
+     "null_type": "boundary-preserving",
+     "label": "boundary-preserving shuffles (run 5 nulls.null_boundary): every edge onto descending, motor and endocrine neurons and out of sensory and ascending neurons kept; same stimulus, mapping and body",
+     "value": -0.2383,
+     "n": 6,
+     "samples": 3,
+     "spread": "± 1.79 sd",
+     "readout_refit": false,
+     "source": "Digital Fly Lab looming body runs of 2026-10-08 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-08-run10/), loom-body6.json (LOOMR-B-301-f body run on 8 Oct 2026, file LOOMR-B-301-f.json; floor-identical by sha256: LOOML-B-301-f, LOOML-B-302-f, LOOML-B-303-f, LOOMR-B-302-f, LOOMR-B-303-f)",
+     "recomputed_by_us": true,
+     "activity_ratio": 0.6615,
+     "activity_class": "comparable"
     }
    ],
    "effect": {
-    "stat_note": "Pre-registered 2026-10-05T09:42:47Z (design published in https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/#prereg-heading; deviations 3-5 logged before any body run: the brain trials took about 160 s, so the pre-registered time limits left real seeds 0-1 and shuffles [3, 4] per side). Reading by the pre-registered rule: 'the turn away needs the wiring'. Real runs turned away in 4 of 4 (threshold 10 deg over the floor), shuffles in 0 of 3, random in 3 of 6. Floor-referenced retention D 0.0, random 0.1206. Clip share 0.0. Brain gate (fly67's rule) reproduced in our Brian2 run. The rate-to-drive mapping is ours (hand-made, not fitted); the 0.8 forward drive is external. 6 Oct 2026 brain-level follow-up (pre-registered 2026-10-06T09:42:54Z; fast Poisson input validated against the 5 Oct trials, gate V passed): boundary-preserving scramble B: turn command 'needs-wiring-in-between' (LI retention -0.0853, DNa02 rule 0 of 6), escape signal 'partly' (GF retention 0.6887); giant fibre silenced: 'steering-survives-gf-silencing'; gain-matched G: 'needs-wiring-even-at-same-activity' (m 3, k 0); plain D shuffles: spikes outside the stimulated set 0.072 of real. Brain-level readings do not enter the effect; the 6 Oct drives that differ from the floor wait for body runs (7 pending).",
+    "stat_note": "Pre-registered 2026-10-05T09:42:47Z (design published in https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/#prereg-heading; deviations 3-5 logged before any body run: the brain trials took about 160 s, so the pre-registered time limits left real seeds 0-1 and shuffles [3, 4] per side). Reading by the pre-registered rule: 'the turn away needs the wiring'. Real runs turned away in 4 of 4 (threshold 10 deg over the floor), shuffles in 0 of 3, random in 3 of 6. Floor-referenced retention D 0.0, random 0.1206. Clip share 0.0. Brain gate (fly67's rule) reproduced in our Brian2 run. The rate-to-drive mapping is ours (hand-made, not fitted); the 0.8 forward drive is external. 6 Oct 2026 brain-level follow-up (pre-registered 2026-10-06T09:42:54Z; fast Poisson input validated against the 5 Oct trials, gate V passed): boundary-preserving scramble B: turn command 'needs-wiring-in-between' (LI retention -0.0853, DNa02 rule 0 of 6), escape signal 'partly' (GF retention 0.6887); giant fibre silenced: 'steering-survives-gf-silencing'; gain-matched G: 'needs-wiring-even-at-same-activity' (m 3, k 0); plain D shuffles: spikes outside the stimulated set 0.072 of real. Brain-level readings do not enter the effect; the 6 Oct drives that differ from the floor waited for body runs (run on 8 Oct 2026). 8 Oct 2026 (pre-registered 2026-10-08T09:45:48Z): the 5 Oct floor run F repeated exactly in a new session; real-brain body runs turned away in 6 of 6; reading 'the turn away needs the wiring'. With the escape neuron silenced, the fly still turned away. (2 of 2 body runs.) With only the inside of the map scrambled, the fly turned away in 0 of 6 runs. Brain level (not in the effect): We lowered the input to the looming neurons step by step, from 80 to 10 spikes per second each. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. The escape neuron started firing at the same input as the turn command. With one relay neuron (PVLP141) silenced, the turn command stayed. With all 21-23 relay neurons between the looming neurons and the turn neuron silenced, the turn command stayed. One model (Shiu et al. LIF on FlyWire v783), brain only; the input is a rate we set for every LC4/LPLC2 of one eye, not a measured response to a real shadow; 'silenced' means the neuron's output synapses were removed; not a real fly.",
     "ci": null,
     "p": null,
     "headline_arm": "D-degree-preserving",
@@ -1236,33 +1336,33 @@
     "baseline_arm": "random-steering",
     "retention": 0,
     "retention_method": "floor",
-    "baseline_retention": 0.1206,
-    "difference": 51.6463
+    "baseline_retention": 0.1249,
+    "difference": 49.8647
    },
    "fairness": {
     "keeps_degree": true,
-    "keeps_io_boundary": false,
+    "keeps_io_boundary": true,
     "tuned_equally": true,
     "null_samples": 3,
     "has_no_brain_baseline": true,
-    "reason": "Same stimulus, the same fixed mapping and the same FlyGym controller for every arm; the only tuned setting is the recurrent gain of the gain-matched arm, set to match the real brain's activity as pre-registered. A gain-matched degree-preserving arm matched the real brain's activity outside the stimulated neurons on 3 shuffles. The plain degree-preserving shuffles are much quieter outside the stimulated neurons.",
+    "reason": "Same stimulus, the same fixed mapping and the same FlyGym controller for every arm; the only tuned setting is the recurrent gain of the gain-matched arm, set to match the real brain's activity as pre-registered. A gain-matched degree-preserving arm matched the real brain's activity outside the stimulated neurons on 3 shuffles. A boundary-preserving arm (keeps the sensory/motor boundary) is included. The plain degree-preserving shuffles are much quieter outside the stimulated neurons.",
     "verdict": "fair"
    },
    "quality": {
-    "n_per_arm": 4,
+    "n_per_arm": 6,
     "held_out": null,
     "uncertainty_reported": true,
     "results_in_repo_files": true,
     "independent_test": true,
     "peer_review": "none",
     "recomputed_by_us": true,
-    "reason": "Our own pre-registered measurement with per-run files; one stimulus, one model, one body; 4 real-brain body runs; scrambled arm n 6 over 3 shuffles = 3 body runs plus 3 drives identical to the no-brain floor, whose walk follows by determinism; 1 s after onset.",
+    "reason": "Our own pre-registered measurement with per-run files; one stimulus, one model, one body; 6 real-brain body runs; scrambled arm n 6 over 3 shuffles = 3 body runs plus 3 drives identical to the no-brain floor, whose walk follows by determinism; 1 s after onset.",
     "grade": "strong"
    },
    "extraction": "files",
-   "one_line": "Our test: a looming shadow turned the fly away in 4 of 4 real-brain runs, 0 of 3 scrambled body runs (+3 floor-identical); our mapping.",
+   "one_line": "Our test: a looming shadow turned the fly away in 6 of 6 real-brain runs, 0 of 3 scrambled body runs (+3 floor-identical); our mapping.",
    "commit": "philshiu/Drosophila_brain_model@91bdd1e7; flygym==2.1.0",
-   "checked_at": "2026-10-06",
+   "checked_at": "2026-10-08",
    "sources": [
     {
      "url": "https://github.com/philshiu/Drosophila_brain_model",
@@ -1279,6 +1379,120 @@
    ],
    "wiring_effect": "helps",
    "baseline_beaten": "yes"
+  },
+  {
+   "id": "connectocopter",
+   "name": "Connectocopter: looming escape with the real vs a rewired connectome",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "body-steering",
+   "loop": "closed-loop",
+   "wiring": {
+    "dataset": "FlyWire FAFB",
+    "release": "v783 (Shiu et al. 2024 model)",
+    "scope": "whole brain, 138,639 neurons"
+   },
+   "trained_parts": "none",
+   "metric": {
+    "name": "looming-ball escapes (take-off) in 15 non-catch evaluation episodes, seeds from 1000",
+    "unit": "escapes out of 15",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 15,
+    "n": 15,
+    "spread": null,
+    "source": "results/benchmarks/raw/looming_escape__connectome.jsonl at fb75ff8 (15/15 escaped; 15 catch trials, 0 false escapes)"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "rewired",
+     "null_type": "degree-preserving",
+     "label": "degree- and sign-preserving rewiring (connectocopter/brain/nulls.py), one rewiring seed",
+     "value": 0,
+     "n": 15,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": false,
+     "source": "results/benchmarks/raw/looming_escape__rewired_connectome.jsonl at fb75ff8 (0/15 escaped)",
+     "recomputed_by_us": true,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "baseline",
+     "null_type": "no-brain-baseline",
+     "label": "hand-written controller",
+     "value": 15,
+     "n": 15,
+     "samples": null,
+     "spread": null,
+     "readout_refit": null,
+     "source": "README Results table at fb75ff8 (15/15; 0/15 false escapes); raw file results/benchmarks/raw/looming_escape__baseline.jsonl not recounted",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "gf-silenced",
+     "null_type": "lesion",
+     "label": "Giant Fiber (2 neurons) silenced",
+     "value": 0,
+     "n": 15,
+     "samples": null,
+     "spread": null,
+     "readout_refit": null,
+     "source": "README Results table at fb75ff8; not recounted",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "headline_arm": "rewired",
+    "best_null_arm": "rewired",
+    "retention": 0,
+    "retention_method": "ratio",
+    "baseline_arm": "baseline",
+    "baseline_retention": 1,
+    "difference": 15,
+    "ci": null,
+    "p": null,
+    "stat_note": "Counts recomputed by us from the committed raw files for the real and rewired arms; one rewiring seed. Flight course and landing: real 10/16 vs rewired 0/16 (raw files, recounted). The hand-written baseline ties on escape (15/15)."
+   },
+   "wiring_effect": "helps",
+   "baseline_beaten": "no",
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": false,
+    "tuned_equally": false,
+    "null_samples": 1,
+    "has_no_brain_baseline": true,
+    "verdict": "unfair",
+    "reason": "Degree- and sign-preserving rewiring with the same readouts and thresholds, but one rewiring seed only and readout thresholds tuned on the real wiring."
+   },
+   "quality": {
+    "n_per_arm": 15,
+    "held_out": true,
+    "uncertainty_reported": false,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "recomputed_by_us": true,
+    "grade": "weak",
+    "reason": "Raw per-episode files committed and recounted; evaluation seeds separate from tuning; single rewiring seed."
+   },
+   "extraction": "files",
+   "one_line": "Real wiring escapes 15 of 15 looming balls and a rewired connectome 0 of 15, but a hand-written controller also escapes 15 of 15.",
+   "commit": "fb75ff802d7d8283d6cd3196501099634cc788ed",
+   "checked_at": "2026-10-08",
+   "sources": [
+    {
+     "url": "https://github.com/TheJustas228/connectocopter",
+     "label": "direct"
+    }
+   ]
   },
   {
    "id": "flight-test-the-fly",
@@ -5379,10 +5593,22 @@
    "headline_null_type": "degree-preserving",
    "retention": 0,
    "retention_method": "floor",
-   "baseline_retention": 0.1206,
+   "baseline_retention": 0.1249,
    "wiring_effect": "helps",
    "quality": "strong",
    "fairness": "fair"
+  },
+  {
+   "study_id": "connectocopter",
+   "label": "Connectocopter: looming escape with the real vs a rewired connectome",
+   "task_family": "body-steering",
+   "headline_null_type": "degree-preserving",
+   "retention": 0,
+   "retention_method": "ratio",
+   "baseline_retention": 1,
+   "wiring_effect": "helps",
+   "quality": "weak",
+   "fairness": "unfair"
   },
   {
    "study_id": "flight-test-the-fly",
