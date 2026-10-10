@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "run:5f4777c5-2eee-4176-8b6c-9e569c6459c6",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-09T09:31:07Z",
+      "completed_at": "2026-10-09T10:27:14Z",
+      "title": "Eleventh check: the relay neurons read by firing rate, and what the map leaves out, in numbers",
+      "summary": "Our pre-registered brain-only relay test, read by firing rate: silencing the relays lowered the turn command to about 60-70% of normal, but silencing random active neurons also moved it, so this is not yet specific to the relays (\"Silencing other active neurons also changed the turn command, so this relay result is not specific to the relay neurons.\"; the left normal range is 1 Hz wide and the random control one draw per eye; one model, not a real fly). A table of what the map leaves out (8 parts, one number and one source each), the flyvis code read, 4 new entries (125), 44 control studies and 56 videos.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-09-run11/",
+      "entrypoint": "reports/2026-10-09-run11/index.html"
+    },
+    {
       "run_id": "run:3d4593e7-43ca-433b-8fae-3a6cf3af2207",
       "status": "completed",
       "answer_change": "meaningful_change",

@@ -1,16 +1,16 @@
 {
  "schema_version": "1.0.0",
  "dataset": "Digital Fly Lab controls ledger",
- "version": "2026-10-08-run10",
- "generated_at": "2026-10-08T10:19:06Z",
- "run_id": "run:3d4593e7-43ca-433b-8fae-3a6cf3af2207",
- "as_of": "2026-10-08",
+ "version": "2026-10-09-run11",
+ "generated_at": "2026-10-09T10:04:37Z",
+ "run_id": "run:5f4777c5-2eee-4176-8b6c-9e569c6459c6",
+ "as_of": "2026-10-09",
  "answer": {
-  "one_line": "Sometimes: fly wiring beat scrambled wiring in 16 of 34 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (10).",
-  "short": "Of 43 control studies in our catalogue, 34 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 16, makes no difference in 8, does worse in 2, gives mixed results in 7 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+  "one_line": "Sometimes: fly wiring beat scrambled wiring in 17 of 35 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (10).",
+  "short": "Of 44 control studies in our catalogue, 35 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 17, makes no difference in 8, does worse in 2, gives mixed results in 7 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
   "counts": {
-   "studies": 43,
-   "with_wiring_null": 34,
+   "studies": 44,
+   "with_wiring_null": 35,
    "by_family": {
     "reflex-circuit": {
      "helps": 3,
@@ -20,7 +20,7 @@
      "not_tested": 0
     },
     "sensory-model": {
-     "helps": 2,
+     "helps": 3,
      "no_difference": 0,
      "worse": 0,
      "mixed": 0,
@@ -1033,6 +1033,125 @@
    ]
   },
   {
+   "id": "flyvl-d6-motion",
+   "name": "Frozen fly connectome as a motion encoder: rewired wiring loses, a Reichardt detector wins",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "sensory-model",
+   "loop": "offline",
+   "wiring": {
+    "dataset": "MaleCNS",
+    "release": "v1.0",
+    "scope": "whole CNS, 166,700 neurons (frozen weights)"
+   },
+   "trained_parts": "trained patch encoder into the input neurons and a trained readout; connectome weights frozen",
+   "metric": {
+    "name": "test accuracy, 4-direction low-contrast drift (mean of 3 seeds)",
+    "unit": "fraction correct",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 0.9074,
+    "n": 3,
+    "spread": "per seed 0.943, 0.901, 0.878",
+    "source": "014a2ae results/d6/verdict.json mean.C"
+   },
+   "floor": {
+    "label": "chance for 4 directions",
+    "value": 0.25,
+    "source": "4-way classification (PROTOCOL_D6_translation.md, Byun11/flyvl 014a2ae)"
+   },
+   "arms": [
+    {
+     "arm_id": "rewired-L",
+     "null_type": "degree-preserving",
+     "label": "Rewired-L: postsynaptic ends permuted within blocks; degree, weights and signs kept (flygrapher.rewire_blocks)",
+     "value": 0.5981,
+     "n": 3,
+     "samples": 3,
+     "spread": null,
+     "readout_refit": true,
+     "source": "014a2ae results/d6/verdict.json mean.D; C-D +0.309, 95% CI 0.287-0.332",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "hr-correlator",
+     "null_type": "no-brain-baseline",
+     "label": "Hassenstein-Reichardt correlator (classical motion detector)",
+     "value": 0.9978,
+     "n": 3,
+     "samples": 3,
+     "spread": null,
+     "readout_refit": true,
+     "source": "014a2ae results/d6/verdict.json HR (0.998, 0.999, 0.997)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "headline_arm": "rewired-L",
+    "best_null_arm": "rewired-L",
+    "retention": 0.5295,
+    "retention_method": "floor",
+    "baseline_arm": "hr-correlator",
+    "baseline_retention": 1.1375,
+    "difference": 0.3093,
+    "ci": [
+     0.287,
+     0.332
+    ],
+    "p": null,
+    "stat_note": "Author statistics: per-seed real-minus-rewired differences with a 95% CI over 3 seeds. A rerun of the same harness (results/d10a/verdict.json a1.M0) gave real 0.735 vs rewired 0.623 (+0.111); the author's stricter nulls (D10-A) attribute the gap to input-layer locality and per-neuron E/I input make-up that Rewired-L did not keep. The classical baseline beats the real wiring."
+   },
+   "wiring_effect": "helps",
+   "baseline_beaten": "no",
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": false,
+    "tuned_equally": true,
+    "null_samples": 3,
+    "has_no_brain_baseline": true,
+    "verdict": "fair",
+    "reason": "Same harness, budget and seeds for real and rewired graphs (PROTOCOL_D6_translation.md); one rewired graph per seed; the rewiring does not keep input-layer locality or E/I make-up, which the author's own follow-up shows explains the gap."
+   },
+   "quality": {
+    "n_per_arm": 3,
+    "held_out": true,
+    "uncertainty_reported": true,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "recomputed_by_us": false,
+    "grade": "strong",
+    "reason": "Pre-registered, committed per-seed result files and an explicit classical baseline; only 3 seeds and the author reports up to about 7 points of rerun variation; not recomputed by us."
+   },
+   "extraction": "files",
+   "one_line": "Real wiring beat a rewired copy on motion, but a classical detector beat both and stricter controls erased the gap.",
+   "commit": "014a2ae3f51b3b49d3dfca626c3cb589de828297",
+   "checked_at": "2026-10-09T09:40:00Z",
+   "sources": [
+    {
+     "url": "https://github.com/Byun11/flyvl/blob/014a2ae3f51b3b49d3dfca626c3cb589de828297/results/d6/verdict.json",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/Byun11/flyvl/blob/014a2ae3f51b3b49d3dfca626c3cb589de828297/results/d10a/verdict.json",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/Byun11/flyvl/blob/014a2ae3f51b3b49d3dfca626c3cb589de828297/flyvl/flygrapher.py#L184-L196",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/Byun11/flyvl/blob/014a2ae3f51b3b49d3dfca626c3cb589de828297/docs/FINDINGS.md",
+     "label": "direct"
+    }
+   ]
+  },
+  {
    "id": "synaptera",
    "name": "Synaptera: landing descending-neuron response vs a shuffled connectome (open loop)",
    "evidence_grade": "B",
@@ -1328,7 +1447,7 @@
     }
    ],
    "effect": {
-    "stat_note": "Pre-registered 2026-10-05T09:42:47Z (design published in https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/#prereg-heading; deviations 3-5 logged before any body run: the brain trials took about 160 s, so the pre-registered time limits left real seeds 0-1 and shuffles [3, 4] per side). Reading by the pre-registered rule: 'the turn away needs the wiring'. Real runs turned away in 4 of 4 (threshold 10 deg over the floor), shuffles in 0 of 3, random in 3 of 6. Floor-referenced retention D 0.0, random 0.1206. Clip share 0.0. Brain gate (fly67's rule) reproduced in our Brian2 run. The rate-to-drive mapping is ours (hand-made, not fitted); the 0.8 forward drive is external. 6 Oct 2026 brain-level follow-up (pre-registered 2026-10-06T09:42:54Z; fast Poisson input validated against the 5 Oct trials, gate V passed): boundary-preserving scramble B: turn command 'needs-wiring-in-between' (LI retention -0.0853, DNa02 rule 0 of 6), escape signal 'partly' (GF retention 0.6887); giant fibre silenced: 'steering-survives-gf-silencing'; gain-matched G: 'needs-wiring-even-at-same-activity' (m 3, k 0); plain D shuffles: spikes outside the stimulated set 0.072 of real. Brain-level readings do not enter the effect; the 6 Oct drives that differ from the floor waited for body runs (run on 8 Oct 2026). 8 Oct 2026 (pre-registered 2026-10-08T09:45:48Z): the 5 Oct floor run F repeated exactly in a new session; real-brain body runs turned away in 6 of 6; reading 'the turn away needs the wiring'. With the escape neuron silenced, the fly still turned away. (2 of 2 body runs.) With only the inside of the map scrambled, the fly turned away in 0 of 6 runs. Brain level (not in the effect): We lowered the input to the looming neurons step by step, from 80 to 10 spikes per second each. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. The escape neuron started firing at the same input as the turn command. With one relay neuron (PVLP141) silenced, the turn command stayed. With all 21-23 relay neurons between the looming neurons and the turn neuron silenced, the turn command stayed. One model (Shiu et al. LIF on FlyWire v783), brain only; the input is a rate we set for every LC4/LPLC2 of one eye, not a measured response to a real shadow; 'silenced' means the neuron's output synapses were removed; not a real fly.",
+    "stat_note": "Pre-registered 2026-10-05T09:42:47Z (design published in https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/#prereg-heading; deviations 3-5 logged before any body run: the brain trials took about 160 s, so the pre-registered time limits left real seeds 0-1 and shuffles [3, 4] per side). Reading by the pre-registered rule: 'the turn away needs the wiring'. Real runs turned away in 4 of 4 (threshold 10 deg over the floor), shuffles in 0 of 3, random in 3 of 6. Floor-referenced retention D 0.0, random 0.1206. Clip share 0.0. Brain gate (fly67's rule) reproduced in our Brian2 run. The rate-to-drive mapping is ours (hand-made, not fitted); the 0.8 forward drive is external. 6 Oct 2026 brain-level follow-up (pre-registered 2026-10-06T09:42:54Z; fast Poisson input validated against the 5 Oct trials, gate V passed): boundary-preserving scramble B: turn command 'needs-wiring-in-between' (LI retention -0.0853, DNa02 rule 0 of 6), escape signal 'partly' (GF retention 0.6887); giant fibre silenced: 'steering-survives-gf-silencing'; gain-matched G: 'needs-wiring-even-at-same-activity' (m 3, k 0); plain D shuffles: spikes outside the stimulated set 0.072 of real. Brain-level readings do not enter the effect; the 6 Oct drives that differ from the floor waited for body runs (run on 8 Oct 2026). 8 Oct 2026 (pre-registered 2026-10-08T09:45:48Z): the 5 Oct floor run F repeated exactly in a new session; real-brain body runs turned away in 6 of 6; reading 'the turn away needs the wiring'. With the escape neuron silenced, the fly still turned away. (2 of 2 body runs.) With only the inside of the map scrambled, the fly turned away in 0 of 6 runs. Brain level (not in the effect): We lowered the input to the looming neurons step by step, from 80 to 10 spikes per second each. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. The escape neuron started firing at the same input as the turn command. With one relay neuron (PVLP141) silenced, the turn command stayed (by the left/right contrast (8 Oct)). With all 21-23 relay neurons between the looming neurons and the turn neuron silenced, the turn command stayed (by the left/right contrast (8 Oct)). One model (Shiu et al. LIF on FlyWire v783), brain only; the input is a rate we set for every LC4/LPLC2 of one eye, not a measured response to a real shadow; 'silenced' means the neuron's output synapses were removed; not a real fly. 9 Oct 2026 (brain only, not part of the effect computation): far-side DNa02 rate vs 3 intact runs per eye (normal range L 24.0-25.0 Hz, R 41.0-44.0 Hz); PVLP141 fell (L 70%, R 65%); excitatory two-step relays fell (L 65%, R 60%); inhibitory two-step relays sides differ (L unclear, 110%; R rose, 125%); random active neurons sides differ (L rose, 105%; R within normal range, 100%); the 8 Oct all-relays test re-read sides differ (L rose, 105%; R fell, 65%); summary: 'Silencing other active neurons also changed the turn command, so this relay result is not specific to the relay neurons.' Pre-registered 2026-10-09T09:36:50Z (design and every trial: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-09-run11/#relays-heading).",
     "ci": null,
     "p": null,
     "headline_arm": "D-degree-preserving",
@@ -5573,6 +5692,18 @@
    "wiring_effect": "helps",
    "quality": "weak",
    "fairness": "unfair"
+  },
+  {
+   "study_id": "flyvl-d6-motion",
+   "label": "Frozen fly connectome as a motion encoder: rewired wiring loses, a Reichardt detector wins",
+   "task_family": "sensory-model",
+   "headline_null_type": "degree-preserving",
+   "retention": 0.5295,
+   "retention_method": "floor",
+   "baseline_retention": 1.1375,
+   "wiring_effect": "helps",
+   "quality": "strong",
+   "fairness": "fair"
   },
   {
    "study_id": "byo-flygym-body",

@@ -2,6 +2,36 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-09-run11-relays-rate",
+      "changed_at": "2026-10-09T10:27:14Z",
+      "summary": "Which relays carry the turn? Read by firing rate (our own pre-registered test, brain only, 9 Oct 2026): silencing the relays lowered the turn command to about 60-70% of normal, but silencing random active neurons also moved it, so this is not yet specific to the relays. Silencing other active neurons also changed the turn command, so this relay result is not specific to the relay neurons. With one relay neuron (PVLP141) silenced, the turn command fell to about 70% (left eye) / 65% (right eye) of normal (3 runs per eye). With the 17 (left eye) / 20 (right eye) relay neurons that excite the turn neuron silenced, the turn command fell to about 65% (left eye) / 60% (right eye) of normal (3 runs per eye). The left eye's normal range is only 1 Hz wide (24-25 Hz) and the random control is one draw per eye. Caveat in the chart: One model (Shiu et al. LIF on FlyWire v783), brain only; the input is a rate we set for every LC4/LPLC2 of one eye, not a measured response to a real shadow; 'silenced' means the neuron's output synapses were removed; the normal range comes from 3 runs per eye; not a real fly. The chart replaces the 8 Oct disclosure; the 8 Oct sentences stay only with the label \"by the left/right contrast (8 Oct)\".",
+      "path": "/p/digital-fly-catalog/is-it-real/#relays-heading"
+    },
+    {
+      "change_id": "2026-10-09-run11-whats-missing",
+      "changed_at": "2026-10-09T10:27:14Z",
+      "summary": "New on How it works: What the map leaves out. The model is one fly's wiring map: 138,639 neurons and 15,091,983 connections, run with one simple neuron rule. It leaves out electrical synapses (gap junctions), neuropeptides, learning, the different behaviour of different kinds of neurons (including neurons that do not spike), the differences between flies and over a fly's life, and the nerve cord and body. So it can show what the wiring alone does, not everything a fly's brain does. Eight parts with one number and one source each, checked 9 Oct 2026; linked from \"Is it a brain or just a map?\" on Is it real?.",
+      "path": "/p/digital-fly-catalog/how-it-works/#missing-heading"
+    },
+    {
+      "change_id": "2026-10-09-run11-ledger",
+      "changed_at": "2026-10-09T10:27:14Z",
+      "summary": "Controls ledger (9 Oct 2026): 44 studies, 35 with a wiring null: helps 17, no difference 8, worse 2, mixed 7, not yet scored 1. New: FlyVL (helps by the fixed rules, fair and strong, but a classical motion detector beats both real and rewired wiring). No scoring rule changed.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed-heading"
+    },
+    {
+      "change_id": "2026-10-09-run11-entries",
+      "changed_at": "2026-10-09T10:27:14Z",
+      "summary": "4 new entries (125): FlyVL (A), Flappy Fly (B), FlyWire Playground (B), Let It Flyppen (C); fly-with-me added commits (grade unchanged, trained-class re-check queued). Gallery: 56 videos, Idor's Spanish explainer added. All 21 verdicts re-checked; the dzuma \"learns to hack\" video at approximately 54,805 views (YouTube search page, 9 Oct 2026), still U.",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-10-09-run11-report",
+      "changed_at": "2026-10-09T10:27:14Z",
+      "summary": "Research report of the eleventh check (9 Oct 2026): relays by firing rate with every run, What the map leaves out, the flyvis code read, lead scan, new entries, method and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-09-run11/"
+    },
+    {
       "change_id": "2026-10-08-run10-how-strong",
       "changed_at": "2026-10-08T11:12:14Z",
       "summary": "How strong must the shadow be? (our own pre-registered test, brain only, 8 Oct 2026): We lowered the input to the looming neurons step by step, from 80 to 10 spikes per second each. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. The escape neuron started firing at the same input as the turn command. A second seed agreed. Caveat in the chart: one model, brain only; the input is a rate we set for every LC4/LPLC2 of one eye, not a measured response to a real shadow; not a real fly; no measured real-fly rate found to compare. New chart and share card.",
@@ -10,7 +40,7 @@
     {
       "change_id": "2026-10-08-run10-relays",
       "changed_at": "2026-10-08T11:12:14Z",
-      "summary": "Relays silenced (brain only, 8 Oct 2026): With one relay neuron (PVLP141) silenced, the turn command stayed. With all 21-23 relay neurons between the looming neurons and the turn neuron silenced, the turn command stayed. Disclosed beside them: 'stayed' means the pre-registered turn rule still passed; the ratio we used saturates because the near-side turn neuron is always at 0 Hz; with PVLP141 silenced the far-side rate did fall (left 25 to 17 Hz, right 41 to 24 Hz).",
+      "summary": "Relays silenced (brain only, 8 Oct 2026): With one relay neuron (PVLP141) silenced, the turn command stayed (by the left/right contrast (8 Oct)). With all 21-23 relay neurons between the looming neurons and the turn neuron silenced, the turn command stayed (by the left/right contrast (8 Oct)). Disclosed beside them: 'stayed' means the pre-registered turn rule still passed; the ratio we used saturates because the near-side turn neuron is always at 0 Hz; with PVLP141 silenced the far-side rate did fall (left 25 to 17 Hz, right 41 to 24 Hz).",
       "path": "/p/digital-fly-catalog/is-it-real/#relays-heading"
     },
     {

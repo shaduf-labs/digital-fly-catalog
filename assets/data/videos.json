@@ -3,7 +3,7 @@
  "collection": "Digital Fly Lab video gallery",
  "publisher": "Digital Fly Lab (independent Shaduf resource)",
  "checked_at": "2026-10-06",
- "record_count": 55,
+ "record_count": 56,
  "schema": "videos.schema.json",
  "rules": [
   "evidence_grade is copied from the catalogue entry (projects.json) at build time; the catalogue record is authoritative and a video never changes a grade.",
@@ -47,9 +47,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:10Z"
+    "checked_at": "2026-10-09T09:33:12Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -87,9 +87,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:10Z"
+    "checked_at": "2026-10-09T09:33:12Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -127,9 +127,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:11Z"
+    "checked_at": "2026-10-09T09:33:12Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -167,9 +167,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:11Z"
+    "checked_at": "2026-10-09T09:33:12Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -207,9 +207,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:11Z"
+    "checked_at": "2026-10-09T09:33:13Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -247,9 +247,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:12Z"
+    "checked_at": "2026-10-09T09:33:13Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -287,9 +287,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:13Z"
+    "checked_at": "2026-10-09T09:33:14Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -327,9 +327,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:13Z"
+    "checked_at": "2026-10-09T09:33:14Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -367,9 +367,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:13Z"
+    "checked_at": "2026-10-09T09:33:14Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -407,9 +407,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:13Z"
+    "checked_at": "2026-10-09T09:33:14Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -447,9 +447,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-08T09:45:14Z"
+    "checked_at": "2026-10-09T09:33:15Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -487,9 +487,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-08T09:45:21Z"
+    "checked_at": "2026-10-09T09:33:19Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -527,9 +527,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-08T09:45:20Z"
+    "checked_at": "2026-10-09T09:33:19Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -576,9 +576,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-08T09:45:20Z"
+    "checked_at": "2026-10-09T09:33:19Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -616,9 +616,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:19Z"
+    "checked_at": "2026-10-09T09:33:18Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -656,9 +656,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:21Z"
+    "checked_at": "2026-10-09T09:33:19Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -696,9 +696,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-08T09:45:22Z"
+    "checked_at": "2026-10-09T09:33:20Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -736,9 +736,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:20Z"
+    "checked_at": "2026-10-09T09:33:19Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -776,9 +776,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:23Z"
+    "checked_at": "2026-10-09T09:33:20Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -816,9 +816,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:22Z"
+    "checked_at": "2026-10-09T09:33:20Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -856,9 +856,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:23Z"
+    "checked_at": "2026-10-09T09:33:21Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -896,9 +896,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:23Z"
+    "checked_at": "2026-10-09T09:33:21Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -936,9 +936,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:23Z"
+    "checked_at": "2026-10-09T09:33:21Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "ru"
   },
   {
@@ -970,15 +970,15 @@
    "covers": [],
    "verdict_anchor": null,
    "thumbnail_url": "https://i.ytimg.com/vi/m5Q_aIO_K8o/hqdefault.jpg",
-   "views": 37310,
-   "views_date": "2026-10-08",
+   "views": 54805,
+   "views_date": "2026-10-09",
    "playback": "link-only",
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T10:04:07Z"
+    "checked_at": "2026-10-09T09:33:21Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1019,9 +1019,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:15Z"
+    "checked_at": "2026-10-09T09:33:15Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1059,9 +1059,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-08T09:45:15Z"
+    "checked_at": "2026-10-09T09:33:15Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1099,9 +1099,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:15Z"
+    "checked_at": "2026-10-09T09:33:15Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1139,9 +1139,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:15Z"
+    "checked_at": "2026-10-09T09:33:16Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1179,9 +1179,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-08T09:45:21Z"
+    "checked_at": "2026-10-09T09:33:19Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1219,9 +1219,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:16Z"
+    "checked_at": "2026-10-09T09:33:16Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1259,9 +1259,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:16Z"
+    "checked_at": "2026-10-09T09:33:16Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1299,9 +1299,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:16Z"
+    "checked_at": "2026-10-09T09:33:16Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1339,9 +1339,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:17Z"
+    "checked_at": "2026-10-09T09:33:16Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1379,9 +1379,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:17Z"
+    "checked_at": "2026-10-09T09:33:16Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1419,9 +1419,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:17Z"
+    "checked_at": "2026-10-09T09:33:16Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1459,9 +1459,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-08T09:45:17Z"
+    "checked_at": "2026-10-09T09:33:16Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1499,9 +1499,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:18Z"
+    "checked_at": "2026-10-09T09:33:16Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1539,9 +1539,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:18Z"
+    "checked_at": "2026-10-09T09:33:16Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1581,9 +1581,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:18Z"
+    "checked_at": "2026-10-09T09:33:17Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1621,9 +1621,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:18Z"
+    "checked_at": "2026-10-09T09:33:17Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1661,9 +1661,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:18Z"
+    "checked_at": "2026-10-09T09:33:17Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1701,9 +1701,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:18Z"
+    "checked_at": "2026-10-09T09:33:17Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1741,9 +1741,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:18Z"
+    "checked_at": "2026-10-09T09:33:17Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1781,9 +1781,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:18Z"
+    "checked_at": "2026-10-09T09:33:17Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1821,9 +1821,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:18Z"
+    "checked_at": "2026-10-09T09:33:17Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1861,9 +1861,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:19Z"
+    "checked_at": "2026-10-09T09:33:17Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1901,9 +1901,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:19Z"
+    "checked_at": "2026-10-09T09:33:18Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1941,9 +1941,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:19Z"
+    "checked_at": "2026-10-09T09:33:18Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -1981,9 +1981,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:19Z"
+    "checked_at": "2026-10-09T09:33:18Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -2021,9 +2021,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:19Z"
+    "checked_at": "2026-10-09T09:33:18Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -2061,9 +2061,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:19Z"
+    "checked_at": "2026-10-09T09:33:18Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -2118,9 +2118,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:20Z"
+    "checked_at": "2026-10-09T09:33:18Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -2171,9 +2171,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:20Z"
+    "checked_at": "2026-10-09T09:33:18Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "en"
   },
   {
@@ -2228,9 +2228,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:23Z"
+    "checked_at": "2026-10-09T09:33:21Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
    "language": "ru"
   },
   {
@@ -2285,9 +2285,62 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-08T09:45:23Z"
+    "checked_at": "2026-10-09T09:33:21Z"
    },
-   "last_checked": "2026-10-08",
+   "last_checked": "2026-10-09",
+   "language": "es"
+  },
+  {
+   "video_id": "idor-internet-torturando-mosca-es",
+   "page_anchor": "/p/digital-fly-catalog/gallery/#v-idor-internet-torturando-mosca-es",
+   "group": "g-reposts",
+   "title": "Internet está torturando una mosca",
+   "display_title": "Internet está torturando una mosca (Spanish)",
+   "title_note": null,
+   "platform": "youtube",
+   "url": "https://www.youtube.com/watch?v=WWBIqcXU560",
+   "file_url": null,
+   "creator": "Idor",
+   "upload_status": "commentary",
+   "original_of": null,
+   "reposted_as": [],
+   "uploader_note": "Third-party explainer in Spanish; its description names the Minecraft, Doom, Mario 64 and trading demos.",
+   "publish_date": "2026-10-06",
+   "duration": null,
+   "duration_s": null,
+   "format": "horizontal",
+   "shows": "Spanish explainer of the wave of fly-brain game demos (Minecraft, Doom, Mario 64, trading), going by its description.",
+   "does_not_show": "Commentary; check each project's own grade. Its description says Google made the fly connectome public; the FlyWire maps are consortium releases.",
+   "summary_basis": "YouTube title and description (watch page read 2026-10-08 without a cookie; player withheld, video not watched), oEmbed 2026-10-09",
+   "catalogue_id": null,
+   "catalogue_name": null,
+   "evidence_grade": null,
+   "grade_status": "commentary: see the projects it covers",
+   "covers": [
+    {
+     "catalogue_id": "doomfly",
+     "evidence_grade": "B"
+    },
+    {
+     "catalogue_id": "fly64",
+     "evidence_grade": "B"
+    },
+    {
+     "catalogue_id": "stonkfly",
+     "evidence_grade": "B"
+    }
+   ],
+   "verdict_anchor": null,
+   "thumbnail_url": "https://i.ytimg.com/vi/WWBIqcXU560/hqdefault.jpg",
+   "views": 567371,
+   "views_date": "2026-10-09",
+   "playback": "link-only",
+   "link_status": {
+    "status": "ok",
+    "http_code": 200,
+    "checked_at": "2026-10-09T09:45:03Z"
+   },
+   "last_checked": "2026-10-09",
    "language": "es"
   }
  ]

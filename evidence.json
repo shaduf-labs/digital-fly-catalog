@@ -2020,6 +2020,86 @@
       "accessed_at": "2026-10-08T09:50:00Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "loom4-relays-rate-run11",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-09-run11/#relays-heading",
+      "title": "Digital Fly Lab: relays read by firing rate, 9 Oct 2026",
+      "claim": "Pre-registered 2026-10-09T09:36:50Z, 30 brain-only runs: normal range L 24-25 Hz, R 41-44 Hz; PVLP141 fell (about 70% / 65% of normal); excitatory relays fell (65% / 60%); inhibitory relays sides differ (unclear, 110% / rose, 125%); random active neurons sides differ (rose, 105% / within range); 8 Oct all-relays re-read sides differ (105% / 65%); summary: not specific to the relay neurons.",
+      "accessed_at": "2026-10-09T10:02:16Z",
+      "relation": "limits",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "innexins-pmc12062127-run11",
+      "source_type": "paper",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12062127/",
+      "title": "Innexin 7 in the antennal lobe (Frontiers in Neural Circuits 2025)",
+      "claim": "Eight innexin (gap-junction) genes in the Drosophila genome, four with detectable mRNA in brain neurons; the FlyWire map has only chemical synapses, so the model has 0 electrical links.",
+      "accessed_at": "2026-10-09T09:40:24Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "neuropeptides-pmc7920058-run11",
+      "source_type": "paper",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7920058/",
+      "title": "Nässel and Zandawala 2021, neuropeptide review (Int J Mol Sci)",
+      "claim": "More than 50 neuropeptide precursors and their receptors are known in Drosophila (the review's statement); none are in the Shiu et al. model.",
+      "accessed_at": "2026-10-09T09:39:42Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "nt-prediction-pmc11106717-run11",
+      "source_type": "paper",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11106717/",
+      "title": "Eckstein et al. 2024, transmitter prediction from electron micrographs (Cell)",
+      "claim": "Predicted transmitter types: 87% accuracy per synapse, 94% per neuron, 91% per known cell type; the prediction sets each connection's sign in the model.",
+      "accessed_at": "2026-10-09T09:40:11Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "hemibrain-consistency-pmc11446831-run11",
+      "source_type": "paper",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11446831/",
+      "title": "Schlegel et al. 2024, whole-brain annotation and cross-dataset comparison (Nature)",
+      "claim": "53% of the connections seen in the hemibrain were also found in FlyWire; connections of more than ten synapses were found again more than 90% of the time.",
+      "accessed_at": "2026-10-09T09:40:43Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "banc-pmc13518251-run11",
+      "source_type": "paper",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13518251/",
+      "title": "Bates et al. 2026, BANC brain-and-nerve-cord connectome (Nature)",
+      "claim": "The fly brain has about 140,000 neurons and the ventral nerve cord about 20,000; the nerve cord is not in the brain model.",
+      "accessed_at": "2026-10-09T09:41:12Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyvl-run11",
+      "source_type": "code",
+      "source_url": "https://github.com/Byun11/flyvl/blob/014a2ae3f51b3b49d3dfca626c3cb589de828297/results/d6/verdict.json",
+      "title": "FlyVL (Byun11/flyvl)",
+      "claim": "At 014a2ae: real MaleCNS wiring 90.7% vs a degree-preserving rewired copy 59.8% on 4-direction low-contrast motion (3 seeds, +0.309, 95% CI 0.287-0.332); a Hassenstein-Reichardt correlator scores 99.8%; the author's stricter nulls remove the gap.",
+      "accessed_at": "2026-10-09T09:40:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "dzuma-hack-views-run11",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=m5Q_aIO_K8o",
+      "title": "Can A Conscious Fly Brain Learn how to Hack? (dzuma), view count 9 Oct 2026",
+      "claim": "Approximately 54,805 views on 9 Oct 2026 (YouTube search page, no cookie); still no code linked; grade U.",
+      "accessed_at": "2026-10-09T09:34:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
     }
   ]
 }

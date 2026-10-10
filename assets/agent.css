@@ -1086,3 +1086,38 @@
 [data-agent-document] .dfl-svg .cl-run { fill: var(--dfl-green-bg); stroke: var(--dfl-green); stroke-width: 1.2; }
 [data-agent-document] .dfl-svg .cl-read { fill: var(--dfl-blue-bg); stroke: var(--dfl-modelled); stroke-width: 1; }
 [data-agent-document] .dfl-svg .cl-ctrl { fill: #fff; stroke: var(--dfl-fx-mixed); stroke-width: 1.4; stroke-dasharray: 4 3; }
+
+/* ---- run 11 (2026-10-09): relays by firing rate, What the map leaves out */
+[data-agent-document] .dfl-svg .lr-band { fill: var(--dfl-blue-bg); }
+[data-agent-document] .dfl-svg .lr-edge { stroke: var(--dfl-modelled); stroke-width: 1; stroke-dasharray: 2 2; }
+[data-agent-document] .dfl-svg .lr-dot { fill: var(--dfl-ink); stroke: #fff; stroke-width: 1; }
+[data-agent-document] .dfl-svg .lr-ref { fill: var(--dfl-modelled); stroke: #fff; stroke-width: 1; }
+[data-agent-document] .dfl-svg .lr-open { fill: #fff; stroke: var(--dfl-ink); stroke-width: 1.8; }
+[data-agent-document] .dfl-loom4.dfl-tall { max-width: 26em; }
+[data-agent-document] .dfl-relaylead { margin: 14px 0 18px; padding: 14px 18px 6px; border: 1px solid var(--dfl-line-strong); border-left: 4px solid var(--dfl-amber); border-radius: 0 var(--dfl-radius) var(--dfl-radius) 0; background: var(--dfl-amber-bg); }
+[data-agent-document] .dfl-relaylead p, [data-agent-document] .dfl-relaylead li { margin: 0 0 8px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-relaylead ul { margin: 0 0 8px; padding-left: 1.2em; }
+[data-agent-document] .dfl-relaylead q { font-family: var(--serif, Georgia, serif); color: var(--dfl-ink); }
+[data-agent-document] .dfl-relayfig .dfl-relaysent { margin: 0 0 8px; padding-left: 1.2em; }
+[data-agent-document] .dfl-relayfig .dfl-relaysent li { margin: 0 0 4px; overflow-wrap: break-word; }
+[data-agent-document] .dfl p.dfl-answerline { padding: 10px 14px; border-left: 4px solid var(--dfl-blue); background: var(--dfl-blue-bg); border-radius: 0 6px 6px 0; color: var(--dfl-ink); overflow-wrap: break-word; }
+[data-agent-document] .dfl ul.dfl-modelnums { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 10px 0 14px; padding: 0; list-style: none; }
+[data-agent-document] .dfl ul.dfl-modelnums li { margin: 0; color: var(--dfl-text); font-size: 13px; }
+[data-agent-document] .dfl ul.dfl-modelnums strong { display: block; color: var(--dfl-ink); font-size: 18px; font-variant-numeric: tabular-nums; }
+[data-agent-document] .dfl .table-scroll.dfl-mtable table { min-width: 0; }
+[data-agent-document] .dfl-mtable th[scope="row"] small { display: block; margin-top: 2px; font-weight: 400; color: var(--dfl-muted); font-size: 12px; }
+[data-agent-document] .dfl-mtable td, [data-agent-document] .dfl-mtable th { overflow-wrap: break-word; vertical-align: top; }
+[data-agent-document] .dfl-mtable .dfl-mnum { display: block; font-size: 15px; font-variant-numeric: tabular-nums; }
+[data-agent-document] .dfl-tag.is-in-no { background: var(--dfl-red-bg); color: var(--dfl-red); }
+[data-agent-document] .dfl-tag.is-in-partly { background: var(--dfl-amber-bg); color: var(--dfl-amber); }
+[data-agent-document] .dfl-tag.is-in-yes { background: var(--dfl-green-bg); color: var(--dfl-green); }
+@container shaduf-document (max-width: 40em) {
+  [data-agent-document] .dfl-mtable thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  [data-agent-document] .dfl-mtable table, [data-agent-document] .dfl-mtable tbody, [data-agent-document] .dfl-mtable tr, [data-agent-document] .dfl-mtable td, [data-agent-document] .dfl-mtable th[scope="row"] { display: block; width: auto; }
+  [data-agent-document] .dfl-mtable tr { padding: 10px 0; border-bottom: 1px solid var(--dfl-line); }
+  [data-agent-document] .dfl-mtable td, [data-agent-document] .dfl-mtable th[scope="row"] { padding: 3px 0; border: 0; }
+  [data-agent-document] .dfl-mtable caption { display: block; width: auto; }
+  [data-agent-document] .dfl-mtable td::before { content: attr(data-label); display: block; color: var(--dfl-muted); font-size: 11px; font-weight: 650; text-transform: uppercase; letter-spacing: .03em; }
+}
+[data-agent-document] .dfl-mtable th[scope="row"] { font-family: var(--dfl-ui); font-size: 13px; font-weight: 650; text-transform: none; letter-spacing: normal; color: var(--dfl-ink); }
+[data-agent-document] .dfl-mtable th[scope="row"] small { text-transform: none; letter-spacing: normal; }
