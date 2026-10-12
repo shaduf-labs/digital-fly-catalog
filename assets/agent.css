@@ -878,7 +878,7 @@
 [data-agent-document] .dfl-fxlist .dfl-tag { margin-right: 4px; }
 [data-agent-document] .dfl-retention .dfl-tall { max-width: 26em; }
 
-/* ---- run 5 (2026-10-01): our fair test (retention + activity), Doom autopilot dot plot, data tables, try-it pointer */
+/* ---- run 5 (2026-10-01): our reflex test (retention + activity), Doom autopilot dot plot, data tables, try-it pointer */
 [data-agent-document] .dfl-svg .zone-silent { fill: var(--dfl-soft); }
 [data-agent-document] .dfl-svg .mean-tick { stroke: var(--dfl-ink); stroke-width: 2.5; stroke-linecap: round; }
 [data-agent-document] .dfl-svg .ci-line { stroke: var(--dfl-muted); stroke-width: 1.5; }
@@ -1121,3 +1121,16 @@
 }
 [data-agent-document] .dfl-mtable th[scope="row"] { font-family: var(--dfl-ui); font-size: 13px; font-weight: 650; text-transform: none; letter-spacing: normal; color: var(--dfl-ink); }
 [data-agent-document] .dfl-mtable th[scope="row"] small { text-transform: none; letter-spacing: normal; }
+/* run 12: "not run" note (flyvis layout test, 10 Oct 2026); no chart */
+[data-agent-document] .dfl-notrun { margin: 18px 0 22px; padding: 14px 18px 8px; border: 1px solid var(--dfl-line-strong); border-left: 4px solid var(--dfl-muted); border-radius: 0 var(--dfl-radius) var(--dfl-radius) 0; background: var(--dfl-soft); }
+[data-agent-document] .dfl-notrun h3, [data-agent-document] .dfl-notrun h4 { margin: 0 0 8px; }
+[data-agent-document] .dfl-notrun p { margin: 0 0 10px; overflow-wrap: break-word; }
+[data-agent-document] .dfl-notrun .dfl-nr-answer { padding: 8px 12px; border-left: 3px solid var(--dfl-ink); background: #fff; color: var(--dfl-ink); }
+[data-agent-document] .dfl-nr-steps { margin: 0 0 12px; padding: 0; list-style: none; counter-reset: nr; }
+[data-agent-document] .dfl-nr-steps li { position: relative; margin: 0 0 8px; padding: 0 0 0 2.2em; overflow-wrap: break-word; counter-increment: nr; }
+[data-agent-document] .dfl-nr-steps li::before { content: counter(nr); position: absolute; left: 0; top: 0; width: 1.5em; height: 1.5em; border-radius: 50%; background: var(--dfl-line-strong); color: var(--dfl-ink); font-size: 12px; font-weight: 650; line-height: 1.5em; text-align: center; }
+[data-agent-document] .dfl-nr-steps li.nr-done::before { background: var(--dfl-green-bg); color: var(--dfl-green); }
+[data-agent-document] .dfl-nr-steps li.nr-fail::before { background: var(--dfl-red-bg); color: var(--dfl-red); }
+[data-agent-document] .dfl-tag.nr-tag-done { background: var(--dfl-green-bg); color: var(--dfl-green); }
+[data-agent-document] .dfl-tag.nr-tag-fail { background: var(--dfl-red-bg); color: var(--dfl-red); }
+[data-agent-document] .dfl-tag.nr-tag-none { background: #fff; color: var(--dfl-muted); border: 1px dashed var(--dfl-line-strong); }

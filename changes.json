@@ -2,6 +2,36 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-10-run12-flyvis-notrun",
+      "changed_at": "2026-10-10T10:27:52Z",
+      "summary": "Our flyvis layout test (made by us, pre-registered, 10 Oct 2026): does the real wiring layout help a trained fly vision model see which way things move? Not decided: the test did not run, because it needed more memory than our shared machine has. A pre-registered setup check also failed, so no result would have been read. One short simulation of the 45,669-cell model was stopped three times for lack of memory (peak about 3.0 of 3 GiB); the next attempt (planned run 14) needs a leaner simulation loop. We did not retrain the model after shuffling. A model trained on the shuffled wiring might do better, so this asks a narrower question: does this trained model depend on the real layout? A dated note in the sensory part of Does fly wiring help?; no chart, no ledger row.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#flyvis12-heading"
+    },
+    {
+      "change_id": "2026-10-10-run12-entries",
+      "changed_at": "2026-10-10T10:27:52Z",
+      "summary": "Catalogue (10 Oct 2026): 128 entries, 3 new, all grade A, each with its own real-versus-shuffled comparison: fly-distill (no difference from shuffled wiring; a random graph did best), flywire-connectome-scz (mushroom-body model on BANC; mixed, 95.3% vs 95.7%, right side only) and brainlab (only activity differs, about 3.7 times the spikes; no task). Their rows join the controls ledger in a later check; the ledger stays at 44 studies.",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-10-10-run12-fly-with-me",
+      "changed_at": "2026-10-10T10:27:52Z",
+      "summary": "Correction: Fly With Me's \"Is it AI?\" class changes from none to whole-network-or-per-synapse (grade B unchanged): at commit 89b130d its server loads 9,978 trained synapses onto 25 descending neurons by default, contrary to a line in its TRAINING.md. 55 of 94 graded projects now have a trained, learning or search-tuned part.",
+      "path": "/p/digital-fly-catalog/projects/#p-fly-with-me"
+    },
+    {
+      "change_id": "2026-10-10-run12-leads",
+      "changed_at": "2026-10-10T10:27:52Z",
+      "summary": "Lead scan (10 Oct 2026): nothing met the bar for a verdict (0 promoted); all 21 verdicts re-checked (13 code unchanged, 8 no code, 0 changed); the \"learns to hack\" video approximately 61,944 views (YouTube search page, 10 Oct 2026), still U; 56 videos, all available.",
+      "path": "/p/digital-fly-catalog/is-it-real/#week-heading"
+    },
+    {
+      "change_id": "2026-10-10-run12-report",
+      "changed_at": "2026-10-10T10:27:52Z",
+      "summary": "New research report of 10 Oct 2026: the flyvis test step by step (install, setup checks, memory), the 3 new entries, tracking and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-10-run12/"
+    },
+    {
       "change_id": "2026-10-09-run11-relays-rate",
       "changed_at": "2026-10-09T10:27:14Z",
       "summary": "Which relays carry the turn? Read by firing rate (our own pre-registered test, brain only, 9 Oct 2026): silencing the relays lowered the turn command to about 60-70% of normal, but silencing random active neurons also moved it, so this is not yet specific to the relays. Silencing other active neurons also changed the turn command, so this relay result is not specific to the relay neurons. With one relay neuron (PVLP141) silenced, the turn command fell to about 70% (left eye) / 65% (right eye) of normal (3 runs per eye). With the 17 (left eye) / 20 (right eye) relay neurons that excite the turn neuron silenced, the turn command fell to about 65% (left eye) / 60% (right eye) of normal (3 runs per eye). The left eye's normal range is only 1 Hz wide (24-25 Hz) and the random control is one draw per eye. Caveat in the chart: One model (Shiu et al. LIF on FlyWire v783), brain only; the input is a rate we set for every LC4/LPLC2 of one eye, not a measured response to a real shadow; 'silenced' means the neuron's output synapses were removed; the normal range comes from 3 runs per eye; not a real fly. The chart replaces the 8 Oct disclosure; the 8 Oct sentences stay only with the label \"by the left/right contrast (8 Oct)\".",
@@ -250,13 +280,13 @@
     {
       "change_id": "2026-10-02-run6-ledger",
       "changed_at": "2026-10-02T11:00:20Z",
-      "summary": "Controls ledger 2026-10-02-run6: 33 studies, 25 with a wiring null (helps 10, no difference 6, worse 2, mixed 6, not yet scored 1); new study byo-flygym-body (no difference, fair, strong; its 3 shuffles sent identical drives). No scoring rule changed; new display-only arm fields activity_ratio and activity_class; stale notes of our fair test fixed at the source; fly-cartpole updated to commit 077dcba (392.5 vs 390.3 steps, p = 0.48).",
+      "summary": "Controls ledger 2026-10-02-run6: 33 studies, 25 with a wiring null (helps 10, no difference 6, worse 2, mixed 6, not yet scored 1); new study byo-flygym-body (no difference, fair, strong; its 3 shuffles sent identical drives). No scoring rule changed; new display-only arm fields activity_ratio and activity_class; stale notes of our reflex test fixed at the source; fly-cartpole updated to commit 077dcba (392.5 vs 390.3 steps, p = 0.48).",
       "path": "/p/digital-fly-catalog/does-fly-wiring-help/"
     },
     {
       "change_id": "2026-10-02-run6-gain-check",
       "changed_at": "2026-10-02T11:00:20Z",
-      "summary": "Gain check of our 1 Oct fair test: x2.5 matched shuffle 3 (10,138 spikes) but shuffles 4 and 5 fired 24,277 and 29,297, so the arm is not matched on 3 shuffles and tuned_equally stays false; MN9 stayed at 0 Hz in all six gain trials (0.37 to 2.12 times the real activity). Our row stays mixed, unfair and weak.",
+      "summary": "Gain check of our 1 Oct reflex test: x2.5 matched shuffle 3 (10,138 spikes) but shuffles 4 and 5 fired 24,277 and 29,297, so the arm is not matched on 3 shuffles and tuned_equally stays false; MN9 stayed at 0 Hz in all six gain trials (0.37 to 2.12 times the real activity). Our row stays mixed, unfair and weak.",
       "path": "/p/digital-fly-catalog/does-fly-wiring-help/#gain-heading"
     },
     {
@@ -308,9 +338,9 @@
       "path": "/p/digital-fly-catalog/new-and-updated/"
     },
     {
-      "change_id": "2026-10-01-run5-fair-test",
+      "change_id": "2026-10-01-run5-reflex-test",
       "changed_at": "2026-10-01T17:59:48Z",
-      "summary": "Our own pre-registered fair test on Does fly wiring help?: real wiring 85.2 ± 3.56 Hz; degree-preserving and weight shuffles 0 Hz (5 each); boundary-preserving 39 ± 1.22 Hz (retention 0.46); sign shuffle 214 ± 43 Hz with the whole brain ignited; gain check 0 Hz at every gain, not matched. One reflex, one model, one trial per shuffle.",
+      "summary": "Our own pre-registered reflex test on Does fly wiring help?: real wiring 85.2 ± 3.56 Hz; degree-preserving and weight shuffles 0 Hz (5 each); boundary-preserving 39 ± 1.22 Hz (retention 0.46); sign shuffle 214 ± 43 Hz with the whole brain ignited; gain check 0 Hz at every gain, not matched. One reflex, one model, one trial per shuffle.",
       "path": "/p/digital-fly-catalog/does-fly-wiring-help/#fairtest-heading"
     },
     {
@@ -358,7 +388,7 @@
     {
       "change_id": "2026-10-01-run5-report",
       "changed_at": "2026-10-01T17:59:48Z",
-      "summary": "Research report of the fifth check: our fair test with its pre-registered design and deviations, the two verdicts, the views-sorted lead scan, tracking, new entries, method and limits.",
+      "summary": "Research report of the fifth check: our reflex test with its pre-registered design and deviations, the two verdicts, the views-sorted lead scan, tracking, new entries, method and limits.",
       "path": "/p/digital-fly-catalog/reports/2026-10-01-run5/"
     },
     {

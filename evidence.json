@@ -1295,7 +1295,7 @@
       "evidence_id": "fairtest-run5",
       "source_type": "dataset",
       "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/",
-      "title": "Digital Fly Lab fair test of 1 Oct 2026 (our own measurement)",
+      "title": "Digital Fly Lab reflex test of 1 Oct 2026 (our own measurement)",
       "claim": "Pre-registered before any scrambled trial: sugar to MN9 in the Shiu et al. model, real 85.2 ± 3.56 Hz; degree-preserving 0 ± 0 Hz and weight shuffle 0 ± 0 Hz (5 shuffles each); boundary-preserving 39 ± 1.22 Hz; sign shuffle 214 ± 43 Hz with about 3.6 million whole-brain spikes; gain check 0 Hz at ×1.5, ×2 and ×3, not matched. One reflex, one model, one trial per shuffle.",
       "accessed_at": "2026-10-01T17:28:00Z",
       "relation": "supports",
@@ -1306,7 +1306,7 @@
       "source_type": "code",
       "source_url": "https://github.com/philshiu/Drosophila_brain_model/tree/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
       "title": "Drosophila_brain_model at commit 91bdd1e7",
-      "claim": "The model and default parameters used for our fair test and for the Build your own re-test of 1 Oct 2026 (82.0 Hz bit-exact with the first run; 6 tests passed).",
+      "claim": "The model and default parameters used for our reflex test and for the Build your own re-test of 1 Oct 2026 (82.0 Hz bit-exact with the first run; 6 tests passed).",
       "accessed_at": "2026-10-01T16:56:00Z",
       "relation": "context",
       "publication_basis": "linked-summary"
@@ -1445,7 +1445,7 @@
       "evidence_id": "g-addendum-run6",
       "source_type": "dataset",
       "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-02-run6/#gain-heading",
-      "title": "Gain-matched arm of our fair test (2 Oct 2026)",
+      "title": "Gain-matched arm of our reflex test (2 Oct 2026)",
       "claim": "Degree-preserving shuffle 3 at w_syn x2.5: 10,138 spikes (in the 9,680-17,976 band); shuffles 4 and 5 at x2.5: 24,277 and 29,297 (above). Not matched on 3 shuffles; MN9 0 Hz in all six gain trials (x1.5-x3).",
       "accessed_at": "2026-10-02T09:48:39Z",
       "relation": "supports",
@@ -2098,6 +2098,76 @@
       "title": "Can A Conscious Fly Brain Learn how to Hack? (dzuma), view count 9 Oct 2026",
       "claim": "Approximately 54,805 views on 9 Oct 2026 (YouTube search page, no cookie); still no code linked; grade U.",
       "accessed_at": "2026-10-09T09:34:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyvis-layout-notrun-run12",
+      "source_type": "report",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-10-run12/#flyvis-heading",
+      "title": "Our flyvis layout test, 10 Oct 2026 (not run)",
+      "claim": "Not decided: the test did not run, because it needed more memory than our shared machine has. A pre-registered setup check also failed, so no result would have been read. One short simulation of the 45,669-cell model was stopped three times for lack of memory (peak 3,195,498,496 bytes, about 3.0 of 3 GiB).",
+      "accessed_at": "2026-10-10T10:07:00Z",
+      "relation": "unresolved",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "flyvis-code-run12",
+      "source_type": "code",
+      "source_url": "https://github.com/TuragaLab/flyvis/tree/92b3845cc426dd309a1a0e1b3890156c42e14021",
+      "title": "flyvis (TuragaLab), MIT licence, commit 92b3845c",
+      "claim": "At 92b3845c, a stimulus response fills a buffer of batch x frames x 45,669 nodes and keeps every frame's full activity before stacking it; connectome loading fills each cell-type pair's convex hull with 1-synapse placeholder offsets.",
+      "accessed_at": "2026-10-10T10:12:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-distill-run12",
+      "source_type": "code",
+      "source_url": "https://github.com/michelangeloromerochisco/fly-distill/tree/ad5aef6",
+      "title": "fly-distill (michelangeloromerochisco)",
+      "claim": "At ad5aef6 (STATUS.md, 4 seeds): bits per byte real larval connectome 3.957, degree-preserving shuffle 3.917, Erdos-Renyi graph 3.523; the pre-registered rule finds no reliable real-vs-shuffled difference.",
+      "accessed_at": "2026-10-10T10:00:02Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flywire-connectome-scz-run12",
+      "source_type": "code",
+      "source_url": "https://github.com/hyungwoo-jo/flywire-connectome-scz-simulation/tree/e1bda30",
+      "title": "flywire-connectome-scz-simulation (hyungwoo-jo)",
+      "claim": "At e1bda30: BANC v888 PN-KC-APL rate model against pre-registered strength-preserving null wirings; odour discrimination 95.3% real vs 95.7% null median, significant in the right hemisphere only.",
+      "accessed_at": "2026-10-10T10:00:02Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "brainlab-run12",
+      "source_type": "code",
+      "source_url": "https://github.com/githabideri/brainlab/tree/1fe1aa4",
+      "title": "brainlab (githabideri)",
+      "claim": "At 1fe1aa4 (reports/2026-10-05-first-campaign.md, 5 seeds): FlyWire v783 LIF with real wiring 17,589 total spikes vs shuffled 4,793 vs disconnected 4,214; the author reads it as an activity difference, not a task result.",
+      "accessed_at": "2026-10-10T10:00:02Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-with-me-trained-run12",
+      "source_type": "code",
+      "source_url": "https://github.com/izntariq/fly-with-me/tree/89b130d3bb",
+      "title": "Fly With Me (izntariq), trained synapses loaded by default",
+      "claim": "At 89b130d the server loads brains/trained_brain.npz by default (9,978 trained synapses onto 25 descending neurons), contrary to the TRAINING.md line that the connectome on main is never changed; trained_class corrected to whole-network-or-per-synapse.",
+      "accessed_at": "2026-10-10T10:02:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "dzuma-hack-views-run12",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=m5Q_aIO_K8o",
+      "title": "Can A Conscious Fly Brain Learn how to Hack? (dzuma), view count 10 Oct 2026",
+      "claim": "Approximately 61,944 views on 10 Oct 2026 (YouTube search page, no cookie); still no code linked; grade U.",
+      "accessed_at": "2026-10-10T09:58:00Z",
       "relation": "unresolved",
       "publication_basis": "linked-summary"
     }

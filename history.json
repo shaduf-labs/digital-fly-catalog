@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "run:14cde065-0815-4619-9592-6d9039ec8921",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-10T09:55:44Z",
+      "completed_at": "2026-10-10T10:27:52Z",
+      "title": "Twelfth check: our flyvis motion test did not run, and 3 new entries with their own wiring controls",
+      "summary": "Our pre-registered test of whether the real wiring layout helps a trained fly vision model (flyvis) see which way things move did not run: \"Not decided: the test did not run, because it needed more memory than our shared machine has. A pre-registered setup check also failed, so no result would have been read.\" One short simulation of the 45,669-cell model was stopped three times for lack of memory (peak about 3.0 of 3 GiB); no result, no ledger row, no chart. 3 new grade A entries with their own real-versus-shuffled comparisons (fly-distill: no difference, a random graph did best; a mushroom-body model on BANC: mixed; brainlab: activity only), the fly-with-me trained-part correction, 128 entries, 44 control studies and 56 videos; lead scan: nothing promoted.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-10-run12/",
+      "entrypoint": "reports/2026-10-10-run12/index.html"
+    },
+    {
       "run_id": "run:5f4777c5-2eee-4176-8b6c-9e569c6459c6",
       "status": "completed",
       "answer_change": "meaningful_change",
@@ -63,7 +74,7 @@
       "started_at": "2026-10-02T09:19:12Z",
       "completed_at": "2026-10-02T11:00:20Z",
       "title": "Sixth check: who does the walking? We gave the fly brain a body, refereed the Terraria fly and added 4 entries",
-      "summary": "Our own pre-registered body test: the Shiu et al. brain model drove FlyGym's walking fly through our hand-made mapping; the fly walked 13.9 mm in 1 s with the real brain, 14.1 mm with scrambled brains (identical drives) and 14.3 mm with a brainless constant drive; the real brain added turning commands, sugar sent no walking command, and the mapping caps the drive. The fair test's gain check was not matched on 3 shuffles (MN9 0 Hz at every gain); no scoring rule changed. Terraria fly graded B (no control). 100 entries and 51 videos re-checked (0 grade changes, FlyDoom still gone), 4 new entries and 1 video, fly-cartpole updated to 077dcba, and Add a body tested on Build your own.",
+      "summary": "Our own pre-registered body test: the Shiu et al. brain model drove FlyGym's walking fly through our hand-made mapping; the fly walked 13.9 mm in 1 s with the real brain, 14.1 mm with scrambled brains (identical drives) and 14.3 mm with a brainless constant drive; the real brain added turning commands, sugar sent no walking command, and the mapping caps the drive. The reflex test's gain check was not matched on 3 shuffles (MN9 0 Hz at every gain); no scoring rule changed. Terraria fly graded B (no control). 100 entries and 51 videos re-checked (0 grade changes, FlyDoom still gone), 4 new entries and 1 video, fly-cartpole updated to 077dcba, and Add a body tested on Build your own.",
       "report_path": "/p/digital-fly-catalog/reports/2026-10-02-run6/",
       "entrypoint": "reports/2026-10-02-run6/index.html"
     },
@@ -74,7 +85,7 @@
       "started_at": "2026-10-01T10:36:00Z",
       "completed_at": "2026-10-01T17:59:48Z",
       "title": "Fifth check: we scrambled the fly brain four ways, two viral video claims refereed and 6 new entries",
-      "summary": "Our own pre-registered fair test on the sugar reflex: real wiring 85.2 Hz; degree-preserving and weight shuffles 0 Hz (5 each, silent); interior-only shuffle 39 Hz (retention 0.46); sign shuffle 214 Hz only because the whole brain ignites; gain check 0 Hz but not matched, so our own ledger row scores mixed, unfair and weak by the fixed rules. Gorilla Tag (527,756 views) and a Roblox fight video graded U. 94 entries and 49 videos re-checked (0 grade changes, FlyDoom repository gone), 6 new entries and 2 videos, a Doom autopilot chart, and Build your own re-tested.",
+      "summary": "Our own pre-registered reflex test on the sugar reflex: real wiring 85.2 Hz; degree-preserving and weight shuffles 0 Hz (5 each, silent); interior-only shuffle 39 Hz (retention 0.46); sign shuffle 214 Hz only because the whole brain ignites; gain check 0 Hz but not matched, so our own ledger row scores mixed, unfair and weak by the fixed rules. Gorilla Tag (527,756 views) and a Roblox fight video graded U. 94 entries and 49 videos re-checked (0 grade changes, FlyDoom repository gone), 6 new entries and 2 videos, a Doom autopilot chart, and Build your own re-tested.",
       "report_path": "/p/digital-fly-catalog/reports/2026-10-01-run5/",
       "entrypoint": "reports/2026-10-01-run5/index.html"
     },

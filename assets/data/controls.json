@@ -254,7 +254,7 @@
     "value": 85.2,
     "n": 5,
     "spread": "± 3.56 sd",
-    "source": "Digital Fly Lab Build your own run of 2026-09-28, results.json conditions[0] (trials 82, 89, 81, 86, 88 Hz); trial seeds 0-2 re-run in run 5 bit-exact (Digital Fly Lab fair test of 2026-10-01, trial files real-0..2.json)"
+    "source": "Digital Fly Lab Build your own run of 2026-09-28, results.json conditions[0] (trials 82, 89, 81, 86, 88 Hz); trial seeds 0-2 re-run in run 5 bit-exact (Digital Fly Lab reflex test of 2026-10-01, trial files real-0..2.json)"
    },
    "floor": {
     "label": "no stimulus (network silent)",
@@ -271,7 +271,7 @@
      "samples": 5,
      "spread": "± 0.00 sd across 5 shuffles",
      "readout_refit": null,
-     "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[D]; seed 1: 0 Hz (run 1 results.json shuffled_wiring_seed1 (trial seed 0; all 3 trials 0 Hz; 126 neurons active over 3 trials)); seed 2: 0 Hz (run 1 results.json shuffled_wiring_seed2 (trial seed 0; all 3 trials 0 Hz; 120 neurons active over 3 trials)); seed 3: 0 Hz (trial file D-3.json); seed 4: 0 Hz (trial file D-4.json); seed 5: 0 Hz (trial file D-5.json)",
+     "source": "Digital Fly Lab reflex test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[D]; seed 1: 0 Hz (run 1 results.json shuffled_wiring_seed1 (trial seed 0; all 3 trials 0 Hz; 126 neurons active over 3 trials)); seed 2: 0 Hz (run 1 results.json shuffled_wiring_seed2 (trial seed 0; all 3 trials 0 Hz; 120 neurons active over 3 trials)); seed 3: 0 Hz (trial file D-3.json); seed 4: 0 Hz (trial file D-4.json); seed 5: 0 Hz (trial file D-5.json)",
      "recomputed_by_us": true,
      "activity_ratio": 0.291,
      "activity_class": "reduced"
@@ -285,7 +285,7 @@
      "samples": 5,
      "spread": "± 0.00 sd across 5 shuffles",
      "readout_refit": null,
-     "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[W]; seed 101: 0 Hz (trial file W-101.json); seed 102: 0 Hz (trial file W-102.json); seed 103: 0 Hz (trial file W-103.json); seed 104: 0 Hz (trial file W-104.json); seed 105: 0 Hz (trial file W-105.json)",
+     "source": "Digital Fly Lab reflex test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[W]; seed 101: 0 Hz (trial file W-101.json); seed 102: 0 Hz (trial file W-102.json); seed 103: 0 Hz (trial file W-103.json); seed 104: 0 Hz (trial file W-104.json); seed 105: 0 Hz (trial file W-105.json)",
      "recomputed_by_us": true,
      "activity_ratio": 0.388,
      "activity_class": "reduced"
@@ -299,7 +299,7 @@
      "samples": 5,
      "spread": "± 43.27 sd across 5 shuffles",
      "readout_refit": null,
-     "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[S]; seed 201: 268 Hz (trial file S-201.json); seed 202: 188 Hz (trial file S-202.json); seed 203: 191 Hz (trial file S-203.json); seed 204: 253 Hz (trial file S-204.json); seed 205: 171 Hz (trial file S-205.json)",
+     "source": "Digital Fly Lab reflex test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[S]; seed 201: 268 Hz (trial file S-201.json); seed 202: 188 Hz (trial file S-202.json); seed 203: 191 Hz (trial file S-203.json); seed 204: 253 Hz (trial file S-204.json); seed 205: 171 Hz (trial file S-205.json)",
      "recomputed_by_us": true,
      "activity_ratio": 257.637,
      "activity_class": "runaway"
@@ -313,7 +313,7 @@
      "samples": 5,
      "spread": "± 1.22 sd across 5 shuffles",
      "readout_refit": null,
-     "source": "Digital Fly Lab fair test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[B]; seed 301: 38 Hz (trial file B-301.json); seed 302: 39 Hz (trial file B-302.json); seed 303: 39 Hz (trial file B-303.json); seed 304: 41 Hz (trial file B-304.json); seed 305: 38 Hz (trial file B-305.json)",
+     "source": "Digital Fly Lab reflex test of 2026-10-01 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-01-run5/), summary.json arms[B]; seed 301: 38 Hz (trial file B-301.json); seed 302: 39 Hz (trial file B-302.json); seed 303: 39 Hz (trial file B-303.json); seed 304: 41 Hz (trial file B-304.json); seed 305: 38 Hz (trial file B-305.json)",
      "recomputed_by_us": true,
      "activity_ratio": 0.648,
      "activity_class": "comparable"
