@@ -2,6 +2,90 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-12-run14-flyvis",
+      "changed_at": "2026-10-12T09:54:00Z",
+      "summary": "Not decided: a second, lower-memory attempt on 12 Oct also needed more memory than our shared machine has (about 3 GB at its peak; the machine allows 3 GB for everything running on it). Measured: it ran out while preparing the moving-edge test input, before the first simulation step (sampled peak about 3.17 GB of the 3.22 GB limit). No result in either direction, no ledger row, no chart; the 10 Oct note is kept as dated history.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#flyvis14-heading"
+    },
+    {
+      "change_id": "2026-10-12-run14-recheck",
+      "changed_at": "2026-10-12T09:54:00Z",
+      "summary": "Re-check (12 Oct 2026): 10 graded entries (Bad Apple Fly, Stonkfly, Flyhard, DOOMFLY, Fly64, Fly Brain Minecraft, FlyBridge, Digital Fly in Terraria, Fly OCR, FlyLeno) re-read line by line at their graded commits; no new code and no grade change. Two texts fixed: Stonkfly's learning-rule description, and the DOOMFLY announcement video card (the clause about read-out cells \"chosen because they responded to the screen\" is not in the cited files).",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-12"
+    },
+    {
+      "change_id": "2026-10-12-run14-ledger",
+      "changed_at": "2026-10-12T09:54:00Z",
+      "summary": "Controls ledger (12 Oct 2026): 50 studies, 41 with a wiring null: helps 19, no difference 9, worse 4, mixed 8, not yet scored 1. One row joined, from the authors' own numbers, scored only by our fixed rules: duth-x-stepmania: the authors compared the real wiring with 3 degree-preserving rewired copies (mean) on StepMania hit rate on the 152-note Edit chart. Real 0.9737, null 0.4013 (3 null samples). Our ledger rules read this as helps. Quality: fair, moderate; one seed; the readout groups are taken from the real wiring; 3 rewired copies.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed-heading"
+    },
+    {
+      "change_id": "2026-10-12-run14-entries",
+      "changed_at": "2026-10-12T09:54:00Z",
+      "summary": "Catalogue (12 Oct 2026): 134 entries, 2 new, each graded from code: duth-x-stepmania (A, ledger row helps) and flyonenomics (B, spiking activity only, no wiring control). Project claims are the projects' own.",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-10-12-run14-views",
+      "changed_at": "2026-10-12T09:54:00Z",
+      "summary": "Video gallery (12 Oct 2026): 56 videos, all available; 15 view counts refreshed from search pages, for example FlyLeno's playthrough video approximately 53,325 views on 12 Oct 2026. Catalogue record texts no longer carry their own view numbers; every count comes from videos.json with \"approximately\" and its date.",
+      "path": "/p/digital-fly-catalog/gallery/"
+    },
+    {
+      "change_id": "2026-10-12-run14-agents",
+      "changed_at": "2026-10-12T09:54:00Z",
+      "summary": "For AI agents (12 Oct 2026): release date, release id and counts first; the verdict count is now read from the verdict freshness data; flyvis guidance covers both attempts.",
+      "path": "/p/digital-fly-catalog/for-ai-agents/"
+    },
+    {
+      "change_id": "2026-10-12-run14-report",
+      "changed_at": "2026-10-12T09:54:00Z",
+      "summary": "New report: fourteenth check (12 Oct 2026), with the flyvis steps and measurements, the 10-entry re-check, the new ledger row, admissions, triage, tracking and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-12-run14/"
+    },
+    {
+      "change_id": "2026-10-11-run13-ledger",
+      "changed_at": "2026-10-11T20:40:42Z",
+      "summary": "Controls ledger (11 Oct 2026): 49 studies, 40 with a wiring null: helps 18, no difference 9, worse 4, mixed 8, not yet scored 1. Five rows joined, from the authors' own numbers, scored only by our fixed rules: fly-distill: the authors compared the real wiring with a degree-preserving shuffle on bits per byte (lower is better). Real 3.9572, null 3.9171 (4 null samples). Our ledger rules read this as mixed. flywire-connectome (the author's mushroom-body rate model): the authors compared the real wiring with strength-preserving null wirings (median of 100) on odour discrimination d'. Real 18.32, null 19.45 (100 null samples). Our ledger rules read this as worse. brainlab: the authors compared the real wiring with a target-permuted copy on held-out decision accuracy (%). Real 92.91, null 92.20 (1 null sample). Our ledger rules read this as no-difference. MelanoGraph: the authors compared the real wiring with a degree-preserving rewired copy on the receiver's gain over a resampled message. Real 0.4941, null 0 (1 null sample). Our ledger rules read this as helps. fly-arithmetic: the authors compared the real wiring with a random network of the same size on held-out addition accuracy (%). Real 48, null 98 (10 null samples). Our ledger rules read this as worse. Quality: fly-distill fair, strong; flywire-connectome partly fair, strong; brainlab partly fair, weak; MelanoGraph partly fair, weak; fly-arithmetic partly fair, strong.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed-heading"
+    },
+    {
+      "change_id": "2026-10-11-run13-flags",
+      "changed_at": "2026-10-11T20:40:42Z",
+      "summary": "Catalogue flag changes (11 Oct 2026): fly-distill no-difference to mixed; flywire-connectome-scz mixed to worse (task metric only); brainlab not-tested to no-difference (a task metric was found in its committed results; its trained_class is now whole-network-or-per-synapse).",
+      "path": "/p/digital-fly-catalog/new-and-updated/"
+    },
+    {
+      "change_id": "2026-10-11-run13-entries",
+      "changed_at": "2026-10-11T20:40:42Z",
+      "summary": "Catalogue (11 Oct 2026): 132 entries, 4 new, each graded from code: MelanoGraph (A, ledger row helps), fly-arithmetic (A, ledger row worse), FlyRoyale (B, no results committed) and connectome-control-exploration (B, lesion and input controls only). Project claims are quoted from their READMEs.",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-10-11-run13-browser",
+      "changed_at": "2026-10-11T20:40:42Z",
+      "summary": "Does it actually run? (11 Oct 2026): fly-arithmetic's website ran in our headless Chromium 154 without a GPU and with no action from us; first activity after about 11.2 s, about 2.05 MB; where it computes is unclear; we did not type a sum. 9 of 12 checked demos have run.",
+      "path": "/p/digital-fly-catalog/ways-to-try/#run13-heading"
+    },
+    {
+      "change_id": "2026-10-11-run13-views",
+      "changed_at": "2026-10-11T20:40:42Z",
+      "summary": "Video gallery (11 Oct 2026): 56 videos, all available; 18 view counts refreshed. Every view count on the site now comes from videos.json with \"approximately\" and its date, for example the dzuma \"learns to hack\" video approximately 70,445 views on 11 Oct 2026.",
+      "path": "/p/digital-fly-catalog/gallery/"
+    },
+    {
+      "change_id": "2026-10-11-run13-answers",
+      "changed_at": "2026-10-11T20:40:42Z",
+      "summary": "Is it real? (11 Oct 2026): the plain answer about suffering is now titled \"Is the fly being tortured? Can it suffer? Is it alive or conscious?\", with the same sourced answer. For AI agents: release date, release id and current counts first, plus a one-line description of Digital Fly Lab. Build your own, Use in class: a dated note that the drosophila.io home page shows token and wallet text (not reviewed by us).",
+      "path": "/p/digital-fly-catalog/is-it-real/#q-suffer"
+    },
+    {
+      "change_id": "2026-10-11-run13-report",
+      "changed_at": "2026-10-11T20:40:42Z",
+      "summary": "New report: thirteenth check (11 Oct 2026), with every ledger number and source line, admissions, triage, view counts, the browser check and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-11-run13/"
+    },
+    {
       "change_id": "2026-10-10-run12-flyvis-notrun",
       "changed_at": "2026-10-10T10:27:52Z",
       "summary": "Our flyvis layout test (made by us, pre-registered, 10 Oct 2026): does the real wiring layout help a trained fly vision model see which way things move? Not decided: the test did not run, because it needed more memory than our shared machine has. A pre-registered setup check also failed, so no result would have been read. One short simulation of the 45,669-cell model was stopped three times for lack of memory (peak about 3.0 of 3 GiB); the next attempt (planned run 14) needs a leaner simulation loop. We did not retrain the model after shuffling. A model trained on the shuffled wiring might do better, so this asks a narrower question: does this trained model depend on the real layout? A dated note in the sensory part of Does fly wiring help?; no chart, no ledger row.",

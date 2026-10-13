@@ -1134,3 +1134,7 @@
 [data-agent-document] .dfl-tag.nr-tag-done { background: var(--dfl-green-bg); color: var(--dfl-green); }
 [data-agent-document] .dfl-tag.nr-tag-fail { background: var(--dfl-red-bg); color: var(--dfl-red); }
 [data-agent-document] .dfl-tag.nr-tag-none { background: #fff; color: var(--dfl-muted); border: 1px dashed var(--dfl-line-strong); }
+
+/* ---- run 14 (2026-10-12): report ledger bars; the outlined block marks the row added that day */
+[data-agent-document] .dfl-svg .r14-new { fill: none; stroke: var(--dfl-ink); stroke-width: 2; }
+[data-agent-document] .dfl-r14fig .dfl-tall { max-width: 26em; }

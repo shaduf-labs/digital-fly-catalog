@@ -2170,6 +2170,146 @@
       "accessed_at": "2026-10-10T09:58:00Z",
       "relation": "unresolved",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-fly-distill-run13",
+      "source_type": "code",
+      "source_url": "https://github.com/michelangeloromerochisco/fly-distill/tree/ad5aef6",
+      "title": "fly-distill: real versus null wiring, STATUS.md lines 9-18 at ad5aef6",
+      "claim": "fly-distill: the authors compared the real wiring with a degree-preserving shuffle on bits per byte (lower is better). Real 3.9572, null 3.9171 (4 null samples). Our ledger rules read this as mixed. Authors' numbers, not recomputed by us.",
+      "accessed_at": "2026-10-11T20:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-flywire-connectome-scz-run13",
+      "source_type": "code",
+      "source_url": "https://github.com/hyungwoo-jo/flywire-connectome-scz-simulation/tree/8aea8e8",
+      "title": "flywire-connectome-scz: real versus null wiring, HALLEM_COMMUNITY_RESULTS.md lines 9 and 52-57; PREREGISTRATION_16_18.md line 55 at 8aea8e8",
+      "claim": "flywire-connectome (the author's mushroom-body rate model): the authors compared the real wiring with strength-preserving null wirings (median of 100) on odour discrimination d'. Real 18.32, null 19.45 (100 null samples). Our ledger rules read this as worse. Authors' numbers, not recomputed by us.",
+      "accessed_at": "2026-10-11T20:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-brainlab-run13",
+      "source_type": "code",
+      "source_url": "https://github.com/githabideri/brainlab/tree/1fe1aa4",
+      "title": "brainlab: real versus null wiring, reports/2026-10-05-scorer-polis-s2-screen.md lines 39-40 and 72-76 at 1fe1aa4",
+      "claim": "brainlab: the authors compared the real wiring with a target-permuted copy on held-out decision accuracy (%). Real 92.91, null 92.20 (1 null sample). Our ledger rules read this as no-difference. Authors' numbers, not recomputed by us.",
+      "accessed_at": "2026-10-11T20:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-melanograph-run13",
+      "source_type": "code",
+      "source_url": "https://github.com/akashacorporation/flybrain/tree/45ad05d",
+      "title": "melanograph: real versus null wiring, docs/NEURAL_C2B_REPORT.md lines 35-42 at 45ad05d",
+      "claim": "MelanoGraph: the authors compared the real wiring with a degree-preserving rewired copy on the receiver's gain over a resampled message. Real 0.4941, null 0 (1 null sample). Our ledger rules read this as helps. Authors' numbers, not recomputed by us.",
+      "accessed_at": "2026-10-11T20:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-fly-arithmetic-run13",
+      "source_type": "code",
+      "source_url": "https://github.com/krezio/fly-arithmetic/tree/e36dd2b",
+      "title": "fly-arithmetic: real versus null wiring, docs/RESULTS.md lines 4 and 11-15 at e36dd2b",
+      "claim": "fly-arithmetic: the authors compared the real wiring with a random network of the same size on held-out addition accuracy (%). Real 48, null 98 (10 null samples). Our ledger rules read this as worse. Authors' numbers, not recomputed by us.",
+      "accessed_at": "2026-10-11T20:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-arithmetic-browser-run13",
+      "source_type": "our-measurement",
+      "source_url": "https://krezio.github.io/fly-arithmetic/",
+      "title": "fly-arithmetic website, our headless browser check of 11 Oct 2026",
+      "claim": "Ran in headless Chromium 154 on Linux without a GPU and with no action from us; first activity after about 11.2 s; about 2.05 MB transferred; 0 console and 0 page errors; where it computes is unclear; we did not type a sum.",
+      "accessed_at": "2026-10-11T20:36:34Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "dzuma-hack-views-run13",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=m5Q_aIO_K8o",
+      "title": "Can A Conscious Fly Brain Learn how to Hack? (dzuma), view count 11 Oct 2026",
+      "claim": "Approximately 70,445 views on 11 Oct 2026 (video page, no cookie); still no code linked; grade U.",
+      "accessed_at": "2026-10-11T20:28:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "drosophila-io-token-run13",
+      "source_type": "website",
+      "source_url": "https://drosophila.io/",
+      "title": "drosophila.io home page text, 11 Oct 2026 (audience pass excerpt)",
+      "claim": "The home page text includes \"token\" and \"no token yet. when there is one, it will be launched by the fly, from its own wallet\"; we have not reviewed it.",
+      "accessed_at": "2026-10-11T20:30:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyvis-layout-stop-run14",
+      "source_type": "report",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-12-run14/#flyvis-heading",
+      "title": "Our flyvis layout test, second attempt, 12 Oct 2026 (stopped for memory)",
+      "claim": "Not decided: a second, lower-memory attempt on 12 Oct also needed more memory than our shared machine has (about 3 GB at its peak; the machine allows 3 GB for everything running on it). It ran out while preparing the moving-edge test input, before the first simulation step; sampled peak 3,173,703,680 bytes of a 3,221,225,472-byte limit; install and setup checks had passed.",
+      "accessed_at": "2026-10-12T09:42:26Z",
+      "relation": "unresolved",
+      "publication_basis": "owner-authored"
+    },
+    {
+      "evidence_id": "ledger-duth-x-stepmania-run14",
+      "source_type": "code",
+      "source_url": "https://github.com/abstractionthief/duth-x-stepmania/blob/c6b829d59c25a8fe5cd62bb9d8816ee08410c421/results/play_test.json",
+      "title": "duth-x-stepmania: real versus rewired circuits, results/play_test.json at c6b829d",
+      "claim": "duth-x-stepmania: the authors compared the real wiring with 3 degree-preserving rewired copies (mean) on StepMania hit rate on the 152-note Edit chart. Real 0.9737, null 0.4013 (3 null samples). Our ledger rules read this as helps. Authors' numbers, not recomputed by us; one seed; 3 rewired copies (mean only); the readout groups come from the real wiring.",
+      "accessed_at": "2026-10-12T09:41:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyonenomics-readme-run14",
+      "source_type": "code",
+      "source_url": "https://github.com/uguryildirim24/flyonenomics/blob/8f3c223832d53fac11dcd8cf0b0e278216b68ede/README.md",
+      "title": "flyonenomics README at 8f3c223",
+      "claim": "A MaleCNS v1.0 spiking model for simulated dopamine and transmitter changes; the README reports spike-level results only and says simulated activity is not treated as animal behaviour. No wiring control.",
+      "accessed_at": "2026-10-12T09:42:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "stonkfly-model-doc-run14",
+      "source_type": "code",
+      "source_url": "https://github.com/nftechie/stonkfly/blob/78ef3e05ab0fa086032098558d893667068944a0/docs/model.md",
+      "title": "Stonkfly docs/model.md at 78ef3e05 (learning rule)",
+      "claim": "The experimental dopamine-gated rule acts on 7,835 existing KC to MBON07/MBON11 connections: KC activity followed by dopamine tends to weaken a connection, and the reverse timing can strengthen it.",
+      "accessed_at": "2026-10-12T09:45:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "doomfly-readout-run14",
+      "source_type": "code",
+      "source_url": "https://github.com/nftechie/DOOMFLY/blob/71ecf53d78eaffaf1a57ed7b0ccf5d458abc9f33/doom/engine.py",
+      "title": "DOOMFLY engine.py lines 120-125 and README line 11 at 71ecf53d",
+      "claim": "The read-out cells are fixed, hand-assigned controller outputs (DNp20 for turning, DNpe017 for moving and firing); the cited files do not say they were chosen because they responded to the screen.",
+      "accessed_at": "2026-10-12T09:46:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyleno-views-run14",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=BOSg6HYVX1o",
+      "title": "FlyLeno playthrough (Vinesauce), view count 12 Oct 2026",
+      "claim": "Approximately 53,325 views on 12 Oct 2026, read from a YouTube search page because the video page showed no readable count.",
+      "accessed_at": "2026-10-12T09:37:42Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }

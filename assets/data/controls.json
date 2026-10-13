@@ -1,16 +1,16 @@
 {
  "schema_version": "1.0.0",
  "dataset": "Digital Fly Lab controls ledger",
- "version": "2026-10-09-run11",
- "generated_at": "2026-10-09T10:04:37Z",
- "run_id": "run:5f4777c5-2eee-4176-8b6c-9e569c6459c6",
- "as_of": "2026-10-09",
+ "version": "2026-10-12-run14",
+ "generated_at": "2026-10-12T09:51:35Z",
+ "run_id": "run:d1fe267d-8e73-4c4c-b92b-1629d9ad19dc",
+ "as_of": "2026-10-12",
  "answer": {
-  "one_line": "Sometimes: fly wiring beat scrambled wiring in 17 of 35 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (10).",
-  "short": "Of 44 control studies in our catalogue, 35 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 17, makes no difference in 8, does worse in 2, gives mixed results in 7 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+  "one_line": "Sometimes: fly wiring beat scrambled wiring in 19 of 41 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (13).",
+  "short": "Of 50 control studies in our catalogue, 41 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 19, makes no difference in 9, does worse in 4, gives mixed results in 8 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
   "counts": {
-   "studies": 44,
-   "with_wiring_null": 35,
+   "studies": 50,
+   "with_wiring_null": 41,
    "by_family": {
     "reflex-circuit": {
      "helps": 3,
@@ -20,9 +20,9 @@
      "not_tested": 0
     },
     "sensory-model": {
-     "helps": 3,
+     "helps": 4,
      "no_difference": 0,
-     "worse": 0,
+     "worse": 1,
      "mixed": 0,
      "not_tested": 2
     },
@@ -34,8 +34,8 @@
      "not_tested": 2
     },
     "game-play": {
-     "helps": 4,
-     "no_difference": 4,
+     "helps": 5,
+     "no_difference": 5,
      "worse": 0,
      "mixed": 3,
      "not_tested": 4
@@ -50,7 +50,7 @@
     "reservoir": {
      "helps": 0,
      "no_difference": 0,
-     "worse": 1,
+     "worse": 2,
      "mixed": 0,
      "not_tested": 0
     },
@@ -58,7 +58,7 @@
      "helps": 0,
      "no_difference": 0,
      "worse": 0,
-     "mixed": 0,
+     "mixed": 1,
      "not_tested": 1
     },
     "forecasting": {
@@ -1150,6 +1150,211 @@
      "label": "direct"
     }
    ]
+  },
+  {
+   "id": "flywire-connectome-scz",
+   "name": "flywire-connectome: mushroom-body rate model on BANC, real wiring vs strength-preserving null wirings",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "sensory-model",
+   "loop": "offline",
+   "wiring": {
+    "dataset": "BANC",
+    "release": "v888",
+    "scope": "PN -> KC -> APL mushroom-body subcircuit (138 PNs), synapse counts fixed"
+   },
+   "trained_parts": "none for this test (thresholds calibrated so that about 10% of KCs respond); KC-to-MBON readouts are trained only in later stages",
+   "metric": {
+    "name": "general odour discrimination, mean pairwise d' (author's primary metric), 0.5 s window, 10% calibration (main condition)",
+    "unit": "d'",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 18.32,
+    "n": 1,
+    "spread": null,
+    "source": "8aea8e8 docs/HALLEM_COMMUNITY_RESULTS.md line 52 (table, main condition row)"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "strength-preserving-null",
+     "null_type": "degree-preserving",
+     "label": "strength_preserving_null: per-PN connection counts, per-KC input counts and weight sums kept; 100 nulls, seeds 180001-180100 (median shown)",
+     "value": 19.45,
+     "n": 100,
+     "samples": 100,
+     "spread": null,
+     "readout_refit": false,
+     "source": "8aea8e8 docs/HALLEM_COMMUNITY_RESULTS.md line 52 (null median); null method docs/PREREGISTRATION_16_18.md line 55",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "ci": null,
+    "p": 0.02,
+    "stat_note": "Author statistics (HALLEM_COMMUNITY_RESULTS.md lines 9 and 52-57): z = -2.81 against 100 nulls, 98% of nulls at or above the real d' (p entered here as 0.02 = the 2% of nulls below the real value); by the author's pre-registered rule (|z| >= 1.96) the real wiring is worse than the nulls on d'. The secondary metric, nearest-centroid accuracy, was 95.34% vs null median 95.68% (z = -0.90, not distinguishable by the same rule); all 8 condition and metric combinations point the same way (line 57). The structural result (59 PN type pairs with Z > 3.29 vs 5.6 expected, p = 0.001, 1,000 nulls, line 8) is not a task readout and is not scored.",
+    "headline_arm": "strength-preserving-null",
+    "best_null_arm": "strength-preserving-null",
+    "baseline_arm": null,
+    "retention": 1.0617,
+    "retention_method": "ratio",
+    "baseline_retention": null,
+    "difference": -1.13
+   },
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": true,
+    "tuned_equally": null,
+    "null_samples": 100,
+    "has_no_brain_baseline": false,
+    "reason": "100 strength-preserving nulls share the same noise trials (PREREGISTRATION_16_18.md line 55); whether the KC thresholds were recalibrated for each null is not stated in the files read.",
+    "verdict": "partly-fair"
+   },
+   "quality": {
+    "n_per_arm": 100,
+    "held_out": true,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "reason": "flywire-connectome (the author's mushroom-body rate model): the authors compared the real wiring with strength-preserving null wirings (median of 100) on odour discrimination d'. Real 18.32, null 19.45 (100 null samples). Our ledger rules read this as worse. The author's pre-registered rule also reads the d' gap as worse than the nulls (z = -2.81); accuracy did not differ (z = -0.90). Single author, not recomputed by us.",
+    "uncertainty_reported": true,
+    "recomputed_by_us": false,
+    "grade": "strong"
+   },
+   "extraction": "files",
+   "one_line": "Authors compared real wiring with strength-preserving nulls on odour d': real 18.32, null 19.45 (100 null samples). Our rules read this as worse.",
+   "commit": "8aea8e8ffbe5dd6e26607cb523a3687659d708c0",
+   "checked_at": "2026-10-11T20:30:00Z",
+   "sources": [
+    {
+     "url": "https://github.com/hyungwoo-jo/flywire-connectome-scz-simulation/blob/8aea8e8ffbe5dd6e26607cb523a3687659d708c0/docs/HALLEM_COMMUNITY_RESULTS.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/hyungwoo-jo/flywire-connectome-scz-simulation/blob/8aea8e8ffbe5dd6e26607cb523a3687659d708c0/docs/PREREGISTRATION_16_18.md",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "worse",
+   "baseline_beaten": "not-tested"
+  },
+  {
+   "id": "melanograph",
+   "name": "MelanoGraph: FlyWire LIF subcircuit as the message carrier in a two-cue social task",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "sensory-model",
+   "loop": "offline",
+   "wiring": {
+    "dataset": "FlyWire FAFB",
+    "release": "v783",
+    "scope": "10,201-neuron subcircuit two hops from a gustatory anchor (LIF, Shiu et al. constants)"
+   },
+   "trained_parts": "tabular receiver agent (12,000 episodes); connectome fixed",
+   "metric": {
+    "name": "receiver's gain over a resampled message, intact channel (the report's primary contrast, C2b)",
+    "unit": "fraction correct above resampled",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 0.4941,
+    "n": 16,
+    "spread": null,
+    "source": "45ad05d docs/NEURAL_C2B_REPORT.md line 35 (A, gain over resampling)"
+   },
+   "floor": {
+    "label": "no gain over a resampled message (channel not used)",
+    "value": 0,
+    "source": "definition of the gain, docs/PREREGISTRATION_C2B.md lines 98-101"
+   },
+   "arms": [
+    {
+     "arm_id": "B-degree-preserving",
+     "null_type": "degree-preserving",
+     "label": "B: the subcircuit rewired by double swaps with sign constraint, degree and weights kept (flybrain/experiments/rewire.py), one rewired graph",
+     "value": 0,
+     "n": 16,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": true,
+     "source": "45ad05d docs/NEURAL_C2B_REPORT.md line 36",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "C-random-targets",
+     "null_type": "target-permutation",
+     "label": "C: the subcircuit with targets drawn at random, degrees destroyed, one graph",
+     "value": 0,
+     "n": 16,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": true,
+     "source": "45ad05d docs/NEURAL_C2B_REPORT.md line 37",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "ci": [
+     0.4938,
+     0.4944
+    ],
+    "p": null,
+    "stat_note": "Author statistics (NEURAL_C2B_REPORT.md lines 40-42): paired per-seed-set difference A minus B in gain, 95% percentile bootstrap CI [0.4938, 0.4944] over 16 seed sets; A minus C identical. Intact-channel accuracy: A 0.9941, B and C 0.5000 (chance for two cues). The companion study C2a (decoding 8 cue patterns, line 62) gave real 0.7285, degree-preserving 0.4590, random targets 0.2500; it is not scored here. Each condition uses one rewired graph (scripts/run_neural_c2b.py builds the conditions once); the null-sample count is not stated, so it is entered as 1.",
+    "headline_arm": "B-degree-preserving",
+    "best_null_arm": "B-degree-preserving",
+    "baseline_arm": null,
+    "retention": 0,
+    "retention_method": "floor",
+    "baseline_retention": null,
+    "difference": 0.4941
+   },
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": null,
+    "tuned_equally": true,
+    "null_samples": 1,
+    "has_no_brain_baseline": false,
+    "reason": "Same receiver agent and 12,000-episode budget for every condition; only the source of the message changes (report section 1). One rewired graph per condition.",
+    "verdict": "partly-fair"
+   },
+   "quality": {
+    "n_per_arm": 16,
+    "held_out": true,
+    "results_in_repo_files": false,
+    "independent_test": false,
+    "peer_review": "none",
+    "reason": "MelanoGraph: the authors compared the real wiring with a degree-preserving rewired copy on the receiver's gain over a resampled message. Real 0.4941, null 0 (1 null sample). Our ledger rules read this as helps. A random-target copy also scored +0.0000. One rewired graph per condition; numbers from the committed report (per-seed files not in the repository); single author, not recomputed by us.",
+    "uncertainty_reported": true,
+    "recomputed_by_us": false,
+    "grade": "weak"
+   },
+   "extraction": "paper",
+   "one_line": "Authors compared real wiring with a degree-preserving rewire on message gain: real 0.4941, null 0 (1 null sample). Our rules read this as helps.",
+   "commit": "45ad05d9e1a2a44bfa84f79b795472f20a5f89e8",
+   "checked_at": "2026-10-11T20:30:00Z",
+   "sources": [
+    {
+     "url": "https://github.com/akashacorporation/flybrain/blob/45ad05d9e1a2a44bfa84f79b795472f20a5f89e8/docs/NEURAL_C2B_REPORT.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/akashacorporation/flybrain/blob/45ad05d9e1a2a44bfa84f79b795472f20a5f89e8/docs/PREREGISTRATION_C2B.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/akashacorporation/flybrain/blob/45ad05d9e1a2a44bfa84f79b795472f20a5f89e8/scripts/run_neural_c2b.py",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "helps",
+   "baseline_beaten": "not-tested"
   },
   {
    "id": "synaptera",
@@ -2536,6 +2741,114 @@
    ]
   },
   {
+   "id": "brainlab",
+   "name": "brainlab: frozen FlyWire olfactory circuit as a decision scorer, real vs target-permuted wiring",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "game-play",
+   "loop": "offline",
+   "wiring": {
+    "dataset": "FlyWire FAFB",
+    "release": "v783 (1,536-node olfactory subcircuit as released by FlyBridge)",
+    "scope": "1,536 neurons, 42,921 signed edges, frozen topology and base magnitudes"
+   },
+   "trained_parts": "state encoder, sensory drive, readout and two task heads (89,687 parameters); per-edge gains learnable",
+   "metric": {
+    "name": "held-out validation accuracy on the polis decision corpus, all 141 rows",
+    "unit": "percent correct",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 92.91,
+    "n": 1,
+    "spread": null,
+    "source": "1fe1aa4 reports/2026-10-05-scorer-polis-s2-screen.md line 39 (scorer-fly, total)"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "scorer-shuffled",
+     "null_type": "target-permutation",
+     "label": "Same training with a permuted output index map (FlyBridge target-permutation scheme), seed 0",
+     "value": 92.2,
+     "n": 1,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": true,
+     "source": "1fe1aa4 reports/2026-10-05-scorer-polis-s2-screen.md line 40 (total)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "2b-ft2",
+     "null_type": "no-brain-baseline",
+     "label": "Fine-tuned 2B language-model decider (ft2), in-file accuracy",
+     "value": 100,
+     "n": 1,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": true,
+     "source": "1fe1aa4 reports/2026-10-05-scorer-polis-s2-screen.md line 43 (total)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "ci": null,
+    "p": null,
+    "stat_note": "One seed (seed 0, train_screen.py) and one permuted map; the null-sample count is not stated beyond that, so it is entered as 1. The authors read the 92.20 vs 92.91 gap (one row, valw-045) as 'not load-bearing on this corpus' (report lines 72-76). Valworld slice: 89.58 vs 88.54; abstain slice 100 vs 100. The 2B accuracies are in-file numbers measured from the deciders' own row files (report lines 46-49). The repository's separate spiking campaign compares activity only (real wiring about 3.7 times the spikes of the shuffled wiring, reports/2026-10-05-first-campaign.md) and is not scored.",
+    "headline_arm": "scorer-shuffled",
+    "best_null_arm": "scorer-shuffled",
+    "baseline_arm": "2b-ft2",
+    "retention": 0.9924,
+    "retention_method": "ratio",
+    "baseline_retention": 1.0763,
+    "difference": 0.71
+   },
+   "fairness": {
+    "keeps_degree": null,
+    "keeps_io_boundary": false,
+    "tuned_equally": true,
+    "null_samples": 1,
+    "has_no_brain_baseline": true,
+    "reason": "Identical training for both variants (report line 31); one permuted output map, one seed.",
+    "verdict": "partly-fair"
+   },
+   "quality": {
+    "n_per_arm": 1,
+    "held_out": true,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "reason": "brainlab: the authors compared the real wiring with a target-permuted copy on held-out decision accuracy (%). Real 92.91, null 92.20 (1 null sample). Our ledger rules read this as no-difference. One seed and one permutation, no uncertainty reported; the authors read the gap as not load-bearing. Not recomputed by us.",
+    "uncertainty_reported": false,
+    "recomputed_by_us": false,
+    "grade": "weak"
+   },
+   "extraction": "files",
+   "one_line": "Authors compared real wiring with a target-permuted copy on decision accuracy: real 92.91, null 92.20 (1 null sample). Our rules read this as no-difference.",
+   "commit": "1fe1aa4e6210a2b8a5a50c4794c434ab02e017a7",
+   "checked_at": "2026-10-11T20:30:00Z",
+   "sources": [
+    {
+     "url": "https://github.com/githabideri/brainlab/blob/1fe1aa4e6210a2b8a5a50c4794c434ab02e017a7/reports/2026-10-05-scorer-polis-s2-screen.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/githabideri/brainlab/blob/1fe1aa4e6210a2b8a5a50c4794c434ab02e017a7/experiments/scorer/polis/train_screen.py",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/githabideri/brainlab/blob/1fe1aa4e6210a2b8a5a50c4794c434ab02e017a7/reports/2026-10-05-first-campaign.md",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "no-difference",
+   "baseline_beaten": "no"
+  },
+  {
    "id": "chessfly",
    "name": "ChessFly",
    "evidence_grade": "A",
@@ -3011,6 +3324,100 @@
      "label": "direct"
     }
    ]
+  },
+  {
+   "id": "duth-x-stepmania",
+   "name": "duth-x-stepmania: MaleCNS looming-escape circuit plays StepMania charts, against rewired copies",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "game-play",
+   "loop": "offline",
+   "wiring": {
+    "dataset": "MaleCNS",
+    "release": "v1.0",
+    "scope": "766-neuron looming-escape subcircuit (LC4/LPLC2 detectors to looming descending neurons, paths of at most 2 edges with at least 5 synapses), 24,682 edges"
+   },
+   "trained_parts": "none; per-arrow gains and a timing offset calibrated from isolated threats for every circuit",
+   "metric": {
+    "name": "hit rate (share of notes not missed) on the Edit chart of OutFox's sample .sm file, 152 notes (first column of the README results table; the largest chart)",
+    "unit": "fraction of notes",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 0.9737,
+    "n": 1,
+    "spread": null,
+    "source": "c6b829d results/play_test.json, Edit row: real hit_rate 0.97368 (148 of 152 notes; one seed)"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "rewired",
+     "null_type": "degree-preserving",
+     "label": "Maslov-Sneppen degree-preserving rewiring of the same circuit, 3 copies, mean reported (model.py lines 48-51 and 72-92; play.py lines 37 and 176)",
+     "value": 0.4013,
+     "n": 3,
+     "samples": 3,
+     "spread": null,
+     "readout_refit": true,
+     "source": "c6b829d results/play_test.json, Edit row: rewired_mean hit_rate (mean of 3 rewired copies; per-copy values not committed)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "ci": null,
+    "p": null,
+    "stat_note": "No statistics in the repository; one seed (SEED = 2), 3 rewired copies averaged. Other charts in results/play_test.json, real vs rewired-mean hit rate: Beginner 1.00 vs 0.47, Easy 1.00 vs 0.37, Medium 1.00 vs 0.41, Hard 0.84 vs 0.35, Challenge 0.93 vs 0.45. Second metric (rule C, notes only): ITG score on Edit 0.875 real vs -1.467 rewired mean; false presses 0 vs 54.3.",
+    "headline_arm": "rewired",
+    "best_null_arm": "rewired",
+    "baseline_arm": null,
+    "retention": 0.4121,
+    "retention_method": "ratio",
+    "baseline_retention": null,
+    "difference": 0.5724
+   },
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": false,
+    "tuned_equally": true,
+    "null_samples": 3,
+    "has_no_brain_baseline": false,
+    "reason": "Same chart, stimulus encoding, noise seed stream and calibration routine for the real circuit and each of 3 rewired copies (play.py lines 171-202). The rewiring swaps targets across the whole circuit without a group constraint, so detector and DN inputs are not kept; the UP/DOWN readout groups come from the real wiring and are reused unchanged on the copies.",
+    "verdict": "fair"
+   },
+   "quality": {
+    "n_per_arm": 1,
+    "held_out": false,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "reason": "duth-x-stepmania: the authors compared the real wiring with 3 degree-preserving rewired copies (mean) on StepMania hit rate on the 152-note Edit chart. Real 0.9737, null 0.4013 (3 null samples). Our ledger rules read this as helps. One seed, no statistics; the readout groups come from the real wiring and are reused on the rewired copies. Committed result file; single author, not recomputed by us.",
+    "uncertainty_reported": false,
+    "recomputed_by_us": false,
+    "grade": "moderate"
+   },
+   "extraction": "files",
+   "one_line": "Authors compared real wiring with degree-preserving rewired copies on StepMania hit rate: real 0.9737, null 0.4013 (3 null samples). Our rules read this as helps.",
+   "commit": "c6b829d59c25a8fe5cd62bb9d8816ee08410c421",
+   "checked_at": "2026-10-12T09:41:00Z",
+   "sources": [
+    {
+     "url": "https://github.com/abstractionthief/duth-x-stepmania/blob/c6b829d59c25a8fe5cd62bb9d8816ee08410c421/results/play_test.json",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/abstractionthief/duth-x-stepmania/blob/c6b829d59c25a8fe5cd62bb9d8816ee08410c421/play.py",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/abstractionthief/duth-x-stepmania/blob/c6b829d59c25a8fe5cd62bb9d8816ee08410c421/model.py",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "helps",
+   "baseline_beaten": "not-tested"
   },
   {
    "id": "fly-dino",
@@ -4980,6 +5387,138 @@
    ]
   },
   {
+   "id": "fly-arithmetic",
+   "name": "fly-arithmetic: FlyWire rate network as a reservoir for digit addition, vs a random network",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "reservoir",
+   "loop": "offline",
+   "wiring": {
+    "dataset": "FlyWire FAFB",
+    "release": "v783",
+    "scope": "about 2,000 neurons grown from the right-side olfactory projection neurons"
+   },
+   "trained_parts": "linear readout only",
+   "metric": {
+    "name": "accuracy on held-out addition problems (add 0-9; first column of the README results table)",
+    "unit": "percent correct",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 48,
+    "n": 10,
+    "spread": "± 6 sd",
+    "source": "e36dd2b docs/RESULTS.md line 11 (mean and sd over 10 seeds, line 4)"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "erdos-renyi",
+     "null_type": "random-graph",
+     "label": "Erdos-Renyi network with the same neurons and number of connections, one network per seed (graph.py line 68)",
+     "value": 98,
+     "n": 10,
+     "samples": 10,
+     "spread": "± 2 sd across 10 networks",
+     "readout_refit": true,
+     "source": "e36dd2b docs/RESULTS.md line 12",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "no-connections",
+     "null_type": "no-edges",
+     "label": "No connections at all",
+     "value": 10,
+     "n": 10,
+     "samples": 10,
+     "spread": "± 2 sd",
+     "readout_refit": true,
+     "source": "e36dd2b docs/RESULTS.md line 13",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "linear-raw",
+     "null_type": "no-brain-baseline",
+     "label": "Linear model on the raw input numbers",
+     "value": 94,
+     "n": 10,
+     "samples": 10,
+     "spread": "± 2 sd",
+     "readout_refit": true,
+     "source": "e36dd2b docs/RESULTS.md line 14",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "mlp-raw",
+     "null_type": "no-brain-baseline",
+     "label": "MLP on the raw input numbers",
+     "value": 88,
+     "n": 10,
+     "samples": 10,
+     "spread": "± 3 sd",
+     "readout_refit": true,
+     "source": "e36dd2b docs/RESULTS.md line 15",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "ci": null,
+    "p": null,
+    "stat_note": "Author statistics: mean and standard deviation over 10 seeds (RESULTS.md line 4). Other task metrics (Rule C, not scored): subtraction 49 vs 97, XOR 61 vs 93, multiplication 22 vs 22 (RESULTS.md lines 11-12). Per-run files in results/main/.",
+    "headline_arm": "erdos-renyi",
+    "best_null_arm": "erdos-renyi",
+    "baseline_arm": "linear-raw",
+    "retention": 2.0417,
+    "retention_method": "ratio",
+    "baseline_retention": 1.9583,
+    "difference": -50
+   },
+   "fairness": {
+    "keeps_degree": false,
+    "keeps_io_boundary": false,
+    "tuned_equally": true,
+    "null_samples": 10,
+    "has_no_brain_baseline": true,
+    "reason": "Same simulation, input encoding, readout and seeds for both networks (experiment.py); the random network keeps the neuron and connection counts but not each neuron's degree.",
+    "verdict": "partly-fair"
+   },
+   "quality": {
+    "n_per_arm": 10,
+    "held_out": true,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "reason": "fly-arithmetic: the authors compared the real wiring with a random network of the same size on held-out addition accuracy (%). Real 48, null 98 (10 null samples). Our ledger rules read this as worse. The random network is redrawn for each of 10 seeds but does not keep each neuron's degree; a linear model on the raw numbers scored 94%. Committed per-run files; single author, not recomputed by us.",
+    "uncertainty_reported": true,
+    "recomputed_by_us": false,
+    "grade": "strong"
+   },
+   "extraction": "files",
+   "one_line": "Authors compared real wiring with a same-size random network on held-out addition: real 48, null 98 (10 null samples). Our rules read this as worse.",
+   "commit": "e36dd2b0a940268c14cf51680287a2342429574a",
+   "checked_at": "2026-10-11T20:30:00Z",
+   "sources": [
+    {
+     "url": "https://github.com/krezio/fly-arithmetic/blob/e36dd2b0a940268c14cf51680287a2342429574a/docs/RESULTS.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/krezio/fly-arithmetic/blob/e36dd2b0a940268c14cf51680287a2342429574a/python/flyarith/graph.py",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "worse",
+   "baseline_beaten": "no"
+  },
+  {
    "id": "flybrain-reservoir",
    "name": "flybrain-reservoir",
    "evidence_grade": "A",
@@ -5235,6 +5774,128 @@
      "label": "direct"
     }
    ]
+  },
+  {
+   "id": "fly-distill",
+   "name": "fly-distill: larval connectome as the frozen recurrent core of a byte-level language model",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "language-model",
+   "loop": "offline",
+   "wiring": {
+    "dataset": "larval L1",
+    "release": "Winding et al. 2023 Supplementary Data S1",
+    "scope": "whole larval connectome, 2,952 neurons, 38,401 edges at 3 or more synapses (frozen)"
+   },
+   "trained_parts": "input drive and next-byte readout trained on TinyStories; connectome weights frozen",
+   "metric": {
+    "name": "validation bits per byte at 150M training bytes (pre-registered primary endpoint: fly vs degree-preserving shuffle)",
+    "unit": "bits per byte",
+    "higher_is_better": false
+   },
+   "real": {
+    "value": 3.9572,
+    "n": 4,
+    "spread": "± 0.0303 sd",
+    "source": "ad5aef6 STATUS.md line 9 (per seed 3.9741 / 3.9350 / 3.9911 / 3.9284)"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "shuffled",
+     "null_type": "degree-preserving",
+     "label": "Degree-preserving random rewire of the same graph, one shuffle per seed (flylm.py lines 37 and 205-207)",
+     "value": 3.9171,
+     "n": 4,
+     "samples": 4,
+     "spread": "± 0.0843 sd across 4 shuffles",
+     "readout_refit": true,
+     "source": "ad5aef6 STATUS.md line 10 (per seed 3.9696 / 4.0046 / 3.8707 / 3.8234)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "er",
+     "null_type": "random-graph",
+     "label": "Erdos-Renyi random graph with permuted weights, one graph per seed (flylm.py lines 55 and 209-210)",
+     "value": 3.5234,
+     "n": 4,
+     "samples": 4,
+     "spread": "± 0.0294 sd across 4 networks",
+     "readout_refit": true,
+     "source": "ad5aef6 STATUS.md line 11 (per seed 3.5675 / 3.5096 / 3.5093 / 3.5073)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "fly-uniform",
+     "null_type": "other",
+     "label": "Real topology with uniform weights (weights erased)",
+     "value": 4.0049,
+     "n": 4,
+     "samples": 4,
+     "spread": "± 0.0050 sd",
+     "readout_refit": true,
+     "source": "ad5aef6 STATUS.md line 12",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "ci": null,
+    "p": null,
+    "stat_note": "Author statistics (STATUS.md lines 15-18): per-seed fly minus shuffled gaps +0.0045, -0.0696, +0.1204, +0.1049, mean +0.0401, paired t about 0.9 (df 3, not significant); the pre-registered rule reinstated H0 (no reliable fly-vs-shuffled difference). The Erdos-Renyi graph scored best at every scale (STATUS.md line 29). A hub-capped real connectome (in-degree cap 40, 2 seeds) scored 3.8381 (STATUS.md line 13), which the author reads as hubs masking a benefit; it is a modified real wiring, not a null, and is not scored here.",
+    "headline_arm": "shuffled",
+    "best_null_arm": "er",
+    "baseline_arm": null,
+    "retention": null,
+    "retention_method": "none",
+    "baseline_retention": null,
+    "difference": 0.0401
+   },
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": false,
+    "tuned_equally": true,
+    "null_samples": 4,
+    "has_no_brain_baseline": false,
+    "reason": "Same harness, training budget and seeds for every condition (flylm.py --condition); one degree-preserving shuffle per seed, 4 seeds.",
+    "verdict": "fair"
+   },
+   "quality": {
+    "n_per_arm": 4,
+    "held_out": true,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "reason": "fly-distill: the authors compared the real wiring with a degree-preserving shuffle on bits per byte (lower is better). Real 3.9572, null 3.9171 (4 null samples). Our ledger rules read this as mixed. The Erdos-Renyi random graph scored 3.5234, better than both, which is why the rules read mixed. Pre-registered decision rules, 4 seeds per arm and committed result files; single author, not recomputed by us.",
+    "uncertainty_reported": true,
+    "recomputed_by_us": false,
+    "grade": "strong"
+   },
+   "extraction": "files",
+   "one_line": "Authors compared real wiring with a degree-preserving shuffle on bits per byte: real 3.9572, null 3.9171 (4 null samples). Our rules read this as mixed.",
+   "commit": "ad5aef6fe1dc3a59d795a179c5ebdf8bbefe62ce",
+   "checked_at": "2026-10-11T20:30:00Z",
+   "sources": [
+    {
+     "url": "https://github.com/michelangeloromerochisco/fly-distill/blob/ad5aef6fe1dc3a59d795a179c5ebdf8bbefe62ce/STATUS.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/michelangeloromerochisco/fly-distill/blob/ad5aef6fe1dc3a59d795a179c5ebdf8bbefe62ce/flylm.py",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/michelangeloromerochisco/fly-distill/blob/ad5aef6fe1dc3a59d795a179c5ebdf8bbefe62ce/PAPER.md",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "mixed",
+   "baseline_beaten": "not-tested"
   },
   {
    "id": "bioreservoir",
@@ -5706,6 +6367,30 @@
    "fairness": "fair"
   },
   {
+   "study_id": "flywire-connectome-scz",
+   "label": "flywire-connectome: mushroom-body rate model on BANC, real wiring vs strength-preserving null wirings",
+   "task_family": "sensory-model",
+   "headline_null_type": "degree-preserving",
+   "retention": 1.0617,
+   "retention_method": "ratio",
+   "baseline_retention": null,
+   "wiring_effect": "worse",
+   "quality": "strong",
+   "fairness": "partly-fair"
+  },
+  {
+   "study_id": "melanograph",
+   "label": "MelanoGraph: FlyWire LIF subcircuit as the message carrier in a two-cue social task",
+   "task_family": "sensory-model",
+   "headline_null_type": "degree-preserving",
+   "retention": 0,
+   "retention_method": "floor",
+   "baseline_retention": null,
+   "wiring_effect": "helps",
+   "quality": "weak",
+   "fairness": "partly-fair"
+  },
+  {
    "study_id": "byo-flygym-body",
    "label": "Build your own, Add a body: FlyWire brain drives FlyGym walking (our run)",
    "task_family": "body-steering",
@@ -5814,6 +6499,18 @@
    "fairness": "unfair"
   },
   {
+   "study_id": "brainlab",
+   "label": "brainlab: frozen FlyWire olfactory circuit as a decision scorer, real vs target-permuted wiring",
+   "task_family": "game-play",
+   "headline_null_type": "target-permutation",
+   "retention": 0.9924,
+   "retention_method": "ratio",
+   "baseline_retention": 1.0763,
+   "wiring_effect": "no-difference",
+   "quality": "weak",
+   "fairness": "partly-fair"
+  },
+  {
    "study_id": "chessfly",
    "label": "ChessFly",
    "task_family": "game-play",
@@ -5848,6 +6545,18 @@
    "wiring_effect": "no-difference",
    "quality": "moderate",
    "fairness": "partly-fair"
+  },
+  {
+   "study_id": "duth-x-stepmania",
+   "label": "duth-x-stepmania: MaleCNS looming-escape circuit plays StepMania charts, against rewired copies",
+   "task_family": "game-play",
+   "headline_null_type": "degree-preserving",
+   "retention": 0.4121,
+   "retention_method": "ratio",
+   "baseline_retention": null,
+   "wiring_effect": "helps",
+   "quality": "moderate",
+   "fairness": "fair"
   },
   {
    "study_id": "fly-dino",
@@ -6030,6 +6739,18 @@
    "fairness": "partly-fair"
   },
   {
+   "study_id": "fly-arithmetic",
+   "label": "fly-arithmetic: FlyWire rate network as a reservoir for digit addition, vs a random network",
+   "task_family": "reservoir",
+   "headline_null_type": "random-graph",
+   "retention": 2.0417,
+   "retention_method": "ratio",
+   "baseline_retention": 1.9583,
+   "wiring_effect": "worse",
+   "quality": "strong",
+   "fairness": "partly-fair"
+  },
+  {
    "study_id": "flybrain-reservoir",
    "label": "flybrain-reservoir",
    "task_family": "reservoir",
@@ -6052,6 +6773,18 @@
    "wiring_effect": "not-tested",
    "quality": "weak",
    "fairness": "partly-fair"
+  },
+  {
+   "study_id": "fly-distill",
+   "label": "fly-distill: larval connectome as the frozen recurrent core of a byte-level language model",
+   "task_family": "language-model",
+   "headline_null_type": "degree-preserving",
+   "retention": null,
+   "retention_method": "none",
+   "baseline_retention": null,
+   "wiring_effect": "mixed",
+   "quality": "strong",
+   "fairness": "fair"
   },
   {
    "study_id": "bioreservoir",
