@@ -1,26 +1,26 @@
 {
  "schema_version": "1.0.0",
  "dataset": "Digital Fly Lab controls ledger",
- "version": "2026-10-12-run14",
- "generated_at": "2026-10-12T09:51:35Z",
- "run_id": "run:d1fe267d-8e73-4c4c-b92b-1629d9ad19dc",
- "as_of": "2026-10-12",
+ "version": "2026-10-13-run15",
+ "generated_at": "2026-10-13T10:38:09Z",
+ "run_id": "run:e2d56a5e-7b26-4ca5-a21b-0b3f54d1bbc5",
+ "as_of": "2026-10-13",
  "answer": {
-  "one_line": "Sometimes: fly wiring beat scrambled wiring in 19 of 41 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (13).",
-  "short": "Of 50 control studies in our catalogue, 41 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 19, makes no difference in 9, does worse in 4, gives mixed results in 8 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+  "one_line": "Sometimes: fly wiring beat scrambled wiring in 21 of 44 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (14).",
+  "short": "Of 53 control studies in our catalogue, 44 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 21, makes no difference in 10, does worse in 4, gives mixed results in 8 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
   "counts": {
-   "studies": 50,
-   "with_wiring_null": 41,
+   "studies": 53,
+   "with_wiring_null": 44,
    "by_family": {
     "reflex-circuit": {
-     "helps": 3,
+     "helps": 4,
      "no_difference": 0,
      "worse": 0,
      "mixed": 1,
      "not_tested": 0
     },
     "sensory-model": {
-     "helps": 4,
+     "helps": 5,
      "no_difference": 0,
      "worse": 1,
      "mixed": 0,
@@ -42,7 +42,7 @@
     },
     "ml-benchmark": {
      "helps": 1,
-     "no_difference": 2,
+     "no_difference": 3,
      "worse": 1,
      "mixed": 1,
      "not_tested": 0
@@ -585,6 +585,110 @@
      "label": "direct"
     }
    ]
+  },
+  {
+   "id": "fly-brain-sim",
+   "name": "fly-brain-sim (Flybrain): looming to giant fibre in a FlyWire v783 circuit pack, real vs shuffled strengths and scrambled targets",
+   "evidence_grade": "B",
+   "made_by_us": false,
+   "task_family": "reflex-circuit",
+   "loop": "open-loop",
+   "wiring": {
+    "dataset": "FlyWire FAFB",
+    "release": "v783",
+    "scope": "loom circuit pack exported from the whole-brain Shiu-style model (pack size not read)"
+   },
+   "trained_parts": "none",
+   "metric": {
+    "name": "giant fibre firing rate under LPLC2 looming stimulation (JS simulator, 300 ms)",
+    "unit": "Hz",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 170,
+    "n": 3,
+    "spread": "range 163-177 across 3 seeds",
+    "source": "12f6c77 NOTEBOOK.md line 19: 'Looming -> giant fiber: real 163-177 Hz' (value is the midpoint of the reported range, computed by us)"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "shuffled_strengths",
+     "null_type": "weight-shuffle",
+     "label": "shuffled strengths: keep who-connects-to-whom, shuffle synapse strengths and signs across all connections (web/lib/sim.ts lines 93-97)",
+     "value": 60,
+     "n": 3,
+     "samples": null,
+     "spread": "range 47-73 across 3 seeds",
+     "readout_refit": null,
+     "source": "12f6c77 NOTEBOOK.md line 19: 'shuffled strengths 47-73 Hz' (midpoint computed by us; whether each seed draws a new shuffle is not stated)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "scrambled_targets",
+     "null_type": "random-graph",
+     "label": "scrambled targets: every synapse keeps its source and weight but gets a uniformly random target (web/lib/sim.ts lines 186-191)",
+     "value": 0,
+     "n": 3,
+     "samples": null,
+     "spread": null,
+     "readout_refit": null,
+     "source": "12f6c77 NOTEBOOK.md line 19: 'scrambled targets 0'",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "ci": null,
+    "p": null,
+    "stat_note": "Ranges over 3 seeds in a lab notebook; no per-seed values or statistics. Other author-reported controls (NOTEBOOK.md lines 15-21): sugar to MN9 real 110-123 Hz vs 0 for both nulls; plume navigation 7/12 captures vs 3-5/12 scrambled and 3/12 random walk; Flappy Fly 1-13 pipes vs 0 scrambled.",
+    "headline_arm": "shuffled_strengths",
+    "best_null_arm": "shuffled_strengths",
+    "baseline_arm": null,
+    "retention": 0.3529,
+    "retention_method": "ratio",
+    "baseline_retention": null,
+    "difference": 110
+   },
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": true,
+    "tuned_equally": true,
+    "null_samples": null,
+    "has_no_brain_baseline": false,
+    "reason": "Headline weight shuffle keeps every edge, so degree and input/output edges are kept, but excitatory and inhibitory signs are mixed. The target scramble keeps out-degree only. Same model parameters and stimulus for all arms; number of distinct shuffles not stated.",
+    "verdict": "partly-fair"
+   },
+   "quality": {
+    "n_per_arm": 3,
+    "held_out": false,
+    "results_in_repo_files": false,
+    "independent_test": false,
+    "peer_review": "none",
+    "reason": "fly-brain-sim: the author compared the real loom circuit with shuffled strengths and scrambled targets on giant fibre rate. Real 163-177 Hz, shuffled strengths 47-73 Hz, scrambled 0. Numbers only in a lab notebook; not recomputed by us.",
+    "uncertainty_reported": false,
+    "recomputed_by_us": false,
+    "grade": "weak"
+   },
+   "extraction": "files",
+   "one_line": "Author's notebook: looming drives the giant fibre at 163-177 Hz with real wiring, 47-73 Hz with shuffled strengths, 0 with scrambled targets.",
+   "commit": "12f6c774667dc9bd577bc9d4cc38be2a3fbbafc2",
+   "checked_at": "2026-10-13T10:40:00Z",
+   "sources": [
+    {
+     "url": "https://github.com/dhruvagrawat/fly-brain-sim/blob/12f6c774667dc9bd577bc9d4cc38be2a3fbbafc2/NOTEBOOK.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/dhruvagrawat/fly-brain-sim/blob/12f6c774667dc9bd577bc9d4cc38be2a3fbbafc2/web/lib/sim.ts",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "helps",
+   "baseline_beaten": "not-tested"
   },
   {
    "id": "shiu-drosophila-brain-model",
@@ -1242,6 +1346,136 @@
    "baseline_beaten": "not-tested"
   },
   {
+   "id": "malecns-visual-motor",
+   "name": "malecns-visual-motor: MaleCNS v1.0 spiking network DNp15 direction contrast, original vs three degree-preserving rewired networks",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "sensory-model",
+   "loop": "open-loop",
+   "wiring": {
+    "dataset": "MaleCNS",
+    "release": "v1.0",
+    "scope": "176,422 neurons, 6,287,749 connections of at least 5 synapses (whole CNS graph) driven by FlyVis T4/T5 currents"
+   },
+   "trained_parts": "pretrained FlyVis optic-lobe front end (upstream checkpoint); the MaleCNS network and the DNp15 decoder are not trained",
+   "metric": {
+    "name": "DNp15 neural contrast for positive60 motion: unsmoothed DNp15 event rate, moving minus matched static condition, identical retinal input for all networks",
+    "unit": "Hz",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 81.167,
+    "n": 3,
+    "spread": "± 2.315 sd",
+    "source": "9bd8336 data/common-input/analysis.md line 7: original positive60 +81.167 ± 2.315 (mean ± SD over 3 initialisation seeds)"
+   },
+   "floor": {
+    "label": "zero contrast: no difference between moving and matched static stimulus (defined by the metric, not a run)",
+    "value": 0,
+    "source": "9bd8336 data/common-input/analysis.md line 16 (contrast definition)"
+   },
+   "arms": [
+    {
+     "arm_id": "rewired_20261010",
+     "null_type": "degree-preserving",
+     "label": "global degree/strength-preserving target rewiring, graph seed 20261010 (CSR target-stub permutation within signed-weight and Kenyon-gain strata)",
+     "value": -3.444,
+     "n": 3,
+     "samples": 1,
+     "spread": "± 2.334 sd",
+     "readout_refit": false,
+     "source": "9bd8336 data/common-input/analysis.md lines 9-14: shuffle_20261010 positive60 -3.444 ± 2.334 (3 initialisation seeds)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "rewired_20261011",
+     "null_type": "degree-preserving",
+     "label": "global degree/strength-preserving target rewiring, graph seed 20261011 (CSR target-stub permutation within signed-weight and Kenyon-gain strata)",
+     "value": 1.389,
+     "n": 3,
+     "samples": 1,
+     "spread": "± 2.299 sd",
+     "readout_refit": false,
+     "source": "9bd8336 data/common-input/analysis.md lines 9-14: shuffle_20261011 positive60 +1.389 ± 2.299 (3 initialisation seeds)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "rewired_20261012",
+     "null_type": "degree-preserving",
+     "label": "global degree/strength-preserving target rewiring, graph seed 20261012 (CSR target-stub permutation within signed-weight and Kenyon-gain strata)",
+     "value": -0.194,
+     "n": 3,
+     "samples": 1,
+     "spread": "± 1.569 sd",
+     "readout_refit": false,
+     "source": "9bd8336 data/common-input/analysis.md lines 9-14: shuffle_20261012 positive60 -0.194 ± 1.569 (3 initialisation seeds)",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "ci": null,
+    "p": null,
+    "stat_note": "Three rewired graphs, three initialisation seeds each, SD per arm; no test statistic in the file. negative60: original -64.333 ± 1.843 Hz vs -1.889, +3.083, +0.556 Hz (analysis.md lines 8-14). Body-feedback cohort: yaw residual original 26-38 degrees in magnitude vs 1-9 degrees for one rewired network, 3 seeds (data/mechanism/matched_topology_effects.json). Mean neural P (locomotor drive) 0.28-0.29 original vs 0.31-0.35 rewired.",
+    "headline_arm": "rewired_20261010",
+    "best_null_arm": "rewired_20261011",
+    "baseline_arm": null,
+    "retention": -0.0424,
+    "retention_method": "floor",
+    "baseline_retention": null,
+    "difference": 84.611
+   },
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": false,
+    "tuned_equally": null,
+    "null_samples": 3,
+    "has_no_brain_baseline": false,
+    "reason": "Identical retinal pixels and fitted T4/T5 currents for every network (analysis.md line 3). Rewiring keeps exact in- and out-degree and signed incoming strength (data/mechanism/network_intervention.json) but moves input and output partners. The decoder is fixed; whether any calibration (config/visual_drive_calibration.json, not read) was fitted on the original network only is unclear to us.",
+    "verdict": "partly-fair"
+   },
+   "quality": {
+    "n_per_arm": 3,
+    "held_out": false,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "reason": "malecns-visual-motor: the author compared the original MaleCNS network with 3 degree-preserving rewired networks on DNp15 direction contrast under identical input. Real +81.2 Hz, rewired -3.4 to +1.4 Hz. Per-run traces committed; single author, unpublished manuscript, not recomputed by us.",
+    "uncertainty_reported": true,
+    "recomputed_by_us": false,
+    "grade": "strong"
+   },
+   "extraction": "files",
+   "one_line": "Author compared original MaleCNS wiring with three degree-preserving rewirings on DNp15 direction contrast: +81.2 Hz vs -3.4 to +1.4 Hz, identical input.",
+   "commit": "9bd8336d1f531d2ea59b16c0a0999f3bf1e540c4",
+   "checked_at": "2026-10-13T10:40:00Z",
+   "sources": [
+    {
+     "url": "https://github.com/j297ddr4fv-rgb/malecns-visual-motor/blob/9bd8336d1f531d2ea59b16c0a0999f3bf1e540c4/data/common-input/analysis.md",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/j297ddr4fv-rgb/malecns-visual-motor/blob/9bd8336d1f531d2ea59b16c0a0999f3bf1e540c4/data/mechanism/network_intervention.json",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/j297ddr4fv-rgb/malecns-visual-motor/blob/9bd8336d1f531d2ea59b16c0a0999f3bf1e540c4/data/mechanism/matched_topology_effects.json",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/j297ddr4fv-rgb/malecns-visual-motor/blob/9bd8336d1f531d2ea59b16c0a0999f3bf1e540c4/README.md",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "helps",
+   "baseline_beaten": "not-tested"
+  },
+  {
    "id": "melanograph",
    "name": "MelanoGraph: FlyWire LIF subcircuit as the message carrier in a two-cue social task",
    "evidence_grade": "A",
@@ -1693,7 +1927,7 @@
      "label": "direct"
     },
     {
-     "url": "https://github.com/znatgost/fly67",
+     "url": "https://github.com/gexhaw/fly67",
      "label": "direct"
     },
     {
@@ -2947,7 +3181,7 @@
    "checked_at": "2026-10-03",
    "sources": [
     {
-     "url": "https://github.com/znatgost/chessfly",
+     "url": "https://github.com/gexhaw/chessfly",
      "label": "direct"
     }
    ]
@@ -5269,6 +5503,135 @@
    ]
   },
   {
+   "id": "malecns-keratitis-pilot",
+   "name": "malecns-keratitis-pilot: frozen MaleCNS v1.0 visual circuit features for bacterial vs fungal keratitis, real vs 10 rewired circuits",
+   "evidence_grade": "A",
+   "made_by_us": false,
+   "task_family": "ml-benchmark",
+   "loop": "offline",
+   "wiring": {
+    "dataset": "MaleCNS",
+    "release": "v1.0",
+    "scope": "visual subset, 101,939 neurons and 11,757,352 connections"
+   },
+   "trained_parts": "linear readout: scaling, PCA to 28 dimensions and class-balanced logistic regression, refitted for every circuit on training patients",
+   "metric": {
+    "name": "visit-level out-of-fold AUROC, bacterial vs fungal keratitis, masked lesion crop, 5 patient-disjoint folds (277 visits)",
+    "unit": "AUROC",
+    "higher_is_better": true
+   },
+   "real": {
+    "value": 0.4786,
+    "n": 1,
+    "spread": null,
+    "source": "bea3cb1 results/crop-summary.json lines 63-77: E_real28 auroc 0.47856, ci95 [0.385, 0.565] (conditional patient bootstrap)"
+   },
+   "floor": null,
+   "arms": [
+    {
+     "arm_id": "rewired_mean",
+     "null_type": "degree-preserving",
+     "label": "degree- and signed-strength-preserving rewired crop circuits, mean of 10 individual AUROCs (F_null00-09)",
+     "value": 0.4636,
+     "n": 10,
+     "samples": 10,
+     "spread": "range 0.426-0.539 across 10 rewired circuits",
+     "readout_refit": true,
+     "source": "bea3cb1 results/crop-summary.json line 260 null_mean_auroc 0.46356 and lines 261-264 null_range; per-circuit rows in results/crop-aggregate-metrics.csv",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "raw_input",
+     "null_type": "no-brain-baseline",
+     "label": "raw retinal input, crop (C_input28: same PCA-28 and logistic readout without the circuit)",
+     "value": 0.4645,
+     "n": 1,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": true,
+     "source": "bea3cb1 results/crop-summary.json lines 33-47: C_input28 auroc 0.46449, ci95 [0.364, 0.566]",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    },
+    {
+     "arm_id": "medsiglip",
+     "null_type": "no-brain-baseline",
+     "label": "MedSigLIP visual embedding PCA-28, crop (B_visual28)",
+     "value": 0.7537,
+     "n": 1,
+     "samples": 1,
+     "spread": null,
+     "readout_refit": true,
+     "source": "bea3cb1 results/crop-summary.json lines 18-32: B_visual28 auroc 0.75372, ci95 [0.670, 0.828]",
+     "recomputed_by_us": false,
+     "activity_ratio": null,
+     "activity_class": "not-reported"
+    }
+   ],
+   "effect": {
+    "ci": [
+     -0.0374,
+     0.0644
+    ],
+    "p": null,
+    "stat_note": "CI is the author's paired 95% interval of real minus mean rewired AUROC (+0.0150; crop-summary.json lines 244-250). Chance is 0.5; real and rewired circuits are both near or below it. Real beat 7 of 10 rewired circuits; the pre-defined continuation rule was not passed (lines 265-266). Real minus raw input +0.014 (CI -0.078 to +0.103).",
+    "headline_arm": "rewired_mean",
+    "best_null_arm": "rewired_mean",
+    "baseline_arm": "medsiglip",
+    "retention": 0.9687,
+    "retention_method": "ratio",
+    "baseline_retention": 1.5748,
+    "difference": 0.015
+   },
+   "fairness": {
+    "keeps_degree": true,
+    "keeps_io_boundary": false,
+    "tuned_equally": true,
+    "null_samples": 10,
+    "has_no_brain_baseline": true,
+    "reason": "Same image encoding, simulation and grouped evaluation for the real and each rewired circuit; edge switching keeps in- and out-degree and signed incoming strength (src/connectome_pilot/nulls.py lines 43-72). Spatially matched rewiring was not evaluated (docs/RESULTS.md line 74).",
+    "verdict": "fair"
+   },
+   "quality": {
+    "n_per_arm": 1,
+    "held_out": true,
+    "results_in_repo_files": true,
+    "independent_test": false,
+    "peer_review": "none",
+    "reason": "malecns-keratitis-pilot: the author compared the real circuit with 10 degree-preserving rewired circuits on keratitis AUROC. Real 0.479, rewired mean 0.464, paired CI spans 0. Aggregates committed; clinical data private, so not recomputable.",
+    "uncertainty_reported": true,
+    "recomputed_by_us": false,
+    "grade": "strong"
+   },
+   "extraction": "files",
+   "one_line": "Author compared a frozen MaleCNS visual circuit with 10 rewired circuits on keratitis images: AUROC 0.479 vs 0.464, both near chance.",
+   "commit": "bea3cb1f4b48d6a4e758d640f2875307d9b712f6",
+   "checked_at": "2026-10-13T10:40:00Z",
+   "sources": [
+    {
+     "url": "https://github.com/peopleatkorea-droid/malecns-keratitis-pilot/blob/bea3cb1f4b48d6a4e758d640f2875307d9b712f6/results/crop-summary.json",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/peopleatkorea-droid/malecns-keratitis-pilot/blob/bea3cb1f4b48d6a4e758d640f2875307d9b712f6/results/crop-aggregate-metrics.csv",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/peopleatkorea-droid/malecns-keratitis-pilot/blob/bea3cb1f4b48d6a4e758d640f2875307d9b712f6/src/connectome_pilot/nulls.py",
+     "label": "direct"
+    },
+    {
+     "url": "https://github.com/peopleatkorea-droid/malecns-keratitis-pilot/blob/bea3cb1f4b48d6a4e758d640f2875307d9b712f6/README.md",
+     "label": "direct"
+    }
+   ],
+   "wiring_effect": "no-difference",
+   "baseline_beaten": "no"
+  },
+  {
    "id": "neuroweave",
    "name": "NeuroWeave",
    "evidence_grade": "C",
@@ -6319,6 +6682,18 @@
    "fairness": "partly-fair"
   },
   {
+   "study_id": "fly-brain-sim",
+   "label": "fly-brain-sim (Flybrain): looming to giant fibre in a FlyWire v783 circuit pack, real vs shuffled strengths and scrambled targets",
+   "task_family": "reflex-circuit",
+   "headline_null_type": "weight-shuffle",
+   "retention": 0.3529,
+   "retention_method": "ratio",
+   "baseline_retention": null,
+   "wiring_effect": "helps",
+   "quality": "weak",
+   "fairness": "partly-fair"
+  },
+  {
    "study_id": "shiu-drosophila-brain-model",
    "label": "Drosophila_brain_model (Shiu et al. 2024)",
    "task_family": "reflex-circuit",
@@ -6375,6 +6750,18 @@
    "retention_method": "ratio",
    "baseline_retention": null,
    "wiring_effect": "worse",
+   "quality": "strong",
+   "fairness": "partly-fair"
+  },
+  {
+   "study_id": "malecns-visual-motor",
+   "label": "malecns-visual-motor: MaleCNS v1.0 spiking network DNp15 direction contrast, original vs three degree-preserving rewired networks",
+   "task_family": "sensory-model",
+   "headline_null_type": "degree-preserving",
+   "retention": -0.0424,
+   "retention_method": "floor",
+   "baseline_retention": null,
+   "wiring_effect": "helps",
    "quality": "strong",
    "fairness": "partly-fair"
   },
@@ -6722,6 +7109,18 @@
    "retention": 0.9973,
    "retention_method": "floor",
    "baseline_retention": null,
+   "wiring_effect": "no-difference",
+   "quality": "strong",
+   "fairness": "fair"
+  },
+  {
+   "study_id": "malecns-keratitis-pilot",
+   "label": "malecns-keratitis-pilot: frozen MaleCNS v1.0 visual circuit features for bacterial vs fungal keratitis, real vs 10 rewired circuits",
+   "task_family": "ml-benchmark",
+   "headline_null_type": "degree-preserving",
+   "retention": 0.9687,
+   "retention_method": "ratio",
+   "baseline_retention": 1.5748,
    "wiring_effect": "no-difference",
    "quality": "strong",
    "fairness": "fair"

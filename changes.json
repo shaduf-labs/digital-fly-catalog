@@ -2,6 +2,48 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-13-run15-relays",
+      "changed_at": "2026-10-13T11:40:00Z",
+      "summary": "Relays against an activity-matched control (13 Oct 2026, our own test, pre-registered, brain only): The two sides disagree: on one side silencing the relays lowered the turn neuron's rate more than matched activity elsewhere, on the other it did not. We do not draw a conclusion. Left eye: nothing silenced 21-25 Hz, matched control 13-34 Hz, relays E2 16.0 Hz, PVLP141 17.7 Hz; right eye 40-49, 40-43, 25.7, 27.0 Hz. 5 seeds and 5 matched draws per side, 3 relay seeds; some draws include direct inputs to the turn neuron; E2 is mostly PVLP141; not fly behaviour. The 9 Oct summary line stays with a dated note (its random control removed 2-6 times as much activity).",
+      "path": "/p/digital-fly-catalog/is-it-real/#relays15-heading"
+    },
+    {
+      "change_id": "2026-10-13-run15-learn",
+      "changed_at": "2026-10-13T11:40:00Z",
+      "summary": "New plain answer (13 Oct 2026): Can a fly brain learn maths, to hack or to play a game? Our reading of what changes with practice in 13 projects, each claim attributed to its project; the 13 catalogue entries gain a learning field and a \"What is learned\" note.",
+      "path": "/p/digital-fly-catalog/is-it-real/#q-learn"
+    },
+    {
+      "change_id": "2026-10-13-run15-entries",
+      "changed_at": "2026-10-13T11:40:00Z",
+      "summary": "140 catalogue entries (13 Oct 2026): 6 new: malecns-visual-motor (A), malecns-keratitis-pilot (A, a negative result), fly-chess (B), adfly-connectome (B), fly-brain-sim (B) and FlyGift (B, linked by its source repository only).",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-13"
+    },
+    {
+      "change_id": "2026-10-13-run15-ledger",
+      "changed_at": "2026-10-13T11:40:00Z",
+      "summary": "Controls ledger (13 Oct 2026): 53 studies, 44 with a wiring null: helps 21, no difference 10, worse 4, mixed 8, not yet scored 1. Three rows joined from the authors' own numbers: malecns-visual-motor (helps), malecns-keratitis-pilot (no difference) and fly-brain-sim (helps, lab-notebook ranges).",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed-heading"
+    },
+    {
+      "change_id": "2026-10-13-run15-owner-move",
+      "changed_at": "2026-10-13T11:40:00Z",
+      "summary": "Moved by their owner (13 Oct 2026): ChessFly and fly67 moved from github.com/znatgost to github.com/gexhaw (GitHub 301; the old demo pages answer 404). Try and source links now point to gexhaw; grades unchanged until the next re-check.",
+      "path": "/p/digital-fly-catalog/projects/#p-chessfly"
+    },
+    {
+      "change_id": "2026-10-13-run15-freshness",
+      "changed_at": "2026-10-13T11:40:00Z",
+      "summary": "Verdict freshness (13 Oct 2026): the repositories of 14 of the 21 verdict rows re-checked, none with new code since grading; 56 of 56 videos available; fly64 and fly-terraria citations corrected; flydoom's repository still answers 404.",
+      "path": "/p/digital-fly-catalog/is-it-real/#week-heading"
+    },
+    {
+      "change_id": "2026-10-13-run15-report",
+      "changed_at": "2026-10-13T11:40:00Z",
+      "summary": "New report: Fifteenth check (13 Oct 2026), with the relay design, deviations, matched-draw details, the learning reading, new entries, tracking and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-13-run15/"
+    },
+    {
       "change_id": "2026-10-12-run14-flyvis",
       "changed_at": "2026-10-12T09:54:00Z",
       "summary": "Not decided: a second, lower-memory attempt on 12 Oct also needed more memory than our shared machine has (about 3 GB at its peak; the machine allows 3 GB for everything running on it). Measured: it ran out while preparing the moving-edge test input, before the first simulation step (sampled peak about 3.17 GB of the 3.22 GB limit). No result in either direction, no ledger row, no chart; the 10 Oct note is kept as dated history.",

@@ -1138,3 +1138,26 @@
 /* ---- run 14 (2026-10-12): report ledger bars; the outlined block marks the row added that day */
 [data-agent-document] .dfl-svg .r14-new { fill: none; stroke: var(--dfl-ink); stroke-width: 2; }
 [data-agent-document] .dfl-r14fig .dfl-tall { max-width: 26em; }
+
+/* run 15 (2026-10-13): relays against an activity-matched control (build-relays15.mjs) */
+[data-agent-document] .dfl-relay15 { margin: 18px 0 24px; padding: 14px 18px 8px; border: 1px solid var(--dfl-line-strong); border-left: 4px solid var(--dfl-amber); border-radius: 0 var(--dfl-radius) var(--dfl-radius) 0; }
+[data-agent-document] .dfl-relay15 p, [data-agent-document] .dfl-relay15 li { overflow-wrap: break-word; }
+[data-agent-document] .dfl-relay15 .dfl-r15pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px 24px; }
+[data-agent-document] .dfl-relay15 .dfl-r15pair svg { max-width: 30em; }
+[data-agent-document] .dfl-svg .r15-grid { stroke: var(--dfl-line-strong); stroke-width: 0.6; }
+[data-agent-document] .dfl-svg .r15-nullband { fill: none; stroke: var(--dfl-ink); stroke-width: 1; stroke-dasharray: 3 2; }
+[data-agent-document] .dfl-svg .r15-seed { fill: var(--dfl-amber); stroke: #fff; stroke-width: 1; }
+[data-agent-document] .dfl-svg .r15-mean { fill: var(--dfl-ink); }
+[data-agent-document] .dfl-r15notes { padding-left: 1.2em; }
+[data-agent-document] .dfl-r15s0 { color: var(--dfl-muted); font-size: 0.95em; }
+/* run 15: "Can it learn?" bar (build-learn15.mjs) */
+[data-agent-document] .dfl-learnfig svg { max-width: 40em; }
+[data-agent-document] .dfl-svg .r15l-a, [data-agent-document] .dfl-learnsw.r15l-a { fill: #2a78d6; background: #2a78d6; }
+[data-agent-document] .dfl-svg .r15l-b, [data-agent-document] .dfl-learnsw.r15l-b { fill: #7d5a17; background: #7d5a17; }
+[data-agent-document] .dfl-svg .r15l-c, [data-agent-document] .dfl-learnsw.r15l-c { fill: #3f7d4e; background: #3f7d4e; }
+[data-agent-document] .dfl-svg .r15l-d, [data-agent-document] .dfl-learnsw.r15l-d { fill: #5f5e5a; background: #5f5e5a; }
+[data-agent-document] .dfl-svg .r15l-e, [data-agent-document] .dfl-learnsw.r15l-e { fill: #a3461a; background: #a3461a; }
+[data-agent-document] .dfl-svg .r15l-n { fill: #fff; }
+[data-agent-document] .dfl-learnlegend { list-style: none; padding: 0; margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+[data-agent-document] .dfl-learnlegend li { display: inline-flex; align-items: center; gap: 6px; }
+[data-agent-document] .dfl-learnsw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; flex: none; }

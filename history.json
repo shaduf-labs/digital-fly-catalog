@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "run:e2d56a5e-7b26-4ca5-a21b-0b3f54d1bbc5",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-13T10:18:16Z",
+      "completed_at": "2026-10-13T11:40:00Z",
+      "title": "Fifteenth check: the relays against an activity-matched control, and can a fly brain learn?",
+      "summary": "The two sides disagree: on one side silencing the relays lowered the turn neuron's rate more than matched activity elsewhere, on the other it did not. We do not draw a conclusion. (relays against an activity-matched control, brain only, pre-registered; 5 seeds and 5 matched draws per side). A fifth plain answer: what changes with practice in 13 projects. 6 new entries (140 in total); 3 new ledger rows (53 studies, 44 with a wiring null, helps 21); ChessFly and fly67 moved by their owner to gexhaw; repositories of 14 of 21 verdict rows re-checked.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-13-run15/",
+      "entrypoint": "reports/2026-10-13-run15/index.html"
+    },
+    {
       "run_id": "run:d1fe267d-8e73-4c4c-b92b-1629d9ad19dc",
       "status": "completed",
       "answer_change": "meaningful_change",

@@ -511,6 +511,99 @@
    "type": "string",
    "maxLength": 160,
    "description": "Added 2026-10-06, optional. Plain-text detail for trained_class, for example an optional trained part that the main path does not use."
+  },
+  "learning": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "wiring_control",
+    "meaning"
+   ],
+   "description": "Added in run 15 (2026-10-13), optional. 'Can it learn?': what changes with experience in the project's main path, read at the catalogued commit. 'meaning' is attributed to its source (for example 'The README says ...'); what_is_trained and wiring_control are our classification of the cited lines. A field that could not be read is left out and named in check_note as 'not checked'.",
+   "properties": {
+    "what_is_trained": {
+     "type": "string",
+     "enum": [
+      "none",
+      "readout only",
+      "plasticity rule on part of the network",
+      "whole network",
+      "hand mapping"
+     ],
+     "description": "none = nothing changes with experience; readout only = a readout or decoder on a fixed network; plasticity rule on part of the network = a learning rule (for example dopamine-gated) changes some synapses during a run; whole network = gains, weights or per-cell parameters throughout the network are trained (wiring itself may stay fixed); hand mapping = a hand-made mapping is changed by the author, no learning."
+    },
+    "wiring_control": {
+     "type": "string",
+     "enum": [
+      "none",
+      "shuffled or rewired"
+     ],
+     "description": "Whether the project compares its result with shuffled, rewired or random wiring; see control_study."
+    },
+    "control_study": {
+     "type": "string",
+     "description": "Ledger study id in controls.json when wiring_control is 'shuffled or rewired'."
+    },
+    "meaning": {
+     "type": "string",
+     "maxLength": 400,
+     "description": "One neutral sentence: what changes with experience, attributed to its source."
+    },
+    "check_note": {
+     "type": "string",
+     "maxLength": 400,
+     "description": "Our check note: which fields were not checked and why."
+    },
+    "checked_at": {
+     "type": "string",
+     "format": "date"
+    },
+    "source": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "file"
+      ],
+      "properties": {
+       "file": {
+        "type": "string"
+       },
+       "lines": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    }
+   }
+  },
+  "owner_move": {
+   "type": "object",
+   "description": "A repository or page move made by the project owner, with date, old and new address and a plain note. Added 2026-10-13 (run 15).",
+   "properties": {
+    "date": {
+     "type": "string"
+    },
+    "from": {
+     "type": "string"
+    },
+    "to": {
+     "type": "string"
+    },
+    "note": {
+     "type": "string"
+    }
+   }
   }
  }
 }
