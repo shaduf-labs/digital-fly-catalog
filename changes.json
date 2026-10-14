@@ -2,6 +2,42 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-14-run16-body-strength",
+      "changed_at": "2026-10-14T11:00:00Z",
+      "summary": "The looming turn in degrees, at each input strength (14 Oct 2026, our own test, pre-registered, simulated body): left eye: In the body, the fly turned away from 30 spikes/s per looming neuron upward on this side, the strength at which the brain's turn command appeared; the turn was about 11 deg at 30 and about 37 deg at 80 (our mapping turns the brain's rates into steering). Right eye: At 30 spikes/s the turn was borderline: the fly turned away in 1 of 2 runs on this side; from 40 upward it turned away in every run. The right-eye borderline rests on one run (seed 0 at 30 spikes/s, 9.18 deg against the 10 deg rule). These body runs turn the brain's firing rates into steering through our own hand-made mapping, so they show the brain result in degrees; they are not a separate test of the wiring. No scrambled brains were run at these strengths.",
+      "path": "/p/digital-fly-catalog/is-it-real/#body16-heading"
+    },
+    {
+      "change_id": "2026-10-14-run16-relay-body",
+      "changed_at": "2026-10-14T11:00:00Z",
+      "summary": "Body lines under the 13 Oct relay headline, which stays the headline (14 Oct 2026, descriptive, one run per arm and side): With PVLP141 silenced, the fly still turned away, by about 24 deg instead of 37 deg (one run per side; our mapping). With all 21-23 two-step relay neurons silenced, the fly still turned away, by about 37 deg instead of 37 deg (one run per side; our mapping). (left eye; unrounded 37.3 vs 37.2 deg) With PVLP141 silenced, the fly still turned away, by about 34 deg instead of 55 deg (one run per side; our mapping). With all 21-23 two-step relay neurons silenced, the fly still turned away, by about 40 deg instead of 55 deg (one run per side; our mapping). (right eye) These body runs turn the brain's firing rates into steering through our own hand-made mapping, so they show the brain result in degrees; they are not a separate test of the wiring. No scrambled brains were run at these strengths.",
+      "path": "/p/digital-fly-catalog/is-it-real/#relays15-heading"
+    },
+    {
+      "change_id": "2026-10-14-run16-stale-text",
+      "changed_at": "2026-10-14T11:00:00Z",
+      "summary": "Out-of-date text fixed (14 Oct 2026): the 6 Oct looming table on Is it real? now shows the 8 Oct body walk of each of the 7 drives it still marked as waiting, and the \"Where is the turn?\" share card says they walked on 8 Oct.",
+      "path": "/p/digital-fly-catalog/is-it-real/#loom2-heading"
+    },
+    {
+      "change_id": "2026-10-14-run16-entries",
+      "changed_at": "2026-10-14T11:00:00Z",
+      "summary": "144 catalogue entries (14 Oct 2026): 4 new: fly-cx-navigation-servo (B), NeuroPest (B, linked by its source repository only), Fly Garden (B) and FastBrain (n/a); none has a wiring control. fly64's causality citation now points to lines 37-47.",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-14"
+    },
+    {
+      "change_id": "2026-10-14-run16-freshness",
+      "changed_at": "2026-10-14T11:00:00Z",
+      "summary": "Freshness (14 Oct 2026): the repositories of 14 of the 21 verdict rows re-checked, none with new code since grading; 56 of 56 videos available; controls ledger unchanged (53 studies, 44 with a wiring null); two Zenodo paper links could not be reached on 14 Oct (connection timed out twice), not read as broken.",
+      "path": "/p/digital-fly-catalog/is-it-real/#week-heading"
+    },
+    {
+      "change_id": "2026-10-14-run16-report",
+      "changed_at": "2026-10-14T11:00:00Z",
+      "summary": "New report: Sixteenth check (14 Oct 2026), with the body runs at each input strength, the checks before reading, deviations, the relay body lines, new entries, tracking and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-14-run16/"
+    },
+    {
       "change_id": "2026-10-13-run15-relays",
       "changed_at": "2026-10-13T11:40:00Z",
       "summary": "Relays against an activity-matched control (13 Oct 2026, our own test, pre-registered, brain only): The two sides disagree: on one side silencing the relays lowered the turn neuron's rate more than matched activity elsewhere, on the other it did not. We do not draw a conclusion. Left eye: nothing silenced 21-25 Hz, matched control 13-34 Hz, relays E2 16.0 Hz, PVLP141 17.7 Hz; right eye 40-49, 40-43, 25.7, 27.0 Hz. 5 seeds and 5 matched draws per side, 3 relay seeds; some draws include direct inputs to the turn neuron; E2 is mostly PVLP141; not fly behaviour. The 9 Oct summary line stays with a dated note (its random control removed 2-6 times as much activity).",

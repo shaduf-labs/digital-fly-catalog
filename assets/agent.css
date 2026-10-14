@@ -1161,3 +1161,20 @@
 [data-agent-document] .dfl-learnlegend { list-style: none; padding: 0; margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 4px 16px; }
 [data-agent-document] .dfl-learnlegend li { display: inline-flex; align-items: center; gap: 6px; }
 [data-agent-document] .dfl-learnsw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; flex: none; }
+/* Run 16 (2026-10-14): body runs at each stimulus strength (build-body16.mjs) */
+[data-agent-document] .dfl-body16 { margin: 18px 0 24px; padding: 14px 18px 8px; border: 1px solid var(--dfl-line-strong); border-left: 4px solid var(--dfl-modelled); border-radius: 0 var(--dfl-radius) var(--dfl-radius) 0; }
+[data-agent-document] .dfl-body16 p, [data-agent-document] .dfl-body16 li, [data-agent-document] .dfl-b16relay p, [data-agent-document] .dfl-b16relay li { overflow-wrap: break-word; }
+[data-agent-document] .dfl-body16 .dfl-b16pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px 24px; }
+[data-agent-document] .dfl-body16 .dfl-b16pair svg { max-width: 30em; }
+[data-agent-document] .dfl-b16disc { margin: 10px 0; padding: 8px 12px; background: var(--dfl-soft); border-radius: 6px; color: var(--dfl-text); }
+[data-agent-document] .dfl-b16eye { margin: 6px 0; }
+[data-agent-document] .dfl-b16legend { list-style: none; padding: 0; margin: 6px 0 8px; display: flex; flex-wrap: wrap; gap: 4px 18px; color: var(--dfl-text); font-size: 0.95em; }
+[data-agent-document] .dfl-b16legend li { display: inline-flex; align-items: center; gap: 6px; }
+[data-agent-document] .dfl-b16legend svg { width: 22px; height: 14px; flex: none; }
+[data-agent-document] .dfl-b16relay { margin: 10px 0 14px; padding: 8px 12px; border-left: 3px solid var(--dfl-modelled); background: var(--dfl-tint); }
+[data-agent-document] .dfl-b16relay ul { padding-left: 1.2em; margin: 6px 0; }
+[data-agent-document] .dfl-svg .b16-grid { stroke: var(--dfl-line); stroke-width: 0.8; }
+[data-agent-document] .dfl-svg .b16-line { fill: none; stroke: var(--dfl-modelled); stroke-width: 2; }
+[data-agent-document] .dfl-svg .b16-s2 { fill: var(--dfl-modelled); stroke: #fff; stroke-width: 2; }
+[data-agent-document] .dfl-svg .b16-s0 { fill: #fff; stroke: var(--dfl-ink); stroke-width: 2; }
+[data-agent-document] .dfl-svg .b16-floor { fill: var(--dfl-faint); stroke: #fff; stroke-width: 1.5; }

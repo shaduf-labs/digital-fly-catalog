@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Digital Fly Lab controls ledger",
-  "version": "2026-10-13-run15",
-  "generated_at": "2026-10-13T10:38:09Z",
-  "run_id": "report-77a01df2426177ea9e70b3d7",
-  "as_of": "2026-10-13",
+  "version": "2026-10-14-run16",
+  "generated_at": "2026-10-14T12:00:00Z",
+  "run_id": "report-d6114ae0c808c345a0321231",
+  "as_of": "2026-10-14",
   "answer": {
     "one_line": "Sometimes: fly wiring beat scrambled wiring in 21 of 44 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (14).",
     "short": "Of 53 control studies in our catalogue, 44 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 21, makes no difference in 10, does worse in 4, gives mixed results in 8 and is not yet scored in 1. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",

@@ -2,7 +2,7 @@
  "schema_version": "1.0.0",
  "collection": "Digital Fly Lab video gallery",
  "publisher": "Digital Fly Lab (independent Shaduf resource)",
- "checked_at": "2026-10-13",
+ "checked_at": "2026-10-14",
  "record_count": 56,
  "schema": "videos.schema.json",
  "rules": [
@@ -47,9 +47,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -87,9 +87,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -127,9 +127,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -167,9 +167,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -207,9 +207,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -247,9 +247,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -287,9 +287,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -327,9 +327,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -367,9 +367,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -407,9 +407,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -447,9 +447,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -487,9 +487,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -527,9 +527,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -576,9 +576,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -616,9 +616,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -656,9 +656,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -696,9 +696,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -736,9 +736,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -776,9 +776,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -816,9 +816,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -856,9 +856,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -896,9 +896,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -936,9 +936,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "ru"
   },
   {
@@ -976,9 +976,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1019,9 +1019,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1059,9 +1059,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1099,9 +1099,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1139,9 +1139,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1179,9 +1179,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1219,9 +1219,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1259,9 +1259,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1299,9 +1299,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1339,9 +1339,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1379,9 +1379,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1419,9 +1419,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1459,9 +1459,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 206,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1499,9 +1499,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1539,9 +1539,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1581,9 +1581,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1621,9 +1621,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1661,9 +1661,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1701,9 +1701,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1741,9 +1741,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1781,9 +1781,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1821,9 +1821,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1861,9 +1861,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1901,9 +1901,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1941,9 +1941,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -1981,9 +1981,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -2021,9 +2021,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -2061,9 +2061,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -2118,9 +2118,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -2171,9 +2171,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "en"
   },
   {
@@ -2228,9 +2228,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "ru"
   },
   {
@@ -2285,9 +2285,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "es"
   },
   {
@@ -2338,9 +2338,9 @@
    "link_status": {
     "status": "ok",
     "http_code": 200,
-    "checked_at": "2026-10-13"
+    "checked_at": "2026-10-14"
    },
-   "last_checked": "2026-10-13",
+   "last_checked": "2026-10-14",
    "language": "es"
   }
  ]
