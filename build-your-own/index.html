@@ -1943,7 +1943,7 @@ print(&quot;retention&quot;, retention, &quot;readings&quot;, readings)</code></
       <summary><code>run_nulls.py</code>: the brain worker with the P9 stimulus and the descending-neuron recording (490 lines). One path on our machine is replaced by a placeholder; otherwise verbatim.</summary>
       <pre><code>&quot;&quot;&quot;Fair-test batch driver and trial worker (Digital Fly Lab, run 5; extended in run 6). Licence: MIT.
 
-Run 6 (run:03aa82ff-d83b-47ec-bb36-c8edc64e696c, 2026-10-02) adds, without changing the run 5 code path:
+Run 6 (2026-10-02) adds, without changing the run 5 code path:
   --stim SUG|P9|P9L   which neurons get the upstream Poisson input (SUG = the 21 sugar GRNs, as run 5; P9 = DNp09 L+R;
                       P9L = DNp09 left only). The Poisson input itself is exactly upstream&#x27;s.
   --dn DN_INFO.json   record every spike (SpikeMonitor record=True; does not change the dynamics) and write, for each
@@ -2697,7 +2697,7 @@ Trial files: results/brain/&lt;STIM&gt;-&lt;arm&gt;-&lt;seed&gt;[-g&lt;gain&gt;]
 Original docstring follows.
 Fair-test batch driver and trial worker (Digital Fly Lab, run 5; extended in run 6). Licence: MIT.
 
-Run 6 (run:03aa82ff-d83b-47ec-bb36-c8edc64e696c, 2026-10-02) adds, without changing the run 5 code path:
+Run 6 (2026-10-02) adds, without changing the run 5 code path:
   --stim SUG|P9|P9L   which neurons get the upstream Poisson input (SUG = the 21 sugar GRNs, as run 5; P9 = DNp09 L+R;
                       P9L = DNp09 left only). The Poisson input itself is exactly upstream&#x27;s.
   --dn DN_INFO.json   record every spike (SpikeMonitor record=True; does not change the dynamics) and write, for each
