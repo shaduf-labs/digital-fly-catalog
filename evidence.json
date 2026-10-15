@@ -2430,6 +2430,116 @@
       "accessed_at": "2026-10-14T09:55:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "run17-relays-right-n10",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-15-run17/#relays-heading",
+      "title": "Digital Fly Lab relays against 10 right-side matched controls (15 Oct 2026)",
+      "claim": "15 Oct: we ran 5 more matched controls on the right side, 10 in all. Every one of them left the turn neuron's rate higher than silencing the relays did (controls 38-47 Hz, relays 25.7 Hz), so the right-side reading did not change. Our rule compares the relays with the lowest matched control, so extra controls can only make the relays look less special, never more. Right-eye matched controls 40, 41, 41, 43, 40, 43, 47, 38, 47, 46 Hz; relays E2 25.7 Hz, PVLP141 alone 27.0 Hz; 5 seeds per side; 5 matched draws on the left and 10 on the right. Brain only, one model, not a real fly.",
+      "accessed_at": "2026-10-15T10:05:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-run17",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
+      "title": "Digital Fly Lab controls ledger (15 Oct 2026)",
+      "claim": "58 studies, 49 with a wiring null: helps 22, no difference 11, worse 4, mixed 10, not yet scored 2. Five rows joined on 15 Oct (flyscore, flybrain-prove-ai, flylab-pharmacology, malecns-training-gomoku, fly-connectome-study), scored by fixed rules from the authors' numbers; not recomputed by us.",
+      "accessed_at": "2026-10-15T10:05:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyscore-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/LordKarV/flyscore",
+      "title": "FlyScore repository",
+      "claim": "A wiring-specificity benchmark on MaleCNS v1.0; sugar to MN9 real 1.0 (40 trials) vs 0.0 for weight-shuffled and rewired copies (author numbers).",
+      "accessed_at": "2026-10-15T10:05:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flybrain-prove-ai-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/prove-ai/flybrain",
+      "title": "Flybrain (prove-ai) repository",
+      "claim": "Seven MaleCNS v1.0 projects; its connectome language model scores 2.6388 bits per byte vs 2.6286 for degree-rewired graphs (lower is better; author numbers). A mirror at the same commit: AUW160150/flybrain.",
+      "accessed_at": "2026-10-15T10:05:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flylab-pharmacology-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/pinkysworld/FlyLab",
+      "title": "FlyLab (pinkysworld) repository",
+      "claim": "Compound-perturbation models on MaleCNS v1.0 cuts tested against degree-preserving, weight-permuted, random and sign-permuted ensembles (author numbers).",
+      "accessed_at": "2026-10-15T10:05:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "malecns-training-gomoku-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/Wldgyu/MaleCNS_training",
+      "title": "MaleCNS_training repository",
+      "claim": "A trainable recurrent network on a MaleCNS v1.0 subgraph; held-out tactical accuracy 0.787 vs 0.785 rewired, 0.788 RNN, 0.790 GRU (author numbers).",
+      "accessed_at": "2026-10-15T10:05:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-connectome-study-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/meiluosi/fly-connectome-study",
+      "title": "fly-connectome-study repository",
+      "claim": "Pre-registered tests of MaleCNS v1.0 mushroom-body wiring; foraging (200 worlds) real 44.0 vs shuffled 44.36, random 50.905 (author numbers).",
+      "accessed_at": "2026-10-15T10:05:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flylab-demo-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/DamJanJot/flylab-demo",
+      "title": "flylab-demo repository",
+      "claim": "A local NeuroMechFly/FlyGym lab with a four-neuron FlyWire v783 fragment; committed validation output; no wiring control.",
+      "accessed_at": "2026-10-15T10:05:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "discord-fly-brain-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/Amankrsudo/discord-fly-brain",
+      "title": "discord-fly-brain repository",
+      "claim": "A Discord fly agent on hand-designed functional groups with a MaleCNS v1.0 research workspace; no wiring control.",
+      "accessed_at": "2026-10-15T10:05:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-brain-plays-pokemon-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/ianwes92/fly-brain-plays-pokemon",
+      "title": "fly-brain-plays-pokemon repository (code of the Pokémon-on-a-Raspberry-Pi stream)",
+      "claim": "Whole FlyWire FAFB v783 graph as a leaky integrate-and-fire network; game RAM mapped to visual neurons; hand-written priority arbiter; chat keys and a paid override; only Kenyon-cell to MBON learning; no shuffled-wiring control.",
+      "accessed_at": "2026-10-15T10:05:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "roblox-fly-avatar-claim-video",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=apSOHtAHDTc",
+      "title": "SharkBlox recap video: fruit-fly brains controlling Roblox avatars",
+      "claim": "The description names games and a Roblox user but no builder, code or paper; we did not watch the video.",
+      "accessed_at": "2026-10-15T10:05:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
     }
   ]
 }

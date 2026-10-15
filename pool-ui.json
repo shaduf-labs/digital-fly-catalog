@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "default_page": "overview",
-  "meaningfully_updated_at": "2026-10-14T11:00:00Z",
+  "meaningfully_updated_at": "2026-10-15T11:00:00Z",
   "pages": [
     {
       "id": "overview",
@@ -159,7 +159,7 @@
       "label": "Does fly wiring help?",
       "icon": "◐",
       "group": "Understand",
-      "description": "Does real fruit fly connectome wiring help? 44 control studies compared, including our own pre-registered tests: four ways to scramble the fly brain, who does the walking in a FlyGym body, and a looming shadow that turns it in 6 of 6 runs, even against activity-matched scrambles. Brain vs no-brain baselines and a checklist for fair controls.",
+      "description": "Does real fruit fly connectome wiring help? 49 control studies compared, including our own pre-registered tests: four ways to scramble the fly brain, who does the walking in a FlyGym body, and a looming shadow that turns it in 6 of 6 runs, even against activity-matched scrambles. Brain vs no-brain baselines and a checklist for fair controls.",
       "parent": null,
       "entrypoint": "does-fly-wiring-help/index.html",
       "entrypoint_type": "html_fragment",

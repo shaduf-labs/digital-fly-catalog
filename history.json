@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-96adf9534e3f3bd75683489d",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-15T09:37:21Z",
+      "completed_at": "2026-10-15T11:00:00Z",
+      "title": "Seventeenth check: the right-eye relay reading with 10 matched controls",
+      "summary": "The relay headline stays: \"The two sides disagree: on one side silencing the relays lowered the turn neuron's rate more than matched activity elsewhere, on the other it did not. We do not draw a conclusion.\" 15 Oct: we ran 5 more matched controls on the right side, 10 in all. Every one of them left the turn neuron's rate higher than silencing the relays did (controls 38-47 Hz, relays 25.7 Hz), so the right-side reading did not change. Our rule compares the relays with the lowest matched control, so extra controls can only make the relays look less special, never more. (5 seeds per side; 5 matched draws on the left and 10 on the right.) 8 new entries (152 in total); controls ledger 58 studies, 49 with a wiring null: helps 22, no difference 11, worse 4, mixed 10, not yet scored 2. fly-pokemon-pi5-stream (the Pokémon-on-a-Raspberry-Pi stream) re-graded from its public code (ianwes92/fly-brain-plays-pokemon) from U to B, borderline C: whole FlyWire FAFB v783 graph as a leaky integrate-and-fire network; game RAM mapped to visual neurons; a hand-written priority arbiter picks the keys; chat keys and a paid override can replace the fly's keys; only Kenyon-cell to MBON learning; no shuffled-wiring control; the stream was not watched.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-15-run17/",
+      "entrypoint": "reports/2026-10-15-run17/index.html"
+    },
+    {
       "run_id": "report-d6114ae0c808c345a0321231",
       "status": "completed",
       "answer_change": "meaningful_change",

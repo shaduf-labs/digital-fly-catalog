@@ -1178,3 +1178,14 @@
 [data-agent-document] .dfl-svg .b16-s2 { fill: var(--dfl-modelled); stroke: #fff; stroke-width: 2; }
 [data-agent-document] .dfl-svg .b16-s0 { fill: #fff; stroke: var(--dfl-ink); stroke-width: 2; }
 [data-agent-document] .dfl-svg .b16-floor { fill: var(--dfl-faint); stroke: #fff; stroke-width: 1.5; }
+/* Run 17 (2026-10-15): R-STAY line and rule line under the S3 relay headline; the 5 matched controls added on 15 Oct */
+[data-agent-document] .dfl-r17stay { border-left: 3px solid var(--dfl-amber); padding: 0.1rem 0 0.1rem 0.75rem; margin: 0.6rem 0 0.8rem; }
+[data-agent-document] .dfl-r17stay p { margin: 0.25rem 0; overflow-wrap: anywhere; }
+[data-agent-document] .dfl-svg .lr-open.r17-new { stroke-width: 2.8; }
+/* Run 17: "In other languages" box on Build your own */
+[data-agent-document] .dfl-langs { border: 1px solid var(--dfl-line-strong); border-radius: var(--dfl-radius); background: var(--dfl-tint); padding: 0.6rem 0.9rem; margin: 1rem 0; }
+[data-agent-document] .dfl-langs h2, [data-agent-document] .dfl-langs h3 { margin-top: 0.2rem; }
+[data-agent-document] .dfl-langs details { margin: 0.35rem 0; }
+[data-agent-document] .dfl-langs summary { cursor: pointer; font-weight: 600; }
+[data-agent-document] .dfl-langs ul { margin: 0.3rem 0 0.4rem 1.1rem; padding: 0; }
+[data-agent-document] .dfl-langs li { overflow-wrap: anywhere; }
