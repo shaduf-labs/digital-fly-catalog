@@ -2,6 +2,54 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-17-run18-shuffle30",
+      "changed_at": "2026-10-17T23:58:00Z",
+      "summary": "Scrambled brains at 30 spikes/s (17 Oct 2026, our own test, pre-registered, brain only): 17 Oct: at 30 spikes/s, the weakest tested input at which the real brain's turn command appeared, we also ran 2 scrambled brains per side (each neuron keeps its number of connections; one 1-second trial each, with the same trial seed as the real-wiring body runs). On the left side, neither scrambled brain sent a turn command, and their steering signals were identical to having no brain, so in the body they walk like the no-brain fly (the real wiring turned it about 11 deg). On the right side, neither scrambled brain sent a turn command, and their steering signals were identical to having no brain, so in the body they walk like the no-brain fly (the real wiring turned it about 17 deg). As at 80 spikes/s, none of the scrambled brains we ran produced the turn; at 30 spikes/s we did not turn their activity up to match the real brain. The scrambled brains were not matched for overall activity: they fired 48% (left) and 44% (right) as many spikes as the real brain at this strength. Most of those spikes were the stimulated input neurons themselves; outside the input, the scrambled brains fired about 1% as many spikes as the real brain. These body runs turn the brain's firing rates into steering through our own hand-made mapping, so they show the brain result in degrees; they are not a separate test of the wiring. We ran scrambled brains at 30 and 80 spikes/s, not at 20, 40 or 60.",
+      "path": "/p/digital-fly-catalog/is-it-real/#body16-heading"
+    },
+    {
+      "change_id": "2026-10-17-run18-census",
+      "changed_at": "2026-10-17T23:58:00Z",
+      "summary": "Relay update under the 13 Oct headline, which stays (17 Oct 2026; a count from the map, not a new trial): \"The two sides disagree: on one side silencing the relays lowered the turn neuron's rate more than matched activity elsewhere, on the other it did not. We do not draw a conclusion.\" We also looked for a stricter control: other active inputs that excite the turn neuron with a similar firing rate and a similar number of connections onto it. In this model there are none for any of the active relay neurons on either side (count of 15 Oct: the busiest relay, PVLP141, fires about 100 spikes/s; no other such input fires above 43), so that stricter test cannot be built here.",
+      "path": "/p/digital-fly-catalog/is-it-real/#relays15-heading"
+    },
+    {
+      "change_id": "2026-10-17-run18-browser",
+      "changed_at": "2026-10-17T23:58:00Z",
+      "summary": "Browser re-check of the six demos of 3 Oct: Re-checked 17 Oct in the same no-GPU browser: 1 of 6 ran (3 Oct: 3 of 6). Fly Worker: loaded, but showed no activity (3 Oct: ran). fly67: did not load (3 Oct: ran). Checked in headless Chromium 154 on a Linux server without a GPU, 17 Oct 2026. Shows whether the page loads, downloads its brain data and keeps computing; it is not a play test. Safari, Firefox, phones and GPU machines were not tested.",
+      "path": "/p/digital-fly-catalog/ways-to-try/#run18-heading"
+    },
+    {
+      "change_id": "2026-10-17-run18-entries",
+      "changed_at": "2026-10-17T23:58:00Z",
+      "summary": "156 catalogue entries (17 Oct 2026): 4 new: flycraft-hexapod (A; in the author's test the real nerve-cord graph moved the hexapod 0.85 mm forward in 8 s, fully rewired graphs 3.5 mm backward, and a time-shuffled real signal 0.72 mm; the author's results file is marked pending the author's own review, and the paper's acceptance is the author's statement only), fly-connectome-reservoir (B; no wiring control on its game; its separate reservoir test scores real wiring 100%, target-permuted wiring 83.9% and no connections 50% (3 seeds); a raw-stimulus readout also reaches 100%), virtual-fly-brain-ppo (D) and fruit-fly-connectome-explorer (n/a). Nine other leads excluded (no committed result file or wiring comparison in code).",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-17"
+    },
+    {
+      "change_id": "2026-10-17-run18-ledger",
+      "changed_at": "2026-10-17T23:58:00Z",
+      "summary": "Controls ledger (17 Oct 2026): 2 new rows (flycraft-hexapod helps; fly-connectome-reservoir helps, its no-brain baseline not beaten), now 60 studies, 51 with a wiring null: helps 24, no difference 11, worse 4, mixed 10, not yet scored 2. byo-flygym-loom is not re-scored; the 30 spikes/s trials are in its note.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed18-heading"
+    },
+    {
+      "change_id": "2026-10-17-run18-tracking",
+      "changed_at": "2026-10-17T23:58:00Z",
+      "summary": "Tracking (17 Oct 2026): roblox-fly-avatar-claim stays U (Referee check: no builder named in the NiftRex video description or on the Roblox profile (17 Oct).); repositories of 15 of the 22 verdict rows re-checked, none with new code since grading; 56 of 56 videos available; fruitfly.live still has a TLS certificate error; FlyDoom is still gone.",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-roblox-fly-avatar-claim"
+    },
+    {
+      "change_id": "2026-10-17-run18-disclosure",
+      "changed_at": "2026-10-17T23:58:00Z",
+      "summary": "The body-run disclosure line now reads: \"These body runs turn the brain's firing rates into steering through our own hand-made mapping, so they show the brain result in degrees; they are not a separate test of the wiring. We ran scrambled brains at 30 and 80 spikes/s, not at 20, 40 or 60.\" (current pages; dated entries keep their wording).",
+      "path": "/p/digital-fly-catalog/is-it-real/#body16-heading"
+    },
+    {
+      "change_id": "2026-10-17-run18-report",
+      "changed_at": "2026-10-17T23:58:00Z",
+      "summary": "New report: Eighteenth check (17 Oct 2026), with the scrambled brains at 30 spikes/s and their checks, the census of a stricter relay control, the browser re-check, new entries and ledger rows, tracking and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-17-run18/"
+    },
+    {
       "change_id": "2026-10-15-run17-relay-stay",
       "changed_at": "2026-10-15T11:00:00Z",
       "summary": "Relay update under the 13 Oct headline, which stays (15 Oct 2026, pre-registered, brain only): \"The two sides disagree: on one side silencing the relays lowered the turn neuron's rate more than matched activity elsewhere, on the other it did not. We do not draw a conclusion.\" 15 Oct: we ran 5 more matched controls on the right side, 10 in all. Every one of them left the turn neuron's rate higher than silencing the relays did (controls 38-47 Hz, relays 25.7 Hz), so the right-side reading did not change. Our rule compares the relays with the lowest matched control, so extra controls can only make the relays look less special, never more. Right-eye matched controls: 40, 41, 41, 43, 40, 43, 47, 38, 47, 46 Hz. Counts: 5 seeds per side; 5 matched draws on the left and 10 on the right.",

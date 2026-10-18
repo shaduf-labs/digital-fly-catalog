@@ -1,16 +1,16 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Digital Fly Lab controls ledger",
-  "version": "2026-10-15-run17",
-  "generated_at": "2026-10-15T12:00:00Z",
-  "run_id": "report-96adf9534e3f3bd75683489d",
-  "as_of": "2026-10-15",
+  "version": "2026-10-17-run18",
+  "generated_at": "2026-10-17T12:00:00Z",
+  "run_id": "report-597777960b47631eb6068cc4",
+  "as_of": "2026-10-17",
   "answer": {
-    "one_line": "Sometimes: fly wiring beat scrambled wiring in 22 of 49 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (15).",
-    "short": "Of 58 control studies in our catalogue, 49 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 22, makes no difference in 11, does worse in 4, gives mixed results in 10 and is not yet scored in 2. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+    "one_line": "Sometimes: fly wiring beat scrambled wiring in 24 of 51 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (15).",
+    "short": "Of 60 control studies in our catalogue, 51 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 24, makes no difference in 11, does worse in 4, gives mixed results in 10 and is not yet scored in 2. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
     "counts": {
-      "studies": 58,
-      "with_wiring_null": 49,
+      "studies": 60,
+      "with_wiring_null": 51,
       "by_family": {
         "reflex-circuit": {
           "helps": 5,
@@ -27,7 +27,7 @@
           "not_tested": 2
         },
         "body-steering": {
-          "helps": 5,
+          "helps": 6,
           "no_difference": 2,
           "worse": 0,
           "mixed": 1,
@@ -48,7 +48,7 @@
           "not_tested": 0
         },
         "reservoir": {
-          "helps": 0,
+          "helps": 1,
           "no_difference": 0,
           "worse": 2,
           "mixed": 0,
@@ -2142,7 +2142,7 @@
         }
       ],
       "effect": {
-        "stat_note": "Pre-registered 2026-10-05T09:42:47Z (design published in https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/#prereg-heading; deviations 3-5 logged before any body run: the brain trials took about 160 s, so the pre-registered time limits left real seeds 0-1 and shuffles [3, 4] per side). Reading by the pre-registered rule: 'the turn away needs the wiring'. Real runs turned away in 4 of 4 (threshold 10 deg over the floor), shuffles in 0 of 3, random in 3 of 6. Floor-referenced retention D 0.0, random 0.1206. Clip share 0.0. Brain gate (fly67's rule) reproduced in our Brian2 run. The rate-to-drive mapping is ours (hand-made, not fitted); the 0.8 forward drive is external. 6 Oct 2026 brain-level follow-up (pre-registered 2026-10-06T09:42:54Z; fast Poisson input validated against the 5 Oct trials, gate V passed): boundary-preserving scramble B: turn command 'needs-wiring-in-between' (LI retention -0.0853, DNa02 rule 0 of 6), escape signal 'partly' (GF retention 0.6887); giant fibre silenced: 'steering-survives-gf-silencing'; gain-matched G: 'needs-wiring-even-at-same-activity' (m 3, k 0); plain D shuffles: spikes outside the stimulated set 0.072 of real. Brain-level readings do not enter the effect; the 6 Oct drives that differ from the floor waited for body runs (run on 8 Oct 2026). 8 Oct 2026 (pre-registered 2026-10-08T09:45:48Z): the 5 Oct floor run F repeated exactly in a new session; real-brain body runs turned away in 6 of 6; reading 'the turn away needs the wiring'. With the escape neuron silenced, the fly still turned away. (2 of 2 body runs.) With only the inside of the map scrambled, the fly turned away in 0 of 6 runs. Brain level (not in the effect): We lowered the input to the looming neurons step by step, from 80 to 10 spikes per second each. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. The escape neuron started firing at the same input as the turn command. With one relay neuron (PVLP141) silenced, the turn command stayed (by the left/right contrast (8 Oct)). With all 21-23 relay neurons between the looming neurons and the turn neuron silenced, the turn command stayed (by the left/right contrast (8 Oct)). One model (Shiu et al. LIF on FlyWire v783), brain only; the input is a rate we set for every LC4/LPLC2 of one eye, not a measured response to a real shadow; 'silenced' means the neuron's output synapses were removed; not a real fly. 9 Oct 2026 (brain only, not part of the effect computation): far-side DNa02 rate vs 3 intact runs per eye (normal range L 24.0-25.0 Hz, R 41.0-44.0 Hz); PVLP141 fell (L 70%, R 65%); excitatory two-step relays fell (L 65%, R 60%); inhibitory two-step relays sides differ (L unclear, 110%; R rose, 125%); random active neurons sides differ (L rose, 105%; R within normal range, 100%); the 8 Oct all-relays test re-read sides differ (L rose, 105%; R fell, 65%); summary: 'Silencing other active neurons also changed the turn command, so this relay result is not specific to the relay neurons.' Pre-registered 2026-10-09T09:36:50Z (design and every trial: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-09-run11/#relays-heading).",
+        "stat_note": "Pre-registered 2026-10-05T09:42:47Z (design published in https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-05-run8/#prereg-heading; deviations 3-5 logged before any body run: the brain trials took about 160 s, so the pre-registered time limits left real seeds 0-1 and shuffles [3, 4] per side). Reading by the pre-registered rule: 'the turn away needs the wiring'. Real runs turned away in 4 of 4 (threshold 10 deg over the floor), shuffles in 0 of 3, random in 3 of 6. Floor-referenced retention D 0.0, random 0.1206. Clip share 0.0. Brain gate (fly67's rule) reproduced in our Brian2 run. The rate-to-drive mapping is ours (hand-made, not fitted); the 0.8 forward drive is external. 6 Oct 2026 brain-level follow-up (pre-registered 2026-10-06T09:42:54Z; fast Poisson input validated against the 5 Oct trials, gate V passed): boundary-preserving scramble B: turn command 'needs-wiring-in-between' (LI retention -0.0853, DNa02 rule 0 of 6), escape signal 'partly' (GF retention 0.6887); giant fibre silenced: 'steering-survives-gf-silencing'; gain-matched G: 'needs-wiring-even-at-same-activity' (m 3, k 0); plain D shuffles: spikes outside the stimulated set 0.072 of real. Brain-level readings do not enter the effect; the 6 Oct drives that differ from the floor waited for body runs (run on 8 Oct 2026). 8 Oct 2026 (pre-registered 2026-10-08T09:45:48Z): the 5 Oct floor run F repeated exactly in a new session; real-brain body runs turned away in 6 of 6; reading 'the turn away needs the wiring'. With the escape neuron silenced, the fly still turned away. (2 of 2 body runs.) With only the inside of the map scrambled, the fly turned away in 0 of 6 runs. Brain level (not in the effect): We lowered the input to the looming neurons step by step, from 80 to 10 spikes per second each. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. The escape neuron started firing at the same input as the turn command. With one relay neuron (PVLP141) silenced, the turn command stayed (by the left/right contrast (8 Oct)). With all 21-23 relay neurons between the looming neurons and the turn neuron silenced, the turn command stayed (by the left/right contrast (8 Oct)). One model (Shiu et al. LIF on FlyWire v783), brain only; the input is a rate we set for every LC4/LPLC2 of one eye, not a measured response to a real shadow; 'silenced' means the neuron's output synapses were removed; not a real fly. 9 Oct 2026 (brain only, not part of the effect computation): far-side DNa02 rate vs 3 intact runs per eye (normal range L 24.0-25.0 Hz, R 41.0-44.0 Hz); PVLP141 fell (L 70%, R 65%); excitatory two-step relays fell (L 65%, R 60%); inhibitory two-step relays sides differ (L unclear, 110%; R rose, 125%); random active neurons sides differ (L rose, 105%; R within normal range, 100%); the 8 Oct all-relays test re-read sides differ (L rose, 105%; R fell, 65%); summary: 'Silencing other active neurons also changed the turn command, so this relay result is not specific to the relay neurons.' Pre-registered 2026-10-09T09:36:50Z (design and every trial: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-09-run11/#relays-heading). 17 Oct: at 30 spikes/s, the weakest tested input at which the real brain's turn command appeared, we also ran 2 scrambled brains per side (each neuron keeps its number of connections; one 1-second trial each, with the same trial seed as the real-wiring body runs). On the left side, neither scrambled brain sent a turn command, and their steering signals were identical to having no brain, so in the body they walk like the no-brain fly (the real wiring turned it about 11 deg). On the right side, neither scrambled brain sent a turn command, and their steering signals were identical to having no brain, so in the body they walk like the no-brain fly (the real wiring turned it about 17 deg). As at 80 spikes/s, none of the scrambled brains we ran produced the turn; at 30 spikes/s we did not turn their activity up to match the real brain. The scrambled brains were not matched for overall activity: they fired 48% (left) and 44% (right) as many spikes as the real brain at this strength. Most of those spikes were the stimulated input neurons themselves; outside the input, the scrambled brains fired about 1% as many spikes as the real brain. Pre-registered 2026-10-17T23:00:25Z (design and every trial: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-17-run18/#shuffle-heading); brain only at 30 spikes/s, not part of the effect computation.",
         "ci": null,
         "p": null,
         "headline_arm": "D-degree-preserving",
@@ -2943,6 +2943,128 @@
       ],
       "wiring_effect": "no-difference",
       "baseline_beaten": "no"
+    },
+    {
+      "id": "flycraft-hexapod",
+      "name": "Flycraft: frozen MaleCNS v1.0 nerve-cord LIF model driving a MuJoCo hexapod, real vs rewired, shuffled-weight and zero-drive graphs",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "body-steering",
+      "loop": "open-loop",
+      "wiring": {
+        "dataset": "MaleCNS",
+        "release": "v1.0 (nerve cord; author's README)",
+        "scope": "ventral nerve cord subgraph, 485,074 edges (experiment_A lesions base_edge_count)"
+      },
+      "trained_parts": "none (learning false in the protocol block; hand-made motor-neuron-to-joint map, mn_to_joint.py lines 39-60)",
+      "metric": {
+        "name": "forward distance in 8 s, nominal body (constant 100 Hz drive, 30 network realizations x 20 episodes)",
+        "unit": "m",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 0.000848,
+        "n": 30,
+        "spread": "± 0.000957 sd",
+        "source": "61c09b0147d88fd35ae98e6621f061fcf71d065c eon-fly-brain/results/path2/camera_ready/camera_ready_reruns.json null_arms.real (mean, sd over 30 realizations; 24 of 30 positive)"
+      },
+      "floor": {
+        "label": "zero drive (no input to the graph), nominal body",
+        "value": -0.003272,
+        "source": "61c09b0147d88fd35ae98e6621f061fcf71d065c eon-fly-brain/results/path2/camera_ready/camera_ready_reruns.json experiment_B.zero_drive"
+      },
+      "arms": [
+        {
+          "arm_id": "rewire_alpha_1.0",
+          "null_type": "degree-preserving",
+          "label": "full degree-preserving rewiring (dose alpha 1.0; edge swaps, audit_h4_dose_response.py lines 31-32 and camera_ready_reruns.py lines 98-113, as read by us)",
+          "value": -0.003549,
+          "n": 12,
+          "samples": 12,
+          "spread": "± 0.003901 sd",
+          "readout_refit": false,
+          "source": "61c09b0147d88fd35ae98e6621f061fcf71d065c eon-fly-brain/results/path2/camera_ready/camera_ready_reruns.json experiment_B.dose[alpha=1.0]",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "shuffled_weight",
+          "null_type": "weight-shuffle",
+          "label": "shuffled-weight graphs, nominal body (leg_length_x1.00)",
+          "value": -0.002803,
+          "n": 12,
+          "samples": 12,
+          "spread": "± 0.003263 sd",
+          "readout_refit": false,
+          "source": "61c09b0147d88fd35ae98e6621f061fcf71d065c eon-fly-brain/results/path2/camera_ready/camera_ready_reruns.json experiment_C.bodies[leg_length_x1.00].shuffled_weight",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "time_shuffled_real",
+          "null_type": "replay",
+          "label": "real graph's own signal with its time order shuffled",
+          "value": 0.000715,
+          "n": 30,
+          "samples": 30,
+          "spread": "± 0.000847 sd",
+          "readout_refit": false,
+          "source": "61c09b0147d88fd35ae98e6621f061fcf71d065c eon-fly-brain/results/path2/camera_ready/camera_ready_reruns.json null_arms.time_shuffled_real",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Author's file is marked PENDING-OWNER-REVIEW. Author's tests: real above shuffled-weight graphs on 9 of 9 body variants (one-sided permutation, Holm-adjusted p 6.0e-05 on the nominal body); real above zero drive (p 5.0e-06); real vs time-shuffled signal p 0.29. Author decomposition (m): posture 0.0023, fluctuation 0.0018, temporal order 0.00013. The README says no coherent alternating tripod forms; all distances are under 1 mm forward for the real graph. Numbers read by us from the committed JSON on 2026-10-17; not re-run.",
+        "headline_arm": "rewire_alpha_1.0",
+        "best_null_arm": "shuffled_weight",
+        "baseline_arm": null,
+        "retention": -0.0672,
+        "retention_method": "floor",
+        "baseline_retention": null,
+        "difference": 0.004397
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": null,
+        "tuned_equally": true,
+        "null_samples": 12,
+        "has_no_brain_baseline": true,
+        "reason": "Same drive, body, motor map and episode seeds for every graph arm (protocol block); the degree-preserving arm is the full-rewiring end of the author's dose series; zero drive serves as the no-input floor.",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 12,
+        "held_out": null,
+        "uncertainty_reported": true,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "recomputed_by_us": false,
+        "reason": "30 real realizations and 12 graphs per null arm, bootstrap intervals and permutation tests committed in one JSON; single author; the file is marked pending the author's own review; the paper acceptance is the author's statement only.",
+        "grade": "strong"
+      },
+      "extraction": "files",
+      "one_line": "Author's test: real nerve-cord graph moved the hexapod 0.85 mm in 8 s; fully rewired graphs 3.5 mm backward; a time-shuffled real signal 0.72 mm.",
+      "commit": "61c09b0147d88fd35ae98e6621f061fcf71d065c",
+      "checked_at": "2026-10-17T23:20:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/thepuneeth/Flycraft/blob/61c09b0147d88fd35ae98e6621f061fcf71d065c/eon-fly-brain/results/path2/camera_ready/camera_ready_reruns.json",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/thepuneeth/Flycraft/blob/61c09b0147d88fd35ae98e6621f061fcf71d065c/eon-fly-brain/code/camera_ready_reruns.py",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "helps",
+      "baseline_beaten": "not-tested"
     },
     {
       "id": "flyhard",
@@ -6401,6 +6523,146 @@
       "baseline_beaten": "no"
     },
     {
+      "id": "fly-connectome-reservoir",
+      "name": "fly-connectome-reservoir: frozen MaleCNS LIF reservoir with a trained linear readout, real vs target-permuted vs no-connection wiring (left/right and order tasks)",
+      "evidence_grade": "B",
+      "made_by_us": false,
+      "task_family": "reservoir",
+      "loop": "open-loop",
+      "wiring": {
+        "dataset": "MaleCNS",
+        "release": "version not stated in README; MaleCNS-derived connectivity loaded through FlyBrain 0.1.0 (README lines 3 and 22)",
+        "scope": "whole CNS, 166,700 neurons, 25,088,107 runtime connections (README line 17); LC4/LPLC2 inputs, DNp01/DNa02 readout"
+      },
+      "trained_parts": "linear classifier on descending-neuron activity only; connectome weights frozen (experiment.py line 1; results/REPORT.md line 3)",
+      "metric": {
+        "name": "test-set accuracy, left/right looming discrimination task (60 test trials per seed, 3 seeds)",
+        "unit": "percent",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 100,
+        "n": 3,
+        "spread": "± 0.0 sd",
+        "source": "2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8 results/REPORT.md line 11 (real connectome, left/right task 100.0% ± 0.0; order task 56.1% ± 3.5)"
+      },
+      "floor": {
+        "label": "theoretical chance level",
+        "value": 50,
+        "source": "2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8 results/REPORT.md line 17 (50%)"
+      },
+      "arms": [
+        {
+          "arm_id": "target_permutation",
+          "null_type": "target-permutation",
+          "label": "global permutation of postsynaptic neuron identity (experiment.py lines 224-230): each source keeps out-degree and weights, in-degree multiset kept; code comment says it is not per-neuron degree-preserving rewiring; one permutation per seed (seed+70000)",
+          "value": 83.9,
+          "n": 3,
+          "samples": 3,
+          "spread": "± 7.7 sd",
+          "readout_refit": true,
+          "source": "2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8 results/REPORT.md line 12 (left/right 83.9% ± 7.7; order 47.2% ± 2.5); paired real minus permuted +11.7, +25.0, +11.7 pp, mean +16.1 (REPORT.md line 27)",
+          "recomputed_by_us": false,
+          "activity_ratio": 0.957,
+          "activity_class": "comparable"
+        },
+        {
+          "arm_id": "no_connections",
+          "null_type": "no-edges",
+          "label": "all connections removed (experiment.py lines 231-232: indptr set to zeros), same inputs and readout",
+          "value": 50,
+          "n": 3,
+          "samples": 3,
+          "spread": "± 9.3 sd",
+          "readout_refit": true,
+          "source": "2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8 results/REPORT.md line 13 (left/right 50.0% ± 9.3; order 48.9% ± 6.3); mean firing 0.199 Hz vs 2.270 Hz real (line 53 vs 51)",
+          "recomputed_by_us": false,
+          "activity_ratio": 0.088,
+          "activity_class": "reduced"
+        },
+        {
+          "arm_id": "raw_full_history",
+          "null_type": "no-graph-model",
+          "label": "linear classifier on the raw full stimulus history, no network",
+          "value": 100,
+          "n": 3,
+          "samples": 3,
+          "spread": "± 0.0 sd",
+          "readout_refit": true,
+          "source": "2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8 results/REPORT.md table row 原始完整刺激历史 (left/right 100.0% ± 0.0; order 100.0% ± 0.0)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "shuffled_labels",
+          "null_type": "label-shuffle",
+          "label": "real connectome, readout fitted on shuffled training labels (experiment.py lines 96-105 and 247)",
+          "value": 54.4,
+          "n": 3,
+          "samples": 3,
+          "spread": "± 15.4 sd",
+          "readout_refit": true,
+          "source": "2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8 results/REPORT.md line 16 (left/right 54.4% ± 15.4; order 42.8% ± 4.2)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Author reports mean ± sample SD over 3 seeds and per-run Wilson intervals; paired real minus target-permuted: left/right +16.1 pp (3 pairs), order +8.9 pp (+15.0, +8.3, +3.3). The author states no significance or generalisation claim and that the raw full stimulus history also reaches 100% on both tasks (REPORT.md interpretation items 1 and 3). Activity ratios from REPORT.md lines 51-53 (mean whole-network firing rate).",
+        "headline_arm": "target_permutation",
+        "best_null_arm": "target_permutation",
+        "baseline_arm": "raw_full_history",
+        "retention": 0.678,
+        "retention_method": "floor",
+        "baseline_retention": 1,
+        "difference": 16.1
+      },
+      "fairness": {
+        "keeps_degree": false,
+        "keeps_io_boundary": false,
+        "tuned_equally": true,
+        "null_samples": 3,
+        "has_no_brain_baseline": true,
+        "reason": "Same seeds, trials and readout fitting for every network arm (experiment.py lines 221-247). The permutation keeps each source's out-degree and weights and the in-degree multiset, but moves inputs and outputs to other neurons (REPORT.md interpretation item 3), so the input-output correspondence is not kept.",
+        "verdict": "partly-fair"
+      },
+      "quality": {
+        "n_per_arm": 3,
+        "held_out": true,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "60/20/60 train/validation/test trials per task and seed, 3 seeds (REPORT.md line 7); results committed in results/; single author, not recomputed by us.",
+        "uncertainty_reported": true,
+        "recomputed_by_us": false,
+        "grade": "strong"
+      },
+      "extraction": "files",
+      "one_line": "Author's reservoir test: real MaleCNS wiring 100%, target-permuted 83.9%, no connections 50% on a left/right task (3 seeds); a raw-stimulus readout also reaches 100%.",
+      "commit": "2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8",
+      "checked_at": "2026-10-17T23:10:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/cssius111/fly-connectome-reservoir/blob/2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8/results/REPORT.md",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/cssius111/fly-connectome-reservoir/blob/2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8/experiment.py",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/cssius111/fly-connectome-reservoir/blob/2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8/README.md",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "helps",
+      "baseline_beaten": "no"
+    },
+    {
       "id": "flybrain-reservoir",
       "name": "flybrain-reservoir",
       "evidence_grade": "A",
@@ -7556,6 +7818,18 @@
       "fairness": "fair"
     },
     {
+      "study_id": "flycraft-hexapod",
+      "label": "Flycraft: frozen MaleCNS v1.0 nerve-cord LIF model driving a MuJoCo hexapod, real vs rewired, shuffled-weight and zero-drive graphs",
+      "task_family": "body-steering",
+      "headline_null_type": "degree-preserving",
+      "retention": -0.0672,
+      "retention_method": "floor",
+      "baseline_retention": null,
+      "wiring_effect": "helps",
+      "quality": "strong",
+      "fairness": "fair"
+    },
+    {
       "study_id": "brain-runners",
       "label": "Brain Runners: untrained FlyWire brain (fly2) vs the same rule with no brain and with shuffled wiring",
       "task_family": "game-play",
@@ -7852,6 +8126,18 @@
       "retention_method": "ratio",
       "baseline_retention": 1.9583,
       "wiring_effect": "worse",
+      "quality": "strong",
+      "fairness": "partly-fair"
+    },
+    {
+      "study_id": "fly-connectome-reservoir",
+      "label": "fly-connectome-reservoir: frozen MaleCNS LIF reservoir with a trained linear readout, real vs target-permuted vs no-connection wiring (left/right and order tasks)",
+      "task_family": "reservoir",
+      "headline_null_type": "target-permutation",
+      "retention": 0.678,
+      "retention_method": "floor",
+      "baseline_retention": 1,
+      "wiring_effect": "helps",
       "quality": "strong",
       "fairness": "partly-fair"
     },

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "catalogue": "Digital Fly Lab project catalogue",
-  "version": "2026-10-15-run17",
+  "version": "2026-10-17-run18",
   "publisher": "Digital Fly Lab (independent Shaduf resource)",
-  "last_verification": "2026-10-15",
-  "record_count": 152,
+  "last_verification": "2026-10-17",
+  "record_count": 156,
   "schema": "projects.schema.json",
   "projects": [
     {
@@ -29,7 +29,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://codex.flywire.ai/banc",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "try_note": "Codex (Google sign-in)",
       "code_url": "https://github.com/htem/BANC-project",
       "code_licence": "none found",
@@ -72,7 +72,7 @@
         "status": "redirect",
         "http_code": 200,
         "final_url": "https://codex.flywire.ai/?dataset=banc",
-        "checked_at": "2026-10-15T09:40:45.486Z",
+        "checked_at": "2026-10-17T23:13:49.869Z",
         "other_links": [
           {
             "url": "https://doi.org/10.1038/s41586-026-10735-w",
@@ -86,7 +86,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -122,7 +122,7 @@
       "try_note": "No open browser access to the latest segmentation; EM images viewable via BossDB (search-summary)",
       "code_url": "https://github.com/htem/FANC_auto_recon",
       "code_licence": "GPL-3.0",
-      "code_licence_source": "LICENSE file 'LICENSE' read at commit 89d9769457; GitHub API spdx_id=GPL-3.0",
+      "code_licence_source": "LICENSE file 'LICENSE' read at commit d6cb4eed4f; GitHub API spdx_id=GPL-3.0",
       "data_licence": "no open licence found (community access rules)",
       "platform": [
         "Linux",
@@ -131,8 +131,8 @@
       "gpu": "none",
       "download_size": "No public download: access to the latest reconstruction is restricted to authorised users.",
       "last_commit": {
-        "date": "2026-05-06T16:24:33+02:00",
-        "hash": "89d9769457583051e3ec9ec7b34a5f3575537bf5",
+        "date": "2026-10-16T14:26:22-04:00",
+        "hash": "d6cb4eed4f2bf10f1434c13a2171a1e8492d36b1",
         "branch": "main"
       },
       "pushed_at": "2026-05-06T14:24:37Z",
@@ -159,16 +159,16 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/htem/FANC_auto_recon",
-        "checked_at": "2026-10-15T09:40:45.911Z",
+        "checked_at": "2026-10-17T23:13:50.716Z",
         "other_links": [
           {
             "url": "https://doi.org/10.1038/s41586-024-07389-x",
-            "status": "blocked",
+            "status": "redirect",
             "http_code": 200
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -199,7 +199,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://codex.flywire.ai/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "try_note": "Codex explorer; Google sign-in required for apps and downloads",
       "code_url": null,
       "code_licence": "n/a (no code repository)",
@@ -227,21 +227,16 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://codex.flywire.ai/",
-        "checked_at": "2026-10-15T09:40:45.634Z",
+        "checked_at": "2026-10-17T23:13:49.802Z",
         "other_links": [
           {
             "url": "https://doi.org/10.1038/s41586-024-07558-y",
             "status": "blocked",
             "http_code": 200
-          },
-          {
-            "url": "https://flywire.ai/",
-            "status": "ok",
-            "http_code": 200
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -275,7 +270,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://neuprint.janelia.org/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "try_note": "neuPrint explorer",
       "code_url": null,
       "code_licence": "n/a (no code repository)",
@@ -300,21 +295,16 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://neuprint.janelia.org/",
-        "checked_at": "2026-10-15T09:40:45.836Z",
+        "checked_at": "2026-10-17T23:13:49.923Z",
         "other_links": [
           {
             "url": "https://doi.org/10.7554/eLife.57443",
             "status": "blocked",
             "http_code": 406
-          },
-          {
-            "url": "https://www.janelia.org/project-team/flyem/hemibrain",
-            "status": "ok",
-            "http_code": 200
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -345,7 +335,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://catmaid.virtualflybrain.org/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "try_note": "CATMAID (L1 Larval CNS) per the paper's data statement",
       "code_url": null,
       "code_licence": "n/a (no code repository)",
@@ -370,21 +360,16 @@
         "status": "redirect",
         "http_code": 200,
         "final_url": "https://virtualflybrain.org/about/hosted/",
-        "checked_at": "2026-10-15T09:40:46.608Z",
+        "checked_at": "2026-10-17T23:13:51.062Z",
         "other_links": [
           {
             "url": "https://doi.org/10.1126/science.add9330",
             "status": "blocked",
             "http_code": 403
-          },
-          {
-            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7614541/",
-            "status": "ok",
-            "http_code": 200
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -415,7 +400,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://neuprint.janelia.org/?dataset=male-cns%3Av1.0&qt=findneurons",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "try_note": "neuPrint explorer (account needed for API token); also Codex MCNS v1.0",
       "code_url": null,
       "code_licence": "n/a (no code repository)",
@@ -443,21 +428,16 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://neuprint.janelia.org/?dataset=male-cns%3Av1.0&qt=findneurons",
-        "checked_at": "2026-10-15T09:40:45.964Z",
+        "checked_at": "2026-10-17T23:13:50.220Z",
         "other_links": [
           {
             "url": "https://doi.org/10.1016/j.cell.2026.08.015",
             "status": "redirect",
             "http_code": 200
-          },
-          {
-            "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
-            "status": "ok",
-            "http_code": 200
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -491,7 +471,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://neuprint.janelia.org/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "try_note": "neuPrint explorer (account needed for API token); also Codex MANC v1.2.1",
       "code_url": null,
       "code_licence": "n/a (no code repository)",
@@ -516,21 +496,16 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://neuprint.janelia.org/",
-        "checked_at": "2026-10-15T09:40:46.444Z",
+        "checked_at": "2026-10-17T23:13:50.490Z",
         "other_links": [
           {
             "url": "https://doi.org/10.7554/eLife.97769.1",
             "status": "blocked",
             "http_code": 406
-          },
-          {
-            "url": "https://www.janelia.org/project-team/flyem/manc-connectome",
-            "status": "ok",
-            "http_code": 200
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -613,7 +588,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/CAVEconnectome/CAVEclient",
-        "checked_at": "2026-10-15T09:40:47.047Z",
+        "checked_at": "2026-10-17T23:13:51.148Z",
         "other_links": [
           {
             "url": "https://www.biorxiv.org/content/10.1101/2023.07.26.550598v1",
@@ -622,7 +597,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -654,7 +629,7 @@
       "grade_date": "2026-09-30",
       "measured_result": null,
       "try_url": "https://colab.research.google.com/drive/145Td8_fFTPwTsDdEkQGAgdZ7CFQ8qXnr",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/YijieYin/connectome_interpreter",
       "code_licence": "MIT",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit d212f86ef3; GitHub API spdx_id=MIT",
@@ -696,7 +671,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://colab.research.google.com/drive/145Td8_fFTPwTsDdEkQGAgdZ7CFQ8qXnr",
-        "checked_at": "2026-10-15T09:40:46.924Z",
+        "checked_at": "2026-10-17T23:13:51.112Z",
         "other_links": [
           {
             "url": "https://github.com/YijieYin/connectome_interpreter",
@@ -710,7 +685,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -789,9 +764,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/natverse/fafbseg",
-        "checked_at": "2026-10-15T09:40:47.457Z"
+        "checked_at": "2026-10-17T23:13:51.406Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-b7b53f7e80f369605462f9ac",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -874,9 +849,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/sjcabs/fly_connectome_data_tutorial",
-        "checked_at": "2026-10-15T09:40:47.222Z"
+        "checked_at": "2026-10-17T23:13:51.746Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -955,9 +930,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/cobanov/fly-connectome-template",
-        "checked_at": "2026-10-15T09:40:47.504Z"
+        "checked_at": "2026-10-17T23:13:51.686Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-b7b53f7e80f369605462f9ac",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -1027,9 +1002,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/FlyBrainLab/FlyBrainLab",
-        "checked_at": "2026-10-15T09:40:47.359Z"
+        "checked_at": "2026-10-17T23:13:51.641Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -1111,7 +1086,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/flyconnectome/flywire_annotations",
-        "checked_at": "2026-10-15T09:40:47.516Z",
+        "checked_at": "2026-10-17T23:13:51.792Z",
         "other_links": [
           {
             "url": "https://doi.org/10.1038/s41586-024-07686-5",
@@ -1120,7 +1095,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -1163,7 +1138,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://codex.flywire.ai",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/murthylab/codex",
       "code_licence": "Apache-2.0",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit 3477b6cfcc; GitHub API spdx_id=Apache-2.0",
@@ -1198,11 +1173,11 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://codex.flywire.ai",
-        "checked_at": "2026-10-15T09:40:47.341Z",
+        "checked_at": "2026-10-17T23:13:51.443Z",
         "other_links": [
           {
             "url": "https://doi.org/10.1038/s41586-024-07558-y",
-            "status": "blocked",
+            "status": "redirect",
             "http_code": 200
           },
           {
@@ -1212,7 +1187,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -1220,6 +1195,77 @@
         "https://codex.flywire.ai/ [direct]"
       ],
       "notes_limitations": "Infrastructure, not graded. Conflict: the public repo (last commit 2025-06-03) serves only FlyWire v783, but the live site now also offers BANC v888, MANC v1.2.1, MAOL v1.1 and MaleCNS v1.0, so the live service likely runs newer, unpublished code. Sign-in is needed for most features. paper_url points to the FlyWire whole-brain paper (Dorkenwald et al. 2024), which describes Codex; there is no separate Codex paper."
+    },
+    {
+      "id": "fruit-fly-connectome-explorer",
+      "name": "Fruit Fly Connectome Explorer: threshold sensitivity of top-ranked neurons in MaleCNS v1.0",
+      "type": "data-tool",
+      "author_or_org": "chamodiHsenevirathna",
+      "summary": "A Python analysis (pandas, PyArrow, NumPy, Matplotlib) of the MaleCNS v1.0 flat connectome (minconf-0.5). It streams the connection table in record batches, ranks neurons by out-strength and out-degree after discarding connections below thresholds 1 to 50, and compares top-k lists across thresholds (Jaccard, Spearman, tie handling). Committed outputs: 30 tables and 7 figures under outputs/. No neural dynamics and no behaviour.",
+      "claim": {
+        "text": "\"How sensitive is the identification of highly ranked neurons to the connection-weight threshold used to build a fruit fly connectome graph?\" (README line 3)",
+        "url": "https://github.com/chamodiHsenevirathna/fruit-fly-connectome-explorer"
+      },
+      "dataset": "MaleCNS",
+      "release": "v1.0, minconf-0.5 flat connectome (README lines 5, 25 and 65)",
+      "evidence_grade": "n/a",
+      "grade_note": null,
+      "mechanism": {
+        "wiring": "MaleCNS v1.0 (minconf-0.5), 151,856,684 directed body pairs",
+        "neuron_model": "none",
+        "input_mapping": "none",
+        "output_mapping": "none",
+        "trained_parts": "none",
+        "body": "none",
+        "scripted_parts": "none (graph statistics only)"
+      },
+      "trained_class": "none",
+      "trained_class_note": "no trained parts",
+      "grade_basis": [
+        "https://github.com/chamodiHsenevirathna/fruit-fly-connectome-explorer/blob/d8de01aedf2ad75b18820d6a9dc58295492891f4/README.md lines 1-30 and 65 (question, method, MaleCNS v1.0) [direct]",
+        "https://github.com/chamodiHsenevirathna/fruit-fly-connectome-explorer/blob/d8de01aedf2ad75b18820d6a9dc58295492891f4/outputs/tables/aggregation_run.json (2,318 batches, 151,856,684 rows, 60 identity checks, 0 failures) [direct]",
+        "https://github.com/chamodiHsenevirathna/fruit-fly-connectome-explorer/blob/d8de01aedf2ad75b18820d6a9dc58295492891f4/outputs/tables/stability_primary_out_degree_nn.csv (Jaccard and Spearman per threshold pair, k and tie policy) [direct]",
+        "https://github.com/chamodiHsenevirathna/fruit-fly-connectome-explorer/blob/d8de01aedf2ad75b18820d6a9dc58295492891f4/src/connectome/ranking.py lines 30-108 (top_k, jaccard, spearman, stability_table, jaccard_random_ties) [direct]"
+      ],
+      "grade_date": "2026-10-17",
+      "measured_result": "outputs/tables/stability_primary_out_degree_nn.csv: out-degree top-10 Jaccard 0.429 between thresholds 1 and 2, top-50 0.5625, Spearman over the population 0.969; README reports top-100 Jaccard vs T>=1 of 0.905 (T>=2) and 0.342 (T>=50) for out-strength.",
+      "try_url": null,
+      "try_status": "no hosted page; local Python analysis",
+      "code_url": "https://github.com/chamodiHsenevirathna/fruit-fly-connectome-explorer",
+      "code_licence": "MIT",
+      "code_licence_source": "README line 75 and LICENSE file in the tree at d8de01a",
+      "data_licence": "MaleCNS CC BY 4.0, not redistributed (README line 75)",
+      "platform": [
+        "other"
+      ],
+      "platform_note": "Python; operating system not stated in the files read",
+      "gpu": "none",
+      "gpu_note": "pandas/PyArrow streaming, about 845 MB peak memory (aggregation_run.json)",
+      "download_size": "about 1 GB connection table fetched separately (README Method section)",
+      "last_commit": "n/a",
+      "pushed_at": "n/a",
+      "last_release": "none",
+      "created_at": "n/a",
+      "stars": null,
+      "stars_date": null,
+      "archived": null,
+      "paper_url": null,
+      "peer_review": "none",
+      "link_status": {
+        "url": "https://github.com/chamodiHsenevirathna/fruit-fly-connectome-explorer",
+        "status": "ok",
+        "http_code": 200,
+        "final_url": "https://github.com/chamodiHsenevirathna/fruit-fly-connectome-explorer",
+        "checked_at": "2026-10-17T23:16:32.674Z"
+      },
+      "last_verified": "2026-10-17",
+      "added_in_run": "report-597777960b47631eb6068cc4",
+      "controls": "none",
+      "wiring_effect": "not-tested",
+      "sources": [
+        "https://github.com/chamodiHsenevirathna/fruit-fly-connectome-explorer [direct]"
+      ],
+      "notes_limitations": "Graded n/a: a graph-statistics analysis tool with no neural dynamics or behaviour. The committed tables hold output of the project's own run (aggregation over all 151,856,684 rows). No wiring null; the comparison is across weight thresholds."
     },
     {
       "id": "natverse-malecns",
@@ -1295,9 +1341,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/natverse/malecns",
-        "checked_at": "2026-10-15T09:40:47.878Z"
+        "checked_at": "2026-10-17T23:13:52.042Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -1338,7 +1384,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://colab.research.google.com/github/navis-org/navis/blob/master/examples/colab.ipynb",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/navis-org/navis",
       "code_licence": "GPL-3.0",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit 3b95dcf23c; GitHub API spdx_id=GPL-3.0",
@@ -1380,7 +1426,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://colab.research.google.com/github/navis-org/navis/blob/master/examples/colab.ipynb",
-        "checked_at": "2026-10-15T09:40:47.601Z",
+        "checked_at": "2026-10-17T23:13:51.873Z",
         "other_links": [
           {
             "url": "https://github.com/navis-org/navis",
@@ -1389,7 +1435,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -1472,9 +1518,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/connectome-neuprint/neuprint-python",
-        "checked_at": "2026-10-15T09:40:48.052Z"
+        "checked_at": "2026-10-17T23:13:52.376Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -1514,7 +1560,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "n/a",
       "try_url": "https://www.virtualflybrain.org/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/VirtualFlyBrain/VFB3-MCP",
       "code_licence": "several: VFB3-MCP MIT; VFBquery Apache-2.0; database and ontology repositories CC-BY-4.0 (per GitHub licence detection)",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit 5e1c3e280f; GitHub API spdx_id=MIT",
@@ -1556,7 +1602,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://www.virtualflybrain.org/",
-        "checked_at": "2026-10-15T09:40:47.809Z",
+        "checked_at": "2026-10-17T23:13:52.093Z",
         "other_links": [
           {
             "url": "https://github.com/VirtualFlyBrain/VFB3-MCP",
@@ -1565,7 +1611,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -1648,9 +1694,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/kkokosa/dotFly",
-        "checked_at": "2026-10-15T09:40:48.456Z"
+        "checked_at": "2026-10-17T23:13:52.630Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -1729,9 +1775,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Kisame76/drosophila-brain-mlx",
-        "checked_at": "2026-10-15T09:40:48.454Z"
+        "checked_at": "2026-10-17T23:13:52.872Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "wiring-null",
       "wiring_effect": "helps",
       "sources": [
@@ -1809,9 +1855,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/eonsystemspbc/fly-brain",
-        "checked_at": "2026-10-15T09:40:48.440Z"
+        "checked_at": "2026-10-17T23:13:52.717Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -1880,16 +1926,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://arcadiae.github.io/fly-brain/",
-        "checked_at": "2026-10-15T09:40:48.135Z",
-        "other_links": [
-          {
-            "url": "https://github.com/ArcadiaE/fly-brain",
-            "status": "ok",
-            "http_code": 200
-          }
-        ]
+        "checked_at": "2026-10-17T23:13:52.643Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-d6114ae0c808c345a0321231",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -1971,9 +2010,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/franciscocarloserra/fasterfly",
-        "checked_at": "2026-10-15T09:40:49.126Z"
+        "checked_at": "2026-10-17T23:13:53.293Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -2022,7 +2061,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "Paper (PMC11525180, quotes checked 2026-10-03): the ensemble median predicts the preferred contrast (ON/OFF) of all 32 cell types with known polarity, the best single model 30 of 32; models with better task performance predict T4/T5 direction selectivity better (r = 0.60, P = 2.6e-6); predictions agree with measurements from 26 studies. Controls: random parameters on the full connectome still get contrast right but direction selectivity and preferred direction poorly; with only cell-type connectivity, trained models predict activity poorly; contrast needs only synapse signs, and direction selectivity (not preferred direction) is possible without synapse counts. No shuffled-wiring network was tested. The authors' 50 pretrained models have validation losses from 5.137 to 5.678 (median 5.300), read by us from their files.",
       "try_url": "https://colab.research.google.com/github/TuragaLab/flyvis/blob/main/examples/01_flyvision_connectome.ipynb",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/TuragaLab/flyvis",
       "code_licence": "MIT",
       "code_licence_source": "LICENSE file 'license' read at commit 0a69fa2fc8; GitHub API spdx_id=MIT",
@@ -2062,7 +2101,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://colab.research.google.com/github/TuragaLab/flyvis/blob/main/examples/01_flyvision_connectome.ipynb",
-        "checked_at": "2026-10-15T09:40:48.573Z",
+        "checked_at": "2026-10-17T23:13:52.735Z",
         "other_links": [
           {
             "url": "https://doi.org/10.1038/s41586-024-07939-3",
@@ -2076,7 +2115,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "project_page": "/p/digital-fly-catalog/projects/flyvis/",
       "controls": "baseline-only",
       "wiring_effect": "not-tested",
@@ -2124,7 +2163,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "Paper (PMC11446845): 91% of 164 testable predictions matched experiments (84% excluding the split-GAL4 optogenetic activation screen); split-GAL4 screen >90% accuracy; shuffled-weight control activated MN9 in 1/100 runs vs 100% for the real connectome. Robustness: +/-30% w_syn and +/-50% inhibition changes keep 88-96% agreement with the default model ('95%' appears here, not as an accuracy figure).",
       "try_url": "https://colab.research.google.com/github/philshiu/Drosophila_brain_model/blob/main/example.ipynb",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/philshiu/Drosophila_brain_model",
       "code_licence": "MIT",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit 91bdd1e7dc; GitHub API spdx_id=MIT",
@@ -2162,7 +2201,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://colab.research.google.com/github/philshiu/Drosophila_brain_model/blob/main/example.ipynb",
-        "checked_at": "2026-10-15T09:40:49.002Z",
+        "checked_at": "2026-10-17T23:13:52.876Z",
         "other_links": [
           {
             "url": "https://doi.org/10.1038/s41586-024-07763-9",
@@ -2173,15 +2212,10 @@
             "url": "https://github.com/philshiu/Drosophila_brain_model",
             "status": "ok",
             "http_code": 200
-          },
-          {
-            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11446845/",
-            "status": "blocked",
-            "http_code": 200
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "project_page": "/p/digital-fly-catalog/projects/shiu-drosophila-brain-model/",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -2267,7 +2301,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/TuragaLab/flybody",
-        "checked_at": "2026-10-15T09:40:49.527Z",
+        "checked_at": "2026-10-17T23:13:53.334Z",
         "other_links": [
           {
             "url": "https://doi.org/10.1038/s41586-025-09029-4",
@@ -2276,7 +2310,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -2320,7 +2354,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://neuromechfly.org/wasm/viewer/viewer.html",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/NeLy-EPFL/flygym",
       "code_licence": "Apache-2.0",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit 38c8ec6103; GitHub API spdx_id=Apache-2.0",
@@ -2362,7 +2396,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://neuromechfly.org/wasm/viewer/viewer.html",
-        "checked_at": "2026-10-15T09:40:49.219Z",
+        "checked_at": "2026-10-17T23:13:53.369Z",
         "other_links": [
           {
             "url": "https://doi.org/10.1038/s41592-024-02497-y",
@@ -2376,7 +2410,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -2436,8 +2470,8 @@
       "gpu_note": "not checked in this pass",
       "download_size": "not measured; the repository holds figures as PNG, PDF and TIFF plus per-fly tables (a blobless clone fetched about 18 MB of metadata)",
       "last_commit": {
-        "date": "2026-10-12T12:46:36-04:00",
-        "hash": "43fb3cef4404e7af9697f18659934d1f046b35fd",
+        "date": "2026-10-15T11:52:35-04:00",
+        "hash": "dcc143ec703d297739bf92f825b20dceea232505",
         "branch": "main"
       },
       "pushed_at": "2026-10-12T16:46:57Z",
@@ -2448,7 +2482,7 @@
       },
       "created_at": "2026-10-11T08:59:00Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -2457,9 +2491,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/taehojo/adfly-connectome",
-        "checked_at": "2026-10-15T09:40:49.874Z"
+        "checked_at": "2026-10-17T23:13:53.896Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-77a01df2426177ea9e70b3d7",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -2481,7 +2515,7 @@
         "https://github.com/taehojo/adfly-connectome/blob/43fb3cef4404e7af9697f18659934d1f046b35fd/README.md [direct]",
         "https://github.com/taehojo/adfly-connectome/blob/43fb3cef4404e7af9697f18659934d1f046b35fd/results/exp2/summary.json [direct]"
       ],
-      "notes_limitations": "Graded B: the MaleCNS v1.0 model runs and its outputs drive the assays, with hand-made inputs and readouts. The shuffled map is a control for where damage is placed on the same wiring, with matched burden, permutation statistics and committed per-fly tables; it is not a shuffled-wiring null and there is no comparison with real-fly data, so it does not meet our grade A test as written. A reading that counts damage-placement controls could support A; that is a judgement for the manager. Manuscript not yet posted (README)."
+      "notes_limitations": "Graded B: the MaleCNS v1.0 model runs and its outputs drive the assays, with hand-made inputs and readouts. The shuffled map is a control for where damage is placed on the same wiring, with matched burden, permutation statistics and committed per-fly tables; it is not a shuffled-wiring null and there is no comparison with real-fly data, so it does not meet our grade A test as written. A reading that counts damage-placement controls could support A; that question is open. Manuscript not yet posted (README)."
     },
     {
       "id": "bioreservoir",
@@ -2522,7 +2556,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "No outcome scoring yet (questions resolve by 2026-12-15, RESULTS.md:49-52). Per-run control values are in experiments/001-fly-oracle/results.csv; our own aggregate of that file: p(yes) real 0.4996 (0.4905-0.5053, sd 0.0028), no_brain 0.4999 (0.4923-0.5082), rewired 0.5009 (0.4801-0.5195), Erdos-Renyi 0.5027 (0.3939-0.6192), coin 0.576. So far the real wiring gives answers close to 0.5, like the no-brain baseline. Calibration: bitter input cuts MN9 firing by 96.8% (docs/MODEL.md:85-87).",
       "try_url": "https://fly.igdigi.com",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/igdigitallab/bioreservoir",
       "code_licence": "Apache-2.0",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit ac0253e20b; GitHub API spdx_id=Apache-2.0",
@@ -2561,7 +2595,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://fly.igdigi.com",
-        "checked_at": "2026-10-15T09:40:49.716Z",
+        "checked_at": "2026-10-17T23:13:53.755Z",
         "other_links": [
           {
             "url": "https://github.com/igdigitallab/bioreservoir",
@@ -2570,7 +2604,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "wiring-null",
       "wiring_effect": "not-tested",
       "sources": [
@@ -2633,7 +2667,7 @@
       "last_release": "none",
       "created_at": null,
       "stars": null,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "archived_source": "GitHub repository page banner, checked 2026-10-10",
       "paper_url": null,
@@ -2643,9 +2677,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/githabideri/brainlab",
-        "checked_at": "2026-10-15T09:40:50.145Z"
+        "checked_at": "2026-10-17T23:13:54.342Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-495d6803bc4cc4071e36f48e",
       "controls": "wiring-null",
       "wiring_effect": "no-difference",
@@ -2717,7 +2751,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://thejustas228.github.io/connectocopter/",
-        "checked_at": "2026-10-15T09:40:49.958Z",
+        "checked_at": "2026-10-17T23:13:53.867Z",
         "other_links": [
           {
             "url": "https://github.com/TheJustas228/connectocopter",
@@ -2726,7 +2760,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-930735624ceb2a8bf6ba1756",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -2792,7 +2826,7 @@
       "last_release": "none",
       "created_at": null,
       "stars": null,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "archived_source": "GitHub repository page banner, checked 2026-10-11",
       "paper_url": null,
@@ -2802,9 +2836,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/sakikoniko314-blip/connectome-control-exploration",
-        "checked_at": "2026-10-15T09:40:50.555Z"
+        "checked_at": "2026-10-17T23:13:54.453Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-8838901c23f73d8a414c8b16",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -2879,9 +2913,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Amankrsudo/discord-fly-brain",
-        "checked_at": "2026-10-15T09:58:38.818Z"
+        "checked_at": "2026-10-17T23:17:52.857Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-96adf9534e3f3bd75683489d",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -2969,9 +3003,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/gabrycina/doom-fly-control",
-        "checked_at": "2026-10-15T09:40:50.548Z"
+        "checked_at": "2026-10-17T23:13:54.175Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -3056,7 +3090,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/nonatofabio/doomfly-rl",
-        "checked_at": "2026-10-15T09:40:51.181Z",
+        "checked_at": "2026-10-17T23:13:54.449Z",
         "other_links": [
           {
             "url": "https://nonatofabio.github.io/blog/posts/doomfly_autonomous.html",
@@ -3065,7 +3099,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "wiring-null",
       "wiring_effect": "no-difference",
@@ -3152,7 +3186,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/erojasoficial-byte/fly-brain",
-        "checked_at": "2026-10-15T09:40:51.172Z",
+        "checked_at": "2026-10-17T23:13:54.640Z",
         "other_links": [
           {
             "url": "https://doi.org/10.5281/zenodo.19152238",
@@ -3161,7 +3195,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -3227,9 +3261,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://eon.systems/updates/embodied-brain-emulation",
-        "checked_at": "2026-10-15T09:40:50.820Z"
+        "checked_at": "2026-10-17T23:17:52.516Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -3306,7 +3340,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://fly.aryawijaya.com",
-        "checked_at": "2026-10-15T09:40:51.057Z",
+        "checked_at": "2026-10-17T23:13:54.442Z",
         "other_links": [
           {
             "url": "https://github.com/aryawidjaja/flight-test-the-fly",
@@ -3320,7 +3354,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-d237ea6eab1b032a788845a1",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -3400,7 +3434,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/nftechie/flm",
-        "checked_at": "2026-10-15T09:40:51.704Z",
+        "checked_at": "2026-10-17T23:13:55.037Z",
         "other_links": [
           {
             "url": "https://artificialscientific.com/papers/flies-are-all-you-need",
@@ -3409,7 +3443,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "baseline-only",
       "wiring_effect": "not-tested",
       "sources": [
@@ -3491,9 +3525,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/dtch1997/fly-api",
-        "checked_at": "2026-10-15T09:40:51.588Z"
+        "checked_at": "2026-10-17T23:13:55.144Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -3558,7 +3592,7 @@
       "last_release": "none",
       "created_at": null,
       "stars": null,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "archived_source": "GitHub repository page banner, checked 2026-10-11",
       "paper_url": null,
@@ -3568,7 +3602,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://krezio.github.io/fly-arithmetic/",
-        "checked_at": "2026-10-15T09:40:51.426Z",
+        "checked_at": "2026-10-17T23:13:54.945Z",
         "other_links": [
           {
             "url": "https://github.com/krezio/fly-arithmetic",
@@ -3590,7 +3624,7 @@
         "note": "Ran; the page showed changing activity with no action; 2.05 MB in the first 60-90 s; where the computing runs could not be told (one worker, WebGL canvases). We did not type a sum or train a readout.",
         "source": "Digital Fly Lab browser check of 2026-10-11 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-11-run13/#browser-heading), result file fly-arithmetic.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-8838901c23f73d8a414c8b16",
       "controls": "wiring-null",
       "wiring_effect": "worse",
@@ -3704,9 +3738,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/vib2810/fly-brain-zero-shot",
-        "checked_at": "2026-10-15T09:40:52.224Z"
+        "checked_at": "2026-10-17T23:13:55.364Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-b7b53f7e80f369605462f9ac",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -3788,9 +3822,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Curt-Park/fly-cartpole",
-        "checked_at": "2026-10-15T09:40:52.376Z"
+        "checked_at": "2026-10-17T23:13:55.590Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -3857,7 +3891,7 @@
       "last_release": "none",
       "created_at": "2026-09-30T12:57:09Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -3866,9 +3900,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/s1ms4/fly-chess",
-        "checked_at": "2026-10-15T09:40:52.383Z"
+        "checked_at": "2026-10-17T23:13:55.615Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-77a01df2426177ea9e70b3d7",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -3975,7 +4009,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Recluse/FLY-lab",
-        "checked_at": "2026-10-15T09:40:53.063Z",
+        "checked_at": "2026-10-17T23:13:55.725Z",
         "other_links": [
           {
             "url": "https://github.com/Recluse/FLY-lab/blob/main/paper/fly-lab-en.pdf",
@@ -3984,7 +4018,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "wiring-null",
       "wiring_effect": "helps",
       "sources": [
@@ -4058,9 +4092,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/meiluosi/fly-connectome-study/blob/20f8ffb70501f7e8622af8acdff9e12346be38a0/FINAL_SUMMARY.md",
-        "checked_at": "2026-10-15T09:58:40.389Z"
+        "checked_at": "2026-10-17T23:13:56.093Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-96adf9534e3f3bd75683489d",
       "controls": "wiring-null",
       "wiring_effect": "mixed",
@@ -4141,16 +4175,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/miwamasa/fly-cx-navigation-servo/blob/3d9889726f1477abb2adadbb3fae286837f9ef90/paper/b_servo_control/PAPER.md",
-        "checked_at": "2026-10-15T09:40:53.233Z",
-        "other_links": [
-          {
-            "url": "https://github.com/miwamasa/fly-cx-navigation-servo",
-            "status": "ok",
-            "http_code": 200
-          }
-        ]
+        "checked_at": "2026-10-17T23:13:56.460Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-d6114ae0c808c345a0321231",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -4218,7 +4245,7 @@
       "last_release": "none",
       "created_at": null,
       "stars": null,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "archived_source": "GitHub repository page banner, checked 2026-10-10",
       "paper_url": "https://github.com/michelangeloromerochisco/fly-distill/blob/ad5aef6fe1dc3a59d795a179c5ebdf8bbefe62ce/PAPER.md",
@@ -4228,7 +4255,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/michelangeloromerochisco/fly-distill",
-        "checked_at": "2026-10-15T09:40:53.871Z",
+        "checked_at": "2026-10-17T23:13:56.096Z",
         "other_links": [
           {
             "url": "https://github.com/michelangeloromerochisco/fly-distill/blob/ad5aef6fe1dc3a59d795a179c5ebdf8bbefe62ce/PAPER.md",
@@ -4237,7 +4264,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-495d6803bc4cc4071e36f48e",
       "controls": "wiring-null",
       "wiring_effect": "mixed",
@@ -4326,9 +4353,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Ibtisam-Mohammad/Fly.exe",
-        "checked_at": "2026-10-15T09:40:54.084Z"
+        "checked_at": "2026-10-17T23:13:56.132Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "wiring-null",
       "wiring_effect": "mixed",
@@ -4412,7 +4439,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/jerryjliu/fly_ocr",
-        "checked_at": "2026-10-15T09:40:54.574Z",
+        "checked_at": "2026-10-17T23:13:56.270Z",
         "other_links": [
           {
             "url": "https://github.com/jerryjliu/fly_ocr/blob/main/docs/fly-ocr-research-report.pdf",
@@ -4421,7 +4448,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "wiring-null",
       "wiring_effect": "helps",
       "sources": [
@@ -4489,9 +4516,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/supat-roong/fly-racer",
-        "checked_at": "2026-10-15T09:40:54.587Z"
+        "checked_at": "2026-10-17T23:13:56.602Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-15db6f24b25ad21e1538facb",
       "controls": "wiring-null",
       "wiring_effect": "mixed",
@@ -4537,7 +4564,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "Street task v5 with traffic, held-out streets: fly connectome + DAgger 20, 19, 19 of 20 (three sets); same recipe on a randomly rewired graph 16/20; linear 12/20; MLP-40 18/20; expert 20/20 (docs/results.md). Speed task v6: 18/19/16 of 20 vs rewired 5/20, but a second training seed gave 13/20. Flat road: rewired graph matched or beat measured wiring, MLP beat both. One training seed per condition. The best-model and rewired street metrics are in docs only, not in results/ JSON. Measured by the author, not reproduced by us.",
       "try_url": "https://fly-self-driving.kylon.app",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/suanmiao/fly-self-driving",
       "code_licence": "MIT",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit 3516a094a6; GitHub API spdx_id=MIT",
@@ -4575,7 +4602,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://fly-self-driving.kylon.app",
-        "checked_at": "2026-10-15T09:40:55.236Z",
+        "checked_at": "2026-10-17T23:13:57.484Z",
         "other_links": [
           {
             "url": "https://github.com/suanmiao/fly-self-driving",
@@ -4584,7 +4611,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "wiring-null",
       "wiring_effect": "mixed",
@@ -4655,7 +4682,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://fly.warpfield.me",
-        "checked_at": "2026-10-15T09:40:55.165Z",
+        "checked_at": "2026-10-17T23:13:56.828Z",
         "other_links": [
           {
             "url": "https://github.com/castor639/fly-tennis",
@@ -4664,7 +4691,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-15db6f24b25ad21e1538facb",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -4734,9 +4761,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/sadiqkhzn/fly-vnc-walking-sim",
-        "checked_at": "2026-10-15T09:40:55.186Z"
+        "checked_at": "2026-10-17T23:13:57.132Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-15db6f24b25ad21e1538facb",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -4801,7 +4828,7 @@
       },
       "created_at": "2026-09-30T13:20:46Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -4811,9 +4838,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/kosmoKwan/fly-connectome-wiring",
-        "checked_at": "2026-10-15T09:40:55.346Z"
+        "checked_at": "2026-10-17T23:13:57.103Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-de0ecc483ef8543d1d4bb134",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -4886,9 +4913,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/0Sakura721/flyaim",
-        "checked_at": "2026-10-15T09:40:55.914Z"
+        "checked_at": "2026-10-17T23:13:57.161Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-d237ea6eab1b032a788845a1",
       "controls": "wiring-null",
       "wiring_effect": "no-difference",
@@ -4961,7 +4988,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://yusenthebot.github.io/FlyArm/",
-        "checked_at": "2026-10-15T09:40:55.299Z",
+        "checked_at": "2026-10-17T23:13:56.914Z",
         "other_links": [
           {
             "url": "https://github.com/yusenthebot/FlyArm",
@@ -4970,7 +4997,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-d237ea6eab1b032a788845a1",
       "controls": "wiring-null",
       "wiring_effect": "no-difference",
@@ -5014,7 +5041,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "From results/*.json (LEADERBOARD.md): reference LIF on FlyWire v783, gain 0.45, 3 seeds: core 1.00, hard 0.51, graded 0.64 [0.64, 0.65], shuffled-wiring specificity +0.20. Shiu 2024 settings (gain 1.0): graded 0.63, specificity +0.18, ~34% of brain active. Adaptive LIF: graded 0.75, specificity +0.31. MaleCNS gain 0.65 (Minecraft demo settings): core 0.57, graded 0.66, specificity +0.22. Terminal-aware LIF: 0.70 on both brains. Through a flyvis eye the loom does not reach the giant fiber (0/3) while a flash does. Measured by the author, not reproduced by us.",
       "try_url": "https://www.fly-bench.com/bench",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/brandoncho369/flybench",
       "code_licence": "MIT",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit 3052ce5fa9; GitHub API spdx_id=MIT",
@@ -5057,7 +5084,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://www.fly-bench.com/bench",
-        "checked_at": "2026-10-15T09:40:55.615Z",
+        "checked_at": "2026-10-17T23:13:57.257Z",
         "other_links": [
           {
             "url": "https://doi.org/10.5281/zenodo.22886374",
@@ -5071,7 +5098,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "wiring-null",
       "wiring_effect": "mixed",
       "sources": [
@@ -5152,7 +5179,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/vichienFF/flybrain-connectome-benchmark",
-        "checked_at": "2026-10-15T09:40:56.067Z",
+        "checked_at": "2026-10-17T23:13:57.694Z",
         "other_links": [
           {
             "url": "https://doi.org/10.5281/zenodo.23025560",
@@ -5161,7 +5188,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -5237,9 +5264,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://flybrain-q2h5.onrender.com/",
-        "checked_at": "2026-10-15T10:01:30.687Z"
+        "checked_at": "2026-10-17T23:13:57.585Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-96adf9534e3f3bd75683489d",
       "controls": "wiring-null",
       "wiring_effect": "mixed",
@@ -5331,9 +5358,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/MilanKalajdzic/flybrain-reservoir",
-        "checked_at": "2026-10-15T09:40:56.814Z"
+        "checked_at": "2026-10-17T23:13:58.134Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "wiring-null",
       "wiring_effect": "worse",
       "sources": [
@@ -5414,7 +5441,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/gyujeongion/flyconnectome-nulls",
-        "checked_at": "2026-10-15T09:40:56.718Z",
+        "checked_at": "2026-10-17T23:13:58.112Z",
         "other_links": [
           {
             "url": "https://doi.org/10.5281/zenodo.22871090",
@@ -5423,7 +5450,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "wiring-null",
       "wiring_effect": "mixed",
@@ -5432,6 +5459,79 @@
         "https://doi.org/10.5281/zenodo.22871090 [not checked]"
       ],
       "notes_limitations": "The question is methodological (which random-wiring control is fair), not whether the fly brain produces fly-like behaviour; no comparison with real fly behaviour. The brain is a heavy compression (512 cell-type groups selected by a path score, plus 1,000 sampled KCs) and all weights evolve away from the connectome, so wiring is an initial condition. Input and output neuron choices and the readout prior are hand-made. Seeds are not bit-reproducible (clock reseeding, GPU scatter). One 20-seed extension did not replicate an earlier lead. Raw run logs (about 40 GB) are not in the repo; analysis outputs are. The paper states code and manuscript were written with an AI coding assistant. Measured by the author, not reproduced by us."
+    },
+    {
+      "id": "flycraft-hexapod",
+      "name": "Flycraft: frozen MaleCNS v1.0 nerve-cord LIF model drives an 18-joint MuJoCo hexapod through a fixed motor map, vs rewired, shuffled-weight, random and zero-drive controls",
+      "type": "research",
+      "author_or_org": "thepuneeth",
+      "summary": "A frozen, untrained MaleCNS v1.0 ventral nerve cord graph (11,000 nodes, 485,074 signed connections, 260 motor outputs) is simulated with a Shiu-style LIF stepper under a constant descending drive; motor-neuron rates are pooled per leg and joint and added to a stance pose by a fixed hand-written linear map (mn_to_joint.py), then tracked by PD torque on a PhantomX hexapod in MuJoCo. camera_ready_reruns.py compares the measured graph over 30 noise realizations with degree-preserving partial rewiring (dose response), shuffled-weight graphs, random graphs, time-shuffled signal and zero drive, across 9 body variants; results are committed in eon-fly-brain/results/path2/.",
+      "claim": {
+        "text": "\"A frozen, untrained MaleCNS v1.0 nerve-cord model (11,000 nodes, 485,074 signed connections) drives an 18-joint MuJoCo hexapod through a fixed hand-written motor map, compared against rewired, shuffled-weight and zero-drive controls. No weights and no map are trained.\" (README lines 5-8). README lines 3-5 state the paper \"Fruit-Fly Nerve-Cord Wiring and Motor Drive in a Simulated Hexapod\" is for the IEEE BIBM 2026 Undergraduate and High School Symposium, paper S59306; recorded as a claim, the published paper was not found in this pass (repository holds paper/flycraft_bibm_draft.tex and .pdf).",
+        "url": "https://github.com/thepuneeth/Flycraft"
+      },
+      "dataset": "MaleCNS",
+      "release": "v1.0, minconf-0.5 feather files (README Data section)",
+      "evidence_grade": "A",
+      "grade_note": "Grade A describes what the code does (committed wiring controls), not the size of the effect: in the author's test the real nerve-cord graph moved the hexapod 0.85 mm forward in 8 s, fully rewired graphs 3.5 mm backward, and a time-shuffled real signal 0.72 mm. The author's results file is marked pending the author's own review; the paper's acceptance is the author's statement only.",
+      "mechanism": {
+        "wiring": "MaleCNS v1.0 nerve cord (MANC part), all-leg graph 11,000 nodes, 485,074 signed edges at weight floor 5 (README Current numbers)",
+        "neuron_model": "LIF (ShiuLIFStepper, vnc_lif_core.py; camera_ready_reruns.py lines 115-128)",
+        "input_mapping": "hand-made: constant descending current BASE_DRIVE 100 (camera_ready_reruns.py line 122; specificity_campaign.py line 61)",
+        "output_mapping": "hand-made: fixed per-leg, per-joint pooled motor-neuron score times gains (-0.55, 0.65, 0.65) added to a stance pose (mn_to_joint.py lines 39-60), PD torque (specificity_campaign.py lines 410-413)",
+        "trained_parts": "none in the camera-ready chain (integrity zero_learning true in camera_ready_reruns.json); separate experiments (EMBODY v4/v5, Outcome B) train an interface or readout and are not the graded claim",
+        "body": "custom: PhantomX 18-DoF hexapod in MuJoCo",
+        "scripted_parts": "stance pose and PD tracking; no CPG or oscillator in the camera-ready chain files read (nmf_cpg.py is a separate reference ceiling)"
+      },
+      "trained_class": "none",
+      "trained_class_note": "no trained parts in the graded chain; other experiments in the repository train an interface or a readout",
+      "grade_basis": [
+        "https://github.com/thepuneeth/Flycraft/blob/61c09b0147d88fd35ae98e6621f061fcf71d065c/README.md lines 1-8 and 72-90 (claim; real VNC beats shuffled topology, does not beat matched random descending drive; no coherent alternating tripod) [direct]",
+        "https://github.com/thepuneeth/Flycraft/blob/61c09b0147d88fd35ae98e6621f061fcf71d065c/eon-fly-brain/code/camera_ready_reruns.py lines 98-128 and 151-152 (real, lesion, rewire, random graph arms; LIF history; map_targets) [direct]",
+        "https://github.com/thepuneeth/Flycraft/blob/61c09b0147d88fd35ae98e6621f061fcf71d065c/eon-fly-brain/code/mn_to_joint.py lines 39-60 (fixed motor map) [direct]",
+        "https://github.com/thepuneeth/Flycraft/blob/61c09b0147d88fd35ae98e6621f061fcf71d065c/eon-fly-brain/code/specificity_campaign.py lines 359-413 (run_body_trace: PD torque to the mapped targets each control step) [direct]",
+        "https://github.com/thepuneeth/Flycraft/blob/61c09b0147d88fd35ae98e6621f061fcf71d065c/eon-fly-brain/code/audit_h4_dose_response.py lines 31-66 (partial_rewire: degree-preserving edge swaps) [direct]",
+        "https://github.com/thepuneeth/Flycraft/blob/61c09b0147d88fd35ae98e6621f061fcf71d065c/eon-fly-brain/results/path2/camera_ready/camera_ready_reruns.json (experiment_A, experiment_B, experiment_C, null_arms; status PENDING-OWNER-REVIEW) [direct]"
+      ],
+      "grade_date": "2026-10-17",
+      "measured_result": "camera_ready_reruns.json: forward distance in 8 s, nominal body: real graph 0.00085 m mean over 30 realizations (24/30 positive), shuffled-weight graphs -0.0028 m (12 graphs), zero drive -0.0033 m, time-shuffled real signal 0.00072 m (author p real > time-shuffled 0.29); real above shuffled-weight on 9 of 9 body variants (Holm-adjusted permutation p 4.5e-05 to 0.012); 10% rewiring gives -0.0027 m. Author decomposition: posture 0.0023 m, fluctuation 0.0018 m, temporal order 0.00013 m.",
+      "try_url": null,
+      "try_status": "no hosted page; local Python reruns (about 35 min on a 10-core Mac, README)",
+      "code_url": "https://github.com/thepuneeth/Flycraft",
+      "code_licence": "GPL-2.0",
+      "code_licence_source": "README License section (eon-fly-brain/LICENSE)",
+      "data_licence": "MaleCNS CC BY 4.0, not redistributed (README Data and License sections)",
+      "platform": [
+        "macOS"
+      ],
+      "platform_note": "README reports runs on a 10-core Mac; CPU LIF core, CUDA mentioned as an alternative",
+      "gpu": "optional",
+      "gpu_note": "README: CPU and CUDA draw different Poisson streams",
+      "download_size": "MaleCNS v1.0 feather files fetched separately; size not measured",
+      "last_commit": "n/a",
+      "pushed_at": "n/a",
+      "last_release": "none",
+      "created_at": "n/a",
+      "stars": null,
+      "stars_date": null,
+      "archived": null,
+      "paper_url": null,
+      "peer_review": "none",
+      "link_status": {
+        "url": "https://github.com/thepuneeth/Flycraft",
+        "status": "ok",
+        "http_code": 200,
+        "final_url": "https://github.com/thepuneeth/Flycraft",
+        "checked_at": "2026-10-17T23:16:32.685Z"
+      },
+      "last_verified": "2026-10-17",
+      "added_in_run": "report-597777960b47631eb6068cc4",
+      "controls": "wiring-null",
+      "wiring_effect": "helps",
+      "sources": [
+        "https://github.com/thepuneeth/Flycraft [direct]"
+      ],
+      "notes_limitations": "Graded A on the claim as limited by the author (graph-dependent motor drive under the tested interface and nulls): named release, LIF dynamics, committed comparisons with degree-preserving rewiring, shuffled weights, random graphs and zero drive. The movement is small (under 1 mm in 8 s) and the README says no coherent alternating tripod forms; the time-shuffled signal moves the body about as far as the real one, so the effect is mostly posture and fluctuation from the graph, not gait timing. The motor map is hand-made. The result file is marked PENDING-OWNER-REVIEW and its videos are unreviewed. Paper acceptance is the author's statement only."
     },
     {
       "id": "flydoom",
@@ -5507,7 +5607,7 @@
         "final_url": "https://github.com/eganeganegan/flydoom",
         "checked_at": "2026-10-03T09:46:41.971Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -5587,9 +5687,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/mutkuoz/flydoom",
-        "checked_at": "2026-10-15T09:40:56.788Z"
+        "checked_at": "2026-10-17T23:13:58.202Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -5660,9 +5760,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/carsonshicks2016-beep/flygarden",
-        "checked_at": "2026-10-15T09:40:57.533Z"
+        "checked_at": "2026-10-17T23:17:52.862Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-d6114ae0c808c345a0321231",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -5727,7 +5827,7 @@
       "last_release": "none",
       "created_at": "2026-09-25T16:53:51Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -5737,9 +5837,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/arisliwind/flygym",
-        "checked_at": "2026-10-15T09:40:58.178Z"
+        "checked_at": "2026-10-17T23:13:58.653Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-de0ecc483ef8543d1d4bb134",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -5810,9 +5910,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/DamJanJot/flylab-demo",
-        "checked_at": "2026-10-15T09:58:37.909Z"
+        "checked_at": "2026-10-17T23:17:53.060Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-96adf9534e3f3bd75683489d",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -5892,13 +5992,8 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://minh.systems/FlyLab/",
-        "checked_at": "2026-10-15T10:02:53.358Z",
+        "checked_at": "2026-10-17T23:13:58.246Z",
         "other_links": [
-          {
-            "url": "https://github.com/pinkysworld/FlyLab",
-            "status": "ok",
-            "http_code": 200
-          },
           {
             "url": "https://github.com/pinkysworld/FlyLab/blob/7a4de43eea8cef408bd5587ee49ec9964e483bce/papers/IJRC_FlyLab_draft.md",
             "status": "ok",
@@ -5906,7 +6001,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-96adf9534e3f3bd75683489d",
       "controls": "wiring-null",
       "wiring_effect": "not-tested",
@@ -5975,7 +6070,7 @@
       "last_release": "none",
       "created_at": null,
       "stars": null,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": null,
       "paper_url": "https://doi.org/10.5281/zenodo.23091460",
       "peer_review": "preprint",
@@ -5984,7 +6079,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/uguryildirim24/flyonenomics",
-        "checked_at": "2026-10-15T09:40:58.236Z",
+        "checked_at": "2026-10-17T23:13:58.626Z",
         "other_links": [
           {
             "url": "https://doi.org/10.5281/zenodo.23091460",
@@ -5993,7 +6088,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5c165ac6844eb04a9891dc9b",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -6057,7 +6152,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "out/benchmark.json, precision@16, 5 seeds (MNIST / Fashion-MNIST / correlated): real 0.499 / 0.480 / 0.368; real binary 0.547 / 0.518 / 0.420; degree-preserving 0.552 / 0.524 / 0.427; random FlyHash 0.621 / 0.581 / 0.511. out/specialization.json: in the connectome's own synthetic input world real 0.219 vs random 0.155 (+41%), degree-preserving 0.230; in a uniform world real 0.094 vs random 0.162. Values match the README. Measured by the author, not reproduced by us.",
       "try_url": "https://realgauravvyas.github.io/flys-hash-function/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/realgauravvyas/flys-hash-function",
       "code_licence": "none found",
       "code_licence_source": "no LICENSE/COPYING file at repo root (commit 271cc854dc); GitHub API spdx_id=None",
@@ -6094,7 +6189,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://realgauravvyas.github.io/flys-hash-function/",
-        "checked_at": "2026-10-15T09:40:58.330Z",
+        "checked_at": "2026-10-17T23:13:58.337Z",
         "other_links": [
           {
             "url": "https://github.com/realgauravvyas/flys-hash-function",
@@ -6103,7 +6198,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "wiring-null",
       "wiring_effect": "worse",
       "sources": [
@@ -6178,9 +6273,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/LordKarV/flyscore",
-        "checked_at": "2026-10-15T10:01:30.119Z"
+        "checked_at": "2026-10-17T23:17:52.821Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-96adf9534e3f3bd75683489d",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -6257,9 +6352,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Byun11/flyvl",
-        "checked_at": "2026-10-15T09:40:59.228Z"
+        "checked_at": "2026-10-17T23:13:58.887Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-f1427d02edf982843141ea8e",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -6317,15 +6412,15 @@
       "gpu": "not stated",
       "download_size": "not stated",
       "last_commit": {
-        "date": "2026-10-15T01:18:12+09:00",
-        "hash": "cdb046a5f26cc5e297a9457342f69e4a4c545e1e",
+        "date": "2026-10-16T14:02:52+09:00",
+        "hash": "fdda2344d557c2dbac6d40022e165dc7b2d77ad6",
         "branch": "main"
       },
       "pushed_at": null,
       "last_release": "none",
       "created_at": null,
       "stars": null,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "archived_source": "GitHub repository page banner, checked 2026-10-10",
       "paper_url": null,
@@ -6335,9 +6430,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/hyungwoo-jo/flywire-connectome-scz-simulation",
-        "checked_at": "2026-10-15T09:40:59.899Z"
+        "checked_at": "2026-10-17T23:13:59.219Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-495d6803bc4cc4071e36f48e",
       "controls": "wiring-null",
       "wiring_effect": "worse",
@@ -6424,9 +6519,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/skulitom/haltere",
-        "checked_at": "2026-10-15T09:40:59.992Z"
+        "checked_at": "2026-10-17T23:13:59.158Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "baseline-only",
       "wiring_effect": "not-tested",
@@ -6506,9 +6601,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/cqw-acq/connectome-null-models",
-        "checked_at": "2026-10-15T09:41:00.034Z"
+        "checked_at": "2026-10-17T23:13:59.272Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "wiring-null",
       "wiring_effect": "no-difference",
       "sources": [
@@ -6572,9 +6667,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://arxiv.org/abs/2508.16792",
-        "checked_at": "2026-10-15T09:40:59.888Z"
+        "checked_at": "2026-10-17T23:13:58.827Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -6642,7 +6737,7 @@
       "last_release": "none",
       "created_at": "2026-10-11T00:59:59Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -6651,9 +6746,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/peopleatkorea-droid/malecns-keratitis-pilot",
-        "checked_at": "2026-10-15T09:41:01.866Z"
+        "checked_at": "2026-10-17T23:13:59.389Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-77a01df2426177ea9e70b3d7",
       "controls": "wiring-null",
       "wiring_effect": "no-difference",
@@ -6738,9 +6833,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Wldgyu/MaleCNS_training",
-        "checked_at": "2026-10-15T10:01:33.631Z"
+        "checked_at": "2026-10-17T23:17:52.926Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-96adf9534e3f3bd75683489d",
       "controls": "wiring-null",
       "wiring_effect": "no-difference",
@@ -6808,7 +6903,7 @@
       "last_release": "none",
       "created_at": "2026-10-10T17:59:11Z",
       "stars": 1,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -6817,9 +6912,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/j297ddr4fv-rgb/malecns-visual-motor",
-        "checked_at": "2026-10-15T09:41:01.929Z"
+        "checked_at": "2026-10-17T23:13:59.348Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-77a01df2426177ea9e70b3d7",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -6888,7 +6983,7 @@
       "last_release": "none",
       "created_at": null,
       "stars": null,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "archived_source": "GitHub repository page banner, checked 2026-10-11",
       "paper_url": null,
@@ -6898,9 +6993,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/akashacorporation/flybrain",
-        "checked_at": "2026-10-15T09:41:02.794Z"
+        "checked_at": "2026-10-17T23:13:59.978Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-8838901c23f73d8a414c8b16",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -6988,9 +7083,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Titanium-xd/neuroweave",
-        "checked_at": "2026-10-15T09:41:04.043Z"
+        "checked_at": "2026-10-17T23:13:59.748Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-b7b53f7e80f369605462f9ac",
       "controls": "wiring-null",
       "wiring_effect": "no-difference",
@@ -7051,7 +7146,7 @@
       "last_release": "none",
       "created_at": "2026-09-25T17:42:43Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -7061,9 +7156,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/xiangdoz/fly-connectome-attractor",
-        "checked_at": "2026-10-15T09:41:03.585Z"
+        "checked_at": "2026-10-17T23:13:59.713Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-de0ecc483ef8543d1d4bb134",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -7132,9 +7227,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/omeruk/synaptera",
-        "checked_at": "2026-10-15T09:41:04.195Z"
+        "checked_at": "2026-10-17T23:13:59.756Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-930735624ceb2a8bf6ba1756",
       "controls": "baseline-only",
       "wiring_effect": "not-tested",
@@ -7142,6 +7237,77 @@
         "https://github.com/omeruk/synaptera [direct]"
       ],
       "notes_limitations": "Builds on seven-monarchs/NeuroFly. Pre-registration is internal (commits), not external; several labels are post-hoc as the author states. Single seed in the final runs. Created 2026-10-07 (GitHub search API, approximate); 2 stars at 2026-10-08."
+    },
+    {
+      "id": "virtual-fly-brain-ppo",
+      "name": "virtual-fly-brain: PPO and behaviour-cloning food-seeking runs on the FlyGym fly with a turning controller, no connectome",
+      "type": "research",
+      "author_or_org": "bookseal",
+      "summary": "A lab of training runs (lab/) in which an SB3 (stable_baselines3) PPO MlpPolicy (two 64-unit layers) or a behaviour-cloned policy outputs two turning-controller commands for the FlyGym fly walking to a food sphere; observations are 8 numbers (target position in body frame, distance, speed, turn rate, obstacle). Committed artifacts per run (public/artifacts/<run>/) include checkpoints, evaluations, summaries and a report.json. The repository name refers to Virtual Fly Brain; vfb_mcp.py is a 32-line client for the virtualflybrain.org MCP server and is not part of the control loop.",
+      "claim": {
+        "text": "Run report verdict: learning_improvement status \"not_confirmed\" (bc-ppo seed 11: success rate 1.0 before and after 10,240 PPO steps) (public/artifacts/20261015-220404/report.json lines 15-30)",
+        "url": "https://github.com/bookseal/virtual-fly-brain"
+      },
+      "dataset": "none",
+      "release": "none (no connectome loaded in lab/envs.py or lab/learning.py)",
+      "evidence_grade": "D",
+      "grade_note": null,
+      "mechanism": {
+        "wiring": "none",
+        "neuron_model": "none",
+        "input_mapping": "hand-made: 8-number observation vector computed from simulator state (lab/envs.py lines 53-57)",
+        "output_mapping": "learned: PPO policy outputs 2 values fed to FlyGym HybridTurningController (lab/envs.py lines 18 and 25, 36)",
+        "trained_parts": "PPO MlpPolicy net_arch [64,64] (lab/learning.py line 45); behaviour-cloning initial policy from a teacher (lab/imitation.py, lab/envs.py line 125)",
+        "body": "FlyGym (flygym_gymnasium Fly with adhesion, lab/envs.py lines 23-28)",
+        "scripted_parts": "leg stepping from the FlyGym HybridTurningController (CPG plus correction rules); rule_action and teacher_action controllers (lab/envs.py lines 118-127)"
+      },
+      "trained_class": "policy-or-llm",
+      "trained_class_note": "PPO MlpPolicy and behaviour-cloned policy",
+      "grade_basis": [
+        "https://github.com/bookseal/virtual-fly-brain/blob/58e73e3cac06e510b77f829835729adf332980f9/lab/envs.py lines 18-36 and 53-57 (FlyGym Fly, HybridTurningController, 2-d action, 8-d observation) [direct]",
+        "https://github.com/bookseal/virtual-fly-brain/blob/58e73e3cac06e510b77f829835729adf332980f9/lab/learning.py lines 29-45 (stable_baselines3 PPO MlpPolicy, net_arch [64,64]) [direct]",
+        "https://github.com/bookseal/virtual-fly-brain/blob/58e73e3cac06e510b77f829835729adf332980f9/public/artifacts/20261015-220404/report.json lines 1-30 (run 20261015-220404, 15.4 h, 94 intervals; learning_improvement not_confirmed) [direct]",
+        "https://github.com/bookseal/virtual-fly-brain/blob/58e73e3cac06e510b77f829835729adf332980f9/public/artifacts/20261015-220404/noise-ablation.json (status budget_limit, no ablation result) [direct]"
+      ],
+      "grade_date": "2026-10-17",
+      "measured_result": "report.json (run 20261015-220404): learning_improvement not_confirmed; bc-ppo seed 11 success 1.0 before and 1.0 after 10,240 PPO timesteps on 20 fixed episodes, holdout 1.0 on 30 episodes. noise-ablation.json records budget_limit with no result.",
+      "try_url": null,
+      "try_status": "no hosted run checked; public/ holds a static artifact site (not opened in this pass)",
+      "code_url": "https://github.com/bookseal/virtual-fly-brain",
+      "code_licence": "not checked in this pass",
+      "code_licence_source": "tree at 58e73e3 not searched for a LICENSE file in this pass",
+      "data_licence": "n/a (no connectome data)",
+      "platform": [
+        "other"
+      ],
+      "platform_note": "not stated in the files read",
+      "gpu": "not stated",
+      "gpu_note": "PPO runs with device='cpu' (lab/learning.py line 45)",
+      "download_size": "repository 2,306 files incl. 981 artifact files; size not measured",
+      "last_commit": "n/a",
+      "pushed_at": "n/a",
+      "last_release": "none",
+      "created_at": "n/a",
+      "stars": null,
+      "stars_date": null,
+      "archived": null,
+      "paper_url": null,
+      "peer_review": "none",
+      "link_status": {
+        "url": "https://github.com/bookseal/virtual-fly-brain",
+        "status": "ok",
+        "http_code": 200,
+        "final_url": "https://github.com/bookseal/virtual-fly-brain",
+        "checked_at": "2026-10-17T23:16:32.682Z"
+      },
+      "last_verified": "2026-10-17",
+      "added_in_run": "report-597777960b47631eb6068cc4",
+      "controls": "none",
+      "wiring_effect": "not-tested",
+      "sources": [
+        "https://github.com/bookseal/virtual-fly-brain [direct]"
+      ],
+      "notes_limitations": "Graded D: the fly is moved by an ordinary RL policy (PPO MLP) on top of FlyGym's own turning controller; no connectome or neuron model is loaded in the control loop files read. HEAD moved from 228708c (run 17) to 58e73e3 on 2026-10-16; the decision is at the new HEAD."
     },
     {
       "id": "wired-different",
@@ -7176,7 +7342,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "results/null_model_summary.json: all 89 features AUC-PR 0.759 vs 500 degree-preserving rewirings 0.712 +/- 0.005 (range 0.696-0.725), 0/500 >= real, p = 0.002; topology only 0.489 vs 0.070 +/- 0.004, p = 0.002. Chance 0.041. Neuropil features alone reach 0.722. Measured by the author, not reproduced by us.",
       "try_url": "https://dhruvin-sarkar.github.io/ConnectomeLens/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/dhruvin-sarkar/ConnectomeLens",
       "code_licence": "MIT",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit 03d9c5c2d1; GitHub API spdx_id=NOASSERTION",
@@ -7213,7 +7379,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://dhruvin-sarkar.github.io/ConnectomeLens/",
-        "checked_at": "2026-10-15T09:41:02.633Z",
+        "checked_at": "2026-10-17T23:13:59.436Z",
         "other_links": [
           {
             "url": "https://dhruvin-sarkar.github.io/ConnectomeLens/report.pdf",
@@ -7227,7 +7393,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "wiring-null",
       "wiring_effect": "helps",
       "sources": [
@@ -7316,9 +7482,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/acamilo/flybrain",
-        "checked_at": "2026-10-15T09:41:04.366Z"
+        "checked_at": "2026-10-17T23:14:00.338Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-b7b53f7e80f369605462f9ac",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -7382,9 +7548,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://x.com/_lyraaaa_/status/2097527368919470162",
-        "checked_at": "2026-10-15T09:41:04.351Z"
+        "checked_at": "2026-10-17T23:17:53.068Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -7455,7 +7621,7 @@
       },
       "created_at": "2026-09-19T18:23:13Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -7464,9 +7630,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/zack-maz/brain-runners",
-        "checked_at": "2026-10-15T09:41:06.074Z"
+        "checked_at": "2026-10-17T23:14:00.328Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-dbda0d6a162d624ded3b7ad6",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -7529,7 +7695,7 @@
       "last_release": "none",
       "created_at": "2026-09-29T16:49:38Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -7538,7 +7704,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://dtecx.github.io/doodle-fly/",
-        "checked_at": "2026-10-15T09:41:04.736Z",
+        "checked_at": "2026-10-17T23:13:59.852Z",
         "other_links": [
           {
             "url": "https://github.com/dtecx/doodle-fly",
@@ -7560,7 +7726,7 @@
         "note": "Ran; in your browser (Web Worker); 34.99 MB in the first 60-90 s (largest: graph.bin.gz 31.48 MB).",
         "source": "Digital Fly Lab browser check of 2026-10-06 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-06-run9/#browser-heading), result file doodle-fly.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-dbda0d6a162d624ded3b7ad6",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -7642,9 +7808,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/nftechie/DOOMFLY",
-        "checked_at": "2026-10-15T09:41:06.026Z"
+        "checked_at": "2026-10-17T23:14:00.142Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "project_page": "/p/digital-fly-catalog/projects/doomfly/",
       "controls": "baseline-only",
       "wiring_effect": "not-tested",
@@ -7711,7 +7877,7 @@
       "last_release": "none",
       "created_at": null,
       "stars": null,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "archived_source": "GitHub repository page banner, checked 2026-10-12",
       "paper_url": null,
@@ -7721,9 +7887,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/abstractionthief/duth-x-stepmania",
-        "checked_at": "2026-10-15T09:41:06.095Z"
+        "checked_at": "2026-10-17T23:14:00.486Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5c165ac6844eb04a9891dc9b",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -7794,9 +7960,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://www.youtube.com/watch?v=m5Q_aIO_K8o",
-        "checked_at": "2026-10-15T09:41:10.984Z"
+        "checked_at": "2026-10-17T23:13:40Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-930735624ceb2a8bf6ba1756",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -7878,9 +8044,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/CROmartin/flappy-fly",
-        "checked_at": "2026-10-15T09:41:08.470Z"
+        "checked_at": "2026-10-17T23:14:00.489Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-f1427d02edf982843141ea8e",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -7965,9 +8131,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/blendi-remade/fly-brain-minecraft",
-        "checked_at": "2026-10-15T09:41:10.720Z"
+        "checked_at": "2026-10-17T23:14:00.644Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -8034,9 +8200,9 @@
         "status": "blocked",
         "http_code": 403,
         "final_url": "https://dev.ua/en/news/mukha-v-sidzhi-1790577179",
-        "checked_at": "2026-10-15T09:41:08.701Z"
+        "checked_at": "2026-10-17T23:17:52.487Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-b7b53f7e80f369605462f9ac",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -8111,9 +8277,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/alexeygrigorev/fly-brain-tetris",
-        "checked_at": "2026-10-15T09:41:10.612Z"
+        "checked_at": "2026-10-17T23:14:00.834Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-930735624ceb2a8bf6ba1756",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -8180,7 +8346,7 @@
       "last_release": "none",
       "created_at": null,
       "stars": null,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "archived_source": "GitHub repository page banner, checked 2026-10-11",
       "paper_url": null,
@@ -8190,7 +8356,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://huggingface.co/spaces/shahmeer6/fly-clash-royale",
-        "checked_at": "2026-10-15T09:41:10.439Z",
+        "checked_at": "2026-10-17T23:14:00.398Z",
         "other_links": [
           {
             "url": "https://github.com/Zaib111/fly-clash-royale",
@@ -8199,7 +8365,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-8838901c23f73d8a414c8b16",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -8227,6 +8393,76 @@
         "https://huggingface.co/spaces/shahmeer6/fly-clash-royale [direct]"
       ],
       "notes_limitations": "The game skill claimed in the README is not backed by committed numbers; the MLP baseline exists in code but no comparison is reported, and there is no shuffled-wiring control. Trained gains, encoder and decoder carry much of the policy. Read at commit 4a0f6f4 (2026-10-10)."
+    },
+    {
+      "id": "fly-connectome-reservoir",
+      "name": "fly-connectome-reservoir: frozen MaleCNS LIF network drives escape in a fly-swatter game through a hand-designed decoder; reservoir test vs target-permuted wiring",
+      "type": "demo-game",
+      "author_or_org": "cssius111",
+      "summary": "A pygame fly-swatter simulation at 50 Hz: the swatter is reduced to angular size, looming rate and bearing, which drive 55 LC4 and 91 LPLC2 neurons per side in a frozen LIF network of 166,700 neurons (FlyBrain 0.1.0, MaleCNS-derived); DNp01 and DNa02 activity goes to a hand-designed decoder (N4B1C) or a learned 2,315-parameter MLP that picks one of 11 manoeuvres. A separate reservoir experiment (experiment.py) fits a linear classifier on descending-neuron activity and compares real wiring with a global target permutation, no connections, raw-stimulus readouts and shuffled labels.",
+      "claim": {
+        "text": "\"A real-time fly-swatter simulation in which a frozen fruit-fly connectome (MaleCNS, 166,700 neurons) drives escape behaviour\" (README line 3); \"Training a classifier on frozen neural activity does not mean that a fly brain learned the task.\" (README line 5)",
+        "url": "https://github.com/cssius111/fly-connectome-reservoir"
+      },
+      "dataset": "MaleCNS",
+      "release": "version not stated in README; MaleCNS-derived connectivity through FlyBrain 0.1.0 (README lines 3 and 22)",
+      "evidence_grade": "B",
+      "grade_note": "Graded B: the escape behaviour in the game has no wiring control. Its separate reservoir test scores real wiring 100%, target-permuted wiring 83.9% and no connections 50% (3 seeds); a raw-stimulus readout also reaches 100%.",
+      "mechanism": {
+        "wiring": "MaleCNS-derived, 166,700 neurons, 25,088,107 runtime connections (README line 17)",
+        "neuron_model": "LIF (FlyBrain 0.1.0; README line 17)",
+        "input_mapping": "hand-made: three retina numbers injected into LC4/LPLC2 neurons (README lines 15-16)",
+        "output_mapping": "hand-made: N4B1C decoder on DNp01/DNa02 in the accepted runtime; a learned MLP exists but is not integrated (README Status line)",
+        "trained_parts": "reservoir study: linear readout (experiment.py line 1); game: behaviour-cloned and PPO MLP controllers, not used in the accepted runtime",
+        "body": "custom (2-d pygame room physics)",
+        "scripted_parts": "11 manoeuvres executed by game physics (README line 19)"
+      },
+      "trained_class": "readout-or-decoder",
+      "trained_class_note": "linear readout in the reservoir study; learned MLP controllers not in the accepted runtime",
+      "grade_basis": [
+        "https://github.com/cssius111/fly-connectome-reservoir/blob/2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8/README.md lines 3-22 and the M2 table (pipeline, controllers, status) [direct]",
+        "https://github.com/cssius111/fly-connectome-reservoir/blob/2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8/experiment.py lines 221-247 (connectome, target_permutation, no_connections arms; shuffled_labels) [direct]",
+        "https://github.com/cssius111/fly-connectome-reservoir/blob/2210e62c6a2b809540edddd4c3bf9b9a50bc1ec8/results/REPORT.md lines 11-17 and 27 (accuracy table; paired real minus permuted) [direct]"
+      ],
+      "grade_date": "2026-10-17",
+      "measured_result": "results/REPORT.md: left/right task test accuracy real 100.0% ± 0.0, target-permuted 83.9% ± 7.7, no connections 50.0% ± 9.3, raw full stimulus history 100.0%, shuffled labels 54.4% (3 seeds, 60 test trials each); order task real 56.1% ± 3.5, permuted 47.2%. The escape behaviour in the game has no wiring control in the files read.",
+      "try_url": null,
+      "try_status": "no hosted page; local pygame on Windows CPU (README)",
+      "code_url": "https://github.com/cssius111/fly-connectome-reservoir",
+      "code_licence": "not checked in this pass",
+      "code_licence_source": "no LICENSE path seen in the tree listing at 2210e62",
+      "data_licence": "MaleCNS (Janelia FlyEM), third-party (README line 22)",
+      "platform": [
+        "Windows"
+      ],
+      "platform_note": "README: reproducible Windows CPU reservoir experiment; one timing on an Intel i9-13900HX",
+      "gpu": "none",
+      "gpu_note": "REPORT.md: GPU detected but not used or measured",
+      "download_size": "not measured",
+      "last_commit": "n/a",
+      "pushed_at": "n/a",
+      "last_release": "none",
+      "created_at": "n/a",
+      "stars": null,
+      "stars_date": null,
+      "archived": null,
+      "paper_url": null,
+      "peer_review": "none",
+      "link_status": {
+        "url": "https://github.com/cssius111/fly-connectome-reservoir",
+        "status": "ok",
+        "http_code": 200,
+        "final_url": "https://github.com/cssius111/fly-connectome-reservoir",
+        "checked_at": "2026-10-17T23:16:33.006Z"
+      },
+      "last_verified": "2026-10-17",
+      "added_in_run": "report-597777960b47631eb6068cc4",
+      "controls": "wiring-null",
+      "wiring_effect": "helps",
+      "sources": [
+        "https://github.com/cssius111/fly-connectome-reservoir [direct]"
+      ],
+      "notes_limitations": "Graded B on the headline claim: the game behaviour comes from a named connectome run with hand-made sensory injection and a hand-designed decoder, without a wiring control on the behaviour. The reservoir study does compare real wiring with a target permutation and no connections (fragment run18c.json), but on a decoding task with a trained linear readout and 3 seeds, and the author notes a raw-stimulus readout reaches the same 100%."
     },
     {
       "id": "fly-gorilla-tag",
@@ -8288,9 +8524,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://www.youtube.com/watch?v=wK4lixw7p4M",
-        "checked_at": "2026-10-15T09:41:11.332Z"
+        "checked_at": "2026-10-17T23:13:40Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-dbda0d6a162d624ded3b7ad6",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -8373,9 +8609,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://www.youtube.com/watch?v=KC7-fpjIRN4",
-        "checked_at": "2026-10-15T09:41:12.139Z"
+        "checked_at": "2026-10-17T23:13:40Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-dbda0d6a162d624ded3b7ad6",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -8446,9 +8682,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Kxnar/fly-jumpshot",
-        "checked_at": "2026-10-15T09:41:11.888Z"
+        "checked_at": "2026-10-17T23:14:01.307Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-930735624ceb2a8bf6ba1756",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -8549,9 +8785,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/ArtyMend07/Fly-NAF",
-        "checked_at": "2026-10-15T09:41:12.549Z"
+        "checked_at": "2026-10-17T23:14:00.993Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -8634,9 +8870,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/blackicon-eth/fly-plays-games",
-        "checked_at": "2026-10-15T09:41:11.966Z"
+        "checked_at": "2026-10-17T23:14:01.330Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-b7b53f7e80f369605462f9ac",
       "controls": "wiring-null",
       "wiring_effect": "mixed",
@@ -8682,7 +8918,7 @@
       "grade_date": "2026-10-15",
       "measured_result": "None published. The Twitch title on 2026-09-29 reported in-game progress (Wartortle level 35, beat Brock, on Route 25), but it is not stated how much of this came from the fly, the decoder, chat or other code.",
       "try_url": "https://www.twitch.tv/leetzerzz",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "try_note": "A live Twitch stream, not a demo you control. Not watched by us; the code is public (ianwes92/fly-brain-plays-pokemon).",
       "code_url": "https://github.com/ianwes92/fly-brain-plays-pokemon",
       "code_licence": "MIT",
@@ -8713,16 +8949,16 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://www.twitch.tv/leetzerzz",
-        "checked_at": "2026-10-15T09:41:12.672Z",
+        "checked_at": "2026-10-17T23:14:01.334Z",
         "other_links": [
           {
-            "url": "https://www.xda-developers.com/someone-wired-up-a-digital-flys-brain-in-a-pi-5-to-play-pokmon-and-you-can-help-it-progress/",
+            "url": "https://github.com/ianwes92/fly-brain-plays-pokemon",
             "status": "ok",
             "http_code": 200
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-b7b53f7e80f369605462f9ac",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -8797,16 +9033,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://gitlab.com/wdf.gost/terraria-wdf-fly-brain",
-        "checked_at": "2026-10-15T09:41:12.897Z",
-        "other_links": [
-          {
-            "url": "https://www.youtube.com/watch?v=0nniju8lLxk",
-            "status": "ok",
-            "http_code": 200
-          }
-        ]
+        "checked_at": "2026-10-17T23:14:01.572Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-de0ecc483ef8543d1d4bb134",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -8885,16 +9114,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/ornata/fly",
-        "checked_at": "2026-10-15T09:41:13.174Z",
-        "other_links": [
-          {
-            "url": "https://x.com/barrelshifter/status/2097004115826200898",
-            "status": "ok",
-            "http_code": 200
-          }
-        ]
+        "checked_at": "2026-10-17T23:14:01.396Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -8978,9 +9200,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/primaryNK/FlyArena",
-        "checked_at": "2026-10-15T09:41:13.529Z"
+        "checked_at": "2026-10-17T23:14:01.974Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -9049,9 +9271,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/programmingWTF/FlyBrain",
-        "checked_at": "2026-10-15T09:41:13.800Z"
+        "checked_at": "2026-10-17T23:14:01.728Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-15db6f24b25ad21e1538facb",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -9132,9 +9354,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Yusuftmle/FlyBrain-HalfLife",
-        "checked_at": "2026-10-15T09:41:13.837Z"
+        "checked_at": "2026-10-17T23:14:01.888Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -9216,9 +9438,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/swotstudio/FlyBridge",
-        "checked_at": "2026-10-15T09:41:14.086Z"
+        "checked_at": "2026-10-17T23:14:01.741Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -9296,9 +9518,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/50RISHU/FlyCNS-TicTacToe",
-        "checked_at": "2026-10-15T09:41:14.075Z"
+        "checked_at": "2026-10-17T23:14:01.991Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -9378,9 +9600,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/jjedwards2081/FlyCraft",
-        "checked_at": "2026-10-15T09:41:14.395Z"
+        "checked_at": "2026-10-17T23:14:02.153Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -9460,9 +9682,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/MarkUnthank/flyhard",
-        "checked_at": "2026-10-15T09:41:14.825Z"
+        "checked_at": "2026-10-17T23:14:02.222Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "baseline-only",
       "wiring_effect": "not-tested",
       "learning": {
@@ -9562,9 +9784,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/ZENinjaneer/flykart",
-        "checked_at": "2026-10-15T09:41:15.089Z"
+        "checked_at": "2026-10-17T23:14:02.271Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -9629,7 +9851,7 @@
       "last_release": "none",
       "created_at": "2026-10-01T08:01:13Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -9638,9 +9860,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/0909-BoB/flypoker",
-        "checked_at": "2026-10-15T09:41:14.995Z"
+        "checked_at": "2026-10-17T23:14:02.433Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-6e38c949870fbbe2408a8750",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -9710,9 +9932,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/LakoMoor/FlyWireGBA",
-        "checked_at": "2026-10-15T09:41:15.117Z"
+        "checked_at": "2026-10-17T23:14:02.478Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-d237ea6eab1b032a788845a1",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -9797,9 +10019,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/SolidifiedPlayDoh/fruitfly-roblox",
-        "checked_at": "2026-10-15T09:41:14.917Z"
+        "checked_at": "2026-10-17T23:14:02.505Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-b7b53f7e80f369605462f9ac",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -9886,9 +10108,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/legendarylolo318-cloud/kick-the-fly",
-        "checked_at": "2026-10-15T09:41:15.775Z"
+        "checked_at": "2026-10-17T23:14:03.084Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -9936,7 +10158,7 @@
       "grade_date": "2026-09-30",
       "measured_result": "Stored comparison notebook (quick mode, 5 seeds, 80 games per pairing, flagged by the author as a code check): the fly patch scored 0.506 against the same patch with rewired connections (no difference), 0.531 against classical features, 0.738 against random moves and 0.306 against a simple material-count player. Measured by the author, not reproduced by us.",
       "try_url": "https://colab.research.google.com/github/mncrftfrcnm/making-fly-play-chess/blob/main/notebooks/fly_chess_inference.ipynb",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/mncrftfrcnm/making-fly-play-chess",
       "code_licence": "Apache-2.0",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit b97dfefbf9; GitHub API spdx_id=Apache-2.0",
@@ -9974,7 +10196,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://colab.research.google.com/github/mncrftfrcnm/making-fly-play-chess/blob/main/notebooks/fly_chess_inference.ipynb",
-        "checked_at": "2026-10-15T09:41:15.344Z",
+        "checked_at": "2026-10-17T23:14:02.358Z",
         "other_links": [
           {
             "url": "https://github.com/mncrftfrcnm/making-fly-play-chess",
@@ -9983,7 +10205,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "wiring-null",
       "wiring_effect": "no-difference",
@@ -10060,16 +10282,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/evnsnclr/neurocraft-fly-public",
-        "checked_at": "2026-10-15T09:41:15.737Z",
-        "other_links": [
-          {
-            "url": "https://x.com/evnsnclr/status/2095975490708291948",
-            "status": "ok",
-            "http_code": 200
-          }
-        ]
+        "checked_at": "2026-10-17T23:14:03.006Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "baseline-only",
       "wiring_effect": "not-tested",
       "sources": [
@@ -10144,9 +10359,12 @@
       "wiring_effect": "not-tested",
       "sources": [
         "https://www.youtube.com/watch?v=apSOHtAHDTc [fetch-summary: watch page metadata and description; recap source only]",
-        "https://www.youtube.com/watch?v=CVV6-mf96jQ [not opened; linked from the description]"
+        "https://www.youtube.com/watch?v=CVV6-mf96jQ [fetch-summary 2026-10-17: watch page metadata and description; no links, no builder, code or paper named]",
+        "https://www.roblox.com/users/7938279845/profile [fetch-summary 2026-10-17: server HTML shows a username only; no builder, link or code]",
+        "https://www.roblox.com/games/114234929420007 [fetch-summary 2026-10-17: BloxStrike game page; no fly brain, builder or code named]",
+        "https://www.youtube.com/watch?v=ULkgXz9h2v8 [search-summary: Roblox Universe recap, about 14 Oct 2026; recap source only, not opened]"
       ],
-      "notes_limitations": "Only a recap channel's description is available; the recap video is the claim's source, not a project video. Who built the 'fly' account and whether any connectome is involved is unknown. Suggested next checks: the NiftRex video and the Roblox user profile."
+      "notes_limitations": "Only recap channels' descriptions are available; the recap videos are the claim's sources, not project videos. Who built the 'fly' account and whether any connectome is involved is unknown. Referee check: no builder named in the NiftRex video description or on the Roblox profile (17 Oct)."
     },
     {
       "id": "stonkfly",
@@ -10219,9 +10437,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/nftechie/stonkfly",
-        "checked_at": "2026-10-15T09:41:15.797Z"
+        "checked_at": "2026-10-17T23:14:02.923Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "learning": {
@@ -10328,9 +10546,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/DenisSergeevitch/desktop-fly",
-        "checked_at": "2026-10-15T09:41:16.146Z"
+        "checked_at": "2026-10-17T23:14:02.954Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "project_page": "/p/digital-fly-catalog/projects/desktop-fly/",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -10377,7 +10595,7 @@
       "try_status": "no no-install option",
       "code_url": "https://github.com/Frankweb33/flybrain-robot-bridge",
       "code_licence": "MIT",
-      "code_licence_source": "LICENSE file 'LICENSE' read at commit 966e5419ee; GitHub API spdx_id=MIT",
+      "code_licence_source": "LICENSE file 'LICENSE' read at commit e2c273cf73; GitHub API spdx_id=MIT",
       "data_licence": "CC-BY-4.0",
       "platform": [
         "Linux",
@@ -10387,8 +10605,8 @@
       "gpu": "none",
       "download_size": "~3 MB repository (mostly images); no connectome download",
       "last_commit": {
-        "date": "2026-09-14T23:55:38+03:00",
-        "hash": "966e5419ee64018557da3e31e6c59b58b36b6534",
+        "date": "2026-10-17T11:48:47+03:00",
+        "hash": "e2c273cf736ef69bce99fb79aa60dedc8dda65bc",
         "branch": "main"
       },
       "pushed_at": "2026-09-16T09:21:44Z",
@@ -10411,9 +10629,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Frankweb33/flybrain-robot-bridge",
-        "checked_at": "2026-10-15T09:41:16.189Z"
+        "checked_at": "2026-10-17T23:14:03.035Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-95e10a56c2ae9657adea7dbd",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -10479,7 +10697,7 @@
       },
       "created_at": "2026-09-17T07:32:31Z",
       "stars": 1,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -10488,9 +10706,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/ThomasLin070217/FlyGift",
-        "checked_at": "2026-10-15T09:41:16.610Z"
+        "checked_at": "2026-10-17T23:14:03.851Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-77a01df2426177ea9e70b3d7",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -10565,16 +10783,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/IrohAmca/NeuroPest/releases",
-        "checked_at": "2026-10-15T09:41:17.057Z",
-        "other_links": [
-          {
-            "url": "https://github.com/IrohAmca/NeuroPest",
-            "status": "ok",
-            "http_code": 200
-          }
-        ]
+        "checked_at": "2026-10-17T23:14:03.708Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-d6114ae0c808c345a0321231",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -10661,9 +10872,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Noir-infini/pianist-fly",
-        "checked_at": "2026-10-15T09:41:17.397Z"
+        "checked_at": "2026-10-17T23:14:03.965Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -10741,16 +10952,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/kevinlinxc/badapple-fly",
-        "checked_at": "2026-10-15T09:41:17.384Z",
-        "other_links": [
-          {
-            "url": "https://x.com/linguinelabs/status/2096487329091441090",
-            "status": "ok",
-            "http_code": 200
-          }
-        ]
+        "checked_at": "2026-10-17T23:14:03.690Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -10833,9 +11037,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/izntariq/fly-with-me",
-        "checked_at": "2026-10-15T09:41:17.780Z"
+        "checked_at": "2026-10-17T23:14:03.942Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -10913,9 +11117,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/fazchile17/FLYBRAIN-BAD_APPLE_X_DOOM",
-        "checked_at": "2026-10-15T09:41:17.719Z"
+        "checked_at": "2026-10-17T23:14:03.809Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -10961,7 +11165,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://infinitesugar.cnqso.com/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/cnqso/infinite-sugar",
       "code_licence": "none found",
       "code_licence_source": "no LICENSE/COPYING file at repo root (commit fdbbd866b2); GitHub API spdx_id=None",
@@ -10996,7 +11200,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://infinitesugar.cnqso.com/",
-        "checked_at": "2026-10-15T09:41:17.380Z",
+        "checked_at": "2026-10-17T23:14:03.883Z",
         "other_links": [
           {
             "url": "https://github.com/cnqso/infinite-sugar",
@@ -11018,7 +11222,7 @@
         "note": "Ran; in your browser (WebAssembly); 36.04 MB in the first 60-90 s (largest: colidx.bin.gz 7.12 MB).",
         "source": "Digital Fly Lab browser check of 2026-10-06 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-06-run9/#browser-heading), result file infinite-sugar.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -11088,9 +11292,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/GiuseppeBellamacina/let-it-flyppen",
-        "checked_at": "2026-10-15T09:41:18.044Z"
+        "checked_at": "2026-10-17T23:14:04.338Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-f1427d02edf982843141ea8e",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -11171,7 +11375,7 @@
       },
       "created_at": "2026-09-17T18:34:18Z",
       "stars": 6,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -11180,9 +11384,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/emiliano-go/neurafly",
-        "checked_at": "2026-10-15T09:41:18.756Z"
+        "checked_at": "2026-10-17T23:14:04.474Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-6e38c949870fbbe2408a8750",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -11244,7 +11448,7 @@
       "last_release": "none",
       "created_at": "2026-09-30T16:59:01Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -11253,7 +11457,7 @@
         "status": "4xx",
         "http_code": 404,
         "final_url": "https://gexhaw.github.io/chessfly/",
-        "checked_at": "2026-10-15T09:42:26.938Z",
+        "checked_at": "2026-10-17T23:14:04.008Z",
         "other_links": [
           {
             "url": "https://github.com/gexhaw/chessfly",
@@ -11262,7 +11466,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-6e38c949870fbbe2408a8750",
       "controls": "wiring-null",
       "wiring_effect": "no-difference",
@@ -11337,7 +11541,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "Local build only: paired MDNa knockout (20 seeds, 5 s trials) gave identical control and knockout values on every metric (0.0% change). The author reports this as a null result showing that the controller bypasses MDNa (experiments/mdna_bilateral_knockout.md). Nothing is measured for the browser demo.",
       "try_url": "https://chenyvhang.github.io/cyber-larva/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/ChenYvhang/cyber-larva",
       "code_licence": "MIT",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit 2af0910a07; GitHub API spdx_id=MIT",
@@ -11375,7 +11579,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://chenyvhang.github.io/cyber-larva/",
-        "checked_at": "2026-10-15T09:41:18.216Z",
+        "checked_at": "2026-10-17T23:14:04.062Z",
         "other_links": [
           {
             "url": "https://github.com/ChenYvhang/cyber-larva",
@@ -11384,7 +11588,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -11466,7 +11670,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://lulzx.com/fly-brain/arena.html",
-        "checked_at": "2026-10-15T09:41:18.322Z",
+        "checked_at": "2026-10-17T23:14:04.242Z",
         "other_links": [
           {
             "url": "https://github.com/Lulzx/fly-brain",
@@ -11482,18 +11686,18 @@
       },
       "browser_check": {
         "status": "stopped-memory",
-        "checked_at": "2026-10-03",
+        "checked_at": "2026-10-17",
         "browser": "headless Chromium 154, Linux, no GPU",
         "transferred_mb": 33.93,
         "compute": "unclear",
         "first_activity_s": null,
-        "console_errors": 2,
+        "console_errors": 1,
         "page_errors": 0,
         "matches_catalogue": "unclear",
-        "note": "Fetched the 14.6 MB MaleCNS graph and WebAssembly through its service worker and started 4-5 workers, then passed our 1.6 GB browser memory limit (both loads, at 29 s and 44 s). Without cross-origin isolation the page warned that SharedArrayBuffer was unavailable.",
-        "source": "Digital Fly Lab browser check of 2026-10-03 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-03-run7/#run-heading), result file fly-brain-lulzx-load2.json"
+        "note": "Re-check 17 Oct 2026: stopped at our 1.6 GB memory limit (33.93 MB). 3 Oct: the same.",
+        "source": "Digital Fly Lab browser re-check of 2026-10-17 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-17-run18/#browser-heading), result file fly-brain-lulzx.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "wiring-null",
       "wiring_effect": "helps",
       "sources": [
@@ -11561,7 +11765,7 @@
       "last_release": "none",
       "created_at": "2026-09-27T20:51:41Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -11570,9 +11774,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/dhruvagrawat/fly-brain-sim",
-        "checked_at": "2026-10-15T09:41:19.009Z"
+        "checked_at": "2026-10-17T23:14:04.833Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-77a01df2426177ea9e70b3d7",
       "controls": "wiring-null",
       "wiring_effect": "helps",
@@ -11620,7 +11824,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "public/benchmarks/benchmark.json, 100 held-out 180 s courses: connectome + trained readout 99/100 completed (mean 179.37 s); silenced connectome 0/100 (4.51 s); untrained readout 0/100 (4.49 s); random 0/100 (4.66 s); idle 0/100 (4.51 s); hand-written rule 0/100 (46.49 s). Replicates on the same courses: 85/100 and 100/100.",
       "try_url": "https://flydino.cobanov.dev/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/cobanov/flyjump",
       "code_licence": "custom: Cobanov Template Attribution License 1.0 (free use incl. commercial; visible linked credit required; not OSI-approved)",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit e34c6614e7; GitHub API spdx_id=NOASSERTION",
@@ -11655,7 +11859,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://flydino.cobanov.dev/",
-        "checked_at": "2026-10-15T09:41:18.993Z",
+        "checked_at": "2026-10-17T23:14:04.563Z",
         "other_links": [
           {
             "url": "https://github.com/cobanov/flyjump",
@@ -11677,7 +11881,7 @@
         "note": "Ran; unclear; 3.81 MB in the first 60-90 s (largest: model.bin 1.71 MB).",
         "source": "Digital Fly Lab browser check of 2026-10-06 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-06-run9/#browser-heading), result file fly-dino.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "baseline-only",
       "wiring_effect": "not-tested",
       "sources": [
@@ -11758,7 +11962,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://hwkim3330.github.io/flyworker/",
-        "checked_at": "2026-10-15T09:41:19.000Z",
+        "checked_at": "2026-10-17T23:14:04.728Z",
         "other_links": [
           {
             "url": "https://github.com/hwkim3330/flyworker",
@@ -11768,19 +11972,19 @@
         ]
       },
       "browser_check": {
-        "status": "runs",
-        "checked_at": "2026-10-03",
+        "status": "loads-no-activity",
+        "checked_at": "2026-10-17",
         "browser": "headless Chromium 154, Linux, no GPU",
         "transferred_mb": 17.55,
         "compute": "in-browser-worker",
         "first_activity_s": null,
         "console_errors": 0,
         "page_errors": 0,
-        "matches_catalogue": "yes",
-        "note": "The 7.6 MB brain file loads into a Web Worker and the on-page simulation numbers keep changing; 8.2 MB more is the GTA1 game data. The screenshot never changed, so first movement is not seen visually.",
-        "source": "Digital Fly Lab browser check of 2026-10-03 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-03-run7/#run-heading), result file fly-worker.json"
+        "matches_catalogue": "unclear",
+        "note": "Re-check 17 Oct 2026: loaded, but showed no activity (17.55 MB in the first 60-90 s; the \"Hire a fly\" click worked, but the on-page text we track and the screenshots did not change between 30 and 60 s). The tracked text may have been static labels after a page change; not checked by eye. 3 Oct: ran.",
+        "source": "Digital Fly Lab browser re-check of 2026-10-17 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-17-run18/#browser-heading), result file fly-worker.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "baseline-only",
       "wiring_effect": "not-tested",
       "sources": [
@@ -11853,9 +12057,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/pasangimhana/fly-x-jev",
-        "checked_at": "2026-10-15T09:41:19.554Z"
+        "checked_at": "2026-10-17T23:14:05.058Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-dbda0d6a162d624ded3b7ad6",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -11917,7 +12121,7 @@
       "last_release": "none",
       "created_at": "2026-09-29T18:13:28Z",
       "stars": 0,
-      "stars_date": "2026-10-15",
+      "stars_date": "2026-10-17",
       "archived": false,
       "paper_url": null,
       "peer_review": "none",
@@ -11926,7 +12130,7 @@
         "status": "4xx",
         "http_code": 404,
         "final_url": "https://gexhaw.github.io/fly67/",
-        "checked_at": "2026-10-15T09:42:27.879Z",
+        "checked_at": "2026-10-17T23:14:04.595Z",
         "other_links": [
           {
             "url": "https://github.com/gexhaw/fly67",
@@ -11936,19 +12140,19 @@
         ]
       },
       "browser_check": {
-        "status": "runs",
-        "checked_at": "2026-10-03",
+        "status": "fails",
+        "checked_at": "2026-10-17",
         "browser": "headless Chromium 154, Linux, no GPU",
-        "transferred_mb": 33.28,
-        "compute": "in-browser-worker",
-        "first_activity_s": 11.57,
-        "console_errors": 0,
+        "transferred_mb": 0.01,
+        "compute": "unclear",
+        "first_activity_s": null,
+        "console_errors": 1,
         "page_errors": 0,
-        "matches_catalogue": "no",
-        "note": "Two connectome parts (15.7 + 15.5 MB) load into a Web Worker; the fly moves and the counters change; the sugar button worked. Our catalogue's '~100 MB' estimate was wrong: 33.3 MB.",
-        "source": "Digital Fly Lab browser check of 2026-10-03 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-03-run7/#run-heading), result file fly67.json"
+        "matches_catalogue": "unclear",
+        "note": "Re-check 17 Oct 2026: did not load (the page answered HTTP 404 on both loads; 0.01 MB). 3 Oct: ran.",
+        "source": "Digital Fly Lab browser re-check of 2026-10-17 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-17-run18/#browser-heading), result file fly67.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-dbda0d6a162d624ded3b7ad6",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -12036,7 +12240,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://flybrain.app",
-        "checked_at": "2026-10-15T09:41:19.199Z",
+        "checked_at": "2026-10-17T23:14:04.998Z",
         "other_links": [
           {
             "url": "https://github.com/snedea/flybrain",
@@ -12047,18 +12251,18 @@
       },
       "browser_check": {
         "status": "runs",
-        "checked_at": "2026-10-03",
+        "checked_at": "2026-10-17",
         "browser": "headless Chromium 154, Linux, no GPU",
         "transferred_mb": 12.72,
         "compute": "unclear",
-        "first_activity_s": 10.87,
+        "first_activity_s": 14.26,
         "console_errors": 2,
         "page_errors": 0,
         "matches_catalogue": "yes",
-        "note": "The 12.5 MB connectome loads and a Web Worker runs; the view keeps changing. The page also tries a chat WebSocket and a chat-history server (both failed here), so by our fixed rule where the brain runs is 'unclear'.",
-        "source": "Digital Fly Lab browser check of 2026-10-03 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-03-run7/#run-heading), result file flybrain-app-snedea.json"
+        "note": "Re-check 17 Oct 2026: ran (12.72 MB in the first 60-90 s; first movement at 14.3 s). 3 Oct: ran.",
+        "source": "Digital Fly Lab browser re-check of 2026-10-17 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-17-run18/#browser-heading), result file flybrain-app-snedea.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -12101,7 +12305,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "The site states that its numpy version of the Shiu model activates the same neurons as the Brian2 reference in the sugar experiment, with a 0.94 correlation of firing rates (https://flybrain.info/#lab). No code or data is given, so this cannot be checked.",
       "try_url": "https://flybrain.info/#lab",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": null,
       "code_licence": "n/a (no code repository)",
       "code_licence_source": "n/a",
@@ -12125,9 +12329,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://flybrain.info/#lab",
-        "checked_at": "2026-10-15T09:41:19.616Z"
+        "checked_at": "2026-10-17T23:14:05.599Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -12173,7 +12377,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://spikecalls.github.io/FlyDrones/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/SpikeCalls/FlyDrones",
       "code_licence": "MIT",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit 3e269346b3; GitHub API spdx_id=MIT",
@@ -12211,7 +12415,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://spikecalls.github.io/FlyDrones/",
-        "checked_at": "2026-10-15T09:41:19.759Z",
+        "checked_at": "2026-10-17T23:14:05.091Z",
         "other_links": [
           {
             "url": "https://github.com/SpikeCalls/FlyDrones",
@@ -12220,7 +12424,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -12303,7 +12507,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://flyleno.viosarcade.xyz/",
-        "checked_at": "2026-10-15T09:41:19.867Z",
+        "checked_at": "2026-10-17T23:14:05.239Z",
         "other_links": [
           {
             "url": "https://github.com/AgitationSkeleton/flyleno",
@@ -12314,18 +12518,18 @@
       },
       "browser_check": {
         "status": "page-unresponsive",
-        "checked_at": "2026-10-03",
+        "checked_at": "2026-10-17",
         "browser": "headless Chromium 154, Linux, no GPU",
-        "transferred_mb": 33.95,
+        "transferred_mb": 33.94,
         "compute": "in-browser-worker",
-        "first_activity_s": 10.44,
+        "first_activity_s": 15.03,
         "console_errors": 0,
         "page_errors": 0,
         "matches_catalogue": "unclear",
-        "note": "The page fetched the 31.4 MB connectome into a Web Worker and its counters started, then the 3-D stage (software WebGL, no GPU) stopped answering after about 10 s; no server calls.",
-        "source": "Digital Fly Lab browser check of 2026-10-03 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-03-run7/#run-heading), result file flyleno.json"
+        "note": "Re-check 17 Oct 2026: loaded, then froze in our no-GPU browser (33.94 MB). 3 Oct: the same.",
+        "source": "Digital Fly Lab browser re-check of 2026-10-17 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-17-run18/#browser-heading), result file flyleno.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -12395,7 +12599,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://mpvasilis.github.io/flywire-playground/",
-        "checked_at": "2026-10-15T09:41:20.114Z",
+        "checked_at": "2026-10-17T23:14:05.342Z",
         "other_links": [
           {
             "url": "https://github.com/mpvasilis/flywire-playground",
@@ -12404,7 +12608,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-f1427d02edf982843141ea8e",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -12475,7 +12679,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://zonzujiro.github.io/flywire-pong/",
-        "checked_at": "2026-10-15T09:41:20.549Z",
+        "checked_at": "2026-10-17T23:14:05.721Z",
         "other_links": [
           {
             "url": "https://github.com/zonzujiro/flywire-pong",
@@ -12484,7 +12688,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-15db6f24b25ad21e1538facb",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -12531,7 +12735,7 @@
       "try_status": "loads, then froze before fetching its brain data in headless Chromium without a GPU (checked 2026-10-03; not a play test; a GPU machine was not tested)",
       "code_url": "https://github.com/dzhng/fly-escape",
       "code_licence": "none found",
-      "code_licence_source": "no LICENSE/COPYING file at repo root (commit 883e9f7484); GitHub API spdx_id=None",
+      "code_licence_source": "no LICENSE/COPYING file at repo root (commit 88b9588a52); GitHub API spdx_id=None",
       "data_licence": "CC-BY-4.0",
       "platform": [
         "browser"
@@ -12539,8 +12743,8 @@
       "gpu": "none",
       "download_size": "~11 MB brain data (graph.bin 9.9 MB, manifest 0.6 MB, retinal map 0.2 MB) plus WASM and 3D assets; total not measured",
       "last_commit": {
-        "date": "2026-10-14T13:42:46-07:00",
-        "hash": "883e9f74840eac71b6d2a76ef37344ffe44645b9",
+        "date": "2026-10-15T16:42:32-07:00",
+        "hash": "88b9588a52897e9c750dec72c371adc63ffcfb8a",
         "branch": "main"
       },
       "pushed_at": "2026-09-17T20:58:08Z",
@@ -12563,7 +12767,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://fly-escape.vercel.app/",
-        "checked_at": "2026-10-15T09:41:20.638Z",
+        "checked_at": "2026-10-17T23:14:05.673Z",
         "other_links": [
           {
             "url": "https://github.com/dzhng/fly-escape",
@@ -12574,7 +12778,7 @@
       },
       "browser_check": {
         "status": "page-unresponsive",
-        "checked_at": "2026-10-03",
+        "checked_at": "2026-10-17",
         "browser": "headless Chromium 154, Linux, no GPU",
         "transferred_mb": 2.57,
         "compute": "unclear",
@@ -12582,10 +12786,10 @@
         "console_errors": 0,
         "page_errors": 0,
         "matches_catalogue": "unclear",
-        "note": "Loaded its WebAssembly (1 MB) and a worker, but the page stopped answering from the first screenshot and the 9.9 MB brain graph was never fetched in 84 s.",
-        "source": "Digital Fly Lab browser check of 2026-10-03 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-03-run7/#run-heading), result file help-the-fly-escape.json"
+        "note": "Re-check 17 Oct 2026: loaded, then froze in our no-GPU browser (2.57 MB). 3 Oct: the same.",
+        "source": "Digital Fly Lab browser re-check of 2026-10-17 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-17-run18/#browser-heading), result file help-the-fly-escape.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -12629,7 +12833,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://huggingface.co/spaces/Xenova/fruit-fly-simulation",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://huggingface.co/spaces/Xenova/fruit-fly-simulation",
       "code_licence": "MIT (app code per LICENSE file; MaleCNS data CC BY 4.0; body and kernels Apache-2.0). Space metadata says apache-2.0",
       "code_licence_source": "LICENSE file in the Hugging Face Space repo (shallow clone 2026-09-28) and Space README metadata",
@@ -12657,7 +12861,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://huggingface.co/spaces/Xenova/fruit-fly-simulation",
-        "checked_at": "2026-10-15T09:41:20.722Z"
+        "checked_at": "2026-10-17T23:14:05.816Z"
       },
       "browser_check": {
         "status": "runs",
@@ -12672,7 +12876,7 @@
         "note": "Ran by our rule (the view moved), but only 5.87 MB came down in the first 60-90 s and no Web Worker started; its ~77 MB brain download was not seen in our check window.",
         "source": "Digital Fly Lab browser check of 2026-10-06 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-06-run9/#browser-heading), result file neural-canvas.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -12754,9 +12958,9 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://github.com/Pr1nted/Open-Fly",
-        "checked_at": "2026-10-15T09:41:21.402Z"
+        "checked_at": "2026-10-17T23:14:06.322Z"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "added_in_run": "report-5612b932e50378cf8497c28b",
       "controls": "none",
       "wiring_effect": "not-tested",
@@ -12800,7 +13004,7 @@
       "grade_date": "2026-09-28",
       "measured_result": null,
       "try_url": "https://anzal1.github.io/samesmell/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/anzal1/samesmell",
       "code_licence": "none found",
       "code_licence_source": "no LICENSE/COPYING file at repo root (commit f5891d9206); GitHub API spdx_id=None",
@@ -12835,7 +13039,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://anzal1.github.io/samesmell/",
-        "checked_at": "2026-10-15T09:41:20.902Z",
+        "checked_at": "2026-10-17T23:14:05.910Z",
         "other_links": [
           {
             "url": "https://github.com/anzal1/samesmell",
@@ -12844,7 +13048,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -12891,7 +13095,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "README only: after 28 contrastive trials, buzz->proboscis 87% and puff->jump 87% (chance 20%); an untaught odour gave proboscis 65%. Subtracting the pre-cue baseline cut the cosine similarity between two cues from 0.85 to 0.007. The pruned model keeps 92.5% of responding neurons (rate correlation 0.988 vs the full model). No shuffled-wiring or no-connectome control. The scripts need tools/lif.py and data files that are not in this repo.",
       "try_url": "https://raphaelsr.github.io/fly-vial/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/RaphaelSR/fly-vial",
       "code_licence": "MIT (code); LICENSE notes web/data/ (FlyWire v783-derived) keeps its data licence",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit 5aa9780c9b; GitHub API spdx_id=NOASSERTION",
@@ -12926,7 +13130,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://raphaelsr.github.io/fly-vial/",
-        "checked_at": "2026-10-15T09:41:21.009Z",
+        "checked_at": "2026-10-17T23:14:05.945Z",
         "other_links": [
           {
             "url": "https://github.com/RaphaelSR/fly-vial",
@@ -12948,7 +13152,7 @@
         "note": "Ran; in your browser (Web Worker); 7.43 MB in the first 60-90 s (largest: conn.bin.gz 6.84 MB).",
         "source": "Digital Fly Lab browser check of 2026-10-06 (report: https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-06-run9/#browser-heading), result file vial.json"
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [
@@ -12993,7 +13197,7 @@
       "grade_date": "2026-09-28",
       "measured_result": "LIMITATIONS.md:319-330: with the assist on, the body moves 0.80-0.88 cm/sim s whatever the controller; with it off, 0.029-0.163 cm/sim s, and the CPG path mostly spins in place. README: the RL policy with the assist off covers 2.004-2.021 cm/sim s vs 0.032 with no policy (brain bypassed). The brain kernel runs at ~0.25 kHz biological time on an M2 Pro. These are body and throughput checks, not connectome controls.",
       "try_url": "https://webgpu-fly.pages.dev/",
-      "try_status": "page responds (HTTP 200, checked 2026-10-15), not played by us",
+      "try_status": "page responds (HTTP 200, checked 2026-10-17), not played by us",
       "code_url": "https://github.com/abgnydn/webgpu-fly",
       "code_licence": "MIT",
       "code_licence_source": "LICENSE file 'LICENSE' read at commit bb00419e87; GitHub API spdx_id=MIT",
@@ -13028,7 +13232,7 @@
         "status": "ok",
         "http_code": 200,
         "final_url": "https://webgpu-fly.pages.dev/",
-        "checked_at": "2026-10-15T09:41:21.314Z",
+        "checked_at": "2026-10-17T23:14:06.088Z",
         "other_links": [
           {
             "url": "https://github.com/abgnydn/webgpu-fly",
@@ -13037,7 +13241,7 @@
           }
         ]
       },
-      "last_verified": "2026-10-15",
+      "last_verified": "2026-10-17",
       "controls": "none",
       "wiring_effect": "not-tested",
       "sources": [

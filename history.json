@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-597777960b47631eb6068cc4",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-17T22:59:41Z",
+      "completed_at": "2026-10-17T23:58:00Z",
+      "title": "Eighteenth check: scrambled brains at 30 spikes/s, and the browser demos re-checked",
+      "summary": "17 Oct: at 30 spikes/s, the weakest tested input at which the real brain's turn command appeared, we also ran 2 scrambled brains per side (each neuron keeps its number of connections; one 1-second trial each, with the same trial seed as the real-wiring body runs). On the left side, neither scrambled brain sent a turn command, and their steering signals were identical to having no brain, so in the body they walk like the no-brain fly (the real wiring turned it about 11 deg). On the right side, neither scrambled brain sent a turn command, and their steering signals were identical to having no brain, so in the body they walk like the no-brain fly (the real wiring turned it about 17 deg). As at 80 spikes/s, none of the scrambled brains we ran produced the turn; at 30 spikes/s we did not turn their activity up to match the real brain. The scrambled brains were not matched for overall activity: they fired 48% (left) and 44% (right) as many spikes as the real brain at this strength. Most of those spikes were the stimulated input neurons themselves; outside the input, the scrambled brains fired about 1% as many spikes as the real brain. These body runs turn the brain's firing rates into steering through our own hand-made mapping, so they show the brain result in degrees; they are not a separate test of the wiring. We ran scrambled brains at 30 and 80 spikes/s, not at 20, 40 or 60. Re-checked 17 Oct in the same no-GPU browser: 1 of 6 ran (3 Oct: 3 of 6). 156 entries (4 new); controls ledger 60 studies, 51 with a wiring null: helps 24, no difference 11, worse 4, mixed 10, not yet scored 2. New ledger rows: flycraft-hexapod (in the author's test the real nerve-cord graph moved the hexapod 0.85 mm forward in 8 s, fully rewired graphs 3.5 mm backward, and a time-shuffled real signal 0.72 mm; the author's results file is marked pending the author's own review, and the paper's acceptance is the author's statement only) and fly-connectome-reservoir (its separate reservoir test scores real wiring 100%, target-permuted wiring 83.9% and no connections 50% (3 seeds); a raw-stimulus readout also reaches 100%).",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-17-run18/",
+      "entrypoint": "reports/2026-10-17-run18/index.html"
+    },
+    {
       "run_id": "report-96adf9534e3f3bd75683489d",
       "status": "completed",
       "answer_change": "meaningful_change",

@@ -1189,3 +1189,18 @@
 [data-agent-document] .dfl-langs summary { cursor: pointer; font-weight: 600; }
 [data-agent-document] .dfl-langs ul { margin: 0.3rem 0 0.4rem 1.1rem; padding: 0; }
 [data-agent-document] .dfl-langs li { overflow-wrap: anywhere; }
+/* run 18 (2026-10-17): scrambled brains at 30 spikes/s in the body-strength charts; neutral browser re-check labels */
+[data-agent-document] .dfl-svg .b18-scr { fill: #fff; stroke: var(--dfl-handmade-ink); stroke-width: 2; }
+[data-agent-document] .dfl-b18shuf { margin: 12px 0 14px; padding: 8px 12px; border-left: 3px solid var(--dfl-handmade-ink); background: var(--dfl-tint); }
+[data-agent-document] .dfl-b18shuf p, [data-agent-document] .dfl-b18shuf li { overflow-wrap: break-word; }
+[data-agent-document] .dfl-b18shuf ul { padding-left: 1.2em; margin: 6px 0; }
+[data-agent-document] .dfl-tag.is-bc-quiet { background: #eef0f3; color: #45505e; }
+[data-agent-document] .dfl-r18w0 { border-left: 3px solid var(--dfl-line-strong); padding: 0.1rem 0 0.1rem 0.75rem; margin: 0.6rem 0 0.8rem; }
+[data-agent-document] .dfl-r18w0 p { margin: 0.25rem 0; overflow-wrap: break-word; }
+[data-agent-document] .dfl-b18browser { margin: 0 0 1.4rem; }
+[data-agent-document] .dfl-b18cmp { list-style: none; padding: 0; margin: 8px 0; display: grid; gap: 8px; }
+[data-agent-document] .dfl-b18cmp li { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; }
+[data-agent-document] .dfl-b18when { min-width: 7.5em; font-weight: 600; }
+[data-agent-document] .dfl-b18cmp svg.dfl-b18dots { width: 132px; height: 16px; flex: none; }
+[data-agent-document] .dfl-svg .b18-off { fill: #fff; stroke: var(--dfl-faint); stroke-width: 2; }
+[data-agent-document] .dfl-b18table td, [data-agent-document] .dfl-b18table th { overflow-wrap: break-word; }
