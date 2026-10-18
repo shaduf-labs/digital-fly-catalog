@@ -962,6 +962,16 @@
        "catalogue-text"
       ]
      },
+     "caveats": {
+      "type": "array",
+      "items": {
+       "enum": [
+        "non-wiring-control-close",
+        "author-p-0.05-or-more"
+       ]
+      },
+      "uniqueItems": true
+     },
      "one_line": {
       "type": "string",
       "maxLength": 240
@@ -1095,6 +1105,16 @@
        "unfair",
        "unclear"
       ]
+     },
+     "caveats": {
+      "type": "array",
+      "items": {
+       "enum": [
+        "non-wiring-control-close",
+        "author-p-0.05-or-more"
+       ]
+      },
+      "uniqueItems": true
      }
     }
    }

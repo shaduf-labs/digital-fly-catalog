@@ -2,6 +2,48 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-18-run19-gain30",
+      "changed_at": "2026-10-18T10:30:00Z",
+      "summary": "Scrambled brains at 30 spikes/s, strengthened (18 Oct 2026, our own test, pre-registered, brain only): 18 Oct: we then strengthened the connections inside scrambled brains (not the input) until their neurons outside the stimulated input fired about as many spikes as in the real brain (within 30%; same input, one 1-second trial each). On the left side, 2 scrambled brains matched this way, and neither sent a turn command. On the right side, 2 scrambled brains matched this way, and neither sent a turn command. Matching the number of spikes does not match the pattern: 1,152 to 2,228 neurons fired in the matched scrambled brains, against 379 (left) and 432 (right) in the real brain. 1 of the matched scrambled brains sent small steering signals, which we did not walk in the body. As at 80 spikes/s, none of the scrambled brains we ran at 30 spikes/s sent a turn command, including those strengthened to about the real brain's activity outside the input.",
+      "path": "/p/digital-fly-catalog/is-it-real/#body16-g30"
+    },
+    {
+      "change_id": "2026-10-18-run19-browser",
+      "changed_at": "2026-10-18T10:30:00Z",
+      "summary": "Browser: Correction, 18 Oct: our 17 Oct check loaded fly67's old address, which answered 'not found'; the project now lives at gexhaw.github.io/fly67/. At that address it ran on 18 Oct. Fly Worker, re-checked 18 Oct: ran by our check's rule (two workers and WebAssembly started, and text on the page changed); our screenshots showed only the top of the page, so we did not see the fly itself. Latest no-GPU browser check: 3 of 6 ran (17 Oct; fly67 and Fly Worker re-checked 18 Oct). 3 Oct: 3 of 6. Checked in headless Chromium 154 on a Linux server without a GPU, 18 Oct 2026. Shows whether the page loads, downloads its brain data and keeps computing; it is not a play test. Safari, Firefox, phones and GPU machines were not tested.",
+      "path": "/p/digital-fly-catalog/ways-to-try/#run19-heading"
+    },
+    {
+      "change_id": "2026-10-18-run19-entries",
+      "changed_at": "2026-10-18T10:30:00Z",
+      "summary": "161 catalogue entries (18 Oct 2026): 5 new: flysnake (A; a MaleCNS v1.0 network plays Snake through a trained readout; on 100 held-out games the real wiring scored 20.03 food per game, a rewired graph with its own trained readout 3.63, and a hand-written rule 21.52), flywire-snn-stdp (A; ledger: mixed), fruitfly-terraria-moonlord (B), biogrid (B) and the U verdict row odyssey3-fly-world-model-claim. 18 other leads excluded (no committed result file or wiring comparison we could read, or a copy of another lead).",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-18"
+    },
+    {
+      "change_id": "2026-10-18-run19-odyssey",
+      "changed_at": "2026-10-18T10:30:00Z",
+      "summary": "New verdict row, odyssey3-fly-world-model-claim (U): Odyssey said on X on 17 Oct 2026 that it placed \"the fruit fly brain\" inside its Odyssey-3 world model. No method, code or write-up was published as of 18 Oct 2026, so the claim cannot be checked. What would settle it: a write-up or code that names the fly brain model, how its outputs drive the flight and how the world model feeds it input.",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-odyssey3-fly-world-model-claim"
+    },
+    {
+      "change_id": "2026-10-18-run19-ledger",
+      "changed_at": "2026-10-18T10:30:00Z",
+      "summary": "Controls ledger (18 Oct 2026): 2 new rows (flysnake helps, its no-brain baseline not beaten; flywire-snn-stdp mixed), now 62 studies, 53 with a wiring null: helps 25, no difference 11, worse 4, mixed 11, not yet scored 2. A caveat marker for reading only on 8 rows; scoring and counts unchanged. byo-flygym-loom is not re-scored; the strengthened 30 spikes/s trials are in its note.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed19-heading"
+    },
+    {
+      "change_id": "2026-10-18-run19-tracking",
+      "changed_at": "2026-10-18T10:30:00Z",
+      "summary": "Tracking (18 Oct 2026): repositories of 15 of the 23 verdict rows re-checked, none with new code since grading; 56 of 56 videos available; fly67 and chessfly answer at their gexhaw addresses; fruitfly.live still has a TLS certificate error; FlyDoom's repository still answers \"not found\".",
+      "path": "/p/digital-fly-catalog/is-it-real/#week-heading"
+    },
+    {
+      "change_id": "2026-10-18-run19-report",
+      "changed_at": "2026-10-18T10:30:00Z",
+      "summary": "New report: Nineteenth check (18 Oct 2026), with the strengthened scrambled brains at 30 spikes/s and their checks, the fly67 correction and Fly Worker re-check, new entries and ledger rows, the caveat marker, the Odyssey-3 verdict row, tracking and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-18-run19/"
+    },
+    {
       "change_id": "2026-10-17-run18-shuffle30",
       "changed_at": "2026-10-17T23:58:00Z",
       "summary": "Scrambled brains at 30 spikes/s (17 Oct 2026, our own test, pre-registered, brain only): 17 Oct: at 30 spikes/s, the weakest tested input at which the real brain's turn command appeared, we also ran 2 scrambled brains per side (each neuron keeps its number of connections; one 1-second trial each, with the same trial seed as the real-wiring body runs). On the left side, neither scrambled brain sent a turn command, and their steering signals were identical to having no brain, so in the body they walk like the no-brain fly (the real wiring turned it about 11 deg). On the right side, neither scrambled brain sent a turn command, and their steering signals were identical to having no brain, so in the body they walk like the no-brain fly (the real wiring turned it about 17 deg). As at 80 spikes/s, none of the scrambled brains we ran produced the turn; at 30 spikes/s we did not turn their activity up to match the real brain. The scrambled brains were not matched for overall activity: they fired 48% (left) and 44% (right) as many spikes as the real brain at this strength. Most of those spikes were the stimulated input neurons themselves; outside the input, the scrambled brains fired about 1% as many spikes as the real brain. These body runs turn the brain's firing rates into steering through our own hand-made mapping, so they show the brain result in degrees; they are not a separate test of the wiring. We ran scrambled brains at 30 and 80 spikes/s, not at 20, 40 or 60.",

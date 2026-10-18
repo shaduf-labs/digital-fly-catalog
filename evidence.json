@@ -2610,6 +2610,86 @@
       "accessed_at": "2026-10-17T23:30:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "run19-scrambled-30hz-strengthened",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-18-run19/#gain-heading",
+      "title": "Digital Fly Lab scrambled brains at 30 spikes/s, strengthened (18 Oct 2026)",
+      "claim": "18 Oct: we then strengthened the connections inside scrambled brains (not the input) until their neurons outside the stimulated input fired about as many spikes as in the real brain (within 30%; same input, one 1-second trial each). On the left side, 2 scrambled brains matched this way, and neither sent a turn command. On the right side, 2 scrambled brains matched this way, and neither sent a turn command. Matching the number of spikes does not match the pattern: 1,152 to 2,228 neurons fired in the matched scrambled brains, against 379 (left) and 432 (right) in the real brain. 1 of the matched scrambled brains sent small steering signals, which we did not walk in the body. As at 80 spikes/s, none of the scrambled brains we ran at 30 spikes/s sent a turn command, including those strengthened to about the real brain's activity outside the input. One 1-second trial per scrambled brain; brain only, one model, not a real fly.",
+      "accessed_at": "2026-10-18T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "run19-browser-recheck",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-18-run19/#browser-heading",
+      "title": "Digital Fly Lab browser re-check of fly67 and Fly Worker (18 Oct 2026)",
+      "claim": "Correction, 18 Oct: our 17 Oct check loaded fly67's old address, which answered 'not found'; the project now lives at gexhaw.github.io/fly67/. At that address it ran on 18 Oct. Fly Worker, re-checked 18 Oct: ran by our check's rule (two workers and WebAssembly started, and text on the page changed); our screenshots showed only the top of the page, so we did not see the fly itself. Latest no-GPU browser check: 3 of 6 ran (17 Oct; fly67 and Fly Worker re-checked 18 Oct). 3 Oct: 3 of 6.",
+      "accessed_at": "2026-10-18T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-run19",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
+      "title": "Digital Fly Lab controls ledger (18 Oct 2026)",
+      "claim": "62 studies, 53 with a wiring null: helps 25, no difference 11, worse 4, mixed 11, not yet scored 2. Two rows joined on 18 Oct (flysnake, flywire-snn-stdp), scored by fixed rules from the authors' numbers; not recomputed by us. A display-only caveat marker on 8 rows changes no score or count.",
+      "accessed_at": "2026-10-18T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flysnake-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/harshb16/flysnake",
+      "title": "FlySnake repository (harshb16)",
+      "claim": "A MaleCNS v1.0 network plays Snake through a trained readout; on 100 held-out games the real wiring scored 20.03 food per game, a rewired graph with its own trained readout 3.63, and a hand-written rule 21.52 (paired 95% interval of the difference 15.32-17.46; one rewired graph).",
+      "accessed_at": "2026-10-18T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flywire-snn-stdp-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/ljmor/flywire-snn-stdp",
+      "title": "flywire-snn-stdp repository (ljmor)",
+      "claim": "A FlyWire v783 hearing circuit (1,239 neurons) trained with a local learning rule tells apart five courtship-song rhythms: accuracy 0.88, against 0.724 for a configuration-model graph and 0.428 for a random graph (5 seeds); without learning the real wiring is not ahead (0.566 vs 0.604), and a random input mapping with learning reaches 0.920.",
+      "accessed_at": "2026-10-18T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fruitfly-terraria-moonlord-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/adriandbf/fruitfly-terraria",
+      "title": "Fruit Fly Plays Terraria repository (adriandbf)",
+      "claim": "The Shiu et al. FlyWire v783 model fights Terraria's Moon Lord through a descending-neuron readout trained to imitate a teacher policy; a shuffled-wiring control exists in code, with numbers only in the README.",
+      "accessed_at": "2026-10-18T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "biogrid-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/dorywoof/BioGrid",
+      "title": "BioGrid repository (dorywoof)",
+      "claim": "A FlyWire v783 whole-brain LIF screen of 140 sensory types for steering via DNb05, with knockouts compared with random knockouts; lesion controls, not a wiring control.",
+      "accessed_at": "2026-10-18T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "odyssey3-claim-post",
+      "source_type": "social post",
+      "source_url": "https://x.com/odysseyml/status/2111589148146749616",
+      "title": "Odyssey (@odysseyml) post on X, 17 Oct 2026",
+      "claim": "Odyssey said on X on 17 Oct 2026 that it placed \"the fruit fly brain\" inside its Odyssey-3 world model. No method, code or write-up was published as of 18 Oct 2026, so the claim cannot be checked. What would settle it: a write-up or code that names the fly brain model, how its outputs drive the flight and how the world model feeds it input.",
+      "accessed_at": "2026-10-18T10:30:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }
