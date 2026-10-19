@@ -739,6 +739,15 @@
           "runaway",
           "not-reported"
          ]
+        },
+        "activity_basis": {
+         "enum": [
+          "whole-brain",
+          "outside-input",
+          "network-units",
+          "unclear"
+         ],
+         "description": "Added 2026-10-19, display only: what activity_ratio counts. whole-brain: spikes or active neurons over all neurons, the stimulated input included; outside-input: all neurons except the stimulated set; network-units: non-spiking unit states or reservoir activity; unclear. Never used by retention, effect, fairness, quality or caveat rules."
         }
        }
       }

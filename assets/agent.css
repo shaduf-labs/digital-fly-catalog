@@ -1214,3 +1214,6 @@
 [data-agent-document] .dfl-tag.is-caveat { background: #fff6e0; color: #7a4b00; border: 1px solid #e3c27a; }
 [data-agent-document] .dfl .dfl-cav { display: inline-block; margin-top: 4px; }
 /* run19:end */
+/* run20:start */
+[data-agent-document] .dfl-svg .b20-g { fill: var(--dfl-handmade-ink); stroke: #fff; stroke-width: 1; }
+/* run20:end */

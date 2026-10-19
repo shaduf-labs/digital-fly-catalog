@@ -16,7 +16,7 @@
     <meta property="og:description" content="Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with the two data files you download (104 MB), exact commands, a shuffled-wiring control, a FlyGym walking body, brain and body in one environment, a tested looming sense and a 20-minute class plan.">
     <meta property="og:url" content="https://shaduf.ai/p/digital-fly-catalog/build-your-own/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Build your own","description":"Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with the two data files you download (104 MB), exact commands, a shuffled-wiring control, a FlyGym walking body, brain and body in one environment, a tested looming sense and a 20-minute class plan.","dateModified":"2026-10-18T10:30:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/build-your-own/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Build your own","description":"Build your own fruit fly brain simulation: a tested beginner guide (re-tested 5 Oct 2026) from an empty folder to a working project, with the two data files you download (104 MB), exact commands, a shuffled-wiring control, a FlyGym walking body, brain and body in one environment, a tested looming sense and a 20-minute class plan.","dateModified":"2026-10-19T10:20:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/build-your-own/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Digital Fly Lab updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_digital_fly_catalog" data-page-id="build-your-own">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -53,10 +53,10 @@
   <p class="dfl-lede">Run the published whole-brain model of the fruit fly on an ordinary CPU. You give 21 sugar-sensing neurons a taste, the simulated brain of 138,639 neurons responds, and you read out the neuron that makes a fly extend its proboscis to feed. Then you change one thing and check the result against shuffled wiring.</p>
 
   <ul class="dfl-meta" aria-label="Guide status">
-    <li><strong>Tested on:</strong> <span>Linux x86_64 (Debian 12), Python 3.11.2, 2 CPUs, no GPU, no C++ compiler, <time datetime="2026-09-28">28 Sep 2026</time>; re-tested from an empty folder on <time datetime="2026-10-01">1 Oct 2026</time> and <time datetime="2026-10-05">5 Oct 2026</time>; "Add a body" (brain to a FlyGym fly) tested on <time datetime="2026-10-02">2 Oct 2026</time>; "Add a sense: looming" tested on <time datetime="2026-10-05">5 Oct 2026</time> (two more body runs on <time datetime="2026-10-08">8 Oct 2026</time>); brain and body in one environment tested on <time datetime="2026-10-08">8 Oct 2026</time></span></li>
+    <li><strong>Tested on:</strong> <span>Linux x86_64 (Debian 12), Python 3.11.2, 2 CPUs, no GPU, no C++ compiler, <time datetime="2026-09-28">28 Sep 2026</time>; re-tested from an empty folder on <time datetime="2026-10-01">1 Oct 2026</time>, <time datetime="2026-10-05">5 Oct 2026</time> and <time datetime="2026-10-19">19 Oct 2026</time>; "Add a body" (brain to a FlyGym fly) tested on <time datetime="2026-10-02">2 Oct 2026</time>; "Add a sense: looming" tested on <time datetime="2026-10-05">5 Oct 2026</time> (two more body runs on <time datetime="2026-10-08">8 Oct 2026</time>); brain and body in one environment tested on <time datetime="2026-10-08">8 Oct 2026</time></span></li>
     <li><strong>Full run:</strong> <span>28 min for 20 one-second trials; tests 52 s</span></li>
     <li><strong>Untested:</strong> <span>macOS, Windows/WSL, Colab, machines with a compiler</span></li>
-    <li><strong>Pins:</strong> <span>unchanged; checked against PyPI on <time datetime="2026-10-08">8 Oct 2026</time> (latest: Brian2 2.10.1, numpy 2.5.3, pandas 3.0.6, mujoco 3.15.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0) and installed cleanly in the re-test of 5 Oct; Brian2 2.9.0 does not import with numpy 2.5.3 (<a href="#errors-heading">common errors</a>); next re-test due 19 Oct 2026</span></li>
+    <li><strong>Pins:</strong> <span>unchanged; checked against PyPI on <time datetime="2026-10-19">19 Oct 2026</time> (latest: Brian2 2.10.1, numpy 2.5.4, pandas 3.0.6, mujoco 3.16.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0), and installed cleanly in the re-test of 19 Oct; next re-test due 2 Nov 2026. For Python 3.11 the newest releases are Brian2 2.9.0 (our pin) and numpy 2.4.6. Brian2 2.9.0 does not import with numpy 2.5.3 (<a href="#errors-heading">common errors</a>).</span></li>
     <li><strong>Download:</strong> <span>104.1 MB of FlyWire data for the beginner path (<a href="#download-heading">what you download</a>)</span></li>
   </ul>
 
@@ -84,7 +84,7 @@
   <section class="dfl-answer" aria-labelledby="summary-heading">
     <h2 id="summary-heading">In one paragraph</h2>
     <p>We ran this guide from an empty folder on 28 September 2026. With sugar neurons firing at 150 Hz, the proboscis motor neuron MN9 fired at <strong>85.2 ± 3.2 Hz</strong>, so our rule said "extend the proboscis". With no stimulus nothing fired at all. With the same stimulus on <strong>shuffled wiring, MN9 stayed at 0 Hz in 6 of 6 trials</strong>, so the response depends on the real connectome. All 6 tests passed. We have not tried other operating systems, so we cannot promise it runs on yours; the untested parts are labelled on every step.</p>
-    <p><strong>Beginner path re-tested 5 Oct 2026 (6 of 6 tests, 82.0 Hz bit-exact):</strong> same pins, both data checksums unchanged, and the first sugar trial gave MN9 <strong>82.0 Hz, bit-exact</strong> with our runs of 28 Sep, 1 Oct and 2 Oct 2026. <a href="#retest-heading">What the re-test covered</a></p>
+    <p><strong>Beginner path re-tested 19 Oct 2026 (6 of 6 tests, 82.0 Hz bit-exact):</strong> same pins, both data checksums unchanged, and the first sugar trial gave MN9 <strong>82.0 Hz, bit-exact</strong> with our runs of 28 Sep, 1, 2 and 5 Oct 2026. The quick look is now tested too. <a href="#retest-heading">What the re-test covered</a></p>
     <p><strong>New, 2 October 2026: Add a body, tested.</strong> We connected the same brain model to the walking fly of FlyGym 2.1.0: brain tested, body tested, and the rule that turns neuron rates into leg commands is ours. With its forward-walking neurons stimulated, the fly walked 13.9 mm in 1 s with the real brain, 14.1 mm with scrambled wiring and 14.3 mm with no brain at all. <a href="#body-heading">The steps and what the numbers mean</a></p>
     <p><strong>New, 5 October 2026: Add a sense: looming, tested.</strong> A looming shadow on one eye of the same brain model (every LC4 and LPLC2 neuron of that eye at 80 Hz) steers the FlyGym fly through our hand-made mapping: with the real wiring it turned away in 4 of 4 runs, with scrambled wiring in 0 of 3; with two more real-brain runs on 8 Oct, 6 of 6 (left eye 3 of 3, right eye 3 of 3). Small n and one model; the body does the walking with its own controller, and the walking drive and the mapping are ours. <a href="#loom-heading">The commands and what each part does</a></p>
     <p><strong>New, 8 October 2026: brain and body in one environment, tested.</strong> Brain (Brian2 2.9.0) and body (FlyGym 2.1.0) installed together in one Python 3.12 environment: 1.1 GB on disk, tested 8 Oct 2026, with numpy pinned to 2.3.5 (Brian2 2.9.0 does not import with numpy 2.5.3). <a href="#onenv-heading">The two commands and the check</a></p>
@@ -92,7 +92,25 @@
   </section>
 
   <section aria-labelledby="retest-heading">
-    <h2 id="retest-heading">Re-test, 5 October 2026: 6 of 6 tests, 82.0 Hz bit-exact</h2>
+    <h2 id="retest-heading">Re-test, 19 October 2026: 6 of 6 tests, 82.0 Hz bit-exact</h2>
+    <div class="table-scroll is-wide">
+      <table>
+        <caption>The beginner path re-run from an empty folder on 19 Oct 2026 (Linux x86_64, Python 3.11.2, 2 CPUs) with the pinned packages. No page fixes were needed.</caption>
+        <thead><tr><th scope="col">Step</th><th scope="col">Result</th><th scope="col">Time</th></tr></thead>
+        <tbody>
+          <tr><td>Environment without pip, then get-pip (the Debian fallback on this page)</td><td>Worked as written. get-pip.py sha256 <code>fb24e693…8ddf6</code>, the same as on 5 Oct 2026 (a dated snapshot, not a pin); pip 26.2.1</td><td>7 s</td></tr>
+          <tr><td>Pinned install from <code>requirements.lock</code></td><td>Exit 0; <code>pip freeze</code> equals the lock file line for line (Brian2 2.9.0, numpy 2.3.5, pandas 2.3.3)</td><td>35 s</td></tr>
+          <tr><td>The short <code>requirements.txt</code> command, resolved without installing</td><td>5 helper packages newer than the lock (<a href="#install-short">below</a>); the six main packages unchanged</td><td>8 s</td></tr>
+          <tr><td>Partial clone of the model at commit 91bdd1e7 and data checksums</td><td>Both files match the table on this page</td><td>8 s</td></tr>
+          <tr><td><code>pytest -q</code></td><td><strong>6 passed</strong></td><td>58 s</td></tr>
+          <tr><td>First sugar trial (real wiring, seed 0, 150 Hz, 1 s)</td><td>MN9 <strong>82.0 Hz</strong>, inside the 75–95 Hz pass band and bit-exact with our runs of 28 Sep, 1, 2 and 5 Oct (13,372 spikes)</td><td>68 s</td></tr>
+          <tr><td>Quick look (200 ms trials, the command in <a href="#steps-heading">Run the experiments</a>)</td><td>Quick look (200 ms trials), run on 19 Oct 2026 in 1.7 min: sugar 80.0 Hz → extend proboscis; shuffled wiring 0.0 Hz → stay still. Shorter trials are noisier than the full run.</td><td>1.7 min</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Not re-run at full length on 19 Oct 2026: the 20-trial <code>run_demo.py</code> and the "change one thing" experiments; their full results are from 28 Sep 2026. The re-test covers Linux only, like the first test. Next re-test due 2 Nov 2026, or earlier if a pinned package changes. <a href="../reports/2026-10-19-run20/index.html#retest-heading">Every step and timing</a></p>
+    <details class="dfl-rowdetails">
+      <summary>Earlier re-test: 5 October 2026 (6 of 6 tests, 82.0 Hz bit-exact)</summary>
     <div class="table-scroll is-wide">
       <table>
         <caption>The beginner path re-run from an empty folder on 5 Oct 2026 (Linux x86_64, Python 3.11.2, 2 CPUs). No page fixes were needed.</caption>
@@ -107,7 +125,8 @@
         </tbody>
       </table>
     </div>
-    <p>Earlier re-test: 1 Oct 2026, same result (seeds 1 and 2 also matched exactly: 89 and 81 Hz). Not re-run on 5 Oct 2026: the full 20-trial <code>run_demo.py</code> and the "change one thing" experiments; their results are from 28 Sep 2026. The re-test covers Linux only, like the first test. Next re-test due 19 Oct 2026, or earlier if a pinned package changes.</p>
+    <p>Earlier re-test: 1 Oct 2026, same result (seeds 1 and 2 also matched exactly: 89 and 81 Hz).</p>
+    </details>
   </section>
 
   <!-- CLASS:box:START -->
@@ -297,6 +316,7 @@ pytz==2026.4
 six==1.17.0
 sympy==1.14.0
 tzdata==2026.4</code></pre></details>
+        <p id="install-short">On 19 Oct 2026 the short <code>requirements.txt</code> command picked 5 newer helper packages than our exact lock (iniconfig 2.3.0 → 2.3.1, MarkupSafe 3.0.3 → 3.0.4, pluggy 1.6.0 → 1.7.0, pytz 2026.4 → 2026.5, tzdata 2026.4 → 2026.5); the six main packages are pinned and did not change. Use <code>requirements.lock</code> to get exactly our environment.</p>
         <p>Why these pins: Brian2 2.10 needs Python 3.12 or newer, so 2.9.0 is the newest release for Python 3.11. pandas is held below 3.0 to stay close to the upstream code. Other combinations are untested.</p>
       </li>
       <li>
@@ -338,8 +358,9 @@ sha256sum upstream/Completeness_783.csv upstream/Connectivity_783.parquet</code>
       <li>
         <h3>Run the experiments <span class="dfl-tag is-tested">Tested 2026-09-28 on Linux</span></h3>
         <pre><code>.venv/bin/python run_demo.py</code></pre>
-        <p>This runs 20 trials of 1 s of brain time and writes <code>results/results.json</code> and <code>results/index.html</code>. It took <strong>28 minutes</strong> on our 2 CPUs without a compiler: about 60 s per trial when the CPUs were free, and up to 138 s while another job shared them. A quick, noisier look with shorter trials (<span class="dfl-tag is-untested">Untested</span>):</p>
+        <p>This runs 20 trials of 1 s of brain time and writes <code>results/results.json</code> and <code>results/index.html</code>. It took <strong>28 minutes</strong> on our 2 CPUs without a compiler: about 60 s per trial when the CPUs were free, and up to 138 s while another job shared them. A quick, noisier look with shorter trials (<span class="dfl-tag is-tested">Tested 2026-10-19 on Linux</span>):</p>
         <pre><code>.venv/bin/python run_demo.py --trials 1 --ms 200 --shuffle-seeds 1 --shuffle-trials 1</code></pre>
+        <p>Quick look (200 ms trials), run on 19 Oct 2026 in 1.7 min: sugar 80.0 Hz → extend proboscis; shuffled wiring 0.0 Hz → stay still. Shorter trials are noisier than the full run.</p>
       </li>
       <li>
         <h3>Optional: the 100 Hz reference check <span class="dfl-tag is-tested">Tested 2026-09-28 on Linux</span></h3>
@@ -4117,7 +4138,7 @@ def test_structure_stats():
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>18 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>19 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Verify project links and implementations, explain the model and keep the catalogue and build guide current.</p><a href="../index.html">Full pool information →</a></section>
     </div>

@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-1a4c3ed6cf66748ff8bcf405",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-19T09:32:13Z",
+      "completed_at": "2026-10-19T10:20:00Z",
+      "title": "Twentieth check: the beginner guide re-tested, and a strengthened scrambled brain walked in the body",
+      "summary": "Re-test, 19 October 2026: 6 of 6 tests, 82.0 Hz bit-exact. Quick look (200 ms trials), run on 19 Oct 2026 in 1.7 min: sugar 80.0 Hz → extend proboscis; shuffled wiring 0.0 Hz → stay still. Shorter trials are noisier than the full run. 19 Oct: walked in the body, the one matched scrambled brain with a small steering signal changed the fly's heading by about 1.4 degrees away from the shadow compared with no brain input, under our 10-degree turn rule; the real brain, with the same input, turned it away by about 16.8 degrees (one run each). This body run turns the brain's firing rates into steering through our own hand-made mapping; it is not a separate test of the wiring. 171 entries (10 new, two of them U rows); controls ledger 65 studies, 56 with a wiring null: helps 25, no difference 12, worse 5, mixed 12, not yet scored 2; activity numbers now say what they count.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-19-run20/",
+      "entrypoint": "reports/2026-10-19-run20/index.html"
+    },
+    {
       "run_id": "report-ad3abc3d16bfb94b8c6b875b",
       "status": "completed",
       "answer_change": "meaningful_change",

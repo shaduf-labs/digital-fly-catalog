@@ -2245,7 +2245,7 @@
       "evidence_id": "drosophila-io-token-run13",
       "source_type": "website",
       "source_url": "https://drosophila.io/",
-      "title": "drosophila.io home page text, 11 Oct 2026 (audience pass excerpt)",
+      "title": "drosophila.io home page text, 11 Oct 2026 (excerpt)",
       "claim": "The home page text includes \"token\" and \"no token yet. when there is one, it will be launched by the fly, from its own wallet\"; we have not reviewed it.",
       "accessed_at": "2026-10-11T20:30:00Z",
       "relation": "context",
@@ -2616,7 +2616,7 @@
       "source_type": "our-measurement",
       "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-18-run19/#gain-heading",
       "title": "Digital Fly Lab scrambled brains at 30 spikes/s, strengthened (18 Oct 2026)",
-      "claim": "18 Oct: we then strengthened the connections inside scrambled brains (not the input) until their neurons outside the stimulated input fired about as many spikes as in the real brain (within 30%; same input, one 1-second trial each). On the left side, 2 scrambled brains matched this way, and neither sent a turn command. On the right side, 2 scrambled brains matched this way, and neither sent a turn command. Matching the number of spikes does not match the pattern: 1,152 to 2,228 neurons fired in the matched scrambled brains, against 379 (left) and 432 (right) in the real brain. 1 of the matched scrambled brains sent small steering signals, which we did not walk in the body. As at 80 spikes/s, none of the scrambled brains we ran at 30 spikes/s sent a turn command, including those strengthened to about the real brain's activity outside the input. One 1-second trial per scrambled brain; brain only, one model, not a real fly.",
+      "claim": "18 Oct: we then strengthened the connections inside scrambled brains (not the input) until their neurons outside the stimulated input fired about as many spikes as in the real brain (within 30%; same input, one 1-second trial each). On the left side, 2 scrambled brains matched this way, and neither sent a turn command. On the right side, 2 scrambled brains matched this way, and neither sent a turn command. Matching the number of spikes does not match the pattern: 1,152 to 2,228 neurons fired in the matched scrambled brains, against 379 (left) and 432 (right) in the real brain. 19 Oct: walked in the body, the one matched scrambled brain with a small steering signal changed the fly's heading by about 1.4 degrees away from the shadow compared with no brain input, under our 10-degree turn rule; the real brain, with the same input, turned it away by about 16.8 degrees (one run each). This body run turns the brain's firing rates into steering through our own hand-made mapping; it is not a separate test of the wiring. As at 80 spikes/s, none of the scrambled brains we ran at 30 spikes/s sent a turn command, including those strengthened to about the real brain's activity outside the input. One 1-second trial per scrambled brain; brain only, one model, not a real fly.",
       "accessed_at": "2026-10-18T10:30:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
@@ -2688,6 +2688,86 @@
       "title": "Odyssey (@odysseyml) post on X, 17 Oct 2026",
       "claim": "Odyssey said on X on 17 Oct 2026 that it placed \"the fruit fly brain\" inside its Odyssey-3 world model. No method, code or write-up was published as of 18 Oct 2026, so the claim cannot be checked. What would settle it: a write-up or code that names the fly brain model, how its outputs drive the flight and how the world model feeds it input.",
       "accessed_at": "2026-10-18T10:30:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "run20-byo-retest",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-19-run20/#retest-heading",
+      "title": "Digital Fly Lab beginner re-test from an empty folder (19 Oct 2026)",
+      "claim": "Re-test, 19 October 2026: 6 of 6 tests, 82.0 Hz bit-exact. The beginner path re-run from an empty folder on 19 Oct 2026 (Linux x86_64, Python 3.11.2, 2 CPUs) with the pinned packages. No page fixes were needed. Quick look (200 ms trials), run on 19 Oct 2026 in 1.7 min: sugar 80.0 Hz → extend proboscis; shuffled wiring 0.0 Hz → stay still. Shorter trials are noisier than the full run.",
+      "accessed_at": "2026-10-19T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "run20-body-walk",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-19-run20/#walk-heading",
+      "title": "Digital Fly Lab body walk of one strengthened scrambled brain (19 Oct 2026)",
+      "claim": "19 Oct: walked in the body, the one matched scrambled brain with a small steering signal changed the fly's heading by about 1.4 degrees away from the shadow compared with no brain input, under our 10-degree turn rule; the real brain, with the same input, turned it away by about 16.8 degrees (one run each). This body run turns the brain's firing rates into steering through our own hand-made mapping; it is not a separate test of the wiring. One deterministic body run; one model; not a real fly.",
+      "accessed_at": "2026-10-19T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-run20",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
+      "title": "Digital Fly Lab controls ledger (19 Oct 2026)",
+      "claim": "65 studies, 56 with a wiring null: helps 25, no difference 12, worse 5, mixed 12, not yet scored 2. Three rows joined on 19 Oct (malecns-cube, qedsdl-endpoint, flybrain-llm-substrate), scored by fixed rules from the authors' numbers. Activity numbers are display only and now say what they count.",
+      "accessed_at": "2026-10-19T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "malecns-cube-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/PPWPW/MaleCNS",
+      "title": "MaleCNS Cube repository (PPWPW)",
+      "claim": "A trainable network on a 256-node MaleCNS v1.0 subgraph estimates how far a Rubik's cube state is from solved; a degree-preserving rewired graph (test error 0.338) and a parameter-matched MLP (0.325) do as well as the real wiring (0.351), 3 seeds.",
+      "accessed_at": "2026-10-19T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "qedsdl-endpoint-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/Sparks-Ackolf-HOLAR-Autonomous-Labs/QedSDL_Endpoint",
+      "title": "QedSDL Endpoint repository (Sparks-Ackolf-HOLAR-Autonomous-Labs)",
+      "claim": "The FlyWire v783 wiring from projection neurons to Kenyon cells is the fixed input layer of a novelty detector for simulated Raman spectra (a materials-lab task); AUROC real 0.9505, degree-preserving shuffle 0.9505, random wiring 0.9391 (20 seeds).",
+      "accessed_at": "2026-10-19T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flybrain-llm-substrate-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/Mcking1983/flybrain",
+      "title": "flybrain repository (Mcking1983)",
+      "claim": "A MaleCNS v1.0 network runs flies in an evolving foraging economy; weight-permuted wiring ends with more energy than the real wiring on all 3 seeds (742.93 vs 360.27 mean energy), and zeroed weights starve; the simulation kernel is not in the repository.",
+      "accessed_at": "2026-10-19T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "origozero-fruit-fly-page",
+      "source_type": "project page",
+      "source_url": "https://origozero.ai/world/lumi/fruit-fly",
+      "title": "OrigoZero \"Fruit Fly\" world page (read 19 Oct 2026)",
+      "claim": "The page says all 164,587 neurons of the MaleCNS v1.0 connectome run as leaky integrate-and-fire units on the GPU and drive a fly in an arena; no code is linked. The claims are the page's own; not loaded in a browser by us.",
+      "accessed_at": "2026-10-19T10:20:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flyproject-io-page",
+      "source_type": "project page",
+      "source_url": "https://flyproject.io/",
+      "title": "Fly Connectome Explorer page, flyproject.io (read 19 Oct 2026)",
+      "claim": "The page calls itself \"a real fruit fly brain, one circuit at a time\"; its script has leaky integrate-and-fire code next to hand-written behaviour states; no repository, licence or author. Not loaded in a browser by us.",
+      "accessed_at": "2026-10-19T10:20:00Z",
       "relation": "context",
       "publication_basis": "linked-summary"
     }

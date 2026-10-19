@@ -2,6 +2,48 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-19-run20-retest",
+      "changed_at": "2026-10-19T10:20:00Z",
+      "summary": "Build your own (19 Oct 2026): Re-test, 19 October 2026: 6 of 6 tests, 82.0 Hz bit-exact. The beginner path re-run from an empty folder on 19 Oct 2026 (Linux x86_64, Python 3.11.2, 2 CPUs) with the pinned packages. No page fixes were needed. Pins: unchanged; checked against PyPI on 19 Oct 2026 (latest: Brian2 2.10.1, numpy 2.5.4, pandas 3.0.6, mujoco 3.16.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0), and installed cleanly in the re-test of 19 Oct; next re-test due 2 Nov 2026. On 19 Oct 2026 the short requirements.txt command picked 5 newer helper packages than our exact lock (iniconfig 2.3.0 → 2.3.1, MarkupSafe 3.0.3 → 3.0.4, pluggy 1.6.0 → 1.7.0, pytz 2026.4 → 2026.5, tzdata 2026.4 → 2026.5); the six main packages are pinned and did not change. Use requirements.lock to get exactly our environment. Quick look (200 ms trials), run on 19 Oct 2026 in 1.7 min: sugar 80.0 Hz → extend proboscis; shuffled wiring 0.0 Hz → stay still. Shorter trials are noisier than the full run. The quick-look command is now labelled tested.",
+      "path": "/p/digital-fly-catalog/build-your-own/#retest-heading"
+    },
+    {
+      "change_id": "2026-10-19-run20-walk",
+      "changed_at": "2026-10-19T10:20:00Z",
+      "summary": "In the body (19 Oct 2026, our own test, pre-registered, one run): 19 Oct: walked in the body, the one matched scrambled brain with a small steering signal changed the fly's heading by about 1.4 degrees away from the shadow compared with no brain input, under our 10-degree turn rule; the real brain, with the same input, turned it away by about 16.8 degrees (one run each). This body run turns the brain's firing rates into steering through our own hand-made mapping; it is not a separate test of the wiring. The 30 spikes/s closing is unchanged.",
+      "path": "/p/digital-fly-catalog/is-it-real/#body16-w20"
+    },
+    {
+      "change_id": "2026-10-19-run20-entries",
+      "changed_at": "2026-10-19T10:20:00Z",
+      "summary": "171 catalogue entries (19 Oct 2026): 10 new: malecns-cube (A; ledger: no difference), qedsdl-endpoint (A; mixed), flybrain-llm-substrate (A; worse), 3dfly (B), flywirelm (B), chatflypt (B), fastfly (B), bsc-vfb (n/a), and two U rows, origozero-fruit-fly (OrigoZero \"Fruit Fly\"; the page says the whole MaleCNS v1.0 connectome runs as spiking neurons on the GPU and drives a fly in an arena; no code linked) and flyproject-connectome-explorer (flyproject.io; the page calls itself \"a real fruit fly brain, one circuit at a time\"; no repository, licence or author): page responds, checked 19 Oct 2026; not loaded in a browser by us. A re-host of Lulzx/fly-brain is counted under fly-brain-lulzx.",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-19"
+    },
+    {
+      "change_id": "2026-10-19-run20-ledger",
+      "changed_at": "2026-10-19T10:20:00Z",
+      "summary": "Controls ledger (19 Oct 2026): 3 new rows (a trainable network on a 256-node MaleCNS v1.0 subgraph estimates how far a Rubik's cube state is from solved; a degree-preserving rewired graph (test error 0.338) and a parameter-matched MLP (0.325) do as well as the real wiring (0.351), 3 seeds; the FlyWire v783 wiring from projection neurons to Kenyon cells is the fixed input layer of a novelty detector for simulated Raman spectra (a materials-lab task); AUROC real 0.9505, degree-preserving shuffle 0.9505, random wiring 0.9391 (20 seeds); a MaleCNS v1.0 network runs flies in an evolving foraging economy; weight-permuted wiring ends with more energy than the real wiring on all 3 seeds (742.93 vs 360.27 mean energy), and zeroed weights starve), now 65 studies, 56 with a wiring null: helps 25, no difference 12, worse 5, mixed 12, not yet scored 2. Activity numbers now say what they count (display only); for the gain-matched looming arm the whole-brain ratio 0.9864 is shown with the count outside the stimulated input, 0.98. Scoring unchanged.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed20-heading"
+    },
+    {
+      "change_id": "2026-10-19-run20-corrections",
+      "changed_at": "2026-10-19T10:20:00Z",
+      "summary": "Corrections (19 Oct 2026): fly67's author field is \"Ruben Gexhaw (GitHub: gexhaw, formerly znatgost)\" and chessfly's \"Ruben Nugmanov (GitHub: gexhaw, formerly znatgost)\", each from its repository's LICENSE; fly67's size is about 33 MB (measured on our 18 Oct 2026 load; the README says 31-33 MB gzipped). Odyssey-3 claim: No method, code or write-up was published as of 19 Oct 2026.",
+      "path": "/p/digital-fly-catalog/projects/#p-fly67"
+    },
+    {
+      "change_id": "2026-10-19-run20-tracking",
+      "changed_at": "2026-10-19T10:20:00Z",
+      "summary": "Tracking (19 Oct 2026): repositories of 15 of the 23 verdict rows re-checked, none with new code since grading; 56 of 56 videos available; fruitfly.live still has a TLS certificate error; FlyDoom's repository still answers \"not found\".",
+      "path": "/p/digital-fly-catalog/is-it-real/#week-heading"
+    },
+    {
+      "change_id": "2026-10-19-run20-report",
+      "changed_at": "2026-10-19T10:20:00Z",
+      "summary": "New report: Twentieth check (19 Oct 2026), with the beginner re-test from an empty folder, the body walk of one strengthened scrambled brain, new entries and ledger rows, what each activity number counts, corrections, tracking and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-19-run20/"
+    },
+    {
       "change_id": "2026-10-18-run19-gain30",
       "changed_at": "2026-10-18T10:30:00Z",
       "summary": "Scrambled brains at 30 spikes/s, strengthened (18 Oct 2026, our own test, pre-registered, brain only): 18 Oct: we then strengthened the connections inside scrambled brains (not the input) until their neurons outside the stimulated input fired about as many spikes as in the real brain (within 30%; same input, one 1-second trial each). On the left side, 2 scrambled brains matched this way, and neither sent a turn command. On the right side, 2 scrambled brains matched this way, and neither sent a turn command. Matching the number of spikes does not match the pattern: 1,152 to 2,228 neurons fired in the matched scrambled brains, against 379 (left) and 432 (right) in the real brain. 1 of the matched scrambled brains sent small steering signals, which we did not walk in the body. As at 80 spikes/s, none of the scrambled brains we ran at 30 spikes/s sent a turn command, including those strengthened to about the real brain's activity outside the input.",
