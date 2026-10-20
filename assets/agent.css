@@ -1217,3 +1217,10 @@
 /* run20:start */
 [data-agent-document] .dfl-svg .b20-g { fill: var(--dfl-handmade-ink); stroke: #fff; stroke-width: 1; }
 /* run20:end */
+/* run21:start */
+[data-agent-document] .dfl-b21 figure { margin: 0; }
+[data-agent-document] .dfl-b21 .dfl-figure { margin: 14px 0; }
+[data-agent-document] .dfl-b21pair, [data-agent-document] .dfl-b21shots { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); }
+[data-agent-document] .dfl-b21 .dfl-figure img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--dfl-line); border-radius: 6px; background: #f4f5f7; }
+[data-agent-document] .dfl-b21 .dfl-figure figure figcaption { margin-top: 6px; }
+/* run21:end */

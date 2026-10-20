@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-f38bcfb530ce6eaffa98cab9",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-20T09:30:17Z",
+      "completed_at": "2026-10-20T10:20:00Z",
+      "title": "Twenty-first check: Fly Worker's game panel, the browser demos re-checked, and nine new ledger rows",
+      "summary": "In our browser checks of 3, 6, 11, 17, 18 and 20 Oct 2026, 9 of 13 demos ran on a machine without a GPU at their latest check. Fly Worker, re-checked 20 Oct: ran by our check's rule, and two screenshots of its game panel taken about 6 seconds apart show the game view, its frame counter and the brain-activity dots changing. Screenshots cannot show whether the brain model drives the game; that is a code question. flyproject.io, first checked 20 Oct: loaded, but showed no activity; about 40 MB transferred, mostly 3D model files. The page kept our slow no-GPU machine busy for most of the check, so a faster machine may differ. 186 entries (15 new); controls ledger 74 studies, 65 with a wiring null: helps 28, no difference 15, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 28 of 65.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-20-run21/",
+      "entrypoint": "reports/2026-10-20-run21/index.html"
+    },
+    {
       "run_id": "report-1a4c3ed6cf66748ff8bcf405",
       "status": "completed",
       "answer_change": "meaningful_change",
