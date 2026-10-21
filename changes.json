@@ -2,6 +2,36 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-21-run22-loom30",
+      "changed_at": "2026-10-21T10:30:00Z",
+      "summary": "Our looming test at 30 spikes/s (21 Oct 2026, pre-registered; brain model, then one body run): 21 Oct: we repeated the matched test with a second, independent draw of the same input on the same scrambled brains (one 1-second trial each). On the left side, both scrambled brains matched again, and neither sent a turn command. On the right side, both scrambled brains matched again, and neither sent a turn command. Matching the number of spikes still did not match the pattern: 1,256 to 2,741 neurons fired in the matched scrambled brains, against 427 (left) and 446 (right) in the real brain with this input. With this input the real brain's turn signal on the right side was 6 spikes/s against our threshold of 5, so the real brain itself sits close to our turn rule at this stimulus strength. Walked in the body, the matched scrambled brain with a small steering signal changed the fly's heading by about 1.3 degrees away from the shadow compared with no brain input, under our 10-degree turn rule; the real brain, with the same input, turned it away by about 9.2 degrees (one run each). With this input the real brain's own turn was also under our 10-degree rule. This body run turns the brain's firing rates into steering through our own hand-made mapping; it is not a separate test of the wiring. With a second input draw, the matched scrambled brains again sent no turn command (2 input draws on the same 4 scrambled brains).",
+      "path": "/p/digital-fly-catalog/is-it-real/#body16-g22"
+    },
+    {
+      "change_id": "2026-10-21-run22-entries",
+      "changed_at": "2026-10-21T10:30:00Z",
+      "summary": "195 catalogue entries (21 Oct 2026): 9 new: drosophila-cadet-pinball, connectomics-fly-whole-brain-nulls, flygatedemo, fruit-fly-plays-fruit-ninja, fly-touhou, fly-hears and boltzmann-fly (A, with ledger rows; the authors' committed results, not re-run by us), fly-school (B, a ledger row without a wiring null) and music-in-the-body (C). flybench stays A and neuropest stays B after new commits; neural-canvas: the about 77 MB of connectome arrays are fetched, and its Web Worker starts, only after \"Download & start\" (code read 21 Oct 2026); flyproject.io: Our check's rule labelled the compute as in-browser (Web Worker), but its size test counted two 3D model files (about 39 MB) as brain data, so the compute label stays unclear. 14 more entries link their code. Odyssey-3 claim: No method, code or write-up was published as of 21 Oct 2026.",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-21"
+    },
+    {
+      "change_id": "2026-10-21-run22-ledger",
+      "changed_at": "2026-10-21T10:30:00Z",
+      "summary": "Controls ledger (21 Oct 2026): 8 new rows (drosophila-cadet-pinball helps against scrambled wiring (11.221 vs 10.770-10.985), but a no-brain hand-written reflex scores higher (11.480 vs the real wiring's 11.221); connectomics-fly-whole-brain-nulls helps (0.879 vs null means 0.501-0.821; no no-brain baseline reported, 0.5 is chance); flygatedemo (numbers reported in the README), fruit-fly-plays-fruit-ninja, fly-touhou, fly-hears and boltzmann-fly no difference; fly-school no wiring null), now 82 studies, 72 with a wiring null: helps 30, no difference 20, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 30 of 72. Scoring unchanged.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed22-heading"
+    },
+    {
+      "change_id": "2026-10-21-run22-tracking",
+      "changed_at": "2026-10-21T10:30:00Z",
+      "summary": "Tracking (21 Oct 2026): repositories of 141 catalogue entries checked (2 re-graded, grades kept); FlyDoom's repository still answers \"not found\"; 56 of 56 videos available, 10 with view counts read on 21 Oct 2026 (approximate).",
+      "path": "/p/digital-fly-catalog/reports/2026-10-21-run22/#tracking-heading"
+    },
+    {
+      "change_id": "2026-10-21-run22-report",
+      "changed_at": "2026-10-21T10:30:00Z",
+      "summary": "New report: Twenty-second check (21 Oct 2026), with the matched test at 30 spikes/s repeated with a second input draw, its body walk, new entries and ledger rows, re-checks and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-21-run22/"
+    },
+    {
       "change_id": "2026-10-20-run21-browser",
       "changed_at": "2026-10-20T10:20:00Z",
       "summary": "Browser check (20 Oct 2026): In our browser checks of 3, 6, 11, 17, 18 and 20 Oct 2026, 9 of 13 demos ran on a machine without a GPU at their latest check. Fly Worker, re-checked 20 Oct: ran by our check's rule, and two screenshots of its game panel taken about 6 seconds apart show the game view, its frame counter and the brain-activity dots changing. Screenshots cannot show whether the brain model drives the game; that is a code question. Re-checked 20 Oct in the same no-GPU browser: 5 of 5 ran (6 Oct: 5 of 5). neural-canvas: ran by our check's rule, but its screenshots showed only a loading card and about 6 MB came down (catalogue figure: about 77 MB). flyproject.io, first checked 20 Oct: loaded, but showed no activity; about 40 MB transferred, mostly 3D model files. The page kept our slow no-GPU machine busy for most of the check, so a faster machine may differ. OrigoZero \"Fruit Fly\": not loaded: needs a GPU. Latest no-GPU browser check: 3 of 6 ran (17 Oct; fly67 re-checked 18 Oct, Fly Worker 20 Oct). 3 Oct: 3 of 6. Checked in headless Chromium 154 on a Linux server without a GPU, 20 Oct 2026. Shows whether the page loads, downloads its brain data and keeps computing; it is not a play test. Safari, Firefox, phones and GPU machines were not tested.",

@@ -2786,7 +2786,7 @@
       "source_type": "our-measurement",
       "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
       "title": "Digital Fly Lab controls ledger (20 Oct 2026)",
-      "claim": "74 studies, 65 with a wiring null: helps 28, no difference 15, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 28 of 65. Nine rows joined on 20 Oct, scored by fixed rules from the authors' numbers.",
+      "claim": "74 studies, 65 with a wiring null: helps 28, no difference 15, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 28 of 65 at the time; later count (21 Oct 2026): 30 of 72. Nine rows joined on 20 Oct, scored by fixed rules from the authors' numbers.",
       "accessed_at": "2026-10-20T10:20:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
@@ -2878,6 +2878,96 @@
       "title": "ENSOphilia repository (nicpittman)",
       "claim": "An 80-neuron MaleCNS v1.0 reservoir forecasts El Nino: RMSE 0.807 real vs 0.742 for the median of 100 rewires (lower RMSE is better); the author's paired 95% interval of the difference, -0.047 to +0.148, includes no difference.",
       "accessed_at": "2026-10-20T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "run22-loom30",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-21-run22/#g22-heading",
+      "title": "Digital Fly Lab matched test at 30 spikes/s with a second input draw (21 Oct 2026)",
+      "claim": "21 Oct: we repeated the matched test with a second, independent draw of the same input on the same scrambled brains (one 1-second trial each). On the left side, both scrambled brains matched again, and neither sent a turn command. On the right side, both scrambled brains matched again, and neither sent a turn command. Matching the number of spikes still did not match the pattern: 1,256 to 2,741 neurons fired in the matched scrambled brains, against 427 (left) and 446 (right) in the real brain with this input. With this input the real brain's turn signal on the right side was 6 spikes/s against our threshold of 5, so the real brain itself sits close to our turn rule at this stimulus strength. Walked in the body, the matched scrambled brain with a small steering signal changed the fly's heading by about 1.3 degrees away from the shadow compared with no brain input, under our 10-degree turn rule; the real brain, with the same input, turned it away by about 9.2 degrees (one run each). With this input the real brain's own turn was also under our 10-degree rule. This body run turns the brain's firing rates into steering through our own hand-made mapping; it is not a separate test of the wiring. With a second input draw, the matched scrambled brains again sent no turn command (2 input draws on the same 4 scrambled brains).",
+      "accessed_at": "2026-10-21T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-run22",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
+      "title": "Digital Fly Lab controls ledger (21 Oct 2026)",
+      "claim": "82 studies, 72 with a wiring null: helps 30, no difference 20, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 30 of 72. Eight rows joined on 21 Oct, scored by fixed rules from the authors' committed numbers.",
+      "accessed_at": "2026-10-21T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "drosophila-cadet-pinball-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/seky443/3dpinball-drosophilacadet",
+      "title": "Drosophila Cadet repository (seky443)",
+      "claim": "A 373-neuron MaleCNS v1.0 looming-escape circuit plays 3D Pinball: in the author's committed log 11.221 real vs 10.770-10.985 for six degree-preserving shuffles, while a no-brain hand-written reflex scores higher, 11.480; not re-run by us.",
+      "accessed_at": "2026-10-21T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "connectomics-fly-whole-brain-nulls-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/Jeevash23/connectomics-fly-whole-brain-nulls",
+      "title": "connectomics-fly-whole-brain-nulls repository (Jeevash23)",
+      "claim": "The Shiu et al. whole-brain LIF model re-run on FlyWire v783 and four null families: balanced accuracy 0.879 vs null means 0.501-0.821 on 157 published tests, in the author's committed results; no no-brain baseline reported, 0.5 is chance.",
+      "accessed_at": "2026-10-21T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "flygatedemo-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/proftalent/flygatedemo",
+      "title": "FlyGateDemo repository (proftalent)",
+      "claim": "A C# rate model of the MaleCNS v1.0 olfactory circuit blocks scanner probes: by the numbers reported in the README, 59% real vs 54-59% shuffled and 64-68% random wiring; no result file committed.",
+      "accessed_at": "2026-10-21T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fruit-fly-plays-fruit-ninja-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/hcsolakoglu/fruit-fly-plays-fruit-ninja",
+      "title": "Fruit Fly Plays Fruit Ninja repository (hcsolakoglu)",
+      "claim": "A 4,386-neuron MaleCNS circuit with a fitted readout: mean reward 24.85 real, 24.80 rewired, 24.95 for a no-brain pixel rule, in the author's committed evaluation.",
+      "accessed_at": "2026-10-21T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-touhou-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/w13630039663-bit/fly-touhou",
+      "title": "Fly Touhou repository (w13630039663-bit)",
+      "claim": "A 600-neuron MaleCNS v1.0 circuit with an evolved readout survives 1,386 frames real vs 1,398 for one rewired circuit; standing still 886, in the author's committed results.",
+      "accessed_at": "2026-10-21T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-hears-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/rahilmavani/fly-hears",
+      "title": "The Fly Hears repository (rahilmavani)",
+      "claim": "Spoken digits through a 30,000-neuron MaleCNS LIF reservoir: 70.0% real, 69.7% scrambled, 66.9% audio features alone, in the author's committed results.",
+      "accessed_at": "2026-10-21T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "boltzmann-fly-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/jniimi/boltzmann-fly",
+      "title": "Boltzmann-fly repository (jniimi)",
+      "claim": "A Boltzmann world model masked to the MaleCNS v1.0 mushroom body: visit AUC 0.712 fly mask, 0.712 rewired mask, 0.713 plain MLP (one seed), in the author's results.",
+      "accessed_at": "2026-10-21T10:30:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
     }

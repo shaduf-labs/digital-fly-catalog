@@ -1224,3 +1224,12 @@
 [data-agent-document] .dfl-b21 .dfl-figure img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--dfl-line); border-radius: 6px; background: #f4f5f7; }
 [data-agent-document] .dfl-b21 .dfl-figure figure figcaption { margin-top: 6px; }
 /* run21:end */
+/* run22:start */
+[data-agent-document] .dfl-svg .b22-g { fill: #fff; stroke: var(--dfl-handmade-ink); stroke-width: 1.8; }
+[data-agent-document] .dfl-svg .g30-in.g22 { fill: var(--dfl-handmade-ink); stroke: var(--dfl-handmade-ink); }
+[data-agent-document] .dfl-svg .g30-out.g22 { fill: #fff; stroke: var(--dfl-handmade-ink); }
+[data-agent-document] .dfl-g22 { margin: 16px 0 0; padding: 12px 14px; border-left: 3px solid var(--dfl-handmade-ink); background: var(--dfl-green-bg); border-radius: 0 6px 6px 0; }
+[data-agent-document] .dfl-g22 > p:first-child { margin-top: 0; }
+[data-agent-document] .dfl-g22 > p:last-child { margin-bottom: 0; }
+[data-agent-document] .dfl-g22table td, [data-agent-document] .dfl-g22table th { white-space: normal; }
+/* run22:end */

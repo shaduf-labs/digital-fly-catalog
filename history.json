@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-712640eae7cdf78c79e13918",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-21T09:29:53Z",
+      "completed_at": "2026-10-21T10:30:00Z",
+      "title": "Twenty-second check: the 30 spikes/s matched test with a second input draw, and eight new ledger rows",
+      "summary": "With a second input draw, the matched scrambled brains again sent no turn command (2 input draws on the same 4 scrambled brains). With this input the real brain's turn signal on the right side was 6 spikes/s against our threshold of 5, so the real brain itself sits close to our turn rule at this stimulus strength. Walked in the body, the matched scrambled brain with a small steering signal changed the fly's heading by about 1.3 degrees away from the shadow compared with no brain input, under our 10-degree turn rule; the real brain, with the same input, turned it away by about 9.2 degrees (one run each). With this input the real brain's own turn was also under our 10-degree rule. This body run turns the brain's firing rates into steering through our own hand-made mapping; it is not a separate test of the wiring. 195 entries (9 new); controls ledger 82 studies, 72 with a wiring null: helps 30, no difference 20, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 30 of 72.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-21-run22/",
+      "entrypoint": "reports/2026-10-21-run22/index.html"
+    },
+    {
       "run_id": "report-f38bcfb530ce6eaffa98cab9",
       "status": "completed",
       "answer_change": "meaningful_change",
