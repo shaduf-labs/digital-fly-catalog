@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Digital Fly Lab controls ledger",
-  "version": "2026-10-21-run22",
-  "generated_at": "2026-10-21T12:00:00Z",
-  "run_id": "report-712640eae7cdf78c79e13918",
-  "as_of": "2026-10-21",
+  "version": "2026-10-22-run23",
+  "generated_at": "2026-10-22T12:00:00Z",
+  "run_id": "report-a0cfdac87a210856635dc0d5",
+  "as_of": "2026-10-22",
   "answer": {
-    "one_line": "Sometimes: fly wiring beat scrambled wiring in 30 of 72 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (26).",
-    "short": "Of 82 control studies in our catalogue, 72 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 30, makes no difference in 20, does worse in 6, gives mixed results in 13 and is not yet scored in 3. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+    "one_line": "Sometimes: fly wiring beat scrambled wiring in 31 of 74 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (27).",
+    "short": "Of 84 control studies in our catalogue, 74 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 31, makes no difference in 21, does worse in 6, gives mixed results in 13 and is not yet scored in 3. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
     "counts": {
-      "studies": 82,
-      "with_wiring_null": 72,
+      "studies": 84,
+      "with_wiring_null": 74,
       "by_family": {
         "reflex-circuit": {
-          "helps": 7,
+          "helps": 8,
           "no_difference": 0,
           "worse": 0,
           "mixed": 1,
@@ -42,7 +42,7 @@
         },
         "ml-benchmark": {
           "helps": 1,
-          "no_difference": 6,
+          "no_difference": 7,
           "worse": 1,
           "mixed": 3,
           "not_tested": 0
@@ -1303,6 +1303,97 @@
         },
         {
           "url": "https://github.com/LordKarV/flyscore/blob/227340f49d8ff00a9fc4739213576cb86bb0321e/README.md",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "helps",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
+      "id": "matcha-fly",
+      "name": "Matcha Fly lab E02: MaleCNS v1.0 LIF, looming-detector drive, giant-fibre spikes, real vs 100 shuffled wirings (pre-registered)",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "reflex-circuit",
+      "loop": "open-loop",
+      "wiring": {
+        "dataset": "MaleCNS",
+        "release": "v1.0",
+        "scope": "whole nervous system graph, connections with at least five synapses"
+      },
+      "trained_parts": "none (synaptic weight scale swept over 0.1925, 0.275, 0.3575 mV)",
+      "metric": {
+        "name": "giant-fibre spikes when the LC4 and LPLC2 looming detectors are driven at 150 Hz, mean over 10 confirm seeds",
+        "unit": "spikes",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 241.7,
+        "n": 10,
+        "spread": "per seed 241-242",
+        "source": "69fffdf lab/experiments/E02-loom-escape/verdict.json (criteria P1-P3)"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "shuffled",
+          "null_type": "degree-preserving",
+          "label": "shuffled: each neuron keeps its outputs and synapse counts, targets dealt out again at random (lab/flylab/experiments/controls.py lines 10-38); value is the highest of 100 shuffled brains, the mean is not in the file",
+          "value": 21,
+          "n": 100,
+          "samples": 100,
+          "spread": "maximum of 100; 0 of 100 reached half the real count",
+          "readout_refit": null,
+          "source": "69fffdf lab/experiments/E02-loom-escape/verdict.json criterion P3 (controlMax 21.0, n 100, reached 0)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Author's pre-registered criteria: P3 (no more than 5 of 100 shuffled brains may reach half the real count) passed with 0 of 100 and a maximum of 21.0 spikes against 241.7; P2 (random sets of other visual neurons driven instead) gave 2.0 to 18.7 spikes. No no-brain baseline is reported and a spike count has no chance level. The two taste experiments failed their own first criterion, so their wiring control was not run.",
+        "headline_arm": "shuffled",
+        "best_null_arm": "shuffled",
+        "baseline_arm": null,
+        "retention": 0.0869,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": 220.7
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 100,
+        "has_no_brain_baseline": false,
+        "reason": "Same input codec, model and seeds for real and shuffled brains; the shuffle keeps each neuron's out-degree and synapse counts; criteria written before the trials.",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 10,
+        "held_out": true,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "Pre-registered verdict file with per-seed values and 100 shuffled brains; a neural response, not the game behaviour; not re-run by us.",
+        "uncertainty_reported": false,
+        "recomputed_by_us": false,
+        "grade": "moderate"
+      },
+      "extraction": "files",
+      "one_line": "Driving the looming detectors gives 241.7 giant-fibre spikes on the real MaleCNS wiring; none of 100 shuffled wirings reaches half that (highest 21.0).",
+      "commit": "69fffdf541c44b9af6db771d2555e7fb8caa58ed",
+      "checked_at": "2026-10-22T09:58:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/linhkid/fly-matcha/blob/69fffdf541c44b9af6db771d2555e7fb8caa58ed/lab/experiments/E02-loom-escape/verdict.json",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/linhkid/fly-matcha/blob/69fffdf541c44b9af6db771d2555e7fb8caa58ed/lab/flylab/experiments/controls.py",
           "label": "direct"
         }
       ],
@@ -7334,12 +7425,12 @@
         "value": 44,
         "n": 200,
         "spread": "± 16.502 sd",
-        "source": "20f8ffb fly-foraging/eval_forage.json line 1 (consistent MB_real, 200 worlds; SD across worlds); fly-foraging/RESULTS_forage_eval.md line 5"
+        "source": "2f8f472 fly-foraging/eval_forage.json line 1 (consistent MB_real, 200 worlds; SD across worlds); fly-foraging/RESULTS_forage_eval.md line 5"
       },
       "floor": {
         "label": "no_learning agent: same body and steering, valence fixed at 0 (a run, consistent worlds)",
         "value": 0.485,
-        "source": "20f8ffb fly-foraging/eval_forage.json line 1 (consistent no_learning); RESULTS_forage_eval.md line 10"
+        "source": "2f8f472 fly-foraging/eval_forage.json line 1 (consistent no_learning); RESULTS_forage_eval.md line 10"
       },
       "arms": [
         {
@@ -7351,7 +7442,7 @@
           "samples": 200,
           "spread": "± 16.182 sd",
           "readout_refit": true,
-          "source": "20f8ffb fly-foraging/eval_forage.json line 1 (consistent MB_shuffled); forage.py lines 10-11; RESULTS_forage_eval.md lines 6 and 13",
+          "source": "2f8f472 fly-foraging/eval_forage.json line 1 (consistent MB_shuffled); forage.py lines 10-11; RESULTS_forage_eval.md lines 6 and 13",
           "recomputed_by_us": false,
           "activity_ratio": null,
           "activity_class": "not-reported"
@@ -7365,7 +7456,7 @@
           "samples": 200,
           "spread": "± 19.233 sd",
           "readout_refit": true,
-          "source": "20f8ffb fly-foraging/eval_forage.json line 1 (consistent MB_random); forage.py lines 14-17; RESULTS_forage_eval.md lines 7 and 14",
+          "source": "2f8f472 fly-foraging/eval_forage.json line 1 (consistent MB_random); forage.py lines 14-17; RESULTS_forage_eval.md lines 7 and 14",
           "recomputed_by_us": false,
           "activity_ratio": null,
           "activity_class": "not-reported"
@@ -7379,7 +7470,7 @@
           "samples": 1,
           "spread": "± 17.268 sd",
           "readout_refit": true,
-          "source": "20f8ffb fly-foraging/eval_forage.json line 1 (consistent linear_valence); forage.py lines 34-37; RESULTS_forage_eval.md lines 9 and 15",
+          "source": "2f8f472 fly-foraging/eval_forage.json line 1 (consistent linear_valence); forage.py lines 34-37; RESULTS_forage_eval.md lines 9 and 15",
           "recomputed_by_us": false,
           "activity_ratio": null,
           "activity_class": "not-reported"
@@ -7391,7 +7482,7 @@
           2.8
         ],
         "p": null,
-        "stat_note": "Author statistics: paired real minus shuffled -0.4, 4,000-sample bootstrap 95% CI [-3.6, +2.8] over 200 worlds; real minus random -6.9 [-10.3, -3.6]; real minus linear -2.2 [-5.1, +0.8]; no multiplicity correction. Conflict worlds: real 35.9, shuffled 32.4, random 44.1; real minus random -8.3 [-12.3, -4.3] (RESULTS_forage_eval.md lines 19-34). The study/ forgetting line (learn_v2.py) has real, shuffled-compartment and rewired arms; its results were not extracted here.",
+        "stat_note": "Author statistics: paired real minus shuffled -0.4, 4,000-sample bootstrap 95% CI [-3.6, +2.8] over 200 worlds; real minus random -6.9 [-10.3, -3.6]; real minus linear -2.2 [-5.1, +0.8]; no multiplicity correction. Conflict worlds: real 35.9, shuffled 32.4, random 44.1; real minus random -8.3 [-12.3, -4.3] (RESULTS_forage_eval.md lines 19-34). The study/ forgetting line (learn_v2.py) has real, shuffled-compartment and rewired arms; its results were not extracted here. Later tests by the author (fly-v4, RESULTS_v4_stage0b.md at 2f8f472, 100 test worlds): in a planted positive control, real minus shuffled +0.064 [+0.058, +0.071] and real minus random +0.066 [+0.059, +0.074] (lines 17-18), with a no-KC linear readout level with real (-0.004 [-0.008, +0.001], line 22); on real odours with random class labels real minus random -0.001 [-0.006, +0.004] (line 128); not separate ledger studies.",
         "headline_arm": "MB_shuffled",
         "best_null_arm": "MB_random",
         "baseline_arm": "linear_valence",
@@ -7422,27 +7513,31 @@
       },
       "extraction": "files",
       "one_line": "Author's preregistered foraging test: real MaleCNS PN to KC wiring 44.0 vs shuffled 44.4 and random sparse 50.9 net reward, 200 worlds.",
-      "commit": "20f8ffb70501f7e8622af8acdff9e12346be38a0",
-      "checked_at": "2026-10-15T10:00:00Z",
+      "commit": "2f8f47270ae9e1f0b3448ba8d23271bed4be594d",
+      "checked_at": "2026-10-22T09:40:00Z",
       "sources": [
         {
-          "url": "https://github.com/meiluosi/fly-connectome-study/blob/20f8ffb70501f7e8622af8acdff9e12346be38a0/fly-foraging/eval_forage.json",
+          "url": "https://github.com/meiluosi/fly-connectome-study/blob/2f8f47270ae9e1f0b3448ba8d23271bed4be594d/fly-foraging/eval_forage.json",
           "label": "direct"
         },
         {
-          "url": "https://github.com/meiluosi/fly-connectome-study/blob/20f8ffb70501f7e8622af8acdff9e12346be38a0/fly-foraging/RESULTS_forage_eval.md",
+          "url": "https://github.com/meiluosi/fly-connectome-study/blob/2f8f47270ae9e1f0b3448ba8d23271bed4be594d/fly-foraging/RESULTS_forage_eval.md",
           "label": "direct"
         },
         {
-          "url": "https://github.com/meiluosi/fly-connectome-study/blob/20f8ffb70501f7e8622af8acdff9e12346be38a0/fly-foraging/PREREG_forage.md",
+          "url": "https://github.com/meiluosi/fly-connectome-study/blob/2f8f47270ae9e1f0b3448ba8d23271bed4be594d/fly-foraging/PREREG_forage.md",
           "label": "direct"
         },
         {
-          "url": "https://github.com/meiluosi/fly-connectome-study/blob/20f8ffb70501f7e8622af8acdff9e12346be38a0/fly-foraging/forage.py",
+          "url": "https://github.com/meiluosi/fly-connectome-study/blob/2f8f47270ae9e1f0b3448ba8d23271bed4be594d/fly-foraging/forage.py",
           "label": "direct"
         },
         {
-          "url": "https://github.com/meiluosi/fly-connectome-study/blob/20f8ffb70501f7e8622af8acdff9e12346be38a0/fly-foraging/tune.py",
+          "url": "https://github.com/meiluosi/fly-connectome-study/blob/2f8f47270ae9e1f0b3448ba8d23271bed4be594d/fly-foraging/tune.py",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/meiluosi/fly-connectome-study/blob/2f8f47270ae9e1f0b3448ba8d23271bed4be594d/fly-v4/RESULTS_v4_stage0b.md",
           "label": "direct"
         }
       ],
@@ -8316,6 +8411,101 @@
       ],
       "wiring_effect": "no-difference",
       "baseline_beaten": "no",
+      "caveats": []
+    },
+    {
+      "id": "maxwells-demon-fly-brain",
+      "name": "Maxwell's Demon: FlyWire FAFB v783 spiking network as a door-keeping demon, real vs degree-preserving shuffled wiring (test phase, 3 seeds)",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "ml-benchmark",
+      "loop": "closed-loop",
+      "wiring": {
+        "dataset": "FlyWire FAFB",
+        "release": "v783",
+        "scope": "106,765 neurons and 563,942 synapses in fly_brain_circuit.json"
+      },
+      "trained_parts": "excitatory synapse strengths change by dopamine-gated plasticity in the train phase; frozen for the test phase",
+      "metric": {
+        "name": "test-phase good:bad crossing ratio (summary of 2026-09-16T11-57-59)",
+        "unit": "ratio",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 0.645,
+        "n": 3,
+        "spread": "± 0.078 (author's ci field)",
+        "source": "d56568a research_data/summary_2026-09-16T11-57-59.json conditions.connectome.testGoodBadRatio"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "shuffled_connectome",
+          "null_type": "degree-preserving",
+          "label": "shuffled: seeded degree-preserving edge rewiring (controllers.js lines 325-345)",
+          "value": 0.597,
+          "n": 3,
+          "samples": 3,
+          "spread": "± 0.039 (author's ci field)",
+          "readout_refit": null,
+          "source": "d56568a research_data/summary_2026-09-16T11-57-59.json conditions.shuffled_connectome.testGoodBadRatio",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Author's benchmark summaries, not re-run by us: 3-seed run real 0.645 (ci 0.078) vs shuffled 0.597 (ci 0.039), random decisions 1.035; 2-seed run (2026-09-16T12-38-20) real 0.893 (ci 0.084) vs shuffled 0.391 (ci 0.028), random 1.091. Random decisions score higher than either wiring in both files. The README says real and shuffled wiring behave the same at full sensory drive, so the benchmark uses a reduced drive chosen by the author.",
+        "headline_arm": "shuffled_connectome",
+        "best_null_arm": "shuffled_connectome",
+        "baseline_arm": null,
+        "retention": 0.9256,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": 0.048
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 3,
+        "has_no_brain_baseline": true,
+        "reason": "Same chamber, seeds, phases and plasticity for real and shuffled wiring (benchmark.js lines 6-8, 49-60); the sensory drive was reduced by the author because the arms are equal at full drive.",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 3,
+        "held_out": null,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "Short runs with 2 to 3 seeds, committed before the latest code; the README's study default is 5 seeds; not re-run by us.",
+        "uncertainty_reported": true,
+        "recomputed_by_us": false,
+        "grade": "strong"
+      },
+      "extraction": "files",
+      "one_line": "Real FlyWire wiring keeps the demon's door slightly better than shuffled wiring in the author's short runs, but random door decisions score higher than both.",
+      "commit": "d56568a8a487a20cc2428edb013a4e8480fa05e3",
+      "checked_at": "2026-10-22T09:58:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/Yash9808/Maxwell-s-Demon-Inside-the-Fly-Brain/blob/d56568a8a487a20cc2428edb013a4e8480fa05e3/research_data/summary_2026-09-16T11-57-59.json",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/Yash9808/Maxwell-s-Demon-Inside-the-Fly-Brain/blob/d56568a8a487a20cc2428edb013a4e8480fa05e3/research_data/summary_2026-09-16T12-38-20.json",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/Yash9808/Maxwell-s-Demon-Inside-the-Fly-Brain/blob/d56568a8a487a20cc2428edb013a4e8480fa05e3/controllers.js",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "no-difference",
+      "baseline_beaten": "not-tested",
       "caveats": []
     },
     {
@@ -10305,6 +10495,19 @@
       "caveats": []
     },
     {
+      "study_id": "matcha-fly",
+      "label": "Matcha Fly lab E02: MaleCNS v1.0 LIF, looming-detector drive, giant-fibre spikes, real vs 100 shuffled wirings (pre-registered)",
+      "task_family": "reflex-circuit",
+      "headline_null_type": "degree-preserving",
+      "retention": 0.0869,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "helps",
+      "quality": "moderate",
+      "fairness": "fair",
+      "caveats": []
+    },
+    {
       "study_id": "shiu-drosophila-brain-model",
       "label": "Drosophila_brain_model (Shiu et al. 2024)",
       "task_family": "reflex-circuit",
@@ -11002,6 +11205,19 @@
       "retention": 0.9687,
       "retention_method": "ratio",
       "baseline_retention": 1.5748,
+      "wiring_effect": "no-difference",
+      "quality": "strong",
+      "fairness": "fair",
+      "caveats": []
+    },
+    {
+      "study_id": "maxwells-demon-fly-brain",
+      "label": "Maxwell's Demon: FlyWire FAFB v783 spiking network as a door-keeping demon, real vs degree-preserving shuffled wiring (test phase, 3 seeds)",
+      "task_family": "ml-benchmark",
+      "headline_null_type": "degree-preserving",
+      "retention": 0.9256,
+      "retention_method": "ratio",
+      "baseline_retention": null,
       "wiring_effect": "no-difference",
       "quality": "strong",
       "fairness": "fair",

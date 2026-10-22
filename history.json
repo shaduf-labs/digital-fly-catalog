@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-a0cfdac87a210856635dc0d5",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-22T09:31:43Z",
+      "completed_at": "2026-10-22T10:15:00Z",
+      "title": "Twenty-third check: the four-week re-check of our grades, and two new ledger rows",
+      "summary": "22 Oct: we re-checked the 34 projects we last graded on 28 Sep against their current code: 33 keep their grade (3 of them after a full re-read of changed code), and 1 could not be re-checked because the source is no longer online. 197 entries (2 new); controls ledger 84 studies, 74 with a wiring null: helps 31, no difference 21, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 31 of 74. neural-canvas: loads; brain simulation not seen in our headless browser without a GPU (checked 2026-10-22).",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-22-run23/",
+      "entrypoint": "reports/2026-10-22-run23/index.html"
+    },
+    {
       "run_id": "report-712640eae7cdf78c79e13918",
       "status": "completed",
       "answer_change": "meaningful_change",

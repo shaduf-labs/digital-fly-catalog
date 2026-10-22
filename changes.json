@@ -2,6 +2,42 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-22-run23-recheck",
+      "changed_at": "2026-10-22T10:15:00Z",
+      "summary": "22 Oct: we re-checked the 34 projects we last graded on 28 Sep against their current code: 33 keep their grade (3 of them after a full re-read of changed code), and 1 could not be re-checked because the source is no longer online. Re-read in full after code changes, grades kept: flyvis A, flydoom-mutkuoz A and fly-dino C. Not re-checkable: flydoom (its repository is no longer online; grade C and its date unchanged).",
+      "path": "/p/digital-fly-catalog/reports/2026-10-22-run23/#recheck-heading"
+    },
+    {
+      "change_id": "2026-10-22-run23-entries",
+      "changed_at": "2026-10-22T10:15:00Z",
+      "summary": "197 catalogue entries (22 Oct 2026): 2 new: matcha-fly A: From the author's pre-registered looming-escape experiment (10 seeds; not re-run by us), driving the looming detectors gave 241.7 giant-fibre spikes on the real wiring, while the highest of 100 shuffled-wiring brains reached 21.0; no no-brain baseline is reported and a spike count has no chance level, and driving random sets of other visual neurons instead gave 2.0 to 18.7 spikes. maxwells-demon-fly-brain A: In the author's benchmark (3 seeds, reported by the author; not re-run by us), the test good:bad crossing ratio was 0.645 for the real wiring, 0.597 for the shuffled wiring and 1.035 for random decisions, the no-brain baseline. The author's files do not state whether a higher ratio is better; we read higher as better, and on that reading random decisions scored above both wirings. fly-connectome-study stays A at its current commit (the author's numbers, not re-run by us): in the author's planted positive control, real minus shuffled wiring was +0.064 [+0.058, +0.071] and real minus random wiring +0.066 [+0.059, +0.074], while the no-brain linear readout was level with the real wiring at −0.004 [−0.008, +0.001]. fly-with-me stays B: the brain still runs the Shiu et al. model on FlyWire v783 with hand-made ear bands and dance moves, and there is no wiring comparison; the author reports a trained brain at 0.498 macro-F1 against 0.485 for the ear input alone (difference +0.013 ± 0.028; the results file is not in the repository). FlyGateDemo stays A: we read the code behind its loader, its wiring comparison and its no-brain cosine baseline; its numbers are reported in the README, printed by the author's program, and were not re-run by us. adfly-connectome: links now point at the current commit (the earlier commit is gone; code and results unchanged), and the claim cites the authors' arXiv preprint (arXiv:2610.19153, 13 Oct 2026); grade B unchanged. Odyssey-3 claim: No method, code or write-up was published as of 22 Oct 2026.",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-22"
+    },
+    {
+      "change_id": "2026-10-22-run23-ledger",
+      "changed_at": "2026-10-22T10:15:00Z",
+      "summary": "Controls ledger (22 Oct 2026): 2 new rows (matcha-fly helps, maxwells-demon-fly-brain no difference), now 84 studies, 74 with a wiring null: helps 31, no difference 21, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 31 of 74. Scoring unchanged.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed23-heading"
+    },
+    {
+      "change_id": "2026-10-22-run23-browser",
+      "changed_at": "2026-10-22T10:15:00Z",
+      "summary": "neural-canvas: 22 Oct: in a headless browser without a GPU, after we pressed 'Download & start', the page prepared its scene for about 73 seconds, then started a background worker, which downloaded about 79 MB within about 94 seconds of the click; the picture changed between our later screenshots, and at the end of our about 187-second watch the page's status line read 'JavaScript · 0.02× realtime · 0 spikes'. Screenshots cannot show whether the brain drives the movement. Status: loads; brain simulation not seen in our headless browser without a GPU (checked 2026-10-22). Correction: On 6 and 20 Oct our check pressed 'Download & start'; in the about 30 seconds we watched afterwards, the page fetched about 6 MB and started no background worker, and our screenshots show only the start card and a loading screen.",
+      "path": "/p/digital-fly-catalog/ways-to-try/#run23-heading"
+    },
+    {
+      "change_id": "2026-10-22-run23-tracking",
+      "changed_at": "2026-10-22T10:15:00Z",
+      "summary": "Tracking (22 Oct 2026): repositories of 141 catalogue entries checked; 56 of 56 videos available. 14 gallery videos have view counts read on 22 Oct 2026 and 3 on 21 Oct 2026 (approximate, from YouTube search results pages, linked on each card).",
+      "path": "/p/digital-fly-catalog/reports/2026-10-22-run23/#tracking-heading"
+    },
+    {
+      "change_id": "2026-10-22-run23-report",
+      "changed_at": "2026-10-22T10:15:00Z",
+      "summary": "New report: Twenty-third check (22 Oct 2026), with the four-week re-check of 34 grades, two new entries and ledger rows, a longer neural-canvas watch, re-checks and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-22-run23/"
+    },
+    {
       "change_id": "2026-10-21-run22-loom30",
       "changed_at": "2026-10-21T10:30:00Z",
       "summary": "Our looming test at 30 spikes/s (21 Oct 2026, pre-registered; brain model, then one body run): 21 Oct: we repeated the matched test with a second, independent draw of the same input on the same scrambled brains (one 1-second trial each). On the left side, both scrambled brains matched again, and neither sent a turn command. On the right side, both scrambled brains matched again, and neither sent a turn command. Matching the number of spikes still did not match the pattern: 1,256 to 2,741 neurons fired in the matched scrambled brains, against 427 (left) and 446 (right) in the real brain with this input. With this input the real brain's turn signal on the right side was 6 spikes/s against our threshold of 5, so the real brain itself sits close to our turn rule at this stimulus strength. Walked in the body, the matched scrambled brain with a small steering signal changed the fly's heading by about 1.3 degrees away from the shadow compared with no brain input, under our 10-degree turn rule; the real brain, with the same input, turned it away by about 9.2 degrees (one run each). With this input the real brain's own turn was also under our 10-degree rule. This body run turns the brain's firing rates into steering through our own hand-made mapping; it is not a separate test of the wiring. With a second input draw, the matched scrambled brains again sent no turn command (2 input draws on the same 4 scrambled brains).",

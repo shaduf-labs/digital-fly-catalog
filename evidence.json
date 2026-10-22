@@ -2786,7 +2786,7 @@
       "source_type": "our-measurement",
       "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
       "title": "Digital Fly Lab controls ledger (20 Oct 2026)",
-      "claim": "74 studies, 65 with a wiring null: helps 28, no difference 15, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 28 of 65 at the time; later count (21 Oct 2026): 30 of 72. Nine rows joined on 20 Oct, scored by fixed rules from the authors' numbers.",
+      "claim": "74 studies, 65 with a wiring null: helps 28, no difference 15, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 28 of 65 at the time; later count (21 Oct 2026): 30 of 72; later count (22 Oct 2026): 31 of 74. Nine rows joined on 20 Oct, scored by fixed rules from the authors' numbers.",
       "accessed_at": "2026-10-20T10:20:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
@@ -2896,7 +2896,7 @@
       "source_type": "our-measurement",
       "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
       "title": "Digital Fly Lab controls ledger (21 Oct 2026)",
-      "claim": "82 studies, 72 with a wiring null: helps 30, no difference 20, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 30 of 72. Eight rows joined on 21 Oct, scored by fixed rules from the authors' committed numbers.",
+      "claim": "82 studies, 72 with a wiring null: helps 30, no difference 20, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 30 of 72 at the time (later count, 22 Oct 2026: 31 of 74). Eight rows joined on 21 Oct, scored by fixed rules from the authors' committed numbers.",
       "accessed_at": "2026-10-21T10:30:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
@@ -2968,6 +2968,66 @@
       "title": "Boltzmann-fly repository (jniimi)",
       "claim": "A Boltzmann world model masked to the MaleCNS v1.0 mushroom body: visit AUC 0.712 fly mask, 0.712 rewired mask, 0.713 plain MLP (one seed), in the author's results.",
       "accessed_at": "2026-10-21T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-run23",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
+      "title": "Digital Fly Lab controls ledger (22 Oct 2026)",
+      "claim": "84 studies, 74 with a wiring null: helps 31, no difference 21, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 31 of 74. Two rows joined on 22 Oct, scored by fixed rules from the authors' committed numbers.",
+      "accessed_at": "2026-10-22T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "recheck-run23",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-22-run23/#recheck-heading",
+      "title": "Digital Fly Lab four-week re-check of grades (22 Oct 2026)",
+      "claim": "22 Oct: we re-checked the 34 projects we last graded on 28 Sep against their current code: 33 keep their grade (3 of them after a full re-read of changed code), and 1 could not be re-checked because the source is no longer online.",
+      "accessed_at": "2026-10-22T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "browser-run23",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-22-run23/#browser-heading",
+      "title": "Digital Fly Lab neural-canvas browser check (22 Oct 2026)",
+      "claim": "22 Oct: in a headless browser without a GPU, after we pressed 'Download & start', the page prepared its scene for about 73 seconds, then started a background worker, which downloaded about 79 MB within about 94 seconds of the click; the picture changed between our later screenshots, and at the end of our about 187-second watch the page's status line read 'JavaScript · 0.02× realtime · 0 spikes'. Screenshots cannot show whether the brain drives the movement.",
+      "accessed_at": "2026-10-22T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "matcha-fly-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/linhkid/fly-matcha",
+      "title": "Matcha Fly repository (linhkid)",
+      "claim": "From the author's pre-registered looming-escape experiment (10 seeds; not re-run by us), driving the looming detectors gave 241.7 giant-fibre spikes on the real wiring, while the highest of 100 shuffled-wiring brains reached 21.0; no no-brain baseline is reported and a spike count has no chance level, and driving random sets of other visual neurons instead gave 2.0 to 18.7 spikes.",
+      "accessed_at": "2026-10-22T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "maxwells-demon-fly-brain-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/Yash9808/Maxwell-s-Demon-Inside-the-Fly-Brain",
+      "title": "Maxwell's Demon: Inside the Fly Brain repository (Yash9808)",
+      "claim": "In the author's benchmark (3 seeds, reported by the author; not re-run by us), the test good:bad crossing ratio was 0.645 for the real wiring, 0.597 for the shuffled wiring and 1.035 for random decisions, the no-brain baseline. The author's files do not state whether a higher ratio is better; we read higher as better, and on that reading random decisions scored above both wirings.",
+      "accessed_at": "2026-10-22T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "adfly-connectome-preprint",
+      "source_type": "paper",
+      "source_url": "https://arxiv.org/abs/2610.19153",
+      "title": "adfly-connectome preprint (arXiv:2610.19153, 13 Oct 2026)",
+      "claim": "adfly-connectome: links now point at the current commit (the earlier commit is gone; code and results unchanged), and the claim cites the authors' arXiv preprint (arXiv:2610.19153, 13 Oct 2026); grade B unchanged.",
+      "accessed_at": "2026-10-22T10:15:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
     }
