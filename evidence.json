@@ -2786,7 +2786,7 @@
       "source_type": "our-measurement",
       "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
       "title": "Digital Fly Lab controls ledger (20 Oct 2026)",
-      "claim": "74 studies, 65 with a wiring null: helps 28, no difference 15, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 28 of 65 at the time; later count (21 Oct 2026): 30 of 72; later count (22 Oct 2026): 31 of 74. Nine rows joined on 20 Oct, scored by fixed rules from the authors' numbers.",
+      "claim": "74 studies, 65 with a wiring null: helps 28, no difference 15, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 28 of 65 at the time; later count (21 Oct 2026): 30 of 72; later count (22 Oct 2026): 31 of 74; later count, 23 Oct 2026: 32 of 81. Nine rows joined on 20 Oct, scored by fixed rules from the authors' numbers.",
       "accessed_at": "2026-10-20T10:20:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
@@ -2896,7 +2896,7 @@
       "source_type": "our-measurement",
       "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
       "title": "Digital Fly Lab controls ledger (21 Oct 2026)",
-      "claim": "82 studies, 72 with a wiring null: helps 30, no difference 20, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 30 of 72 at the time (later count, 22 Oct 2026: 31 of 74). Eight rows joined on 21 Oct, scored by fixed rules from the authors' committed numbers.",
+      "claim": "82 studies, 72 with a wiring null: helps 30, no difference 20, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 30 of 72 at the time (later count, 22 Oct 2026: 31 of 74; later count, 23 Oct 2026: 32 of 81). Eight rows joined on 21 Oct, scored by fixed rules from the authors' committed numbers.",
       "accessed_at": "2026-10-21T10:30:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
@@ -2976,7 +2976,7 @@
       "source_type": "our-measurement",
       "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
       "title": "Digital Fly Lab controls ledger (22 Oct 2026)",
-      "claim": "84 studies, 74 with a wiring null: helps 31, no difference 21, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 31 of 74. Two rows joined on 22 Oct, scored by fixed rules from the authors' committed numbers.",
+      "claim": "84 studies, 74 with a wiring null: helps 31, no difference 21, worse 6, mixed 13, not yet scored 3; fly wiring beat scrambled wiring in 31 of 74 at the time (later count, 23 Oct 2026: 32 of 81). Two rows joined on 22 Oct, scored by fixed rules from the authors' committed numbers.",
       "accessed_at": "2026-10-22T10:15:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
@@ -3028,6 +3028,66 @@
       "title": "adfly-connectome preprint (arXiv:2610.19153, 13 Oct 2026)",
       "claim": "adfly-connectome: links now point at the current commit (the earlier commit is gone; code and results unchanged), and the claim cites the authors' arXiv preprint (arXiv:2610.19153, 13 Oct 2026); grade B unchanged.",
       "accessed_at": "2026-10-22T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-run24",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
+      "title": "Digital Fly Lab controls ledger (23 Oct 2026)",
+      "claim": "91 studies, 81 with a wiring null: helps 32, no difference 23, worse 8, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 32 of 81. Seven rows joined on 23 Oct, scored by fixed rules from the authors' committed numbers.",
+      "accessed_at": "2026-10-23T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "recheck-run24",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-23-run24/#recheck-heading",
+      "title": "Digital Fly Lab four-week re-check of grades (23 Oct 2026)",
+      "claim": "23 Oct: we re-checked the 28 projects we last graded between 29 Sep and 5 Oct against their current code: 27 keep their grade (5 after a full re-read); 1 more will be re-checked in the next run.",
+      "accessed_at": "2026-10-23T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "relays-run24",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-23-run24/#relays-heading",
+      "title": "Digital Fly Lab group-matched relay control (23 Oct 2026)",
+      "claim": "23 Oct: our earlier controls matched each relay neuron's activity, but not how strongly it connects to the turn neuron. This time the control is a group of other active neurons that excite the turn neuron, chosen so that together they fire about as much as the active relays and send about as many synapses to the turn neuron (both within 20%). Left eye: in 1 of 5 matched groups the turn neuron's rate fell as low as, or lower than, with the relays silenced (matched groups 13-31 Hz, relays 16.0 Hz, nothing silenced 21-25 Hz). By our pre-registered rule, this test does not show that the relays matter more than other inputs with the same combined connection strength and activity. Right eye: among the 9 other active neurons that excite the turn neuron, no group came within 20% of the relays on both combined activity and synapse count (we had set 5 groups as the minimum in advance), so this control could not be built for this eye. Our rule compares the relays with the lowest matched group, so extra groups can only make the relays look less special, never more. Left eye: outside the stimulated looming neurons, the brain fired 13,581-14,040 spikes with a matched group silenced, against 13,901-14,760 with the relays silenced and 14,502-15,172 with nothing silenced. One model, brain only, one stimulus strength (80 spikes/s), 5 matched groups on the left eye only, each run once; the 5 groups all share the same three most active neurons, so they are not independent draws; not a real fly.",
+      "accessed_at": "2026-10-23T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "drosophila-connectome-sim-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/ollyblu/drosophila-connectome-sim",
+      "title": "drosophila-connectome-sim repository (ollyblu)",
+      "claim": "drosophila-connectome-sim A (helps): from the author's committed control file (20 trials per arm; not re-run by us), sugar input drove the feeding motor neuron MN9 at 67.45 Hz on the real FlyWire weights and at 0.0 Hz in every trial of all 10 weight-shuffled brains; no no-brain baseline reported, no chance level.",
+      "accessed_at": "2026-10-23T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-brain-resuscitation-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/KalarisLabs/fly-brain-resuscitation",
+      "title": "fly-brain-resuscitation repository (KalarisLabs)",
+      "claim": "fly-brain-resuscitation A (worse): from the author's committed structure results (one rewired copy, not re-run by us), sensory-to-motor reachability in the real wiring collapsed after removing 3.5% of neurons in order of connectivity, against 26.6% in a degree-preserving rewired copy; we read a higher critical fraction as a sturdier network; the author does not present it as a score; no no-brain baseline applies to this structural measure and it has no chance level.",
+      "accessed_at": "2026-10-23T10:20:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "owen-silva-fly-brain-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/Owen-Silva/fly-brain",
+      "title": "Fly Brain Simulator repository (Owen-Silva)",
+      "claim": "owen-silva-fly-brain A (worse): from the author's pre-registered results (20 seeds; not re-run by us), the mushroom-body model on the real wiring reached 57.5% final accuracy over 110 odours, against 64.4% with shuffled and 66.8% with uniform wiring; no no-brain baseline is reported and chance is about 0.9%.",
+      "accessed_at": "2026-10-23T10:20:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
     }

@@ -2,6 +2,48 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-23-run24-relays",
+      "changed_at": "2026-10-23T10:20:00Z",
+      "summary": "Relays (pre-registered, brain only; the 13 Oct headline and 15 Oct lines unchanged): 23 Oct: our earlier controls matched each relay neuron's activity, but not how strongly it connects to the turn neuron. This time the control is a group of other active neurons that excite the turn neuron, chosen so that together they fire about as much as the active relays and send about as many synapses to the turn neuron (both within 20%). Left eye: in 1 of 5 matched groups the turn neuron's rate fell as low as, or lower than, with the relays silenced (matched groups 13-31 Hz, relays 16.0 Hz, nothing silenced 21-25 Hz). By our pre-registered rule, this test does not show that the relays matter more than other inputs with the same combined connection strength and activity. Right eye: among the 9 other active neurons that excite the turn neuron, no group came within 20% of the relays on both combined activity and synapse count (we had set 5 groups as the minimum in advance), so this control could not be built for this eye. Our rule compares the relays with the lowest matched group, so extra groups can only make the relays look less special, never more. Left eye: outside the stimulated looming neurons, the brain fired 13,581-14,040 spikes with a matched group silenced, against 13,901-14,760 with the relays silenced and 14,502-15,172 with nothing silenced. One model, brain only, one stimulus strength (80 spikes/s), 5 matched groups on the left eye only, each run once; the 5 groups all share the same three most active neurons, so they are not independent draws; not a real fly.",
+      "path": "/p/digital-fly-catalog/how-it-works/#relays15-heading"
+    },
+    {
+      "change_id": "2026-10-23-run24-recheck",
+      "changed_at": "2026-10-23T10:20:00Z",
+      "summary": "23 Oct: we re-checked the 28 projects we last graded between 29 Sep and 5 Oct against their current code: 27 keep their grade (5 after a full re-read); 1 more will be re-checked in the next run.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-23-run24/#recheck-heading"
+    },
+    {
+      "change_id": "2026-10-23-run24-entries",
+      "changed_at": "2026-10-23T10:20:00Z",
+      "summary": "200 catalogue entries (23 Oct 2026): 3 new: drosophila-connectome-sim A (helps): from the author's committed control file (20 trials per arm; not re-run by us), sugar input drove the feeding motor neuron MN9 at 67.45 Hz on the real FlyWire weights and at 0.0 Hz in every trial of all 10 weight-shuffled brains; no no-brain baseline reported, no chance level. fly-brain-resuscitation A (worse): from the author's committed structure results (one rewired copy, not re-run by us), sensory-to-motor reachability in the real wiring collapsed after removing 3.5% of neurons in order of connectivity, against 26.6% in a degree-preserving rewired copy; we read a higher critical fraction as a sturdier network; the author does not present it as a score; no no-brain baseline applies to this structural measure and it has no chance level. owen-silva-fly-brain A (worse): from the author's pre-registered results (20 seeds; not re-run by us), the mushroom-body model on the real wiring reached 57.5% final accuracy over 110 odours, against 64.4% with shuffled and 66.8% with uniform wiring; no no-brain baseline is reported and chance is about 0.9%. connectomics-fly-whole-brain-nulls: The repository was no longer online on 22 and 23 Oct 2026; the grade and the numbers describe the code we read on 21 Oct. Its link status is now gone; grade A of 21 Oct and its ledger row stay. maxwells-demon-fly-brain: the test good:bad crossing ratio was 0.645 for the real wiring, 0.597 for the shuffled wiring and 1.035 for random decisions, the no-brain baseline, and higher is better by the author's write-up (the code computes the ratio; the README does not say), so random decisions scored above both wirings. flybench keeps A at its current version (v1.0.0, commit 56577bf); its measured result moved by about 0.01. Odyssey-3 claim: No method, code or write-up was published as of 23 Oct 2026.",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-23"
+    },
+    {
+      "change_id": "2026-10-23-run24-ledger",
+      "changed_at": "2026-10-23T10:20:00Z",
+      "summary": "Controls ledger (23 Oct 2026): 7 new rows (3 new entries; flywire-connectome-scz-step68 (no difference): real wiring 0.575 against 0.589 for random wiring that keeps each Kenyon cell's input strength (median of 10); chance 0.053; flywire-connectome-scz-step69 (no difference): real wiring 0.954 against 0.959 for random wiring (median of 10); no no-brain baseline reported; fly-connectome-study-v4-stage7 (mixed): real 0.349, shuffled 0.332, random 0.329; raw responses without a Kenyon-cell layer 0.351; chance about 0.11; fly-connectome-study-v4-stage3b (mixed): real 0.650, input-total control 0.648, random 0.628; no no-brain baseline reported), now 91 studies, 81 with a wiring null: helps 32, no difference 23, worse 8, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 32 of 81. Scoring unchanged.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed24-heading"
+    },
+    {
+      "change_id": "2026-10-23-run24-byo",
+      "changed_at": "2026-10-23T10:20:00Z",
+      "summary": "On 23 Oct 2026 the short requirements.txt command picked 6 newer packages than our exact lock, including python-dateutil 3.0.0, a new major version; the six main packages are pinned and did not change. We have tested only the exact lock. The next beginner re-test stays due 2 Nov 2026.",
+      "path": "/p/digital-fly-catalog/build-your-own/#install-short"
+    },
+    {
+      "change_id": "2026-10-23-run24-tracking",
+      "changed_at": "2026-10-23T10:20:00Z",
+      "summary": "Tracking (23 Oct 2026): repositories of 142 catalogue entries checked; 56 of 56 videos available. View counts were not refreshed on 23 Oct 2026 (YouTube search pages could not be read); every count keeps its earlier date.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-23-run24/#tracking-heading"
+    },
+    {
+      "change_id": "2026-10-23-run24-report",
+      "changed_at": "2026-10-23T10:20:00Z",
+      "summary": "New report: Twenty-fourth check (23 Oct 2026), with a group-matched control for the relays, the re-check of 28 grades, three new entries, seven ledger rows and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-23-run24/"
+    },
+    {
       "change_id": "2026-10-22-run23-recheck",
       "changed_at": "2026-10-22T10:15:00Z",
       "summary": "22 Oct: we re-checked the 34 projects we last graded on 28 Sep against their current code: 33 keep their grade (3 of them after a full re-read of changed code), and 1 could not be re-checked because the source is no longer online. Re-read in full after code changes, grades kept: flyvis A, flydoom-mutkuoz A and fly-dino C. Not re-checkable: flydoom (its repository is no longer online; grade C and its date unchanged).",

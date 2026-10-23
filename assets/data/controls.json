@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Digital Fly Lab controls ledger",
-  "version": "2026-10-22-run23",
-  "generated_at": "2026-10-22T12:00:00Z",
-  "run_id": "report-a0cfdac87a210856635dc0d5",
-  "as_of": "2026-10-22",
+  "version": "2026-10-23-run24",
+  "generated_at": "2026-10-23T12:00:00Z",
+  "run_id": "report-1deaa1b6e377526b046243aa",
+  "as_of": "2026-10-23",
   "answer": {
-    "one_line": "Sometimes: fly wiring beat scrambled wiring in 31 of 74 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (27).",
-    "short": "Of 84 control studies in our catalogue, 74 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 31, makes no difference in 21, does worse in 6, gives mixed results in 13 and is not yet scored in 3. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+    "one_line": "Sometimes: fly wiring beat scrambled wiring in 32 of 81 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (31).",
+    "short": "Of 91 control studies in our catalogue, 81 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 32, makes no difference in 23, does worse in 8, gives mixed results in 15 and is not yet scored in 3. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
     "counts": {
-      "studies": 84,
-      "with_wiring_null": 74,
+      "studies": 91,
+      "with_wiring_null": 81,
       "by_family": {
         "reflex-circuit": {
-          "helps": 8,
+          "helps": 9,
           "no_difference": 0,
           "worse": 0,
           "mixed": 1,
@@ -21,9 +21,9 @@
         },
         "sensory-model": {
           "helps": 5,
-          "no_difference": 0,
-          "worse": 1,
-          "mixed": 0,
+          "no_difference": 2,
+          "worse": 2,
+          "mixed": 2,
           "not_tested": 2
         },
         "body-steering": {
@@ -71,7 +71,7 @@
         "graph-analysis": {
           "helps": 1,
           "no_difference": 0,
-          "worse": 0,
+          "worse": 1,
           "mixed": 0,
           "not_tested": 0
         },
@@ -605,7 +605,7 @@
         "results_in_repo_files": true,
         "independent_test": false,
         "peer_review": "none",
-        "reason": "100 draws per family, bootstrap intervals, all 602 runs listed with output hashes; preprint not yet posted; not re-run by us.",
+        "reason": "100 draws per family, bootstrap intervals, all 602 runs listed with output hashes; preprint not yet posted; not re-run by us. The repository was no longer online on 22 and 23 Oct 2026; the grade and the numbers describe the code we read on 21 Oct.",
         "uncertainty_reported": false,
         "recomputed_by_us": false,
         "grade": "moderate"
@@ -721,6 +721,97 @@
           "label": "direct"
         }
       ],
+      "caveats": []
+    },
+    {
+      "id": "drosophila-connectome-sim",
+      "name": "Shiu et al. 2024 model re-run: sugar GRNs at 100 Hz, MN9 rate, real FlyWire v630 weights vs 10 weight-shuffled brains",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "reflex-circuit",
+      "loop": "open-loop",
+      "wiring": {
+        "dataset": "FlyWire",
+        "release": "v630",
+        "scope": "whole brain (Shiu et al. 2024 model files)"
+      },
+      "trained_parts": "none",
+      "metric": {
+        "name": "MN9 firing rate when sugar gustatory neurons are driven at 100 Hz, mean over 20 trials",
+        "unit": "Hz",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 67.45,
+        "n": 20,
+        "spread": "per trial up to 74.0 Hz",
+        "source": "144c6e1 results/sim/shuffle_mn9.csv column real_100Hz"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "weight-shuffled",
+          "null_type": "weight-shuffle",
+          "label": "weights permuted across the existing connections, structure and weight distribution kept (scripts/03_experiments.py lines 120-130); 10 shuffles",
+          "value": 0,
+          "n": 20,
+          "samples": 10,
+          "spread": "0.0 Hz in every trial of all 10 shuffles",
+          "readout_refit": null,
+          "source": "144c6e1 results/sim/shuffle_mn9.csv columns shuffled0-9_100Hz",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Means computed by us from the committed per-trial file (20 trials per arm). No no-brain baseline is reported and a firing rate has no chance level; stimulating 21 random central neurons instead of the sugar neurons gave 0.0 Hz (results/sim/random_mn9.csv). The original paper reports 1 of 100 shuffles responding.",
+        "headline_arm": "weight-shuffled",
+        "best_null_arm": "weight-shuffled",
+        "baseline_arm": null,
+        "retention": 0,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": 67.45
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 10,
+        "has_no_brain_baseline": false,
+        "reason": "Same model, input and seed for real and shuffled weights; the shuffle keeps every connection and the weight distribution, so degrees are kept.",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 20,
+        "held_out": false,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "Committed per-trial result file; a neural response in a reproduction of a published model; not re-run by us.",
+        "uncertainty_reported": false,
+        "recomputed_by_us": false,
+        "grade": "moderate"
+      },
+      "extraction": "files",
+      "one_line": "Sugar input drives MN9 at 67.45 Hz on real FlyWire weights, 0 Hz in all 10 weight-shuffled brains; no no-brain baseline reported, no chance level.",
+      "commit": "144c6e1c4aef89e22ab1947075cb9df452e2959c",
+      "checked_at": "2026-10-23T09:47:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/ollyblu/drosophila-connectome-sim/blob/144c6e1c4aef89e22ab1947075cb9df452e2959c/results/sim/shuffle_mn9.csv",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/ollyblu/drosophila-connectome-sim/blob/144c6e1c4aef89e22ab1947075cb9df452e2959c/scripts/03_experiments.py",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "helps",
+      "baseline_beaten": "not-tested",
       "caveats": []
     },
     {
@@ -1493,6 +1584,236 @@
       "caveats": []
     },
     {
+      "id": "fly-connectome-study-v4-stage3b",
+      "name": "fly-connectome-study fly-v4 stage 3b: can a student mushroom body with another fly's real PN to KC wiring learn a teacher built on hemibrain wiring better than shuffled or random wiring? (pre-registered, 100 worlds)",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "sensory-model",
+      "loop": "offline",
+      "wiring": {
+        "dataset": "MaleCNS",
+        "release": "v1.0",
+        "scope": "PN to KC wiring, right hemisphere (1,801 KCs); the teacher is built on hemibrain v1.2 right-hemisphere PN to KC wiring"
+      },
+      "trained_parts": "KC to output readout of the student, learning rate 0.05",
+      "metric": {
+        "name": "area under the student's learning curve (learning rate 0.05) when learning odour labels produced by a teacher built on hemibrain right-hemisphere wiring; student = MaleCNS right",
+        "unit": "AUC of learning curve",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 0.65,
+        "n": 100,
+        "spread": null,
+        "source": "2f8f472 fly-v4/RESULTS_v4_stage3b.md line 9 (teacher_H_R, student M_R)"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "marg_M_R",
+          "null_type": "degree-preserving",
+          "label": "input-total control: each KC keeps its in-degree and weights, inputs drawn by glomerulus totals (NOTES_v4_stage3b.md line 6)",
+          "value": 0.648,
+          "n": 100,
+          "samples": 100,
+          "spread": "99.4% CI of real minus arm [-0.002, +0.006]",
+          "readout_refit": true,
+          "source": "2f8f472 fly-v4/RESULTS_v4_stage3b.md lines 15 and 23",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "random",
+          "null_type": "random-graph",
+          "label": "random sparse PN to KC wiring",
+          "value": 0.628,
+          "n": 100,
+          "samples": 100,
+          "spread": "99.4% CI of real minus random [+0.017, +0.027]",
+          "readout_refit": true,
+          "source": "2f8f472 fly-v4/RESULTS_v4_stage3b.md lines 18 and 21",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": [
+          -0.002,
+          0.006
+        ],
+        "p": null,
+        "stat_note": "Author statistics (100 test worlds, main family at 99.4%): MaleCNS-right student minus random +0.022 [+0.017, +0.027], minus the input-total control +0.002 [-0.002, +0.006] ('equivalent'); FlyWire-right student +0.024 over random and +0.000 against its input-total control; a student with the teacher's own wiring reaches 0.680 (RESULTS_v4_stage3b.md lines 9-24; NOTES_v4_stage3b.md lines 6-9 and 18). The author reads the shared usable structure across flies as roughly the glomerulus-level input totals (NOTES line 16). The task measures agreement with the teacher's wiring (NOTES line 20). On real odours with random class labels the real wirings, input-total controls and random wiring are within 0.01 of each other (NOTES line 13). No no-brain baseline is reported; the chance level of this learning-curve score is not stated in the file.",
+        "headline_arm": "marg_M_R",
+        "best_null_arm": "marg_M_R",
+        "baseline_arm": null,
+        "retention": 0.9969,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": 0.002
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 100,
+        "has_no_brain_baseline": false,
+        "reason": "Same teacher, worlds (seeds 5000-5099), learning rate and readout for every student; all students use 1,801 KCs.",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 100,
+        "held_out": true,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "fly-connectome-study fly-v4 stage 3b: pre-registered, auto-generated results file; the author notes no independent review of this stage; not recomputed by us.",
+        "uncertainty_reported": true,
+        "recomputed_by_us": false,
+        "grade": "strong"
+      },
+      "extraction": "files",
+      "one_line": "Learning a hemibrain-wired teacher's labels, a student with real MaleCNS wiring scores 0.650 vs 0.648 input-total-kept, 0.628 random; no no-brain baseline.",
+      "commit": "2f8f47270ae9e1f0b3448ba8d23271bed4be594d",
+      "checked_at": "2026-10-23T09:55:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/meiluosi/fly-connectome-study/blob/2f8f47270ae9e1f0b3448ba8d23271bed4be594d/fly-v4/RESULTS_v4_stage3b.md",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/meiluosi/fly-connectome-study/blob/2f8f47270ae9e1f0b3448ba8d23271bed4be594d/fly-v4/NOTES_v4_stage3b.md",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "mixed",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
+      "id": "fly-connectome-study-v4-stage7",
+      "name": "fly-connectome-study fly-v4 stage 7: KC code of natural odour statistics (DoOR 2.0), real MaleCNS PN to KC wiring vs shuffled and random wiring, few-shot chemical-class accuracy (pre-registered, 100 worlds)",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "sensory-model",
+      "loop": "offline",
+      "wiring": {
+        "dataset": "MaleCNS",
+        "release": "v1.0",
+        "scope": "right-hemisphere mushroom body PN to KC wiring (65 glomeruli to Kenyon cells)"
+      },
+      "trained_parts": "none in the circuit; a nearest-centroid classifier fitted on 5 examples per class",
+      "metric": {
+        "name": "5-shot nearest-centroid balanced accuracy over 9 chemical classes of 301 DoOR 2.0 odours, mean over 100 worlds",
+        "unit": "balanced accuracy",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 0.349,
+        "n": 100,
+        "spread": null,
+        "source": "2f8f472 fly-v4/RESULTS_v4_stage7.md line 7 (real, 5-shot)"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "shuffled",
+          "null_type": "other",
+          "label": "shuffled PN to KC wiring (the author's 'shuffled' wiring; how it was shuffled in this stage was not re-read)",
+          "value": 0.332,
+          "n": 100,
+          "samples": 100,
+          "spread": "99.2% CI of real minus shuffled [-0.001, +0.036]",
+          "readout_refit": true,
+          "source": "2f8f472 fly-v4/RESULTS_v4_stage7.md lines 8 and 21",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "random",
+          "null_type": "random-graph",
+          "label": "random sparse PN to KC wiring",
+          "value": 0.329,
+          "n": 100,
+          "samples": 100,
+          "spread": "99.2% CI of real minus random [+0.002, +0.040]",
+          "readout_refit": true,
+          "source": "2f8f472 fly-v4/RESULTS_v4_stage7.md lines 9 and 22",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "raw",
+          "null_type": "no-graph-model",
+          "label": "raw glomerulus responses, no KC layer",
+          "value": 0.351,
+          "n": 100,
+          "samples": 1,
+          "spread": "95% CI of real minus raw [-0.016, +0.012]",
+          "readout_refit": true,
+          "source": "2f8f472 fly-v4/RESULTS_v4_stage7.md lines 12 and 25",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": [
+          -0.001,
+          0.036
+        ],
+        "p": null,
+        "stat_note": "Author statistics (100 worlds, paired differences, main family at 99.2%): real minus shuffled +0.017 [-0.001, +0.036] ('uncertain'), real minus random +0.020 [+0.002, +0.040] ('small-real'); the raw glomerulus responses without any KC layer score 0.351, level with real (real minus raw -0.002 [-0.016, +0.012]); chance about 0.11 (RESULTS_v4_stage7.md lines 3, 7-12, 21-25). The author's planted positive control (stage 0b) checks that the method can detect a planted wiring effect; it is about the method, not fly wiring: real minus shuffled +0.064 [+0.058, +0.071] in planted worlds, with a no-KC linear readout level with real (-0.004 [-0.008, +0.001]) (RESULTS_v4_stage0b.md lines 17-18 and 22). Stage 3b (individual differences) is a separate ledger study.",
+        "headline_arm": "shuffled",
+        "best_null_arm": "shuffled",
+        "baseline_arm": "raw",
+        "retention": 0.9513,
+        "retention_method": "ratio",
+        "baseline_retention": 1.0057,
+        "difference": 0.017
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 100,
+        "has_no_brain_baseline": true,
+        "reason": "Same odours, worlds (seeds 5000-5099) and classifier for every representation; a no-KC raw-response arm is included.",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 100,
+        "held_out": true,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "fly-connectome-study fly-v4 stage 7: pre-registered three-way decision rule, auto-generated results file; single author, not peer reviewed, not recomputed by us.",
+        "uncertainty_reported": true,
+        "recomputed_by_us": false,
+        "grade": "strong"
+      },
+      "extraction": "files",
+      "one_line": "Real MaleCNS wiring: 0.349 5-shot odour-class accuracy vs 0.332 shuffled, 0.329 random; raw responses without KCs 0.351; chance about 0.11.",
+      "commit": "2f8f47270ae9e1f0b3448ba8d23271bed4be594d",
+      "checked_at": "2026-10-23T09:45:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/meiluosi/fly-connectome-study/blob/2f8f47270ae9e1f0b3448ba8d23271bed4be594d/fly-v4/RESULTS_v4_stage7.md",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/meiluosi/fly-connectome-study/blob/2f8f47270ae9e1f0b3448ba8d23271bed4be594d/fly-v4/RESULTS_v4_stage0b.md",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "mixed",
+      "baseline_beaten": "no",
+      "caveats": []
+    },
+    {
       "id": "fly-ocr",
       "name": "Fly OCR",
       "evidence_grade": "A",
@@ -2063,6 +2384,188 @@
       "caveats": []
     },
     {
+      "id": "flywire-connectome-scz-step68",
+      "name": "flywire-connectome step 68: do activity-only decompositions recover the PN to KC input structure? Real wiring vs 10 strength-preserving random wirings (pre-registered)",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "sensory-model",
+      "loop": "offline",
+      "wiring": {
+        "dataset": "BANC",
+        "release": "v888",
+        "scope": "PN -> KC mushroom-body input layer of five hemispheres (BANC left and right, FlyWire left and right, hemibrain right); headline numbers BANC right"
+      },
+      "trained_parts": "none in the circuit; the decomposition methods (PCA, ICA, NMF, SAE) are fitted to simulated KC activity",
+      "metric": {
+        "name": "recovery R of the glomerulus input axes by non-negative matrix factorisation (NMF), mixed-odour regime, BANC right: mean best |cosine| per true atom",
+        "unit": "R (0-1)",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 0.575,
+        "n": 1,
+        "spread": null,
+        "source": "bd51de8 qc_reports/interpretability_ground_truth/decomposition.csv line 12 (BANC_right, real, M, NMF)"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "strength-preserving-random",
+          "null_type": "degree-preserving",
+          "label": "random wirings that keep each KC's input strength (10 draws, median shown); which PN feeds which KC is redrawn",
+          "value": 0.589,
+          "n": 10,
+          "samples": 10,
+          "spread": "range 0.557-0.618 over 10 draws",
+          "readout_refit": true,
+          "source": "bd51de8 qc_reports/interpretability_ground_truth/decomposition.csv lines 114-168 (BANC_right, null_0..null_9, M, NMF; median by us)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Median of the author's 10 null rows computed by us from the committed table. Chance level 0.053 (random atoms, line 16); no no-brain baseline applies to a decomposition score. BANC right: real 0.575, null median 0.589 (range 0.557-0.618; 8 of 10 nulls at or above real). Other hemispheres: BANC left real 0.568 vs null median 0.558 (1 of 10 nulls at or above real); FlyWire right real 0.515 vs null median 0.508 (4 of 10 nulls at or above real); FlyWire left real 0.514 vs null median 0.522 (7 of 10 nulls at or above real); hemibrain right real 0.477 vs null median 0.504 (10 of 10 nulls at or above real). The author's pre-registered prediction that real wiring makes recovery harder was rejected (docs/INTERPRETABILITY_GROUND_TRUTH.md lines 48-58 and 79); a later step corrected one other interpretation but kept 'real wiring equals strength-preserving random wiring' (line 5).",
+        "headline_arm": "strength-preserving-random",
+        "best_null_arm": "strength-preserving-random",
+        "baseline_arm": null,
+        "retention": 1.0243,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": -0.014
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 10,
+        "has_no_brain_baseline": false,
+        "reason": "Same stimuli (6,600 mixed-odour trials), model and fixed method settings for real and random wirings; the random wirings keep each KC's input strength.",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 10,
+        "held_out": false,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "flywire-connectome step 68: pre-registered, per-row results committed; 10 null draws; one decomposition setting per method; not re-run by us.",
+        "uncertainty_reported": false,
+        "recomputed_by_us": false,
+        "grade": "moderate"
+      },
+      "extraction": "files",
+      "one_line": "Activity-only NMF recovers KC input axes about equally from real (0.575) and strength-preserving random wiring (median 0.589, 10 draws); chance 0.053, BANC right.",
+      "commit": "bd51de86dc04d6fce44b6e4401cc00a9807162f1",
+      "checked_at": "2026-10-23T09:45:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/hyungwoo-jo/flywire-connectome-scz-simulation/blob/bd51de86dc04d6fce44b6e4401cc00a9807162f1/docs/INTERPRETABILITY_GROUND_TRUTH.md",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/hyungwoo-jo/flywire-connectome-scz-simulation/blob/bd51de86dc04d6fce44b6e4401cc00a9807162f1/qc_reports/interpretability_ground_truth/decomposition.csv",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "no-difference",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
+      "id": "flywire-connectome-scz-step69",
+      "name": "flywire-connectome step 69: is the real wiring in a flat spot? Odour identification with jittered synapses, real wiring vs 10 strength-preserving random wirings (pre-registered)",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "sensory-model",
+      "loop": "offline",
+      "wiring": {
+        "dataset": "BANC",
+        "release": "v888",
+        "scope": "PN -> KC mushroom-body input layer of five hemispheres; headline numbers BANC right"
+      },
+      "trained_parts": "none (fixed prototype-matching readout and a fixed value-memory rule)",
+      "metric": {
+        "name": "single-trial odour identification accuracy with every PN to KC synapse multiplied by a lognormal factor (sigma 0.3, 10 draws), fixed threshold, BANC right",
+        "unit": "fraction correct",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 0.954,
+        "n": 10,
+        "spread": null,
+        "source": "bd51de8 qc_reports/wiring_flatness/summary.csv line 72 (BANC_right, real, sigma 0.3, ident_fixed)"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "strength-preserving-random",
+          "null_type": "degree-preserving",
+          "label": "random wirings that keep each KC's input strength (10 draws, median shown)",
+          "value": 0.959,
+          "n": 10,
+          "samples": 10,
+          "spread": "range 0.954-0.964 over 10 draws",
+          "readout_refit": false,
+          "source": "bd51de8 qc_reports/wiring_flatness/summary.csv lines 42-69 (BANC_right, null_0..null_9, sigma 0.3; median by us)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Median of the author's 10 null rows computed by us. Before jitter, real 0.953 vs null median 0.96. The author's pre-registered flatness measure (drop with jitter, sigma 0.3): real -0.0002 vs null median +0.0014 (range -0.0022 to +0.0034); by the author's rule real is 'flatter' in 5 of 5 hemispheres, but the gap is 0.1-0.2 percentage points and inside the range of the 10 random wirings, and the author does not use it as evidence that the real wiring is special (docs/WIRING_FLATNESS.md lines 35 and 42-45). Wiring with equalised KC input strength: 0.879 at sigma 0.3 (identification falls 14-18 points before jitter, line 47). Other hemispheres at sigma 0.3: BANC left real 0.948 vs null median 0.952; FlyWire right real 0.97 vs null median 0.968; FlyWire left real 0.967 vs null median 0.967; hemibrain right real 0.943 vs null median 0.952. Chance for odour identity is not stated in the file; no no-brain baseline is reported.",
+        "headline_arm": "strength-preserving-random",
+        "best_null_arm": "strength-preserving-random",
+        "baseline_arm": null,
+        "retention": 1.0052,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": -0.005
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 10,
+        "has_no_brain_baseline": false,
+        "reason": "Same odours, noise trials, jitter draws, readout and threshold rule for real and random wirings; the random wirings keep each KC's input strength (WIRING_FLATNESS.md line 67).",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 10,
+        "held_out": false,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "flywire-connectome step 69: pre-registered, per-draw results committed; 10 null draws; a fixed readout; not re-run by us.",
+        "uncertainty_reported": false,
+        "recomputed_by_us": false,
+        "grade": "moderate"
+      },
+      "extraction": "files",
+      "one_line": "With every synapse jittered, real wiring identifies odours about as well as strength-preserving random wiring (0.954 vs median 0.959); no no-brain baseline reported.",
+      "commit": "bd51de86dc04d6fce44b6e4401cc00a9807162f1",
+      "checked_at": "2026-10-23T09:45:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/hyungwoo-jo/flywire-connectome-scz-simulation/blob/bd51de86dc04d6fce44b6e4401cc00a9807162f1/docs/WIRING_FLATNESS.md",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/hyungwoo-jo/flywire-connectome-scz-simulation/blob/bd51de86dc04d6fce44b6e4401cc00a9807162f1/qc_reports/wiring_flatness/summary.csv",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "no-difference",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
       "id": "malecns-visual-motor",
       "name": "malecns-visual-motor: MaleCNS v1.0 spiking network DNp15 direction contrast, original vs three degree-preserving rewired networks",
       "evidence_grade": "A",
@@ -2306,6 +2809,111 @@
         }
       ],
       "wiring_effect": "helps",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
+      "id": "owen-silva-fly-brain",
+      "name": "Fly Brain Simulator, mushroom-body continual learning (left half): 110 odours in 10 tasks, real PN-KC wiring vs shuffled and uniform wiring (pre-registered)",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "sensory-model",
+      "loop": "open-loop",
+      "wiring": {
+        "dataset": "FlyWire",
+        "release": "630",
+        "scope": "uniglomerular projection neuron to Kenyon cell layer, left brain half (2,397 Kenyon cells, 55 glomeruli)"
+      },
+      "trained_parts": "Kenyon-cell to output synapses (capped Hebbian-style rule)",
+      "metric": {
+        "name": "final accuracy on all 110 odours after task 10, left half",
+        "unit": "fraction correct",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 0.575,
+        "n": 20,
+        "spread": "SE 0.002",
+        "source": "3e49246 experiments/mb_continual/results/incremental_summary.csv line 2"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "shuffled",
+          "null_type": "degree-preserving",
+          "label": "each Kenyon cell keeps its input count and synapse counts, glomeruli redrawn with the real frequencies (preregistration lines 26-27)",
+          "value": 0.644,
+          "n": 20,
+          "samples": 20,
+          "spread": "SE 0.004",
+          "readout_refit": true,
+          "source": "3e49246 experiments/mb_continual/results/incremental_summary.csv line 3",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "uniform",
+          "null_type": "degree-preserving",
+          "label": "as shuffled, all 55 glomeruli equally likely (preregistration lines 27-28)",
+          "value": 0.668,
+          "n": 20,
+          "samples": 20,
+          "spread": "SE 0.003",
+          "readout_refit": true,
+          "source": "3e49246 experiments/mb_continual/results/incremental_summary.csv line 4",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Pre-registered rule: 'lower' if the mean paired difference is below -2 SE (paired and unpaired); real minus shuffled -0.068 (SE 0.005), real minus uniform -0.092 (SE 0.004), call 'lower' in both halves (verdicts.csv lines 2-5; right half 0.589 vs 0.640 and 0.668). No no-brain baseline is reported; chance is about 0.009; a sequential MLP reached 0.145 and a jointly trained MLP 0.932.",
+        "headline_arm": "shuffled",
+        "best_null_arm": "uniform",
+        "baseline_arm": null,
+        "retention": 1.12,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": -0.069
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 20,
+        "has_no_brain_baseline": false,
+        "reason": "Same read-out rule, odours, noisy trials and task order per seed for real and control wirings; a new control draw for each seed; the rule was frozen before the real and shuffled runs.",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 20,
+        "held_out": true,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "Pre-registered with committed per-condition summaries and verdicts; held-out test trials; one layer of the wiring in a rate model; not re-run by us.",
+        "uncertainty_reported": false,
+        "recomputed_by_us": false,
+        "grade": "moderate"
+      },
+      "extraction": "files",
+      "one_line": "The real PN-KC wiring learned 110 odours less well (57.5%) than shuffled (64.4%) or uniform (66.8%) wiring, pre-registered, 20 seeds.",
+      "commit": "3e4924678bee2f029693956115ceca3a59975b72",
+      "checked_at": "2026-10-23T09:50:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/Owen-Silva/fly-brain/blob/3e4924678bee2f029693956115ceca3a59975b72/experiments/mb_continual/results/incremental_summary.csv",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/Owen-Silva/fly-brain/blob/3e4924678bee2f029693956115ceca3a59975b72/experiments/mb_continual/results/preregistration.md",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "worse",
       "baseline_beaten": "not-tested",
       "caveats": []
     },
@@ -10015,6 +10623,97 @@
       "caveats": []
     },
     {
+      "id": "fly-brain-resuscitation",
+      "name": "Reviving a model fly brain, structural part: sensory-to-motor reachability under connectivity-ordered neuron removal, real FAFB v783 vs one degree-preserving rewired copy",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "graph-analysis",
+      "loop": "open-loop",
+      "wiring": {
+        "dataset": "FlyWire",
+        "release": "FAFB v783",
+        "scope": "whole brain, connections of at least five synapses"
+      },
+      "trained_parts": "none",
+      "metric": {
+        "name": "critical fraction f_c of neurons removed (in order of connectivity) at which sensory-to-motor reachability within six steps (reachN_L6) collapses",
+        "unit": "fraction of neurons",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 0.035,
+        "n": 3,
+        "spread": "3 removal orders (n_random_orders column); f_c under random removal 0.800",
+        "source": "48294c0 results/structure/FAFB_results_ratios.csv line 12 (thr5, degree, reachN_L6, fc_target 0.0352)"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "rewired",
+          "null_type": "degree-preserving",
+          "label": "directed configuration null: targets shuffled, in/out stubs kept (src/perclib.py lines 38-39), one rewired copy (seed 100, experiments/structure/run_ds.py line 67)",
+          "value": 0.266,
+          "n": 1,
+          "samples": 1,
+          "spread": "one rewired graph; f_c under random removal 0.893",
+          "readout_refit": null,
+          "source": "48294c0 results/structure/FAFB_results_ratios.csv line 2 (null0, degree, reachN_L6, fc_target 0.2657)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Author's committed structure table (bootstrap CI on the targeted/random ratio only: real 0.044 [0.0436, 0.0444], rewired 0.297 [0.295, 0.299]). We read a higher critical fraction as a sturdier network; the author reports the comparison as a property of the wiring, not as a score. No no-brain baseline applies and the measure has no chance level. The anoxia and reperfusion dynamics behind the headline claim have no wiring control.",
+        "headline_arm": "rewired",
+        "best_null_arm": "rewired",
+        "baseline_arm": null,
+        "retention": 7.6,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": -0.231
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 1,
+        "has_no_brain_baseline": false,
+        "reason": "Same removal procedure and reachability measure on the real and rewired graphs; the rewiring keeps each neuron's in- and out-degree; a single rewired copy.",
+        "verdict": "partly-fair"
+      },
+      "quality": {
+        "n_per_arm": 1,
+        "held_out": false,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "preprint",
+        "reason": "Committed result tables with the null rows; one rewired copy; a structural measure, not the dynamics behind the main claim; not re-run by us.",
+        "uncertainty_reported": false,
+        "recomputed_by_us": false,
+        "grade": "weak"
+      },
+      "extraction": "files",
+      "one_line": "Hub-ordered removal collapses reachability after 3.5% of neurons in the real FAFB wiring, against 26.6% in a degree-preserving rewired copy; we read a higher critical fraction as a sturdier network; the author does not present it as a score.",
+      "commit": "48294c07e37aa65ce3c26adfc3e6f55e47f74fdf",
+      "checked_at": "2026-10-23T09:45:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/KalarisLabs/fly-brain-resuscitation/blob/48294c07e37aa65ce3c26adfc3e6f55e47f74fdf/results/structure/FAFB_results_ratios.csv",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/KalarisLabs/fly-brain-resuscitation/blob/48294c07e37aa65ce3c26adfc3e6f55e47f74fdf/src/perclib.py",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "worse",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
       "id": "wired-different",
       "name": "Wired Different (ConnectomeLens)",
       "evidence_grade": "n/a",
@@ -10443,6 +11142,19 @@
       "caveats": []
     },
     {
+      "study_id": "drosophila-connectome-sim",
+      "label": "Shiu et al. 2024 model re-run: sugar GRNs at 100 Hz, MN9 rate, real FlyWire v630 weights vs 10 weight-shuffled brains",
+      "task_family": "reflex-circuit",
+      "headline_null_type": "weight-shuffle",
+      "retention": 0,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "helps",
+      "quality": "moderate",
+      "fairness": "fair",
+      "caveats": []
+    },
+    {
       "study_id": "fly-brain-lulzx",
       "label": "fly-brain",
       "task_family": "reflex-circuit",
@@ -10521,6 +11233,32 @@
       "caveats": []
     },
     {
+      "study_id": "fly-connectome-study-v4-stage3b",
+      "label": "fly-connectome-study fly-v4 stage 3b: can a student mushroom body with another fly's real PN to KC wiring learn a teacher built on hemibrain wiring better than shuffled or random wiring? (pre-registered, 100 worlds)",
+      "task_family": "sensory-model",
+      "headline_null_type": "degree-preserving",
+      "retention": 0.9969,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "mixed",
+      "quality": "strong",
+      "fairness": "fair",
+      "caveats": []
+    },
+    {
+      "study_id": "fly-connectome-study-v4-stage7",
+      "label": "fly-connectome-study fly-v4 stage 7: KC code of natural odour statistics (DoOR 2.0), real MaleCNS PN to KC wiring vs shuffled and random wiring, few-shot chemical-class accuracy (pre-registered, 100 worlds)",
+      "task_family": "sensory-model",
+      "headline_null_type": "degree-preserving",
+      "retention": 0.9513,
+      "retention_method": "ratio",
+      "baseline_retention": 1.0057,
+      "wiring_effect": "mixed",
+      "quality": "strong",
+      "fairness": "fair",
+      "caveats": []
+    },
+    {
       "study_id": "fly-ocr",
       "label": "Fly OCR",
       "task_family": "sensory-model",
@@ -10573,6 +11311,32 @@
       "caveats": []
     },
     {
+      "study_id": "flywire-connectome-scz-step68",
+      "label": "flywire-connectome step 68: do activity-only decompositions recover the PN to KC input structure? Real wiring vs 10 strength-preserving random wirings (pre-registered)",
+      "task_family": "sensory-model",
+      "headline_null_type": "degree-preserving",
+      "retention": 1.0243,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "no-difference",
+      "quality": "moderate",
+      "fairness": "fair",
+      "caveats": []
+    },
+    {
+      "study_id": "flywire-connectome-scz-step69",
+      "label": "flywire-connectome step 69: is the real wiring in a flat spot? Odour identification with jittered synapses, real wiring vs 10 strength-preserving random wirings (pre-registered)",
+      "task_family": "sensory-model",
+      "headline_null_type": "degree-preserving",
+      "retention": 1.0052,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "no-difference",
+      "quality": "moderate",
+      "fairness": "fair",
+      "caveats": []
+    },
+    {
       "study_id": "malecns-visual-motor",
       "label": "malecns-visual-motor: MaleCNS v1.0 spiking network DNp15 direction contrast, original vs three degree-preserving rewired networks",
       "task_family": "sensory-model",
@@ -10596,6 +11360,19 @@
       "wiring_effect": "helps",
       "quality": "weak",
       "fairness": "partly-fair",
+      "caveats": []
+    },
+    {
+      "study_id": "owen-silva-fly-brain",
+      "label": "Fly Brain Simulator, mushroom-body continual learning (left half): 110 odours in 10 tasks, real PN-KC wiring vs shuffled and uniform wiring (pre-registered)",
+      "task_family": "sensory-model",
+      "headline_null_type": "degree-preserving",
+      "retention": 1.12,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "worse",
+      "quality": "moderate",
+      "fairness": "fair",
       "caveats": []
     },
     {
@@ -11379,6 +12156,19 @@
       "wiring_effect": "no-difference",
       "quality": "moderate",
       "fairness": "fair",
+      "caveats": []
+    },
+    {
+      "study_id": "fly-brain-resuscitation",
+      "label": "Reviving a model fly brain, structural part: sensory-to-motor reachability under connectivity-ordered neuron removal, real FAFB v783 vs one degree-preserving rewired copy",
+      "task_family": "graph-analysis",
+      "headline_null_type": "degree-preserving",
+      "retention": 7.6,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "worse",
+      "quality": "weak",
+      "fairness": "partly-fair",
       "caveats": []
     },
     {

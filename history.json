@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-1deaa1b6e377526b046243aa",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-23T09:31:00Z",
+      "completed_at": "2026-10-23T10:20:00Z",
+      "title": "Twenty-fourth check: a group-matched control for the relays, and the second re-check of our grades",
+      "summary": "Left eye: in 1 of 5 matched groups the turn neuron's rate fell as low as, or lower than, with the relays silenced (matched groups 13-31 Hz, relays 16.0 Hz, nothing silenced 21-25 Hz). By our pre-registered rule, this test does not show that the relays matter more than other inputs with the same combined connection strength and activity. Right eye: among the 9 other active neurons that excite the turn neuron, no group came within 20% of the relays on both combined activity and synapse count (we had set 5 groups as the minimum in advance), so this control could not be built for this eye. 23 Oct: we re-checked the 28 projects we last graded between 29 Sep and 5 Oct against their current code: 27 keep their grade (5 after a full re-read); 1 more will be re-checked in the next run. 200 entries (3 new); controls ledger 91 studies, 81 with a wiring null: helps 32, no difference 23, worse 8, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 32 of 81.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-23-run24/",
+      "entrypoint": "reports/2026-10-23-run24/index.html"
+    },
+    {
       "run_id": "report-a0cfdac87a210856635dc0d5",
       "status": "completed",
       "answer_change": "meaningful_change",
