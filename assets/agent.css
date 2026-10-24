@@ -1240,3 +1240,10 @@
 [data-agent-document] .dfl-r24gm ul { margin: 0.3rem 0; padding-left: 1.1rem; }
 [data-agent-document] .dfl-r24gm li { margin: 0.2rem 0; }
 [data-agent-document] .dfl-svg .lr-open.r24-gm { fill: var(--dfl-amber-bg); stroke: var(--dfl-amber); stroke-width: 2.2; }
+
+/* Run 25 (2026-10-24): fly-chess readout-probe bars in the 24 Oct report */
+[data-agent-document] .dfl-svg.dfl-fcbars { max-width: 40rem; }
+[data-agent-document] .dfl-svg .fc-real { fill: var(--dfl-blue); }
+[data-agent-document] .dfl-svg .fc-shuf { fill: var(--dfl-fx-worse); }
+[data-agent-document] .dfl-svg .fc-les { fill: var(--dfl-muted); }
+[data-agent-document] .dfl-svg .fc-blind { fill: var(--dfl-faint); }

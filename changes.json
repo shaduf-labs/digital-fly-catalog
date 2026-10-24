@@ -2,6 +2,48 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-24-run25-recheck",
+      "changed_at": "2026-10-24T10:15:00Z",
+      "summary": "24 Oct: we re-checked the 31 projects we last graded between 6 and 12 Oct against their current code: 31 keep their grade (1 after a full re-read). 24 Oct: the project left from the 23 Oct re-check, acamilo-flybrain, keeps its grade C after a full re-read. brainlab keeps A after a full re-read: on 23 Oct 2026 the author added a report that records a failed check of a different result, whether the real wiring helps the frozen olfactory circuit integrate angular velocity (the real wiring did no better than a no-information guess); the first-campaign report its grade cites did not change.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-24-run25/#recheck-heading"
+    },
+    {
+      "change_id": "2026-10-24-run25-entries",
+      "changed_at": "2026-10-24T10:15:00Z",
+      "summary": "202 catalogue entries (24 Oct 2026): 2 new: somahouse A (helps): from the author's committed held-out results (60 test scenarios, 3 training seeds; not re-run by us), the fly-derived circuit cost 0.1589 against 0.1622 for a degree-preserving rewired copy (lower is better), but dense wiring (0.1538) and a conventional controller with no brain (0.1172) both cost less than the fly wiring. fly-trader A (no difference): from the author's committed matched comparison (3 seeds, 10 unseen tickers; not re-run by us), the excess return over buy-and-hold (the no-brain baseline, 0 by definition) was +280.3 points with the FlyWire circuit against +211.0 with a random-weight circuit of the same size (paired difference +69.3, 95% interval -186.6 to +325.3). fly-chess keeps B, and its wiring result is now worse: the author committed a shuffled-wiring control, and under the same readout probe the shuffled brain scored higher than the real one (20.9% against 18.0% top-1; board-blind 11.7%; on the author's Elo ladder 682 against 653 and 631). Only a readout is trained on the frozen connectome. Odyssey-3 claim: No method, code or write-up was published as of 24 Oct 2026; no public fly mode found on the preview page (24 Oct).",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-24"
+    },
+    {
+      "change_id": "2026-10-24-run25-ledger",
+      "changed_at": "2026-10-24T10:15:00Z",
+      "summary": "Controls ledger (24 Oct 2026): 3 new rows (somahouse helps, fly-trader no difference, fly-chess worse), now 94 studies, 84 with a wiring null: helps 33, no difference 24, worse 9, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 33 of 84. Scoring unchanged.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed25-heading"
+    },
+    {
+      "change_id": "2026-10-24-run25-browser",
+      "changed_at": "2026-10-24T10:15:00Z",
+      "summary": "neural-canvas browser check (24 Oct 2026): 24 Oct: in a headless browser without a GPU, after we pressed 'Download & start', the page downloaded about 77 MB of connectome data within 82 seconds and started a background worker, and the picture kept changing in our screenshots after that. Screenshots cannot show whether the brain drives the movement. Our screenshot requests timed out from about 143 seconds after the click, so we have no picture of the page for the rest of our watch. We identified the connectome files by their web address, a method we fixed before this check. The page's own status line read \"JavaScript · 0.08× realtime · 0 spikes\". In our browser checks of 3, 6, 11, 17, 18, 20, 22 and 24 Oct 2026, 8 of 13 demos ran by our check's rule on a machine without a GPU at their latest check. neural-canvas is not counted among them: our check's rule marks a page as unresponsive when its screenshot requests fail, and on 24 Oct our screenshot requests timed out from about 143 seconds after the click, so we have no picture of the page for the rest of our watch.",
+      "path": "/p/digital-fly-catalog/ways-to-try/#run25-heading"
+    },
+    {
+      "change_id": "2026-10-24-run25-open-source",
+      "changed_at": "2026-10-24T10:15:00Z",
+      "summary": "New plain answer on Is it real?: Is the fruit fly brain open source? From the licence facts already on our pages (FlyWire CC BY-NC 4.0 by our stricter reading vs CC BY 4.0 on its Zenodo record; code licences per project).",
+      "path": "/p/digital-fly-catalog/is-it-real/#q-open"
+    },
+    {
+      "change_id": "2026-10-24-run25-tracking",
+      "changed_at": "2026-10-24T10:15:00Z",
+      "summary": "Tracking (24 Oct 2026): 143 tracked repositories checked on 24 Oct 2026: 138 unchanged, 2 already gone, 3 changed (among them flybench, whose new commit will be checked against its grade in the next run); no new broken links; 56 of 56 videos available. View counts: 12 of the 56 videos were refreshed from YouTube search pages on 24 Oct 2026 (approximate snapshots); the other 44 keep their earlier dated values.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-24-run25/#tracking-heading"
+    },
+    {
+      "change_id": "2026-10-24-run25-report",
+      "changed_at": "2026-10-24T10:15:00Z",
+      "summary": "New report: Twenty-fifth check (24 Oct 2026), with the re-check of 31 grades, fly-chess's shuffled-wiring control, two new entries, three ledger rows, neural-canvas in our browser and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-24-run25/"
+    },
+    {
       "change_id": "2026-10-23-run24-relays",
       "changed_at": "2026-10-23T10:20:00Z",
       "summary": "Relays (pre-registered, brain only; the 13 Oct headline and 15 Oct lines unchanged): 23 Oct: our earlier controls matched each relay neuron's activity, but not how strongly it connects to the turn neuron. This time the control is a group of other active neurons that excite the turn neuron, chosen so that together they fire about as much as the active relays and send about as many synapses to the turn neuron (both within 20%). Left eye: in 1 of 5 matched groups the turn neuron's rate fell as low as, or lower than, with the relays silenced (matched groups 13-31 Hz, relays 16.0 Hz, nothing silenced 21-25 Hz). By our pre-registered rule, this test does not show that the relays matter more than other inputs with the same combined connection strength and activity. Right eye: among the 9 other active neurons that excite the turn neuron, no group came within 20% of the relays on both combined activity and synapse count (we had set 5 groups as the minimum in advance), so this control could not be built for this eye. Our rule compares the relays with the lowest matched group, so extra groups can only make the relays look less special, never more. Left eye: outside the stimulated looming neurons, the brain fired 13,581-14,040 spikes with a matched group silenced, against 13,901-14,760 with the relays silenced and 14,502-15,172 with nothing silenced. One model, brain only, one stimulus strength (80 spikes/s), 5 matched groups on the left eye only, each run once; the 5 groups all share the same three most active neurons, so they are not independent draws; not a real fly.",

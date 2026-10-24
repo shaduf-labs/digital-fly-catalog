@@ -3090,6 +3090,66 @@
       "accessed_at": "2026-10-23T10:20:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-run25",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
+      "title": "Digital Fly Lab controls ledger (24 Oct 2026)",
+      "claim": "94 studies, 84 with a wiring null: helps 33, no difference 24, worse 9, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 33 of 84. Three rows joined on 24 Oct, scored by fixed rules from the authors' committed numbers.",
+      "accessed_at": "2026-10-24T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "recheck-run25",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-24-run25/#recheck-heading",
+      "title": "Digital Fly Lab re-check of grades (24 Oct 2026)",
+      "claim": "24 Oct: we re-checked the 31 projects we last graded between 6 and 12 Oct against their current code: 31 keep their grade (1 after a full re-read). 24 Oct: the project left from the 23 Oct re-check, acamilo-flybrain, keeps its grade C after a full re-read.",
+      "accessed_at": "2026-10-24T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "browser-run25",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-24-run25/#browser-heading",
+      "title": "Digital Fly Lab browser check of neural-canvas (24 Oct 2026)",
+      "claim": "24 Oct: in a headless browser without a GPU, after we pressed 'Download & start', the page downloaded about 77 MB of connectome data within 82 seconds and started a background worker, and the picture kept changing in our screenshots after that. Screenshots cannot show whether the brain drives the movement. Our screenshot requests timed out from about 143 seconds after the click, so we have no picture of the page for the rest of our watch. We identified the connectome files by their web address, a method we fixed before this check. The page's own status line read \"JavaScript · 0.08× realtime · 0 spikes\".",
+      "accessed_at": "2026-10-24T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "somahouse-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/thekozugroup/SomaHouse",
+      "title": "SomaHouse repository (thekozugroup)",
+      "claim": "somahouse A (helps): from the author's committed held-out results (60 test scenarios, 3 training seeds; not re-run by us), the fly-derived circuit cost 0.1589 against 0.1622 for a degree-preserving rewired copy (lower is better), but dense wiring (0.1538) and a conventional controller with no brain (0.1172) both cost less than the fly wiring.",
+      "accessed_at": "2026-10-24T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-trader-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/JefryV2/fly-trader",
+      "title": "FlyTrader repository (JefryV2)",
+      "claim": "fly-trader A (no difference): from the author's committed matched comparison (3 seeds, 10 unseen tickers; not re-run by us), the excess return over buy-and-hold (the no-brain baseline, 0 by definition) was +280.3 points with the FlyWire circuit against +211.0 with a random-weight circuit of the same size (paired difference +69.3, 95% interval -186.6 to +325.3).",
+      "accessed_at": "2026-10-24T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-chess-controls-run25",
+      "source_type": "repository",
+      "source_url": "https://github.com/s1ms4/fly-chess",
+      "title": "fly-chess repository (s1ms4), committed shuffled-wiring and lesion controls",
+      "claim": "fly-chess keeps B, and its wiring result is now worse: the author committed a shuffled-wiring control, and under the same readout probe the shuffled brain scored higher than the real one (20.9% against 18.0% top-1; board-blind 11.7%; on the author's Elo ladder 682 against 653 and 631). Only a readout is trained on the frozen connectome.",
+      "accessed_at": "2026-10-24T10:15:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }

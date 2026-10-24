@@ -349,7 +349,7 @@
     "string",
     "null"
    ],
-   "description": "Publisher note for borderline or reviewed grades. The grade itself is unchanged."
+   "description": "Editorial note for borderline or reviewed grades. The grade itself is unchanged."
   },
   "try_note": {
    "type": "string",

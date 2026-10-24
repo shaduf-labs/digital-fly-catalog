@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-93f3aad5e9022a90ec82f51f",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-24T09:32:00Z",
+      "completed_at": "2026-10-24T10:15:00Z",
+      "title": "Twenty-fifth check: the third re-check of our grades, and neural-canvas's connectome download",
+      "summary": "24 Oct: we re-checked the 31 projects we last graded between 6 and 12 Oct against their current code: 31 keep their grade (1 after a full re-read). fly-chess keeps B, and its wiring result is now worse: the author committed a shuffled-wiring control, and under the same readout probe the shuffled brain scored higher than the real one (20.9% against 18.0% top-1; board-blind 11.7%; on the author's Elo ladder 682 against 653 and 631). Only a readout is trained on the frozen connectome. 202 entries (2 new); controls ledger 94 studies, 84 with a wiring null: helps 33, no difference 24, worse 9, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 33 of 84. 24 Oct: in a headless browser without a GPU, after we pressed 'Download & start', the page downloaded about 77 MB of connectome data within 82 seconds and started a background worker, and the picture kept changing in our screenshots after that. Screenshots cannot show whether the brain drives the movement. Our screenshot requests timed out from about 143 seconds after the click, so we have no picture of the page for the rest of our watch.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-24-run25/",
+      "entrypoint": "reports/2026-10-24-run25/index.html"
+    },
+    {
       "run_id": "report-1deaa1b6e377526b046243aa",
       "status": "completed",
       "answer_change": "meaningful_change",

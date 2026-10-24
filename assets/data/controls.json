@@ -1,16 +1,16 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Digital Fly Lab controls ledger",
-  "version": "2026-10-23-run24",
-  "generated_at": "2026-10-23T12:00:00Z",
-  "run_id": "report-1deaa1b6e377526b046243aa",
-  "as_of": "2026-10-23",
+  "version": "2026-10-24-run25",
+  "generated_at": "2026-10-24T12:00:00Z",
+  "run_id": "report-93f3aad5e9022a90ec82f51f",
+  "as_of": "2026-10-24",
   "answer": {
-    "one_line": "Sometimes: fly wiring beat scrambled wiring in 32 of 81 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (31).",
-    "short": "Of 91 control studies in our catalogue, 81 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 32, makes no difference in 23, does worse in 8, gives mixed results in 15 and is not yet scored in 3. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+    "one_line": "Sometimes: fly wiring beat scrambled wiring in 33 of 84 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (33).",
+    "short": "Of 94 control studies in our catalogue, 84 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 33, makes no difference in 24, does worse in 9, gives mixed results in 15 and is not yet scored in 3. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
     "counts": {
-      "studies": 91,
-      "with_wiring_null": 81,
+      "studies": 94,
+      "with_wiring_null": 84,
       "by_family": {
         "reflex-circuit": {
           "helps": 9,
@@ -27,7 +27,7 @@
           "not_tested": 2
         },
         "body-steering": {
-          "helps": 6,
+          "helps": 7,
           "no_difference": 2,
           "worse": 0,
           "mixed": 2,
@@ -36,7 +36,7 @@
         "game-play": {
           "helps": 9,
           "no_difference": 10,
-          "worse": 1,
+          "worse": 2,
           "mixed": 3,
           "not_tested": 4
         },
@@ -63,7 +63,7 @@
         },
         "forecasting": {
           "helps": 0,
-          "no_difference": 1,
+          "no_difference": 2,
           "worse": 0,
           "mixed": 0,
           "not_tested": 1
@@ -4346,6 +4346,156 @@
       "caveats": []
     },
     {
+      "id": "somahouse",
+      "name": "SomaHouse: held-out weighted cost of a fly-derived 32-cell house controller vs a degree-preserving rewired copy, dense and no-hub circuits and a conventional controller",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "body-steering",
+      "loop": "closed-loop",
+      "wiring": {
+        "dataset": "MaleCNS",
+        "release": "v1.0",
+        "scope": "32 source neurons per module, eight modules plus an engineered hub"
+      },
+      "trained_parts": "all circuit weights (direct policy optimisation through differentiable physics)",
+      "metric": {
+        "name": "weighted cost on 60 held-out 48-hour house scenarios (comfort, CO2, light, energy)",
+        "unit": "weighted cost",
+        "higher_is_better": false
+      },
+      "real": {
+        "value": 0.1589,
+        "n": 3,
+        "spread": "3 training seeds averaged per scenario; 60 paired test scenarios",
+        "source": "7e83715 docs/results.json summaries (fly32, normal) and docs/report.md line 74"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "rewired32",
+          "null_type": "degree-preserving",
+          "label": "exact-degree rewired copy of the 32-cell graph, same training draws and schedule (docs/report.md line 50)",
+          "value": 0.1622,
+          "n": 3,
+          "samples": 3,
+          "spread": "3 training seeds; CI of real minus arm [-0.00644, -0.00076]",
+          "readout_refit": true,
+          "source": "7e83715 docs/results.json summaries (rewired32) and comparisons (fly32 minus rewired32)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "dense32",
+          "null_type": "other",
+          "label": "dense artificial wiring of the same size, equally trained",
+          "value": 0.1538,
+          "n": 3,
+          "samples": 3,
+          "spread": "3 training seeds",
+          "readout_refit": true,
+          "source": "7e83715 docs/results.json summaries (dense32); docs/report.md lines 75, 96",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "nohub32",
+          "null_type": "lesion",
+          "label": "the same circuit without the hub",
+          "value": 0.1671,
+          "n": 3,
+          "samples": 3,
+          "spread": "3 training seeds",
+          "readout_refit": true,
+          "source": "7e83715 docs/results.json summaries (nohub32); docs/report.md line 97",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "balance-controller",
+          "null_type": "no-brain-baseline",
+          "label": "conventional balance controller, no neural circuit",
+          "value": 0.1172,
+          "n": 1,
+          "samples": 1,
+          "spread": "deterministic controller, 60 scenarios",
+          "readout_refit": null,
+          "source": "7e83715 docs/results.json summaries (balance, normal); docs/report.md line 68",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "untrained32",
+          "null_type": "untrained",
+          "label": "the circuit before training",
+          "value": 106.5196,
+          "n": 3,
+          "samples": 3,
+          "spread": "3 seeds",
+          "readout_refit": null,
+          "source": "7e83715 docs/results.json summaries (untrained32); docs/report.md line 78",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": [
+          -0.00644,
+          -0.00076
+        ],
+        "p": null,
+        "stat_note": "Author's paired bootstrap over 60 test scenarios after averaging 3 training seeds (fly32 minus rewired32 cost -0.00330; lower is better). The author notes the intervals condition on the three seeds. The conventional balance controller with no brain (0.1172) and dense wiring (0.1538) both cost less than the fly circuit.",
+        "headline_arm": "rewired32",
+        "best_null_arm": "rewired32",
+        "baseline_arm": "balance-controller",
+        "retention": null,
+        "retention_method": "none",
+        "baseline_retention": null,
+        "difference": -0.0033
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 3,
+        "has_no_brain_baseline": true,
+        "reason": "Same training draws, optimiser schedule and test scenarios for the fly and rewired circuits; the rewiring keeps exact degrees; three seeds per arm.",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 3,
+        "held_out": true,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "Committed held-out results with paired intervals and a frozen selection; three training seeds; not re-run by us.",
+        "uncertainty_reported": true,
+        "recomputed_by_us": false,
+        "grade": "strong"
+      },
+      "extraction": "files",
+      "one_line": "The fly-derived circuit cost 0.1589 against 0.1622 for a degree-preserving rewired copy, but dense wiring (0.1538) and a conventional controller without a brain (0.1172) both cost less (lower is better).",
+      "commit": "7e83715c96b12844312809bbe85f92abaf309acd",
+      "checked_at": "2026-10-24T09:45:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/thekozugroup/SomaHouse/blob/7e83715c96b12844312809bbe85f92abaf309acd/docs/results.json",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/thekozugroup/SomaHouse/blob/7e83715c96b12844312809bbe85f92abaf309acd/docs/report.md",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "helps",
+      "baseline_beaten": "no",
+      "caveats": []
+    },
+    {
       "id": "therealfly",
       "name": "therealfly: MaleCNS v1.0 LIF cord under DNa01/DNa02 drive, 5-15 Hz rhythm test, measured vs degree-preserving scrambled cord (6 seeds)",
       "evidence_grade": "A",
@@ -5502,6 +5652,145 @@
         }
       ],
       "wiring_effect": "helps",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
+      "id": "fly-chess",
+      "name": "fly-chess: frozen MaleCNS v1.0 rate model read out by a linear move readout, real vs shuffled wiring and region lesions under the same readout probe",
+      "evidence_grade": "B",
+      "made_by_us": false,
+      "task_family": "game-play",
+      "loop": "offline",
+      "wiring": {
+        "dataset": "MaleCNS",
+        "release": "v1.0",
+        "scope": "traced neurons with a known superclass, connections of at least 5 synapses, transmitter-derived signs"
+      },
+      "trained_parts": "calibration constants and a linear move readout on the descending neurons, fitted on 50,000 Stockfish-labelled positions; connection strengths frozen",
+      "metric": {
+        "name": "top-1 agreement with Stockfish's best move on 4,096 held-out positions (readout probe)",
+        "unit": "percent",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 18.02,
+        "n": 1,
+        "spread": null,
+        "source": "5e4d18e results/probe-real/metrics.jsonl line 2 (top1 0.1802)"
+      },
+      "floor": {
+        "label": "board-blind baseline (same positions, no board input)",
+        "value": 11.69,
+        "source": "5e4d18e results/probe-real/metrics.jsonl line 1 (blind_top1 0.1169)"
+      },
+      "arms": [
+        {
+          "arm_id": "shuffled",
+          "null_type": "degree-preserving",
+          "label": "Targets of all connections permuted (each neuron keeps its outputs' count, signs and strengths; the target multiset is kept, self-loops dropped; flychess/connectome.py lines 163-167), seed 0, same calibration and readout probe",
+          "value": 20.9,
+          "n": 1,
+          "samples": 1,
+          "spread": null,
+          "readout_refit": true,
+          "source": "5e4d18e results/probe-shuffled/metrics.jsonl line 2 (top1 0.209)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "no-central-brain",
+          "null_type": "lesion",
+          "label": "All connections out of the central brain cut (flychess/connectome.py lines 169-171), same probe",
+          "value": 17.94,
+          "n": 1,
+          "samples": 1,
+          "spread": null,
+          "readout_refit": true,
+          "source": "5e4d18e results/probe-no-central-brain/metrics.jsonl line 2 (top1 0.1794)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "no-optic-lobe",
+          "null_type": "lesion",
+          "label": "All connections out of the optic lobe cut, same probe",
+          "value": 15.06,
+          "n": 1,
+          "samples": 1,
+          "spread": null,
+          "readout_refit": true,
+          "source": "5e4d18e results/probe-no-optic-lobe/metrics.jsonl line 2 (top1 0.1506)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Single runs, one shuffle seed. Good-move rate (within 1 win% of the best move): real 26.6%, shuffled 30.1%, blind 19.5%; held-out loss real 3.040, shuffled 2.951 (README lines 687-701). On the author's engine-only Elo ladder the shuffled-wiring fly rates 682, against 653 and 631 for comparable real-wiring flies, with intervals of about 70 points (README lines 653-679). The longest-trained real-wiring fly (23.5% top-1, Elo 792) has no shuffled counterpart. The author reads the controls as showing that the wiring is not the reason for the skill.",
+        "headline_arm": "shuffled",
+        "best_null_arm": "shuffled",
+        "baseline_arm": null,
+        "retention": 1.455,
+        "retention_method": "floor",
+        "baseline_retention": null,
+        "difference": -2.88
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 1,
+        "has_no_brain_baseline": true,
+        "reason": "Same calibration, readout probe, positions and seed for every brain; the shuffle keeps each neuron's in- and out-degree, signs and strengths and leaves the eye and descending-neuron sets in place; one shuffled copy.",
+        "verdict": "partly-fair"
+      },
+      "quality": {
+        "n_per_arm": 1,
+        "held_out": true,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "Committed metrics files for every arm on 4,096 held-out positions; one run and one shuffle seed per arm, no uncertainty; only the short probe stage is controlled; not re-run by us.",
+        "uncertainty_reported": false,
+        "recomputed_by_us": false,
+        "grade": "weak"
+      },
+      "extraction": "files",
+      "one_line": "Under the same readout probe the shuffled wiring matched Stockfish's move more often than the real MaleCNS wiring (20.9% against 18.0%; board-blind 11.7%).",
+      "commit": "5e4d18ec3a1374866b6fbfd4e3b4e4f6c74a80c2",
+      "checked_at": "2026-10-24T09:45:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/s1ms4/fly-chess/blob/5e4d18ec3a1374866b6fbfd4e3b4e4f6c74a80c2/results/probe-real/metrics.jsonl",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/s1ms4/fly-chess/blob/5e4d18ec3a1374866b6fbfd4e3b4e4f6c74a80c2/results/probe-shuffled/metrics.jsonl",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/s1ms4/fly-chess/blob/5e4d18ec3a1374866b6fbfd4e3b4e4f6c74a80c2/results/probe-no-central-brain/metrics.jsonl",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/s1ms4/fly-chess/blob/5e4d18ec3a1374866b6fbfd4e3b4e4f6c74a80c2/results/probe-no-optic-lobe/metrics.jsonl",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/s1ms4/fly-chess/blob/5e4d18ec3a1374866b6fbfd4e3b4e4f6c74a80c2/README.md",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/s1ms4/fly-chess/blob/5e4d18ec3a1374866b6fbfd4e3b4e4f6c74a80c2/flychess/connectome.py",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "worse",
       "baseline_beaten": "not-tested",
       "caveats": []
     },
@@ -10623,6 +10912,114 @@
       "caveats": []
     },
     {
+      "id": "fly-trader",
+      "name": "FlyTrader: back-tested excess return over buy-and-hold with a FlyWire-wired feature circuit vs a random-weight circuit of the same size",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "forecasting",
+      "loop": "closed-loop",
+      "wiring": {
+        "dataset": "FlyWire",
+        "release": "783",
+        "scope": "1,024 selected neurons, 58,421 edges"
+      },
+      "trained_parts": "reinforcement-learning trading policy on the circuit read-out; circuit fixed",
+      "metric": {
+        "name": "mean excess return over buy-and-hold on the full-cycle test, 10 unseen tickers",
+        "unit": "percentage points",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 280.3,
+        "n": 3,
+        "spread": "3 seeds (264.4 to 324.6 on the pinned rebuild file)",
+        "source": "d59eb36 reports/connectome_ablation.json arms.connectome (cycle excess, 3 seeds); README line 1381"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "random-weight",
+          "null_type": "random-graph",
+          "label": "deterministic random-weight circuit, same 1,024 neurons and region sizes, same recipe, seeds and read-out (README lines 1372-1378)",
+          "value": 211,
+          "n": 3,
+          "samples": 3,
+          "spread": "3 seeds",
+          "readout_refit": true,
+          "source": "d59eb36 reports/connectome_ablation.json arms.random (cycle excess); README line 1382",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "buy-and-hold",
+          "null_type": "no-brain-baseline",
+          "label": "buy-and-hold (excess is measured against it, 0 points by definition)",
+          "value": 0,
+          "n": 1,
+          "samples": 1,
+          "spread": "by definition",
+          "readout_refit": null,
+          "source": "d59eb36 reports/connectome_ablation.json (excess = fly minus buyhold)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": [
+          -186.6,
+          325.3
+        ],
+        "p": null,
+        "stat_note": "Author's paired t interval over 3 seeds (connectome minus random +69.3 points on the full cycle; 2022 bear +3.5, interval -11.2 to +18.3; 2024 -1.1, interval -25.5 to +23.3). A pinned rebuild gave 251.2 against 211.0, also spanning zero. The author concludes the FlyWire edges are not yet shown to contribute.",
+        "headline_arm": "random-weight",
+        "best_null_arm": "random-weight",
+        "baseline_arm": "buy-and-hold",
+        "retention": 0.7528,
+        "retention_method": "ratio",
+        "baseline_retention": 0,
+        "difference": 69.3
+      },
+      "fairness": {
+        "keeps_degree": false,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 3,
+        "has_no_brain_baseline": true,
+        "reason": "Only the circuit is swapped; recipe, seeds, read-out and test tickers are held fixed; the random-weight circuit does not keep the fly degrees.",
+        "verdict": "partly-fair"
+      },
+      "quality": {
+        "n_per_arm": 3,
+        "held_out": true,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "Committed matched comparison on unseen tickers; three seeds with very wide intervals; back-test only; not re-run by us.",
+        "uncertainty_reported": true,
+        "recomputed_by_us": false,
+        "grade": "strong"
+      },
+      "extraction": "files",
+      "one_line": "Excess return over buy-and-hold (0 by definition) was +280.3 points with the FlyWire circuit and +211.0 with random weights; the interval spans zero.",
+      "commit": "d59eb369119ddf7bc4de435ed3e87fb96d5536ae",
+      "checked_at": "2026-10-24T09:45:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/JefryV2/fly-trader/blob/d59eb369119ddf7bc4de435ed3e87fb96d5536ae/reports/connectome_ablation.json",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/JefryV2/fly-trader/blob/d59eb369119ddf7bc4de435ed3e87fb96d5536ae/README.md",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "no-difference",
+      "baseline_beaten": "yes",
+      "caveats": []
+    },
+    {
       "id": "fly-brain-resuscitation",
       "name": "Reviving a model fly brain, structural part: sensory-to-motor reachability under connectivity-ordered neuron removal, real FAFB v783 vs one degree-preserving rewired copy",
       "evidence_grade": "A",
@@ -11499,6 +11896,19 @@
       ]
     },
     {
+      "study_id": "somahouse",
+      "label": "SomaHouse: held-out weighted cost of a fly-derived 32-cell house controller vs a degree-preserving rewired copy, dense and no-hub circuits and a conventional controller",
+      "task_family": "body-steering",
+      "headline_null_type": "degree-preserving",
+      "retention": null,
+      "retention_method": "none",
+      "baseline_retention": null,
+      "wiring_effect": "helps",
+      "quality": "strong",
+      "fairness": "fair",
+      "caveats": []
+    },
+    {
       "study_id": "therealfly",
       "label": "therealfly: MaleCNS v1.0 LIF cord under DNa01/DNa02 drive, 5-15 Hz rhythm test, measured vs degree-preserving scrambled cord (6 seeds)",
       "task_family": "body-steering",
@@ -11613,6 +12023,19 @@
       "wiring_effect": "helps",
       "quality": "moderate",
       "fairness": "fair",
+      "caveats": []
+    },
+    {
+      "study_id": "fly-chess",
+      "label": "fly-chess: frozen MaleCNS v1.0 rate model read out by a linear move readout, real vs shuffled wiring and region lesions under the same readout probe",
+      "task_family": "game-play",
+      "headline_null_type": "degree-preserving",
+      "retention": 1.455,
+      "retention_method": "floor",
+      "baseline_retention": null,
+      "wiring_effect": "worse",
+      "quality": "weak",
+      "fairness": "partly-fair",
       "caveats": []
     },
     {
@@ -12156,6 +12579,19 @@
       "wiring_effect": "no-difference",
       "quality": "moderate",
       "fairness": "fair",
+      "caveats": []
+    },
+    {
+      "study_id": "fly-trader",
+      "label": "FlyTrader: back-tested excess return over buy-and-hold with a FlyWire-wired feature circuit vs a random-weight circuit of the same size",
+      "task_family": "forecasting",
+      "headline_null_type": "random-graph",
+      "retention": 0.7528,
+      "retention_method": "ratio",
+      "baseline_retention": 0,
+      "wiring_effect": "no-difference",
+      "quality": "strong",
+      "fairness": "partly-fair",
       "caveats": []
     },
     {

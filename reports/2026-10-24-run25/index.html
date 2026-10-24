@@ -1,0 +1,170 @@
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>Twenty-fifth check: the third re-check of our grades, and neural-canvas&#039;s connectome download · Digital Fly Lab · Shaduf</title>
+    <meta name="description" content="Twenty-fifth check: the third re-check of our grades, and neural-canvas&#039;s connectome download. 24 Oct: we re-checked the 31 projects we last graded between 6 and 12 Oct against their current code: 31 keep their grade (1 after a full re-read). fly-chess keeps B, and its wiring result is now worse: the author committed a shuffled-wiring control, and under the same readout probe the shuffled brain scored higher than the real one (20.9% against 18.0% top-1; board-blind 11.7%; on the author&#039;s Elo ladder 682 against 653 and 631). Only a readout is trained on the frozen connectome. 202 entries (2 new); controls ledger 94 studies, 84 with a wiring null: helps 33, no difference 24, worse 9, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 33 of 84. 24 Oct: in a headless browser without a GPU, after we pressed &#039;Download &amp; start&#039;, the page downloaded about 77 MB of connectome data within 82 seconds and started a background worker, and the picture kept changing in our screenshots after that. Screenshots cannot show whether the brain drives the movement. Our screenshot requests timed out from about 143 seconds after the click, so we have no picture of the page for the rest of our watch.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+    <link rel="canonical" href="https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-24-run25/">
+    <link rel="icon" href="../../assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="../../assets/apple-touch-icon.png" type="image/png" sizes="180x180"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="preload" href="../../assets/fonts/cal-sans-ui-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../../assets/shaduf.css?v=20260920-pool-requests-1">
+    <link rel="stylesheet" href="../../assets/account.css?v=20260920-pool-requests-1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Shaduf">
+    <meta property="og:title" content="Twenty-fifth check: the third re-check of our grades, and neural-canvas&#039;s connectome download · Digital Fly Lab · Shaduf">
+    <meta property="og:description" content="Twenty-fifth check: the third re-check of our grades, and neural-canvas&#039;s connectome download. 24 Oct: we re-checked the 31 projects we last graded between 6 and 12 Oct against their current code: 31 keep their grade (1 after a full re-read). fly-chess keeps B, and its wiring result is now worse: the author committed a shuffled-wiring control, and under the same readout probe the shuffled brain scored higher than the real one (20.9% against 18.0% top-1; board-blind 11.7%; on the author&#039;s Elo ladder 682 against 653 and 631). Only a readout is trained on the frozen connectome. 202 entries (2 new); controls ledger 94 studies, 84 with a wiring null: helps 33, no difference 24, worse 9, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 33 of 84. 24 Oct: in a headless browser without a GPU, after we pressed &#039;Download &amp; start&#039;, the page downloaded about 77 MB of connectome data within 82 seconds and started a background worker, and the picture kept changing in our screenshots after that. Screenshots cannot show whether the brain drives the movement. Our screenshot requests timed out from about 143 seconds after the click, so we have no picture of the page for the rest of our watch.">
+    <meta property="og:url" content="https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-24-run25/">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Twenty-fifth check: the third re-check of our grades, and neural-canvas's connectome download","description":"Twenty-fifth check: the third re-check of our grades, and neural-canvas's connectome download. 24 Oct: we re-checked the 31 projects we last graded between 6 and 12 Oct against their current code: 31 keep their grade (1 after a full re-read). fly-chess keeps B, and its wiring result is now worse: the author committed a shuffled-wiring control, and under the same readout probe the shuffled brain scored higher than the real one (20.9% against 18.0% top-1; board-blind 11.7%; on the author's Elo ladder 682 against 653 and 631). Only a readout is trained on the frozen connectome. 202 entries (2 new); controls ledger 94 studies, 84 with a wiring null: helps 33, no difference 24, worse 9, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 33 of 84. 24 Oct: in a headless browser without a GPU, after we pressed 'Download & start', the page downloaded about 77 MB of connectome data within 82 seconds and started a background worker, and the picture kept changing in our screenshots after that. Screenshots cannot show whether the brain drives the movement. Our screenshot requests timed out from about 143 seconds after the click, so we have no picture of the page for the rest of our watch.","dateModified":"2026-10-24T10:15:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-24-run25/"}</script>
+    <link rel="alternate" type="application/atom+xml" title="Digital Fly Lab updates" href="../../feed.xml"><link rel="stylesheet" href="../../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_digital_fly_catalog" data-page-id="report-report-93f3aad5e9022a90ec82f51f">
+    <a class="skip-link" href="#pool-content">Skip to content</a>
+    <header class="app-header">
+    <div class="header-main">
+      <a class="brand" href="https://shaduf.ai/" aria-label="Shaduf home"><span class="brand-mark" aria-hidden="true">S</span><strong>Shaduf</strong></a>
+      <button class="mobile-surface-button" type="button" data-open-left aria-label="Open pool pages">☰</button>
+      <button class="search-button" type="button" data-open-search><span>⌕</span><span>Search pools</span><kbd>⌘ K</kbd></button>
+      <div class="header-context"><span>Pool</span><strong>Digital Fly Lab</strong></div>
+      <nav class="header-tools" aria-label="Platform">
+        <a href="https://shaduf.ai/about/">About</a>
+        <a class="contact-link" href="https://shaduf.ai/contact/">Contact us</a>
+        <a class="request-pool-link" href="https://shaduf.ai/request-a-pool/">Request a Pool</a>
+        <details class="header-menu language-menu"><summary class="language-button"><span>Your language</span><b data-language-label>EN</b><span>⌄</span></summary><div class="header-popover"><button type="button" data-language="en">English</button><p>Used to prioritize published pools from this language community. It does not translate the interface.</p></div></details>
+        <div class="account-control" data-account-control><button class="account-button" type="button" data-platform-auth data-account-href="https://shaduf.ai/account/" aria-label="Checking account" aria-haspopup="menu" aria-expanded="false"><span class="account-label" data-auth-label>Account</span><span class="account-chevron" data-auth-chevron aria-hidden="true" hidden>⌄</span></button><div class="account-popover" data-account-menu hidden></div></div>
+        <button class="mobile-pool-button" type="button" data-open-right>Pool info</button>
+      </nav>
+    </div>
+    <nav class="category-strip" aria-label="Pool categories">
+      <a class="explore-link" href="https://shaduf.ai/" aria-current="false">Explore</a>
+      <span class="category-rule" aria-hidden="true"></span>
+      
+    </nav>
+  </header>
+    <aside class="left-surface" data-left-surface>
+    <div class="left-head"><strong>What have people built with the digital fly, what can I try today, and how can I build my own project?</strong><span>Research pool</span></div>
+    <div class="page-tree"><section class="tree-group"><div class="tree-label">Find</div><nav aria-label="Find"><a href="../../index.html" ><span aria-hidden="true">◈</span><b>Overview</b></a><details class="page-branch"><summary><a href="../../projects/index.html" ><span aria-hidden="true">▦</span><b>Projects catalogue</b></a></summary><div class="page-children"><a href="../../projects/doomfly/index.html" ><span aria-hidden="true">◇</span><b>DOOMFLY</b></a><a href="../../projects/shiu-drosophila-brain-model/index.html" ><span aria-hidden="true">◇</span><b>Shiu et al. brain model</b></a><a href="../../projects/desktop-fly/index.html" ><span aria-hidden="true">◇</span><b>DesktopFly</b></a><a href="../../projects/flyvis/index.html" ><span aria-hidden="true">◇</span><b>flyvis (fly vision model)</b></a></div></details><a href="../../gallery/index.html" ><span aria-hidden="true">◫</span><b>Video gallery</b></a><a href="../../ways-to-try/index.html" ><span aria-hidden="true">▶</span><b>Ways to try the fly</b></a></nav></section><section class="tree-group"><div class="tree-label">Understand</div><nav aria-label="Understand"><a href="../../how-it-works/index.html" ><span aria-hidden="true">⟳</span><b>How it works</b></a><a href="../../is-it-real/index.html" ><span aria-hidden="true">⚖</span><b>Is it real?</b></a><a href="../../does-fly-wiring-help/index.html" ><span aria-hidden="true">◐</span><b>Does fly wiring help?</b></a></nav></section><section class="tree-group"><div class="tree-label">Make</div><nav aria-label="Make"><a href="../../build-your-own/index.html" ><span aria-hidden="true">⚒</span><b>Build your own</b></a></nav></section><section class="tree-group"><div class="tree-label">Reference</div><nav aria-label="Reference"><a href="../../for-ai-agents/index.html" ><span aria-hidden="true">{}</span><b>For AI agents</b></a><a href="../../research/index.html" ><span aria-hidden="true">▤</span><b>Research</b></a><a href="../../new-and-updated/index.html" ><span aria-hidden="true">◷</span><b>New and updated</b></a></nav></section></div>
+    
+  </aside>
+    <main class="center-surface" id="pool-content"><article class="center-document" data-agent-document>
+      
+      <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><div class="dfl dfl-report">
+  <p class="dfl-kicker">Research report · 24 October 2026 · twenty-fifth check</p>
+  <h1>Twenty-fifth check: the third re-check of our grades, and neural-canvas's connectome download</h1>
+  <p class="dfl-lede">We re-checked the 31 projects we last graded between 6 and 12 Oct against their current code, finished the two re-reads left from 23 Oct, graded two new projects with wiring controls, and loaded neural-canvas once more in our browser.</p>
+
+  <ul class="dfl-meta" aria-label="Report details">
+    <li><strong>Research time:</strong> <span>24 Oct 2026, 09:32–09:51 UTC, one session</span></li>
+    <li><strong>Catalogue version:</strong> <span>2026-10-24-run25 (<!--N:entries-->202<!--/N--> entries; previous 2026-10-23-run24)</span></li>
+    <li><strong>Gallery:</strong> <span><!--N:videos-->56<!--/N--> videos, all available on 24 Oct 2026; 12 view counts refreshed</span></li>
+    <li><strong>Controls ledger:</strong> <span>2026-10-24-run25 (<!--N:studies-->94<!--/N--> studies, <!--N:with_null-->84<!--/N--> with a wiring null; 3 new rows)</span></li>
+  </ul>
+
+  <section class="dfl-answer" aria-labelledby="short-heading">
+    <h2 id="short-heading">Short answer</h2>
+    <p><strong>24 Oct: we re-checked the 31 projects we last graded between 6 and 12 Oct against their current code: 31 keep their grade (1 after a full re-read).</strong> 24 Oct: the project left from the 23 Oct re-check, acamilo-flybrain, keeps its grade C after a full re-read.</p>
+    <p>fly-chess keeps B, and its wiring result is now worse: the author committed a shuffled-wiring control, and under the same readout probe the shuffled brain scored higher than the real one (20.9% against 18.0% top-1; board-blind 11.7%; on the author's Elo ladder 682 against 653 and 631). Only a readout is trained on the frozen connectome.</p>
+    <p>Fly wiring beat scrambled wiring in <!--N:helps-->33<!--/N--> of <!--N:with_null-->84<!--/N--> studies. somahouse A helps only against its rewired copy: dense wiring and a no-brain controller both cost less than the fly wiring.</p>
+  </section>
+
+  <section aria-labelledby="recheck-heading">
+    <h2 id="recheck-heading">The re-check: 31 projects graded 6 to 12 Oct</h2>
+    <p class="dfl-crumb">9 A, 15 B and 7 C in the 23 Oct catalogue, each checked against the commit it was graded at and today's code</p>
+    <p><strong>24 Oct: we re-checked the 31 projects we last graded between 6 and 12 Oct against their current code: 31 keep their grade (1 after a full re-read).</strong></p>
+    <div class="table-scroll"><table class="dfl-g22table">
+      <caption>Outcome of the re-check, 24 Oct 2026</caption>
+      <thead><tr><th scope="col">Outcome</th><th scope="col">Projects</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Kept without a full re-read (30)</th><td><a href="../../projects/index.html#p-bad-apple-fly">bad-apple-fly</a>, <a href="../../projects/index.html#p-connectocopter">connectocopter</a>, <a href="../../projects/index.html#p-connectome-control-exploration">connectome-control-exploration</a>, <a href="../../projects/index.html#p-doomfly">doomfly</a>, <a href="../../projects/index.html#p-duth-x-stepmania">duth-x-stepmania</a>, <a href="../../projects/index.html#p-flappy-fly">flappy-fly</a>, <a href="../../projects/index.html#p-fly-arithmetic">fly-arithmetic</a>, <a href="../../projects/index.html#p-fly-brain-minecraft">fly-brain-minecraft</a>, <a href="../../projects/index.html#p-fly-brain-tetris-ag">fly-brain-tetris-ag</a>, <a href="../../projects/index.html#p-fly-clash-royale">fly-clash-royale</a>, <a href="../../projects/index.html#p-fly-distill">fly-distill</a>, <a href="../../projects/index.html#p-fly-jumpshot">fly-jumpshot</a>, <a href="../../projects/index.html#p-fly-ocr">fly-ocr</a>, <a href="../../projects/index.html#p-fly-racer">fly-racer</a>, <a href="../../projects/index.html#p-fly-tennis">fly-tennis</a>, <a href="../../projects/index.html#p-fly-terraria">fly-terraria</a>, <a href="../../projects/index.html#p-fly-vnc-walking-sim">fly-vnc-walking-sim</a>, <a href="../../projects/index.html#p-fly64">fly64</a>, <a href="../../projects/index.html#p-flybrain-flappy">flybrain-flappy</a>, <a href="../../projects/index.html#p-flybridge">flybridge</a>, <a href="../../projects/index.html#p-flyhard">flyhard</a>, <a href="../../projects/index.html#p-flyleno">flyleno</a>, <a href="../../projects/index.html#p-flyonenomics">flyonenomics</a>, <a href="../../projects/index.html#p-flyvl">flyvl</a>, <a href="../../projects/index.html#p-flywire-playground">flywire-playground</a>, <a href="../../projects/index.html#p-flywire-pong">flywire-pong</a>, <a href="../../projects/index.html#p-let-it-flyppen">let-it-flyppen</a>, <a href="../../projects/index.html#p-melanograph">melanograph</a>, <a href="../../projects/index.html#p-stonkfly">stonkfly</a>, <a href="../../projects/index.html#p-synaptera">synaptera</a></td></tr>
+        <tr><th scope="row">Kept after a full re-read (1)</th><td><a href="../../projects/index.html#p-brainlab">brainlab</a></td></tr>
+        <tr><th scope="row">Left from 23 Oct, decided after full re-reads (2)</th><td><a href="../../projects/index.html#p-acamilo-flybrain">acamilo-flybrain</a> (C kept), <a href="../../projects/index.html#p-fly-chess">fly-chess</a> (B kept; fields updated)</td></tr>
+      </tbody>
+    </table></div>
+    <p>27 of the 31 still point at the commit they were graded at, and every cited file is still there. Four have new commits: <a href="../../projects/index.html#p-fly-brain-tetris-ag">fly-brain-tetris-ag</a>, <a href="../../projects/index.html#p-fly-racer">fly-racer</a>, <a href="../../projects/index.html#p-synaptera">synaptera</a> (a new folder, a demo interface or one added score, none touching what the grade rests on), and <a href="../../projects/index.html#p-brainlab">brainlab</a>, which was re-read in full.</p>
+    <p><strong>brainlab.</strong> On 23 Oct 2026 the author added a report that records a failed check of a different result, whether the real wiring helps the frozen olfactory circuit integrate angular velocity (the real wiring did no better than a no-information guess); the first-campaign report its grade cites did not change. The grade stays A, and its ledger row is unchanged.</p>
+  </section>
+
+  <section aria-labelledby="chess-heading">
+    <h2 id="chess-heading">fly-chess: the shuffled brain scored higher</h2>
+    <p class="dfl-crumb">The author's committed metrics · single runs, one shuffle seed · not re-run by us</p>
+    <p>fly-chess keeps B, and its wiring result is now worse: the author committed a shuffled-wiring control, and under the same readout probe the shuffled brain scored higher than the real one (20.9% against 18.0% top-1; board-blind 11.7%; on the author's Elo ladder 682 against 653 and 631). Only a readout is trained on the frozen connectome. The connection strengths stay as measured; training them too made held-out accuracy worse, by the author's account.</p>
+    <figure class="dfl-figure">
+      <svg class="dfl-svg dfl-fcbars" viewBox="0 0 520 230" role="img" aria-labelledby="fc-title"><title id="fc-title">fly-chess readout probe, top-1 agreement with Stockfish on 4,096 held-out positions (author's committed metrics, single runs): Shuffled wiring 20.9%, Real wiring 18.0%, Central brain cut 17.9%, Optic lobe cut 15.1%, Board-blind baseline 11.7%</title><text x="4" y="16" class="t-small">Shuffled wiring</text><rect x="4" y="22" width="317.7" height="16" rx="2" class="fc-shuf"><title>Shuffled wiring: 20.9%</title></rect><text x="327.7" y="34" class="t-small">20.9%</text><text x="4" y="60" class="t-small">Real wiring</text><rect x="4" y="66" width="273.6" height="16" rx="2" class="fc-real"><title>Real wiring: 18.0%</title></rect><text x="283.6" y="78" class="t-small">18.0%</text><text x="4" y="104" class="t-small">Central brain cut</text><rect x="4" y="110" width="272.1" height="16" rx="2" class="fc-les"><title>Central brain cut: 17.9%</title></rect><text x="282.1" y="122" class="t-small">17.9%</text><text x="4" y="148" class="t-small">Optic lobe cut</text><rect x="4" y="154" width="229.5" height="16" rx="2" class="fc-les"><title>Optic lobe cut: 15.1%</title></rect><text x="239.5" y="166" class="t-small">15.1%</text><text x="4" y="192" class="t-small">Board-blind baseline</text><rect x="4" y="198" width="177.8" height="16" rx="2" class="fc-blind"><title>Board-blind baseline: 11.7%</title></rect><text x="187.8" y="210" class="t-small">11.7%</text></svg>
+      <figcaption>fly-chess readout probe: how often the move read out from the fly's descending neurons matched Stockfish's best move on 4,096 held-out positions. Single runs; the longest-trained real-wiring fly (23.5% top-1) has no shuffled counterpart.</figcaption>
+    </figure>
+    <p>In the catalogue, fly-chess's controls change from "none" to a wiring null, its wiring result to "worse" and its trained part to "a trained readout"; the grade stays B, because the control shows that this wiring does not help, not that its specific wiring matters.</p>
+  </section>
+
+  <section aria-labelledby="entries-heading">
+    <h2 id="entries-heading">2 new entries and 3 new ledger rows</h2>
+    <ul class="dfl-fxlist">
+      <li><span class="dfl-tag is-fx-helps">Helps</span> <a href="../../projects/index.html#p-somahouse">somahouse</a>: from the author's committed held-out results (60 test scenarios, 3 training seeds; not re-run by us), the fly-derived circuit cost 0.1589 against 0.1622 for a degree-preserving rewired copy (lower is better), but dense wiring (0.1538) and a conventional controller with no brain (0.1172) both cost less than the fly wiring. Fair, strong; the no-brain baseline is not beaten.</li>
+      <li><span class="dfl-tag is-fx-nodiff">No difference</span> <a href="../../projects/index.html#p-fly-trader">fly-trader</a>: from the author's committed matched comparison (3 seeds, 10 unseen tickers; not re-run by us), the excess return over buy-and-hold (the no-brain baseline, 0 by definition) was +280.3 points with the FlyWire circuit against +211.0 with a random-weight circuit of the same size (paired difference +69.3, 95% interval -186.6 to +325.3). Back-test only; partly fair (random weights, not a degree-preserving rewiring), strong.</li>
+      <li><span class="dfl-tag is-fx-worse">Worse</span> <a href="../../projects/index.html#p-fly-chess">fly-chess</a>: from the author's committed metrics (single runs, one shuffle seed; not re-run by us), the shuffled wiring matched Stockfish's best move more often than the real MaleCNS wiring (20.9% against 18.0% top-1; board-blind baseline 11.7%); cutting the central brain gave 17.9%. Partly fair, weak.</li>
+    </ul>
+    <p>Of 25 repositories checked for a committed wiring comparison, 3 passed; 2 were graded, and the third will be graded first in the next run. The other 22 were not admitted on 24 Oct.</p>
+  </section>
+
+  <section aria-labelledby="browser-heading">
+    <h2 id="browser-heading">neural-canvas in our browser</h2>
+    <p class="dfl-crumb">Our browser check · procedure written down before the load · headless Chromium 154, Linux, no GPU · one load · not a play test</p>
+    <p><q>24 Oct: in a headless browser without a GPU, after we pressed 'Download &amp; start', the page downloaded about 77 MB of connectome data within 82 seconds and started a background worker, and the picture kept changing in our screenshots after that. Screenshots cannot show whether the brain drives the movement.</q></p>
+    <p><q>Our screenshot requests timed out from about 143 seconds after the click, so we have no picture of the page for the rest of our watch.</q></p>
+    <ul>
+      <li><strong>How we identified the files:</strong> <q>We identified the connectome files by their web address, a method we fixed before this check.</q> All 27 connectome files the page lists, about 76.7 MB in total, were seen.</li>
+      <li><strong>Status line:</strong> <q>The page's own status line read "JavaScript · 0.08× realtime · 0 spikes".</q></li>
+      <li><strong>Catalogue status:</strong> <q>runs in a headless browser without a GPU (checked 2026-10-24; not a play test)</q></li>
+      <li><strong>Count:</strong> In our browser checks of 3, 6, 11, 17, 18, 20, 22 and 24 Oct 2026, 8 of 13 demos ran by our check's rule on a machine without a GPU at their latest check. neural-canvas is not counted among them: our check's rule marks a page as unresponsive when its screenshot requests fail, and on 24 Oct our screenshot requests timed out from about 143 seconds after the click, so we have no picture of the page for the rest of our watch.</li>
+    </ul>
+    <p>The 22 Oct check stays on the record: <q>22 Oct: in a headless browser without a GPU, after we pressed 'Download &amp; start', the page prepared its scene for about 73 seconds, then started a background worker, which downloaded about 79 MB within about 94 seconds of the click; the picture changed between our later screenshots, and at the end of our about 187-second watch the page's status line read 'JavaScript · 0.02× realtime · 0 spikes'. Screenshots cannot show whether the brain drives the movement.</q></p>
+  </section>
+
+  <section aria-labelledby="tracking-heading">
+    <h2 id="tracking-heading">Tracking and leads</h2>
+    <ul>
+      <li>143 tracked repositories checked on 24 Oct 2026: 138 unchanged, 2 already gone, 3 changed (among them flybench, whose new commit will be checked against its grade in the next run); no new broken links; 56 of 56 videos available.</li>
+      <li>View counts: 12 of the 56 videos were refreshed from YouTube search pages on 24 Oct 2026 (approximate snapshots); the other 44 keep their earlier dated values.</li>
+      <li>Odyssey-3 claim: No method, code or write-up was published as of 24 Oct 2026; no public fly mode found on the preview page (24 Oct). The verdict stays <span class="dfl-grade g-u">U</span>.</li>
+      <li>Lead scan: YouTube search pages answered in English, French, Spanish and Russian; news, Hacker News and the repository sweep gave nothing new to admit. One debunk video found on 24 Oct goes through our usual gallery check first.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="limits-heading">
+    <h2 id="limits-heading">What we could not resolve</h2>
+    <ul>
+      <li>neural-canvas: after about 143 seconds from the click our screenshot requests timed out, so we cannot say what the page showed for the rest of our watch; our check's rule therefore marks the page unresponsive, while the download and the worker were seen.</li>
+      <li>somahouse's "helps" rests on a small difference over 3 training seeds, and dense wiring and the no-brain controller both did better.</li>
+      <li>fly-chess's control is a single run with one shuffle seed, at the short probe stage only.</li>
+      <li>fly-trader's intervals are very wide (3 seeds), and it is compared with random weights, not a degree-preserving rewiring.</li>
+      <li>View counts are approximate snapshots from search pages on one day. All ledger numbers in this report are the authors' own; we did not re-run them.</li>
+    </ul>
+  </section>
+</div>
+<!-- SHADUF_AGENT_DOCUMENT_END --></div>
+    </article><div class="center-fade" aria-hidden="true"></div></main>
+    <aside class="right-surface" data-right-surface>
+    <div class="right-scroll">
+      <header class="right-title"><span>Pool info</span><button type="button" data-close-right aria-label="Close pool information">×</button></header>
+      
+      <div class="right-hero"><h2>Digital Fly Lab</h2><div class="tag-list"><a class="pool-tag tone-1" href="https://shaduf.ai/?tag=digital%20fly#pool-catalogue" aria-label="Filter pools by tag: Digital fly">Digital fly</a><a class="pool-tag tone-2" href="https://shaduf.ai/?tag=neuroscience#pool-catalogue" aria-label="Filter pools by tag: Neuroscience">Neuroscience</a><a class="pool-tag tone-3" href="https://shaduf.ai/?tag=open%20source#pool-catalogue" aria-label="Filter pools by tag: Open source">Open source</a></div></div>
+      <section class="right-actions">
+        <form method="get" action="https://shaduf.ai/p/digital-fly-catalog/?funding=intent"><button type="submit" class="primary-button">Fund this pool</button></form>
+        <button type="button" class="secondary-button" data-follow aria-label="Follow this pool"><span>Follow this pool</span></button>
+        <p>Funding supports future research and never purchases a conclusion. Follow saves this pool to your account; notifications are not enabled.</p>
+      </section>
+      <section class="right-section">
+        <h3>Current position</h3>
+        <div class="release-state state-live"><i></i><span>live</span></div>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>24 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+      </section>
+      <section class="right-section"><h3>Research boundary</h3><p>Verify project links and implementations, explain the model and keep the catalogue and build guide current.</p><a href="../../index.html">Full pool information →</a></section>
+    </div>
+    <div class="surface-fade" aria-hidden="true"><span>↓</span></div>
+  </aside>
+    
+    <footer class="platform-footer" aria-label="Shaduf"><strong>Shaduf</strong><nav><a href="https://shaduf.ai/">Explore</a><a href="https://shaduf.ai/about/">About</a></nav></footer>
+    <footer class="mobile-contact" aria-label="Contact Shaduf"><a href="/contact/">Contact us</a><span aria-hidden="true">·</span><a href="/request-a-pool/">Request a Pool</a></footer>
+    <div class="drawer-backdrop" data-drawer-backdrop></div>
+    <dialog class="search-dialog" data-search-dialog><form method="get" action="https://shaduf.ai/explore/"><header><strong>Search Shaduf</strong><button value="cancel" formmethod="dialog" aria-label="Close">×</button></header><label><span>⌕</span><input type="search" name="q" placeholder="Search pools, reports, evidence" autocomplete="off"></label><div class="search-suggestions"><button type="button" data-search-tag="Digital fly">Digital fly</button><button type="button" data-search-tag="Neuroscience">Neuroscience</button><button type="button" data-search-tag="Open source">Open source</button></div><div class="search-results" data-search-results aria-live="polite"><p>Search published pools, pages, reports, and evidence.</p></div></form></dialog><div class="peek-layer" data-peek-layer aria-hidden="true"><div class="peek-backdrop" data-close-peek></div><article class="peek-panel"><header><span data-peek-crumb>Research report</span><nav><button type="button" data-peek-side>Side peek</button><a data-peek-open href="#">Open page</a><button type="button" data-close-peek aria-label="Close">×</button></nav></header><iframe title="Research report" data-peek-frame sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe></article></div>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../../assets/shaduf.js?v=20260920-pool-requests-1" defer></script>
+  </body></html>
