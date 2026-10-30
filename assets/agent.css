@@ -1247,3 +1247,11 @@
 [data-agent-document] .dfl-svg .fc-shuf { fill: var(--dfl-fx-worse); }
 [data-agent-document] .dfl-svg .fc-les { fill: var(--dfl-muted); }
 [data-agent-document] .dfl-svg .fc-blind { fill: var(--dfl-faint); }
+
+/* Run 27: 30 Oct browser block (four dots) and the motif-count bars of the run 27 report. */
+[data-agent-document] .dfl-b27 .dfl-b18cmp svg.dfl-b18dots { width: 88px; }
+[data-agent-document] .dfl-motif { list-style: none; padding: 0; margin: 10px 0; display: grid; gap: 10px; }
+[data-agent-document] .dfl-motif li { display: grid; gap: 4px; }
+[data-agent-document] .dfl-motif svg { width: 100%; max-width: 40rem; height: 14px; display: block; }
+[data-agent-document] .dfl-svg .mo-real { fill: var(--dfl-blue); }
+[data-agent-document] .dfl-svg .mo-shuf { fill: var(--dfl-fx-worse); }

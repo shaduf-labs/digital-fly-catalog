@@ -3220,6 +3220,66 @@
       "accessed_at": "2026-10-29T10:30:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-run27",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
+      "title": "Digital Fly Lab controls ledger (30 Oct 2026)",
+      "claim": "101 studies, 91 with a wiring null: helps 35, no difference 26, worse 9, mixed 17, not yet scored 4; fly wiring beat scrambled wiring in 35 of 91. Four rows joined on 30 Oct, scored by fixed rules from the authors' numbers.",
+      "accessed_at": "2026-10-30T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "browser-run27",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/ways-to-try/#run27-heading",
+      "title": "Digital Fly Lab browser re-check (30 Oct 2026)",
+      "claim": "30 Oct: re-checked in the same headless browser without a GPU: 1 of 4 older demos ran (17 Oct: 1 of 4). fly-arithmetic: runs again on 30 Oct (11 Oct: runs). Checked in headless Chromium 154.0.8037.57 on a Linux server without a GPU, 30 Oct 2026. Shows whether the page loads, downloads its brain data and keeps computing; it is not a play test. Safari, Firefox, phones and GPU machines were not tested.",
+      "accessed_at": "2026-10-30T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "pugliese-2026-code",
+      "source_type": "repository",
+      "source_url": "https://github.com/smpuglie/Pugliese_2026",
+      "title": "Pugliese et al. 2026 code repository (MIT)",
+      "claim": "The authors' code includes a test that shuffles the wiring while keeping the balance of excitatory and inhibitory connections; their saved notebook output shows the number of three-neuron circuits of the walking-rhythm type among front-leg nerve-cord neurons: 21,544 with the real wiring and 306.95 ± 29.10 (mean ± SD) across 100 shuffles. We did not re-run it (checked 30 Oct 2026). This is a count of circuit patterns in the wiring, not a walking test with shuffled wiring, so our ledger does not score it.",
+      "accessed_at": "2026-10-30T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-connectome-forecast-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/kwwaleszczynski-del/fly-connectome-forecast",
+      "title": "fly-connectome-forecast repository (kwwaleszczynski-del)",
+      "claim": "The fly reservoir forecast Polish wind and solar power as well as random and rewired reservoirs, not better (mean skill over six tasks: 0.355 fly, 0.353 rewired, 0.355 random; 5 seeds).",
+      "accessed_at": "2026-10-30T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "riskfly-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/pakalapatipranav-source/RiskFly",
+      "title": "RiskFly repository (pakalapatipranav-source)",
+      "claim": "MAE 0.00576 with the fly wiring against 0.00723 for degree-preserving rewired wiring, fly better in 5 of 5 seeds, author's p = 0.0625, called exploratory, while a dense network did best (0.00537); by our fixed rules the rewired comparison reads as no difference and the row as mixed, because a random sparse reservoir did clearly worse. The target is a formula, not an investment strategy; no licence file.",
+      "accessed_at": "2026-10-30T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-novelty-scada-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/kwwaleszczynski-del/fly-novelty-scada",
+      "title": "fly-novelty-scada repository (kwwaleszczynski-del)",
+      "claim": "The mushroom-body detector found almost no wind-turbine faults, and the real wiring scored no better than shuffled wiring (CARE score 0.30 against 0.43; difference −0.13, 95% interval −0.29 to +0.03); random wiring scored 0.44, so by our fixed rules the wiring nulls disagree and the row reads mixed.",
+      "accessed_at": "2026-10-30T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }

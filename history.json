@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-85e1060076abccb550d4f6c5",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-30T09:24:36Z",
+      "completed_at": "2026-10-30T10:30:00Z",
+      "title": "Twenty-seventh check: the walking-circuit paper's shuffle test, four new entries and four older demos re-checked",
+      "summary": "209 entries (4 new); controls ledger 101 studies, 91 with a wiring null: helps 35, no difference 26, worse 9, mixed 17, not yet scored 4; fly wiring beat scrambled wiring in 35 of 91. Pugliese et al. 2026 (Nature): The authors' code includes a test that shuffles the wiring while keeping the balance of excitatory and inhibitory connections; their saved notebook output shows the number of three-neuron circuits of the walking-rhythm type among front-leg nerve-cord neurons: 21,544 with the real wiring and 306.95 ± 29.10 (mean ± SD) across 100 shuffles. We did not re-run it (checked 30 Oct 2026). This is a count of circuit patterns in the wiring, not a walking test with shuffled wiring, so our ledger does not score it. 27 entries first graded 13-19 Oct were re-checked on 30 Oct: 25 keep their grade; 2 with larger upstream changes are re-read next. 30 Oct: re-checked in the same headless browser without a GPU: 1 of 4 older demos ran (17 Oct: 1 of 4). 30 Oct: we scanned news, videos and new code from 29 to 30 Oct; nothing met the bar for a new claim check, and eight new code projects were listed for a first look.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-30-run27/",
+      "entrypoint": "reports/2026-10-30-run27/index.html"
+    },
+    {
       "run_id": "report-0815ad77a8cabc8a863f6c32",
       "status": "completed",
       "answer_change": "meaningful_change",

@@ -2,6 +2,42 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-30-run27-entries",
+      "changed_at": "2026-10-30T10:30:00Z",
+      "summary": "209 catalogue entries (30 Oct 2026): 4 new: pugliese-2026-walking-cpg A (peer-reviewed, MIT; not scored), fly-connectome-forecast A (no difference), riskfly A (mixed; MAE 0.00576 with the fly wiring against 0.00723 for degree-preserving rewired wiring, fly better in 5 of 5 seeds, author's p = 0.0625, called exploratory, while a dense network did best (0.00537); by our fixed rules the rewired comparison reads as no difference and the row as mixed, because a random sparse reservoir did clearly worse. The target is a formula, not an investment strategy; no licence file.) and fly-novelty-scada A (mixed). 27 entries first graded 13-19 Oct were re-checked on 30 Oct: 25 keep their grade; 2 with larger upstream changes are re-read next. fasterfly: an MIT licence file was added upstream on 30 Oct. Links: ascend's demo page and FlyGym's browser viewer: not confirmed by our link check (29 and 30 Oct). Odyssey-3 claim: No method, code or write-up was published as of 30 Oct 2026 (checked 30 Oct); no public fly mode found on the preview page (29 Oct).",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-30"
+    },
+    {
+      "change_id": "2026-10-30-run27-ledger",
+      "changed_at": "2026-10-30T10:30:00Z",
+      "summary": "Controls ledger (30 Oct 2026): 4 new rows (Pugliese not scored: a count of circuit patterns in the wiring, not a walking test with shuffled wiring; fly-connectome-forecast no difference; riskfly and fly-novelty-scada mixed), now 101 studies, 91 with a wiring null: helps 35, no difference 26, worse 9, mixed 17, not yet scored 4; fly wiring beat scrambled wiring in 35 of 91. Scoring unchanged.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed27-heading"
+    },
+    {
+      "change_id": "2026-10-30-run27-claims",
+      "changed_at": "2026-10-30T10:30:00Z",
+      "summary": "30 Oct: we scanned news, videos and new code from 29 to 30 Oct; nothing met the bar for a new claim check, and eight new code projects were listed for a first look. Pugliese et al. 2026 (Nature): The authors' code includes a test that shuffles the wiring while keeping the balance of excitatory and inhibitory connections; their saved notebook output shows the number of three-neuron circuits of the walking-rhythm type among front-leg nerve-cord neurons: 21,544 with the real wiring and 306.95 ± 29.10 (mean ± SD) across 100 shuffles. We did not re-run it (checked 30 Oct 2026). This is a count of circuit patterns in the wiring, not a walking test with shuffled wiring, so our ledger does not score it.",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-pugliese-2026-walking-cpg"
+    },
+    {
+      "change_id": "2026-10-30-run27-browser",
+      "changed_at": "2026-10-30T10:30:00Z",
+      "summary": "30 Oct: re-checked in the same headless browser without a GPU: 1 of 4 older demos ran (17 Oct: 1 of 4). fly-arithmetic: runs again on 30 Oct (11 Oct: runs). Checked in headless Chromium 154.0.8037.57 on a Linux server without a GPU, 30 Oct 2026. Shows whether the page loads, downloads its brain data and keeps computing; it is not a play test. Safari, Firefox, phones and GPU machines were not tested.",
+      "path": "/p/digital-fly-catalog/ways-to-try/#run27-heading"
+    },
+    {
+      "change_id": "2026-10-30-run27-tracking",
+      "changed_at": "2026-10-30T10:30:00Z",
+      "summary": "Tracking: 30 Oct 2026: we looked up the latest commit of 142 tracked repositories: 127 unchanged, 14 with new commits, 1 gone or private (flydoom). From commit messages and file lists we judged most changes not material; flybrain-prove-ai and fly-connectome-reservoir added larger new results and fly-naf a commit about its wiring, so those three are re-read next, and fly-worker's demo code changed, so its browser check is redone later. 57 of 57 videos available; no new view counts.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-30-run27/#tracking-heading"
+    },
+    {
+      "change_id": "2026-10-30-run27-report",
+      "changed_at": "2026-10-30T10:30:00Z",
+      "summary": "New report: Twenty-seventh check (30 Oct 2026), with the walking-circuit paper's shuffle test, four new entries and ledger rows, 27 earlier grades re-checked, four older browser demos re-checked, and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-30-run27/"
+    },
+    {
       "change_id": "2026-10-29-run26-answers",
       "changed_at": "2026-10-29T10:30:00Z",
       "summary": "Plain answers on Is it real? (29 Oct 2026), each with dated sources: Is the fruit fly brain open source? updated in place (FlyWire CC BY-NC 4.0 on its own site vs CC BY 4.0 on its Zenodo record; we follow the stricter reading); new: What do I need to run it? (one machine, 19 Oct 2026; the 2.1 GB is the whole shared test container), Did a dead fly come back to life in a computer? and Could this become a 'hell' for future simulated brains?",
