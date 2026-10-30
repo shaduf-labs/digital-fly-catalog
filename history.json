@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-0815ad77a8cabc8a863f6c32",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-29T09:23:41Z",
+      "completed_at": "2026-10-29T10:30:00Z",
+      "title": "Twenty-sixth check: four plain answers with their sources, and two claims checked",
+      "summary": "Plain answers: Is the fruit fly brain open source? (updated), What do I need to run it?, Did a dead fly come back to life in a computer?, Could this become a 'hell' for future simulated brains?. 205 entries (3 new); controls ledger 97 studies, 87 with a wiring null: helps 35, no difference 25, worse 9, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 35 of 87. flybench keeps A: the author corrected one task's input rate (80 to 65 Hz); in the cited result files the signed build now reads graded 0.74, specificity +0.33, and other cited scores moved by less than 0.01; the control code is unchanged, and a preprint is now linked. 29 Oct: we scanned news, videos and new code from 24 to 29 Oct; two claims were checked: a peer-reviewed walking-circuit simulation paper in Nature, and new videos saying a fly brain was 'uploaded'.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-29-run26/",
+      "entrypoint": "reports/2026-10-29-run26/index.html"
+    },
+    {
       "run_id": "report-93f3aad5e9022a90ec82f51f",
       "status": "completed",
       "answer_change": "meaningful_change",

@@ -3150,6 +3150,76 @@
       "accessed_at": "2026-10-24T10:15:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-run26",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
+      "title": "Digital Fly Lab controls ledger (29 Oct 2026)",
+      "claim": "97 studies, 87 with a wiring null: helps 35, no difference 25, worse 9, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 35 of 87. Three rows joined on 29 Oct, scored by fixed rules from the authors' numbers.",
+      "accessed_at": "2026-10-29T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "answers-run26",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/is-it-real/#faq-heading",
+      "title": "Digital Fly Lab plain answers (29 Oct 2026)",
+      "claim": "Is the fruit fly brain open source? The main wiring maps are free to download, under different licences: FlyWire (FAFB): CC BY-NC 4.0 on FlyWire's own site (flywire.ai/guidelines), while its Zenodo record lists CC BY 4.0 (zenodo.org/records/10676866); both checked 29 Oct 2026, and we follow the stricter non-commercial reading. MaleCNS: CC-BY (male-cns.janelia.org, checked 29 Oct 2026). Hemibrain: CC-BY (janelia.org hemibrain page, checked 29 Oct 2026). BANC: CC BY 4.0 (BANC project README, checked 29 Oct 2026). Code licences vary by project, and each catalogue entry lists its own. Free to download does not always mean free for any use: FlyWire's own site gives a non-commercial licence, so we treat its data as not allowing commercial use without permission.",
+      "accessed_at": "2026-10-29T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "buzz-flywire-lab-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/archpc/buzz-flywire-lab",
+      "title": "Buzz repository (archpc)",
+      "claim": "buzz-flywire-lab A (helps): from the author's committed trial files (counted by us; not re-run), the giant-fiber escape neuron fired in 30 of 36 looming trials with the intact FlyWire wiring and in 0 of 36 with shuffled weights, but the input gains were hand-tuned on the intact wiring and only one shuffle seed was used, so we rate the comparison unfair.",
+      "accessed_at": "2026-10-29T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "synaptera-banc-brain-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/omeruk/synaptera-banc-brain",
+      "title": "Synaptera BANC repository (omeruk)",
+      "claim": "synaptera-banc-brain A (helps): in the author's pre-registered test (10 seeds; not re-run by us), the real nerve-cord wiring fitted a turn command better than degree-preserving shuffled wiring (test R2 0.9773 against 0.9504), but the difference is small, an unconstrained network fitted better (0.9984), and shuffled wiring scored higher at the held-out 90 deg/s.",
+      "accessed_at": "2026-10-29T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "oruk-fly-speech-emotion-writeup",
+      "source_type": "web",
+      "source_url": "https://oruk.ai/research/we-taught-a-fruit-fly-to-read-human-emotion",
+      "title": "Oruk Labs write-up (6 Sep 2026)",
+      "claim": "The authors report that a 499-neuron fly circuit with a trained readout scored 16.84% mAP on held-out voices, and the same circuit with scrambled wiring scored 16.88% (paired difference −0.04 points, 95% interval −0.16 to +0.07; 6 Sep 2026). We did not re-run it.",
+      "accessed_at": "2026-10-29T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "pugliese-2026-nature",
+      "source_type": "paper",
+      "source_url": "https://www.nature.com/articles/s41586-026-11195-y",
+      "title": "Pugliese et al., Connectome simulations identify a central pattern generator for fly walking (Nature, 28 Oct 2026)",
+      "claim": "Pugliese and colleagues (Nature, 28 Oct 2026) report that simulations of four fly nerve-cord wiring maps found a three-neuron circuit, one inhibitory and two excitatory cells, that produced leg rhythms in the model, and that a descending pathway the simulations pointed to drove rhythmic leg movements when they activated it with light in behaving flies. The simulation code (MIT licence) and simulation data are public. We did not re-run it, and our tools could not open the journal page; we read the preprint abstract and the code repository (checked 29 Oct 2026).",
+      "accessed_at": "2026-10-29T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "lesswrong-hells-2026",
+      "source_type": "web",
+      "source_url": "https://www.lesswrong.com/posts/uFBhZhdKLaZ6qF8mn/there-will-be-hells",
+      "title": "There Will Be Hells (LessWrong, 20 Oct 2026)",
+      "claim": "Some writers argue that as people get better at reading and steering simulated brains, and as these models are shared openly, some people will use them to try to cause suffering (\"There Will Be Hells\", LessWrong, 20 Oct 2026). Today's fly models leave out gap junctions, neurons that do not spike, internal state and long-range neuropeptides, and the brain model starts every neuron at zero background activity (Shiu et al. 2024); the essay itself calls the fly model oversimplified. We found no study that measured consciousness or suffering in these models, and whether flies feel pain is open. Whether any of these models, or a future one, can feel anything is not known.",
+      "accessed_at": "2026-10-29T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }

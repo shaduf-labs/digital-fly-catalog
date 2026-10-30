@@ -2,6 +2,48 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-29-run26-answers",
+      "changed_at": "2026-10-29T10:30:00Z",
+      "summary": "Plain answers on Is it real? (29 Oct 2026), each with dated sources: Is the fruit fly brain open source? updated in place (FlyWire CC BY-NC 4.0 on its own site vs CC BY 4.0 on its Zenodo record; we follow the stricter reading); new: What do I need to run it? (one machine, 19 Oct 2026; the 2.1 GB is the whole shared test container), Did a dead fly come back to life in a computer? and Could this become a 'hell' for future simulated brains?",
+      "path": "/p/digital-fly-catalog/is-it-real/#faq-heading"
+    },
+    {
+      "change_id": "2026-10-29-run26-entries",
+      "changed_at": "2026-10-29T10:30:00Z",
+      "summary": "205 catalogue entries (29 Oct 2026): 3 new: buzz-flywire-lab A (helps): from the author's committed trial files (counted by us; not re-run), the giant-fiber escape neuron fired in 30 of 36 looming trials with the intact FlyWire wiring and in 0 of 36 with shuffled weights, but the input gains were hand-tuned on the intact wiring and only one shuffle seed was used, so we rate the comparison unfair. synaptera-banc-brain A (helps): in the author's pre-registered test (10 seeds; not re-run by us), the real nerve-cord wiring fitted a turn command better than degree-preserving shuffled wiring (test R2 0.9773 against 0.9504), but the difference is small, an unconstrained network fitted better (0.9984), and shuffled wiring scored higher at the held-out 90 deg/s. oruk-fly-speech-emotion U (write-up only, no code): The authors report that a 499-neuron fly circuit with a trained readout scored 16.84% mAP on held-out voices, and the same circuit with scrambled wiring scored 16.88% (paired difference −0.04 points, 95% interval −0.16 to +0.07; 6 Sep 2026). We did not re-run it. flybench keeps A: the author corrected one task's input rate (80 to 65 Hz); in the cited result files the signed build now reads graded 0.74, specificity +0.33, and other cited scores moved by less than 0.01; the control code is unchanged, and a preprint is now linked. Two main links did not answer on 29 Oct (ascend's demo page and FlyGym's browser viewer); both are shown as not confirmed by our link check (29 Oct), seen once. Odyssey-3 claim: No method, code or write-up was published as of 29 Oct 2026; no public fly mode found on the preview page (29 Oct).",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-29"
+    },
+    {
+      "change_id": "2026-10-29-run26-ledger",
+      "changed_at": "2026-10-29T10:30:00Z",
+      "summary": "Controls ledger (29 Oct 2026): 3 new rows (buzz-flywire-lab helps, synaptera-banc-brain helps, oruk-fly-speech-emotion no difference; each with its limits), now 97 studies, 87 with a wiring null: helps 35, no difference 25, worse 9, mixed 15, not yet scored 3; fly wiring beat scrambled wiring in 35 of 87. Scoring unchanged.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed26-heading"
+    },
+    {
+      "change_id": "2026-10-29-run26-claims",
+      "changed_at": "2026-10-29T10:30:00Z",
+      "summary": "29 Oct: we scanned news, videos and new code from 24 to 29 Oct; two claims were checked: a peer-reviewed walking-circuit simulation paper in Nature, and new videos saying a fly brain was 'uploaded'. Pugliese and colleagues (Nature, 28 Oct 2026) report that simulations of four fly nerve-cord wiring maps found a three-neuron circuit, one inhibitory and two excitatory cells, that produced leg rhythms in the model, and that a descending pathway the simulations pointed to drove rhythmic leg movements when they activated it with light in behaving flies. The simulation code (MIT licence) and simulation data are public. We did not re-run it, and our tools could not open the journal page; we read the preprint abstract and the code repository (checked 29 Oct 2026). Two new videos use the word upload for a fly brain: \"The First Brain Was Just Uploaded To A Computer\" (AI Uncovered, 27 Oct 2026; about 26,000 views on 29 Oct) and a Japanese video whose title says a fly's brain was copied whole and run (25 Oct 2026; about 50,000 views on 29 Oct), whose description names Eon Systems' fly demo. Primary sources show a wiring map traced from one preserved fly brain and run as a simplified model, with parameters from the map, predicted neurotransmitters and earlier studies; Eon's body code is not public, so we grade its demo U. We did not watch the videos; see our answer \"Did a dead fly come back to life in a computer?\" (checked 29 Oct 2026).",
+      "path": "/p/digital-fly-catalog/is-it-real/#new29-heading"
+    },
+    {
+      "change_id": "2026-10-29-run26-gallery",
+      "changed_at": "2026-10-29T10:30:00Z",
+      "summary": "New gallery card (commentary, not watched by us): “They Lied to you about the Virtual Fly Brain” (10 Physics). A video explainer by 10 Physics (16 Oct 2026; about 411,000 views on 29 Oct 2026) that argues many people online have been overstating what the fruit fly connectome actually is.",
+      "path": "/p/digital-fly-catalog/gallery/#v-10physics-virtual-fly-brain-explainer"
+    },
+    {
+      "change_id": "2026-10-29-run26-tracking",
+      "changed_at": "2026-10-29T10:30:00Z",
+      "summary": "Tracking (29 Oct 2026): 29 Oct 2026: we looked up the latest commit of 159 tracked repositories: 128 unchanged, 13 with new commits, 1 already gone (flydoom). We re-read one of the 13, flybench, against its grade; the other 12 were not inspected and keep their grades until a later check. 56 of 56 videos available. View counts: 17 of the 56 earlier videos were refreshed from YouTube search pages on 29 Oct 2026 (approximate snapshots); the other 39 keep their earlier dated values.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-29-run26/#tracking-heading"
+    },
+    {
+      "change_id": "2026-10-29-run26-report",
+      "changed_at": "2026-10-29T10:30:00Z",
+      "summary": "New report: Twenty-sixth check (29 Oct 2026), with four plain answers and their sources, three new entries and ledger rows, flybench's re-read, two claims checked and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-29-run26/"
+    },
+    {
       "change_id": "2026-10-24-run25-recheck",
       "changed_at": "2026-10-24T10:15:00Z",
       "summary": "24 Oct: we re-checked the 31 projects we last graded between 6 and 12 Oct against their current code: 31 keep their grade (1 after a full re-read). 24 Oct: the project left from the 23 Oct re-check, acamilo-flybrain, keeps its grade C after a full re-read. brainlab keeps A after a full re-read: on 23 Oct 2026 the author added a report that records a failed check of a different result, whether the real wiring helps the frozen olfactory circuit integrate angular velocity (the real wiring did no better than a no-information guess); the first-campaign report its grade cites did not change.",

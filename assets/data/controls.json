@@ -1,26 +1,26 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Digital Fly Lab controls ledger",
-  "version": "2026-10-24-run25",
-  "generated_at": "2026-10-24T12:00:00Z",
-  "run_id": "report-93f3aad5e9022a90ec82f51f",
-  "as_of": "2026-10-24",
+  "version": "2026-10-29-run26",
+  "generated_at": "2026-10-29T12:00:00Z",
+  "run_id": "report-0815ad77a8cabc8a863f6c32",
+  "as_of": "2026-10-29",
   "answer": {
-    "one_line": "Sometimes: fly wiring beat scrambled wiring in 33 of 84 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (33).",
-    "short": "Of 94 control studies in our catalogue, 84 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 33, makes no difference in 24, does worse in 9, gives mixed results in 15 and is not yet scored in 3. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+    "one_line": "Sometimes: fly wiring beat scrambled wiring in 35 of 87 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (34).",
+    "short": "Of 97 control studies in our catalogue, 87 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 35, makes no difference in 25, does worse in 9, gives mixed results in 15 and is not yet scored in 3. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
     "counts": {
-      "studies": 94,
-      "with_wiring_null": 84,
+      "studies": 97,
+      "with_wiring_null": 87,
       "by_family": {
         "reflex-circuit": {
-          "helps": 9,
+          "helps": 10,
           "no_difference": 0,
           "worse": 0,
           "mixed": 1,
           "not_tested": 2
         },
         "sensory-model": {
-          "helps": 5,
+          "helps": 6,
           "no_difference": 2,
           "worse": 2,
           "mixed": 2,
@@ -49,7 +49,7 @@
         },
         "reservoir": {
           "helps": 1,
-          "no_difference": 1,
+          "no_difference": 2,
           "worse": 2,
           "mixed": 1,
           "not_tested": 1
@@ -351,6 +351,97 @@
         },
         {
           "url": "https://github.com/euroized/ascend/blob/fbd22d2df18e4d06855f63a417308765526d25a8/docs/PREREG_BASELINES.md",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "helps",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
+      "id": "buzz-flywire-lab",
+      "name": "Buzz: giant-fiber escape to looming in a whole-brain FlyWire LIF simulation, intact vs weight-shuffled connectome",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "reflex-circuit",
+      "loop": "open-loop",
+      "wiring": {
+        "dataset": "FlyWire",
+        "release": "783",
+        "scope": "whole brain, 139,255 neurons"
+      },
+      "trained_parts": "none (giant-fiber input gains hand-tuned)",
+      "metric": {
+        "name": "share of looming trials with any giant-fiber spike (3 seeds x 6 intensities x 2 durations)",
+        "unit": "% of trials",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 83.3,
+        "n": 3,
+        "spread": "30 of 36 stimulus trials; 0 of 6 no-stimulus trials",
+        "source": "f412c26 data/escape_latency_intact.json (42 trials, counted by us)"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "weight-shuffled",
+          "null_type": "weight-shuffle",
+          "label": "edge weights permuted before upload (seed 0xC0FFEE), same graph, same stimuli and seeds (docs/report_phase2.md line 10)",
+          "value": 0,
+          "n": 3,
+          "samples": 1,
+          "spread": "0 of 36 stimulus trials",
+          "readout_refit": null,
+          "source": "f412c26 data/escape_latency_shuffled.json (42 trials, counted by us); docs/report_phase2.md lines 34-37",
+          "recomputed_by_us": true,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "No interval reported. One shuffle seed in this phase; in a later phase (bilateral test) one of three shuffles kept a weak one-sided response (README.md line 61). Giant-fiber input gains were hand-tuned to make the escape work (docs/report_phase2.md line 47).",
+        "headline_arm": "weight-shuffled",
+        "best_null_arm": "weight-shuffled",
+        "baseline_arm": null,
+        "retention": 0,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": 83.3
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": false,
+        "null_samples": 1,
+        "has_no_brain_baseline": false,
+        "reason": "The shuffle keeps the graph and the weight multiset and the same input populations; the gains were hand-tuned on the intact wiring and not re-tuned for the shuffle.",
+        "verdict": "unfair"
+      },
+      "quality": {
+        "n_per_arm": 3,
+        "held_out": null,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "Committed trial files for both arms; three seeds; one shuffle seed; gains tuned on the intact wiring; not re-run by us.",
+        "uncertainty_reported": false,
+        "recomputed_by_us": true,
+        "grade": "weak"
+      },
+      "extraction": "files",
+      "one_line": "The escape neuron fired in 30 of 36 looming trials with intact wiring and in none with shuffled weights, but the input gains were hand-tuned on the intact wiring and only one shuffle seed was used, so we rate the comparison unfair.",
+      "commit": "f412c2614b2df02302dcba5c399d957f0be4a36c",
+      "checked_at": "2026-10-29T09:40:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/archpc/buzz-flywire-lab/blob/f412c2614b2df02302dcba5c399d957f0be4a36c/data/escape_latency_shuffled.json",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/archpc/buzz-flywire-lab/blob/f412c2614b2df02302dcba5c399d957f0be4a36c/docs/report_phase2.md",
           "label": "direct"
         }
       ],
@@ -3002,6 +3093,128 @@
           "label": "direct"
         }
       ],
+      "caveats": []
+    },
+    {
+      "id": "synaptera-banc-brain",
+      "name": "Synaptera BANC: test R2 of a trained turn command on a BANC nerve-cord subgraph with real vs degree-preserving shuffled wiring (pre-registered)",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "sensory-model",
+      "loop": "open-loop",
+      "wiring": {
+        "dataset": "BANC (driven by FlyWire)",
+        "release": "v888 (FlyWire v783)",
+        "scope": "VNC subgraph, 25,818 neurons, 3,020,333 edges"
+      },
+      "trained_parts": "edge gains and per-neuron leak rates; topology and signs fixed",
+      "metric": {
+        "name": "test R2 of the turn command at the training speeds (sealed test split)",
+        "unit": "R2",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 0.9773,
+        "n": 10,
+        "spread": "10 training seeds (per-seed values in the report)",
+        "source": "bc2dda3 README.md line 68; docs/results/f5_stageA_report.md lines 5, 27-28"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "shuffled",
+          "null_type": "degree-preserving",
+          "label": "degree-preserving directed double-edge swaps of the same subgraph, same training (README.md lines 93, 103)",
+          "value": 0.9504,
+          "n": 10,
+          "samples": 10,
+          "spread": "10 seeds; interval of real minus arm 0.0242 to 0.0291",
+          "readout_refit": true,
+          "source": "bc2dda3 README.md line 69; docs/results/f5_stageA_report.md line 27",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "mlp",
+          "null_type": "other",
+          "label": "unconstrained two-layer network",
+          "value": 0.9984,
+          "n": 10,
+          "samples": 10,
+          "spread": "10 seeds",
+          "readout_refit": true,
+          "source": "bc2dda3 README.md line 71",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "bridge_off",
+          "null_type": "stimulus-absent",
+          "label": "descending-neuron bridge switched off",
+          "value": 0,
+          "n": 5,
+          "samples": 5,
+          "spread": "5 seeds",
+          "readout_refit": true,
+          "source": "bc2dda3 README.md line 73",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": [
+          0.0242,
+          0.0291
+        ],
+        "p": 0.001,
+        "stat_note": "Author's pre-registered test: mean paired difference 0.0268 over 10 seeds, one-sided exact sign-flip p 0.0010, Holm-adjusted 0.0029. An unconstrained network scored higher (0.9984); at the held-out 90 deg/s the shuffled wiring scored higher (difference -0.0074).",
+        "headline_arm": "shuffled",
+        "best_null_arm": "shuffled",
+        "baseline_arm": null,
+        "retention": 0.9725,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": 0.0269
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 1,
+        "has_no_brain_baseline": false,
+        "reason": "Same training grid and budget for both arms; degree-preserving swaps keep signs with the presynaptic neuron; one shuffled graph; the shuffled arm was still improving at the end of the budget (author's caveat).",
+        "verdict": "partly-fair"
+      },
+      "quality": {
+        "n_per_arm": 10,
+        "held_out": true,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "Pre-registered, sealed test split, 10 seeds with intervals, committed report; not re-run by us.",
+        "uncertainty_reported": true,
+        "recomputed_by_us": false,
+        "grade": "moderate"
+      },
+      "extraction": "files",
+      "one_line": "Real nerve-cord wiring fitted the turn command better than degree-preserving shuffled wiring in all 10 seeds (0.9773 against 0.9504), but the difference is small, an unconstrained network fitted better (0.9984), and the shuffled wiring scored higher at the held-out 90 deg/s.",
+      "commit": "bc2dda374beef0a5dcb3c8f0cde0094a91acc02e",
+      "checked_at": "2026-10-29T09:45:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/omeruk/synaptera-banc-brain/blob/bc2dda374beef0a5dcb3c8f0cde0094a91acc02e/docs/results/f5_stageA_report.md",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/omeruk/synaptera-banc-brain/blob/bc2dda374beef0a5dcb3c8f0cde0094a91acc02e/README.md",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "helps",
+      "baseline_beaten": "not-tested",
       "caveats": []
     },
     {
@@ -10172,6 +10385,100 @@
       "caveats": []
     },
     {
+      "id": "oruk-fly-speech-emotion",
+      "name": "Oruk Labs: held-out mean average precision of a 499-neuron MaleCNS reservoir with a trained readout vs scrambled wiring (authors' write-up, not re-run by us)",
+      "evidence_grade": "U",
+      "made_by_us": false,
+      "task_family": "reservoir",
+      "loop": "offline",
+      "wiring": {
+        "dataset": "MaleCNS",
+        "release": "v1.0",
+        "scope": "499 central-brain neurons, 15,865 connections"
+      },
+      "trained_parts": "linear ridge readout only, on a frozen circuit (authors' write-up)",
+      "metric": {
+        "name": "mean average precision over 31 listener labels on 2,022 held-out clips",
+        "unit": "% mAP",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 16.84,
+        "n": 3,
+        "spread": "mean of 3 prespecified seeds",
+        "source": "authors' write-up, 6 Sep 2026, benchmark section"
+      },
+      "floor": {
+        "value": 9.71,
+        "label": "constant scores",
+        "source": "authors' write-up"
+      },
+      "arms": [
+        {
+          "arm_id": "scrambled",
+          "null_type": "target-permutation",
+          "label": "connection destinations shuffled, keeping each source neuron's outgoing count, signs and weights; settings re-selected and readout retrained",
+          "value": 16.88,
+          "n": 3,
+          "samples": 3,
+          "spread": "3 seeds",
+          "readout_refit": true,
+          "source": "authors' write-up, 6 Sep 2026",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": [
+          -0.16,
+          0.07
+        ],
+        "p": null,
+        "stat_note": "Authors' paired bootstrap (500 resamples of 45 held-out speaker/corpus groups): fly minus scrambled -0.04 points. The readout also receives pooled audio features directly. Write-up only; no code published.",
+        "headline_arm": "scrambled",
+        "best_null_arm": "scrambled",
+        "baseline_arm": null,
+        "retention": 1.0056,
+        "retention_method": "floor",
+        "baseline_retention": null,
+        "difference": -0.04
+      },
+      "fairness": {
+        "keeps_degree": false,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 3,
+        "has_no_brain_baseline": true,
+        "reason": "Settings re-selected and the readout retrained for the scrambled circuit; out-degree kept, in-degree not; an audio-only baseline was also trained (value not read).",
+        "verdict": "partly-fair"
+      },
+      "quality": {
+        "n_per_arm": 3,
+        "held_out": true,
+        "results_in_repo_files": false,
+        "independent_test": false,
+        "peer_review": "none",
+        "reason": "Authors' write-up with intervals; no code or result files published; not re-run by us.",
+        "uncertainty_reported": true,
+        "recomputed_by_us": false,
+        "grade": "weak"
+      },
+      "extraction": "catalogue-text",
+      "one_line": "The authors report that a 499-neuron fly circuit with a trained readout scored 16.84% mAP on held-out voices, and the same circuit with scrambled wiring scored 16.88% (paired difference −0.04 points, 95% interval −0.16 to +0.07; 6 Sep 2026). We did not re-run it.",
+      "commit": null,
+      "checked_at": "2026-10-29T09:36:00Z",
+      "sources": [
+        {
+          "url": "https://oruk.ai/research/we-taught-a-fruit-fly-to-read-human-emotion",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "no-difference",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
       "id": "qedsdl-endpoint",
       "name": "QedSDL Endpoint: FlyWire v783 PN to KC code as a Raman novelty detector, measured vs degree-preserving shuffled and random wiring (20 seeds)",
       "evidence_grade": "A",
@@ -11500,6 +11807,19 @@
       "caveats": []
     },
     {
+      "study_id": "buzz-flywire-lab",
+      "label": "Buzz: giant-fiber escape to looming in a whole-brain FlyWire LIF simulation, intact vs weight-shuffled connectome",
+      "task_family": "reflex-circuit",
+      "headline_null_type": "weight-shuffle",
+      "retention": 0,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "helps",
+      "quality": "weak",
+      "fairness": "unfair",
+      "caveats": []
+    },
+    {
       "study_id": "byo-shiu-shuffle",
       "label": "Build your own: sugar to MN9 against four scrambled-wiring nulls (our run)",
       "task_family": "reflex-circuit",
@@ -11770,6 +12090,19 @@
       "wiring_effect": "worse",
       "quality": "moderate",
       "fairness": "fair",
+      "caveats": []
+    },
+    {
+      "study_id": "synaptera-banc-brain",
+      "label": "Synaptera BANC: test R2 of a trained turn command on a BANC nerve-cord subgraph with real vs degree-preserving shuffled wiring (pre-registered)",
+      "task_family": "sensory-model",
+      "headline_null_type": "degree-preserving",
+      "retention": 0.9725,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "helps",
+      "quality": "moderate",
+      "fairness": "partly-fair",
       "caveats": []
     },
     {
@@ -12501,6 +12834,19 @@
       "wiring_effect": "worse",
       "quality": "weak",
       "fairness": "fair",
+      "caveats": []
+    },
+    {
+      "study_id": "oruk-fly-speech-emotion",
+      "label": "Oruk Labs: held-out mean average precision of a 499-neuron MaleCNS reservoir with a trained readout vs scrambled wiring (authors' write-up, not re-run by us)",
+      "task_family": "reservoir",
+      "headline_null_type": "target-permutation",
+      "retention": 1.0056,
+      "retention_method": "floor",
+      "baseline_retention": null,
+      "wiring_effect": "no-difference",
+      "quality": "weak",
+      "fairness": "partly-fair",
       "caveats": []
     },
     {
