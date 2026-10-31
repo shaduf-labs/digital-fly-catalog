@@ -1,16 +1,16 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Digital Fly Lab controls ledger",
-  "version": "2026-10-30-run27",
-  "generated_at": "2026-10-30T12:00:00Z",
-  "run_id": "report-85e1060076abccb550d4f6c5",
-  "as_of": "2026-10-30",
+  "version": "2026-10-31-run28",
+  "generated_at": "2026-10-31T12:00:00Z",
+  "run_id": "report-8b2e495d393eeb0e08d9e277",
+  "as_of": "2026-10-31",
   "answer": {
-    "one_line": "Sometimes: fly wiring beat scrambled wiring in 35 of 91 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (35).",
-    "short": "Of 101 control studies in our catalogue, 91 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 35, makes no difference in 26, does worse in 9, gives mixed results in 17 and is not yet scored in 4. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+    "one_line": "Sometimes: fly wiring beat scrambled wiring in 36 of 94 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (37).",
+    "short": "Of 104 control studies in our catalogue, 94 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 36, makes no difference in 26, does worse in 11, gives mixed results in 17 and is not yet scored in 4. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
     "counts": {
-      "studies": 101,
-      "with_wiring_null": 91,
+      "studies": 104,
+      "with_wiring_null": 94,
       "by_family": {
         "reflex-circuit": {
           "helps": 10,
@@ -22,7 +22,7 @@
         "sensory-model": {
           "helps": 6,
           "no_difference": 2,
-          "worse": 2,
+          "worse": 3,
           "mixed": 2,
           "not_tested": 2
         },
@@ -34,7 +34,7 @@
           "not_tested": 2
         },
         "game-play": {
-          "helps": 9,
+          "helps": 10,
           "no_difference": 10,
           "worse": 2,
           "mixed": 3,
@@ -57,7 +57,7 @@
         "language-model": {
           "helps": 0,
           "no_difference": 0,
-          "worse": 0,
+          "worse": 1,
           "mixed": 2,
           "not_tested": 1
         },
@@ -1902,6 +1902,97 @@
       ],
       "wiring_effect": "mixed",
       "baseline_beaten": "no",
+      "caveats": []
+    },
+    {
+      "id": "fly-hearing-lab",
+      "name": "Fly Hearing Lab: male MaleCNS hearing subnetwork, rhythm (IPI) tuning of song-detector and receptivity cells, real vs degree-preserving shuffled wiring",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "sensory-model",
+      "loop": "offline",
+      "wiring": {
+        "dataset": "MaleCNS",
+        "release": "v1.0",
+        "scope": "8,000-neuron hearing subnetwork, 242,956 edges at weight >= 5"
+      },
+      "trained_parts": "none",
+      "metric": {
+        "name": "male IPI tuning of the target set (firing-rate difference, Hz; larger = more rhythm-tuned)",
+        "unit": "Hz",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 0.7,
+        "n": 5,
+        "spread": "95% CI 0.68 to 0.72",
+        "source": "f175eeb docs/RESULTS.md section 4 (male ipi tuning, baseline w>=5)"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "shuffled",
+          "null_type": "degree-preserving",
+          "label": "targets permuted across edges, every in/out degree and weight multiset kept; one shuffle seed (12345), 5 simulation seeds",
+          "value": 2.66,
+          "n": 5,
+          "samples": 1,
+          "spread": "95% CI 2.60 to 2.71",
+          "readout_refit": null,
+          "source": "f175eeb docs/RESULTS.md section 4 (shuffled connectome column)",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Bootstrap 95% intervals over 5 seeds as committed by the author. The effect is larger on shuffled wiring for every male effect (pulse minus scrambled -4.18 vs -1.24; male minus female 1.83 vs 0.23); the author's verdict is 'not robust' for all. One shuffle seed only.",
+        "headline_arm": "shuffled",
+        "best_null_arm": "shuffled",
+        "baseline_arm": null,
+        "retention": 3.8,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": -1.96
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 1,
+        "has_no_brain_baseline": false,
+        "reason": "Same model, inputs and readout; degree-preserving target permutation; no parameter tuned to pass (README section 4); a single shuffle seed.",
+        "verdict": "partly-fair"
+      },
+      "quality": {
+        "n_per_arm": 5,
+        "held_out": false,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "reason": "Committed generated results (docs/RESULTS.md from results.json by docs/make_results.py; results.json itself not committed); not re-run by us.",
+        "peer_review": "none",
+        "uncertainty_reported": false,
+        "recomputed_by_us": false,
+        "grade": "weak"
+      },
+      "extraction": "files",
+      "one_line": "Real hearing wiring was less rhythm-tuned than degree-preserving shuffled wiring (0.70 vs 2.66 Hz); the author finds no robust effect.",
+      "commit": "f175eeb41c245818a82a673f0bfba42169dd176b",
+      "checked_at": "2026-10-31T09:45:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/Taariqmornings/fly_brain_research-Hearing-lab/blob/f175eeb41c245818a82a673f0bfba42169dd176b/docs/RESULTS.md",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/Taariqmornings/fly_brain_research-Hearing-lab/blob/f175eeb41c245818a82a673f0bfba42169dd176b/docs/METHODS.md",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "worse",
+      "baseline_beaten": "not-tested",
       "caveats": []
     },
     {
@@ -6174,6 +6265,130 @@
           "label": "direct"
         }
       ],
+      "caveats": []
+    },
+    {
+      "id": "fly-naf",
+      "name": "Fly-NAF: FlyWire v783 LIF brain fed a recorded Five Nights at Freddy's night, real vs target-shuffled wiring (3 seeds), swapped eyes and cut inhibitors",
+      "evidence_grade": "B",
+      "made_by_us": false,
+      "task_family": "game-play",
+      "loop": "open-loop",
+      "wiring": {
+        "dataset": "FlyWire",
+        "release": "783",
+        "scope": "whole brain, 138,639 neurons, 15,091,983 connections (experiment 17)"
+      },
+      "trained_parts": "none (accumulator, memory and door constants calibrated on the FlyWire brain)",
+      "metric": {
+        "name": "hallway threats of the recorded night 3 (2026-10-16) answered first on the threat's own side, out of 8",
+        "unit": "threats",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 7,
+        "n": 1,
+        "spread": null,
+        "source": "64cdef2 docs/experiments/17-a-shuffled-brain-does-not-play.md, table 'The Recorded Night' (FlyWire 7 of 8)"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "shuffled_targets_x3",
+          "null_type": "degree-preserving",
+          "label": "every connection's postsynaptic index permuted over all 15.1 M connections (src/flynaf/neural/rewiring.py shuffled_targets): each neuron keeps in-degree, out-degree and the weights it sends; seeds 0, 1, 2",
+          "value": 2,
+          "n": 3,
+          "samples": 3,
+          "spread": "± 1.73 sd",
+          "readout_refit": null,
+          "source": "64cdef2 docs/experiments/17 'The Recorded Night': shuffle 0, 1, 2 answered 0, 3, 3 of 8 on the own side first (mean and sample SD computed by us); 163, 276, 405 frames with a DNp01 spike vs 18",
+          "recomputed_by_us": true,
+          "activity_ratio": 15.98,
+          "activity_class": "runaway",
+          "activity_basis": "unclear"
+        },
+        {
+          "arm_id": "eyes_swapped",
+          "null_type": "other",
+          "label": "left and right input populations swapped (readouts untouched)",
+          "value": 0,
+          "n": 1,
+          "samples": 1,
+          "spread": null,
+          "readout_refit": null,
+          "source": "64cdef2 docs/experiments/17 'The Recorded Night': 0 own side first, 7 other side first",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "inhibitors_cut",
+          "null_type": "lesion",
+          "label": "outgoing synapses of the GABAergic camera inhibitors removed",
+          "value": 7,
+          "n": 1,
+          "samples": 1,
+          "spread": null,
+          "readout_refit": null,
+          "source": "64cdef2 docs/experiments/17 'The Recorded Night': 7 own side first; 155 frames with a DNp01 spike",
+          "recomputed_by_us": false,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Open-loop replay of one recorded night (2,618 frames of eye and tablet input) through each brain; 8 hallway threats. Shuffle arm value = mean of 0, 3, 3 (computed by us); activity ratio = mean DNp01 spike frames of the shuffles (281.3) / FlyWire (18), giant-fibre readout only, not network-wide. The memory and accumulator constants were calibrated on the FlyWire brain (author, experiment 19), so the shuffles run with constants tuned for the real wiring. A second test (experiment 19, fd56ce2, 2 shuffle seeds): after a sighting the FlyWire brain looked back at the sighted side 24 of 24 times vs 13 and 13 of 24 for the shuffles and 4 of 24 with all synapses removed. Raw logs (logs/controls.json, logs/look_choice.json) are not committed; numbers are from the committed write-ups.",
+        "headline_arm": "shuffled_targets_x3",
+        "best_null_arm": "shuffled_targets_x3",
+        "baseline_arm": null,
+        "retention": 0.2857,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": 5
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": false,
+        "null_samples": 3,
+        "has_no_brain_baseline": false,
+        "reason": "Target shuffle keeps in- and out-degree and sent weights; the same input populations and readouts; constants calibrated on the FlyWire brain only; no threshold-rule baseline without a brain.",
+        "verdict": "unfair"
+      },
+      "quality": {
+        "n_per_arm": 3,
+        "held_out": false,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "reason": "Tables in committed experiment write-ups (docs/experiments/17 and 19); raw JSON logs not committed; one recorded night; not re-run by us.",
+        "peer_review": "none",
+        "uncertainty_reported": true,
+        "recomputed_by_us": true,
+        "grade": "weak"
+      },
+      "extraction": "files",
+      "one_line": "On one replayed game night the real wiring answered 7 of 8 threats on the threat's side first; three shuffled brains answered 0, 3 and 3. The game constants were tuned on the real wiring, so we rate the comparison unfair.",
+      "commit": "64cdef2dab990f377c7631af59cec00f1fae6860",
+      "checked_at": "2026-10-31T09:45:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/ArtyMend07/Fly-NAF/blob/64cdef2dab990f377c7631af59cec00f1fae6860/docs/experiments/17-a-shuffled-brain-does-not-play.md",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/ArtyMend07/Fly-NAF/blob/64cdef2dab990f377c7631af59cec00f1fae6860/docs/experiments/19-the-side-it-checks-when-nothing-is-there.md",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/ArtyMend07/Fly-NAF/blob/64cdef2dab990f377c7631af59cec00f1fae6860/src/flynaf/neural/rewiring.py",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "helps",
+      "baseline_beaten": "not-tested",
       "caveats": []
     },
     {
@@ -10831,6 +11046,102 @@
       ]
     },
     {
+      "id": "drosocode",
+      "name": "DrosoCode: FlyWire mushroom body with plastic KC-to-MBON synapses predicting the next code token, real vs rewired wiring",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "language-model",
+      "loop": "offline",
+      "wiring": {
+        "dataset": "FlyWire",
+        "release": "783",
+        "scope": "mushroom body: 2,597 Kenyon cells, projection neurons, APL, 48 MBONs"
+      },
+      "trained_parts": "Kenyon-cell-to-MBON synapses",
+      "metric": {
+        "name": "next-token accuracy after 1,200 lessons (top-1)",
+        "unit": "fraction",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 0.1261,
+        "n": 1,
+        "spread": null,
+        "source": "4899921 data/resultats_croissance.json tailles[0].appris"
+      },
+      "floor": {
+        "label": "majority-token baseline",
+        "value": 0.0924,
+        "source": "4899921 data/resultats_croissance.json base.base_majoritaire"
+      },
+      "arms": [
+        {
+          "arm_id": "rewired",
+          "null_type": "boundary-preserving",
+          "label": "partners redrawn within the PN-to-KC and KC-to-MBON blocks; each target keeps its number of inputs and their weights; seed 12345",
+          "value": 0.1807,
+          "n": 1,
+          "samples": 1,
+          "spread": null,
+          "readout_refit": true,
+          "source": "4899921 data/resultats_croissance.json temoin_remanie.appris",
+          "recomputed_by_us": false,
+          "activity_ratio": 0.964,
+          "activity_class": "comparable",
+          "activity_basis": "unclear"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "One run per condition, no uncertainty. Activity ratio = active Kenyon-cell share, rewired 0.2102 / real 0.2181. Top-3: 0.353 rewired vs 0.240 real; wiring ceiling 0.874 vs 0.836.",
+        "headline_arm": "rewired",
+        "best_null_arm": "rewired",
+        "baseline_arm": null,
+        "retention": 2.6202,
+        "retention_method": "floor",
+        "baseline_retention": null,
+        "difference": -0.0546
+      },
+      "fairness": {
+        "keeps_degree": false,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 1,
+        "has_no_brain_baseline": true,
+        "reason": "Same lessons and learning rule; rewiring keeps blocks and each target's in-degree, not each source's out-degree; a majority-token baseline is reported.",
+        "verdict": "partly-fair"
+      },
+      "quality": {
+        "n_per_arm": 1,
+        "held_out": true,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "reason": "Committed result JSON; one run per arm; not re-run by us.",
+        "peer_review": "none",
+        "uncertainty_reported": false,
+        "recomputed_by_us": false,
+        "grade": "weak"
+      },
+      "extraction": "files",
+      "one_line": "Rewired mushroom-body wiring learned to predict code tokens better than the real wiring (18.1% vs 12.6%; one run each).",
+      "commit": "4899921bffb27e1e42c54ee196f84cfcb4be072a",
+      "checked_at": "2026-10-31T09:47:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/Plagnito/DrosoCode/blob/4899921bffb27e1e42c54ee196f84cfcb4be072a/data/resultats_croissance.json",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/Plagnito/DrosoCode/blob/4899921bffb27e1e42c54ee196f84cfcb4be072a/scripts/courbe_croissance.py",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "worse",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
       "id": "flm",
       "name": "FLM - Fly Language Model",
       "evidence_grade": "A",
@@ -12457,6 +12768,19 @@
       "caveats": []
     },
     {
+      "study_id": "fly-hearing-lab",
+      "label": "Fly Hearing Lab: male MaleCNS hearing subnetwork, rhythm (IPI) tuning of song-detector and receptivity cells, real vs degree-preserving shuffled wiring",
+      "task_family": "sensory-model",
+      "headline_null_type": "degree-preserving",
+      "retention": 3.8,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "worse",
+      "quality": "weak",
+      "fairness": "partly-fair",
+      "caveats": []
+    },
+    {
       "study_id": "fly-ocr",
       "label": "Fly OCR",
       "task_family": "sensory-model",
@@ -12863,6 +13187,19 @@
       "wiring_effect": "not-tested",
       "quality": "moderate",
       "fairness": "partly-fair",
+      "caveats": []
+    },
+    {
+      "study_id": "fly-naf",
+      "label": "Fly-NAF: FlyWire v783 LIF brain fed a recorded Five Nights at Freddy's night, real vs target-shuffled wiring (3 seeds), swapped eyes and cut inhibitors",
+      "task_family": "game-play",
+      "headline_null_type": "degree-preserving",
+      "retention": 0.2857,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "helps",
+      "quality": "weak",
+      "fairness": "unfair",
       "caveats": []
     },
     {
@@ -13370,6 +13707,19 @@
       "caveats": [
         "author-p-0.05-or-more"
       ]
+    },
+    {
+      "study_id": "drosocode",
+      "label": "DrosoCode: FlyWire mushroom body with plastic KC-to-MBON synapses predicting the next code token, real vs rewired wiring",
+      "task_family": "language-model",
+      "headline_null_type": "boundary-preserving",
+      "retention": 2.6202,
+      "retention_method": "floor",
+      "baseline_retention": null,
+      "wiring_effect": "worse",
+      "quality": "weak",
+      "fairness": "partly-fair",
+      "caveats": []
     },
     {
       "study_id": "flm",

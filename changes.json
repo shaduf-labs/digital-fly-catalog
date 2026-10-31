@@ -2,6 +2,42 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-10-31-run28-entries",
+      "changed_at": "2026-10-31T10:30:00Z",
+      "summary": "211 catalogue entries (31 Oct 2026): 2 new: fly-hearing-lab A (worse) and drosocode A (worse, one run each). Re-read: fly-naf B kept, now with a wiring control (Fly-NAF (re-read 31 Oct): the author now tests the wiring. On one replayed game night the real wiring answered 7 of 8 threats on the threat's side first; three shuffled brains answered 0, 3 and 3. The game constants were tuned on the real wiring, so the shuffled brains ran with settings made for another network. Grade B kept.); flybrain-prove-ai A kept; fly-connectome-reservoir B kept. neural-canvas: The copy of this demo at fruitfly.live answered on 30 and 31 Oct with a security certificate made for its hosting service's own addresses, not for fruitfly.live, so browsers refuse to open it; this looks like a setup problem at that address, which we did not check further. The Hugging Face version is the one we link.",
+      "path": "/p/digital-fly-catalog/new-and-updated/#u-2026-10-31"
+    },
+    {
+      "change_id": "2026-10-31-run28-ledger",
+      "changed_at": "2026-10-31T10:30:00Z",
+      "summary": "Controls ledger (31 Oct 2026): 3 new rows (fly-naf helps, rated unfair because its constants were tuned on the real wiring; fly-hearing-lab and drosocode worse), now 104 studies, 94 with a wiring null: helps 36, no difference 26, worse 11, mixed 17, not yet scored 4; fly wiring beat scrambled wiring in 36 of 94. Pugliese stays not scored. Scoring unchanged.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed28-heading"
+    },
+    {
+      "change_id": "2026-10-31-run28-claims",
+      "changed_at": "2026-10-31T10:30:00Z",
+      "summary": "31 Oct: we scanned news, videos and new code from 30 to 31 Oct; nothing met the bar for a new claim check, our news searches found no new coverage of the walking-circuit paper beyond the journal article itself, and two new code projects with their own scrambled-wiring tests were added. Pugliese et al. 2026 (Nature): We checked whether the authors' walking model can be re-run with shuffled wiring on an ordinary 2-processor server without a GPU (31 Oct 2026): its software would need an estimated 620 MB once installed, plus 86 MB of wiring data, more than our 600 MB test space. The test was not run. The authors' shuffle keeps each neuron's excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count. Whether the real wiring is needed for the simulated walking rhythm stays not tested; the earlier circuit count is a pattern in the wiring, not a test of walking.",
+      "path": "/p/digital-fly-catalog/is-it-real/#c-pugliese-2026-walking-cpg"
+    },
+    {
+      "change_id": "2026-10-31-run28-browser",
+      "changed_at": "2026-10-31T10:30:00Z",
+      "summary": "fly67: runs again on 31 Oct. It downloaded about 33 MB of brain data, identified by their web address, a method we fixed before this check. Checked in headless Chromium 154.0.8037.57 on a Linux server without a GPU, 31 Oct 2026. Shows whether the page loads, downloads its brain data and keeps computing; it is not a play test. Safari, Firefox, phones and GPU machines were not tested.",
+      "path": "/p/digital-fly-catalog/ways-to-try/#run28-heading"
+    },
+    {
+      "change_id": "2026-10-31-run28-tracking",
+      "changed_at": "2026-10-31T10:30:00Z",
+      "summary": "Tracking: 31 Oct 2026: we looked up the latest commit of 142 tracked repositories: 127 unchanged, 14 with new commits, 1 gone or private (flydoom). Three of the changed ones were re-read (fly-naf, flybrain-prove-ai and fly-connectome-reservoir); the other changes are followed up in the next check and were not judged today. 57 of 57 videos available; no new view counts. First look at 21 code projects found by our searches: 2 graded (Fly Hearing Lab and DrosoCode), 14 left out because they have no wiring comparison or their shuffle does not touch the wiring, 4 listed for the next check and 1 not found.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-31-run28/#tracking-heading"
+    },
+    {
+      "change_id": "2026-10-31-run28-report",
+      "changed_at": "2026-10-31T10:30:00Z",
+      "summary": "New report: Twenty-eighth check (31 Oct 2026), with the walking-circuit model checked for a shuffled-wiring re-run (not run: estimated size above our test space), Fly-NAF's new wiring control, two new entries, fly67 re-checked, and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-10-31-run28/"
+    },
+    {
       "change_id": "2026-10-30-run27-entries",
       "changed_at": "2026-10-30T10:30:00Z",
       "summary": "209 catalogue entries (30 Oct 2026): 4 new: pugliese-2026-walking-cpg A (peer-reviewed, MIT; not scored), fly-connectome-forecast A (no difference), riskfly A (mixed; MAE 0.00576 with the fly wiring against 0.00723 for degree-preserving rewired wiring, fly better in 5 of 5 seeds, author's p = 0.0625, called exploratory, while a dense network did best (0.00537); by our fixed rules the rewired comparison reads as no difference and the row as mixed, because a random sparse reservoir did clearly worse. The target is a formula, not an investment strategy; no licence file.) and fly-novelty-scada A (mixed). 27 entries first graded 13-19 Oct were re-checked on 30 Oct: 25 keep their grade; 2 with larger upstream changes are re-read next. fasterfly: an MIT licence file was added upstream on 30 Oct. Links: ascend's demo page and FlyGym's browser viewer: not confirmed by our link check (29 and 30 Oct). Odyssey-3 claim: No method, code or write-up was published as of 30 Oct 2026 (checked 30 Oct); no public fly mode found on the preview page (29 Oct).",

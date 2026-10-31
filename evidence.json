@@ -3280,6 +3280,66 @@
       "accessed_at": "2026-10-30T10:30:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "ledger-run28",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/does-fly-wiring-help/",
+      "title": "Digital Fly Lab controls ledger (31 Oct 2026)",
+      "claim": "104 studies, 94 with a wiring null: helps 36, no difference 26, worse 11, mixed 17, not yet scored 4; fly wiring beat scrambled wiring in 36 of 94. Three rows joined on 31 Oct, scored by fixed rules from the authors' numbers.",
+      "accessed_at": "2026-10-31T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "browser-run28",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/ways-to-try/#run28-heading",
+      "title": "Digital Fly Lab browser re-check (31 Oct 2026)",
+      "claim": "fly67: runs again on 31 Oct. It downloaded about 33 MB of brain data, identified by their web address, a method we fixed before this check. Checked in headless Chromium 154.0.8037.57 on a Linux server without a GPU, 31 Oct 2026. Shows whether the page loads, downloads its brain data and keeps computing; it is not a play test. Safari, Firefox, phones and GPU machines were not tested.",
+      "accessed_at": "2026-10-31T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "pugliese-feasibility-run28",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-31-run28/#pugliese-heading",
+      "title": "Digital Fly Lab feasibility check of the Pugliese et al. walking model (31 Oct 2026)",
+      "claim": "We checked whether the authors' walking model can be re-run with shuffled wiring on an ordinary 2-processor server without a GPU (31 Oct 2026): its software would need an estimated 620 MB once installed, plus 86 MB of wiring data, more than our 600 MB test space. The test was not run. The authors' shuffle keeps each neuron's excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count.",
+      "accessed_at": "2026-10-31T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-naf-experiment17",
+      "source_type": "repository",
+      "source_url": "https://github.com/ArtyMend07/Fly-NAF/blob/64cdef2dab990f377c7631af59cec00f1fae6860/docs/experiments/17-a-shuffled-brain-does-not-play.md",
+      "title": "Fly-NAF experiment 17: a shuffled brain does not play (ArtyMend07)",
+      "claim": "Fly-NAF (re-read 31 Oct): the author now tests the wiring. On one replayed game night the real wiring answered 7 of 8 threats on the threat's side first; three shuffled brains answered 0, 3 and 3. The game constants were tuned on the real wiring, so the shuffled brains ran with settings made for another network. Grade B kept.",
+      "accessed_at": "2026-10-31T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "fly-hearing-lab-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/Taariqmornings/fly_brain_research-Hearing-lab",
+      "title": "Fly Hearing Lab repository (Taariqmornings)",
+      "claim": "Fly Hearing Lab (new, graded A): in two simulated fly brains the song circuit did not prefer the species' song, and the male rhythm-tuning effect was larger with shuffled wiring (2.66 vs 0.70 Hz), by the author's committed results.",
+      "accessed_at": "2026-10-31T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "drosocode-repo",
+      "source_type": "repository",
+      "source_url": "https://github.com/Plagnito/DrosoCode",
+      "title": "DrosoCode repository (Plagnito)",
+      "claim": "DrosoCode (new, graded A): a fly mushroom body from FlyWire learning to predict code tokens; a rewired copy of the same size learned better than the real wiring (18.1% vs 12.6%, one run each), by the author's committed results.",
+      "accessed_at": "2026-10-31T10:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }

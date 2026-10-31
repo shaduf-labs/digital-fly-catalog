@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-8b2e495d393eeb0e08d9e277",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-31T09:26:44Z",
+      "completed_at": "2026-10-31T10:30:00Z",
+      "title": "Twenty-eighth check: Fly-NAF tests its wiring, two new entries, and the walking model checked for a re-run",
+      "summary": "211 entries (2 new); controls ledger 104 studies, 94 with a wiring null: helps 36, no difference 26, worse 11, mixed 17, not yet scored 4; fly wiring beat scrambled wiring in 36 of 94. Pugliese et al. 2026 (Nature): We checked whether the authors' walking model can be re-run with shuffled wiring on an ordinary 2-processor server without a GPU (31 Oct 2026): its software would need an estimated 620 MB once installed, plus 86 MB of wiring data, more than our 600 MB test space. The test was not run. The authors' shuffle keeps each neuron's excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count. Whether the real wiring is needed for the simulated walking rhythm stays not tested; the earlier circuit count is a pattern in the wiring, not a test of walking. Fly-NAF (re-read 31 Oct): the author now tests the wiring. On one replayed game night the real wiring answered 7 of 8 threats on the threat's side first; three shuffled brains answered 0, 3 and 3. The game constants were tuned on the real wiring, so the shuffled brains ran with settings made for another network. Grade B kept. fly67: runs again on 31 Oct. 31 Oct: we scanned news, videos and new code from 30 to 31 Oct; nothing met the bar for a new claim check, our news searches found no new coverage of the walking-circuit paper beyond the journal article itself, and two new code projects with their own scrambled-wiring tests were added.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-10-31-run28/",
+      "entrypoint": "reports/2026-10-31-run28/index.html"
+    },
+    {
       "run_id": "report-85e1060076abccb550d4f6c5",
       "status": "completed",
       "answer_change": "meaningful_change",

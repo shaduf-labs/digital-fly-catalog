@@ -1255,3 +1255,13 @@
 [data-agent-document] .dfl-motif svg { width: 100%; max-width: 40rem; height: 14px; display: block; }
 [data-agent-document] .dfl-svg .mo-real { fill: var(--dfl-blue); }
 [data-agent-document] .dfl-svg .mo-shuf { fill: var(--dfl-fx-worse); }
+
+/* Run 28: 31 Oct fly67 block (one dot per day) and the feasibility bars of the run 28 report. */
+[data-agent-document] .dfl-b28 .dfl-b18cmp svg.dfl-b18dots { width: 16px; }
+[data-agent-document] .dfl-feas { list-style: none; padding: 0; margin: 10px 0; display: grid; gap: 10px; }
+[data-agent-document] .dfl-feas li { display: grid; gap: 4px; }
+[data-agent-document] .dfl-feas svg { width: 100%; max-width: 40rem; height: 14px; display: block; }
+[data-agent-document] .dfl-svg .fe-sw { fill: var(--dfl-blue); }
+[data-agent-document] .dfl-svg .fe-data { fill: var(--dfl-fx-worse); }
+[data-agent-document] .dfl-svg .fe-space { fill: var(--dfl-line-strong); }
+[data-agent-document] .dfl-svg .fe-cap { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-dasharray: 4 3; }
