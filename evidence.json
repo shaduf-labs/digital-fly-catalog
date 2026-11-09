@@ -3340,6 +3340,46 @@
       "accessed_at": "2026-10-31T10:30:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "byo-retest-run29",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/build-your-own/#retest-heading",
+      "title": "Digital Fly Lab beginner re-test (2 Nov 2026)",
+      "claim": "Re-test, 2 November 2026: 6 of 6 tests, 82.0 Hz bit-exact. The beginner path re-run from an empty folder on 2 Nov 2026 (Linux x86_64, Python 3.11.2, 2 CPUs, no GPU) with the pinned packages, and again with the short requirements.txt command (6 of 6 tests, 82.0 Hz). No page fixes were needed. Device: Python 3.11; on 2 Nov 2026 we used 2 CPUs and no GPU (no NVIDIA device or driver present; Brian2 used its RuntimeDevice with the numpy code target, which the demo picks because the host has no C++ compiler). The simulation process itself peaked at 0.59 GB of memory for one 1-second trial, and the tests at 0.61 GB. These figures are the largest single process (measured with getrusage), not the whole test container, which peaked at about 1.7 GB including file cache and the parent process.",
+      "accessed_at": "2026-11-02T12:10:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "byo-pins-run29",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-11-02-run29/#pins-heading",
+      "title": "Digital Fly Lab package pin check (2 Nov 2026)",
+      "claim": "Pins: unchanged; checked against PyPI on 2 Nov 2026 (latest: Brian2 2.11.0, numpy 2.5.4, pandas 3.1.0, mujoco 3.17.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0), and the Brian2, numpy and pandas pins installed cleanly in the re-test of 2 Nov (mujoco, the body pin, was not re-installed); next re-test due 16 Nov 2026. On 2 Nov 2026 the short requirements.txt command installed 7 newer helper packages than our exact lock (Cython 3.3.0 → 3.3.1, iniconfig 2.3.0 → 2.3.1, MarkupSafe 3.0.3 → 3.0.4, pluggy 1.6.0 → 1.7.0, python-dateutil 2.9.0.post0 → 4.0.0, pytz 2026.4 → 2026.6, tzdata 2026.4 → 2026.6) and gave 82.0 Hz; the six main packages are pinned and did not change. It also did not install the package six, which is in our lock (python-dateutil 4.0.0 appears not to need it; we did not check its metadata). Use requirements.lock to get exactly our environment.",
+      "accessed_at": "2026-11-02T12:10:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "pugliese-shuffle-run30",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-11-09-run30/#result-heading",
+      "title": "Digital Fly Lab shuffle test of the Pugliese et al. walking model (9 Nov 2026)",
+      "claim": "We re-ran the authors' nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors' own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The authors' shuffle keeps each neuron's excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. One simulation took 1.2 minutes and its process peaked at 1.4 GB of memory; the software and wiring data used about 1,130 MB of disk.",
+      "accessed_at": "2026-11-09T10:10:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "uploaded-video-run30",
+      "source_type": "video",
+      "source_url": "https://www.youtube.com/watch?v=5jfV37rgDeE",
+      "title": "Takhti: \"Scientists Uploaded a Fly's Brain Into a Computer Are Humans Next?\" (3 Nov 2026; title and description read 9 Nov 2026)",
+      "claim": "A new Urdu and Hindi video, 'Scientists Uploaded a Fly's Brain Into a Computer Are Humans Next?' (Takhti, 3 Nov 2026; about 202,000 views on 9 Nov), uses the word uploaded in its title, while its own description says this does not mean a fly's mind was copied and calls Eon Systems' demos company claims with limits. That matches the primary sources: a wiring map traced from one preserved fly brain, run as a simplified model. We read the title and description, not the video (checked 9 Nov 2026).",
+      "accessed_at": "2026-11-09T10:10:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }

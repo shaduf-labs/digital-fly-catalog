@@ -2,6 +2,28 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-56ec37f36483bb767594e7cb",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-11-09T09:25:10Z",
+      "completed_at": "2026-11-09T10:10:00Z",
+      "title": "Thirtieth check: the walking-circuit model re-run with shuffled wiring",
+      "summary": "We re-ran the authors' nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors' own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The authors' shuffle keeps each neuron's excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. By the rule we fixed before the run (if at least half of the shuffles still show a rhythm, our row reads no difference), our own row reads no difference. The catalogue entry for the paper stays not tested. One simulation took 1.2 minutes and its process peaked at 1.4 GB of memory; the software and wiring data used about 1,130 MB of disk. 9 Nov: we scanned news, videos and new code from 3 to 9 Nov; one widely seen new video, an Urdu and Hindi explainer whose title says a fly's brain was uploaded, got a dated check (its own description says no mind was copied). Two new write-ups about fly-brain games and puzzles and several small new code projects that say they test whether the fly's wiring matters are queued for a first look. 211 entries; controls ledger 105 studies (one new row made by us).",
+      "report_path": "/p/digital-fly-catalog/reports/2026-11-09-run30/",
+      "entrypoint": "reports/2026-11-09-run30/index.html"
+    },
+    {
+      "run_id": "report-14fb5a2948a3043c6440f63e",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-11-02T11:29:19Z",
+      "completed_at": "2026-11-02T12:10:00Z",
+      "title": "Twenty-ninth check: the beginner guide re-tested from an empty folder, with memory measured per process",
+      "summary": "Re-test, 2 November 2026: 6 of 6 tests, 82.0 Hz bit-exact. The beginner path re-run from an empty folder on 2 Nov 2026 (Linux x86_64, Python 3.11.2, 2 CPUs, no GPU) with the pinned packages, and again with the short requirements.txt command (6 of 6 tests, 82.0 Hz). No page fixes were needed. Device: Python 3.11; on 2 Nov 2026 we used 2 CPUs and no GPU (no NVIDIA device or driver present; Brian2 used its RuntimeDevice with the numpy code target, which the demo picks because the host has no C++ compiler). The simulation process itself peaked at 0.59 GB of memory for one 1-second trial, and the tests at 0.61 GB. These figures are the largest single process (measured with getrusage), not the whole test container, which peaked at about 1.7 GB including file cache and the parent process. Pins: unchanged; checked against PyPI on 2 Nov 2026 (latest: Brian2 2.11.0, numpy 2.5.4, pandas 3.1.0, mujoco 3.17.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0), and the Brian2, numpy and pandas pins installed cleanly in the re-test of 2 Nov (mujoco, the body pin, was not re-installed); next re-test due 16 Nov 2026. 2 Nov: we scanned news, videos and new code from 1 to 2 Nov; nothing met the bar for a new claim check. 211 entries and the controls ledger unchanged.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-11-02-run29/",
+      "entrypoint": "reports/2026-11-02-run29/index.html"
+    },
+    {
       "run_id": "report-8b2e495d393eeb0e08d9e277",
       "status": "completed",
       "answer_change": "meaningful_change",

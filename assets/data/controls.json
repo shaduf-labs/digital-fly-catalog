@@ -1,16 +1,16 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Digital Fly Lab controls ledger",
-  "version": "2026-10-31-run28",
-  "generated_at": "2026-10-31T12:00:00Z",
-  "run_id": "report-8b2e495d393eeb0e08d9e277",
-  "as_of": "2026-10-31",
+  "version": "2026-11-09-run30",
+  "generated_at": "2026-11-09T10:10:00Z",
+  "run_id": "report-56ec37f36483bb767594e7cb",
+  "as_of": "2026-11-09",
   "answer": {
-    "one_line": "Sometimes: fly wiring beat scrambled wiring in 36 of 94 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (37).",
-    "short": "Of 104 control studies in our catalogue, 94 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 36, makes no difference in 26, does worse in 11, gives mixed results in 17 and is not yet scored in 4. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+    "one_line": "Sometimes: fly wiring beat scrambled wiring in 36 of 95 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (38).",
+    "short": "Of 105 control studies in our catalogue, 95 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 36, makes no difference in 27, does worse in 11, gives mixed results in 17 and is not yet scored in 4. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). Our own check of a published nerve-cord walking model (Pugliese et al. 2026): We re-ran the authors' nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors' own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
     "counts": {
-      "studies": 104,
-      "with_wiring_null": 94,
+      "studies": 105,
+      "with_wiring_null": 95,
       "by_family": {
         "reflex-circuit": {
           "helps": 10,
@@ -28,7 +28,7 @@
         },
         "body-steering": {
           "helps": 7,
-          "no_difference": 2,
+          "no_difference": 3,
           "worse": 0,
           "mixed": 2,
           "not_tested": 2
@@ -12578,6 +12578,94 @@
         },
         {
           "url": "https://github.com/gyujeongion/flyconnectome-nulls/blob/2f5683daa7a9619c228c05949d3208f3d32d3926/evo_fix.py#L242-L342",
+          "label": "direct"
+        }
+      ],
+      "caveats": []
+    },
+    {
+      "id": "pugliese-2026-shuffle-check",
+      "name": "Our check: Pugliese et al. 2026 walking model, real front-leg nerve-cord wiring vs 5 shuffles with the authors' own shuffle (our run, 9 Nov 2026)",
+      "evidence_grade": "A",
+      "made_by_us": true,
+      "task_family": "body-steering",
+      "loop": "open-loop",
+      "wiring": {
+        "dataset": "MANC",
+        "release": "T1 data in the authors' repository (smpuglie/Pugliese_2026 at 10e7661)",
+        "scope": "front-leg (T1) nerve-cord neurons of the authors' walking model"
+      },
+      "trained_parts": "none",
+      "metric": {
+        "name": "motor neurons with a regular rhythm (the code's oscillation score 0.5 or more) during 2 s of DNg100 activation",
+        "unit": "motor neurons",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 3,
+        "n": 1,
+        "spread": null,
+        "source": "our run of 9 Nov 2026 (https://shaduf.ai/p/digital-fly-catalog/reports/2026-11-09-run30/#result-heading)"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "authors-shuffle",
+          "null_type": "target-permutation",
+          "label": "the authors' own shuffle: each neuron keeps its excitatory or inhibitory sign, connections shuffled within each cell group; 5 shuffles, value = median of the 5 tries (per try 0, 12, 40, 3 and 1)",
+          "value": 3,
+          "n": 5,
+          "samples": 5,
+          "spread": null,
+          "readout_refit": null,
+          "source": "our run of 9 Nov 2026 (https://shaduf.ai/p/digital-fly-catalog/reports/2026-11-09-run30/#result-heading)",
+          "recomputed_by_us": true,
+          "activity_ratio": 18.33,
+          "activity_class": "runaway",
+          "activity_basis": "network-units"
+        }
+      ],
+      "effect": {
+        "headline_arm": "authors-shuffle",
+        "best_null_arm": "authors-shuffle",
+        "retention": null,
+        "retention_method": "none",
+        "baseline_arm": null,
+        "baseline_retention": null,
+        "difference": null,
+        "ci": null,
+        "p": null,
+        "stat_note": "n = 1 real network vs 5 shuffled networks (the authors' own shuffle: one shared column permutation within 5 cell groups, each neuron keeps its excitatory or inhibitory sign); one run each; no noise; rtol 1e-4 / atol 1e-7 (paper 2e-6 / 5e-9); 4 of 5 shuffles had at least one motor neuron with the code's oscillation score >= 0.5 (per try 0, 12, 40, 3 and 1; real 3); the pre-registered rule reads at least half of the shuffles with a rhythm as no difference. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. Stimulus adjustment off (code default); solver status and traces not saved."
+      },
+      "wiring_effect": "no-difference",
+      "baseline_beaten": "not-tested",
+      "fairness": {
+        "keeps_degree": null,
+        "keeps_io_boundary": null,
+        "tuned_equally": true,
+        "null_samples": 5,
+        "has_no_brain_baseline": false,
+        "verdict": "partly-fair",
+        "reason": "Same stimulus, settings and readout for the real and the 5 shuffled networks; nothing tuned for either. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. Whether the shuffle keeps each neuron's number of partners was not checked."
+      },
+      "quality": {
+        "n_per_arm": 1,
+        "held_out": null,
+        "uncertainty_reported": false,
+        "results_in_repo_files": true,
+        "independent_test": true,
+        "peer_review": "none",
+        "recomputed_by_us": true,
+        "grade": "moderate",
+        "reason": "Our own pre-registered run of the authors' code; one run per network, 5 shuffles, no noise, looser solver tolerances than the paper; no spread reported; not activity-matched; solver status and traces not saved."
+      },
+      "extraction": "files",
+      "one_line": "Our check, 9 Nov 2026: real wiring 3 rhythmic motor neurons; 4 of 5 shuffles still had some (0, 12, 40, 3, 1), but the shuffles were far more active (1,645 to 1,995 active cells against 97), so not like-for-like.",
+      "commit": "smpuglie/Pugliese_2026@10e7661",
+      "checked_at": "2026-11-09",
+      "sources": [
+        {
+          "url": "https://github.com/smpuglie/Pugliese_2026",
           "label": "direct"
         }
       ],

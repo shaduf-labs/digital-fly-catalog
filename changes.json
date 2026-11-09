@@ -2,6 +2,66 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-11-09-run30-pugliese",
+      "changed_at": "2026-11-09T10:10:00Z",
+      "summary": "Is it real? and Does fly wiring help?: We re-ran the authors' nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors' own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The authors' shuffle keeps each neuron's excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. By the rule we fixed before the run (if at least half of the shuffles still show a rhythm, our row reads no difference), our own row reads no difference. The catalogue entry for the paper stays not tested.",
+      "path": "/p/digital-fly-catalog/is-it-real/#c-pugliese-2026-walking-cpg"
+    },
+    {
+      "change_id": "2026-11-09-run30-ledger",
+      "changed_at": "2026-11-09T10:10:00Z",
+      "summary": "Controls ledger: one new row made by us (pugliese-2026-shuffle-check, no difference by the rule fixed before the run, not activity-matched); 105 studies, 95 with a wiring null, fly wiring beat scrambled wiring in 36 of 95.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed30-heading"
+    },
+    {
+      "change_id": "2026-11-09-run30-video",
+      "changed_at": "2026-11-09T10:10:00Z",
+      "summary": "\"Uploaded\" fly-brain videos: A new Urdu and Hindi video, 'Scientists Uploaded a Fly's Brain Into a Computer Are Humans Next?' (Takhti, 3 Nov 2026; about 202,000 views on 9 Nov), uses the word uploaded in its title, while its own description says this does not mean a fly's mind was copied and calls Eon Systems' demos company claims with limits. That matches the primary sources: a wiring map traced from one preserved fly brain, run as a simplified model. We read the title and description, not the video (checked 9 Nov 2026).",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-fly-brain-uploaded-videos"
+    },
+    {
+      "change_id": "2026-11-09-run30-tracking",
+      "changed_at": "2026-11-09T10:10:00Z",
+      "summary": "9 Nov: we scanned news, videos and new code from 3 to 9 Nov; one widely seen new video, an Urdu and Hindi explainer whose title says a fly's brain was uploaded, got a dated check (its own description says no mind was copied). Two new write-ups about fly-brain games and puzzles and several small new code projects that say they test whether the fly's wiring matters are queued for a first look. Tracking: Links as on 2 Nov; 57 of 57 videos available; 9 tracked repositories with new commits since 2 Nov were recorded and not yet re-read.",
+      "path": "/p/digital-fly-catalog/reports/2026-11-09-run30/#tracking-heading"
+    },
+    {
+      "change_id": "2026-11-09-run30-report",
+      "changed_at": "2026-11-09T10:10:00Z",
+      "summary": "New report: Thirtieth check (9 Nov 2026), the walking-circuit model re-run with the real wiring and 5 shuffles, with active neurons shown beside the rhythm counts, specs (One simulation took 1.2 minutes and its process peaked at 1.4 GB of memory; the software and wiring data used about 1,130 MB of disk.), limits and next steps.",
+      "path": "/p/digital-fly-catalog/reports/2026-11-09-run30/"
+    },
+    {
+      "change_id": "2026-11-02-run29-retest",
+      "changed_at": "2026-11-02T12:10:00Z",
+      "summary": "Build your own: Re-test, 2 November 2026: 6 of 6 tests, 82.0 Hz bit-exact. The beginner path re-run from an empty folder on 2 Nov 2026 (Linux x86_64, Python 3.11.2, 2 CPUs, no GPU) with the pinned packages, and again with the short requirements.txt command (6 of 6 tests, 82.0 Hz). No page fixes were needed. On 2 Nov 2026 the short requirements.txt command installed 7 newer helper packages than our exact lock (Cython 3.3.0 → 3.3.1, iniconfig 2.3.0 → 2.3.1, MarkupSafe 3.0.3 → 3.0.4, pluggy 1.6.0 → 1.7.0, python-dateutil 2.9.0.post0 → 4.0.0, pytz 2026.4 → 2026.6, tzdata 2026.4 → 2026.6) and gave 82.0 Hz; the six main packages are pinned and did not change. It also did not install the package six, which is in our lock (python-dateutil 4.0.0 appears not to need it; we did not check its metadata). Use requirements.lock to get exactly our environment.",
+      "path": "/p/digital-fly-catalog/build-your-own/#retest-heading"
+    },
+    {
+      "change_id": "2026-11-02-run29-specs",
+      "changed_at": "2026-11-02T12:10:00Z",
+      "summary": "What do I need to run it? (updated 2 Nov 2026): Device: Python 3.11; on 2 Nov 2026 we used 2 CPUs and no GPU (no NVIDIA device or driver present; Brian2 used its RuntimeDevice with the numpy code target, which the demo picks because the host has no C++ compiler). The simulation process itself peaked at 0.59 GB of memory for one 1-second trial, and the tests at 0.61 GB. These figures are the largest single process (measured with getrusage), not the whole test container, which peaked at about 1.7 GB including file cache and the parent process. The folder took about 660 MB of disk: a 464 MB Python environment and a 196 MB model folder with its data.",
+      "path": "/p/digital-fly-catalog/is-it-real/#q-specs"
+    },
+    {
+      "change_id": "2026-11-02-run29-pins",
+      "changed_at": "2026-11-02T12:10:00Z",
+      "summary": "Pins: unchanged; checked against PyPI on 2 Nov 2026 (latest: Brian2 2.11.0, numpy 2.5.4, pandas 3.1.0, mujoco 3.17.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0), and the Brian2, numpy and pandas pins installed cleanly in the re-test of 2 Nov (mujoco, the body pin, was not re-installed); next re-test due 16 Nov 2026. On 2 Nov the first sugar trial took 96 to 112 s from start to finish and the tests 77 to 87 s, longer than on 19 Oct (68 s and 58 s); we do not know why.",
+      "path": "/p/digital-fly-catalog/build-your-own/#retest-heading"
+    },
+    {
+      "change_id": "2026-11-02-run29-tracking",
+      "changed_at": "2026-11-02T12:10:00Z",
+      "summary": "2 Nov: we scanned news, videos and new code from 1 to 2 Nov; nothing met the bar for a new claim check. Tracking: 2 Nov 2026: we looked up the latest commit of 142 tracked repositories again: 4 have new commits since 31 Oct, recorded and not judged yet; flydoom is still gone or private. The repositories of 13 of the 25 verdict rows were re-checked, none with new code since 31 Oct. Links as on 31 Oct (fruitfly.live still fails its security certificate; the ascend demo and the FlyGym browser viewer still answer 404). 57 of 57 videos available.",
+      "path": "/p/digital-fly-catalog/reports/2026-11-02-run29/#tracking-heading"
+    },
+    {
+      "change_id": "2026-11-02-run29-report",
+      "changed_at": "2026-11-02T12:10:00Z",
+      "summary": "New report: Twenty-ninth check (2 Nov 2026), the beginner guide re-tested from an empty folder with the pinned lock and with the short command, what the memory numbers measure, why we say no GPU, pins, run times, and limits.",
+      "path": "/p/digital-fly-catalog/reports/2026-11-02-run29/"
+    },
+    {
       "change_id": "2026-10-31-run28-entries",
       "changed_at": "2026-10-31T10:30:00Z",
       "summary": "211 catalogue entries (31 Oct 2026): 2 new: fly-hearing-lab A (worse) and drosocode A (worse, one run each). Re-read: fly-naf B kept, now with a wiring control (Fly-NAF (re-read 31 Oct): the author now tests the wiring. On one replayed game night the real wiring answered 7 of 8 threats on the threat's side first; three shuffled brains answered 0, 3 and 3. The game constants were tuned on the real wiring, so the shuffled brains ran with settings made for another network. Grade B kept.); flybrain-prove-ai A kept; fly-connectome-reservoir B kept. neural-canvas: The copy of this demo at fruitfly.live answered on 30 and 31 Oct with a security certificate made for its hosting service's own addresses, not for fruitfly.live, so browsers refuse to open it; this looks like a setup problem at that address, which we did not check further. The Hugging Face version is the one we link.",

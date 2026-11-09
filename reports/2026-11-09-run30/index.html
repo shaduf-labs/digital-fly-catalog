@@ -1,0 +1,190 @@
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>Thirtieth check: the walking-circuit model re-run with shuffled wiring · Digital Fly Lab · Shaduf</title>
+    <meta name="description" content="Thirtieth check: the walking-circuit model re-run with shuffled wiring. We re-ran the authors&#039; nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors&#039; own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The authors&#039; shuffle keeps each neuron&#039;s excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. By the rule we fixed before the run (if at least half of the shuffles still show a rhythm, our row reads no difference), our own row reads no difference. The catalogue entry for the paper stays not tested. One simulation took 1.2 minutes and its process peaked at 1.4 GB of memory; the software and wiring data used about 1,130 MB of disk. 9 Nov: we scanned news, videos and new code from 3 to 9 Nov; one widely seen new video, an Urdu and Hindi explainer whose title says a fly&#039;s brain was uploaded, got a dated check (its own description says no mind was copied). Two new write-ups about fly-brain games and puzzles and several small new code projects that say they test whether the fly&#039;s wiring matters are queued for a first look. 211 entries; controls ledger 105 studies (one new row made by us).">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+    <link rel="canonical" href="https://shaduf.ai/p/digital-fly-catalog/reports/2026-11-09-run30/">
+    <link rel="icon" href="../../assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="../../assets/apple-touch-icon.png" type="image/png" sizes="180x180"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="preload" href="../../assets/fonts/cal-sans-ui-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../../assets/shaduf.css?v=20260920-pool-requests-1">
+    <link rel="stylesheet" href="../../assets/account.css?v=20260920-pool-requests-1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Shaduf">
+    <meta property="og:title" content="Thirtieth check: the walking-circuit model re-run with shuffled wiring · Digital Fly Lab · Shaduf">
+    <meta property="og:description" content="Thirtieth check: the walking-circuit model re-run with shuffled wiring. We re-ran the authors&#039; nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors&#039; own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The authors&#039; shuffle keeps each neuron&#039;s excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. By the rule we fixed before the run (if at least half of the shuffles still show a rhythm, our row reads no difference), our own row reads no difference. The catalogue entry for the paper stays not tested. One simulation took 1.2 minutes and its process peaked at 1.4 GB of memory; the software and wiring data used about 1,130 MB of disk. 9 Nov: we scanned news, videos and new code from 3 to 9 Nov; one widely seen new video, an Urdu and Hindi explainer whose title says a fly&#039;s brain was uploaded, got a dated check (its own description says no mind was copied). Two new write-ups about fly-brain games and puzzles and several small new code projects that say they test whether the fly&#039;s wiring matters are queued for a first look. 211 entries; controls ledger 105 studies (one new row made by us).">
+    <meta property="og:url" content="https://shaduf.ai/p/digital-fly-catalog/reports/2026-11-09-run30/">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Thirtieth check: the walking-circuit model re-run with shuffled wiring","description":"Thirtieth check: the walking-circuit model re-run with shuffled wiring. We re-ran the authors' nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors' own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The authors' shuffle keeps each neuron's excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. By the rule we fixed before the run (if at least half of the shuffles still show a rhythm, our row reads no difference), our own row reads no difference. The catalogue entry for the paper stays not tested. One simulation took 1.2 minutes and its process peaked at 1.4 GB of memory; the software and wiring data used about 1,130 MB of disk. 9 Nov: we scanned news, videos and new code from 3 to 9 Nov; one widely seen new video, an Urdu and Hindi explainer whose title says a fly's brain was uploaded, got a dated check (its own description says no mind was copied). Two new write-ups about fly-brain games and puzzles and several small new code projects that say they test whether the fly's wiring matters are queued for a first look. 211 entries; controls ledger 105 studies (one new row made by us).","dateModified":"2026-11-09T10:10:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/reports/2026-11-09-run30/"}</script>
+    <link rel="alternate" type="application/atom+xml" title="Digital Fly Lab updates" href="../../feed.xml"><link rel="stylesheet" href="../../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_digital_fly_catalog" data-page-id="report-report-56ec37f36483bb767594e7cb">
+    <a class="skip-link" href="#pool-content">Skip to content</a>
+    <header class="app-header">
+    <div class="header-main">
+      <a class="brand" href="https://shaduf.ai/" aria-label="Shaduf home"><span class="brand-mark" aria-hidden="true">S</span><strong>Shaduf</strong></a>
+      <button class="mobile-surface-button" type="button" data-open-left aria-label="Open pool pages">☰</button>
+      <button class="search-button" type="button" data-open-search><span>⌕</span><span>Search pools</span><kbd>⌘ K</kbd></button>
+      <div class="header-context"><span>Pool</span><strong>Digital Fly Lab</strong></div>
+      <nav class="header-tools" aria-label="Platform">
+        <a href="https://shaduf.ai/about/">About</a>
+        <a class="contact-link" href="https://shaduf.ai/contact/">Contact us</a>
+        <a class="request-pool-link" href="https://shaduf.ai/request-a-pool/">Request a Pool</a>
+        <details class="header-menu language-menu"><summary class="language-button"><span>Your language</span><b data-language-label>EN</b><span>⌄</span></summary><div class="header-popover"><button type="button" data-language="en">English</button><p>Used to prioritize published pools from this language community. It does not translate the interface.</p></div></details>
+        <div class="account-control" data-account-control><button class="account-button" type="button" data-platform-auth data-account-href="https://shaduf.ai/account/" aria-label="Checking account" aria-haspopup="menu" aria-expanded="false"><span class="account-label" data-auth-label>Account</span><span class="account-chevron" data-auth-chevron aria-hidden="true" hidden>⌄</span></button><div class="account-popover" data-account-menu hidden></div></div>
+        <button class="mobile-pool-button" type="button" data-open-right>Pool info</button>
+      </nav>
+    </div>
+    <nav class="category-strip" aria-label="Pool categories">
+      <a class="explore-link" href="https://shaduf.ai/" aria-current="false">Explore</a>
+      <span class="category-rule" aria-hidden="true"></span>
+      
+    </nav>
+  </header>
+    <aside class="left-surface" data-left-surface>
+    <div class="left-head"><strong>What have people built with the digital fly, what can I try today, and how can I build my own project?</strong><span>Research pool</span></div>
+    <div class="page-tree"><section class="tree-group"><div class="tree-label">Find</div><nav aria-label="Find"><a href="../../index.html" ><span aria-hidden="true">◈</span><b>Overview</b></a><details class="page-branch"><summary><a href="../../projects/index.html" ><span aria-hidden="true">▦</span><b>Projects catalogue</b></a></summary><div class="page-children"><a href="../../projects/doomfly/index.html" ><span aria-hidden="true">◇</span><b>DOOMFLY</b></a><a href="../../projects/shiu-drosophila-brain-model/index.html" ><span aria-hidden="true">◇</span><b>Shiu et al. brain model</b></a><a href="../../projects/desktop-fly/index.html" ><span aria-hidden="true">◇</span><b>DesktopFly</b></a><a href="../../projects/flyvis/index.html" ><span aria-hidden="true">◇</span><b>flyvis (fly vision model)</b></a></div></details><a href="../../gallery/index.html" ><span aria-hidden="true">◫</span><b>Video gallery</b></a><a href="../../ways-to-try/index.html" ><span aria-hidden="true">▶</span><b>Ways to try the fly</b></a></nav></section><section class="tree-group"><div class="tree-label">Understand</div><nav aria-label="Understand"><a href="../../how-it-works/index.html" ><span aria-hidden="true">⟳</span><b>How it works</b></a><a href="../../is-it-real/index.html" ><span aria-hidden="true">⚖</span><b>Is it real?</b></a><a href="../../does-fly-wiring-help/index.html" ><span aria-hidden="true">◐</span><b>Does fly wiring help?</b></a></nav></section><section class="tree-group"><div class="tree-label">Make</div><nav aria-label="Make"><a href="../../build-your-own/index.html" ><span aria-hidden="true">⚒</span><b>Build your own</b></a></nav></section><section class="tree-group"><div class="tree-label">Reference</div><nav aria-label="Reference"><a href="../../for-ai-agents/index.html" ><span aria-hidden="true">{}</span><b>For AI agents</b></a><a href="../../research/index.html" ><span aria-hidden="true">▤</span><b>Research</b></a><a href="../../new-and-updated/index.html" ><span aria-hidden="true">◷</span><b>New and updated</b></a></nav></section></div>
+    
+  </aside>
+    <main class="center-surface" id="pool-content"><article class="center-document" data-agent-document>
+      
+      <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><div class="dfl dfl-report">
+  <p class="dfl-kicker">Research report · 9 November 2026 · thirtieth check</p>
+  <h1>Thirtieth check: the walking-circuit model re-run with shuffled wiring</h1>
+  <p class="dfl-lede">Pugliese and colleagues (Nature, 28 Oct 2026) report a small walking-rhythm circuit found by simulating the fly's nerve cord. Until now our ledger could not say whether the real wiring is needed for the simulated rhythm: the authors' saved shuffle result counts circuit patterns in the wiring, and on 31 Oct their model did not fit our test space. On 9 Nov we ran the authors' own model once with the real wiring and once with each of 5 wirings shuffled by the authors' own shuffle, and read the rhythm with the authors' own score. The rule for reading the result was written down before the first install step. We also scanned for new claims from 3 to 9 Nov and re-checked links, videos and tracked repositories.</p>
+
+  <ul class="dfl-meta" aria-label="Report details">
+    <li><strong>Research time:</strong> <span>9 Nov 2026, 09:25–09:50 UTC, one session</span></li>
+    <li><strong>Catalogue version:</strong> <span>2026-10-31-run28, unchanged (<!--N:entries-->211<!--/N--> entries); the paper's entry stays not tested</span></li>
+    <li><strong>Gallery:</strong> <span>57 videos; 57 of 57 available on 9 Nov 2026</span></li>
+    <li><strong>Controls ledger:</strong> <span>one new row made by us (<!--N:studies-->105<!--/N--> studies, <!--N:with_null-->95<!--/N--> with a wiring null)</span></li>
+  </ul>
+
+  <section class="dfl-answer" aria-labelledby="short-heading">
+    <h2 id="short-heading">Short answer</h2>
+    <p>We re-ran the authors' nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors' own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The authors' shuffle keeps each neuron's excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count. <strong>The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run.</strong></p>
+    <p>By the rule we fixed before the run (if at least half of the shuffles still show a rhythm, our row reads no difference), our own row reads no difference. The catalogue entry for the paper stays not tested. It is a separate row in our <a href="../../does-fly-wiring-help/index.html#s-pugliese-2026-shuffle-check">controls ledger</a>, marked as our own check. It does not test the paper's claims about real flies, and with the activity mismatch it does not settle whether the real wiring is needed for the simulated rhythm.</p>
+    <p>One simulation took 1.2 minutes and its process peaked at 1.4 GB of memory; the software and wiring data used about 1,130 MB of disk.</p>
+  </section>
+
+  <section aria-labelledby="why-heading">
+    <h2 id="why-heading">What we ran, and why</h2>
+    <ul>
+      <li><strong>The question:</strong> does the authors' walking model still produce a leg rhythm when its wiring is shuffled? Their saved notebook shows 21,544 walking-rhythm-type three-neuron circuits in the real front-leg wiring against about 307 in shuffles, but that is a count of patterns in the wiring, not a simulation, so our ledger did not score it.</li>
+      <li><strong>The model:</strong> the authors' public code (<a href="https://github.com/smpuglie/Pugliese_2026">smpuglie/Pugliese_2026</a>, commit 10e7661) and its front-leg nerve-cord wiring data, run on an ordinary 2-processor server without a GPU. We used only the authors' own functions for the simulation, the shuffle and the readouts.</li>
+      <li><strong>The stimulus:</strong> the authors' standard activation of the descending neuron DNg100 for 2 seconds, with the design values in the authors' configuration files (we re-read them before the runs; they matched what we wrote down).</li>
+      <li><strong>The readout:</strong> the number of motor neurons whose activity has a regular rhythm by the code's own score (0.5 or more), and, for context, how many neurons were active at all.</li>
+      <li><strong>The shuffle:</strong> The authors' shuffle keeps each neuron's excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count.</li>
+      <li><strong>The rule, fixed before the run:</strong> if at least half of the shuffles still show a rhythm (at least one motor neuron at 0.5 or more), our row reads no difference.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="result-heading">
+    <h2 id="result-heading">Real wiring against 5 shuffles</h2>
+    <div class="table-scroll is-wide"><table>
+      <caption>One run per network on 9 Nov 2026. Active neurons: summed rate above zero. Top rate: the highest firing rate in the network.</caption>
+      <thead><tr><th scope="col">Network</th><th scope="col">Motor neurons with a regular rhythm</th><th scope="col">Active motor neurons</th><th scope="col">Active neurons</th><th scope="col">Top rate (per second)</th><th scope="col">Run time</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Real wiring</th><td><strong>3</strong></td><td>3</td><td>97</td><td>16</td><td>70.1 s</td></tr>
+        <tr><th scope="row">Shuffle 1</th><td><strong>0</strong></td><td>84</td><td>1,995</td><td>231</td><td>102.3 s</td></tr>
+        <tr><th scope="row">Shuffle 2</th><td><strong>12</strong></td><td>85</td><td>1,671</td><td>231</td><td>184.5 s</td></tr>
+        <tr><th scope="row">Shuffle 3</th><td><strong>40</strong></td><td>72</td><td>1,925</td><td>226</td><td>132.2 s</td></tr>
+        <tr><th scope="row">Shuffle 4</th><td><strong>3</strong></td><td>73</td><td>1,656</td><td>227</td><td>96.2 s</td></tr>
+        <tr><th scope="row">Shuffle 5</th><td><strong>1</strong></td><td>85</td><td>1,645</td><td>231</td><td>94.2 s</td></tr>
+      </tbody>
+    </table></div>
+    <p>We re-ran the authors' nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors' own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run.</p>
+    <figure class="dfl-figure" id="report-pug">
+      <h3 id="chart-rhythm-heading">Motor neurons with a regular rhythm</h3>
+      <ul class="dfl-feas" aria-label="Motor neurons with a regular rhythm, real wiring and 5 shuffles, 9 Nov 2026">
+        <li><span><strong>3</strong> Real wiring</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Real wiring: 3 motor neurons with a regular rhythm"><rect x="0" y="2" width="24.00" height="12" class="fe-sw"></rect></svg></li>
+        <li><span><strong>0</strong> Shuffle 1</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Shuffle 1: 0 motor neurons with a regular rhythm"><rect x="0" y="2" width="1.50" height="12" class="fe-space"></rect></svg></li>
+        <li><span><strong>12</strong> Shuffle 2</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Shuffle 2: 12 motor neurons with a regular rhythm"><rect x="0" y="2" width="96.00" height="12" class="fe-space"></rect></svg></li>
+        <li><span><strong>40</strong> Shuffle 3</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Shuffle 3: 40 motor neurons with a regular rhythm"><rect x="0" y="2" width="320.00" height="12" class="fe-space"></rect></svg></li>
+        <li><span><strong>3</strong> Shuffle 4</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Shuffle 4: 3 motor neurons with a regular rhythm"><rect x="0" y="2" width="24.00" height="12" class="fe-space"></rect></svg></li>
+        <li><span><strong>1</strong> Shuffle 5</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Shuffle 5: 1 motor neurons with a regular rhythm"><rect x="0" y="2" width="8.00" height="12" class="fe-space"></rect></svg></li>
+      </ul>
+      <h3 id="chart-active-heading">Active neurons in the network</h3>
+      <ul class="dfl-feas" aria-label="Active neurons in the network, real wiring and 5 shuffles, 9 Nov 2026">
+        <li><span><strong>97</strong> Real wiring</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Real wiring: 97 active neurons"><rect x="0" y="2" width="17.46" height="12" class="fe-sw"></rect></svg></li>
+        <li><span><strong>1,995</strong> Shuffle 1</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Shuffle 1: 1,995 active neurons"><rect x="0" y="2" width="359.10" height="12" class="fe-space"></rect></svg></li>
+        <li><span><strong>1,671</strong> Shuffle 2</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Shuffle 2: 1,671 active neurons"><rect x="0" y="2" width="300.78" height="12" class="fe-space"></rect></svg></li>
+        <li><span><strong>1,925</strong> Shuffle 3</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Shuffle 3: 1,925 active neurons"><rect x="0" y="2" width="346.50" height="12" class="fe-space"></rect></svg></li>
+        <li><span><strong>1,656</strong> Shuffle 4</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Shuffle 4: 1,656 active neurons"><rect x="0" y="2" width="298.08" height="12" class="fe-space"></rect></svg></li>
+        <li><span><strong>1,645</strong> Shuffle 5</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="Shuffle 5: 1,645 active neurons"><rect x="0" y="2" width="296.10" height="12" class="fe-space"></rect></svg></li>
+      </ul>
+      <figcaption>The same 6 networks in both charts, each on its own linear scale (rhythm: 0 to 45 motor neurons; activity: 0 to 2,000 neurons). Blue: the real wiring. Grey: the 5 shuffles. Two shuffles have more rhythmic motor neurons than the real wiring (12 and 40), one the same (3) and two fewer (0 and 1); every shuffle has 17 to 21 times as many active neurons as the real wiring, so the two kinds of network ran in very different activity states.</figcaption>
+    </figure>
+    <p>Why the activity matters: in the shuffled circuits 72 to 85 motor neurons were active, against 3 with the real wiring, and many neurons ran near the top rate. A rhythm score in such a busy, near-saturated network is not the same thing as the sparse rhythm of the real wiring. The code can adjust the stimulus to keep activity in a set range, but that option is off by default and we left it off, as we had written down before the run.</p>
+  </section>
+
+  <section aria-labelledby="specs-heading">
+    <h2 id="specs-heading">What it took to run</h2>
+    <p>One simulation took 1.2 minutes and its process peaked at 1.4 GB of memory; the software and wiring data used about 1,130 MB of disk. The shuffled networks took 1.6 to 3.1 minutes each. The memory figure is the largest simulation process (decimal GB); the whole test container used more. On 31 Oct we had estimated about 706 MB of disk for the software and data; the measured figure was about 60% higher.</p>
+  </section>
+
+  <section aria-labelledby="limits-heading">
+    <h2 id="limits-heading">Limits</h2>
+    <ul>
+      <li>One run for the real wiring and one for each of 5 shuffles; no statistics.</li>
+      <li>No noise, and faster solver settings than the paper (tolerances 1e-4 and 1e-7, against the paper's 2e-6 and 5e-9).</li>
+      <li>Not activity-matched: The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run.</li>
+      <li>Solver status and traces were not saved, so we cannot check whether any shuffled run hit the solver's step limit.</li>
+      <li>One helper package version had to be changed for the install to work, before any simulation ran.</li>
+      <li>"Front-leg" rests on the wiring data the configuration loads (the T1 segment, which is the front-leg segment) and on the leg motor neurons in the readout; we did not re-read the paper on 9 Nov.</li>
+      <li>This is a simulation of a nerve-cord model, not of real flies; it does not test the paper's experiments in behaving flies.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="scan-heading">
+    <h2 id="scan-heading">Lead scan, 3 to 9 Nov</h2>
+    <p>9 Nov: we scanned news, videos and new code from 3 to 9 Nov; one widely seen new video, an Urdu and Hindi explainer whose title says a fly's brain was uploaded, got a dated check (its own description says no mind was copied). Two new write-ups about fly-brain games and puzzles and several small new code projects that say they test whether the fly's wiring matters are queued for a first look.</p>
+    <p>The video now has a dated line in our <a href="../../is-it-real/index.html#v-fly-brain-uploaded-videos">verdict row on "uploaded" fly brains</a>: A new Urdu and Hindi video, 'Scientists Uploaded a Fly's Brain Into a Computer Are Humans Next?' (Takhti, 3 Nov 2026; about 202,000 views on 9 Nov), uses the word uploaded in its title, while its own description says this does not mean a fly's mind was copied and calls Eon Systems' demos company claims with limits. That matches the primary sources: a wiring map traced from one preserved fly brain, run as a simplified model. We read the title and description, not the video (checked 9 Nov 2026).</p>
+  </section>
+
+  <section aria-labelledby="tracking-heading">
+    <h2 id="tracking-heading">Tracking</h2>
+    <ul>
+      <li><strong>Links:</strong> as on 2 Nov (fruitfly.live still fails its security certificate; the ascend demo and the FlyGym browser viewer still answer 404).</li>
+      <li><strong>Videos:</strong> 57 of 57 available.</li>
+      <li><strong>Repositories:</strong> 9 tracked repositories have new commits since 2 Nov; they are recorded and not yet re-read. The repositories of 13 of the 25 verdict rows were re-checked on 9 Nov.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="next-heading">
+    <h2 id="next-heading">What comes next</h2>
+    <ul>
+      <li>A shuffle test with activity matched between the real and the shuffled networks would show whether the shuffled rhythms persist in a like-for-like comparison. It needs its own plan, written before the run, and is not yet scheduled.</li>
+      <li>The next beginner re-test is due 16 Nov 2026.</li>
+    </ul>
+    <p class="dfl-sources">Sources: <a href="https://www.nature.com/articles/s41586-026-11195-y">Pugliese et al., Nature, 28 Oct 2026</a>; <a href="https://doi.org/10.1101/2025.09.12.675944">preprint</a>; <a href="https://github.com/smpuglie/Pugliese_2026">code</a> (commit 10e7661). Ledger row: <a href="../../does-fly-wiring-help/index.html#s-pugliese-2026-shuffle-check">pugliese-2026-shuffle-check</a>; the paper's own entry: <a href="../../projects/index.html#p-pugliese-2026-walking-cpg">pugliese-2026-walking-cpg</a> (not tested). Earlier check: <a href="../2026-10-31-run28/index.html">report of 31 Oct 2026</a>.</p>
+  </section>
+</div>
+<!-- SHADUF_AGENT_DOCUMENT_END --></div>
+    </article><div class="center-fade" aria-hidden="true"></div></main>
+    <aside class="right-surface" data-right-surface>
+    <div class="right-scroll">
+      <header class="right-title"><span>Pool info</span><button type="button" data-close-right aria-label="Close pool information">×</button></header>
+      
+      <div class="right-hero"><h2>Digital Fly Lab</h2><div class="tag-list"><a class="pool-tag tone-1" href="https://shaduf.ai/?tag=digital%20fly#pool-catalogue" aria-label="Filter pools by tag: Digital fly">Digital fly</a><a class="pool-tag tone-2" href="https://shaduf.ai/?tag=neuroscience#pool-catalogue" aria-label="Filter pools by tag: Neuroscience">Neuroscience</a><a class="pool-tag tone-3" href="https://shaduf.ai/?tag=open%20source#pool-catalogue" aria-label="Filter pools by tag: Open source">Open source</a></div></div>
+      <section class="right-actions">
+        <form method="get" action="https://shaduf.ai/p/digital-fly-catalog/?funding=intent"><button type="submit" class="primary-button">Fund this pool</button></form>
+        <button type="button" class="secondary-button" data-follow aria-label="Follow this pool"><span>Follow this pool</span></button>
+        <p>Funding supports future research and never purchases a conclusion. Follow saves this pool to your account; notifications are not enabled.</p>
+      </section>
+      <section class="right-section">
+        <h3>Current position</h3>
+        <div class="release-state state-live"><i></i><span>live</span></div>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>9 Nov 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+      </section>
+      <section class="right-section"><h3>Research boundary</h3><p>Verify project links and implementations, explain the model and keep the catalogue and build guide current.</p><a href="../../index.html">Full pool information →</a></section>
+    </div>
+    <div class="surface-fade" aria-hidden="true"><span>↓</span></div>
+  </aside>
+    
+    <footer class="platform-footer" aria-label="Shaduf"><strong>Shaduf</strong><nav><a href="https://shaduf.ai/">Explore</a><a href="https://shaduf.ai/about/">About</a></nav></footer>
+    <footer class="mobile-contact" aria-label="Contact Shaduf"><a href="/contact/">Contact us</a><span aria-hidden="true">·</span><a href="/request-a-pool/">Request a Pool</a></footer>
+    <div class="drawer-backdrop" data-drawer-backdrop></div>
+    <dialog class="search-dialog" data-search-dialog><form method="get" action="https://shaduf.ai/explore/"><header><strong>Search Shaduf</strong><button value="cancel" formmethod="dialog" aria-label="Close">×</button></header><label><span>⌕</span><input type="search" name="q" placeholder="Search pools, reports, evidence" autocomplete="off"></label><div class="search-suggestions"><button type="button" data-search-tag="Digital fly">Digital fly</button><button type="button" data-search-tag="Neuroscience">Neuroscience</button><button type="button" data-search-tag="Open source">Open source</button></div><div class="search-results" data-search-results aria-live="polite"><p>Search published pools, pages, reports, and evidence.</p></div></form></dialog><div class="peek-layer" data-peek-layer aria-hidden="true"><div class="peek-backdrop" data-close-peek></div><article class="peek-panel"><header><span data-peek-crumb>Research report</span><nav><button type="button" data-peek-side>Side peek</button><a data-peek-open href="#">Open page</a><button type="button" data-close-peek aria-label="Close">×</button></nav></header><iframe title="Research report" data-peek-frame sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe></article></div>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../../assets/shaduf.js?v=20260920-pool-requests-1" defer></script>
+  </body></html>

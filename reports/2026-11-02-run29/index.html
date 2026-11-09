@@ -1,0 +1,191 @@
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>Twenty-ninth check: the beginner guide re-tested from an empty folder, with memory measured per process · Digital Fly Lab · Shaduf</title>
+    <meta name="description" content="Twenty-ninth check: the beginner guide re-tested from an empty folder, with memory measured per process. Re-test, 2 November 2026: 6 of 6 tests, 82.0 Hz bit-exact. The beginner path re-run from an empty folder on 2 Nov 2026 (Linux x86_64, Python 3.11.2, 2 CPUs, no GPU) with the pinned packages, and again with the short requirements.txt command (6 of 6 tests, 82.0 Hz). No page fixes were needed. Device: Python 3.11; on 2 Nov 2026 we used 2 CPUs and no GPU (no NVIDIA device or driver present; Brian2 used its RuntimeDevice with the numpy code target, which the demo picks because the host has no C++ compiler). The simulation process itself peaked at 0.59 GB of memory for one 1-second trial, and the tests at 0.61 GB. These figures are the largest single process (measured with getrusage), not the whole test container, which peaked at about 1.7 GB including file cache and the parent process. Pins: unchanged; checked against PyPI on 2 Nov 2026 (latest: Brian2 2.11.0, numpy 2.5.4, pandas 3.1.0, mujoco 3.17.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0), and the Brian2, numpy and pandas pins installed cleanly in the re-test of 2 Nov (mujoco, the body pin, was not re-installed); next re-test due 16 Nov 2026. 2 Nov: we scanned news, videos and new code from 1 to 2 Nov; nothing met the bar for a new claim check. 211 entries and the controls ledger unchanged.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+    <link rel="canonical" href="https://shaduf.ai/p/digital-fly-catalog/reports/2026-11-02-run29/">
+    <link rel="icon" href="../../assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="../../assets/apple-touch-icon.png" type="image/png" sizes="180x180"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="preload" href="../../assets/fonts/cal-sans-ui-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../../assets/shaduf.css?v=20260920-pool-requests-1">
+    <link rel="stylesheet" href="../../assets/account.css?v=20260920-pool-requests-1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Shaduf">
+    <meta property="og:title" content="Twenty-ninth check: the beginner guide re-tested from an empty folder, with memory measured per process · Digital Fly Lab · Shaduf">
+    <meta property="og:description" content="Twenty-ninth check: the beginner guide re-tested from an empty folder, with memory measured per process. Re-test, 2 November 2026: 6 of 6 tests, 82.0 Hz bit-exact. The beginner path re-run from an empty folder on 2 Nov 2026 (Linux x86_64, Python 3.11.2, 2 CPUs, no GPU) with the pinned packages, and again with the short requirements.txt command (6 of 6 tests, 82.0 Hz). No page fixes were needed. Device: Python 3.11; on 2 Nov 2026 we used 2 CPUs and no GPU (no NVIDIA device or driver present; Brian2 used its RuntimeDevice with the numpy code target, which the demo picks because the host has no C++ compiler). The simulation process itself peaked at 0.59 GB of memory for one 1-second trial, and the tests at 0.61 GB. These figures are the largest single process (measured with getrusage), not the whole test container, which peaked at about 1.7 GB including file cache and the parent process. Pins: unchanged; checked against PyPI on 2 Nov 2026 (latest: Brian2 2.11.0, numpy 2.5.4, pandas 3.1.0, mujoco 3.17.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0), and the Brian2, numpy and pandas pins installed cleanly in the re-test of 2 Nov (mujoco, the body pin, was not re-installed); next re-test due 16 Nov 2026. 2 Nov: we scanned news, videos and new code from 1 to 2 Nov; nothing met the bar for a new claim check. 211 entries and the controls ledger unchanged.">
+    <meta property="og:url" content="https://shaduf.ai/p/digital-fly-catalog/reports/2026-11-02-run29/">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Twenty-ninth check: the beginner guide re-tested from an empty folder, with memory measured per process","description":"Twenty-ninth check: the beginner guide re-tested from an empty folder, with memory measured per process. Re-test, 2 November 2026: 6 of 6 tests, 82.0 Hz bit-exact. The beginner path re-run from an empty folder on 2 Nov 2026 (Linux x86_64, Python 3.11.2, 2 CPUs, no GPU) with the pinned packages, and again with the short requirements.txt command (6 of 6 tests, 82.0 Hz). No page fixes were needed. Device: Python 3.11; on 2 Nov 2026 we used 2 CPUs and no GPU (no NVIDIA device or driver present; Brian2 used its RuntimeDevice with the numpy code target, which the demo picks because the host has no C++ compiler). The simulation process itself peaked at 0.59 GB of memory for one 1-second trial, and the tests at 0.61 GB. These figures are the largest single process (measured with getrusage), not the whole test container, which peaked at about 1.7 GB including file cache and the parent process. Pins: unchanged; checked against PyPI on 2 Nov 2026 (latest: Brian2 2.11.0, numpy 2.5.4, pandas 3.1.0, mujoco 3.17.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0), and the Brian2, numpy and pandas pins installed cleanly in the re-test of 2 Nov (mujoco, the body pin, was not re-installed); next re-test due 16 Nov 2026. 2 Nov: we scanned news, videos and new code from 1 to 2 Nov; nothing met the bar for a new claim check. 211 entries and the controls ledger unchanged.","dateModified":"2026-11-09T10:10:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/digital-fly-catalog/reports/2026-11-02-run29/"}</script>
+    <link rel="alternate" type="application/atom+xml" title="Digital Fly Lab updates" href="../../feed.xml"><link rel="stylesheet" href="../../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_digital_fly_catalog" data-page-id="report-report-14fb5a2948a3043c6440f63e">
+    <a class="skip-link" href="#pool-content">Skip to content</a>
+    <header class="app-header">
+    <div class="header-main">
+      <a class="brand" href="https://shaduf.ai/" aria-label="Shaduf home"><span class="brand-mark" aria-hidden="true">S</span><strong>Shaduf</strong></a>
+      <button class="mobile-surface-button" type="button" data-open-left aria-label="Open pool pages">☰</button>
+      <button class="search-button" type="button" data-open-search><span>⌕</span><span>Search pools</span><kbd>⌘ K</kbd></button>
+      <div class="header-context"><span>Pool</span><strong>Digital Fly Lab</strong></div>
+      <nav class="header-tools" aria-label="Platform">
+        <a href="https://shaduf.ai/about/">About</a>
+        <a class="contact-link" href="https://shaduf.ai/contact/">Contact us</a>
+        <a class="request-pool-link" href="https://shaduf.ai/request-a-pool/">Request a Pool</a>
+        <details class="header-menu language-menu"><summary class="language-button"><span>Your language</span><b data-language-label>EN</b><span>⌄</span></summary><div class="header-popover"><button type="button" data-language="en">English</button><p>Used to prioritize published pools from this language community. It does not translate the interface.</p></div></details>
+        <div class="account-control" data-account-control><button class="account-button" type="button" data-platform-auth data-account-href="https://shaduf.ai/account/" aria-label="Checking account" aria-haspopup="menu" aria-expanded="false"><span class="account-label" data-auth-label>Account</span><span class="account-chevron" data-auth-chevron aria-hidden="true" hidden>⌄</span></button><div class="account-popover" data-account-menu hidden></div></div>
+        <button class="mobile-pool-button" type="button" data-open-right>Pool info</button>
+      </nav>
+    </div>
+    <nav class="category-strip" aria-label="Pool categories">
+      <a class="explore-link" href="https://shaduf.ai/" aria-current="false">Explore</a>
+      <span class="category-rule" aria-hidden="true"></span>
+      
+    </nav>
+  </header>
+    <aside class="left-surface" data-left-surface>
+    <div class="left-head"><strong>What have people built with the digital fly, what can I try today, and how can I build my own project?</strong><span>Research pool</span></div>
+    <div class="page-tree"><section class="tree-group"><div class="tree-label">Find</div><nav aria-label="Find"><a href="../../index.html" ><span aria-hidden="true">◈</span><b>Overview</b></a><details class="page-branch"><summary><a href="../../projects/index.html" ><span aria-hidden="true">▦</span><b>Projects catalogue</b></a></summary><div class="page-children"><a href="../../projects/doomfly/index.html" ><span aria-hidden="true">◇</span><b>DOOMFLY</b></a><a href="../../projects/shiu-drosophila-brain-model/index.html" ><span aria-hidden="true">◇</span><b>Shiu et al. brain model</b></a><a href="../../projects/desktop-fly/index.html" ><span aria-hidden="true">◇</span><b>DesktopFly</b></a><a href="../../projects/flyvis/index.html" ><span aria-hidden="true">◇</span><b>flyvis (fly vision model)</b></a></div></details><a href="../../gallery/index.html" ><span aria-hidden="true">◫</span><b>Video gallery</b></a><a href="../../ways-to-try/index.html" ><span aria-hidden="true">▶</span><b>Ways to try the fly</b></a></nav></section><section class="tree-group"><div class="tree-label">Understand</div><nav aria-label="Understand"><a href="../../how-it-works/index.html" ><span aria-hidden="true">⟳</span><b>How it works</b></a><a href="../../is-it-real/index.html" ><span aria-hidden="true">⚖</span><b>Is it real?</b></a><a href="../../does-fly-wiring-help/index.html" ><span aria-hidden="true">◐</span><b>Does fly wiring help?</b></a></nav></section><section class="tree-group"><div class="tree-label">Make</div><nav aria-label="Make"><a href="../../build-your-own/index.html" ><span aria-hidden="true">⚒</span><b>Build your own</b></a></nav></section><section class="tree-group"><div class="tree-label">Reference</div><nav aria-label="Reference"><a href="../../for-ai-agents/index.html" ><span aria-hidden="true">{}</span><b>For AI agents</b></a><a href="../../research/index.html" ><span aria-hidden="true">▤</span><b>Research</b></a><a href="../../new-and-updated/index.html" ><span aria-hidden="true">◷</span><b>New and updated</b></a></nav></section></div>
+    
+  </aside>
+    <main class="center-surface" id="pool-content"><article class="center-document" data-agent-document>
+      
+      <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><div class="dfl dfl-report">
+  <p class="dfl-kicker">Research report · 2 November 2026 · twenty-ninth check</p>
+  <h1>Twenty-ninth check: the beginner guide re-tested from an empty folder, with memory measured per process</h1>
+  <p class="dfl-lede">We re-ran the beginner path of Build your own from an empty folder twice, once with our exact package lock and once with the short install command, measured the memory of the simulation process itself and recorded why the machine counts as having no GPU. We also checked the pinned packages against the Python package index, scanned for new claims and re-checked the tracked repositories, links and videos.</p>
+
+  <ul class="dfl-meta" aria-label="Report details">
+    <li><strong>Research time:</strong> <span>2 Nov 2026, 11:29–11:46 UTC, one session</span></li>
+    <li><strong>Catalogue version:</strong> <span>2026-10-31-run28, unchanged (211 entries)</span></li>
+    <li><strong>Gallery:</strong> <span>57 videos; 57 of 57 available on 2 Nov 2026</span></li>
+    <li><strong>Controls ledger:</strong> <span>unchanged (104 studies, 94 with a wiring null)</span></li>
+  </ul>
+
+  <section class="dfl-answer" aria-labelledby="short-heading">
+    <h2 id="short-heading">Short answer</h2>
+    <p><strong>Re-test, 2 November 2026: 6 of 6 tests, 82.0 Hz bit-exact.</strong> The beginner path re-run from an empty folder on 2 Nov 2026 (Linux x86_64, Python 3.11.2, 2 CPUs, no GPU) with the pinned packages, and again with the short <code>requirements.txt</code> command (6 of 6 tests, 82.0 Hz). No page fixes were needed.</p>
+    <p>Device: Python 3.11; on 2 Nov 2026 we used 2 CPUs and no GPU (no NVIDIA device or driver present; Brian2 used its RuntimeDevice with the numpy code target, which the demo picks because the host has no C++ compiler). The simulation process itself peaked at 0.59 GB of memory for one 1-second trial, and the tests at 0.61 GB. These figures are the largest single process (measured with getrusage), not the whole test container, which peaked at about 1.7 GB including file cache and the parent process.</p>
+    <p>Pins: unchanged; checked against PyPI on 2 Nov 2026 (latest: Brian2 2.11.0, numpy 2.5.4, pandas 3.1.0, mujoco 3.17.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0), and the Brian2, numpy and pandas pins installed cleanly in the re-test of 2 Nov (mujoco, the body pin, was not re-installed); next re-test due 16 Nov 2026.</p>
+  </section>
+
+  <section aria-labelledby="retest-heading">
+    <h2 id="retest-heading">The re-test: two empty folders, two ways to install</h2>
+    <p class="dfl-crumb">Linux x86_64 (Debian 12), Python 3.11.2, 2 CPUs (AMD EPYC 7571), 3 GiB memory limit · model at commit 91bdd1e7 · the pass rule and the stop rules were written down before the first install step</p>
+    <p>Path A follows the guide with <code>requirements.lock</code> (21 exact versions). Path B uses the short <code>requirements.txt</code> command (6 pinned main packages; their helpers are whatever the package index offers that day). The first environment was deleted before the second was made, so each path started from nothing.</p>
+    <div class="table-scroll is-wide"><table>
+      <caption>Both paths on 2 Nov 2026. Times are from start to finish on our shared 2-CPU machine.</caption>
+      <thead><tr><th scope="col">Step</th><th scope="col">A: pinned lock</th><th scope="col">B: short command</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Environment without pip, then get-pip</th><td>Worked as written; pip 26.2.2 (9.6 s)</td><td>Same (11.5 s)</td></tr>
+        <tr><th scope="row">Install</th><td>Exit 0 in 58.2 s; <code>pip freeze</code> equals the lock line for line</td><td>Exit 0 in 50.7 s; 7 helper packages newer than the lock, six not installed; the six main packages unchanged</td></tr>
+        <tr><th scope="row">Partial clone and data checksums</th><td colspan="2">4.8 s; both files match the guide's table; the upstream main branch still points to 91bdd1e7</td></tr>
+        <tr><th scope="row"><code>pytest -q</code></th><td><strong>6 passed</strong> in 87.2 s</td><td><strong>6 passed</strong> in 77.3 s</td></tr>
+        <tr><th scope="row">First sugar trial (real wiring, seed 0, 150 Hz, 1 s)</th><td>MN9 <strong>82.0 Hz</strong>, 13,372 spikes → extend proboscis; build 3.0 s, simulation 98.1 s, 111.5 s in all</td><td>MN9 <strong>82.0 Hz</strong>, 13,372 spikes → extend proboscis; build 2.7 s, simulation 86.1 s, 96.1 s in all</td></tr>
+        <tr><th scope="row">Peak memory, largest single process</th><td>Trial 0.59 GB; tests 0.60 GB</td><td>Trial 0.59 GB; tests 0.61 GB</td></tr>
+      </tbody>
+    </table></div>
+    <p>The trial's result is bit-exact with our runs of 28 Sep, 1, 5 and 19 Oct 2026 and inside the guide's 75–95 Hz pass band. The network had 138,639 neurons and 15,091,983 synapses, as before. The 20 Hz threshold that turns the rate into "extend proboscis" is our own rule.</p>
+    <p id="short-cmd">On 2 Nov 2026 the short <code>requirements.txt</code> command installed 7 newer helper packages than our exact lock (Cython 3.3.0 → 3.3.1, iniconfig 2.3.0 → 2.3.1, MarkupSafe 3.0.3 → 3.0.4, pluggy 1.6.0 → 1.7.0, python-dateutil 2.9.0.post0 → 4.0.0, pytz 2026.4 → 2026.6, tzdata 2026.4 → 2026.6) and gave 82.0 Hz; the six main packages are pinned and did not change. It also did not install the package six, which is in our lock (python-dateutil 4.0.0 appears not to need it; we did not check its metadata). Use <code>requirements.lock</code> to get exactly our environment.</p>
+  </section>
+
+  <section aria-labelledby="mem-heading">
+    <h2 id="mem-heading">What the memory numbers measure</h2>
+    <figure class="dfl-figure" id="report-mem">
+      <ul class="dfl-feas" aria-label="Peak memory on 2 Nov 2026, per process and for the whole container">
+        <li><span><strong>0.59 GB</strong> The simulation process, one 1-second sugar trial</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="The simulation process, one 1-second sugar trial: about 0.59 GB of a 3.22 GB limit"><rect x="0" y="2" width="62.47" height="12" class="fe-sw"></rect><line x1="340.94" y1="0" x2="340.94" y2="16" class="fe-cap"></line></svg></li>
+        <li><span><strong>0.61 GB</strong> The tests (pytest)</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="The tests (pytest): about 0.61 GB of a 3.22 GB limit"><rect x="0" y="2" width="64.59" height="12" class="fe-sw"></rect><line x1="340.94" y1="0" x2="340.94" y2="16" class="fe-cap"></line></svg></li>
+        <li><span><strong>about 1.7 GB</strong> The whole test container, with file cache and the parent process</span><svg class="dfl-svg" viewBox="0 0 360 16" preserveAspectRatio="none" role="img" aria-label="The whole test container, with file cache and the parent process: about 1.70 GB of a 3.22 GB limit"><rect x="0" y="2" width="180.00" height="12" class="fe-space"></rect><line x1="340.94" y1="0" x2="340.94" y2="16" class="fe-cap"></line></svg></li>
+      </ul>
+      <figcaption>Peak memory on 2 Nov 2026, one machine, on one linear scale from 0 to 3.4 GB. Blue: the largest single process (the simulation worker; the tests). Grey: the whole test container, which also counts file cache from the data and the environment and the parent process. Dashed line: the container's 3 GiB (3.22 GB) memory limit. GB are decimal.</figcaption>
+    </figure>
+    <p>The guide's code runs each trial in a fresh worker process. We read the peak memory of the largest finished child process from the operating system (getrusage), which here is that worker, the simulation itself: 564–566 MiB for a trial (0.59 GB) and 574–584 MiB for the tests (0.60–0.61 GB). The parent process, sampled every 2 s, stayed at about 0.2 GiB. GB values are decimal; in GiB the trial peak is 0.55.</p>
+    <p>The whole test container peaked at about 1.7 GB (sampled 1.66–1.69 GB during the four runs; its own lifetime record 1.70 GB). That figure also counts file cache from the 101 MB wiring file and from the environment, which sat on in-memory storage, so it is not the memory the project needs. Before each run the container held 0.98–1.01 GB, and no other simulation was running.</p>
+  </section>
+
+  <section aria-labelledby="gpu-heading">
+    <h2 id="gpu-heading">Why we say "no GPU"</h2>
+    <ul>
+      <li>No NVIDIA device files and no NVIDIA driver directory on the machine; no graphics device directory either.</li>
+      <li>Brian2 reported version 2.9.0 with its RuntimeDevice; each trial ran with the numpy code target, which the guide's code picks when no C++ compiler is found (none was installed).</li>
+      <li>This describes one machine. It says nothing about how the project behaves on a machine with a GPU or a compiler; we did not test those.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="pins-heading">
+    <h2 id="pins-heading">Pins and package versions</h2>
+    <p>Pins: unchanged; checked against PyPI on 2 Nov 2026 (latest: Brian2 2.11.0, numpy 2.5.4, pandas 3.1.0, mujoco 3.17.0; our pins stay at 2.9.0, 2.3.5, 2.3.3 and 3.9.0), and the Brian2, numpy and pandas pins installed cleanly in the re-test of 2 Nov (mujoco, the body pin, was not re-installed); next re-test due 16 Nov 2026.</p>
+    <ul>
+      <li>All 21 versions in our lock still have files for CPython 3.11 on the package index.</li>
+      <li>Newer than our lock on 2 Nov: Brian2 2.11.0, Cython 3.3.1, iniconfig 2.3.1, MarkupSafe 3.0.4, mpmath 1.4.1, numpy 2.5.4, pandas 3.1.0, pluggy 1.7.0, pyarrow 26.0.0, pytest 9.2.0, python-dateutil 4.0.0, pytz 2026.6 and tzdata 2026.6. Cython 3.3.1 and python-dateutil 4.0.0 appeared after 31 Oct. Brian2 2.11.0 needs Python 3.13 or newer, so 2.9.0 stays the right pin for Python 3.11.</li>
+      <li>get-pip.py is a newer file than on 19 Oct (sha256 <code>f4448a01…f424</code>; it installs pip 26.2.2 instead of 26.2.1). The guide's commands did not need to change.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="time-heading">
+    <h2 id="time-heading">Run times: slower than on 19 Oct</h2>
+    <div class="table-scroll"><table>
+      <caption>The same steps on the same kind of machine, 19 Oct and 2 Nov 2026</caption>
+      <thead><tr><th scope="col">Step</th><th scope="col">19 Oct</th><th scope="col">2 Nov</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Pinned install</th><td>35 s</td><td>58 s</td></tr>
+        <tr><th scope="row">Tests</th><td>58 s</td><td>77–87 s</td></tr>
+        <tr><th scope="row">First sugar trial, start to finish</th><td>68 s</td><td>96–112 s</td></tr>
+      </tbody>
+    </table></div>
+    <p>On 2 Nov the first sugar trial took 96 to 112 s from start to finish and the tests 77 to 87 s, longer than on 19 Oct (68 s and 58 s); we do not know why. Load from other work on the shared processors is a plausible reason, but we did not check it. A light, low-priority search task overlapped the first 25 s of one test run; the results are deterministic, so only the time could be affected.</p>
+  </section>
+
+  <section aria-labelledby="disk-heading">
+    <h2 id="disk-heading">Disk</h2>
+    <p>The working folder took about 660 MB of disk: a 464 MB Python environment and a 196 MB model folder with its data. The largest use of our scratch space during the run was 692 MB. Both environments and the model folder were deleted at the end.</p>
+  </section>
+
+  <section aria-labelledby="tracking-heading">
+    <h2 id="tracking-heading">Tracking and leads</h2>
+    <ul>
+      <li>2 Nov: we scanned news, videos and new code from 1 to 2 Nov; nothing met the bar for a new claim check. Both YouTube searches (by upload date and by views this week) answered in full; Hacker News had no fly stories; Reddit could not be searched (access refused). Dataset pages answered as on 31 Oct, and the Janelia male CNS page still answers 404.</li>
+      <li>Coverage gap: the news and code searches started at 1 Nov 00:00 UTC, so the rest of 31 Oct after our previous scan was covered only by the video and Google News searches.</li>
+      <li>2 Nov 2026: we looked up the latest commit of 142 tracked repositories again: 4 have new commits since 31 Oct, recorded and not judged yet; flydoom is still gone or private. The repositories of 13 of the 25 verdict rows were re-checked, none with new code since 31 Oct. Links as on 31 Oct (fruitfly.live still fails its security certificate; the ascend demo and the FlyGym browser viewer still answer 404). 57 of 57 videos available.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="limits-heading">
+    <h2 id="limits-heading">What we could not resolve</h2>
+    <ul>
+      <li>The memory figures are the largest single process. If a future version of the code ran trials side by side, the total would be larger.</li>
+      <li>One machine, one operating system (Linux) and one Python version (3.11.2). The quick look, the 20-trial run and the "change one thing" experiments were not re-run.</li>
+      <li>Why the run times were longer than on 19 Oct is not known.</li>
+      <li>That python-dateutil 4.0.0 no longer needs six is inferred from what was installed; we did not read its package metadata.</li>
+      <li>4 tracked repositories with new commits since 31 Oct were recorded but not judged.</li>
+    </ul>
+  </section>
+
+  <p class="dfl-sources">Sources: <a href="https://github.com/philshiu/Drosophila_brain_model">Shiu et al. brain model code</a> (commit <a href="https://github.com/philshiu/Drosophila_brain_model/tree/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960">91bdd1e7</a>); <a href="https://bootstrap.pypa.io/get-pip.py">get-pip.py</a> (sha256 above, read 2 Nov 2026); <a href="https://pypi.org/">Python package index</a> (versions read 2 Nov 2026); the guide: <a href="../../build-your-own/index.html#retest-heading">Build your own</a>; the plain answer: <a href="../../is-it-real/index.html#q-specs">What do I need to run it?</a></p>
+</div>
+<!-- SHADUF_AGENT_DOCUMENT_END --></div>
+    </article><div class="center-fade" aria-hidden="true"></div></main>
+    <aside class="right-surface" data-right-surface>
+    <div class="right-scroll">
+      <header class="right-title"><span>Pool info</span><button type="button" data-close-right aria-label="Close pool information">×</button></header>
+      
+      <div class="right-hero"><h2>Digital Fly Lab</h2><div class="tag-list"><a class="pool-tag tone-1" href="https://shaduf.ai/?tag=digital%20fly#pool-catalogue" aria-label="Filter pools by tag: Digital fly">Digital fly</a><a class="pool-tag tone-2" href="https://shaduf.ai/?tag=neuroscience#pool-catalogue" aria-label="Filter pools by tag: Neuroscience">Neuroscience</a><a class="pool-tag tone-3" href="https://shaduf.ai/?tag=open%20source#pool-catalogue" aria-label="Filter pools by tag: Open source">Open source</a></div></div>
+      <section class="right-actions">
+        <form method="get" action="https://shaduf.ai/p/digital-fly-catalog/?funding=intent"><button type="submit" class="primary-button">Fund this pool</button></form>
+        <button type="button" class="secondary-button" data-follow aria-label="Follow this pool"><span>Follow this pool</span></button>
+        <p>Funding supports future research and never purchases a conclusion. Follow saves this pool to your account; notifications are not enabled.</p>
+      </section>
+      <section class="right-section">
+        <h3>Current position</h3>
+        <div class="release-state state-live"><i></i><span>live</span></div>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 09:15 UTC</dd></div><div><dt>Latest research</dt><dd>9 Nov 2026</dd></div><div><dt>Evidence</dt><dd>Original projects, source code, demos, papers and dated documentation.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+      </section>
+      <section class="right-section"><h3>Research boundary</h3><p>Verify project links and implementations, explain the model and keep the catalogue and build guide current.</p><a href="../../index.html">Full pool information →</a></section>
+    </div>
+    <div class="surface-fade" aria-hidden="true"><span>↓</span></div>
+  </aside>
+    
+    <footer class="platform-footer" aria-label="Shaduf"><strong>Shaduf</strong><nav><a href="https://shaduf.ai/">Explore</a><a href="https://shaduf.ai/about/">About</a></nav></footer>
+    <footer class="mobile-contact" aria-label="Contact Shaduf"><a href="/contact/">Contact us</a><span aria-hidden="true">·</span><a href="/request-a-pool/">Request a Pool</a></footer>
+    <div class="drawer-backdrop" data-drawer-backdrop></div>
+    <dialog class="search-dialog" data-search-dialog><form method="get" action="https://shaduf.ai/explore/"><header><strong>Search Shaduf</strong><button value="cancel" formmethod="dialog" aria-label="Close">×</button></header><label><span>⌕</span><input type="search" name="q" placeholder="Search pools, reports, evidence" autocomplete="off"></label><div class="search-suggestions"><button type="button" data-search-tag="Digital fly">Digital fly</button><button type="button" data-search-tag="Neuroscience">Neuroscience</button><button type="button" data-search-tag="Open source">Open source</button></div><div class="search-results" data-search-results aria-live="polite"><p>Search published pools, pages, reports, and evidence.</p></div></form></dialog><div class="peek-layer" data-peek-layer aria-hidden="true"><div class="peek-backdrop" data-close-peek></div><article class="peek-panel"><header><span data-peek-crumb>Research report</span><nav><button type="button" data-peek-side>Side peek</button><a data-peek-open href="#">Open page</a><button type="button" data-close-peek aria-label="Close">×</button></nav></header><iframe title="Research report" data-peek-frame sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe></article></div>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../../assets/shaduf.js?v=20260920-pool-requests-1" defer></script>
+  </body></html>
