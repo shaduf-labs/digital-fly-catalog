@@ -1256,6 +1256,12 @@
 [data-agent-document] .dfl-svg .mo-real { fill: var(--dfl-blue); }
 [data-agent-document] .dfl-svg .mo-shuf { fill: var(--dfl-fx-worse); }
 
+/* Run 31: Is it real? questions in readers' words */
+[data-agent-document] .dfl-qwords { margin: 16px 0 22px; padding: 14px 18px 10px; border: 1px solid var(--dfl-line-strong); border-radius: var(--dfl-radius); background: var(--dfl-tint); }
+[data-agent-document] .dfl-qwords h3 { margin: 0 0 6px; }
+[data-agent-document] .dfl-qwords ul { padding-left: 1.2em; margin: 6px 0; }
+[data-agent-document] .dfl-qwords li { margin: 6px 0; overflow-wrap: break-word; }
+
 /* Run 28: 31 Oct fly67 block (one dot per day) and the feasibility bars of the run 28 report. */
 [data-agent-document] .dfl-b28 .dfl-b18cmp svg.dfl-b18dots { width: 16px; }
 [data-agent-document] .dfl-feas { list-style: none; padding: 0; margin: 10px 0; display: grid; gap: 10px; }

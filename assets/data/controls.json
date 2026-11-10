@@ -1,22 +1,22 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Digital Fly Lab controls ledger",
-  "version": "2026-11-09-run30",
-  "generated_at": "2026-11-09T10:10:00Z",
-  "run_id": "report-56ec37f36483bb767594e7cb",
-  "as_of": "2026-11-09",
+  "version": "2026-11-10-run31",
+  "generated_at": "2026-11-10T10:10:00Z",
+  "run_id": "report-386a83322318ccb008711958",
+  "as_of": "2026-11-10",
   "answer": {
-    "one_line": "Sometimes: fly wiring beat scrambled wiring in 36 of 95 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (38).",
-    "short": "Of 105 control studies in our catalogue, 95 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 36, makes no difference in 27, does worse in 11, gives mixed results in 17 and is not yet scored in 4. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). Our own check of a published nerve-cord walking model (Pugliese et al. 2026): We re-ran the authors' nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors' own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
+    "one_line": "Sometimes: fly wiring beat scrambled wiring in 36 of 97 studies, mostly reflex, sensory and steering circuits; in trained, reservoir, ML and our walking tests it tied or lost (38).",
+    "short": "Of 107 control studies in our catalogue, 97 compare the real wiring with a scrambled or rewired copy: the real wiring helps in 36, makes no difference in 27, does worse in 11, gives mixed results in 18 and is not yet scored in 5. The clear wins are untrained reflex, sensory and steering circuits, while networks trained for machine-learning or game tasks usually do as well with scrambled wiring (a chess-learning mushroom body: 1680 vs 1675 Elo), and a brainless autopilot or a simple rule often matches the fly (Doom 53.3 s vs 51.9 s). The verdict depends on the null: in our own pre-registered test of the sugar reflex, degree-preserving and weight shuffles silence it (0 Hz vs 85 Hz), keeping the sensory and motor boundary keeps about 46% of it, and a sign shuffle makes the whole brain fire. In our own walking test (a FlyGym body driven by the FlyWire brain model through our hand-made mapping), scrambled wiring and a brainless constant drive walked as far as the real brain (14.1 and 14.3 vs 13.9 mm). Our own check of a published nerve-cord walking model (Pugliese et al. 2026): We re-ran the authors' nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors' own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. In our looming test (5-8 Oct 2026), a shadow on one eye turned the fly away in 6 of 6 real-brain body runs and 0 of 3 scrambled body runs (3 more scrambled drives are identical to the no-brain floor, so their walk follows by determinism); scrambled maps silence the steering neurons, scrambled maps turned up to the real map's activity still gave no turn command (3 of 3), and scrambling only the inside of the map kept about -9% of the turn command (none on the far side in all 6 runs) and 69% of the escape signal. The turn command appeared from about 30 per second (38% of our strongest input) on both sides; below that the model did not turn. A steering study on an aircraft rudder (flight-test-the-fly) also finds the wiring helps, yet a classical yaw damper does far better. Most studies are small, single-author and not replicated.",
     "counts": {
-      "studies": 105,
-      "with_wiring_null": 95,
+      "studies": 107,
+      "with_wiring_null": 97,
       "by_family": {
         "reflex-circuit": {
           "helps": 10,
           "no_difference": 0,
           "worse": 0,
-          "mixed": 1,
+          "mixed": 2,
           "not_tested": 2
         },
         "sensory-model": {
@@ -73,7 +73,7 @@
           "no_difference": 0,
           "worse": 1,
           "mixed": 0,
-          "not_tested": 1
+          "not_tested": 2
         },
         "evolution": {
           "helps": 0,
@@ -902,6 +902,171 @@
         }
       ],
       "wiring_effect": "helps",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
+      "id": "drosophila-whole-cns-specificity",
+      "name": "Whole-CNS wiring specificity hierarchy (MaleCNS v1.0 LIF, nine Maslov-Sneppen null levels): descending steering readout",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "reflex-circuit",
+      "loop": "open-loop",
+      "wiring": {
+        "dataset": "MaleCNS",
+        "release": "v1.0",
+        "scope": "whole CNS, 167,565 neurons, 25,623,478 directed connections"
+      },
+      "trained_parts": "none",
+      "metric": {
+        "name": "left-right leg motor neuron separation under a PFL3 turn stimulus (815 VNC leg MNs)",
+        "unit": "Hz",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 3.98,
+        "n": 5,
+        "spread": "± 0.27 sd (5 rewire-seed slots x 5 noisy trials)",
+        "source": "213b849 results/structural_specificity_screen_results.json pillar_1_wiring_hierarchy.summary.real.steer_leg_mn_sep_hz"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "full_shuffle",
+          "null_type": "degree-preserving",
+          "label": "Maslov-Sneppen shuffle over the whole CNS (99.4% of edges rewired; in/out degree, sent weights and signs kept)",
+          "value": -0.01,
+          "n": 5,
+          "samples": 5,
+          "spread": "± 0.03 sd",
+          "readout_refit": null,
+          "source": "213b849 results/structural_specificity_screen_results.json pillar_1_wiring_hierarchy.summary.rewired_full.steer_leg_mn_sep_hz",
+          "recomputed_by_us": true,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "region_shuffle",
+          "null_type": "degree-preserving",
+          "label": "shuffle within brain region (98.3% rewired)",
+          "value": 0.01,
+          "n": 5,
+          "samples": 5,
+          "spread": "± 0.01 sd",
+          "readout_refit": null,
+          "source": "213b849 results/structural_specificity_screen_results.json pillar_1_wiring_hierarchy.summary.rewired_region.steer_leg_mn_sep_hz",
+          "recomputed_by_us": true,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "type_shuffle",
+          "null_type": "degree-preserving",
+          "label": "shuffle within cell type, sides mixed (64.0% rewired)",
+          "value": 0.02,
+          "n": 5,
+          "samples": 5,
+          "spread": "± 0.16 sd",
+          "readout_refit": null,
+          "source": "213b849 results/structural_specificity_screen_results.json pillar_1_wiring_hierarchy.summary.rewired_type.steer_leg_mn_sep_hz",
+          "recomputed_by_us": true,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "partial_48_random",
+          "null_type": "degree-preserving",
+          "label": "fraction-matched global shuffle of 47.9% of edges",
+          "value": 0.64,
+          "n": 5,
+          "samples": 5,
+          "spread": "± 0.67 sd",
+          "readout_refit": null,
+          "source": "213b849 results/structural_specificity_screen_results.json pillar_1_wiring_hierarchy.summary.rewired_partial_48.steer_leg_mn_sep_hz",
+          "recomputed_by_us": true,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "type_side_shuffle",
+          "null_type": "degree-preserving",
+          "label": "shuffle within cell type and side (48.0% rewired)",
+          "value": 4.11,
+          "n": 5,
+          "samples": 5,
+          "spread": "± 0.21 sd",
+          "readout_refit": null,
+          "source": "213b849 results/structural_specificity_screen_results.json pillar_1_wiring_hierarchy.summary.rewired_type_side.steer_leg_mn_sep_hz",
+          "recomputed_by_us": true,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        },
+        {
+          "arm_id": "instance_shuffle",
+          "null_type": "degree-preserving",
+          "label": "shuffle within cell instance (47.3% rewired)",
+          "value": 4.13,
+          "n": 5,
+          "samples": 5,
+          "spread": "± 0.19 sd",
+          "readout_refit": null,
+          "source": "213b849 results/structural_specificity_screen_results.json pillar_1_wiring_hierarchy.summary.rewired_instance.steer_leg_mn_sep_hz",
+          "recomputed_by_us": true,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": 0.0079,
+        "stat_note": "Mann-Whitney p = 0.0079 for type+side vs partial-48 and vs type-only (statistical_tests in the results file). Steering survives shuffles that keep cell type and side and collapses under coarser shuffles. The same file reports mushroom-body odour decoding that survives PN-to-KC claw shuffles and a compass readout that breaks between instance and type+side. GPU run (NVIDIA RTX PRO 6000); not re-run by us.",
+        "headline_arm": "full_shuffle",
+        "best_null_arm": "instance_shuffle",
+        "baseline_arm": null,
+        "retention": null,
+        "retention_method": "none",
+        "baseline_retention": null,
+        "difference": 3.99
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 5,
+        "has_no_brain_baseline": false,
+        "reason": "Exact in/out degree, sent weights and signs kept; same stimuli, readouts and noise for every arm; 5 rewire seeds.",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 5,
+        "held_out": false,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "reason": "Numbers read from the committed results JSON; code for every null committed; compiled MaleCNS inputs not in the repository; not re-run by us (needs a GPU).",
+        "peer_review": "none",
+        "uncertainty_reported": true,
+        "recomputed_by_us": true,
+        "grade": "strong"
+      },
+      "extraction": "files",
+      "one_line": "Steering readout survives shuffles that keep cell type and side (4.11 vs 3.98 Hz) and vanishes under a whole-CNS shuffle (-0.01 Hz).",
+      "commit": "213b8498230ae66f249508d982baecfb48721673",
+      "checked_at": "2026-11-10T09:50:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/indian-aman/drosophila-whole-cns-specificity/blob/213b8498230ae66f249508d982baecfb48721673/results/structural_specificity_screen_results.json",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/indian-aman/drosophila-whole-cns-specificity/blob/213b8498230ae66f249508d982baecfb48721673/src/structural_specificity.py",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/indian-aman/drosophila-whole-cns-specificity/blob/213b8498230ae66f249508d982baecfb48721673/README.md",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "mixed",
       "baseline_beaten": "not-tested",
       "caveats": []
     },
@@ -7181,34 +7346,30 @@
         "release": "v783",
         "scope": "whole brain (138,639 neurons, 2,700,513 connections >= 5 synapses)"
       },
-      "trained_parts": "none (1.2 s start-up calibration picks and normalises up to 40 DN channels)",
+      "trained_parts": "none in the default policy (1.2 s start-up calibration picks and normalises up to 40 DN channels); an optional reward-trained linear readout ('Fly + online learning') is a separate policy",
       "metric": {
-        "name": "map coverage in the QA game benchmark (24,000 frames per run)",
+        "name": "map coverage in the QA game benchmark",
         "unit": "% of map",
         "higher_is_better": true
       },
       "real": {
-        "value": 42,
-        "n": 3,
-        "spread": "range 35-50% over 3 runs",
-        "source": "83b9104 LIMITATIONS.md:L192; README.md:L48"
+        "value": 50,
+        "n": null,
+        "spread": "range 40-55%",
+        "source": "c1bed69 README.md:L48 (after the author's steering-bias fix, adapt 1/40 -> 1/10)"
       },
-      "floor": {
-        "label": "straight ahead only",
-        "value": 5,
-        "source": "83b9104 LIMITATIONS.md:L195"
-      },
+      "floor": null,
       "arms": [
         {
           "arm_id": "smooth_noise",
           "null_type": "no-brain-baseline",
           "label": "smoothed noise",
-          "value": 61,
-          "n": 5,
+          "value": 63,
+          "n": null,
           "samples": 1,
-          "spread": "range 57-66% over 5 runs",
+          "spread": "range 59-66%",
           "readout_refit": null,
-          "source": "83b9104 LIMITATIONS.md:L193",
+          "source": "c1bed69 README.md:L52",
           "recomputed_by_us": false,
           "activity_ratio": null,
           "activity_class": "not-reported"
@@ -7217,83 +7378,83 @@
           "arm_id": "uniform_noise",
           "null_type": "no-brain-baseline",
           "label": "uniform noise",
-          "value": 50,
-          "n": 5,
+          "value": 49,
+          "n": null,
           "samples": 1,
-          "spread": "range 46-52% over 5 runs",
+          "spread": "range 46-52%",
           "readout_refit": null,
-          "source": "83b9104 LIMITATIONS.md:L194",
+          "source": "c1bed69 README.md:L53",
           "recomputed_by_us": false,
           "activity_ratio": null,
           "activity_class": "not-reported"
         },
         {
-          "arm_id": "paired_noise_alone",
-          "null_type": "no-brain-baseline",
-          "label": "paired control: same noise sequence without the connectome term (vs fly+noise hybrid 53%, range 49-56)",
-          "value": 56,
+          "arm_id": "blindfolded_fly",
+          "null_type": "other",
+          "label": "fly brain shown a different board (its output steers the real game)",
+          "value": 66,
           "n": null,
           "samples": 1,
-          "spread": "range 52-63%",
+          "spread": "range 55-74%",
           "readout_refit": null,
-          "source": "83b9104 LIMITATIONS.md:L218-219",
+          "source": "c1bed69 README.md:L50",
           "recomputed_by_us": false,
           "activity_ratio": null,
           "activity_class": "not-reported"
         }
       ],
       "effect": {
-        "headline_arm": null,
-        "best_null_arm": null,
-        "retention": null,
-        "retention_method": "none",
-        "baseline_arm": "smooth_noise",
-        "baseline_retention": 1.5135,
-        "difference": null,
         "ci": null,
         "p": null,
-        "stat_note": "No wiring null. Fly loses to smoothed noise (ranges do not overlap). Paired test: fly+noise 53% vs same noise alone 56% (connectome adds -3 pp, within run-to-run range). Steering vs light direction correlation ~0 over 8 seeds (0.046 ± 0.272, LIMITATIONS.md:15-24). Lesion: static left/right separation 0.947 -> 0.000 after cutting 40 steering channels -> 1.121 restored (README.md:L69-72)."
+        "stat_note": "No wiring null. After the author's steering-bias fix the fly covers 50% vs 63% for smoothed noise. Paired test: fly+noise beats the identical noise sequence alone by +11.4 pp over 12 paired runs (t = 4.63), but a fly brain shown a different board scores 66% vs 62% for the correctly seeing hybrid (-3.2 pp, t = 0.98); the author concludes the connectome contributes steering amplitude and timing, not screen information (README.md:L55-59). The earlier -3 pp paired result is withdrawn by the author. Optional online-learned readout: +13.1 pp vs a zero-learning-rate control (t = 3.15). Run counts per row are not stated in the table.",
+        "headline_arm": null,
+        "best_null_arm": null,
+        "baseline_arm": "smooth_noise",
+        "retention": null,
+        "retention_method": "none",
+        "baseline_retention": 1.26,
+        "difference": null
       },
-      "wiring_effect": "not-tested",
-      "baseline_beaten": "no",
       "fairness": {
         "keeps_degree": null,
         "keeps_io_boundary": null,
         "tuned_equally": null,
         "null_samples": 0,
         "has_no_brain_baseline": true,
-        "verdict": "unclear",
-        "reason": "Only no-brain baselines (noise policies, straight) and a paired noise-alone control; no shuffled or rewired connectome."
+        "reason": "Only no-brain baselines (noise policies), a paired noise-alone control and a mismatched-input (blindfolded) control; no shuffled or rewired connectome.",
+        "verdict": "unclear"
       },
       "quality": {
-        "n_per_arm": 3,
-        "held_out": null,
-        "uncertainty_reported": false,
+        "n_per_arm": null,
+        "held_out": false,
         "results_in_repo_files": false,
         "independent_test": false,
+        "reason": "Numbers in README/LIMITATIONS tables; policy_bench.mjs is committed but no output file; not re-run by us.",
         "peer_review": "none",
+        "uncertainty_reported": false,
         "recomputed_by_us": false,
-        "grade": "weak",
-        "reason": "3-5 seeded runs per policy with ranges, but numbers only in README/LIMITATIONS (docs/policy.js hard-codes the table); policy_bench.mjs is committed but no output file."
+        "grade": "weak"
       },
       "extraction": "files",
-      "one_line": "Whole-brain fly explores 42% of a game map vs 61% for smoothed noise; adding the connectome to noise changes nothing (-3 points).",
-      "commit": "83b910466ed845a826cb291cb044eeb82dc8b956",
-      "checked_at": "2026-09-30T09:44:53Z",
+      "one_line": "After a bias fix the fly covers 50% of a game map vs 63% for smoothed noise; a brain shown the wrong screen scores 66%.",
+      "commit": "c1bed6961ea86c39858b98ba7f298ea161e4ed48",
+      "checked_at": "2026-11-10T09:50:00Z",
       "sources": [
         {
-          "url": "https://github.com/hwkim3330/flyworker/blob/83b910466ed845a826cb291cb044eeb82dc8b956/LIMITATIONS.md",
+          "url": "https://github.com/hwkim3330/flyworker/blob/c1bed6961ea86c39858b98ba7f298ea161e4ed48/README.md",
           "label": "direct"
         },
         {
-          "url": "https://github.com/hwkim3330/flyworker/blob/83b910466ed845a826cb291cb044eeb82dc8b956/README.md",
+          "url": "https://github.com/hwkim3330/flyworker/blob/c1bed6961ea86c39858b98ba7f298ea161e4ed48/LIMITATIONS.md",
           "label": "direct"
         },
         {
-          "url": "https://github.com/hwkim3330/flyworker/blob/83b910466ed845a826cb291cb044eeb82dc8b956/policy_bench.mjs",
+          "url": "https://github.com/hwkim3330/flyworker/blob/c1bed6961ea86c39858b98ba7f298ea161e4ed48/policy_bench.mjs",
           "label": "direct"
         }
       ],
+      "wiring_effect": "not-tested",
+      "baseline_beaten": "no",
       "caveats": []
     },
     {
@@ -12119,6 +12280,101 @@
       "caveats": []
     },
     {
+      "id": "fly-connectome-signal-study",
+      "name": "Does fly brain wiring shape signal spread? (FlyWire v783 LIF, sampled cM15 two-hop subnetwork, measured vs degree-preserving rewired)",
+      "evidence_grade": "A",
+      "made_by_us": false,
+      "task_family": "graph-analysis",
+      "loop": "offline",
+      "wiring": {
+        "dataset": "FlyWire",
+        "release": "v783",
+        "scope": "strongest-link two-hop subnetwork around one cM15 neuron (100 x 20 sample, 1,338 neurons)"
+      },
+      "trained_parts": "none",
+      "metric": {
+        "name": "active downstream neurons after stimulating the sampled circuit",
+        "unit": "neurons",
+        "higher_is_better": true
+      },
+      "real": {
+        "value": 136.8,
+        "n": 10,
+        "spread": "± 8.6 sd over 10 paired trials",
+        "source": "b65eaa1 results/lif/paired_network_differences_h100_k20.csv measured_active_downstream_neurons (mean and sd computed by us)"
+      },
+      "floor": null,
+      "arms": [
+        {
+          "arm_id": "degree_preserving_rewire",
+          "null_type": "degree-preserving",
+          "label": "directed partner assignments shuffled with in/out degree kept (simulate_visual_hub.py degree_preserving_rewire), new seed per trial, matched stimulus seeds",
+          "value": 107.2,
+          "n": 10,
+          "samples": 10,
+          "spread": "± 8.6 sd",
+          "readout_refit": null,
+          "source": "b65eaa1 results/lif/paired_network_differences_h100_k20.csv rewired_active_downstream_neurons (mean and sd computed by us)",
+          "recomputed_by_us": true,
+          "activity_ratio": null,
+          "activity_class": "not-reported"
+        }
+      ],
+      "effect": {
+        "ci": null,
+        "p": null,
+        "stat_note": "Not scored as helps or worse (decided 10 Nov 2026, as for the Pugliese et al. walking-circuit row): the comparison is activity spread (active downstream neurons), not a task, and the direction 'more is better' would be our assumption, not the author's. Measured wiring recruited more active downstream neurons than the rewired network in 10 of 10 paired trials at each of three sample sizes (30 of 30); mean paired gain 22.7, 29.6 and 50.8 neurons for 412, 1,338 and 2,600 sampled neurons (results/lif/sample_size_sensitivity.csv). Small sampled subnetworks, not the whole brain; activity spread, not behaviour.",
+        "headline_arm": "degree_preserving_rewire",
+        "best_null_arm": "degree_preserving_rewire",
+        "baseline_arm": null,
+        "retention": 0.7836,
+        "retention_method": "ratio",
+        "baseline_retention": null,
+        "difference": 29.6
+      },
+      "fairness": {
+        "keeps_degree": true,
+        "keeps_io_boundary": true,
+        "tuned_equally": true,
+        "null_samples": 10,
+        "has_no_brain_baseline": false,
+        "reason": "Degree-preserving rewire with the same stimulus seeds; one rewire per trial; weights travel with edges (not checked by us).",
+        "verdict": "fair"
+      },
+      "quality": {
+        "n_per_arm": 10,
+        "held_out": false,
+        "results_in_repo_files": true,
+        "independent_test": false,
+        "reason": "Per-trial CSV committed; not re-run by us; sampled subnetwork only.",
+        "peer_review": "none",
+        "uncertainty_reported": true,
+        "recomputed_by_us": true,
+        "grade": "strong"
+      },
+      "extraction": "files",
+      "one_line": "In a sampled 1,338-neuron FlyWire circuit, real wiring activated about 137 downstream neurons vs about 107 after degree-preserving rewiring (10 of 10 pairs).",
+      "commit": "b65eaa1b467b461debc7a0b4e53237da6a67063a",
+      "checked_at": "2026-11-10T09:52:00Z",
+      "sources": [
+        {
+          "url": "https://github.com/Kishandev12/fly-connectome-signal-study/blob/b65eaa1b467b461debc7a0b4e53237da6a67063a/results/lif/paired_network_differences_h100_k20.csv",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/Kishandev12/fly-connectome-signal-study/blob/b65eaa1b467b461debc7a0b4e53237da6a67063a/results/lif/sample_size_sensitivity.csv",
+          "label": "direct"
+        },
+        {
+          "url": "https://github.com/Kishandev12/fly-connectome-signal-study/blob/b65eaa1b467b461debc7a0b4e53237da6a67063a/simulate_visual_hub.py",
+          "label": "direct"
+        }
+      ],
+      "wiring_effect": "not-tested",
+      "baseline_beaten": "not-tested",
+      "caveats": []
+    },
+    {
       "id": "pugliese-2026-walking-cpg",
       "name": "Pugliese et al. 2026: three-neuron walking-circuit motifs in the MANC front-leg nerve cord, real wiring vs shuffles that keep each neuron excitatory or inhibitory",
       "evidence_grade": "A",
@@ -12752,6 +13008,19 @@
       "caveats": []
     },
     {
+      "study_id": "drosophila-whole-cns-specificity",
+      "label": "Whole-CNS wiring specificity hierarchy (MaleCNS v1.0 LIF, nine Maslov-Sneppen null levels): descending steering readout",
+      "task_family": "reflex-circuit",
+      "headline_null_type": "degree-preserving",
+      "retention": null,
+      "retention_method": "none",
+      "baseline_retention": null,
+      "wiring_effect": "mixed",
+      "quality": "strong",
+      "fairness": "fair",
+      "caveats": []
+    },
+    {
       "study_id": "fly-brain-lulzx",
       "label": "fly-brain",
       "task_family": "reflex-circuit",
@@ -13377,7 +13646,7 @@
       "headline_null_type": null,
       "retention": null,
       "retention_method": "none",
-      "baseline_retention": 1.5135,
+      "baseline_retention": 1.26,
       "wiring_effect": "not-tested",
       "quality": "weak",
       "fairness": "unclear",
@@ -13911,6 +14180,19 @@
       "wiring_effect": "worse",
       "quality": "weak",
       "fairness": "partly-fair",
+      "caveats": []
+    },
+    {
+      "study_id": "fly-connectome-signal-study",
+      "label": "Does fly brain wiring shape signal spread? (FlyWire v783 LIF, sampled cM15 two-hop subnetwork, measured vs degree-preserving rewired)",
+      "task_family": "graph-analysis",
+      "headline_null_type": "degree-preserving",
+      "retention": 0.7836,
+      "retention_method": "ratio",
+      "baseline_retention": null,
+      "wiring_effect": "not-tested",
+      "quality": "strong",
+      "fairness": "fair",
       "caveats": []
     },
     {

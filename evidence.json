@@ -2776,7 +2776,7 @@
       "source_type": "our-measurement",
       "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-10-20-run21/#browser-heading",
       "title": "Digital Fly Lab browser check of seven demos (20 Oct 2026)",
-      "claim": "In our browser checks of 3, 6, 11, 17, 18 and 20 Oct 2026, 9 of 13 demos ran on a machine without a GPU at their latest check. Fly Worker, re-checked 20 Oct: ran by our check's rule, and two screenshots of its game panel taken about 6 seconds apart show the game view, its frame counter and the brain-activity dots changing. Screenshots cannot show whether the brain model drives the game; that is a code question. flyproject.io, first checked 20 Oct: loaded, but showed no activity; about 40 MB transferred, mostly 3D model files. The page kept our slow no-GPU machine busy for most of the check, so a faster machine may differ. Checked in headless Chromium 154 on a Linux server without a GPU, 20 Oct 2026. Shows whether the page loads, downloads its brain data and keeps computing; it is not a play test. Safari, Firefox, phones and GPU machines were not tested.",
+      "claim": "In our browser checks of 3, 6, 11, 17, 18 and 20 Oct 2026, 9 of 13 demos ran on a machine without a GPU at their latest check (corrected 10 Nov 2026: 8 of 13 ran at each demo's latest check; this count was not updated after the 24 to 31 Oct re-checks). Fly Worker, re-checked 20 Oct: ran by our check's rule, and two screenshots of its game panel taken about 6 seconds apart show the game view, its frame counter and the brain-activity dots changing. Screenshots cannot show whether the brain model drives the game; that is a code question. flyproject.io, first checked 20 Oct: loaded, but showed no activity; about 40 MB transferred, mostly 3D model files. The page kept our slow no-GPU machine busy for most of the check, so a faster machine may differ. Checked in headless Chromium 154 on a Linux server without a GPU, 20 Oct 2026. Shows whether the page loads, downloads its brain data and keeps computing; it is not a play test. Safari, Firefox, phones and GPU machines were not tested.",
       "accessed_at": "2026-10-20T10:20:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
@@ -3378,6 +3378,46 @@
       "title": "Takhti: \"Scientists Uploaded a Fly's Brain Into a Computer Are Humans Next?\" (3 Nov 2026; title and description read 9 Nov 2026)",
       "claim": "A new Urdu and Hindi video, 'Scientists Uploaded a Fly's Brain Into a Computer Are Humans Next?' (Takhti, 3 Nov 2026; about 202,000 views on 9 Nov), uses the word uploaded in its title, while its own description says this does not mean a fly's mind was copied and calls Eon Systems' demos company claims with limits. That matches the primary sources: a wiring map traced from one preserved fly brain, run as a simplified model. We read the title and description, not the video (checked 9 Nov 2026).",
       "accessed_at": "2026-11-09T10:10:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "browser-run31",
+      "source_type": "our-measurement",
+      "source_url": "https://shaduf.ai/p/digital-fly-catalog/reports/2026-11-10-run31/#browser-heading",
+      "title": "Digital Fly Lab browser re-check of five demos (10 Nov 2026)",
+      "claim": "Re-checked 10 Nov in a headless browser without a GPU: 4 of 4 of the demos we first checked on 6 Oct ran (20 Oct: 4 of 4); the fifth, neural-canvas, is re-checked separately. Fly Worker, re-checked 10 Nov after a change to its model code: ran by our check's rule, and two screenshots of its game panel taken about 7 seconds apart show its street game view, frame counter and brain-activity dots changing. It downloaded about 8.6 MB of brain data, identified by their web address, a method we fixed before this check. In our browser checks from 3 Oct to 10 Nov 2026, 8 of 13 demos ran on a machine without a GPU at their latest check.",
+      "accessed_at": "2026-11-10T10:10:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "whole-cns-specificity-run31",
+      "source_type": "code",
+      "source_url": "https://github.com/indian-aman/drosophila-whole-cns-specificity",
+      "title": "indian-aman/drosophila-whole-cns-specificity (read 10 Nov 2026)",
+      "claim": "indian-aman's whole-CNS specificity study (MaleCNS v1.0): the steering readout stays at 4.11 Hz (real 3.98 Hz) when wiring is shuffled within cell type and side, and falls to -0.01 Hz under a whole-CNS shuffle, so the ledger reads mixed; no no-brain baseline was run. Authors' numbers from a GPU run, not re-run by us.",
+      "accessed_at": "2026-11-10T10:10:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "signal-study-run31",
+      "source_type": "code",
+      "source_url": "https://github.com/Kishandev12/fly-connectome-signal-study",
+      "title": "Kishandev12/fly-connectome-signal-study (read 10 Nov 2026)",
+      "claim": "Kishandev12's signal study: real wiring spread activity further than degree-preserving rewiring (about 137 vs 107 active downstream neurons, 10 of 10 pairs). This measures how far activity spreads, not a task, so we do not score it as the wiring helping; no no-brain baseline was run. Authors' numbers, not re-run by us.",
+      "accessed_at": "2026-11-10T10:10:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "gamebook-run31",
+      "source_type": "web",
+      "source_url": "https://www.whatisitliketobeafly.com/",
+      "title": "'What Is It Like to Be a Fly?' by Andrew Sheerin (page files read 10 Nov 2026)",
+      "claim": "It replays recorded spike output from the Shiu et al. 2024 model and from DesktopFly's model; no neuron model runs in the page. The movements and two of its six scenes are written by the author, as its own note says. Credits name FlyWire (CC BY-NC 4.0); a line says \"code MIT\", but no code repository is linked. Not graded. Read from the page's files on 10 Nov 2026, not rendered.",
+      "accessed_at": "2026-11-10T10:10:00Z",
       "relation": "context",
       "publication_basis": "linked-summary"
     }

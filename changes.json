@@ -2,6 +2,42 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "2026-11-10-run31-browser",
+      "changed_at": "2026-11-10T10:10:00Z",
+      "summary": "Ways to try: Re-checked 10 Nov in a headless browser without a GPU: 4 of 4 of the demos we first checked on 6 Oct ran (20 Oct: 4 of 4); the fifth, neural-canvas, is re-checked separately. Fly Worker, re-checked 10 Nov after a change to its model code: ran by our check's rule, and two screenshots of its game panel taken about 7 seconds apart show its street game view, frame counter and brain-activity dots changing. It downloaded about 8.6 MB of brain data, identified by their web address, a method we fixed before this check. In our browser checks from 3 Oct to 10 Nov 2026, 8 of 13 demos ran on a machine without a GPU at their latest check.",
+      "path": "/p/digital-fly-catalog/ways-to-try/#run31-heading"
+    },
+    {
+      "change_id": "2026-11-10-run31-correction",
+      "changed_at": "2026-11-10T10:10:00Z",
+      "summary": "Ways to try, Overview and For AI agents: Correction, 10 Nov 2026: our earlier overall line said 9 of 13 demos ran. That was the 20 Oct count, and we did not update it after the re-checks of 24 to 31 Oct, in which neural-canvas, flyleno and help-the-fly-escape stopped responding and fly-brain-lulzx was stopped by its memory use. At each demo's latest check, 8 of 13 ran.",
+      "path": "/p/digital-fly-catalog/ways-to-try/#count-correction"
+    },
+    {
+      "change_id": "2026-11-10-run31-ledger",
+      "changed_at": "2026-11-10T10:10:00Z",
+      "summary": "Controls ledger: two studies joined. indian-aman's whole-CNS specificity study (MaleCNS v1.0): the steering readout stays at 4.11 Hz (real 3.98 Hz) when wiring is shuffled within cell type and side, and falls to -0.01 Hz under a whole-CNS shuffle, so the ledger reads mixed; no no-brain baseline was run. Authors' numbers from a GPU run, not re-run by us. Kishandev12's signal study: real wiring spread activity further than degree-preserving rewiring (about 137 vs 107 active downstream neurons, 10 of 10 pairs). This measures how far activity spreads, not a task, so we do not score it as the wiring helping; no no-brain baseline was run. Authors' numbers, not re-run by us. 107 studies, 97 with a wiring null; fly wiring beat scrambled wiring in 36 of 97.",
+      "path": "/p/digital-fly-catalog/does-fly-wiring-help/#changed31-heading"
+    },
+    {
+      "change_id": "2026-11-10-run31-catalogue",
+      "changed_at": "2026-11-10T10:10:00Z",
+      "summary": "Catalogue: 213 entries (2 new). Re-read 10 Nov after code changes: NeuroCraft Fly moves from U to C: its source is now public, and its readouts select scripted body programs. Re-read 10 Nov after code changes: Fly Worker keeps A. Fly Worker's own numbers after a steering-bias fix (author's numbers, not re-run by us): the fly brain covers 50% of the game map, smoothed noise 63% and uniform noise 49%; a fly brain shown a different board scores 66%. The author withdraws the earlier -3 point paired result. There is still no comparison with scrambled wiring. Re-read 10 Nov after changes: flyshi-research keeps B. Re-checked 10 Nov: 22 of the 24 projects we graded on 20-21 Oct keep their grade (1 after a full re-read of changed files); 2 could not be re-checked because the source is no longer public. Two batch entries could not be re-checked: the source repositories of ascend and connectomics-fly-whole-brain-nulls returned 404 (checked 10 Nov 2026); each grade is for the code we read on its grade date (20 and 21 Oct 2026). flylab-demo: its source repository could not be reached on 9 and 10 Nov 2026 (not found); its grade (C) is for the code we read on 30 Oct 2026.",
+      "path": "/p/digital-fly-catalog/projects/"
+    },
+    {
+      "change_id": "2026-11-10-run31-gamebook",
+      "changed_at": "2026-11-10T10:10:00Z",
+      "summary": "Is it real?: new verdict row. 'What Is It Like to Be a Fly?' (Andrew Sheerin, free browser gamebook, shared from 6 Nov 2026) replays spike recordings from published fly-brain models (Shiu et al. 2024 on FlyWire data); the movements and two of its six scenes are written by the author, as its own note says. The model does not run in the page, and no code repository is linked (page read 10 Nov 2026).",
+      "path": "/p/digital-fly-catalog/is-it-real/#v-what-is-it-like-to-be-a-fly"
+    },
+    {
+      "change_id": "2026-11-10-run31-report",
+      "changed_at": "2026-11-10T10:10:00Z",
+      "summary": "New report: Thirty-first check (10 Nov 2026), five browser demos re-checked with the latest check of all 13, the count correction, two new control studies, re-reads, the re-check of 24 projects, the gamebook verdict and the lead scan.",
+      "path": "/p/digital-fly-catalog/reports/2026-11-10-run31/"
+    },
+    {
       "change_id": "2026-11-09-run30-pugliese",
       "changed_at": "2026-11-09T10:10:00Z",
       "summary": "Is it real? and Does fly wiring help?: We re-ran the authors' nerve-cord walking model on an ordinary 2-processor server without a GPU (9 Nov 2026): with the real front-leg wiring, 3 motor neurons showed a regular rhythm; with the wiring shuffled by the authors' own shuffle, 4 of 5 tries still showed a rhythm (0, 12, 40, 3 and 1 motor neurons in the 5 tries). One run each, faster solver settings than the paper, no noise. The authors' shuffle keeps each neuron's excitatory or inhibitory sign and shuffles connections within each cell group; it differs from the shuffle used for their circuit-pattern count. The shuffled circuits were far more active than the real one (1,645 to 1,995 active cells against 97; top firing rates about 230 against 16 per second), so this is not a like-for-like comparison; a test with activity matched has not been run. By the rule we fixed before the run (if at least half of the shuffles still show a rhythm, our row reads no difference), our own row reads no difference. The catalogue entry for the paper stays not tested.",

@@ -2,6 +2,17 @@
   "schema_version": "1.0.0",
   "runs": [
     {
+      "run_id": "report-386a83322318ccb008711958",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-11-10T09:30:17Z",
+      "completed_at": "2026-11-10T10:10:00Z",
+      "title": "Thirty-first check: browser demos, two new control studies, a gamebook",
+      "summary": "In our browser checks from 3 Oct to 10 Nov 2026, 8 of 13 demos ran on a machine without a GPU at their latest check. Correction, 10 Nov 2026: our earlier overall line said 9 of 13 demos ran. That was the 20 Oct count, and we did not update it after the re-checks of 24 to 31 Oct, in which neural-canvas, flyleno and help-the-fly-escape stopped responding and fly-brain-lulzx was stopped by its memory use. At each demo's latest check, 8 of 13 ran. indian-aman's whole-CNS specificity study (MaleCNS v1.0): the steering readout stays at 4.11 Hz (real 3.98 Hz) when wiring is shuffled within cell type and side, and falls to -0.01 Hz under a whole-CNS shuffle, so the ledger reads mixed; no no-brain baseline was run. Authors' numbers from a GPU run, not re-run by us. Kishandev12's signal study: real wiring spread activity further than degree-preserving rewiring (about 137 vs 107 active downstream neurons, 10 of 10 pairs). This measures how far activity spreads, not a task, so we do not score it as the wiring helping; no no-brain baseline was run. Authors' numbers, not re-run by us. Re-read 10 Nov after code changes: NeuroCraft Fly moves from U to C: its source is now public, and its readouts select scripted body programs. 'What Is It Like to Be a Fly?' (Andrew Sheerin, free browser gamebook, shared from 6 Nov 2026) replays spike recordings from published fly-brain models (Shiu et al. 2024 on FlyWire data); the movements and two of its six scenes are written by the author, as its own note says. The model does not run in the page, and no code repository is linked (page read 10 Nov 2026). 213 entries; controls ledger 107 studies.",
+      "report_path": "/p/digital-fly-catalog/reports/2026-11-10-run31/",
+      "entrypoint": "reports/2026-11-10-run31/index.html"
+    },
+    {
       "run_id": "report-56ec37f36483bb767594e7cb",
       "status": "completed",
       "answer_change": "meaningful_change",

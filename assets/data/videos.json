@@ -72,11 +72,11 @@
    "duration_s": 9,
    "format": "horizontal",
    "shows": "A fly in a Minecraft box moving about while a panel shows modelled neural activity; claimed to run all 166,700 MaleCNS neurons.",
-   "does_not_show": "Per its own README, hand-chosen readouts select scripted body programs and the body moves with inputs off; simulation code is not released.",
+   "does_not_show": "Per its own README, hand-chosen readouts select scripted body programs and the body moves with inputs off; the source became public later and the entry was re-graded C on 10 Nov 2026.",
    "summary_basis": "post text, repo README, thumbnail viewed on 28 Sep 2026",
    "catalogue_id": "neurocraft-fly",
    "catalogue_name": "NeuroCraft Fly",
-   "evidence_grade": "U",
+   "evidence_grade": "C",
    "grade_status": "from catalogue",
    "covers": [],
    "verdict_anchor": "/p/digital-fly-catalog/is-it-real/#v-neurocraft-fly",
@@ -2095,7 +2095,7 @@
    "covers": [
     {
      "catalogue_id": "neurocraft-fly",
-     "evidence_grade": "U"
+     "evidence_grade": "C"
     },
     {
      "catalogue_id": "beat-saber-fly",
